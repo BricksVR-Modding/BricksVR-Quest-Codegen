@@ -1,5 +1,24 @@
-﻿################################################################################
-# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
-################################################################################
 
-/.vs
+extern/
+qpm.lock.json
+*.backup
+*.so
+ndkpath.txt
+obj/
+libs/
+qpm.shared.json
+
+*.zip
+qpm.shared.json
+mod.json
+extern.cmake
+qpm_defines.cmake
+
+build/
+*.qmod
+.vs/slnx.sqlite
+.vs/github/v16/.suo
+.vs/github/v16/Browse.VC.db
+.vs/VSWorkspaceState.json
+.vscode/settings.json
+.vs/ProjectSettings.json

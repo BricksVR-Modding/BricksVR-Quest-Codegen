@@ -1,0 +1,2 @@
+CPLUS_INCLUDE_PATH=/include 
+export CPLUS_INCLUDE_PATH

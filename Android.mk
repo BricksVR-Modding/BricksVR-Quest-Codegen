@@ -31,7 +31,7 @@ include $(PREBUILT_SHARED_LIBRARY)
 include $(CLEAR_VARS)
 LOCAL_MODULE := codegen
 LOCAL_SRC_FILES += $(call rwildcard,./src,*.cpp)
-LOCAL_C_INCLUDES := include
+LOCAL_C_INCLUDES := ./include
 LOCAL_CFLAGS += -DMOD_ID='"codegen"' -DVERSION='"0.2.5"' -DNEED_UNSAFE_CSHARP -DNO_CODEGEN_USE
 LOCAL_CFLAGS += -Wall -Wextra -Werror -Wno-unused-function -isystem'' -isystem'extern'
 LOCAL_SHARED_LIBRARIES += beatsaber-hook

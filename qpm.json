@@ -1,6 +1,6 @@
 {
-  "sharedDir": "./include",
-  "dependenciesDir": "./extern",
+  "sharedDir": "include",
+  "dependenciesDir": "extern",
   "info": {
     "name": "bvr-codegen",
     "id": "bvr-codegen",

@@ -72,7 +72,7 @@ namespace GlobalNamespace {
   // Forward declaring type: ovrAvatarGazeTargetType
   struct ovrAvatarGazeTargetType;
   // Forward declaring type: ovrAvatarComponent
-  class ovrAvatarComponent;
+  struct ovrAvatarComponent;
   // Forward declaring type: ovrAvatarHandInputState
   struct ovrAvatarHandInputState;
   // Skipping declaration: ovrAvatarLight because it is already included!

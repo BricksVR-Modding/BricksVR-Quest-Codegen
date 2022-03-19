@@ -24,8 +24,6 @@ namespace UnityEngine {
 namespace GlobalNamespace {
   // Forward declaring type: ovrAvatarRenderPart_SkinnedMeshRender
   struct ovrAvatarRenderPart_SkinnedMeshRender;
-  // Forward declaring type: ovrAvatarComponent
-  class ovrAvatarComponent;
   // Forward declaring type: OvrAvatar
   class OvrAvatar;
   // Forward declaring type: ovrAvatarVisibilityFlags

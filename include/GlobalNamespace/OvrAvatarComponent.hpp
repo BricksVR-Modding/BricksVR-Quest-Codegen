@@ -12,12 +12,6 @@
 // Including type: System.IntPtr
 #include "System/IntPtr.hpp"
 #include "beatsaber-hook/shared/utils/typedefs-string.hpp"
-// Completed includes
-// Type namespace: 
-namespace GlobalNamespace {
-  // Forward declaring type: ovrAvatarComponent
-  struct ovrAvatarComponent;
-}
 #include "beatsaber-hook/shared/utils/il2cpp-type-check.hpp"
 DEFINE_IL2CPP_ARG_TYPE(::GlobalNamespace::ovrAvatarComponent, "", "ovrAvatarComponent");
 // Type namespace: 

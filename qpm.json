@@ -1,0 +1,23 @@
+{
+  "sharedDir": "include",
+  "dependenciesDir": "extern",
+  "info": {
+    "name": "bvr-codegen",
+    "id": "bvr-codegen",
+    "version": "0.0.1",
+    "url": "https://github.com/BricksVR-Modding/BricksVR-Quest-Codegen",
+    "additionalData": {
+      "overrideSoName": "lib-bvrcodegen.so"
+    }
+  },
+  "dependencies": [
+    {
+      "id": "beatsaber-hook",
+      "versionRange": "^3.0.0",
+      "additionalData": {
+        "useRelease": true
+      }
+    }
+  ],
+  "additionalData": {}
+}

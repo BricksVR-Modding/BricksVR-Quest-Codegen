@@ -11,7 +11,7 @@
       "includePath": [
         "C:/android-ndk-r21d/**",
         "${workspaceFolder}/**",
-        "${workspaceFolder}/include"
+        "${workspaceFolder}/include/**"
       ],
       "name": "Win32",
       "windowsSdkVersion": "10.0.18362.0",

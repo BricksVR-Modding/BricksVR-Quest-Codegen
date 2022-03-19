@@ -28,8 +28,6 @@ namespace GlobalNamespace {
   struct ovrAvatarAssetLevelOfDetail;
   // Forward declaring type: OvrAvatar
   class OvrAvatar;
-  // Forward declaring type: ovrAvatarComponent
-  class ovrAvatarComponent;
 }
 // Forward declaring namespace: System
 namespace System {

@@ -76,7 +76,7 @@ jobs:
     - name: Build
       run: |
         cd ${GITHUB_WORKSPACE}
-        ls include
+        cat include/GlobalNamespace/OvrAvatarComponent.hpp
         ./QPM/qpm-rust qmod build --isLibrary=true
         pwsh -Command ./build.ps1
         

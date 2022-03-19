@@ -76,6 +76,7 @@ jobs:
     - name: Build
       run: |
         cd ${GITHUB_WORKSPACE}
+        ls include
         ./QPM/qpm-rust qmod build --isLibrary=true
         pwsh -Command ./build.ps1
         

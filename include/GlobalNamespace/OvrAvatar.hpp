@@ -21,8 +21,8 @@
 #include "System/Boolean.hpp"
 // Including type: ovrAvatarLights
 #include "GlobalNamespace/ovrAvatarLights.hpp"
-// Including type: ovrAvatarComponent
-#include "GlobalNamespace/ovrAvatarComponent.hpp"
+// Including type: OvrAvatarComponent
+#include "GlobalNamespace/OvrAvatarComponent.hpp"
 // Including type: OvrAvatarDriver
 #include "GlobalNamespace/OvrAvatarDriver.hpp"
 // Including type: ovrAvatarBodyComponent
@@ -784,12 +784,12 @@ namespace GlobalNamespace {
     // private OvrAvatarSkinnedMeshPBSV2RenderComponent AddSkinnedMeshRenderPBSV2Component(System.IntPtr renderPart, UnityEngine.GameObject go, ovrAvatarRenderPart_SkinnedMeshRenderPBS_V2 skinnedMeshRenderPBSV2, System.Boolean isBodyPartZero, System.Boolean isControllerModel)
     // Offset: 0x111EF50
     ::GlobalNamespace::OvrAvatarSkinnedMeshPBSV2RenderComponent* AddSkinnedMeshRenderPBSV2Component(::System::IntPtr renderPart, ::UnityEngine::GameObject* go, ::GlobalNamespace::ovrAvatarRenderPart_SkinnedMeshRenderPBS_V2 skinnedMeshRenderPBSV2, bool isBodyPartZero, bool isControllerModel);
-    // static public System.IntPtr GetRenderPart(ovrAvatarComponent component, System.UInt32 renderPartIndex)
+    // static public System.IntPtr GetRenderPart(OvrAvatarComponent component, System.UInt32 renderPartIndex)
     // Offset: 0x111F138
-    static ::System::IntPtr GetRenderPart(::GlobalNamespace::ovrAvatarComponent component, uint renderPartIndex);
-    // static private System.String GetRenderPartName(ovrAvatarComponent component, System.UInt32 renderPartIndex)
+    static ::System::IntPtr GetRenderPart(::GlobalNamespace::OvrAvatarComponent component, uint renderPartIndex);
+    // static private System.String GetRenderPartName(OvrAvatarComponent component, System.UInt32 renderPartIndex)
     // Offset: 0x111F200
-    static ::StringW GetRenderPartName(::GlobalNamespace::ovrAvatarComponent component, uint renderPartIndex);
+    static ::StringW GetRenderPartName(::GlobalNamespace::OvrAvatarComponent component, uint renderPartIndex);
     // static System.Void ConvertTransform(System.Single[] transform, ref ovrAvatarTransform target)
     // Offset: 0x111F284
     static void ConvertTransform(::ArrayW<float> transform, ByRef<::GlobalNamespace::ovrAvatarTransform> target);
@@ -805,10 +805,10 @@ namespace GlobalNamespace {
     // private System.Void BuildRenderComponents()
     // Offset: 0x111F574
     void BuildRenderComponents();
-    // private System.Void AddAvatarComponent(ref T root, ovrAvatarComponent nativeComponent)
+    // private System.Void AddAvatarComponent(ref T root, OvrAvatarComponent nativeComponent)
     // Offset: 0xFFFFFFFF
     template<class T>
-    void AddAvatarComponent(ByRef<T> root, ::GlobalNamespace::ovrAvatarComponent nativeComponent) {
+    void AddAvatarComponent(ByRef<T> root, ::GlobalNamespace::OvrAvatarComponent nativeComponent) {
       static_assert(std::is_convertible_v<T, ::GlobalNamespace::OvrAvatarComponent*>);
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OvrAvatar::AddAvatarComponent");
       static auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod(this, "AddAvatarComponent", std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<T>::get()}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(root), ::il2cpp_utils::ExtractType(nativeComponent)})));
@@ -860,9 +860,9 @@ namespace GlobalNamespace {
     // private System.Void RecordSDKFrame()
     // Offset: 0x11219E0
     void RecordSDKFrame();
-    // private System.Void AddRenderParts(OvrAvatarComponent ovrComponent, ovrAvatarComponent component, UnityEngine.Transform parent)
+    // private System.Void AddRenderParts(OvrAvatarComponent ovrComponent, OvrAvatarComponent component, UnityEngine.Transform parent)
     // Offset: 0x112260C
-    void AddRenderParts(::GlobalNamespace::OvrAvatarComponent* ovrComponent, ::GlobalNamespace::ovrAvatarComponent component, ::UnityEngine::Transform* parent);
+    void AddRenderParts(::GlobalNamespace::OvrAvatarComponent* ovrComponent, ::GlobalNamespace::OvrAvatarComponent component, ::UnityEngine::Transform* parent);
     // public System.Void RefreshBodyParts()
     // Offset: 0x1122A10
     void RefreshBodyParts();
@@ -1003,9 +1003,9 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::GlobalNam
 // Writing MetadataGetter for method: GlobalNamespace::OvrAvatar::GetRenderPart
 // Il2CppName: GetRenderPart
 template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::IntPtr (*)(::GlobalNamespace::ovrAvatarComponent, uint)>(&GlobalNamespace::OvrAvatar::GetRenderPart)> {
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::IntPtr (*)(::GlobalNamespace::OvrAvatarComponent, uint)>(&GlobalNamespace::OvrAvatar::GetRenderPart)> {
   static const MethodInfo* get() {
-    static auto* component = &::il2cpp_utils::GetClassFromName("", "ovrAvatarComponent")->byval_arg;
+    static auto* component = &::il2cpp_utils::GetClassFromName("", "OvrAvatarComponent")->byval_arg;
     static auto* renderPartIndex = &::il2cpp_utils::GetClassFromName("System", "UInt32")->byval_arg;
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OvrAvatar*), "GetRenderPart", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{component, renderPartIndex});
   }
@@ -1013,9 +1013,9 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::I
 // Writing MetadataGetter for method: GlobalNamespace::OvrAvatar::GetRenderPartName
 // Il2CppName: GetRenderPartName
 template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (*)(::GlobalNamespace::ovrAvatarComponent, uint)>(&GlobalNamespace::OvrAvatar::GetRenderPartName)> {
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (*)(::GlobalNamespace::OvrAvatarComponent, uint)>(&GlobalNamespace::OvrAvatar::GetRenderPartName)> {
   static const MethodInfo* get() {
-    static auto* component = &::il2cpp_utils::GetClassFromName("", "ovrAvatarComponent")->byval_arg;
+    static auto* component = &::il2cpp_utils::GetClassFromName("", "OvrAvatarComponent")->byval_arg;
     static auto* renderPartIndex = &::il2cpp_utils::GetClassFromName("System", "UInt32")->byval_arg;
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OvrAvatar*), "GetRenderPartName", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{component, renderPartIndex});
   }
@@ -1210,10 +1210,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
 // Writing MetadataGetter for method: GlobalNamespace::OvrAvatar::AddRenderParts
 // Il2CppName: AddRenderParts
 template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (GlobalNamespace::OvrAvatar::*)(::GlobalNamespace::OvrAvatarComponent*, ::GlobalNamespace::ovrAvatarComponent, ::UnityEngine::Transform*)>(&GlobalNamespace::OvrAvatar::AddRenderParts)> {
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (GlobalNamespace::OvrAvatar::*)(::GlobalNamespace::OvrAvatarComponent*, ::GlobalNamespace::OvrAvatarComponent, ::UnityEngine::Transform*)>(&GlobalNamespace::OvrAvatar::AddRenderParts)> {
   static const MethodInfo* get() {
     static auto* ovrComponent = &::il2cpp_utils::GetClassFromName("", "OvrAvatarComponent")->byval_arg;
-    static auto* component = &::il2cpp_utils::GetClassFromName("", "ovrAvatarComponent")->byval_arg;
+    static auto* component = &::il2cpp_utils::GetClassFromName("", "OvrAvatarComponent")->byval_arg;
     static auto* parent = &::il2cpp_utils::GetClassFromName("UnityEngine", "Transform")->byval_arg;
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OvrAvatar*), "AddRenderParts", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{ovrComponent, component, parent});
   }

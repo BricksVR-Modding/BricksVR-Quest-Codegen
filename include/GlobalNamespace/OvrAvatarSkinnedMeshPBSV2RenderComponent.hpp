@@ -28,8 +28,8 @@ namespace GlobalNamespace {
   struct ovrAvatarAssetLevelOfDetail;
   // Forward declaring type: OvrAvatar
   class OvrAvatar;
-  // Forward declaring type: OvrAvatarComponent
-  class OvrAvatarComponent;
+  // Forward declaring type: ovrAvatarComponent
+  class ovrAvatarComponent;
 }
 // Forward declaring namespace: System
 namespace System {
@@ -154,9 +154,9 @@ namespace GlobalNamespace {
     // System.Void Initialize(System.IntPtr renderPart, ovrAvatarRenderPart_SkinnedMeshRenderPBS_V2 skinnedMeshRender, OvrAvatarMaterialManager materialManager, System.Int32 thirdPersonLayer, System.Int32 firstPersonLayer, System.Boolean combinedMesh, ovrAvatarAssetLevelOfDetail lod, System.Boolean assignExpressiveParams, OvrAvatar avatar, System.Boolean isControllerModel)
     // Offset: 0x1053388
     void Initialize(::System::IntPtr renderPart, ::GlobalNamespace::ovrAvatarRenderPart_SkinnedMeshRenderPBS_V2 skinnedMeshRender, ::GlobalNamespace::OvrAvatarMaterialManager* materialManager, int thirdPersonLayer, int firstPersonLayer, bool combinedMesh, ::GlobalNamespace::ovrAvatarAssetLevelOfDetail lod, bool assignExpressiveParams, ::GlobalNamespace::OvrAvatar* avatar, bool isControllerModel);
-    // public System.Void UpdateSkinnedMeshRender(OvrAvatarComponent component, OvrAvatar avatar, System.IntPtr renderPart)
+    // public System.Void UpdateSkinnedMeshRender(ovrAvatarComponent component, OvrAvatar avatar, System.IntPtr renderPart)
     // Offset: 0x1054224
-    void UpdateSkinnedMeshRender(::GlobalNamespace::OvrAvatarComponent* component, ::GlobalNamespace::OvrAvatar* avatar, ::System::IntPtr renderPart);
+    void UpdateSkinnedMeshRender(::GlobalNamespace::ovrAvatarComponent* component, ::GlobalNamespace::OvrAvatar* avatar, ::System::IntPtr renderPart);
     // private System.Void InitializeSingleComponentMaterial(System.IntPtr renderPart, System.Int32 lodIndex)
     // Offset: 0x1054444
     void InitializeSingleComponentMaterial(::System::IntPtr renderPart, int lodIndex);
@@ -210,9 +210,9 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
 // Writing MetadataGetter for method: GlobalNamespace::OvrAvatarSkinnedMeshPBSV2RenderComponent::UpdateSkinnedMeshRender
 // Il2CppName: UpdateSkinnedMeshRender
 template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (GlobalNamespace::OvrAvatarSkinnedMeshPBSV2RenderComponent::*)(::GlobalNamespace::OvrAvatarComponent*, ::GlobalNamespace::OvrAvatar*, ::System::IntPtr)>(&GlobalNamespace::OvrAvatarSkinnedMeshPBSV2RenderComponent::UpdateSkinnedMeshRender)> {
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (GlobalNamespace::OvrAvatarSkinnedMeshPBSV2RenderComponent::*)(::GlobalNamespace::ovrAvatarComponent*, ::GlobalNamespace::OvrAvatar*, ::System::IntPtr)>(&GlobalNamespace::OvrAvatarSkinnedMeshPBSV2RenderComponent::UpdateSkinnedMeshRender)> {
   static const MethodInfo* get() {
-    static auto* component = &::il2cpp_utils::GetClassFromName("", "OvrAvatarComponent")->byval_arg;
+    static auto* component = &::il2cpp_utils::GetClassFromName("", "ovrAvatarComponent")->byval_arg;
     static auto* avatar = &::il2cpp_utils::GetClassFromName("", "OvrAvatar")->byval_arg;
     static auto* renderPart = &::il2cpp_utils::GetClassFromName("System", "IntPtr")->byval_arg;
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OvrAvatarSkinnedMeshPBSV2RenderComponent*), "UpdateSkinnedMeshRender", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{component, avatar, renderPart});

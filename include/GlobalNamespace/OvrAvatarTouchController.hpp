@@ -63,8 +63,8 @@ namespace GlobalNamespace {
     void Update();
     // public System.Void .ctor()
     // Offset: 0x1056710
-    // Implemented from: OvrAvatarComponent
-    // Base method: System.Void OvrAvatarComponent::.ctor()
+    // Implemented from: ovrAvatarComponent
+    // Base method: System.Void ovrAvatarComponent::.ctor()
     // Base method: System.Void MonoBehaviour::.ctor()
     // Base method: System.Void Behaviour::.ctor()
     // Base method: System.Void Component::.ctor()

@@ -126,26 +126,33 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private Normal.Realtime.Realtime _realtime
-    [[deprecated]] ::Normal::Realtime::Realtime*& dyn__realtime();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::Realtime*& dyn__realtime();
     // Get instance field reference: private System.String _roomDataJson
-    [[deprecated]] ::StringW& dyn__roomDataJson();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__roomDataJson();
     // Get instance field reference: private TMPro.TextMeshProUGUI _joiningStatusText
-    [[deprecated]] ::TMPro::TextMeshProUGUI*& dyn__joiningStatusText();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshProUGUI*& dyn__joiningStatusText();
     // Get instance field reference: public System.Boolean upstreamError
-    [[deprecated]] bool& dyn_upstreamError();
+    [[deprecated("Use field access instead!")]] bool& dyn_upstreamError();
     // Get instance field reference: public System.Boolean connectivityError
-    [[deprecated]] bool& dyn_connectivityError();
+    [[deprecated("Use field access instead!")]] bool& dyn_connectivityError();
     // Get instance field reference: public System.Boolean isDoneDownloading
-    [[deprecated]] bool& dyn_isDoneDownloading();
+    [[deprecated("Use field access instead!")]] bool& dyn_isDoneDownloading();
     // Get instance field reference: private System.Int32 _downloadSpeedMultiplier
-    [[deprecated]] int& dyn__downloadSpeedMultiplier();
+    [[deprecated("Use field access instead!")]] int& dyn__downloadSpeedMultiplier();
     // Get instance field reference: public ChunkedRenderer chunkedRenderer
-    [[deprecated]] ::GlobalNamespace::ChunkedRenderer*& dyn_chunkedRenderer();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::ChunkedRenderer*& dyn_chunkedRenderer();
     // Get instance field reference: public System.Collections.Generic.List`1<NormcoreRPC/Brick> bricksParentedToHeads
-    [[deprecated]] ::System::Collections::Generic::List_1<::GlobalNamespace::NormcoreRPC::Brick*>*& dyn_bricksParentedToHeads();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::GlobalNamespace::NormcoreRPC::Brick*>*& dyn_bricksParentedToHeads();
     // public System.Boolean get_Errored()
     // Offset: 0x6B34C0
     bool get_Errored();
+    // public System.Void .ctor()
+    // Offset: 0x6B3450
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static DownloadBricksOnLoad* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::DownloadBricksOnLoad::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<DownloadBricksOnLoad*, creationType>()));
+    }
     // private System.Void Start()
     // Offset: 0x6B33F0
     void Start();
@@ -164,19 +171,6 @@ namespace GlobalNamespace {
     // private System.Collections.IEnumerator DownloadBrickData(System.String room)
     // Offset: 0x6B2E00
     ::System::Collections::IEnumerator* DownloadBrickData(::StringW room);
-    // public System.Void .ctor()
-    // Offset: 0x6B3450
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static DownloadBricksOnLoad* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::DownloadBricksOnLoad::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<DownloadBricksOnLoad*, creationType>()));
-    }
   }; // DownloadBricksOnLoad
   #pragma pack(pop)
   static check_size<sizeof(DownloadBricksOnLoad), 64 + sizeof(::System::Collections::Generic::List_1<::GlobalNamespace::NormcoreRPC::Brick*>*)> __GlobalNamespace_DownloadBricksOnLoadSizeCheck;
@@ -191,6 +185,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::DownloadBricksOnLoad*), "get_Errored", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: GlobalNamespace::DownloadBricksOnLoad::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::DownloadBricksOnLoad::Start
 // Il2CppName: Start
 template<>
@@ -243,7 +241,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::C
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::DownloadBricksOnLoad*), "DownloadBrickData", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{room});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::DownloadBricksOnLoad::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

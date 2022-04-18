@@ -50,18 +50,16 @@ namespace Normal::Realtime {
     // static private System.Void .cctor()
     // Offset: 0x8CDF40
     static void _cctor();
-    // System.DateTime <Awake>b__5_0(System.IO.FileInfo f)
-    // Offset: 0x8CDBE0
-    ::System::DateTime $Awake$b__5_0(::System::IO::FileInfo* f);
     // public System.Void .ctor()
     // Offset: 0x1DD400
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static RealtimeSessionCapture::$$c* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::RealtimeSessionCapture::$$c::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<RealtimeSessionCapture::$$c*, creationType>()));
     }
+    // System.DateTime <Awake>b__5_0(System.IO.FileInfo f)
+    // Offset: 0x8CDBE0
+    ::System::DateTime $Awake$b__5_0(::System::IO::FileInfo* f);
   }; // Normal.Realtime.RealtimeSessionCapture/Normal.Realtime.<>c
   #pragma pack(pop)
 }
@@ -74,6 +72,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::RealtimeSessionCapture::$$c*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: Normal::Realtime::RealtimeSessionCapture::$$c::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Normal::Realtime::RealtimeSessionCapture::$$c::$Awake$b__5_0
 // Il2CppName: <Awake>b__5_0
 template<>
@@ -83,7 +85,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::D
     return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::RealtimeSessionCapture::$$c*), "<Awake>b__5_0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{f});
   }
 };
-// Writing MetadataGetter for method: Normal::Realtime::RealtimeSessionCapture::$$c::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

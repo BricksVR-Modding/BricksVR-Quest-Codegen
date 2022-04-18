@@ -57,7 +57,7 @@ namespace UnityEngine::XR::Interaction::Toolkit {
     // Set static field: static public UnityEngine.XR.Interaction.Toolkit.XRController/UnityEngine.XR.Interaction.Toolkit.InteractionTypes uiPress
     static void _set_uiPress(::UnityEngine::XR::Interaction::Toolkit::XRController::InteractionTypes value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // UnityEngine.XR.Interaction.Toolkit.XRController/UnityEngine.XR.Interaction.Toolkit.InteractionTypes
   #pragma pack(pop)
   static check_size<sizeof(XRController::InteractionTypes), 0 + sizeof(int)> __UnityEngine_XR_Interaction_Toolkit_XRController_InteractionTypesSizeCheck;

@@ -68,7 +68,7 @@ namespace UnityEngine {
       return m_Handle;
     }
     // Get instance field reference: private System.Int32 m_Handle
-    [[deprecated]] int& dyn_m_Handle();
+    [[deprecated("Use field access instead!")]] int& dyn_m_Handle();
     // public System.Boolean Equals(UnityEngine.PhysicsScene other)
     // Offset: 0x644F10
     bool Equals(::UnityEngine::PhysicsScene other);

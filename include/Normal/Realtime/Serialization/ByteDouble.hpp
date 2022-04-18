@@ -44,9 +44,9 @@ namespace Normal::Realtime::Serialization {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private System.Double value
-    [[deprecated]] double& dyn_value();
+    [[deprecated("Use field access instead!")]] double& dyn_value();
     // Get instance field reference: private System.UInt64 bytes
-    [[deprecated]] uint64_t& dyn_bytes();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_bytes();
     // static public System.Double Reinterpret(System.UInt64 value)
     // Offset: 0x570420
     static double Reinterpret(uint64_t value);

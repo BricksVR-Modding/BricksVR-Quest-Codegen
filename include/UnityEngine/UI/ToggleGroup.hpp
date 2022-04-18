@@ -67,9 +67,9 @@ namespace UnityEngine::UI {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Boolean m_AllowSwitchOff
-    [[deprecated]] bool& dyn_m_AllowSwitchOff();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_AllowSwitchOff();
     // Get instance field reference: protected System.Collections.Generic.List`1<UnityEngine.UI.Toggle> m_Toggles
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::UI::Toggle*>*& dyn_m_Toggles();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::UI::Toggle*>*& dyn_m_Toggles();
     // public System.Boolean get_allowSwitchOff()
     // Offset: 0x2512D0
     bool get_allowSwitchOff();
@@ -104,11 +104,6 @@ namespace UnityEngine::UI {
     // Offset: 0x62E210
     // Implemented from: UnityEngine.EventSystems.UIBehaviour
     // Base method: System.Void UIBehaviour::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ToggleGroup* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::UI::ToggleGroup::.ctor");

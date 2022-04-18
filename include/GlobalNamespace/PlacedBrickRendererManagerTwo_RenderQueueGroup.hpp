@@ -63,13 +63,20 @@ namespace GlobalNamespace {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: public UnityEngine.Matrix4x4[] TransformationMatrices
-    [[deprecated]] ::ArrayW<::UnityEngine::Matrix4x4>& dyn_TransformationMatrices();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Matrix4x4>& dyn_TransformationMatrices();
     // Get instance field reference: public UnityEngine.Vector4[] Colors
-    [[deprecated]] ::ArrayW<::UnityEngine::Vector4>& dyn_Colors();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Vector4>& dyn_Colors();
     // Get instance field reference: public System.Int32[] ObjectHashCodes
-    [[deprecated]] ::ArrayW<int>& dyn_ObjectHashCodes();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int>& dyn_ObjectHashCodes();
     // Get instance field reference: public System.Int32 Length
-    [[deprecated]] int& dyn_Length();
+    [[deprecated("Use field access instead!")]] int& dyn_Length();
+    // public System.Void .ctor()
+    // Offset: 0x1DD400
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static PlacedBrickRendererManagerTwo::RenderQueueGroup* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::PlacedBrickRendererManagerTwo::RenderQueueGroup::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<PlacedBrickRendererManagerTwo::RenderQueueGroup*, creationType>()));
+    }
     // public System.Boolean AddObjectToRender(UnityEngine.Matrix4x4 transformationMatrix, UnityEngine.Vector4 color, System.Int32 objectHashCode)
     // Offset: 0x6A8FB0
     bool AddObjectToRender(::UnityEngine::Matrix4x4 transformationMatrix, ::UnityEngine::Vector4 color, int objectHashCode);
@@ -82,21 +89,16 @@ namespace GlobalNamespace {
     // static public PlacedBrickRendererManagerTwo/RenderQueueGroup CreateNewRenderQueueGroup()
     // Offset: 0x6A9080
     static ::GlobalNamespace::PlacedBrickRendererManagerTwo::RenderQueueGroup* CreateNewRenderQueueGroup();
-    // public System.Void .ctor()
-    // Offset: 0x1DD400
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static PlacedBrickRendererManagerTwo::RenderQueueGroup* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::PlacedBrickRendererManagerTwo::RenderQueueGroup::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<PlacedBrickRendererManagerTwo::RenderQueueGroup*, creationType>()));
-    }
   }; // PlacedBrickRendererManagerTwo/RenderQueueGroup
   #pragma pack(pop)
   static check_size<sizeof(PlacedBrickRendererManagerTwo::RenderQueueGroup), 40 + sizeof(int)> __GlobalNamespace_PlacedBrickRendererManagerTwo_RenderQueueGroupSizeCheck;
   static_assert(sizeof(PlacedBrickRendererManagerTwo::RenderQueueGroup) == 0x2C);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::PlacedBrickRendererManagerTwo::RenderQueueGroup::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::PlacedBrickRendererManagerTwo::RenderQueueGroup::AddObjectToRender
 // Il2CppName: AddObjectToRender
 template<>
@@ -132,7 +134,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::GlobalNam
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::PlacedBrickRendererManagerTwo::RenderQueueGroup*), "CreateNewRenderQueueGroup", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::PlacedBrickRendererManagerTwo::RenderQueueGroup::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

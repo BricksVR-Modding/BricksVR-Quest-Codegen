@@ -66,7 +66,7 @@ namespace UnityEngine::UIElements {
       return m_Element;
     }
     // Get instance field reference: private UnityEngine.UIElements.VisualElement m_Element
-    [[deprecated]] ::UnityEngine::UIElements::VisualElement*& dyn_m_Element();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::VisualElement*& dyn_m_Element();
     // private UnityEngine.UIElements.StyleSheets.VisualElementStylesData get_stylesData()
     // Offset: 0x29C4B0
     ::UnityEngine::UIElements::StyleSheets::VisualElementStylesData* get_stylesData();

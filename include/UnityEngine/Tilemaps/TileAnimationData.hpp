@@ -60,11 +60,11 @@ namespace UnityEngine::Tilemaps {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private UnityEngine.Sprite[] m_AnimatedSprites
-    [[deprecated]] ::ArrayW<::UnityEngine::Sprite*>& dyn_m_AnimatedSprites();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Sprite*>& dyn_m_AnimatedSprites();
     // Get instance field reference: private System.Single m_AnimationSpeed
-    [[deprecated]] float& dyn_m_AnimationSpeed();
+    [[deprecated("Use field access instead!")]] float& dyn_m_AnimationSpeed();
     // Get instance field reference: private System.Single m_AnimationStartTime
-    [[deprecated]] float& dyn_m_AnimationStartTime();
+    [[deprecated("Use field access instead!")]] float& dyn_m_AnimationStartTime();
   }; // UnityEngine.Tilemaps.TileAnimationData
   #pragma pack(pop)
   static check_size<sizeof(TileAnimationData), 12 + sizeof(float)> __UnityEngine_Tilemaps_TileAnimationDataSizeCheck;

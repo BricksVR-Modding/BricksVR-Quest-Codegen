@@ -14,10 +14,6 @@
 #include "beatsaber-hook/shared/utils/typedefs-string.hpp"
 // Completed includes
 // Begin forward declares
-// Forward declaring namespace: System
-namespace System {
-  // Skipping declaration: Exception because it is already included!
-}
 // Forward declaring namespace: System::Runtime::Serialization
 namespace System::Runtime::Serialization {
   // Forward declaring type: SerializationInfo
@@ -54,7 +50,7 @@ namespace System {
       return m_paramName;
     }
     // Get instance field reference: private System.String m_paramName
-    [[deprecated]] ::StringW& dyn_m_paramName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_paramName();
     // public System.Void .ctor(System.String message, System.String paramName)
     // Offset: 0x46A7B0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

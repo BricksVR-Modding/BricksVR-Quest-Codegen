@@ -143,27 +143,27 @@ namespace UnityEngine::XR::Interaction::Toolkit::UI {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.GameObject> <hoverTargets>k__BackingField
-      [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::GameObject*>*& dyn_$hoverTargets$k__BackingField();
+      [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::GameObject*>*& dyn_$hoverTargets$k__BackingField();
       // Get instance field reference: private UnityEngine.GameObject <pointerTarget>k__BackingField
-      [[deprecated]] ::UnityEngine::GameObject*& dyn_$pointerTarget$k__BackingField();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_$pointerTarget$k__BackingField();
       // Get instance field reference: private System.Boolean <isDragging>k__BackingField
-      [[deprecated]] bool& dyn_$isDragging$k__BackingField();
+      [[deprecated("Use field access instead!")]] bool& dyn_$isDragging$k__BackingField();
       // Get instance field reference: private System.Single <pressedTime>k__BackingField
-      [[deprecated]] float& dyn_$pressedTime$k__BackingField();
+      [[deprecated("Use field access instead!")]] float& dyn_$pressedTime$k__BackingField();
       // Get instance field reference: private UnityEngine.Vector2 <pressedPosition>k__BackingField
-      [[deprecated]] ::UnityEngine::Vector2& dyn_$pressedPosition$k__BackingField();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn_$pressedPosition$k__BackingField();
       // Get instance field reference: private UnityEngine.EventSystems.RaycastResult <pressedRaycast>k__BackingField
-      [[deprecated]] ::UnityEngine::EventSystems::RaycastResult& dyn_$pressedRaycast$k__BackingField();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::EventSystems::RaycastResult& dyn_$pressedRaycast$k__BackingField();
       // Get instance field reference: private UnityEngine.EventSystems.RaycastResult <lastFrameRaycast>k__BackingField
-      [[deprecated]] ::UnityEngine::EventSystems::RaycastResult& dyn_$lastFrameRaycast$k__BackingField();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::EventSystems::RaycastResult& dyn_$lastFrameRaycast$k__BackingField();
       // Get instance field reference: private System.Int32 <lastFrameRaycastResultPositionInLine>k__BackingField
-      [[deprecated]] int& dyn_$lastFrameRaycastResultPositionInLine$k__BackingField();
+      [[deprecated("Use field access instead!")]] int& dyn_$lastFrameRaycastResultPositionInLine$k__BackingField();
       // Get instance field reference: private UnityEngine.GameObject <pressedGameObject>k__BackingField
-      [[deprecated]] ::UnityEngine::GameObject*& dyn_$pressedGameObject$k__BackingField();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_$pressedGameObject$k__BackingField();
       // Get instance field reference: private UnityEngine.GameObject <pressedGameObjectRaw>k__BackingField
-      [[deprecated]] ::UnityEngine::GameObject*& dyn_$pressedGameObjectRaw$k__BackingField();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_$pressedGameObjectRaw$k__BackingField();
       // Get instance field reference: private UnityEngine.GameObject <draggedGameObject>k__BackingField
-      [[deprecated]] ::UnityEngine::GameObject*& dyn_$draggedGameObject$k__BackingField();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_$draggedGameObject$k__BackingField();
       // public System.Collections.Generic.List`1<UnityEngine.GameObject> get_hoverTargets()
       // Offset: 0x2BAE20
       ::System::Collections::Generic::List_1<::UnityEngine::GameObject*>* get_hoverTargets();
@@ -318,25 +318,25 @@ namespace UnityEngine::XR::Interaction::Toolkit::UI {
     // Set static field: static private System.Single k_DefaultMaxRaycastDistance
     static void _set_k_DefaultMaxRaycastDistance(float value);
     // Get instance field reference: private System.Int32 <pointerId>k__BackingField
-    [[deprecated]] int& dyn_$pointerId$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$pointerId$k__BackingField();
     // Get instance field reference: private System.Single <maxRaycastDistance>k__BackingField
-    [[deprecated]] float& dyn_$maxRaycastDistance$k__BackingField();
+    [[deprecated("Use field access instead!")]] float& dyn_$maxRaycastDistance$k__BackingField();
     // Get instance field reference: private UnityEngine.XR.Interaction.Toolkit.UI.ButtonDeltaState <selectDelta>k__BackingField
-    [[deprecated]] ::UnityEngine::XR::Interaction::Toolkit::UI::ButtonDeltaState& dyn_$selectDelta$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::Interaction::Toolkit::UI::ButtonDeltaState& dyn_$selectDelta$k__BackingField();
     // Get instance field reference: private System.Boolean <changedThisFrame>k__BackingField
-    [[deprecated]] bool& dyn_$changedThisFrame$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$changedThisFrame$k__BackingField();
     // Get instance field reference: private System.Boolean m_SelectDown
-    [[deprecated]] bool& dyn_m_SelectDown();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_SelectDown();
     // Get instance field reference: private UnityEngine.Vector3 m_Position
-    [[deprecated]] ::UnityEngine::Vector3& dyn_m_Position();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_m_Position();
     // Get instance field reference: private UnityEngine.Quaternion m_Orientation
-    [[deprecated]] ::UnityEngine::Quaternion& dyn_m_Orientation();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Quaternion& dyn_m_Orientation();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.Vector3> m_RaycastPoints
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::Vector3>*& dyn_m_RaycastPoints();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::Vector3>*& dyn_m_RaycastPoints();
     // Get instance field reference: private UnityEngine.LayerMask m_RaycastLayerMask
-    [[deprecated]] ::UnityEngine::LayerMask& dyn_m_RaycastLayerMask();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::LayerMask& dyn_m_RaycastLayerMask();
     // Get instance field reference: private UnityEngine.XR.Interaction.Toolkit.UI.TrackedDeviceModel/UnityEngine.XR.Interaction.Toolkit.UI.ImplementationData m_ImplementationData
-    [[deprecated]] ::UnityEngine::XR::Interaction::Toolkit::UI::TrackedDeviceModel::ImplementationData& dyn_m_ImplementationData();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::Interaction::Toolkit::UI::TrackedDeviceModel::ImplementationData& dyn_m_ImplementationData();
     // UnityEngine.XR.Interaction.Toolkit.UI.TrackedDeviceModel/UnityEngine.XR.Interaction.Toolkit.UI.ImplementationData get_implementationData()
     // Offset: 0x2FC0D0
     ::UnityEngine::XR::Interaction::Toolkit::UI::TrackedDeviceModel::ImplementationData get_implementationData();

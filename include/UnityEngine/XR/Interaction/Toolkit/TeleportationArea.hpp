@@ -47,11 +47,6 @@ namespace UnityEngine::XR::Interaction::Toolkit {
     // Implemented from: UnityEngine.XR.Interaction.Toolkit.BaseTeleportationInteractable
     // Base method: System.Void BaseTeleportationInteractable::.ctor()
     // Base method: System.Void XRBaseInteractable::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TeleportationArea* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::XR::Interaction::Toolkit::TeleportationArea::.ctor");

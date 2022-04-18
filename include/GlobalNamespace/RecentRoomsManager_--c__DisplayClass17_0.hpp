@@ -41,13 +41,11 @@ namespace GlobalNamespace {
     static_assert(sizeof(::ArrayW<::StringW>) == 0x8);
     public:
     // Get instance field reference: public RecentRoomsManager <>4__this
-    [[deprecated]] ::GlobalNamespace::RecentRoomsManager*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::RecentRoomsManager*& dyn_$$4__this();
     // Get instance field reference: public System.String[] rooms
-    [[deprecated]] ::ArrayW<::StringW>& dyn_rooms();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_rooms();
     // public System.Void .ctor()
     // Offset: 0x1DD400
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static RecentRoomsManager::$$c__DisplayClass17_0* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::RecentRoomsManager::$$c__DisplayClass17_0::.ctor");

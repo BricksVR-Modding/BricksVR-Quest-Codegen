@@ -54,7 +54,7 @@ namespace System::Diagnostics::Tracing {
       return m_eventSource;
     }
     // Get instance field reference: private System.Diagnostics.Tracing.EventSource m_eventSource
-    [[deprecated]] ::System::Diagnostics::Tracing::EventSource*& dyn_m_eventSource();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::EventSource*& dyn_m_eventSource();
     // public System.Void .ctor(System.Diagnostics.Tracing.EventSource eventSource)
     // Offset: 0x2EE440
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

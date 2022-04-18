@@ -78,25 +78,20 @@ namespace GlobalNamespace {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: public System.Single Range
-    [[deprecated]] float& dyn_Range();
+    [[deprecated("Use field access instead!")]] float& dyn_Range();
     // Get instance field reference: public System.Single MinimumElevation
-    [[deprecated]] float& dyn_MinimumElevation();
+    [[deprecated("Use field access instead!")]] float& dyn_MinimumElevation();
     // Get instance field reference: public System.Single Gravity
-    [[deprecated]] float& dyn_Gravity();
+    [[deprecated("Use field access instead!")]] float& dyn_Gravity();
     // Get instance field reference: public System.Single AimVelocity
-    [[deprecated]] float& dyn_AimVelocity();
+    [[deprecated("Use field access instead!")]] float& dyn_AimVelocity();
     // Get instance field reference: public System.Single AimStep
-    [[deprecated]] float& dyn_AimStep();
+    [[deprecated("Use field access instead!")]] float& dyn_AimStep();
     // public System.Void .ctor()
     // Offset: 0x616590
     // Implemented from: TeleportAimHandler
     // Base method: System.Void TeleportAimHandler::.ctor()
     // Base method: System.Void TeleportSupport::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TeleportAimHandlerParabolic* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::TeleportAimHandlerParabolic::.ctor");

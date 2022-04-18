@@ -80,15 +80,15 @@ namespace GlobalNamespace {
     static_assert(sizeof(::GlobalNamespace::PlacedBrickRendererManagerTwo::RendererBufferRecycler*) == 0x8);
     public:
     // Get instance field reference: public UnityEngine.Mesh Mesh
-    [[deprecated]] ::UnityEngine::Mesh*& dyn_Mesh();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Mesh*& dyn_Mesh();
     // Get instance field reference: private readonly System.Collections.Generic.List`1<PlacedBrickRendererManagerTwo/RenderQueueGroup> _renderQueueGroups
-    [[deprecated]] ::System::Collections::Generic::List_1<::GlobalNamespace::PlacedBrickRendererManagerTwo::RenderQueueGroup*>*& dyn__renderQueueGroups();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::GlobalNamespace::PlacedBrickRendererManagerTwo::RenderQueueGroup*>*& dyn__renderQueueGroups();
     // Get instance field reference: private readonly UnityEngine.MaterialPropertyBlock _materialPropertyBlock
-    [[deprecated]] ::UnityEngine::MaterialPropertyBlock*& dyn__materialPropertyBlock();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::MaterialPropertyBlock*& dyn__materialPropertyBlock();
     // Get instance field reference: private readonly UnityEngine.Material _material
-    [[deprecated]] ::UnityEngine::Material*& dyn__material();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn__material();
     // Get instance field reference: private readonly PlacedBrickRendererManagerTwo/RendererBufferRecycler _rendererBufferRecycler
-    [[deprecated]] ::GlobalNamespace::PlacedBrickRendererManagerTwo::RendererBufferRecycler*& dyn__rendererBufferRecycler();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::PlacedBrickRendererManagerTwo::RendererBufferRecycler*& dyn__rendererBufferRecycler();
     // public System.Void .ctor(UnityEngine.Mesh mesh, UnityEngine.Material material, PlacedBrickRendererManagerTwo/RendererBufferRecycler rendererBufferRecycler)
     // Offset: 0x6731C0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

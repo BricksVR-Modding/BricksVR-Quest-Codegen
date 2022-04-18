@@ -130,29 +130,39 @@ namespace GlobalNamespace {
     // Set static field: static private UnityEngine.Vector3 _regularGravityVector
     static void _set__regularGravityVector(::UnityEngine::Vector3 value);
     // Get instance field reference: public QuickInteractor leftHandInteractor
-    [[deprecated]] ::GlobalNamespace::QuickInteractor*& dyn_leftHandInteractor();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::QuickInteractor*& dyn_leftHandInteractor();
     // Get instance field reference: public QuickInteractor rightHandInteractor
-    [[deprecated]] ::GlobalNamespace::QuickInteractor*& dyn_rightHandInteractor();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::QuickInteractor*& dyn_rightHandInteractor();
     // Get instance field reference: public KeepPlayerOutOfWalls keepPlayerOutOfWalls
-    [[deprecated]] ::GlobalNamespace::KeepPlayerOutOfWalls*& dyn_keepPlayerOutOfWalls();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::KeepPlayerOutOfWalls*& dyn_keepPlayerOutOfWalls();
     // Get instance field reference: private UnityEngine.LayerMask _interactorUnlockedMask
-    [[deprecated]] ::UnityEngine::LayerMask& dyn__interactorUnlockedMask();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::LayerMask& dyn__interactorUnlockedMask();
     // Get instance field reference: private UnityEngine.LayerMask _interactorLockedMask
-    [[deprecated]] ::UnityEngine::LayerMask& dyn__interactorLockedMask();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::LayerMask& dyn__interactorLockedMask();
     // Get instance field reference: public UnityEngine.UI.Toggle roomLockedToggle
-    [[deprecated]] ::UnityEngine::UI::Toggle*& dyn_roomLockedToggle();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Toggle*& dyn_roomLockedToggle();
     // Get instance field reference: public UnityEngine.UI.Toggle lowGravityToggle
-    [[deprecated]] ::UnityEngine::UI::Toggle*& dyn_lowGravityToggle();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Toggle*& dyn_lowGravityToggle();
     // Get instance field reference: public UnityEngine.UI.Toggle blockedFromMovingThroughBricksToggle
-    [[deprecated]] ::UnityEngine::UI::Toggle*& dyn_blockedFromMovingThroughBricksToggle();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Toggle*& dyn_blockedFromMovingThroughBricksToggle();
     // Get instance field reference: public System.Boolean overrideLocked
-    [[deprecated]] bool& dyn_overrideLocked();
+    [[deprecated("Use field access instead!")]] bool& dyn_overrideLocked();
     // Get instance field reference: public System.String overrideOwnerId
-    [[deprecated]] ::StringW& dyn_overrideOwnerId();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_overrideOwnerId();
     // Get instance field reference: private System.String _ownerIdPrefix
-    [[deprecated]] ::StringW& dyn__ownerIdPrefix();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__ownerIdPrefix();
     // Get instance field reference: public System.String roomName
-    [[deprecated]] ::StringW& dyn_roomName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_roomName();
+    // public System.Void .ctor()
+    // Offset: 0x6CC6C0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static RoomOwnershipSync* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::RoomOwnershipSync::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<RoomOwnershipSync*, creationType>()));
+    }
+    // static private System.Void .cctor()
+    // Offset: 0x6CC600
+    static void _cctor();
     // private System.Void Awake()
     // Offset: 0x6CB6A0
     void Awake();
@@ -210,29 +220,22 @@ namespace GlobalNamespace {
     // public System.Void SetOwnerIdPrefix(System.String ownerIdPrefix)
     // Offset: 0x2F6C80
     void SetOwnerIdPrefix(::StringW ownerIdPrefix);
-    // public System.Void .ctor()
-    // Offset: 0x6CC6C0
-    // Implemented from: Normal.Realtime.RealtimeComponent`1
-    // Base method: System.Void RealtimeComponent_1::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static RoomOwnershipSync* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::RoomOwnershipSync::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<RoomOwnershipSync*, creationType>()));
-    }
-    // static private System.Void .cctor()
-    // Offset: 0x6CC600
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.cctor()
-    static void _cctor();
   }; // RoomOwnershipSync
   // WARNING Not writing size check since size may be invalid!
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::RoomOwnershipSync::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
+// Writing MetadataGetter for method: GlobalNamespace::RoomOwnershipSync::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&GlobalNamespace::RoomOwnershipSync::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::RoomOwnershipSync*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
 // Writing MetadataGetter for method: GlobalNamespace::RoomOwnershipSync::Awake
 // Il2CppName: Awake
 template<>
@@ -396,17 +399,5 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
   static const MethodInfo* get() {
     static auto* ownerIdPrefix = &::il2cpp_utils::GetClassFromName("System", "String")->byval_arg;
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::RoomOwnershipSync*), "SetOwnerIdPrefix", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{ownerIdPrefix});
-  }
-};
-// Writing MetadataGetter for method: GlobalNamespace::RoomOwnershipSync::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
-// Writing MetadataGetter for method: GlobalNamespace::RoomOwnershipSync::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&GlobalNamespace::RoomOwnershipSync::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::RoomOwnershipSync*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };

@@ -450,7 +450,7 @@ namespace UnityEngine::UIElements::StyleSheets {
     // Set static field: static public UnityEngine.UIElements.StyleSheets.StylePropertyID Custom
     static void _set_Custom(::UnityEngine::UIElements::StyleSheets::StylePropertyID value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // UnityEngine.UIElements.StyleSheets.StylePropertyID
   #pragma pack(pop)
   static check_size<sizeof(StylePropertyID), 0 + sizeof(int)> __UnityEngine_UIElements_StyleSheets_StylePropertyIDSizeCheck;

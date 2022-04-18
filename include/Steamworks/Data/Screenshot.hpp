@@ -44,7 +44,7 @@ namespace Steamworks::Data {
       return Value;
     }
     // Get instance field reference: Steamworks.Data.ScreenshotHandle Value
-    [[deprecated]] ::Steamworks::Data::ScreenshotHandle& dyn_Value();
+    [[deprecated("Use field access instead!")]] ::Steamworks::Data::ScreenshotHandle& dyn_Value();
   }; // Steamworks.Data.Screenshot
   #pragma pack(pop)
   static check_size<sizeof(Screenshot), 0 + sizeof(::Steamworks::Data::ScreenshotHandle)> __Steamworks_Data_ScreenshotSizeCheck;

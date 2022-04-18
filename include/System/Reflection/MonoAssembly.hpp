@@ -15,16 +15,15 @@
 #include "beatsaber-hook/shared/utils/typedefs-string.hpp"
 // Completed includes
 // Begin forward declares
-// Forward declaring namespace: System::Reflection
-namespace System::Reflection {
-  // Skipping declaration: Assembly because it is already included!
-  // Forward declaring type: Module
-  class Module;
-}
 // Forward declaring namespace: System
 namespace System {
   // Forward declaring type: Type
   class Type;
+}
+// Forward declaring namespace: System::Reflection
+namespace System::Reflection {
+  // Forward declaring type: Module
+  class Module;
 }
 // Completed forward declares
 // Type namespace: System.Reflection

@@ -58,10 +58,17 @@ namespace UnityEngine::Networking {
       return m_Ptr;
     }
     // Get instance field reference: System.IntPtr m_Ptr
-    [[deprecated]] ::System::IntPtr& dyn_m_Ptr();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_m_Ptr();
     // public System.String get_text()
     // Offset: 0x29E8C0
     ::StringW get_text();
+    // System.Void .ctor()
+    // Offset: 0x1DD400
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static DownloadHandler* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Networking::DownloadHandler::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<DownloadHandler*, creationType>()));
+    }
     // private System.Void Release()
     // Offset: 0x63F960
     void Release();
@@ -83,15 +90,6 @@ namespace UnityEngine::Networking {
     // static System.Byte[] InternalGetByteArray(UnityEngine.Networking.DownloadHandler dh)
     // Offset: 0x63F460
     static ::ArrayW<uint8_t> InternalGetByteArray(::UnityEngine::Networking::DownloadHandler* dh);
-    // System.Void .ctor()
-    // Offset: 0x1DD400
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static DownloadHandler* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Networking::DownloadHandler::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<DownloadHandler*, creationType>()));
-    }
     // protected override System.Void Finalize()
     // Offset: 0x63F590
     // Implemented from: System.Object
@@ -111,6 +109,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Networking::DownloadHandler*), "get_text", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::Networking::DownloadHandler::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::Networking::DownloadHandler::Release
 // Il2CppName: Release
 template<>
@@ -168,10 +170,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::ArrayW<ui
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Networking::DownloadHandler*), "InternalGetByteArray", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{dh});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::Networking::DownloadHandler::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::Networking::DownloadHandler::Finalize
 // Il2CppName: Finalize
 template<>

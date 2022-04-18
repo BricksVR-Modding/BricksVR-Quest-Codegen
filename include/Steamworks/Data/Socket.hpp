@@ -43,7 +43,7 @@ namespace Steamworks::Data {
       return Id;
     }
     // Get instance field reference: System.UInt32 Id
-    [[deprecated]] uint& dyn_Id();
+    [[deprecated("Use field access instead!")]] uint& dyn_Id();
     // public override System.String ToString()
     // Offset: 0x45A830
     // Implemented from: System.ValueType

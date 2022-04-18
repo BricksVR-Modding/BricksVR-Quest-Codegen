@@ -76,9 +76,9 @@ namespace UnityEngine::XR::Interaction::Toolkit::UI {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.GameObject> <hoverTargets>k__BackingField
-      [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::GameObject*>*& dyn_$hoverTargets$k__BackingField();
+      [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::GameObject*>*& dyn_$hoverTargets$k__BackingField();
       // Get instance field reference: private UnityEngine.GameObject <pointerTarget>k__BackingField
-      [[deprecated]] ::UnityEngine::GameObject*& dyn_$pointerTarget$k__BackingField();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_$pointerTarget$k__BackingField();
       // public System.Collections.Generic.List`1<UnityEngine.GameObject> get_hoverTargets()
       // Offset: 0x2BAE20
       ::System::Collections::Generic::List_1<::UnityEngine::GameObject*>* get_hoverTargets();
@@ -169,25 +169,25 @@ namespace UnityEngine::XR::Interaction::Toolkit::UI {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private System.Int32 <pointerId>k__BackingField
-    [[deprecated]] int& dyn_$pointerId$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$pointerId$k__BackingField();
     // Get instance field reference: private System.Boolean <changedThisFrame>k__BackingField
-    [[deprecated]] bool& dyn_$changedThisFrame$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$changedThisFrame$k__BackingField();
     // Get instance field reference: private UnityEngine.Vector2 <deltaPosition>k__BackingField
-    [[deprecated]] ::UnityEngine::Vector2& dyn_$deltaPosition$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn_$deltaPosition$k__BackingField();
     // Get instance field reference: private UnityEngine.Vector2 <scrollDelta>k__BackingField
-    [[deprecated]] ::UnityEngine::Vector2& dyn_$scrollDelta$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn_$scrollDelta$k__BackingField();
     // Get instance field reference: private UnityEngine.Vector2 m_Position
-    [[deprecated]] ::UnityEngine::Vector2& dyn_m_Position();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn_m_Position();
     // Get instance field reference: private UnityEngine.Vector2 m_ScrollPosition
-    [[deprecated]] ::UnityEngine::Vector2& dyn_m_ScrollPosition();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn_m_ScrollPosition();
     // Get instance field reference: private UnityEngine.XR.Interaction.Toolkit.UI.MouseButtonModel m_LeftButton
-    [[deprecated]] ::UnityEngine::XR::Interaction::Toolkit::UI::MouseButtonModel& dyn_m_LeftButton();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::Interaction::Toolkit::UI::MouseButtonModel& dyn_m_LeftButton();
     // Get instance field reference: private UnityEngine.XR.Interaction.Toolkit.UI.MouseButtonModel m_RightButton
-    [[deprecated]] ::UnityEngine::XR::Interaction::Toolkit::UI::MouseButtonModel& dyn_m_RightButton();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::Interaction::Toolkit::UI::MouseButtonModel& dyn_m_RightButton();
     // Get instance field reference: private UnityEngine.XR.Interaction.Toolkit.UI.MouseButtonModel m_MiddleButton
-    [[deprecated]] ::UnityEngine::XR::Interaction::Toolkit::UI::MouseButtonModel& dyn_m_MiddleButton();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::Interaction::Toolkit::UI::MouseButtonModel& dyn_m_MiddleButton();
     // Get instance field reference: private UnityEngine.XR.Interaction.Toolkit.UI.MouseModel/UnityEngine.XR.Interaction.Toolkit.UI.InternalData m_InternalData
-    [[deprecated]] ::UnityEngine::XR::Interaction::Toolkit::UI::MouseModel::InternalData& dyn_m_InternalData();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::Interaction::Toolkit::UI::MouseModel::InternalData& dyn_m_InternalData();
     // public System.Int32 get_pointerId()
     // Offset: 0x269910
     int get_pointerId();

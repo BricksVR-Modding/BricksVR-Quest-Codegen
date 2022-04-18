@@ -456,111 +456,118 @@ namespace GlobalNamespace {
     // Set static field: static private TutorialManager _instance
     static void _set__instance(::GlobalNamespace::TutorialManager* value);
     // Get instance field reference: public UnityEngine.GameObject playerControllers
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_playerControllers();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_playerControllers();
     // Get instance field reference: public UnityEngine.GameObject infoBoard
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_infoBoard();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_infoBoard();
     // Get instance field reference: public UnityEngine.GameObject tutorialEnvContents
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_tutorialEnvContents();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_tutorialEnvContents();
     // Get instance field reference: public Normal.Realtime.Realtime realtime
-    [[deprecated]] ::Normal::Realtime::Realtime*& dyn_realtime();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::Realtime*& dyn_realtime();
     // Get instance field reference: public UnityEngine.XR.Interaction.Toolkit.SnapTurnProvider snapTurnProvider
-    [[deprecated]] ::UnityEngine::XR::Interaction::Toolkit::SnapTurnProvider*& dyn_snapTurnProvider();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::Interaction::Toolkit::SnapTurnProvider*& dyn_snapTurnProvider();
     // Get instance field reference: public SmoothTurn smoothTurn
-    [[deprecated]] ::GlobalNamespace::SmoothTurn*& dyn_smoothTurn();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::SmoothTurn*& dyn_smoothTurn();
     // Get instance field reference: public BrickPickerManager brickPickerManager
-    [[deprecated]] ::GlobalNamespace::BrickPickerManager*& dyn_brickPickerManager();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::BrickPickerManager*& dyn_brickPickerManager();
     // Get instance field reference: public UnityEngine.AudioSource ambientMusic
-    [[deprecated]] ::UnityEngine::AudioSource*& dyn_ambientMusic();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AudioSource*& dyn_ambientMusic();
     // Get instance field reference: private System.Single _ambientMusicMaxVolume
-    [[deprecated]] float& dyn__ambientMusicMaxVolume();
+    [[deprecated("Use field access instead!")]] float& dyn__ambientMusicMaxVolume();
     // Get instance field reference: public JoystickLocomotion joystickLocomotion
-    [[deprecated]] ::GlobalNamespace::JoystickLocomotion*& dyn_joystickLocomotion();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::JoystickLocomotion*& dyn_joystickLocomotion();
     // Get instance field reference: public UnityEngine.Renderer loadingObjectRenderer
-    [[deprecated]] ::UnityEngine::Renderer*& dyn_loadingObjectRenderer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Renderer*& dyn_loadingObjectRenderer();
     // Get instance field reference: public HandBrickSpawner leftHandBrickSpawner
-    [[deprecated]] ::GlobalNamespace::HandBrickSpawner*& dyn_leftHandBrickSpawner();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::HandBrickSpawner*& dyn_leftHandBrickSpawner();
     // Get instance field reference: public HandBrickSpawner rightHandBrickSpawner
-    [[deprecated]] ::GlobalNamespace::HandBrickSpawner*& dyn_rightHandBrickSpawner();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::HandBrickSpawner*& dyn_rightHandBrickSpawner();
     // Get instance field reference: public UnityEngine.GameObject menuLeftHand
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_menuLeftHand();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_menuLeftHand();
     // Get instance field reference: public UnityEngine.GameObject menuRightHand
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_menuRightHand();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_menuRightHand();
     // Get instance field reference: public UnityEngine.GameObject teleporterLeftHand
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_teleporterLeftHand();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_teleporterLeftHand();
     // Get instance field reference: public UnityEngine.GameObject teleporterRightHand
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_teleporterRightHand();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_teleporterRightHand();
     // Get instance field reference: public ControllerButtonInput buttonInput
-    [[deprecated]] ::GlobalNamespace::ControllerButtonInput*& dyn_buttonInput();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::ControllerButtonInput*& dyn_buttonInput();
     // Get instance field reference: public UnityEngine.AudioSource canvasAudioSource
-    [[deprecated]] ::UnityEngine::AudioSource*& dyn_canvasAudioSource();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AudioSource*& dyn_canvasAudioSource();
     // Get instance field reference: public UnityEngine.XR.Interaction.Toolkit.XRRig xrRig
-    [[deprecated]] ::UnityEngine::XR::Interaction::Toolkit::XRRig*& dyn_xrRig();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::Interaction::Toolkit::XRRig*& dyn_xrRig();
     // Get instance field reference: public PalletteBrickCollider palletteBrickCollider
-    [[deprecated]] ::GlobalNamespace::PalletteBrickCollider*& dyn_palletteBrickCollider();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::PalletteBrickCollider*& dyn_palletteBrickCollider();
     // Get instance field reference: public UnityEngine.UI.Button roomMenuButton
-    [[deprecated]] ::UnityEngine::UI::Button*& dyn_roomMenuButton();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Button*& dyn_roomMenuButton();
     // Get instance field reference: private UnityEngine.GameObject firstBrick
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_firstBrick();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_firstBrick();
     // Get instance field reference: private UnityEngine.GameObject secondBrick
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_secondBrick();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_secondBrick();
     // Get instance field reference: public UnityEngine.GameObject tutorialSpawnPoint
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_tutorialSpawnPoint();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_tutorialSpawnPoint();
     // Get instance field reference: public UnityEngine.GameObject firstBrickSpawnPoint
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_firstBrickSpawnPoint();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_firstBrickSpawnPoint();
     // Get instance field reference: public UnityEngine.GameObject secondBrickSpawnPoint
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_secondBrickSpawnPoint();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_secondBrickSpawnPoint();
     // Get instance field reference: public TMPro.TextMeshProUGUI firstTextBox
-    [[deprecated]] ::TMPro::TextMeshProUGUI*& dyn_firstTextBox();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshProUGUI*& dyn_firstTextBox();
     // Get instance field reference: public TMPro.TextMeshProUGUI secondTextBox
-    [[deprecated]] ::TMPro::TextMeshProUGUI*& dyn_secondTextBox();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshProUGUI*& dyn_secondTextBox();
     // Get instance field reference: public TMPro.TextMeshProUGUI thirdTextBox
-    [[deprecated]] ::TMPro::TextMeshProUGUI*& dyn_thirdTextBox();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshProUGUI*& dyn_thirdTextBox();
     // Get instance field reference: public TMPro.TextMeshProUGUI fourthTextBox
-    [[deprecated]] ::TMPro::TextMeshProUGUI*& dyn_fourthTextBox();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshProUGUI*& dyn_fourthTextBox();
     // Get instance field reference: public TMPro.TextMeshProUGUI fifthTextBox
-    [[deprecated]] ::TMPro::TextMeshProUGUI*& dyn_fifthTextBox();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshProUGUI*& dyn_fifthTextBox();
     // Get instance field reference: public TMPro.TextMeshProUGUI sixthTextBox
-    [[deprecated]] ::TMPro::TextMeshProUGUI*& dyn_sixthTextBox();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshProUGUI*& dyn_sixthTextBox();
     // Get instance field reference: public TMPro.TextMeshProUGUI seventhTextBox
-    [[deprecated]] ::TMPro::TextMeshProUGUI*& dyn_seventhTextBox();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshProUGUI*& dyn_seventhTextBox();
     // Get instance field reference: public TMPro.TextMeshProUGUI seventhAndAHalfthTextBox
-    [[deprecated]] ::TMPro::TextMeshProUGUI*& dyn_seventhAndAHalfthTextBox();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshProUGUI*& dyn_seventhAndAHalfthTextBox();
     // Get instance field reference: public TMPro.TextMeshProUGUI eighthTextBox
-    [[deprecated]] ::TMPro::TextMeshProUGUI*& dyn_eighthTextBox();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshProUGUI*& dyn_eighthTextBox();
     // Get instance field reference: public TMPro.TextMeshProUGUI ninthTextBox
-    [[deprecated]] ::TMPro::TextMeshProUGUI*& dyn_ninthTextBox();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshProUGUI*& dyn_ninthTextBox();
     // Get instance field reference: public TMPro.TextMeshProUGUI lastTextBox
-    [[deprecated]] ::TMPro::TextMeshProUGUI*& dyn_lastTextBox();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshProUGUI*& dyn_lastTextBox();
     // Get instance field reference: private System.Boolean _startedTutorial
-    [[deprecated]] bool& dyn__startedTutorial();
+    [[deprecated("Use field access instead!")]] bool& dyn__startedTutorial();
     // Get instance field reference: private System.Boolean _advancing
-    [[deprecated]] bool& dyn__advancing();
+    [[deprecated("Use field access instead!")]] bool& dyn__advancing();
     // Get instance field reference: private System.Boolean _connectedToNormcore
-    [[deprecated]] bool& dyn__connectedToNormcore();
+    [[deprecated("Use field access instead!")]] bool& dyn__connectedToNormcore();
     // Get instance field reference: private System.Boolean _didConnectToRoom
-    [[deprecated]] bool& dyn__didConnectToRoom();
+    [[deprecated("Use field access instead!")]] bool& dyn__didConnectToRoom();
     // Get instance field reference: private System.Boolean _didDisconnectFromRoom
-    [[deprecated]] bool& dyn__didDisconnectFromRoom();
+    [[deprecated("Use field access instead!")]] bool& dyn__didDisconnectFromRoom();
     // Get instance field reference: private System.Int32 _initialLateralMovementIndex
-    [[deprecated]] int& dyn__initialLateralMovementIndex();
+    [[deprecated("Use field access instead!")]] int& dyn__initialLateralMovementIndex();
     // Get instance field reference: private System.Int32 _initialVerticalMovementIndex
-    [[deprecated]] int& dyn__initialVerticalMovementIndex();
+    [[deprecated("Use field access instead!")]] int& dyn__initialVerticalMovementIndex();
     // Get instance field reference: private System.Int32 _initialSnapTurnIndex
-    [[deprecated]] int& dyn__initialSnapTurnIndex();
+    [[deprecated("Use field access instead!")]] int& dyn__initialSnapTurnIndex();
     // Get instance field reference: private System.Int32 _initialBrickMenuIndex
-    [[deprecated]] int& dyn__initialBrickMenuIndex();
+    [[deprecated("Use field access instead!")]] int& dyn__initialBrickMenuIndex();
     // Get instance field reference: private System.Int32 _numberOfBricks
-    [[deprecated]] int& dyn__numberOfBricks();
+    [[deprecated("Use field access instead!")]] int& dyn__numberOfBricks();
     // Get instance field reference: private System.Int32 _initialHandBrickSpawnerIndex
-    [[deprecated]] int& dyn__initialHandBrickSpawnerIndex();
+    [[deprecated("Use field access instead!")]] int& dyn__initialHandBrickSpawnerIndex();
     // Get instance field reference: private System.Int32 _initialPalletteBrickColliderIndex
-    [[deprecated]] int& dyn__initialPalletteBrickColliderIndex();
+    [[deprecated("Use field access instead!")]] int& dyn__initialPalletteBrickColliderIndex();
     // Get instance field reference: private UnityEngine.Coroutine _startTutorialCoroutine
-    [[deprecated]] ::UnityEngine::Coroutine*& dyn__startTutorialCoroutine();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Coroutine*& dyn__startTutorialCoroutine();
     // Get instance field reference: private System.Action _updateAction
-    [[deprecated]] ::System::Action*& dyn__updateAction();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn__updateAction();
     // Get instance field reference: public MovementVignette movementVignette
-    [[deprecated]] ::GlobalNamespace::MovementVignette*& dyn_movementVignette();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::MovementVignette*& dyn_movementVignette();
+    // public System.Void .ctor()
+    // Offset: 0x1DDE30
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static TutorialManager* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::TutorialManager::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<TutorialManager*, creationType>()));
+    }
     // static public TutorialManager GetInstance()
     // Offset: 0x6DA270
     static ::GlobalNamespace::TutorialManager* GetInstance();
@@ -666,25 +673,16 @@ namespace GlobalNamespace {
     // private System.Void <MovePlayerToTutorial>b__60_0()
     // Offset: 0x6DAAB0
     void $MovePlayerToTutorial$b__60_0();
-    // public System.Void .ctor()
-    // Offset: 0x1DDE30
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static TutorialManager* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::TutorialManager::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<TutorialManager*, creationType>()));
-    }
   }; // TutorialManager
   #pragma pack(pop)
   static check_size<sizeof(TutorialManager), 384 + sizeof(::GlobalNamespace::MovementVignette*)> __GlobalNamespace_TutorialManagerSizeCheck;
   static_assert(sizeof(TutorialManager) == 0x188);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::TutorialManager::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::TutorialManager::GetInstance
 // Il2CppName: GetInstance
 template<>
@@ -973,7 +971,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::TutorialManager*), "<MovePlayerToTutorial>b__60_0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::TutorialManager::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

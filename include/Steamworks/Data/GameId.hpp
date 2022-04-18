@@ -43,7 +43,7 @@ namespace Steamworks::Data {
       return Value;
     }
     // Get instance field reference: public System.UInt64 Value
-    [[deprecated]] uint64_t& dyn_Value();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_Value();
   }; // Steamworks.Data.GameId
   #pragma pack(pop)
   static check_size<sizeof(GameId), 0 + sizeof(uint64_t)> __Steamworks_Data_GameIdSizeCheck;

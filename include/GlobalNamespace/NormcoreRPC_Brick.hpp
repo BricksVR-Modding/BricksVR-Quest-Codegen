@@ -87,27 +87,25 @@ namespace GlobalNamespace {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: public System.String uuid
-    [[deprecated]] ::StringW& dyn_uuid();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_uuid();
     // Get instance field reference: public System.Int32 matId
-    [[deprecated]] int& dyn_matId();
+    [[deprecated("Use field access instead!")]] int& dyn_matId();
     // Get instance field reference: public System.Int32 color
-    [[deprecated]] int& dyn_color();
+    [[deprecated("Use field access instead!")]] int& dyn_color();
     // Get instance field reference: public System.String type
-    [[deprecated]] ::StringW& dyn_type();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_type();
     // Get instance field reference: public UnityEngine.Vector3 pos
-    [[deprecated]] ::UnityEngine::Vector3& dyn_pos();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_pos();
     // Get instance field reference: public UnityEngine.Quaternion rot
-    [[deprecated]] ::UnityEngine::Quaternion& dyn_rot();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Quaternion& dyn_rot();
     // Get instance field reference: public System.Boolean usingNewColor
-    [[deprecated]] bool& dyn_usingNewColor();
+    [[deprecated("Use field access instead!")]] bool& dyn_usingNewColor();
     // Get instance field reference: public System.Int32 headClientId
-    [[deprecated]] int& dyn_headClientId();
+    [[deprecated("Use field access instead!")]] int& dyn_headClientId();
     // Get instance field reference: public System.Boolean usingHeadStuff
-    [[deprecated]] bool& dyn_usingHeadStuff();
+    [[deprecated("Use field access instead!")]] bool& dyn_usingHeadStuff();
     // public System.Void .ctor()
     // Offset: 0x1DD400
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static NormcoreRPC::Brick* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::NormcoreRPC::Brick::.ctor");

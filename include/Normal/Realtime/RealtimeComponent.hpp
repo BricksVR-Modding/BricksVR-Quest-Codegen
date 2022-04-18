@@ -92,15 +92,15 @@ namespace Normal::Realtime {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private Normal.Realtime.RealtimeView <realtimeView>k__BackingField
-    [[deprecated]] ::Normal::Realtime::RealtimeView*& dyn_$realtimeView$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::RealtimeView*& dyn_$realtimeView$k__BackingField();
     // Get instance field reference: private System.Reflection.MethodInfo _createModelMethod
-    [[deprecated]] ::System::Reflection::MethodInfo*& dyn__createModelMethod();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::MethodInfo*& dyn__createModelMethod();
     // Get instance field reference: private System.Boolean _isCreateModelMethodCached
-    [[deprecated]] bool& dyn__isCreateModelMethodCached();
+    [[deprecated("Use field access instead!")]] bool& dyn__isCreateModelMethodCached();
     // Get instance field reference: private System.Reflection.PropertyInfo _modelProperty
-    [[deprecated]] ::System::Reflection::PropertyInfo*& dyn__modelProperty();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::PropertyInfo*& dyn__modelProperty();
     // Get instance field reference: private System.Boolean _isModelPropertyCached
-    [[deprecated]] bool& dyn__isModelPropertyCached();
+    [[deprecated("Use field access instead!")]] bool& dyn__isModelPropertyCached();
     // public Normal.Realtime.RealtimeView get_realtimeView()
     // Offset: 0x1E1520
     ::Normal::Realtime::RealtimeView* get_realtimeView();
@@ -119,6 +119,13 @@ namespace Normal::Realtime {
     // private System.Reflection.PropertyInfo get_cachedModelProperty()
     // Offset: 0x8BF950
     ::System::Reflection::PropertyInfo* get_cachedModelProperty();
+    // public System.Void .ctor()
+    // Offset: 0x1DDE30
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static RealtimeComponent* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::RealtimeComponent::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<RealtimeComponent*, creationType>()));
+    }
     // private Normal.Realtime.RealtimeModel Normal.Realtime.IConfigurableComponent.CreateModel()
     // Offset: 0x8BF470
     ::Normal::Realtime::RealtimeModel* Normal_Realtime_IConfigurableComponent_CreateModel();
@@ -134,19 +141,6 @@ namespace Normal::Realtime {
     // private System.Void Normal.Realtime.IConfigurableComponent.SetView(Normal.Realtime.RealtimeView view)
     // Offset: 0x1E4910
     void Normal_Realtime_IConfigurableComponent_SetView(::Normal::Realtime::RealtimeView* view);
-    // public System.Void .ctor()
-    // Offset: 0x1DDE30
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static RealtimeComponent* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::RealtimeComponent::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<RealtimeComponent*, creationType>()));
-    }
   }; // Normal.Realtime.RealtimeComponent
   #pragma pack(pop)
   static check_size<sizeof(RealtimeComponent), 56 + sizeof(bool)> __Normal_Realtime_RealtimeComponentSizeCheck;
@@ -202,6 +196,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::R
     return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::RealtimeComponent*), "get_cachedModelProperty", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: Normal::Realtime::RealtimeComponent::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Normal::Realtime::RealtimeComponent::Normal_Realtime_IConfigurableComponent_CreateModel
 // Il2CppName: Normal.Realtime.IConfigurableComponent.CreateModel
 template<>
@@ -244,7 +242,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Norma
     return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::RealtimeComponent*), "Normal.Realtime.IConfigurableComponent.SetView", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{view});
   }
 };
-// Writing MetadataGetter for method: Normal::Realtime::RealtimeComponent::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -83,15 +83,15 @@ namespace Steamworks::Data {
     // Set static field: static public System.Int32 _datasize
     static void _set__datasize(int value);
     // Get instance field reference: System.Byte[] CurrentFile
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_CurrentFile();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_CurrentFile();
     // Get instance field reference: Steamworks.AppId AppID
-    [[deprecated]] ::Steamworks::AppId& dyn_AppID();
+    [[deprecated("Use field access instead!")]] ::Steamworks::AppId& dyn_AppID();
     // Get instance field reference: System.UInt32 BytesTransferredThisChunk
-    [[deprecated]] uint& dyn_BytesTransferredThisChunk();
+    [[deprecated("Use field access instead!")]] uint& dyn_BytesTransferredThisChunk();
     // Get instance field reference: System.Double DAppPercentComplete
-    [[deprecated]] double& dyn_DAppPercentComplete();
+    [[deprecated("Use field access instead!")]] double& dyn_DAppPercentComplete();
     // Get instance field reference: System.Boolean Uploading
-    [[deprecated]] bool& dyn_Uploading();
+    [[deprecated("Use field access instead!")]] bool& dyn_Uploading();
     // public Steamworks.CallbackType get_CallbackType()
     // Offset: 0x4646A0
     ::Steamworks::CallbackType get_CallbackType();

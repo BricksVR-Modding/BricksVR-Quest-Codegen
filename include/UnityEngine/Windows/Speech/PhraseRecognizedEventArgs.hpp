@@ -75,15 +75,15 @@ namespace UnityEngine::Windows::Speech {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public readonly UnityEngine.Windows.Speech.ConfidenceLevel confidence
-    [[deprecated]] ::UnityEngine::Windows::Speech::ConfidenceLevel& dyn_confidence();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Windows::Speech::ConfidenceLevel& dyn_confidence();
     // Get instance field reference: public readonly UnityEngine.Windows.Speech.SemanticMeaning[] semanticMeanings
-    [[deprecated]] ::ArrayW<::UnityEngine::Windows::Speech::SemanticMeaning>& dyn_semanticMeanings();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Windows::Speech::SemanticMeaning>& dyn_semanticMeanings();
     // Get instance field reference: public readonly System.String text
-    [[deprecated]] ::StringW& dyn_text();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_text();
     // Get instance field reference: public readonly System.DateTime phraseStartTime
-    [[deprecated]] ::System::DateTime& dyn_phraseStartTime();
+    [[deprecated("Use field access instead!")]] ::System::DateTime& dyn_phraseStartTime();
     // Get instance field reference: public readonly System.TimeSpan phraseDuration
-    [[deprecated]] ::System::TimeSpan& dyn_phraseDuration();
+    [[deprecated("Use field access instead!")]] ::System::TimeSpan& dyn_phraseDuration();
     // System.Void .ctor(System.String text, UnityEngine.Windows.Speech.ConfidenceLevel confidence, UnityEngine.Windows.Speech.SemanticMeaning[] semanticMeanings, System.DateTime phraseStartTime, System.TimeSpan phraseDuration)
     // Offset: 0xA3A8B0
     PhraseRecognizedEventArgs(::StringW text, ::UnityEngine::Windows::Speech::ConfidenceLevel confidence, ::ArrayW<::UnityEngine::Windows::Speech::SemanticMeaning> semanticMeanings, ::System::DateTime phraseStartTime, ::System::TimeSpan phraseDuration);

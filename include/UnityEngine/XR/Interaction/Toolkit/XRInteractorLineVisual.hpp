@@ -273,65 +273,65 @@ namespace UnityEngine::XR::Interaction::Toolkit {
     // Set static field: static private System.Single k_MaxLineWidth
     static void _set_k_MaxLineWidth(float value);
     // Get instance field reference: private System.Single m_LineWidth
-    [[deprecated]] float& dyn_m_LineWidth();
+    [[deprecated("Use field access instead!")]] float& dyn_m_LineWidth();
     // Get instance field reference: private System.Boolean m_OverrideInteractorLineLength
-    [[deprecated]] bool& dyn_m_OverrideInteractorLineLength();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_OverrideInteractorLineLength();
     // Get instance field reference: private System.Single m_LineLength
-    [[deprecated]] float& dyn_m_LineLength();
+    [[deprecated("Use field access instead!")]] float& dyn_m_LineLength();
     // Get instance field reference: private UnityEngine.AnimationCurve m_WidthCurve
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn_m_WidthCurve();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn_m_WidthCurve();
     // Get instance field reference: private UnityEngine.Gradient m_ValidColorGradient
-    [[deprecated]] ::UnityEngine::Gradient*& dyn_m_ValidColorGradient();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Gradient*& dyn_m_ValidColorGradient();
     // Get instance field reference: private UnityEngine.Gradient m_InvalidColorGradient
-    [[deprecated]] ::UnityEngine::Gradient*& dyn_m_InvalidColorGradient();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Gradient*& dyn_m_InvalidColorGradient();
     // Get instance field reference: private System.Boolean m_SmoothMovement
-    [[deprecated]] bool& dyn_m_SmoothMovement();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_SmoothMovement();
     // Get instance field reference: private System.Single m_FollowTightness
-    [[deprecated]] float& dyn_m_FollowTightness();
+    [[deprecated("Use field access instead!")]] float& dyn_m_FollowTightness();
     // Get instance field reference: private System.Single m_SnapThresholdDistance
-    [[deprecated]] float& dyn_m_SnapThresholdDistance();
+    [[deprecated("Use field access instead!")]] float& dyn_m_SnapThresholdDistance();
     // Get instance field reference: private UnityEngine.GameObject m_Reticle
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_m_Reticle();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_m_Reticle();
     // Get instance field reference: private System.Boolean m_StopLineAtFirstRaycastHit
-    [[deprecated]] bool& dyn_m_StopLineAtFirstRaycastHit();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_StopLineAtFirstRaycastHit();
     // Get instance field reference: private UnityEngine.Vector3 m_ReticlePos
-    [[deprecated]] ::UnityEngine::Vector3& dyn_m_ReticlePos();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_m_ReticlePos();
     // Get instance field reference: private UnityEngine.Vector3 m_ReticleNormal
-    [[deprecated]] ::UnityEngine::Vector3& dyn_m_ReticleNormal();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_m_ReticleNormal();
     // Get instance field reference: private System.Int32 m_EndPositionInLine
-    [[deprecated]] int& dyn_m_EndPositionInLine();
+    [[deprecated("Use field access instead!")]] int& dyn_m_EndPositionInLine();
     // Get instance field reference: private System.Boolean m_SnapCurve
-    [[deprecated]] bool& dyn_m_SnapCurve();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_SnapCurve();
     // Get instance field reference: private System.Boolean m_PerformSetup
-    [[deprecated]] bool& dyn_m_PerformSetup();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_PerformSetup();
     // Get instance field reference: private System.Boolean m_PreviousHit
-    [[deprecated]] bool& dyn_m_PreviousHit();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_PreviousHit();
     // Get instance field reference: private System.Boolean m_CurrentHit
-    [[deprecated]] bool& dyn_m_CurrentHit();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_CurrentHit();
     // Get instance field reference: private UnityEngine.GameObject m_ReticleToUse
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_m_ReticleToUse();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_m_ReticleToUse();
     // Get instance field reference: private UnityEngine.LineRenderer m_LineRenderer
-    [[deprecated]] ::UnityEngine::LineRenderer*& dyn_m_LineRenderer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::LineRenderer*& dyn_m_LineRenderer();
     // Get instance field reference: private UnityEngine.XR.Interaction.Toolkit.ILineRenderable m_LineRenderable
-    [[deprecated]] ::UnityEngine::XR::Interaction::Toolkit::ILineRenderable*& dyn_m_LineRenderable();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::Interaction::Toolkit::ILineRenderable*& dyn_m_LineRenderable();
     // Get instance field reference: private UnityEngine.Vector3[] m_TargetPoints
-    [[deprecated]] ::ArrayW<::UnityEngine::Vector3>& dyn_m_TargetPoints();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Vector3>& dyn_m_TargetPoints();
     // Get instance field reference: private System.Int32 m_NoTargetPoints
-    [[deprecated]] int& dyn_m_NoTargetPoints();
+    [[deprecated("Use field access instead!")]] int& dyn_m_NoTargetPoints();
     // Get instance field reference: private UnityEngine.Vector3[] m_RenderPoints
-    [[deprecated]] ::ArrayW<::UnityEngine::Vector3>& dyn_m_RenderPoints();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Vector3>& dyn_m_RenderPoints();
     // Get instance field reference: private System.Int32 m_NoRenderPoints
-    [[deprecated]] int& dyn_m_NoRenderPoints();
+    [[deprecated("Use field access instead!")]] int& dyn_m_NoRenderPoints();
     // Get instance field reference: private UnityEngine.Vector3[] m_PreviousRenderPoints
-    [[deprecated]] ::ArrayW<::UnityEngine::Vector3>& dyn_m_PreviousRenderPoints();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Vector3>& dyn_m_PreviousRenderPoints();
     // Get instance field reference: private System.Int32 m_NoPreviousRenderPoints
-    [[deprecated]] int& dyn_m_NoPreviousRenderPoints();
+    [[deprecated("Use field access instead!")]] int& dyn_m_NoPreviousRenderPoints();
     // Get instance field reference: private UnityEngine.Vector3[] m_ClearArray
-    [[deprecated]] ::ArrayW<::UnityEngine::Vector3>& dyn_m_ClearArray();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Vector3>& dyn_m_ClearArray();
     // Get instance field reference: private UnityEngine.GameObject m_CustomReticle
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_m_CustomReticle();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_m_CustomReticle();
     // Get instance field reference: private System.Boolean m_CustomReticleAttached
-    [[deprecated]] bool& dyn_m_CustomReticleAttached();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_CustomReticleAttached();
     // public System.Single get_lineWidth()
     // Offset: 0x5FF290
     float get_lineWidth();
@@ -398,6 +398,13 @@ namespace UnityEngine::XR::Interaction::Toolkit {
     // public System.Void set_stopLineAtFirstRaycastHit(System.Boolean value)
     // Offset: 0x5FF2C0
     void set_stopLineAtFirstRaycastHit(bool value);
+    // public System.Void .ctor()
+    // Offset: 0x5FED70
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static XRInteractorLineVisual* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::XR::Interaction::Toolkit::XRInteractorLineVisual::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<XRInteractorLineVisual*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0x5FD970
     void Awake();
@@ -434,19 +441,6 @@ namespace UnityEngine::XR::Interaction::Toolkit {
     // public System.Boolean RemoveCustomReticle()
     // Offset: 0x5FDBF0
     bool RemoveCustomReticle();
-    // public System.Void .ctor()
-    // Offset: 0x5FED70
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static XRInteractorLineVisual* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::XR::Interaction::Toolkit::XRInteractorLineVisual::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<XRInteractorLineVisual*, creationType>()));
-    }
   }; // UnityEngine.XR.Interaction.Toolkit.XRInteractorLineVisual
   #pragma pack(pop)
   static check_size<sizeof(XRInteractorLineVisual), 216 + sizeof(bool)> __UnityEngine_XR_Interaction_Toolkit_XRInteractorLineVisualSizeCheck;
@@ -640,6 +634,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::XR::Interaction::Toolkit::XRInteractorLineVisual*), "set_stopLineAtFirstRaycastHit", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::XR::Interaction::Toolkit::XRInteractorLineVisual::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::XR::Interaction::Toolkit::XRInteractorLineVisual::Awake
 // Il2CppName: Awake
 template<>
@@ -737,7 +735,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::XR::Interaction::Toolkit::XRInteractorLineVisual*), "RemoveCustomReticle", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::XR::Interaction::Toolkit::XRInteractorLineVisual::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

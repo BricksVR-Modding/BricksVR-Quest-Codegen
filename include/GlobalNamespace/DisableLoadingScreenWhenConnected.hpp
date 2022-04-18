@@ -61,34 +61,32 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public Normal.Realtime.Realtime realtime
-    [[deprecated]] ::Normal::Realtime::Realtime*& dyn_realtime();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::Realtime*& dyn_realtime();
     // Get instance field reference: public UnityEngine.GameObject canvas
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_canvas();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_canvas();
+    // public System.Void .ctor()
+    // Offset: 0x1DDE30
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static DisableLoadingScreenWhenConnected* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::DisableLoadingScreenWhenConnected::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<DisableLoadingScreenWhenConnected*, creationType>()));
+    }
     // private System.Void Start()
     // Offset: 0x6B2D10
     void Start();
     // private System.Void HideLoadingScreen(Normal.Realtime.RealtimeAvatarManager avatarManager, Normal.Realtime.RealtimeAvatar avatar, System.Boolean isLocalAvatar)
     // Offset: 0x6B2CE0
     void HideLoadingScreen(::Normal::Realtime::RealtimeAvatarManager* avatarManager, ::Normal::Realtime::RealtimeAvatar* avatar, bool isLocalAvatar);
-    // public System.Void .ctor()
-    // Offset: 0x1DDE30
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static DisableLoadingScreenWhenConnected* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::DisableLoadingScreenWhenConnected::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<DisableLoadingScreenWhenConnected*, creationType>()));
-    }
   }; // DisableLoadingScreenWhenConnected
   #pragma pack(pop)
   static check_size<sizeof(DisableLoadingScreenWhenConnected), 32 + sizeof(::UnityEngine::GameObject*)> __GlobalNamespace_DisableLoadingScreenWhenConnectedSizeCheck;
   static_assert(sizeof(DisableLoadingScreenWhenConnected) == 0x28);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::DisableLoadingScreenWhenConnected::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::DisableLoadingScreenWhenConnected::Start
 // Il2CppName: Start
 template<>
@@ -108,7 +106,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::DisableLoadingScreenWhenConnected*), "HideLoadingScreen", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{avatarManager, avatar, isLocalAvatar});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::DisableLoadingScreenWhenConnected::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

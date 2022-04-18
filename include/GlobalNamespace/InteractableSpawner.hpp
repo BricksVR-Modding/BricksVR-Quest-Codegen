@@ -95,17 +95,20 @@ namespace GlobalNamespace {
     // Set static field: static private readonly System.Int32 Color
     static void _set_Color(int value);
     // Get instance field reference: public UnityEngine.XR.Interaction.Toolkit.XRInteractionManager interactionManager
-    [[deprecated]] ::UnityEngine::XR::Interaction::Toolkit::XRInteractionManager*& dyn_interactionManager();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::Interaction::Toolkit::XRInteractionManager*& dyn_interactionManager();
     // Get instance field reference: public System.String brickPrefabName
-    [[deprecated]] ::StringW& dyn_brickPrefabName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_brickPrefabName();
     // Get instance field reference: public System.Int32 materialId
-    [[deprecated]] int& dyn_materialId();
+    [[deprecated("Use field access instead!")]] int& dyn_materialId();
     // Get instance field reference: public UnityEngine.Material inGameMaterial
-    [[deprecated]] ::UnityEngine::Material*& dyn_inGameMaterial();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn_inGameMaterial();
     // Get instance field reference: public UnityEngine.GameObject model
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_model();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_model();
     // Get instance field reference: private UnityEngine.Vector3 _brickRotation
-    [[deprecated]] ::UnityEngine::Vector3& dyn__brickRotation();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__brickRotation();
+    // static private System.Void .cctor()
+    // Offset: 0x6BB1A0
+    static void _cctor();
     // private System.Void Start()
     // Offset: 0x6BAFF0
     void Start();
@@ -116,21 +119,11 @@ namespace GlobalNamespace {
     // Offset: 0x4D3750
     // Implemented from: QuickInteractable
     // Base method: System.Void QuickInteractable::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static InteractableSpawner* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::InteractableSpawner::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<InteractableSpawner*, creationType>()));
     }
-    // static private System.Void .cctor()
-    // Offset: 0x6BB1A0
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.cctor()
-    static void _cctor();
     // public override System.Void Interact(QuickInteractor interactor)
     // Offset: 0x6BAFE0
     // Implemented from: QuickInteractable
@@ -142,6 +135,14 @@ namespace GlobalNamespace {
   static_assert(sizeof(InteractableSpawner) == 0x4C);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::InteractableSpawner::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&GlobalNamespace::InteractableSpawner::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::InteractableSpawner*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
 // Writing MetadataGetter for method: GlobalNamespace::InteractableSpawner::Start
 // Il2CppName: Start
 template<>
@@ -162,14 +163,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
 // Try using FindMethod instead!
-// Writing MetadataGetter for method: GlobalNamespace::InteractableSpawner::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&GlobalNamespace::InteractableSpawner::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::InteractableSpawner*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
-  }
-};
 // Writing MetadataGetter for method: GlobalNamespace::InteractableSpawner::Interact
 // Il2CppName: Interact
 template<>

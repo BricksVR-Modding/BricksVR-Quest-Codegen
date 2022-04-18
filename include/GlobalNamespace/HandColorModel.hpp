@@ -79,11 +79,11 @@ namespace GlobalNamespace {
     static_assert(sizeof(::Normal::Realtime::ReliableProperty_1<::UnityEngine::Color>*) == 0x8);
     public:
     // Get instance field reference: private UnityEngine.Color _color
-    [[deprecated]] ::UnityEngine::Color& dyn__color();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__color();
     // Get instance field reference: private HandColorModel/PropertyChangedHandler`1<UnityEngine.Color> colorDidChange
-    [[deprecated]] ::GlobalNamespace::HandColorModel::PropertyChangedHandler_1<::UnityEngine::Color>*& dyn_colorDidChange();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::HandColorModel::PropertyChangedHandler_1<::UnityEngine::Color>*& dyn_colorDidChange();
     // Get instance field reference: private Normal.Realtime.ReliableProperty`1<UnityEngine.Color> _colorProperty
-    [[deprecated]] ::Normal::Realtime::ReliableProperty_1<::UnityEngine::Color>*& dyn__colorProperty();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::ReliableProperty_1<::UnityEngine::Color>*& dyn__colorProperty();
     // public UnityEngine.Color get_color()
     // Offset: 0x6B7290
     ::UnityEngine::Color get_color();
@@ -96,21 +96,19 @@ namespace GlobalNamespace {
     // public System.Void remove_colorDidChange(HandColorModel/PropertyChangedHandler`1<UnityEngine.Color> value)
     // Offset: 0x6B72F0
     void remove_colorDidChange(::GlobalNamespace::HandColorModel::PropertyChangedHandler_1<::UnityEngine::Color>* value);
+    // public System.Void .ctor()
+    // Offset: 0x6B7150
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static HandColorModel* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::HandColorModel::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<HandColorModel*, creationType>()));
+    }
     // private System.Void FireColorDidChange(UnityEngine.Color value)
     // Offset: 0x6B6DA0
     void FireColorDidChange(::UnityEngine::Color value);
     // private System.Void UpdateBackingFields()
     // Offset: 0x6B6FF0
     void UpdateBackingFields();
-    // public System.Void .ctor()
-    // Offset: 0x6B7150
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static HandColorModel* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::HandColorModel::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<HandColorModel*, creationType>()));
-    }
     // protected override System.Void OnParentReplaced(Normal.Realtime.RealtimeModel previousParent, Normal.Realtime.RealtimeModel currentParent)
     // Offset: 0x6B6E40
     // Implemented from: Normal.Realtime.RealtimeModel
@@ -172,6 +170,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::HandColorModel*), "remove_colorDidChange", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: GlobalNamespace::HandColorModel::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::HandColorModel::FireColorDidChange
 // Il2CppName: FireColorDidChange
 template<>
@@ -189,10 +191,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::HandColorModel*), "UpdateBackingFields", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::HandColorModel::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::HandColorModel::OnParentReplaced
 // Il2CppName: OnParentReplaced
 template<>

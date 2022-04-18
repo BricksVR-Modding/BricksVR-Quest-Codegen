@@ -58,9 +58,9 @@ namespace System::IO {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private System.String current
-    [[deprecated]] ::StringW& dyn_current();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_current();
     // Get instance field reference: private System.String parent
-    [[deprecated]] ::StringW& dyn_parent();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_parent();
     // public System.IO.DirectoryInfo get_Parent()
     // Offset: 0x3E3260
     ::System::IO::DirectoryInfo* get_Parent();

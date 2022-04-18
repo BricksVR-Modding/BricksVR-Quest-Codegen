@@ -38,8 +38,6 @@ namespace UnityEngine::VFX {
     static void _set_StopEventID(int value);
     // static private System.Void .cctor()
     // Offset: 0x670DD0
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.cctor()
     static void _cctor();
   }; // UnityEngine.VFX.VisualEffectAsset
   #pragma pack(pop)

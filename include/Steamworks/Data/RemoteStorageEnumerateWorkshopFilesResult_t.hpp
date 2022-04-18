@@ -101,19 +101,19 @@ namespace Steamworks::Data {
     // Set static field: static public System.Int32 _datasize
     static void _set__datasize(int value);
     // Get instance field reference: Steamworks.Result Result
-    [[deprecated]] ::Steamworks::Result& dyn_Result();
+    [[deprecated("Use field access instead!")]] ::Steamworks::Result& dyn_Result();
     // Get instance field reference: System.Int32 ResultsReturned
-    [[deprecated]] int& dyn_ResultsReturned();
+    [[deprecated("Use field access instead!")]] int& dyn_ResultsReturned();
     // Get instance field reference: System.Int32 TotalResultCount
-    [[deprecated]] int& dyn_TotalResultCount();
+    [[deprecated("Use field access instead!")]] int& dyn_TotalResultCount();
     // Get instance field reference: Steamworks.Data.PublishedFileId[] GPublishedFileId
-    [[deprecated]] ::ArrayW<::Steamworks::Data::PublishedFileId>& dyn_GPublishedFileId();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Steamworks::Data::PublishedFileId>& dyn_GPublishedFileId();
     // Get instance field reference: System.Single[] GScore
-    [[deprecated]] ::ArrayW<float>& dyn_GScore();
+    [[deprecated("Use field access instead!")]] ::ArrayW<float>& dyn_GScore();
     // Get instance field reference: Steamworks.AppId AppId
-    [[deprecated]] ::Steamworks::AppId& dyn_AppId();
+    [[deprecated("Use field access instead!")]] ::Steamworks::AppId& dyn_AppId();
     // Get instance field reference: System.UInt32 StartIndex
-    [[deprecated]] uint& dyn_StartIndex();
+    [[deprecated("Use field access instead!")]] uint& dyn_StartIndex();
     // public Steamworks.CallbackType get_CallbackType()
     // Offset: 0x464D80
     ::Steamworks::CallbackType get_CallbackType();

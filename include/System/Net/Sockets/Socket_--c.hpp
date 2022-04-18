@@ -46,6 +46,13 @@ namespace System::Net::Sockets {
     // static private System.Void .cctor()
     // Offset: 0x565500
     static void _cctor();
+    // public System.Void .ctor()
+    // Offset: 0x1DD400
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static Socket::$$c* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::Sockets::Socket::$$c::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<Socket::$$c*, creationType>()));
+    }
     // System.Void <BeginSend>b__241_0(System.IOAsyncResult s)
     // Offset: 0x563680
     void $BeginSend$b__241_0(::System::IOAsyncResult* s);
@@ -94,15 +101,6 @@ namespace System::Net::Sockets {
     // System.Void <.cctor>b__309_14(System.IAsyncResult ares)
     // Offset: 0x564230
     void $_cctor$b__309_14(::System::IAsyncResult* ares);
-    // public System.Void .ctor()
-    // Offset: 0x1DD400
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static Socket::$$c* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::Sockets::Socket::$$c::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<Socket::$$c*, creationType>()));
-    }
   }; // System.Net.Sockets.Socket/System.Net.Sockets.<>c
   #pragma pack(pop)
 }
@@ -115,6 +113,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(System::Net::Sockets::Socket::$$c*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: System::Net::Sockets::Socket::$$c::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Net::Sockets::Socket::$$c::$BeginSend$b__241_0
 // Il2CppName: <BeginSend>b__241_0
 template<>
@@ -259,7 +261,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Syste
     return ::il2cpp_utils::FindMethod(classof(System::Net::Sockets::Socket::$$c*), "<.cctor>b__309_14", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{ares});
   }
 };
-// Writing MetadataGetter for method: System::Net::Sockets::Socket::$$c::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

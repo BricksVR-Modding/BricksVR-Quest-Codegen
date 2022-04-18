@@ -59,13 +59,13 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<::Il2CppObject*>*>(this);
     }
     // Get instance field reference: private System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: private System.Object <>2__current
-    [[deprecated]] ::Il2CppObject*& dyn_$$2__current();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_$$2__current();
     // Get instance field reference: public TemporarilyDisableHand <>4__this
-    [[deprecated]] ::GlobalNamespace::TemporarilyDisableHand*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::TemporarilyDisableHand*& dyn_$$4__this();
     // Get instance field reference: public System.Single time
-    [[deprecated]] float& dyn_time();
+    [[deprecated("Use field access instead!")]] float& dyn_time();
     // private System.Object System.Collections.Generic.IEnumerator<System.Object>.get_Current()
     // Offset: 0x1E1520
     ::Il2CppObject* System_Collections_Generic_IEnumerator$System_Object$_get_Current();

@@ -47,7 +47,7 @@ namespace System::Diagnostics::Tracing {
       return tickNow;
     }
     // Get instance field reference: public System.Int32 tickNow
-    [[deprecated]] int& dyn_tickNow();
+    [[deprecated("Use field access instead!")]] int& dyn_tickNow();
     // System.Int32 <TrimActiveActivityStore>b__0(System.Collections.Generic.KeyValuePair`2<System.Guid,System.Int32> x, System.Collections.Generic.KeyValuePair`2<System.Guid,System.Int32> y)
     // Offset: 0x22A950
     int $TrimActiveActivityStore$b__0(::System::Collections::Generic::KeyValuePair_2<::System::Guid, int> x, ::System::Collections::Generic::KeyValuePair_2<::System::Guid, int> y);

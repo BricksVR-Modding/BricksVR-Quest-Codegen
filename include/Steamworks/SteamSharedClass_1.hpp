@@ -77,7 +77,6 @@ namespace Steamworks {
     // Offset: 0xFFFFFFFFFFFFFFFF
     // Implemented from: Steamworks.SteamClass
     // Base method: System.Void SteamClass::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SteamSharedClass_1<T>* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Steamworks::SteamSharedClass_1::.ctor");

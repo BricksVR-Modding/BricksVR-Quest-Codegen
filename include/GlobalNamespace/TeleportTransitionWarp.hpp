@@ -66,9 +66,9 @@ namespace GlobalNamespace {
     static_assert(sizeof(::UnityEngine::AnimationCurve*) == 0x8);
     public:
     // Get instance field reference: public System.Single TransitionDuration
-    [[deprecated]] float& dyn_TransitionDuration();
+    [[deprecated("Use field access instead!")]] float& dyn_TransitionDuration();
     // Get instance field reference: public UnityEngine.AnimationCurve PositionLerp
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn_PositionLerp();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn_PositionLerp();
     // private System.Collections.IEnumerator DoWarp()
     // Offset: 0x619FE0
     ::System::Collections::IEnumerator* DoWarp();
@@ -77,11 +77,6 @@ namespace GlobalNamespace {
     // Implemented from: TeleportTransition
     // Base method: System.Void TeleportTransition::.ctor()
     // Base method: System.Void TeleportSupport::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TeleportTransitionWarp* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::TeleportTransitionWarp::.ctor");

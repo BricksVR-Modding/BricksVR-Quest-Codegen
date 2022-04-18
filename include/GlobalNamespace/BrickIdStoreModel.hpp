@@ -73,24 +73,22 @@ namespace GlobalNamespace {
     static_assert(sizeof(::Normal::Realtime::ModelProperty_1<::Normal::Realtime::Serialization::RealtimeDictionary_1<::GlobalNamespace::BrickStorePlayerModel*>*>*) == 0x8);
     public:
     // Get instance field reference: private Normal.Realtime.Serialization.RealtimeDictionary`1<BrickStorePlayerModel> _players
-    [[deprecated]] ::Normal::Realtime::Serialization::RealtimeDictionary_1<::GlobalNamespace::BrickStorePlayerModel*>*& dyn__players();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::Serialization::RealtimeDictionary_1<::GlobalNamespace::BrickStorePlayerModel*>*& dyn__players();
     // Get instance field reference: private Normal.Realtime.ModelProperty`1<Normal.Realtime.Serialization.RealtimeDictionary`1<BrickStorePlayerModel>> _playersProperty
-    [[deprecated]] ::Normal::Realtime::ModelProperty_1<::Normal::Realtime::Serialization::RealtimeDictionary_1<::GlobalNamespace::BrickStorePlayerModel*>*>*& dyn__playersProperty();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::ModelProperty_1<::Normal::Realtime::Serialization::RealtimeDictionary_1<::GlobalNamespace::BrickStorePlayerModel*>*>*& dyn__playersProperty();
     // public Normal.Realtime.Serialization.RealtimeDictionary`1<BrickStorePlayerModel> get_players()
     // Offset: 0x237650
     ::Normal::Realtime::Serialization::RealtimeDictionary_1<::GlobalNamespace::BrickStorePlayerModel*>* get_players();
-    // private System.Void UpdateBackingFields()
-    // Offset: 0x6EF070
-    void UpdateBackingFields();
     // public System.Void .ctor()
     // Offset: 0x6EF190
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static BrickIdStoreModel* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::BrickIdStoreModel::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<BrickIdStoreModel*, creationType>()));
     }
+    // private System.Void UpdateBackingFields()
+    // Offset: 0x6EF070
+    void UpdateBackingFields();
     // protected override System.Int32 WriteLength(Normal.Realtime.Serialization.StreamContext context)
     // Offset: 0x6EF080
     // Implemented from: Normal.Realtime.RealtimeModel
@@ -120,6 +118,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Normal::R
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::BrickIdStoreModel*), "get_players", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: GlobalNamespace::BrickIdStoreModel::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::BrickIdStoreModel::UpdateBackingFields
 // Il2CppName: UpdateBackingFields
 template<>
@@ -128,10 +130,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::BrickIdStoreModel*), "UpdateBackingFields", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::BrickIdStoreModel::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::BrickIdStoreModel::WriteLength
 // Il2CppName: WriteLength
 template<>

@@ -196,47 +196,47 @@ namespace GlobalNamespace {
     static_assert(sizeof(::Normal::Realtime::ReliableProperty_1<bool>*) == 0x8);
     public:
     // Get instance field reference: private System.Boolean _attached
-    [[deprecated]] bool& dyn__attached();
+    [[deprecated("Use field access instead!")]] bool& dyn__attached();
     // Get instance field reference: private System.String _uuid
-    [[deprecated]] ::StringW& dyn__uuid();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__uuid();
     // Get instance field reference: private System.String _bricksAbove
-    [[deprecated]] ::StringW& dyn__bricksAbove();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__bricksAbove();
     // Get instance field reference: private System.String _bricksBelow
-    [[deprecated]] ::StringW& dyn__bricksBelow();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__bricksBelow();
     // Get instance field reference: private System.Int32 _matId
-    [[deprecated]] int& dyn__matId();
+    [[deprecated("Use field access instead!")]] int& dyn__matId();
     // Get instance field reference: private System.Int32 _color
-    [[deprecated]] int& dyn__color();
+    [[deprecated("Use field access instead!")]] int& dyn__color();
     // Get instance field reference: private System.Boolean _usingNewColors
-    [[deprecated]] bool& dyn__usingNewColors();
+    [[deprecated("Use field access instead!")]] bool& dyn__usingNewColors();
     // Get instance field reference: private BuildingBrickModel/PropertyChangedHandler`1<System.Boolean> attachedDidChange
-    [[deprecated]] ::GlobalNamespace::BuildingBrickModel::PropertyChangedHandler_1<bool>*& dyn_attachedDidChange();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::BuildingBrickModel::PropertyChangedHandler_1<bool>*& dyn_attachedDidChange();
     // Get instance field reference: private BuildingBrickModel/PropertyChangedHandler`1<System.String> uuidDidChange
-    [[deprecated]] ::GlobalNamespace::BuildingBrickModel::PropertyChangedHandler_1<::StringW>*& dyn_uuidDidChange();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::BuildingBrickModel::PropertyChangedHandler_1<::StringW>*& dyn_uuidDidChange();
     // Get instance field reference: private BuildingBrickModel/PropertyChangedHandler`1<System.String> bricksAboveDidChange
-    [[deprecated]] ::GlobalNamespace::BuildingBrickModel::PropertyChangedHandler_1<::StringW>*& dyn_bricksAboveDidChange();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::BuildingBrickModel::PropertyChangedHandler_1<::StringW>*& dyn_bricksAboveDidChange();
     // Get instance field reference: private BuildingBrickModel/PropertyChangedHandler`1<System.String> bricksBelowDidChange
-    [[deprecated]] ::GlobalNamespace::BuildingBrickModel::PropertyChangedHandler_1<::StringW>*& dyn_bricksBelowDidChange();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::BuildingBrickModel::PropertyChangedHandler_1<::StringW>*& dyn_bricksBelowDidChange();
     // Get instance field reference: private BuildingBrickModel/PropertyChangedHandler`1<System.Int32> matIdDidChange
-    [[deprecated]] ::GlobalNamespace::BuildingBrickModel::PropertyChangedHandler_1<int>*& dyn_matIdDidChange();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::BuildingBrickModel::PropertyChangedHandler_1<int>*& dyn_matIdDidChange();
     // Get instance field reference: private BuildingBrickModel/PropertyChangedHandler`1<System.Int32> colorDidChange
-    [[deprecated]] ::GlobalNamespace::BuildingBrickModel::PropertyChangedHandler_1<int>*& dyn_colorDidChange();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::BuildingBrickModel::PropertyChangedHandler_1<int>*& dyn_colorDidChange();
     // Get instance field reference: private BuildingBrickModel/PropertyChangedHandler`1<System.Boolean> usingNewColorsDidChange
-    [[deprecated]] ::GlobalNamespace::BuildingBrickModel::PropertyChangedHandler_1<bool>*& dyn_usingNewColorsDidChange();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::BuildingBrickModel::PropertyChangedHandler_1<bool>*& dyn_usingNewColorsDidChange();
     // Get instance field reference: private Normal.Realtime.ReliableProperty`1<System.Boolean> _attachedProperty
-    [[deprecated]] ::Normal::Realtime::ReliableProperty_1<bool>*& dyn__attachedProperty();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::ReliableProperty_1<bool>*& dyn__attachedProperty();
     // Get instance field reference: private Normal.Realtime.ReliableProperty`1<System.String> _uuidProperty
-    [[deprecated]] ::Normal::Realtime::ReliableProperty_1<::StringW>*& dyn__uuidProperty();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::ReliableProperty_1<::StringW>*& dyn__uuidProperty();
     // Get instance field reference: private Normal.Realtime.ReliableProperty`1<System.String> _bricksAboveProperty
-    [[deprecated]] ::Normal::Realtime::ReliableProperty_1<::StringW>*& dyn__bricksAboveProperty();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::ReliableProperty_1<::StringW>*& dyn__bricksAboveProperty();
     // Get instance field reference: private Normal.Realtime.ReliableProperty`1<System.String> _bricksBelowProperty
-    [[deprecated]] ::Normal::Realtime::ReliableProperty_1<::StringW>*& dyn__bricksBelowProperty();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::ReliableProperty_1<::StringW>*& dyn__bricksBelowProperty();
     // Get instance field reference: private Normal.Realtime.ReliableProperty`1<System.Int32> _matIdProperty
-    [[deprecated]] ::Normal::Realtime::ReliableProperty_1<int>*& dyn__matIdProperty();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::ReliableProperty_1<int>*& dyn__matIdProperty();
     // Get instance field reference: private Normal.Realtime.ReliableProperty`1<System.Int32> _colorProperty
-    [[deprecated]] ::Normal::Realtime::ReliableProperty_1<int>*& dyn__colorProperty();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::ReliableProperty_1<int>*& dyn__colorProperty();
     // Get instance field reference: private Normal.Realtime.ReliableProperty`1<System.Boolean> _usingNewColorsProperty
-    [[deprecated]] ::Normal::Realtime::ReliableProperty_1<bool>*& dyn__usingNewColorsProperty();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::ReliableProperty_1<bool>*& dyn__usingNewColorsProperty();
     // public System.Boolean get_attached()
     // Offset: 0x6AB870
     bool get_attached();
@@ -321,6 +321,13 @@ namespace GlobalNamespace {
     // public System.Void remove_usingNewColorsDidChange(BuildingBrickModel/PropertyChangedHandler`1<System.Boolean> value)
     // Offset: 0x6ABD50
     void remove_usingNewColorsDidChange(::GlobalNamespace::BuildingBrickModel::PropertyChangedHandler_1<bool>* value);
+    // public System.Void .ctor()
+    // Offset: 0x6AB200
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static BuildingBrickModel* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::BuildingBrickModel::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<BuildingBrickModel*, creationType>()));
+    }
     // private System.Void FireAttachedDidChange(System.Boolean value)
     // Offset: 0x6AA0F0
     void FireAttachedDidChange(bool value);
@@ -345,15 +352,6 @@ namespace GlobalNamespace {
     // private System.Void UpdateBackingFields()
     // Offset: 0x6AAC50
     void UpdateBackingFields();
-    // public System.Void .ctor()
-    // Offset: 0x6AB200
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static BuildingBrickModel* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::BuildingBrickModel::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<BuildingBrickModel*, creationType>()));
-    }
     // protected override System.Void OnParentReplaced(Normal.Realtime.RealtimeModel previousParent, Normal.Realtime.RealtimeModel currentParent)
     // Offset: 0x6AA550
     // Implemented from: Normal.Realtime.RealtimeModel
@@ -625,6 +623,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::BuildingBrickModel*), "remove_usingNewColorsDidChange", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: GlobalNamespace::BuildingBrickModel::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::BuildingBrickModel::FireAttachedDidChange
 // Il2CppName: FireAttachedDidChange
 template<>
@@ -696,10 +698,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::BuildingBrickModel*), "UpdateBackingFields", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::BuildingBrickModel::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::BuildingBrickModel::OnParentReplaced
 // Il2CppName: OnParentReplaced
 template<>

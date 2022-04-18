@@ -61,13 +61,13 @@ namespace Steamworks::Data {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: Steamworks.Data.InventoryItemId ItemId
-    [[deprecated]] ::Steamworks::Data::InventoryItemId& dyn_ItemId();
+    [[deprecated("Use field access instead!")]] ::Steamworks::Data::InventoryItemId& dyn_ItemId();
     // Get instance field reference: Steamworks.Data.InventoryDefId Definition
-    [[deprecated]] ::Steamworks::Data::InventoryDefId& dyn_Definition();
+    [[deprecated("Use field access instead!")]] ::Steamworks::Data::InventoryDefId& dyn_Definition();
     // Get instance field reference: System.UInt16 Quantity
-    [[deprecated]] uint16_t& dyn_Quantity();
+    [[deprecated("Use field access instead!")]] uint16_t& dyn_Quantity();
     // Get instance field reference: System.UInt16 Flags
-    [[deprecated]] uint16_t& dyn_Flags();
+    [[deprecated("Use field access instead!")]] uint16_t& dyn_Flags();
   }; // Steamworks.Data.SteamItemDetails_t
   #pragma pack(pop)
   static check_size<sizeof(SteamItemDetails_t), 14 + sizeof(uint16_t)> __Steamworks_Data_SteamItemDetails_tSizeCheck;

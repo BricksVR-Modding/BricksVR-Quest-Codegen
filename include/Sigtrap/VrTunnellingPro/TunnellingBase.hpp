@@ -141,7 +141,7 @@ namespace Sigtrap::VrTunnellingPro {
       // Set static field: static public Sigtrap.VrTunnellingPro.TunnellingBase/Sigtrap.VrTunnellingPro.ForceVignetteMode ADD
       static void _set_ADD(::Sigtrap::VrTunnellingPro::TunnellingBase::ForceVignetteMode value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // Sigtrap.VrTunnellingPro.TunnellingBase/Sigtrap.VrTunnellingPro.ForceVignetteMode
     #pragma pack(pop)
     static check_size<sizeof(TunnellingBase::ForceVignetteMode), 0 + sizeof(int)> __Sigtrap_VrTunnellingPro_TunnellingBase_ForceVignetteModeSizeCheck;
@@ -760,144 +760,151 @@ namespace Sigtrap::VrTunnellingPro {
     // Set static field: static private System.Single COVERAGE_MIN
     static void _set_COVERAGE_MIN(float value);
     // Get instance field reference: protected System.Int32 _propFxInner
-    [[deprecated]] int& dyn__propFxInner();
+    [[deprecated("Use field access instead!")]] int& dyn__propFxInner();
     // Get instance field reference: protected System.Int32 _propFxOuter
-    [[deprecated]] int& dyn__propFxOuter();
+    [[deprecated("Use field access instead!")]] int& dyn__propFxOuter();
     // Get instance field reference: private System.Int32 _propEyeProjection
-    [[deprecated]] int& dyn__propEyeProjection();
+    [[deprecated("Use field access instead!")]] int& dyn__propEyeProjection();
     // Get instance field reference: private System.Int32 _propEyeToWorld
-    [[deprecated]] int& dyn__propEyeToWorld();
+    [[deprecated("Use field access instead!")]] int& dyn__propEyeToWorld();
     // Get instance field reference: protected System.Int32 _globPropFogColor
-    [[deprecated]] int& dyn__globPropFogColor();
+    [[deprecated("Use field access instead!")]] int& dyn__globPropFogColor();
     // Get instance field reference: protected System.Int32 _globPropFogDensity
-    [[deprecated]] int& dyn__globPropFogDensity();
+    [[deprecated("Use field access instead!")]] int& dyn__globPropFogDensity();
     // Get instance field reference: protected System.Int32 _globPropFogPower
-    [[deprecated]] int& dyn__globPropFogPower();
+    [[deprecated("Use field access instead!")]] int& dyn__globPropFogPower();
     // Get instance field reference: protected System.Int32 _globPropFogBlend
-    [[deprecated]] int& dyn__globPropFogBlend();
+    [[deprecated("Use field access instead!")]] int& dyn__globPropFogBlend();
     // Get instance field reference: private UnityEngine.Matrix4x4[] _eyeToWorld
-    [[deprecated]] ::ArrayW<::UnityEngine::Matrix4x4>& dyn__eyeToWorld();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Matrix4x4>& dyn__eyeToWorld();
     // Get instance field reference: private UnityEngine.Matrix4x4[] _eyeProjection
-    [[deprecated]] ::ArrayW<::UnityEngine::Matrix4x4>& dyn__eyeProjection();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Matrix4x4>& dyn__eyeProjection();
     // Get instance field reference: public UnityEngine.Transform motionTarget
-    [[deprecated]] ::UnityEngine::Transform*& dyn_motionTarget();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_motionTarget();
     // Get instance field reference: public UnityEngine.Color effectColor
-    [[deprecated]] ::UnityEngine::Color& dyn_effectColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_effectColor();
     // Get instance field reference: public System.Single effectCoverage
-    [[deprecated]] float& dyn_effectCoverage();
+    [[deprecated("Use field access instead!")]] float& dyn_effectCoverage();
     // Get instance field reference: public System.Single effectFeather
-    [[deprecated]] float& dyn_effectFeather();
+    [[deprecated("Use field access instead!")]] float& dyn_effectFeather();
     // Get instance field reference: public UnityEngine.Cubemap effectSkybox
-    [[deprecated]] ::UnityEngine::Cubemap*& dyn_effectSkybox();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Cubemap*& dyn_effectSkybox();
     // Get instance field reference: public System.Boolean applyColorToBackground
-    [[deprecated]] bool& dyn_applyColorToBackground();
+    [[deprecated("Use field access instead!")]] bool& dyn_applyColorToBackground();
     // Get instance field reference: public System.Boolean useAngularVelocity
-    [[deprecated]] bool& dyn_useAngularVelocity();
+    [[deprecated("Use field access instead!")]] bool& dyn_useAngularVelocity();
     // Get instance field reference: public System.Single angularVelocityStrength
-    [[deprecated]] float& dyn_angularVelocityStrength();
+    [[deprecated("Use field access instead!")]] float& dyn_angularVelocityStrength();
     // Get instance field reference: public System.Single angularVelocityMin
-    [[deprecated]] float& dyn_angularVelocityMin();
+    [[deprecated("Use field access instead!")]] float& dyn_angularVelocityMin();
     // Get instance field reference: public System.Single angularVelocityMax
-    [[deprecated]] float& dyn_angularVelocityMax();
+    [[deprecated("Use field access instead!")]] float& dyn_angularVelocityMax();
     // Get instance field reference: public System.Single angularVelocitySmoothing
-    [[deprecated]] float& dyn_angularVelocitySmoothing();
+    [[deprecated("Use field access instead!")]] float& dyn_angularVelocitySmoothing();
     // Get instance field reference: public System.Boolean useAcceleration
-    [[deprecated]] bool& dyn_useAcceleration();
+    [[deprecated("Use field access instead!")]] bool& dyn_useAcceleration();
     // Get instance field reference: public System.Single accelerationStrength
-    [[deprecated]] float& dyn_accelerationStrength();
+    [[deprecated("Use field access instead!")]] float& dyn_accelerationStrength();
     // Get instance field reference: public System.Single accelerationMin
-    [[deprecated]] float& dyn_accelerationMin();
+    [[deprecated("Use field access instead!")]] float& dyn_accelerationMin();
     // Get instance field reference: public System.Single accelerationMax
-    [[deprecated]] float& dyn_accelerationMax();
+    [[deprecated("Use field access instead!")]] float& dyn_accelerationMax();
     // Get instance field reference: public System.Single accelerationSmoothing
-    [[deprecated]] float& dyn_accelerationSmoothing();
+    [[deprecated("Use field access instead!")]] float& dyn_accelerationSmoothing();
     // Get instance field reference: public System.Boolean useVelocity
-    [[deprecated]] bool& dyn_useVelocity();
+    [[deprecated("Use field access instead!")]] bool& dyn_useVelocity();
     // Get instance field reference: public System.Single velocityStrength
-    [[deprecated]] float& dyn_velocityStrength();
+    [[deprecated("Use field access instead!")]] float& dyn_velocityStrength();
     // Get instance field reference: public System.Single velocityMin
-    [[deprecated]] float& dyn_velocityMin();
+    [[deprecated("Use field access instead!")]] float& dyn_velocityMin();
     // Get instance field reference: public System.Single velocityMax
-    [[deprecated]] float& dyn_velocityMax();
+    [[deprecated("Use field access instead!")]] float& dyn_velocityMax();
     // Get instance field reference: public System.Single velocitySmoothing
-    [[deprecated]] float& dyn_velocitySmoothing();
+    [[deprecated("Use field access instead!")]] float& dyn_velocitySmoothing();
     // Get instance field reference: public Sigtrap.VrTunnellingPro.TunnellingBase/Sigtrap.VrTunnellingPro.ForceVignetteMode forceVignetteMode
-    [[deprecated]] ::Sigtrap::VrTunnellingPro::TunnellingBase::ForceVignetteMode& dyn_forceVignetteMode();
+    [[deprecated("Use field access instead!")]] ::Sigtrap::VrTunnellingPro::TunnellingBase::ForceVignetteMode& dyn_forceVignetteMode();
     // Get instance field reference: public System.Single forceVignetteValue
-    [[deprecated]] float& dyn_forceVignetteValue();
+    [[deprecated("Use field access instead!")]] float& dyn_forceVignetteValue();
     // Get instance field reference: public UnityEngine.Transform motionEffectTarget
-    [[deprecated]] ::UnityEngine::Transform*& dyn_motionEffectTarget();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_motionEffectTarget();
     // Get instance field reference: public System.Boolean useCounterMotion
-    [[deprecated]] bool& dyn_useCounterMotion();
+    [[deprecated("Use field access instead!")]] bool& dyn_useCounterMotion();
     // Get instance field reference: public System.Single counterRotationStrength
-    [[deprecated]] float& dyn_counterRotationStrength();
+    [[deprecated("Use field access instead!")]] float& dyn_counterRotationStrength();
     // Get instance field reference: public UnityEngine.Vector3 counterRotationPerAxis
-    [[deprecated]] ::UnityEngine::Vector3& dyn_counterRotationPerAxis();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_counterRotationPerAxis();
     // Get instance field reference: public System.Boolean useArtificialTilt
-    [[deprecated]] bool& dyn_useArtificialTilt();
+    [[deprecated("Use field access instead!")]] bool& dyn_useArtificialTilt();
     // Get instance field reference: public System.Single tiltStrength
-    [[deprecated]] float& dyn_tiltStrength();
+    [[deprecated("Use field access instead!")]] float& dyn_tiltStrength();
     // Get instance field reference: public UnityEngine.Vector2 tiltMaxAngles
-    [[deprecated]] ::UnityEngine::Vector2& dyn_tiltMaxAngles();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn_tiltMaxAngles();
     // Get instance field reference: public System.Single tiltSmoothTime
-    [[deprecated]] float& dyn_tiltSmoothTime();
+    [[deprecated("Use field access instead!")]] float& dyn_tiltSmoothTime();
     // Get instance field reference: public System.Int32 framerateDivision
-    [[deprecated]] int& dyn_framerateDivision();
+    [[deprecated("Use field access instead!")]] int& dyn_framerateDivision();
     // Get instance field reference: public System.Boolean divideTranslation
-    [[deprecated]] bool& dyn_divideTranslation();
+    [[deprecated("Use field access instead!")]] bool& dyn_divideTranslation();
     // Get instance field reference: public System.Boolean divideRotation
-    [[deprecated]] bool& dyn_divideRotation();
+    [[deprecated("Use field access instead!")]] bool& dyn_divideRotation();
     // Get instance field reference: private UnityEngine.Quaternion _lastRot
-    [[deprecated]] ::UnityEngine::Quaternion& dyn__lastRot();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Quaternion& dyn__lastRot();
     // Get instance field reference: private UnityEngine.Vector3 _lastFwd
-    [[deprecated]] ::UnityEngine::Vector3& dyn__lastFwd();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__lastFwd();
     // Get instance field reference: private UnityEngine.Vector3 _lastPos
-    [[deprecated]] ::UnityEngine::Vector3& dyn__lastPos();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__lastPos();
     // Get instance field reference: private System.Single _lastSpeed
-    [[deprecated]] float& dyn__lastSpeed();
+    [[deprecated("Use field access instead!")]] float& dyn__lastSpeed();
     // Get instance field reference: private UnityEngine.Vector3 _lastVel
-    [[deprecated]] ::UnityEngine::Vector3& dyn__lastVel();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__lastVel();
     // Get instance field reference: protected UnityEngine.Quaternion _cmRot
-    [[deprecated]] ::UnityEngine::Quaternion& dyn__cmRot();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Quaternion& dyn__cmRot();
     // Get instance field reference: private System.Single _avSmoothed
-    [[deprecated]] float& dyn__avSmoothed();
+    [[deprecated("Use field access instead!")]] float& dyn__avSmoothed();
     // Get instance field reference: private System.Single _avSlew
-    [[deprecated]] float& dyn__avSlew();
+    [[deprecated("Use field access instead!")]] float& dyn__avSlew();
     // Get instance field reference: private System.Single _speedSmoothed
-    [[deprecated]] float& dyn__speedSmoothed();
+    [[deprecated("Use field access instead!")]] float& dyn__speedSmoothed();
     // Get instance field reference: private System.Single _speedSlew
-    [[deprecated]] float& dyn__speedSlew();
+    [[deprecated("Use field access instead!")]] float& dyn__speedSlew();
     // Get instance field reference: private System.Single _accelSmoothed
-    [[deprecated]] float& dyn__accelSmoothed();
+    [[deprecated("Use field access instead!")]] float& dyn__accelSmoothed();
     // Get instance field reference: private System.Single _accelSlew
-    [[deprecated]] float& dyn__accelSlew();
+    [[deprecated("Use field access instead!")]] float& dyn__accelSlew();
     // Get instance field reference: private UnityEngine.Transform _prevMotionEffectTarget
-    [[deprecated]] ::UnityEngine::Transform*& dyn__prevMotionEffectTarget();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__prevMotionEffectTarget();
     // Get instance field reference: private System.Boolean _prevUseTilt
-    [[deprecated]] bool& dyn__prevUseTilt();
+    [[deprecated("Use field access instead!")]] bool& dyn__prevUseTilt();
     // Get instance field reference: private UnityEngine.Vector3 _tiltAccelSmoothed
-    [[deprecated]] ::UnityEngine::Vector3& dyn__tiltAccelSmoothed();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__tiltAccelSmoothed();
     // Get instance field reference: private UnityEngine.Vector3 _tiltAccelSlew
-    [[deprecated]] ::UnityEngine::Vector3& dyn__tiltAccelSlew();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__tiltAccelSlew();
     // Get instance field reference: private Sigtrap.VrTunnellingPro.Angle3 _tiltInit
-    [[deprecated]] ::Sigtrap::VrTunnellingPro::Angle3& dyn__tiltInit();
+    [[deprecated("Use field access instead!")]] ::Sigtrap::VrTunnellingPro::Angle3& dyn__tiltInit();
     // Get instance field reference: private System.Int32 _lastFpsDivision
-    [[deprecated]] int& dyn__lastFpsDivision();
+    [[deprecated("Use field access instead!")]] int& dyn__lastFpsDivision();
     // Get instance field reference: private UnityEngine.Vector3 _mfxTgtLocalPosInit
-    [[deprecated]] ::UnityEngine::Vector3& dyn__mfxTgtLocalPosInit();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__mfxTgtLocalPosInit();
     // Get instance field reference: private UnityEngine.Quaternion _mfxTgtLocalRotInit
-    [[deprecated]] ::UnityEngine::Quaternion& dyn__mfxTgtLocalRotInit();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Quaternion& dyn__mfxTgtLocalRotInit();
     // Get instance field reference: protected UnityEngine.Camera _cam
-    [[deprecated]] ::UnityEngine::Camera*& dyn__cam();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Camera*& dyn__cam();
     // Get instance field reference: protected System.Boolean _hasDrawnThisFrame
-    [[deprecated]] bool& dyn__hasDrawnThisFrame();
+    [[deprecated("Use field access instead!")]] bool& dyn__hasDrawnThisFrame();
     // Get instance field reference: private UnityEngine.Vector3 _fpsPosition
-    [[deprecated]] ::UnityEngine::Vector3& dyn__fpsPosition();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__fpsPosition();
     // Get instance field reference: private UnityEngine.Quaternion _fpsRotation
-    [[deprecated]] ::UnityEngine::Quaternion& dyn__fpsRotation();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Quaternion& dyn__fpsRotation();
     // public System.Boolean get_usingMotionEffectTarget()
     // Offset: 0x6D3150
     bool get_usingMotionEffectTarget();
+    // protected System.Void .ctor()
+    // Offset: 0x6D2FB0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static TunnellingBase* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Sigtrap::VrTunnellingPro::TunnellingBase::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<TunnellingBase*, creationType>()));
+    }
     // protected System.Void Awake()
     // Offset: 0x6D0D30
     void Awake();
@@ -940,19 +947,6 @@ namespace Sigtrap::VrTunnellingPro {
     // protected System.Void ApplyEyeMatrices(UnityEngine.Material m)
     // Offset: 0x6D0A00
     void ApplyEyeMatrices(::UnityEngine::Material* m);
-    // protected System.Void .ctor()
-    // Offset: 0x6D2FB0
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static TunnellingBase* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Sigtrap::VrTunnellingPro::TunnellingBase::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<TunnellingBase*, creationType>()));
-    }
   }; // Sigtrap.VrTunnellingPro.TunnellingBase
   #pragma pack(pop)
   static check_size<sizeof(TunnellingBase), 440 + sizeof(::UnityEngine::Quaternion)> __Sigtrap_VrTunnellingPro_TunnellingBaseSizeCheck;
@@ -969,6 +963,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Sigtr
     return ::il2cpp_utils::FindMethod(classof(Sigtrap::VrTunnellingPro::TunnellingBase*), "get_usingMotionEffectTarget", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: Sigtrap::VrTunnellingPro::TunnellingBase::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Sigtrap::VrTunnellingPro::TunnellingBase::Awake
 // Il2CppName: Awake
 template<>
@@ -1099,7 +1097,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Sigtr
     return ::il2cpp_utils::FindMethod(classof(Sigtrap::VrTunnellingPro::TunnellingBase*), "ApplyEyeMatrices", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{m});
   }
 };
-// Writing MetadataGetter for method: Sigtrap::VrTunnellingPro::TunnellingBase::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

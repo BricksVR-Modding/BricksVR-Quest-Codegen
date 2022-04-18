@@ -67,15 +67,15 @@ namespace System::Diagnostics::Tracing {
     static_assert(sizeof(::System::Diagnostics::Tracing::EventTags) == 0x4);
     public:
     // Get instance field reference: private System.Diagnostics.Tracing.EventLevel level
-    [[deprecated]] ::System::Diagnostics::Tracing::EventLevel& dyn_level();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::EventLevel& dyn_level();
     // Get instance field reference: private System.Diagnostics.Tracing.EventOpcode opcode
-    [[deprecated]] ::System::Diagnostics::Tracing::EventOpcode& dyn_opcode();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::EventOpcode& dyn_opcode();
     // Get instance field reference: private System.String <Name>k__BackingField
-    [[deprecated]] ::StringW& dyn_$Name$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$Name$k__BackingField();
     // Get instance field reference: private System.Diagnostics.Tracing.EventKeywords <Keywords>k__BackingField
-    [[deprecated]] ::System::Diagnostics::Tracing::EventKeywords& dyn_$Keywords$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::EventKeywords& dyn_$Keywords$k__BackingField();
     // Get instance field reference: private System.Diagnostics.Tracing.EventTags <Tags>k__BackingField
-    [[deprecated]] ::System::Diagnostics::Tracing::EventTags& dyn_$Tags$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::EventTags& dyn_$Tags$k__BackingField();
     // public System.String get_Name()
     // Offset: 0x1E1520
     ::StringW get_Name();

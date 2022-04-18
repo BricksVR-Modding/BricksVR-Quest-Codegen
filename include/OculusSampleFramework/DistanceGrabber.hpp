@@ -147,39 +147,46 @@ namespace OculusSampleFramework {
     static_assert(sizeof(::UnityEngine::Collider*) == 0x8);
     public:
     // Get instance field reference: public UnityEngine.Color m_focusColor
-    [[deprecated]] ::UnityEngine::Color& dyn_m_focusColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_m_focusColor();
     // Get instance field reference: private System.Single m_spherecastRadius
-    [[deprecated]] float& dyn_m_spherecastRadius();
+    [[deprecated("Use field access instead!")]] float& dyn_m_spherecastRadius();
     // Get instance field reference: private System.Single m_noSnapThreshhold
-    [[deprecated]] float& dyn_m_noSnapThreshhold();
+    [[deprecated("Use field access instead!")]] float& dyn_m_noSnapThreshhold();
     // Get instance field reference: private System.Boolean m_useSpherecast
-    [[deprecated]] bool& dyn_m_useSpherecast();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_useSpherecast();
     // Get instance field reference: public System.Boolean m_preventGrabThroughWalls
-    [[deprecated]] bool& dyn_m_preventGrabThroughWalls();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_preventGrabThroughWalls();
     // Get instance field reference: private System.Single m_objectPullVelocity
-    [[deprecated]] float& dyn_m_objectPullVelocity();
+    [[deprecated("Use field access instead!")]] float& dyn_m_objectPullVelocity();
     // Get instance field reference: private System.Single m_objectPullMaxRotationRate
-    [[deprecated]] float& dyn_m_objectPullMaxRotationRate();
+    [[deprecated("Use field access instead!")]] float& dyn_m_objectPullMaxRotationRate();
     // Get instance field reference: private System.Boolean m_movingObjectToHand
-    [[deprecated]] bool& dyn_m_movingObjectToHand();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_movingObjectToHand();
     // Get instance field reference: private System.Single m_maxGrabDistance
-    [[deprecated]] float& dyn_m_maxGrabDistance();
+    [[deprecated("Use field access instead!")]] float& dyn_m_maxGrabDistance();
     // Get instance field reference: private System.Int32 m_grabObjectsInLayer
-    [[deprecated]] int& dyn_m_grabObjectsInLayer();
+    [[deprecated("Use field access instead!")]] int& dyn_m_grabObjectsInLayer();
     // Get instance field reference: private System.Int32 m_obstructionLayer
-    [[deprecated]] int& dyn_m_obstructionLayer();
+    [[deprecated("Use field access instead!")]] int& dyn_m_obstructionLayer();
     // Get instance field reference: private OculusSampleFramework.DistanceGrabber m_otherHand
-    [[deprecated]] ::OculusSampleFramework::DistanceGrabber*& dyn_m_otherHand();
+    [[deprecated("Use field access instead!")]] ::OculusSampleFramework::DistanceGrabber*& dyn_m_otherHand();
     // Get instance field reference: protected OculusSampleFramework.DistanceGrabbable m_target
-    [[deprecated]] ::OculusSampleFramework::DistanceGrabbable*& dyn_m_target();
+    [[deprecated("Use field access instead!")]] ::OculusSampleFramework::DistanceGrabbable*& dyn_m_target();
     // Get instance field reference: protected UnityEngine.Collider m_targetCollider
-    [[deprecated]] ::UnityEngine::Collider*& dyn_m_targetCollider();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Collider*& dyn_m_targetCollider();
     // public System.Boolean get_UseSpherecast()
     // Offset: 0x202F70
     bool get_UseSpherecast();
     // public System.Void set_UseSpherecast(System.Boolean value)
     // Offset: 0x2894F0
     void set_UseSpherecast(bool value);
+    // public System.Void .ctor()
+    // Offset: 0x2894C0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static DistanceGrabber* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::OculusSampleFramework::DistanceGrabber::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<DistanceGrabber*, creationType>()));
+    }
     // static private OculusSampleFramework.DistanceGrabbable HitInfoToGrabbable(UnityEngine.RaycastHit hitInfo)
     // Offset: 0x288A30
     static ::OculusSampleFramework::DistanceGrabbable* HitInfoToGrabbable(::UnityEngine::RaycastHit hitInfo);
@@ -189,20 +196,6 @@ namespace OculusSampleFramework {
     // protected System.Boolean FindTargetWithSpherecast(out OculusSampleFramework.DistanceGrabbable dgOut, out UnityEngine.Collider collOut)
     // Offset: 0x2875D0
     bool FindTargetWithSpherecast(ByRef<::OculusSampleFramework::DistanceGrabbable*> dgOut, ByRef<::UnityEngine::Collider*> collOut);
-    // public System.Void .ctor()
-    // Offset: 0x2894C0
-    // Implemented from: OVRGrabber
-    // Base method: System.Void OVRGrabber::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static DistanceGrabber* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::OculusSampleFramework::DistanceGrabber::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<DistanceGrabber*, creationType>()));
-    }
     // protected override System.Void Start()
     // Offset: 0x288F60
     // Implemented from: OVRGrabber
@@ -256,6 +249,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Oculu
     return ::il2cpp_utils::FindMethod(classof(OculusSampleFramework::DistanceGrabber*), "set_UseSpherecast", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: OculusSampleFramework::DistanceGrabber::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: OculusSampleFramework::DistanceGrabber::HitInfoToGrabbable
 // Il2CppName: HitInfoToGrabbable
 template<>
@@ -285,10 +282,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Oculu
     return ::il2cpp_utils::FindMethod(classof(OculusSampleFramework::DistanceGrabber*), "FindTargetWithSpherecast", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{dgOut, collOut});
   }
 };
-// Writing MetadataGetter for method: OculusSampleFramework::DistanceGrabber::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: OculusSampleFramework::DistanceGrabber::Start
 // Il2CppName: Start
 template<>

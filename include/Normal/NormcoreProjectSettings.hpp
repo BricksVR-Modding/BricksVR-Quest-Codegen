@@ -45,13 +45,20 @@ namespace Normal {
     // Set static field: static private Normal.NormcoreProjectSettings __instance
     static void _set___instance(::Normal::NormcoreProjectSettings* value);
     // Get instance field reference: private Normal.Utility.NormcoreLogLevel _logLevel
-    [[deprecated]] ::Normal::Utility::NormcoreLogLevel& dyn__logLevel();
+    [[deprecated("Use field access instead!")]] ::Normal::Utility::NormcoreLogLevel& dyn__logLevel();
     // static public Normal.Utility.NormcoreLogLevel get_logLevel()
     // Offset: 0x8BAFE0
     static ::Normal::Utility::NormcoreLogLevel get_logLevel();
     // static public System.Void set_logLevel(Normal.Utility.NormcoreLogLevel value)
     // Offset: 0x8BB000
     static void set_logLevel(::Normal::Utility::NormcoreLogLevel value);
+    // public System.Void .ctor()
+    // Offset: 0x8BAFD0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static NormcoreProjectSettings* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Normal::NormcoreProjectSettings::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<NormcoreProjectSettings*, creationType>()));
+    }
     // static private Normal.NormcoreProjectSettings GetInstance()
     // Offset: 0x8BADC0
     static ::Normal::NormcoreProjectSettings* GetInstance();
@@ -61,17 +68,6 @@ namespace Normal {
     // static private Normal.NormcoreProjectSettings CreateInstance()
     // Offset: 0x8BAD90
     static ::Normal::NormcoreProjectSettings* CreateInstance();
-    // public System.Void .ctor()
-    // Offset: 0x8BAFD0
-    // Implemented from: UnityEngine.ScriptableObject
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static NormcoreProjectSettings* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Normal::NormcoreProjectSettings::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<NormcoreProjectSettings*, creationType>()));
-    }
   }; // Normal.NormcoreProjectSettings
   #pragma pack(pop)
   static check_size<sizeof(NormcoreProjectSettings), 24 + sizeof(::Normal::Utility::NormcoreLogLevel)> __Normal_NormcoreProjectSettingsSizeCheck;
@@ -95,6 +91,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(::
     return ::il2cpp_utils::FindMethod(classof(Normal::NormcoreProjectSettings*), "set_logLevel", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: Normal::NormcoreProjectSettings::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Normal::NormcoreProjectSettings::GetInstance
 // Il2CppName: GetInstance
 template<>
@@ -119,7 +119,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Normal::N
     return ::il2cpp_utils::FindMethod(classof(Normal::NormcoreProjectSettings*), "CreateInstance", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: Normal::NormcoreProjectSettings::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

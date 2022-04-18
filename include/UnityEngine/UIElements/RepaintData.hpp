@@ -48,9 +48,9 @@ namespace UnityEngine::UIElements {
     static_assert(sizeof(::UnityEngine::Event*) == 0x8);
     public:
     // Get instance field reference: private UnityEngine.Matrix4x4 <currentOffset>k__BackingField
-    [[deprecated]] ::UnityEngine::Matrix4x4& dyn_$currentOffset$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Matrix4x4& dyn_$currentOffset$k__BackingField();
     // Get instance field reference: private UnityEngine.Event <repaintEvent>k__BackingField
-    [[deprecated]] ::UnityEngine::Event*& dyn_$repaintEvent$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Event*& dyn_$repaintEvent$k__BackingField();
     // public UnityEngine.Matrix4x4 get_currentOffset()
     // Offset: 0x2AC400
     ::UnityEngine::Matrix4x4 get_currentOffset();

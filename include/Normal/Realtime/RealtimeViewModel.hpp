@@ -96,11 +96,11 @@ namespace Normal::Realtime {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: public readonly System.UInt32 updateID
-      [[deprecated]] uint& dyn_updateID();
+      [[deprecated("Use field access instead!")]] uint& dyn_updateID();
       // Get instance field reference: public readonly System.Double packetRoomTime
-      [[deprecated]] double& dyn_packetRoomTime();
+      [[deprecated("Use field access instead!")]] double& dyn_packetRoomTime();
       // Get instance field reference: public readonly Normal.Realtime.Serialization.ReadBuffer buffer
-      [[deprecated]] ::Normal::Realtime::Serialization::ReadBuffer*& dyn_buffer();
+      [[deprecated("Use field access instead!")]] ::Normal::Realtime::Serialization::ReadBuffer*& dyn_buffer();
       // public System.Void .ctor(System.UInt32 updateID, System.Double packetRoomTime, Normal.Realtime.Serialization.ReadBuffer buffer)
       // Offset: 0x88BDF0
       // ABORTED: conflicts with another method.  CachedDeltaUpdate(uint updateID, double packetRoomTime, ::Normal::Realtime::Serialization::ReadBuffer* buffer);
@@ -165,23 +165,23 @@ namespace Normal::Realtime {
     static_assert(sizeof(::System::Collections::Generic::List_1<::Normal::Realtime::RealtimeViewModel::CachedDeltaUpdate>*) == 0x8);
     public:
     // Get instance field reference: private Normal.Realtime.RealtimeView <realtimeView>k__BackingField
-    [[deprecated]] ::Normal::Realtime::RealtimeView*& dyn_$realtimeView$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::RealtimeView*& dyn_$realtimeView$k__BackingField();
     // Get instance field reference: private System.String _sceneViewUUID
-    [[deprecated]] ::StringW& dyn__sceneViewUUID();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__sceneViewUUID();
     // Get instance field reference: private System.String _prefabName
-    [[deprecated]] ::StringW& dyn__prefabName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__prefabName();
     // Get instance field reference: private Normal.Realtime.ImmutableModelCollection _componentsModel
-    [[deprecated]] ::Normal::Realtime::ImmutableModelCollection*& dyn__componentsModel();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::ImmutableModelCollection*& dyn__componentsModel();
     // Get instance field reference: private Normal.Realtime.Serialization.ReadBuffer _cachedComponentsModel
-    [[deprecated]] ::Normal::Realtime::Serialization::ReadBuffer*& dyn__cachedComponentsModel();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::Serialization::ReadBuffer*& dyn__cachedComponentsModel();
     // Get instance field reference: private System.Collections.Generic.List`1<Normal.Realtime.RealtimeViewModel/Normal.Realtime.CachedDeltaUpdate> _cachedComponentsModelDeltaUpdates
-    [[deprecated]] ::System::Collections::Generic::List_1<::Normal::Realtime::RealtimeViewModel::CachedDeltaUpdate>*& dyn__cachedComponentsModelDeltaUpdates();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::Normal::Realtime::RealtimeViewModel::CachedDeltaUpdate>*& dyn__cachedComponentsModelDeltaUpdates();
     // Get instance field reference: private Normal.Realtime.ImmutableModelCollection _childViewsModel
-    [[deprecated]] ::Normal::Realtime::ImmutableModelCollection*& dyn__childViewsModel();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::ImmutableModelCollection*& dyn__childViewsModel();
     // Get instance field reference: private Normal.Realtime.Serialization.ReadBuffer _cachedChildViewsModel
-    [[deprecated]] ::Normal::Realtime::Serialization::ReadBuffer*& dyn__cachedChildViewsModel();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::Serialization::ReadBuffer*& dyn__cachedChildViewsModel();
     // Get instance field reference: private System.Collections.Generic.List`1<Normal.Realtime.RealtimeViewModel/Normal.Realtime.CachedDeltaUpdate> _cachedChildViewsModelDeltaUpdates
-    [[deprecated]] ::System::Collections::Generic::List_1<::Normal::Realtime::RealtimeViewModel::CachedDeltaUpdate>*& dyn__cachedChildViewsModelDeltaUpdates();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::Normal::Realtime::RealtimeViewModel::CachedDeltaUpdate>*& dyn__cachedChildViewsModelDeltaUpdates();
     // public Normal.Realtime.RealtimeView get_realtimeView()
     // Offset: 0x237650
     ::Normal::Realtime::RealtimeView* get_realtimeView();
@@ -200,6 +200,13 @@ namespace Normal::Realtime {
     // public Normal.Realtime.ImmutableModelCollection get_childViewsModel()
     // Offset: 0x1E0C90
     ::Normal::Realtime::ImmutableModelCollection* get_childViewsModel();
+    // public System.Void .ctor()
+    // Offset: 0x8939C0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static RealtimeViewModel* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::RealtimeViewModel::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<RealtimeViewModel*, creationType>()));
+    }
     // public System.Void .ctor(System.String sceneViewUUID, System.String prefabName, System.Int32 ownerID, Normal.Realtime.Serialization.MetaModel/Normal.Realtime.Serialization.LifetimeFlags lifetimeFlags, Normal.Realtime.ImmutableModelCollection componentsModel, Normal.Realtime.ImmutableModelCollection childViewsModel)
     // Offset: 0x893770
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -232,15 +239,6 @@ namespace Normal::Realtime {
     // private System.Void DeserializeCachedChildViewsModelIfNeeded(Normal.Realtime.Serialization.StreamContext context)
     // Offset: 0x891F00
     void DeserializeCachedChildViewsModelIfNeeded(::Normal::Realtime::Serialization::StreamContext context);
-    // public System.Void .ctor()
-    // Offset: 0x8939C0
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static RealtimeViewModel* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::RealtimeViewModel::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<RealtimeViewModel*, creationType>()));
-    }
     // protected override System.Int32 WriteLength(Normal.Realtime.Serialization.StreamContext context)
     // Offset: 0x893180
     // Implemented from: Normal.Realtime.RealtimeModel
@@ -321,6 +319,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Normal::R
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
 // Try using FindMethod instead!
+// Writing MetadataGetter for method: Normal::Realtime::RealtimeViewModel::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Normal::Realtime::RealtimeViewModel::SetChildModels
 // Il2CppName: SetChildModels
 template<>
@@ -377,10 +379,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Norma
     return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::RealtimeViewModel*), "DeserializeCachedChildViewsModelIfNeeded", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{context});
   }
 };
-// Writing MetadataGetter for method: Normal::Realtime::RealtimeViewModel::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: Normal::Realtime::RealtimeViewModel::WriteLength
 // Il2CppName: WriteLength
 template<>

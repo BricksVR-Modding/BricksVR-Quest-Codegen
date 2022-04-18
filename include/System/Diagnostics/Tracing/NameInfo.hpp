@@ -64,13 +64,13 @@ namespace System::Diagnostics::Tracing {
     // Set static field: static private System.Int32 lastIdentity
     static void _set_lastIdentity(int value);
     // Get instance field reference: readonly System.String name
-    [[deprecated]] ::StringW& dyn_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_name();
     // Get instance field reference: readonly System.Diagnostics.Tracing.EventTags tags
-    [[deprecated]] ::System::Diagnostics::Tracing::EventTags& dyn_tags();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::EventTags& dyn_tags();
     // Get instance field reference: readonly System.Int32 identity
-    [[deprecated]] int& dyn_identity();
+    [[deprecated("Use field access instead!")]] int& dyn_identity();
     // Get instance field reference: readonly System.Byte[] nameMetadata
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_nameMetadata();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_nameMetadata();
     // public System.Void .ctor(System.String name, System.Diagnostics.Tracing.EventTags tags, System.Int32 typeMetadataSize)
     // Offset: 0x2EE260
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -121,25 +121,25 @@ namespace GlobalNamespace {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: protected UnityEngine.GameObject cameraFramePlaneObject
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_cameraFramePlaneObject();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_cameraFramePlaneObject();
     // Get instance field reference: protected System.Single cameraFramePlaneDistance
-    [[deprecated]] float& dyn_cameraFramePlaneDistance();
+    [[deprecated("Use field access instead!")]] float& dyn_cameraFramePlaneDistance();
     // Get instance field reference: protected readonly System.Boolean hasCameraDeviceOpened
-    [[deprecated]] bool& dyn_hasCameraDeviceOpened();
+    [[deprecated("Use field access instead!")]] bool& dyn_hasCameraDeviceOpened();
     // Get instance field reference: protected readonly System.Boolean useDynamicLighting
-    [[deprecated]] bool& dyn_useDynamicLighting();
+    [[deprecated("Use field access instead!")]] bool& dyn_useDynamicLighting();
     // Get instance field reference: readonly OVRPlugin/CameraDevice cameraDevice
-    [[deprecated]] ::GlobalNamespace::OVRPlugin::CameraDevice& dyn_cameraDevice();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRPlugin::CameraDevice& dyn_cameraDevice();
     // Get instance field reference: private UnityEngine.Mesh boundaryMesh
-    [[deprecated]] ::UnityEngine::Mesh*& dyn_boundaryMesh();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Mesh*& dyn_boundaryMesh();
     // Get instance field reference: private System.Single boundaryMeshTopY
-    [[deprecated]] float& dyn_boundaryMeshTopY();
+    [[deprecated("Use field access instead!")]] float& dyn_boundaryMeshTopY();
     // Get instance field reference: private System.Single boundaryMeshBottomY
-    [[deprecated]] float& dyn_boundaryMeshBottomY();
+    [[deprecated("Use field access instead!")]] float& dyn_boundaryMeshBottomY();
     // Get instance field reference: private OVRManager/VirtualGreenScreenType boundaryMeshType
-    [[deprecated]] ::GlobalNamespace::OVRManager_VirtualGreenScreenType& dyn_boundaryMeshType();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRManager_VirtualGreenScreenType& dyn_boundaryMeshType();
     // Get instance field reference: private System.Boolean nullcameraRigWarningDisplayed
-    [[deprecated]] bool& dyn_nullcameraRigWarningDisplayed();
+    [[deprecated("Use field access instead!")]] bool& dyn_nullcameraRigWarningDisplayed();
     // protected System.Void .ctor(UnityEngine.GameObject parentObject, UnityEngine.Camera mainCamera, OVRManager/CameraDevice inCameraDevice, System.Boolean inUseDynamicLighting, OVRManager/DepthQuality depthQuality)
     // Offset: 0x22F1C0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

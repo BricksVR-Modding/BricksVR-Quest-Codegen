@@ -65,33 +65,31 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public OVRCameraRig CameraRig
-    [[deprecated]] ::GlobalNamespace::OVRCameraRig*& dyn_CameraRig();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRCameraRig*& dyn_CameraRig();
     // Get instance field reference: public UnityEngine.CapsuleCollider CharacterController
-    [[deprecated]] ::UnityEngine::CapsuleCollider*& dyn_CharacterController();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::CapsuleCollider*& dyn_CharacterController();
     // Get instance field reference: public SimpleCapsuleWithStickMovement PlayerController
-    [[deprecated]] ::GlobalNamespace::SimpleCapsuleWithStickMovement*& dyn_PlayerController();
-    // private System.Void Start()
-    // Offset: 0x28ED80
-    void Start();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::SimpleCapsuleWithStickMovement*& dyn_PlayerController();
     // public System.Void .ctor()
     // Offset: 0x1DDE30
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static LocomotionController* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::LocomotionController::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<LocomotionController*, creationType>()));
     }
+    // private System.Void Start()
+    // Offset: 0x28ED80
+    void Start();
   }; // LocomotionController
   #pragma pack(pop)
   static check_size<sizeof(LocomotionController), 40 + sizeof(::GlobalNamespace::SimpleCapsuleWithStickMovement*)> __GlobalNamespace_LocomotionControllerSizeCheck;
   static_assert(sizeof(LocomotionController) == 0x30);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::LocomotionController::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::LocomotionController::Start
 // Il2CppName: Start
 template<>
@@ -100,7 +98,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::LocomotionController*), "Start", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::LocomotionController::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

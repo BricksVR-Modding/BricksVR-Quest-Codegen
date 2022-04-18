@@ -35,29 +35,27 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class ForceHandPoint : public ::UnityEngine::MonoBehaviour {
     public:
+    // public System.Void .ctor()
+    // Offset: 0x1DDE30
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ForceHandPoint* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::ForceHandPoint::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ForceHandPoint*, creationType>()));
+    }
     // private System.Void OnTriggerEnter(UnityEngine.Collider c)
     // Offset: 0x6B5460
     void OnTriggerEnter(::UnityEngine::Collider* c);
     // private System.Void OnTriggerExit(UnityEngine.Collider c)
     // Offset: 0x6B54F0
     void OnTriggerExit(::UnityEngine::Collider* c);
-    // public System.Void .ctor()
-    // Offset: 0x1DDE30
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ForceHandPoint* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::ForceHandPoint::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ForceHandPoint*, creationType>()));
-    }
   }; // ForceHandPoint
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::ForceHandPoint::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::ForceHandPoint::OnTriggerEnter
 // Il2CppName: OnTriggerEnter
 template<>
@@ -76,7 +74,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::ForceHandPoint*), "OnTriggerExit", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{c});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::ForceHandPoint::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

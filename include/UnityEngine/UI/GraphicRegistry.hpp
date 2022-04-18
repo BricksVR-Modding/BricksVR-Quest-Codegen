@@ -77,10 +77,17 @@ namespace UnityEngine::UI {
     // Set static field: static private readonly System.Collections.Generic.List`1<UnityEngine.UI.Graphic> s_EmptyList
     static void _set_s_EmptyList(::System::Collections::Generic::List_1<::UnityEngine::UI::Graphic*>* value);
     // Get instance field reference: private readonly System.Collections.Generic.Dictionary`2<UnityEngine.Canvas,UnityEngine.UI.Collections.IndexedSet`1<UnityEngine.UI.Graphic>> m_Graphics
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::UnityEngine::Canvas*, ::UnityEngine::UI::Collections::IndexedSet_1<::UnityEngine::UI::Graphic*>*>*& dyn_m_Graphics();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::UnityEngine::Canvas*, ::UnityEngine::UI::Collections::IndexedSet_1<::UnityEngine::UI::Graphic*>*>*& dyn_m_Graphics();
     // static public UnityEngine.UI.GraphicRegistry get_instance()
     // Offset: 0x4B3680
     static ::UnityEngine::UI::GraphicRegistry* get_instance();
+    // protected System.Void .ctor()
+    // Offset: 0x4B3580
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static GraphicRegistry* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::UI::GraphicRegistry::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<GraphicRegistry*, creationType>()));
+    }
     // static private System.Void .cctor()
     // Offset: 0x4B3510
     static void _cctor();
@@ -93,15 +100,6 @@ namespace UnityEngine::UI {
     // static public System.Collections.Generic.IList`1<UnityEngine.UI.Graphic> GetGraphicsForCanvas(UnityEngine.Canvas canvas)
     // Offset: 0x4B3170
     static ::System::Collections::Generic::IList_1<::UnityEngine::UI::Graphic*>* GetGraphicsForCanvas(::UnityEngine::Canvas* canvas);
-    // protected System.Void .ctor()
-    // Offset: 0x4B3580
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static GraphicRegistry* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::UI::GraphicRegistry::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<GraphicRegistry*, creationType>()));
-    }
   }; // UnityEngine.UI.GraphicRegistry
   #pragma pack(pop)
   static check_size<sizeof(GraphicRegistry), 16 + sizeof(::System::Collections::Generic::Dictionary_2<::UnityEngine::Canvas*, ::UnityEngine::UI::Collections::IndexedSet_1<::UnityEngine::UI::Graphic*>*>*)> __UnityEngine_UI_GraphicRegistrySizeCheck;
@@ -116,6 +114,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::UI::GraphicRegistry*), "get_instance", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::UI::GraphicRegistry::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::UI::GraphicRegistry::_cctor
 // Il2CppName: .cctor
 template<>
@@ -153,7 +155,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::C
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::UI::GraphicRegistry*), "GetGraphicsForCanvas", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{canvas});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::UI::GraphicRegistry::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

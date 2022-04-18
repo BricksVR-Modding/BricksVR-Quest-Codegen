@@ -44,25 +44,27 @@ namespace UnityEngine::VFX {
       return m_Ptr;
     }
     // Get instance field reference: System.IntPtr m_Ptr
-    [[deprecated]] ::System::IntPtr& dyn_m_Ptr();
-    // static UnityEngine.VFX.VFXExpressionValues CreateExpressionValuesWrapper(System.IntPtr ptr)
-    // Offset: 0x670AD0
-    static ::UnityEngine::VFX::VFXExpressionValues* CreateExpressionValuesWrapper(::System::IntPtr ptr);
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_m_Ptr();
     // private System.Void .ctor()
     // Offset: 0x1DD400
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static VFXExpressionValues* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::VFX::VFXExpressionValues::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<VFXExpressionValues*, creationType>()));
     }
+    // static UnityEngine.VFX.VFXExpressionValues CreateExpressionValuesWrapper(System.IntPtr ptr)
+    // Offset: 0x670AD0
+    static ::UnityEngine::VFX::VFXExpressionValues* CreateExpressionValuesWrapper(::System::IntPtr ptr);
   }; // UnityEngine.VFX.VFXExpressionValues
   #pragma pack(pop)
   static check_size<sizeof(VFXExpressionValues), 16 + sizeof(::System::IntPtr)> __UnityEngine_VFX_VFXExpressionValuesSizeCheck;
   static_assert(sizeof(VFXExpressionValues) == 0x18);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: UnityEngine::VFX::VFXExpressionValues::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::VFX::VFXExpressionValues::CreateExpressionValuesWrapper
 // Il2CppName: CreateExpressionValuesWrapper
 template<>
@@ -72,7 +74,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::VFX::VFXExpressionValues*), "CreateExpressionValuesWrapper", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{ptr});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::VFX::VFXExpressionValues::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

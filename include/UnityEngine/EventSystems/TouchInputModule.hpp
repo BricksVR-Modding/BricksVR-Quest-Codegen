@@ -17,7 +17,6 @@
 // Forward declaring namespace: UnityEngine::EventSystems
 namespace UnityEngine::EventSystems {
   // Skipping declaration: PointerEventData because it is already included!
-  // Skipping declaration: BaseInputModule because it is already included!
 }
 // Completed forward declares
 // Type namespace: UnityEngine.EventSystems
@@ -66,13 +65,13 @@ namespace UnityEngine::EventSystems {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private UnityEngine.Vector2 m_LastMousePosition
-    [[deprecated]] ::UnityEngine::Vector2& dyn_m_LastMousePosition();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn_m_LastMousePosition();
     // Get instance field reference: private UnityEngine.Vector2 m_MousePosition
-    [[deprecated]] ::UnityEngine::Vector2& dyn_m_MousePosition();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn_m_MousePosition();
     // Get instance field reference: private UnityEngine.EventSystems.PointerEventData m_InputPointerEvent
-    [[deprecated]] ::UnityEngine::EventSystems::PointerEventData*& dyn_m_InputPointerEvent();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::EventSystems::PointerEventData*& dyn_m_InputPointerEvent();
     // Get instance field reference: private System.Boolean m_ForceModuleActive
-    [[deprecated]] bool& dyn_m_ForceModuleActive();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_ForceModuleActive();
     // public System.Boolean get_allowActivationOnStandalone()
     // Offset: 0x287590
     bool get_allowActivationOnStandalone();
@@ -103,11 +102,6 @@ namespace UnityEngine::EventSystems {
     // Base method: System.Void PointerInputModule::.ctor()
     // Base method: System.Void BaseInputModule::.ctor()
     // Base method: System.Void UIBehaviour::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TouchInputModule* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::EventSystems::TouchInputModule::.ctor");

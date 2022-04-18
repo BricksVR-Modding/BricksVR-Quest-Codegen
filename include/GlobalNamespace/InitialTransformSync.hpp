@@ -58,9 +58,16 @@ namespace GlobalNamespace {
     static_assert(sizeof(::GlobalNamespace::UserSettings*) == 0x8);
     public:
     // Get instance field reference: private NormalSessionManager _normalSessionManager
-    [[deprecated]] ::GlobalNamespace::NormalSessionManager*& dyn__normalSessionManager();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::NormalSessionManager*& dyn__normalSessionManager();
     // Get instance field reference: private UserSettings _userSettings
-    [[deprecated]] ::GlobalNamespace::UserSettings*& dyn__userSettings();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::UserSettings*& dyn__userSettings();
+    // public System.Void .ctor()
+    // Offset: 0x6BAC10
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static InitialTransformSync* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::InitialTransformSync::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<InitialTransformSync*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0x6BA390
     void Awake();
@@ -85,24 +92,14 @@ namespace GlobalNamespace {
     // public System.Void SetRotation(UnityEngine.Quaternion rot)
     // Offset: 0x6BAB00
     void SetRotation(::UnityEngine::Quaternion rot);
-    // public System.Void .ctor()
-    // Offset: 0x6BAC10
-    // Implemented from: Normal.Realtime.RealtimeComponent`1
-    // Base method: System.Void RealtimeComponent_1::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static InitialTransformSync* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::InitialTransformSync::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<InitialTransformSync*, creationType>()));
-    }
   }; // InitialTransformSync
   // WARNING Not writing size check since size may be invalid!
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::InitialTransformSync::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::InitialTransformSync::Awake
 // Il2CppName: Awake
 template<>
@@ -175,7 +172,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::InitialTransformSync*), "SetRotation", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{rot});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::InitialTransformSync::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

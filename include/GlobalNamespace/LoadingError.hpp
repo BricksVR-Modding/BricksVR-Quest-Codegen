@@ -35,6 +35,13 @@ namespace GlobalNamespace {
     static bool _get_IntentionalDisconnect();
     // Set static field: static public System.Boolean IntentionalDisconnect
     static void _set_IntentionalDisconnect(bool value);
+    // public System.Void .ctor()
+    // Offset: 0x1DD400
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static LoadingError* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::LoadingError::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<LoadingError*, creationType>()));
+    }
     // static public System.Void SetError(System.String error)
     // Offset: 0x6BD320
     static void SetError(::StringW error);
@@ -44,19 +51,14 @@ namespace GlobalNamespace {
     // static public System.Void ClearError()
     // Offset: 0x6BD2A0
     static void ClearError();
-    // public System.Void .ctor()
-    // Offset: 0x1DD400
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static LoadingError* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::LoadingError::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<LoadingError*, creationType>()));
-    }
   }; // LoadingError
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::LoadingError::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::LoadingError::SetError
 // Il2CppName: SetError
 template<>
@@ -82,7 +84,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::LoadingError*), "ClearError", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::LoadingError::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

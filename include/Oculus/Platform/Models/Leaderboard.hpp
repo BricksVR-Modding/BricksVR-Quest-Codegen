@@ -42,7 +42,7 @@ namespace Oculus::Platform::Models {
       return ApiName;
     }
     // Get instance field reference: public readonly System.String ApiName
-    [[deprecated]] ::StringW& dyn_ApiName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_ApiName();
     // public System.Void .ctor(System.IntPtr o)
     // Offset: 0x83E0F0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

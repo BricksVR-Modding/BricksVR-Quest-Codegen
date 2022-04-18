@@ -45,7 +45,7 @@ namespace UnityEngine::UIElements {
       return phase;
     }
     // Get instance field reference: private UnityEngine.UIElements.CallbackPhase <phase>k__BackingField
-    [[deprecated]] ::UnityEngine::UIElements::CallbackPhase& dyn_$phase$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::CallbackPhase& dyn_$phase$k__BackingField();
     // public UnityEngine.UIElements.CallbackPhase get_phase()
     // Offset: 0x1DD410
     ::UnityEngine::UIElements::CallbackPhase get_phase();

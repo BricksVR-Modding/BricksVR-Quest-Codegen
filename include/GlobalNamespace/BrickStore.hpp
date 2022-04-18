@@ -71,11 +71,18 @@ namespace GlobalNamespace {
     // Set static field: static private BrickStore _instance
     static void _set__instance(::GlobalNamespace::BrickStore* value);
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.String,UnityEngine.GameObject> _dict
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::StringW, ::UnityEngine::GameObject*>*& dyn__dict();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::StringW, ::UnityEngine::GameObject*>*& dyn__dict();
     // Get instance field reference: public TMPro.TextMeshProUGUI brickCountText
-    [[deprecated]] ::TMPro::TextMeshProUGUI*& dyn_brickCountText();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshProUGUI*& dyn_brickCountText();
     // Get instance field reference: private System.Boolean _debug
-    [[deprecated]] bool& dyn__debug();
+    [[deprecated("Use field access instead!")]] bool& dyn__debug();
+    // public System.Void .ctor()
+    // Offset: 0x1DDE30
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static BrickStore* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::BrickStore::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<BrickStore*, creationType>()));
+    }
     // private System.Void Start()
     // Offset: 0x6F49B0
     void Start();
@@ -103,25 +110,16 @@ namespace GlobalNamespace {
     // static public BrickStore GetInstance()
     // Offset: 0x6F46F0
     static ::GlobalNamespace::BrickStore* GetInstance();
-    // public System.Void .ctor()
-    // Offset: 0x1DDE30
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static BrickStore* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::BrickStore::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<BrickStore*, creationType>()));
-    }
   }; // BrickStore
   #pragma pack(pop)
   static check_size<sizeof(BrickStore), 40 + sizeof(bool)> __GlobalNamespace_BrickStoreSizeCheck;
   static_assert(sizeof(BrickStore) == 0x29);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::BrickStore::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::BrickStore::Start
 // Il2CppName: Start
 template<>
@@ -198,7 +196,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::GlobalNam
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::BrickStore*), "GetInstance", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::BrickStore::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -51,11 +51,11 @@ namespace System::Diagnostics::Tracing {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private System.String <Name>k__BackingField
-    [[deprecated]] ::StringW& dyn_$Name$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$Name$k__BackingField();
     // Get instance field reference: private System.String <Guid>k__BackingField
-    [[deprecated]] ::StringW& dyn_$Guid$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$Guid$k__BackingField();
     // Get instance field reference: private System.String <LocalizationResources>k__BackingField
-    [[deprecated]] ::StringW& dyn_$LocalizationResources$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$LocalizationResources$k__BackingField();
     // public System.String get_Name()
     // Offset: 0x1E1920
     ::StringW get_Name();

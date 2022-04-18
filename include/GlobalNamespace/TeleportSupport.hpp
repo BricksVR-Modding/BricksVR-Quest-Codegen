@@ -53,15 +53,22 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private LocomotionTeleport <LocomotionTeleport>k__BackingField
-    [[deprecated]] ::GlobalNamespace::LocomotionTeleport*& dyn_$LocomotionTeleport$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::LocomotionTeleport*& dyn_$LocomotionTeleport$k__BackingField();
     // Get instance field reference: private System.Boolean _eventsActive
-    [[deprecated]] bool& dyn__eventsActive();
+    [[deprecated("Use field access instead!")]] bool& dyn__eventsActive();
     // protected LocomotionTeleport get_LocomotionTeleport()
     // Offset: 0x1E1520
     ::GlobalNamespace::LocomotionTeleport* get_LocomotionTeleport();
     // private System.Void set_LocomotionTeleport(LocomotionTeleport value)
     // Offset: 0x1E4910
     void set_LocomotionTeleport(::GlobalNamespace::LocomotionTeleport* value);
+    // protected System.Void .ctor()
+    // Offset: 0x1DDE30
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static TeleportSupport* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::TeleportSupport::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<TeleportSupport*, creationType>()));
+    }
     // protected System.Void OnEnable()
     // Offset: 0x618F50
     void OnEnable();
@@ -77,19 +84,6 @@ namespace GlobalNamespace {
     // protected System.Void RemoveEventHandlers()
     // Offset: 0x3CACE0
     void RemoveEventHandlers();
-    // protected System.Void .ctor()
-    // Offset: 0x1DDE30
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static TeleportSupport* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::TeleportSupport::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<TeleportSupport*, creationType>()));
-    }
   }; // TeleportSupport
   #pragma pack(pop)
   static check_size<sizeof(TeleportSupport), 32 + sizeof(bool)> __GlobalNamespace_TeleportSupportSizeCheck;
@@ -113,6 +107,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::TeleportSupport*), "set_LocomotionTeleport", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: GlobalNamespace::TeleportSupport::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::TeleportSupport::OnEnable
 // Il2CppName: OnEnable
 template<>
@@ -154,7 +152,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::TeleportSupport*), "RemoveEventHandlers", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::TeleportSupport::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -76,15 +76,15 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<::Il2CppObject*>*>(this);
     }
     // Get instance field reference: private System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: private System.Object <>2__current
-    [[deprecated]] ::Il2CppObject*& dyn_$$2__current();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_$$2__current();
     // Get instance field reference: public System.Collections.Generic.List`1<System.ValueTuple`2<System.String,System.ValueTuple`2<TMPro.TextMeshProUGUI,TMPro.TextMeshProUGUI>>> roomNamesToLoad
-    [[deprecated]] ::System::Collections::Generic::List_1<::System::ValueTuple_2<::StringW, ::System::ValueTuple_2<::TMPro::TextMeshProUGUI*, ::TMPro::TextMeshProUGUI*>>>*& dyn_roomNamesToLoad();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::System::ValueTuple_2<::StringW, ::System::ValueTuple_2<::TMPro::TextMeshProUGUI*, ::TMPro::TextMeshProUGUI*>>>*& dyn_roomNamesToLoad();
     // Get instance field reference: public RecentRoomsManager <>4__this
-    [[deprecated]] ::GlobalNamespace::RecentRoomsManager*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::RecentRoomsManager*& dyn_$$4__this();
     // Get instance field reference: private System.Collections.Generic.List`1/System.Collections.Generic.Enumerator<System.ValueTuple`2<System.String,System.ValueTuple`2<TMPro.TextMeshProUGUI,TMPro.TextMeshProUGUI>>> <>7__wrap1
-    [[deprecated]] typename ::System::Collections::Generic::List_1<::System::ValueTuple_2<::StringW, ::System::ValueTuple_2<::TMPro::TextMeshProUGUI*, ::TMPro::TextMeshProUGUI*>>>::Enumerator& dyn_$$7__wrap1();
+    [[deprecated("Use field access instead!")]] typename ::System::Collections::Generic::List_1<::System::ValueTuple_2<::StringW, ::System::ValueTuple_2<::TMPro::TextMeshProUGUI*, ::TMPro::TextMeshProUGUI*>>>::Enumerator& dyn_$$7__wrap1();
     // private System.Object System.Collections.Generic.IEnumerator<System.Object>.get_Current()
     // Offset: 0x1E1520
     ::Il2CppObject* System_Collections_Generic_IEnumerator$System_Object$_get_Current();

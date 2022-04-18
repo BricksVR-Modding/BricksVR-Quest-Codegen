@@ -127,27 +127,34 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public OVRCameraRig CameraRig
-    [[deprecated]] ::GlobalNamespace::OVRCameraRig*& dyn_CameraRig();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRCameraRig*& dyn_CameraRig();
     // Get instance field reference: public System.Boolean EnableCollision
-    [[deprecated]] bool& dyn_EnableCollision();
+    [[deprecated("Use field access instead!")]] bool& dyn_EnableCollision();
     // Get instance field reference: public UnityEngine.LayerMask CollideLayers
-    [[deprecated]] ::UnityEngine::LayerMask& dyn_CollideLayers();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::LayerMask& dyn_CollideLayers();
     // Get instance field reference: public System.Single MaxFade
-    [[deprecated]] float& dyn_MaxFade();
+    [[deprecated("Use field access instead!")]] float& dyn_MaxFade();
     // Get instance field reference: public System.Single FadeMinDistance
-    [[deprecated]] float& dyn_FadeMinDistance();
+    [[deprecated("Use field access instead!")]] float& dyn_FadeMinDistance();
     // Get instance field reference: public System.Single PreferredHeight
-    [[deprecated]] float& dyn_PreferredHeight();
+    [[deprecated("Use field access instead!")]] float& dyn_PreferredHeight();
     // Get instance field reference: public System.Single FadeMaxDistance
-    [[deprecated]] float& dyn_FadeMaxDistance();
+    [[deprecated("Use field access instead!")]] float& dyn_FadeMaxDistance();
     // Get instance field reference: private readonly System.Action _cameraUpdateAction
-    [[deprecated]] ::System::Action*& dyn__cameraUpdateAction();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn__cameraUpdateAction();
     // Get instance field reference: private readonly System.Action _preCharacterMovementAction
-    [[deprecated]] ::System::Action*& dyn__preCharacterMovementAction();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn__preCharacterMovementAction();
     // Get instance field reference: private UnityEngine.CapsuleCollider _character
-    [[deprecated]] ::UnityEngine::CapsuleCollider*& dyn__character();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::CapsuleCollider*& dyn__character();
     // Get instance field reference: private SimpleCapsuleWithStickMovement _simplePlayerController
-    [[deprecated]] ::GlobalNamespace::SimpleCapsuleWithStickMovement*& dyn__simplePlayerController();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::SimpleCapsuleWithStickMovement*& dyn__simplePlayerController();
+    // private System.Void .ctor()
+    // Offset: 0x284CD0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static CharacterCameraConstraint* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::CharacterCameraConstraint::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<CharacterCameraConstraint*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0x284860
     void Awake();
@@ -163,25 +170,16 @@ namespace GlobalNamespace {
     // private System.Void CameraUpdate()
     // Offset: 0x2848D0
     void CameraUpdate();
-    // private System.Void .ctor()
-    // Offset: 0x284CD0
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static CharacterCameraConstraint* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::CharacterCameraConstraint::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<CharacterCameraConstraint*, creationType>()));
-    }
   }; // CharacterCameraConstraint
   #pragma pack(pop)
   static check_size<sizeof(CharacterCameraConstraint), 80 + sizeof(::GlobalNamespace::SimpleCapsuleWithStickMovement*)> __GlobalNamespace_CharacterCameraConstraintSizeCheck;
   static_assert(sizeof(CharacterCameraConstraint) == 0x58);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::CharacterCameraConstraint::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::CharacterCameraConstraint::Awake
 // Il2CppName: Awake
 template<>
@@ -222,7 +220,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::CharacterCameraConstraint*), "CameraUpdate", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::CharacterCameraConstraint::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

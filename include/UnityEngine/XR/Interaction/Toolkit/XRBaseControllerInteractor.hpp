@@ -223,55 +223,55 @@ namespace UnityEngine::XR::Interaction::Toolkit {
     static_assert(sizeof(::UnityEngine::AudioSource*) == 0x8);
     public:
     // Get instance field reference: private System.Boolean m_ToggleSelect
-    [[deprecated]] bool& dyn_m_ToggleSelect();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_ToggleSelect();
     // Get instance field reference: private System.Boolean m_HideControllerOnSelect
-    [[deprecated]] bool& dyn_m_HideControllerOnSelect();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_HideControllerOnSelect();
     // Get instance field reference: private System.Boolean m_PlayAudioClipOnSelectEnter
-    [[deprecated]] bool& dyn_m_PlayAudioClipOnSelectEnter();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_PlayAudioClipOnSelectEnter();
     // Get instance field reference: private UnityEngine.AudioClip m_AudioClipForOnSelectEnter
-    [[deprecated]] ::UnityEngine::AudioClip*& dyn_m_AudioClipForOnSelectEnter();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AudioClip*& dyn_m_AudioClipForOnSelectEnter();
     // Get instance field reference: private System.Boolean m_PlayAudioClipOnSelectExit
-    [[deprecated]] bool& dyn_m_PlayAudioClipOnSelectExit();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_PlayAudioClipOnSelectExit();
     // Get instance field reference: private UnityEngine.AudioClip m_AudioClipForOnSelectExit
-    [[deprecated]] ::UnityEngine::AudioClip*& dyn_m_AudioClipForOnSelectExit();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AudioClip*& dyn_m_AudioClipForOnSelectExit();
     // Get instance field reference: private System.Boolean m_PlayAudioClipOnHoverEnter
-    [[deprecated]] bool& dyn_m_PlayAudioClipOnHoverEnter();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_PlayAudioClipOnHoverEnter();
     // Get instance field reference: private UnityEngine.AudioClip m_AudioClipForOnHoverEnter
-    [[deprecated]] ::UnityEngine::AudioClip*& dyn_m_AudioClipForOnHoverEnter();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AudioClip*& dyn_m_AudioClipForOnHoverEnter();
     // Get instance field reference: private System.Boolean m_PlayAudioClipOnHoverExit
-    [[deprecated]] bool& dyn_m_PlayAudioClipOnHoverExit();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_PlayAudioClipOnHoverExit();
     // Get instance field reference: private UnityEngine.AudioClip m_AudioClipForOnHoverExit
-    [[deprecated]] ::UnityEngine::AudioClip*& dyn_m_AudioClipForOnHoverExit();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AudioClip*& dyn_m_AudioClipForOnHoverExit();
     // Get instance field reference: private System.Boolean m_PlayHapticsOnSelectEnter
-    [[deprecated]] bool& dyn_m_PlayHapticsOnSelectEnter();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_PlayHapticsOnSelectEnter();
     // Get instance field reference: private System.Single m_HapticSelectEnterIntensity
-    [[deprecated]] float& dyn_m_HapticSelectEnterIntensity();
+    [[deprecated("Use field access instead!")]] float& dyn_m_HapticSelectEnterIntensity();
     // Get instance field reference: private System.Single m_HapticSelectEnterDuration
-    [[deprecated]] float& dyn_m_HapticSelectEnterDuration();
+    [[deprecated("Use field access instead!")]] float& dyn_m_HapticSelectEnterDuration();
     // Get instance field reference: private System.Boolean m_PlayHapticsOnSelectExit
-    [[deprecated]] bool& dyn_m_PlayHapticsOnSelectExit();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_PlayHapticsOnSelectExit();
     // Get instance field reference: private System.Single m_HapticSelectExitIntensity
-    [[deprecated]] float& dyn_m_HapticSelectExitIntensity();
+    [[deprecated("Use field access instead!")]] float& dyn_m_HapticSelectExitIntensity();
     // Get instance field reference: private System.Single m_HapticSelectExitDuration
-    [[deprecated]] float& dyn_m_HapticSelectExitDuration();
+    [[deprecated("Use field access instead!")]] float& dyn_m_HapticSelectExitDuration();
     // Get instance field reference: private System.Boolean m_PlayHapticsOnHoverEnter
-    [[deprecated]] bool& dyn_m_PlayHapticsOnHoverEnter();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_PlayHapticsOnHoverEnter();
     // Get instance field reference: private System.Single m_HapticHoverEnterIntensity
-    [[deprecated]] float& dyn_m_HapticHoverEnterIntensity();
+    [[deprecated("Use field access instead!")]] float& dyn_m_HapticHoverEnterIntensity();
     // Get instance field reference: private System.Single m_HapticHoverEnterDuration
-    [[deprecated]] float& dyn_m_HapticHoverEnterDuration();
+    [[deprecated("Use field access instead!")]] float& dyn_m_HapticHoverEnterDuration();
     // Get instance field reference: private System.Boolean m_PlayHapticsOnHoverExit
-    [[deprecated]] bool& dyn_m_PlayHapticsOnHoverExit();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_PlayHapticsOnHoverExit();
     // Get instance field reference: private System.Single m_HapticHoverExitIntensity
-    [[deprecated]] float& dyn_m_HapticHoverExitIntensity();
+    [[deprecated("Use field access instead!")]] float& dyn_m_HapticHoverExitIntensity();
     // Get instance field reference: private System.Single m_HapticHoverExitDuration
-    [[deprecated]] float& dyn_m_HapticHoverExitDuration();
+    [[deprecated("Use field access instead!")]] float& dyn_m_HapticHoverExitDuration();
     // Get instance field reference: private System.Boolean m_ToggleSelectActive
-    [[deprecated]] bool& dyn_m_ToggleSelectActive();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_ToggleSelectActive();
     // Get instance field reference: private UnityEngine.XR.Interaction.Toolkit.XRController m_Controller
-    [[deprecated]] ::UnityEngine::XR::Interaction::Toolkit::XRController*& dyn_m_Controller();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::Interaction::Toolkit::XRController*& dyn_m_Controller();
     // Get instance field reference: private UnityEngine.AudioSource m_EffectsAudioSource
-    [[deprecated]] ::UnityEngine::AudioSource*& dyn_m_EffectsAudioSource();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AudioSource*& dyn_m_EffectsAudioSource();
     // public System.Boolean get_toggleSelect()
     // Offset: 0x300030
     bool get_toggleSelect();
@@ -425,11 +425,6 @@ namespace UnityEngine::XR::Interaction::Toolkit {
     // Offset: 0x2FFCA0
     // Implemented from: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor
     // Base method: System.Void XRBaseInteractor::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XRBaseControllerInteractor* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::XR::Interaction::Toolkit::XRBaseControllerInteractor::.ctor");

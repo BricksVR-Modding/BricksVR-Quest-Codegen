@@ -44,7 +44,6 @@ namespace Normal::Realtime {
     // Offset: 0x8B6D30
     // Implemented from: Normal.Realtime.ConfigurableComponentMap
     // Base method: System.Void ConfigurableComponentMap::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static RealtimeComponentMap* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::RealtimeComponentMap::.ctor");

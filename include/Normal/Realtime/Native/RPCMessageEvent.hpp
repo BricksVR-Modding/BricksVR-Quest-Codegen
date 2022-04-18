@@ -55,11 +55,11 @@ namespace Normal::Realtime::Native {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Int32 clientID
-    [[deprecated]] int& dyn_clientID();
+    [[deprecated("Use field access instead!")]] int& dyn_clientID();
     // Get instance field reference: public System.UIntPtr messageLength
-    [[deprecated]] ::System::UIntPtr& dyn_messageLength();
+    [[deprecated("Use field access instead!")]] ::System::UIntPtr& dyn_messageLength();
     // Get instance field reference: public System.Byte reliable
-    [[deprecated]] uint8_t& dyn_reliable();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn_reliable();
   }; // Normal.Realtime.Native.RPCMessageEvent
   #pragma pack(pop)
   static check_size<sizeof(RPCMessageEvent), 16 + sizeof(uint8_t)> __Normal_Realtime_Native_RPCMessageEventSizeCheck;

@@ -80,17 +80,17 @@ namespace UnityEngine::XR {
       return *reinterpret_cast<::System::IEquatable_1<::UnityEngine::XR::HapticCapabilities>*>(this);
     }
     // Get instance field reference: private System.UInt32 m_NumChannels
-    [[deprecated]] uint& dyn_m_NumChannels();
+    [[deprecated("Use field access instead!")]] uint& dyn_m_NumChannels();
     // Get instance field reference: private System.Boolean m_SupportsImpulse
-    [[deprecated]] bool& dyn_m_SupportsImpulse();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_SupportsImpulse();
     // Get instance field reference: private System.Boolean m_SupportsBuffer
-    [[deprecated]] bool& dyn_m_SupportsBuffer();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_SupportsBuffer();
     // Get instance field reference: private System.UInt32 m_BufferFrequencyHz
-    [[deprecated]] uint& dyn_m_BufferFrequencyHz();
+    [[deprecated("Use field access instead!")]] uint& dyn_m_BufferFrequencyHz();
     // Get instance field reference: private System.UInt32 m_BufferMaxSize
-    [[deprecated]] uint& dyn_m_BufferMaxSize();
+    [[deprecated("Use field access instead!")]] uint& dyn_m_BufferMaxSize();
     // Get instance field reference: private System.UInt32 m_BufferOptimalSize
-    [[deprecated]] uint& dyn_m_BufferOptimalSize();
+    [[deprecated("Use field access instead!")]] uint& dyn_m_BufferOptimalSize();
     // public System.UInt32 get_numChannels()
     // Offset: 0x2AC700
     uint get_numChannels();

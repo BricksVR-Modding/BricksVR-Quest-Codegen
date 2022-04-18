@@ -119,19 +119,29 @@ namespace GlobalNamespace {
     // Set static field: static private System.Int32 MaximumBatchSize
     static void _set_MaximumBatchSize(int value);
     // Get instance field reference: public UnityEngine.Material brickMaterial
-    [[deprecated]] ::UnityEngine::Material*& dyn_brickMaterial();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn_brickMaterial();
     // Get instance field reference: private PlacedBrickRendererManagerTwo/RendererBufferRecycler _rendererBufferRecycler
-    [[deprecated]] ::GlobalNamespace::PlacedBrickRendererManagerTwo::RendererBufferRecycler*& dyn__rendererBufferRecycler();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::PlacedBrickRendererManagerTwo::RendererBufferRecycler*& dyn__rendererBufferRecycler();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<UnityEngine.Mesh,PlacedBrickRendererManagerTwo/MeshRendererQueue> _meshToRendererQueue
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::UnityEngine::Mesh*, ::GlobalNamespace::PlacedBrickRendererManagerTwo::MeshRendererQueue*>*& dyn__meshToRendererQueue();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::UnityEngine::Mesh*, ::GlobalNamespace::PlacedBrickRendererManagerTwo::MeshRendererQueue*>*& dyn__meshToRendererQueue();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.Int32,PlacedBrickRendererManagerTwo/MeshRendererQueue> _objectHashCodesToRendererQueues
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<int, ::GlobalNamespace::PlacedBrickRendererManagerTwo::MeshRendererQueue*>*& dyn__objectHashCodesToRendererQueues();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<int, ::GlobalNamespace::PlacedBrickRendererManagerTwo::MeshRendererQueue*>*& dyn__objectHashCodesToRendererQueues();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<PlacedBrickRendererManagerTwo/MeshRendererQueue,System.Collections.Generic.Dictionary`2<System.Int32,System.Boolean>> _objectsToBeRemoved
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::GlobalNamespace::PlacedBrickRendererManagerTwo::MeshRendererQueue*, ::System::Collections::Generic::Dictionary_2<int, bool>*>*& dyn__objectsToBeRemoved();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::GlobalNamespace::PlacedBrickRendererManagerTwo::MeshRendererQueue*, ::System::Collections::Generic::Dictionary_2<int, bool>*>*& dyn__objectsToBeRemoved();
     // Get instance field reference: private readonly UnityEngine.Vector3 _brickScale
-    [[deprecated]] ::UnityEngine::Vector3& dyn__brickScale();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__brickScale();
     // Get instance field reference: public System.Boolean rendering
-    [[deprecated]] bool& dyn_rendering();
+    [[deprecated("Use field access instead!")]] bool& dyn_rendering();
+    // public System.Void .ctor()
+    // Offset: 0x6792E0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static PlacedBrickRendererManagerTwo* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::PlacedBrickRendererManagerTwo::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<PlacedBrickRendererManagerTwo*, creationType>()));
+    }
+    // static private System.Void .cctor()
+    // Offset: 0x679290
+    static void _cctor();
     // static public PlacedBrickRendererManagerTwo GetInstance()
     // Offset: 0x678C30
     static ::GlobalNamespace::PlacedBrickRendererManagerTwo* GetInstance();
@@ -150,30 +160,24 @@ namespace GlobalNamespace {
     // private System.Void Update()
     // Offset: 0x679090
     void Update();
-    // public System.Void .ctor()
-    // Offset: 0x6792E0
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static PlacedBrickRendererManagerTwo* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::PlacedBrickRendererManagerTwo::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<PlacedBrickRendererManagerTwo*, creationType>()));
-    }
-    // static private System.Void .cctor()
-    // Offset: 0x679290
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.cctor()
-    static void _cctor();
   }; // PlacedBrickRendererManagerTwo
   #pragma pack(pop)
   static check_size<sizeof(PlacedBrickRendererManagerTwo), 76 + sizeof(bool)> __GlobalNamespace_PlacedBrickRendererManagerTwoSizeCheck;
   static_assert(sizeof(PlacedBrickRendererManagerTwo) == 0x4D);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::PlacedBrickRendererManagerTwo::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
+// Writing MetadataGetter for method: GlobalNamespace::PlacedBrickRendererManagerTwo::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&GlobalNamespace::PlacedBrickRendererManagerTwo::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::PlacedBrickRendererManagerTwo*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
 // Writing MetadataGetter for method: GlobalNamespace::PlacedBrickRendererManagerTwo::GetInstance
 // Il2CppName: GetInstance
 template<>
@@ -227,17 +231,5 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (GlobalNamespace::PlacedBrickRendererManagerTwo::*)()>(&GlobalNamespace::PlacedBrickRendererManagerTwo::Update)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::PlacedBrickRendererManagerTwo*), "Update", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
-  }
-};
-// Writing MetadataGetter for method: GlobalNamespace::PlacedBrickRendererManagerTwo::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
-// Writing MetadataGetter for method: GlobalNamespace::PlacedBrickRendererManagerTwo::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&GlobalNamespace::PlacedBrickRendererManagerTwo::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::PlacedBrickRendererManagerTwo*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };

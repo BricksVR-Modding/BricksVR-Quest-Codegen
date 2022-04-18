@@ -21,9 +21,9 @@
 // Begin forward declares
 // Forward declaring namespace: Normal::Realtime::Serialization
 namespace Normal::Realtime::Serialization {
-  // Skipping declaration: LifetimeFlags because it is already included!
   // Forward declaring type: IMetaModelExtension
   class IMetaModelExtension;
+  // Skipping declaration: LifetimeFlags because it is already included!
   // Forward declaring type: StreamContext
   struct StreamContext;
   // Forward declaring type: WriteStream
@@ -94,7 +94,7 @@ namespace Normal::Realtime::Serialization {
         return value;
       }
       // Get instance field reference: public System.Int32 value
-      [[deprecated]] int& dyn_value();
+      [[deprecated("Use field access instead!")]] int& dyn_value();
       // public System.Boolean Equals(Normal.Realtime.Serialization.MetaModel/Normal.Realtime.Serialization.OwnerID other)
       // Offset: 0x3247C0
       bool Equals(::Normal::Realtime::Serialization::MetaModel::OwnerID other);
@@ -173,7 +173,7 @@ namespace Normal::Realtime::Serialization {
       // Set static field: static public Normal.Realtime.Serialization.MetaModel/Normal.Realtime.Serialization.LifetimeFlags DestroyWhenOwnerLeaves
       static void _set_DestroyWhenOwnerLeaves(::Normal::Realtime::Serialization::MetaModel::LifetimeFlags value);
       // Get instance field reference: public System.UInt32 value__
-      [[deprecated]] uint& dyn_value__();
+      [[deprecated("Use field access instead!")]] uint& dyn_value__();
     }; // Normal.Realtime.Serialization.MetaModel/Normal.Realtime.Serialization.LifetimeFlags
     #pragma pack(pop)
     static check_size<sizeof(MetaModel::LifetimeFlags), 0 + sizeof(uint)> __Normal_Realtime_Serialization_MetaModel_LifetimeFlagsSizeCheck;
@@ -207,9 +207,9 @@ namespace Normal::Realtime::Serialization {
     // Set static field: static public System.UInt32 ReservedPropertyID
     static void _set_ReservedPropertyID(uint value);
     // Get instance field reference: private Normal.Realtime.ReliableProperty`1<Normal.Realtime.Serialization.MetaModel/Normal.Realtime.Serialization.OwnerID> _ownerIDProperty
-    [[deprecated]] ::Normal::Realtime::ReliableProperty_1<::Normal::Realtime::Serialization::MetaModel::OwnerID>*& dyn__ownerIDProperty();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::ReliableProperty_1<::Normal::Realtime::Serialization::MetaModel::OwnerID>*& dyn__ownerIDProperty();
     // Get instance field reference: private Normal.Realtime.ReliableProperty`1<Normal.Realtime.Serialization.MetaModel/Normal.Realtime.Serialization.LifetimeFlags> _lifetimeFlagsProperty
-    [[deprecated]] ::Normal::Realtime::ReliableProperty_1<::Normal::Realtime::Serialization::MetaModel::LifetimeFlags>*& dyn__lifetimeFlagsProperty();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::ReliableProperty_1<::Normal::Realtime::Serialization::MetaModel::LifetimeFlags>*& dyn__lifetimeFlagsProperty();
     // public System.Int32 get_ownerID()
     // Offset: 0x88D880
     int get_ownerID();
@@ -231,6 +231,13 @@ namespace Normal::Realtime::Serialization {
     // static private System.Void .cctor()
     // Offset: 0x88D5F0
     static void _cctor();
+    // public System.Void .ctor()
+    // Offset: 0x88D790
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static MetaModel* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::Serialization::MetaModel::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<MetaModel*, creationType>()));
+    }
     // public System.Void .ctor(System.Int32 ownerID, Normal.Realtime.Serialization.MetaModel/Normal.Realtime.Serialization.LifetimeFlags lifetimeFlags)
     // Offset: 0x88D650
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -247,15 +254,6 @@ namespace Normal::Realtime::Serialization {
     // private System.Void Normal.Realtime.Serialization.IStreamReader.Read(Normal.Realtime.Serialization.ReadStream stream, Normal.Realtime.Serialization.StreamContext context)
     // Offset: 0x88CD00
     void Normal_Realtime_Serialization_IStreamReader_Read(::Normal::Realtime::Serialization::ReadStream* stream, ::Normal::Realtime::Serialization::StreamContext context);
-    // public System.Void .ctor()
-    // Offset: 0x88D790
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static MetaModel* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::Serialization::MetaModel::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<MetaModel*, creationType>()));
-    }
   }; // Normal.Realtime.Serialization.MetaModel
   #pragma pack(pop)
   static check_size<sizeof(MetaModel), 24 + sizeof(::Normal::Realtime::ReliableProperty_1<::Normal::Realtime::Serialization::MetaModel::LifetimeFlags>*)> __Normal_Realtime_Serialization_MetaModelSizeCheck;
@@ -334,6 +332,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
 // Try using FindMethod instead!
+// Writing MetadataGetter for method: Normal::Realtime::Serialization::MetaModel::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Normal::Realtime::Serialization::MetaModel::Normal_Realtime_Serialization_IStreamWriter_WriteLength
 // Il2CppName: Normal.Realtime.Serialization.IStreamWriter.WriteLength
 template<>
@@ -363,7 +365,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Norma
     return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::Serialization::MetaModel*), "Normal.Realtime.Serialization.IStreamReader.Read", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{stream, context});
   }
 };
-// Writing MetadataGetter for method: Normal::Realtime::Serialization::MetaModel::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

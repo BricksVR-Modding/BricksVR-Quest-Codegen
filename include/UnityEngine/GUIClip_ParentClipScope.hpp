@@ -56,7 +56,7 @@ namespace UnityEngine {
       return m_Disposed;
     }
     // Get instance field reference: private System.Boolean m_Disposed
-    [[deprecated]] bool& dyn_m_Disposed();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_Disposed();
     // public System.Void .ctor(UnityEngine.Matrix4x4 objectTransform, UnityEngine.Rect clipRect)
     // Offset: 0x62A780
     ParentClipScope(::UnityEngine::Matrix4x4 objectTransform, ::UnityEngine::Rect clipRect);

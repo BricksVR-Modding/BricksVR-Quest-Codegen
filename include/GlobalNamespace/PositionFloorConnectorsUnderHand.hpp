@@ -52,34 +52,32 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public UnityEngine.GameObject hand
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_hand();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_hand();
     // Get instance field reference: private System.Single _connectorInterval
-    [[deprecated]] float& dyn__connectorInterval();
+    [[deprecated("Use field access instead!")]] float& dyn__connectorInterval();
+    // public System.Void .ctor()
+    // Offset: 0x67B700
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static PositionFloorConnectorsUnderHand* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::PositionFloorConnectorsUnderHand::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<PositionFloorConnectorsUnderHand*, creationType>()));
+    }
     // private System.Void Start()
     // Offset: 0x1DDF00
     void Start();
     // private System.Void Update()
     // Offset: 0x67B620
     void Update();
-    // public System.Void .ctor()
-    // Offset: 0x67B700
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static PositionFloorConnectorsUnderHand* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::PositionFloorConnectorsUnderHand::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<PositionFloorConnectorsUnderHand*, creationType>()));
-    }
   }; // PositionFloorConnectorsUnderHand
   #pragma pack(pop)
   static check_size<sizeof(PositionFloorConnectorsUnderHand), 32 + sizeof(float)> __GlobalNamespace_PositionFloorConnectorsUnderHandSizeCheck;
   static_assert(sizeof(PositionFloorConnectorsUnderHand) == 0x24);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::PositionFloorConnectorsUnderHand::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::PositionFloorConnectorsUnderHand::Start
 // Il2CppName: Start
 template<>
@@ -96,7 +94,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::PositionFloorConnectorsUnderHand*), "Update", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::PositionFloorConnectorsUnderHand::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -69,25 +69,20 @@ namespace GlobalNamespace {
     static_assert(sizeof(::UnityEngine::Quaternion) == 0x10);
     public:
     // Get instance field reference: public TeleportOrientationHandler/OrientationModes OrientationMode
-    [[deprecated]] ::GlobalNamespace::TeleportOrientationHandler::OrientationModes& dyn_OrientationMode();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::TeleportOrientationHandler::OrientationModes& dyn_OrientationMode();
     // Get instance field reference: public System.Boolean UpdateOrientationDuringAim
-    [[deprecated]] bool& dyn_UpdateOrientationDuringAim();
+    [[deprecated("Use field access instead!")]] bool& dyn_UpdateOrientationDuringAim();
     // Get instance field reference: public System.Single AimDistanceThreshold
-    [[deprecated]] float& dyn_AimDistanceThreshold();
+    [[deprecated("Use field access instead!")]] float& dyn_AimDistanceThreshold();
     // Get instance field reference: public System.Single AimDistanceMaxRange
-    [[deprecated]] float& dyn_AimDistanceMaxRange();
+    [[deprecated("Use field access instead!")]] float& dyn_AimDistanceMaxRange();
     // Get instance field reference: private UnityEngine.Quaternion _initialRotation
-    [[deprecated]] ::UnityEngine::Quaternion& dyn__initialRotation();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Quaternion& dyn__initialRotation();
     // public System.Void .ctor()
     // Offset: 0x617E10
     // Implemented from: TeleportOrientationHandler
     // Base method: System.Void TeleportOrientationHandler::.ctor()
     // Base method: System.Void TeleportSupport::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TeleportOrientationHandlerHMD* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::TeleportOrientationHandlerHMD::.ctor");

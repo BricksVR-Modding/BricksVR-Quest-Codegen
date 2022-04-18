@@ -32,8 +32,6 @@ namespace System::Net::Configuration {
     public:
     // public System.Void .ctor()
     // Offset: 0x5659B0
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static WebRequestModuleElementCollection* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Net::Configuration::WebRequestModuleElementCollection::.ctor");

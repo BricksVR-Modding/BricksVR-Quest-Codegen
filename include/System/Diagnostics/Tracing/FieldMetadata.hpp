@@ -77,19 +77,19 @@ namespace System::Diagnostics::Tracing {
     static_assert(sizeof(uint8_t) == 0x1);
     public:
     // Get instance field reference: private readonly System.String name
-    [[deprecated]] ::StringW& dyn_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_name();
     // Get instance field reference: private readonly System.Int32 nameSize
-    [[deprecated]] int& dyn_nameSize();
+    [[deprecated("Use field access instead!")]] int& dyn_nameSize();
     // Get instance field reference: private readonly System.Diagnostics.Tracing.EventFieldTags tags
-    [[deprecated]] ::System::Diagnostics::Tracing::EventFieldTags& dyn_tags();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::EventFieldTags& dyn_tags();
     // Get instance field reference: private readonly System.Byte[] custom
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_custom();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_custom();
     // Get instance field reference: private readonly System.UInt16 fixedCount
-    [[deprecated]] uint16_t& dyn_fixedCount();
+    [[deprecated("Use field access instead!")]] uint16_t& dyn_fixedCount();
     // Get instance field reference: private System.Byte inType
-    [[deprecated]] uint8_t& dyn_inType();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn_inType();
     // Get instance field reference: private System.Byte outType
-    [[deprecated]] uint8_t& dyn_outType();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn_outType();
     // public System.Void .ctor(System.String name, System.Diagnostics.Tracing.TraceLoggingDataType type, System.Diagnostics.Tracing.EventFieldTags tags, System.Boolean variableCount)
     // Offset: 0x2E7920
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

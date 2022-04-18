@@ -45,7 +45,7 @@ namespace GlobalNamespace {
     // Set static field: static public BrickStorePlayerModel/PropertyID BrickId
     static void _set_BrickId(::GlobalNamespace::BrickStorePlayerModel::PropertyID value);
     // Get instance field reference: public System.UInt32 value__
-    [[deprecated]] uint& dyn_value__();
+    [[deprecated("Use field access instead!")]] uint& dyn_value__();
   }; // BrickStorePlayerModel/PropertyID
   #pragma pack(pop)
   static check_size<sizeof(BrickStorePlayerModel::PropertyID), 0 + sizeof(uint)> __GlobalNamespace_BrickStorePlayerModel_PropertyIDSizeCheck;

@@ -54,6 +54,13 @@ namespace GlobalNamespace {
     static ::GlobalNamespace::Wait* _get__instance();
     // Set static field: static private Wait _instance
     static void _set__instance(::GlobalNamespace::Wait* value);
+    // public System.Void .ctor()
+    // Offset: 0x1DDE30
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static Wait* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::Wait::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<Wait*, creationType>()));
+    }
     // static private Wait GetInstance()
     // Offset: 0x928150
     static ::GlobalNamespace::Wait* GetInstance();
@@ -75,23 +82,14 @@ namespace GlobalNamespace {
     // static public System.Collections.IEnumerator UntilIEnum(System.Func`1<System.Boolean> until, System.Action function)
     // Offset: 0x928210
     static ::System::Collections::IEnumerator* UntilIEnum(::System::Func_1<bool>* until, ::System::Action* function);
-    // public System.Void .ctor()
-    // Offset: 0x1DDE30
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static Wait* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::Wait::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<Wait*, creationType>()));
-    }
   }; // Wait
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::Wait::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::Wait::GetInstance
 // Il2CppName: GetInstance
 template<>
@@ -160,7 +158,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::C
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::Wait*), "UntilIEnum", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{until, function});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::Wait::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

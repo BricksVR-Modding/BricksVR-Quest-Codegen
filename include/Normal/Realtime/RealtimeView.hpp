@@ -190,35 +190,35 @@ namespace Normal::Realtime {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private Normal.Realtime.Realtime _realtime
-    [[deprecated]] ::Normal::Realtime::Realtime*& dyn__realtime();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::Realtime*& dyn__realtime();
     // Get instance field reference: private System.Byte[] _sceneViewUUID
-    [[deprecated]] ::ArrayW<uint8_t>& dyn__sceneViewUUID();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn__sceneViewUUID();
     // Get instance field reference: private System.String _viewUUID
-    [[deprecated]] ::StringW& dyn__viewUUID();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__viewUUID();
     // Get instance field reference: private System.Boolean _sceneViewPreventOwnershipTakeover
-    [[deprecated]] bool& dyn__sceneViewPreventOwnershipTakeover();
+    [[deprecated("Use field access instead!")]] bool& dyn__sceneViewPreventOwnershipTakeover();
     // Get instance field reference: private System.Boolean _sceneViewDestroyWhenOwnerOrLastClientLeaves
-    [[deprecated]] bool& dyn__sceneViewDestroyWhenOwnerOrLastClientLeaves();
+    [[deprecated("Use field access instead!")]] bool& dyn__sceneViewDestroyWhenOwnerOrLastClientLeaves();
     // Get instance field reference: private System.Boolean _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated
-    [[deprecated]] bool& dyn__sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated();
+    [[deprecated("Use field access instead!")]] bool& dyn__sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated();
     // Get instance field reference: private System.Boolean _sceneViewDestroyWhenLastClientLeaves
-    [[deprecated]] bool& dyn__sceneViewDestroyWhenLastClientLeaves();
+    [[deprecated("Use field access instead!")]] bool& dyn__sceneViewDestroyWhenLastClientLeaves();
     // Get instance field reference: private Normal.Realtime.SerializableComponentIDPair[] _components
-    [[deprecated]] ::ArrayW<::Normal::Realtime::SerializableComponentIDPair>& dyn__components();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Normal::Realtime::SerializableComponentIDPair>& dyn__components();
     // Get instance field reference: private Normal.Realtime.SerializableViewIDPair[] _childViews
-    [[deprecated]] ::ArrayW<::Normal::Realtime::SerializableViewIDPair>& dyn__childViews();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Normal::Realtime::SerializableViewIDPair>& dyn__childViews();
     // Get instance field reference: private Normal.Realtime.RealtimeViewHierarchy _hierarchy
-    [[deprecated]] ::Normal::Realtime::RealtimeViewHierarchy*& dyn__hierarchy();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::RealtimeViewHierarchy*& dyn__hierarchy();
     // Get instance field reference: private Normal.Realtime.RealtimeComponentMap _realtimeComponents
-    [[deprecated]] ::Normal::Realtime::RealtimeComponentMap*& dyn__realtimeComponents();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::RealtimeComponentMap*& dyn__realtimeComponents();
     // Get instance field reference: private Normal.Realtime.RealtimeViewMap _realtimeChildViews
-    [[deprecated]] ::Normal::Realtime::RealtimeViewMap*& dyn__realtimeChildViews();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::RealtimeViewMap*& dyn__realtimeChildViews();
     // Get instance field reference: Normal.Realtime.RealtimeViewModel model
-    [[deprecated]] ::Normal::Realtime::RealtimeViewModel*& dyn_model();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::RealtimeViewModel*& dyn_model();
     // Get instance field reference: public Normal.Realtime.RealtimeView/Normal.Realtime.SceneViewWillRegisterDelegate sceneViewWillRegisterWithRealtime
-    [[deprecated]] ::Normal::Realtime::RealtimeView::SceneViewWillRegisterDelegate*& dyn_sceneViewWillRegisterWithRealtime();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::RealtimeView::SceneViewWillRegisterDelegate*& dyn_sceneViewWillRegisterWithRealtime();
     // Get instance field reference: private System.Boolean _isViewSetOnComponents
-    [[deprecated]] bool& dyn__isViewSetOnComponents();
+    [[deprecated("Use field access instead!")]] bool& dyn__isViewSetOnComponents();
     // Normal.Realtime.RealtimeViewHierarchy get_hierarchy()
     // Offset: 0x895FB0
     ::Normal::Realtime::RealtimeViewHierarchy* get_hierarchy();
@@ -312,6 +312,13 @@ namespace Normal::Realtime {
     // public System.Void set_destroyWhenOwnerLeaves(System.Boolean value)
     // Offset: 0x896690
     void set_destroyWhenOwnerLeaves(bool value);
+    // public System.Void .ctor()
+    // Offset: 0x895DE0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static RealtimeView* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::RealtimeView::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<RealtimeView*, creationType>()));
+    }
     // System.Boolean IsParentView(Normal.Realtime.RealtimeView view)
     // Offset: 0x8948C0
     bool IsParentView(::Normal::Realtime::RealtimeView* view);
@@ -417,19 +424,6 @@ namespace Normal::Realtime {
     // static private System.Void BindModelsToComponentMap(Normal.Realtime.ImmutableModelCollection models, Normal.Realtime.IConfigurableComponentMap components)
     // Offset: 0x893A30
     static void BindModelsToComponentMap(::Normal::Realtime::ImmutableModelCollection* models, ::Normal::Realtime::IConfigurableComponentMap* components);
-    // public System.Void .ctor()
-    // Offset: 0x895DE0
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static RealtimeView* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::RealtimeView::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<RealtimeView*, creationType>()));
-    }
   }; // Normal.Realtime.RealtimeView
   #pragma pack(pop)
   static check_size<sizeof(RealtimeView), 112 + sizeof(bool)> __Normal_Realtime_RealtimeViewSizeCheck;
@@ -688,6 +682,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Norma
     return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::RealtimeView*), "set_destroyWhenOwnerLeaves", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: Normal::Realtime::RealtimeView::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Normal::Realtime::RealtimeView::IsParentView
 // Il2CppName: IsParentView
 template<>
@@ -989,7 +987,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(::
     return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::RealtimeView*), "BindModelsToComponentMap", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{models, components});
   }
 };
-// Writing MetadataGetter for method: Normal::Realtime::RealtimeView::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -48,21 +48,19 @@ namespace ProfanityFilter {
     // static private System.Void .cctor()
     // Offset: 0x6DC4A0
     static void _cctor();
+    // public System.Void .ctor()
+    // Offset: 0x1DD400
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ProfanityFilter::$$c* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::ProfanityFilter::ProfanityFilter::$$c::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ProfanityFilter::$$c*, creationType>()));
+    }
     // System.Int32 <CensorStringByProfanityList>b__14_0(System.String x)
     // Offset: 0x6DC150
     int $CensorStringByProfanityList$b__14_0(::StringW x);
     // System.Int32 <FilterSwearListForCompleteWordsOnly>b__15_0(System.String x)
     // Offset: 0x6DC150
     int $FilterSwearListForCompleteWordsOnly$b__15_0(::StringW x);
-    // public System.Void .ctor()
-    // Offset: 0x1DD400
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ProfanityFilter::$$c* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::ProfanityFilter::ProfanityFilter::$$c::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ProfanityFilter::$$c*, creationType>()));
-    }
   }; // ProfanityFilter.ProfanityFilter/ProfanityFilter.<>c
   #pragma pack(pop)
 }
@@ -75,6 +73,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(ProfanityFilter::ProfanityFilter::$$c*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: ProfanityFilter::ProfanityFilter::$$c::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: ProfanityFilter::ProfanityFilter::$$c::$CensorStringByProfanityList$b__14_0
 // Il2CppName: <CensorStringByProfanityList>b__14_0
 template<>
@@ -93,7 +95,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (Profan
     return ::il2cpp_utils::FindMethod(classof(ProfanityFilter::ProfanityFilter::$$c*), "<FilterSwearListForCompleteWordsOnly>b__15_0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{x});
   }
 };
-// Writing MetadataGetter for method: ProfanityFilter::ProfanityFilter::$$c::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -57,29 +57,23 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Action onButtonDown
-    [[deprecated]] ::System::Action*& dyn_onButtonDown();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_onButtonDown();
     // public System.Void add_onButtonDown(System.Action value)
     // Offset: 0x284650
     void add_onButtonDown(::System::Action* value);
     // public System.Void remove_onButtonDown(System.Action value)
     // Offset: 0x2846F0
     void remove_onButtonDown(::System::Action* value);
-    // public System.Void OnPointerDown(UnityEngine.EventSystems.PointerEventData eventData)
-    // Offset: 0x284630
-    void OnPointerDown(::UnityEngine::EventSystems::PointerEventData* eventData);
     // public System.Void .ctor()
     // Offset: 0x1DDE30
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ButtonDownListener* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::ButtonDownListener::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<ButtonDownListener*, creationType>()));
     }
+    // public System.Void OnPointerDown(UnityEngine.EventSystems.PointerEventData eventData)
+    // Offset: 0x284630
+    void OnPointerDown(::UnityEngine::EventSystems::PointerEventData* eventData);
   }; // ButtonDownListener
   #pragma pack(pop)
   static check_size<sizeof(ButtonDownListener), 24 + sizeof(::System::Action*)> __GlobalNamespace_ButtonDownListenerSizeCheck;
@@ -104,6 +98,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::ButtonDownListener*), "remove_onButtonDown", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: GlobalNamespace::ButtonDownListener::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::ButtonDownListener::OnPointerDown
 // Il2CppName: OnPointerDown
 template<>
@@ -113,7 +111,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::ButtonDownListener*), "OnPointerDown", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{eventData});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::ButtonDownListener::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

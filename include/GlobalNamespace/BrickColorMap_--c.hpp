@@ -51,21 +51,19 @@ namespace GlobalNamespace {
     // static private System.Void .cctor()
     // Offset: 0x6F7E90
     static void _cctor();
+    // public System.Void .ctor()
+    // Offset: 0x1DD400
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static BrickColorMap::$$c* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::BrickColorMap::$$c::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<BrickColorMap::$$c*, creationType>()));
+    }
     // UnityEngine.Color32 <InitializeDictionary>b__5_0(System.Collections.Generic.KeyValuePair`2<System.Int32,UnityEngine.Color32> i)
     // Offset: 0x6F7C00
     ::UnityEngine::Color32 $InitializeDictionary$b__5_0(::System::Collections::Generic::KeyValuePair_2<int, ::UnityEngine::Color32> i);
     // System.Int32 <InitializeDictionary>b__5_1(System.Collections.Generic.KeyValuePair`2<System.Int32,UnityEngine.Color32> i)
     // Offset: 0x6F7C30
     int $InitializeDictionary$b__5_1(::System::Collections::Generic::KeyValuePair_2<int, ::UnityEngine::Color32> i);
-    // public System.Void .ctor()
-    // Offset: 0x1DD400
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static BrickColorMap::$$c* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::BrickColorMap::$$c::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<BrickColorMap::$$c*, creationType>()));
-    }
   }; // BrickColorMap/<>c
   #pragma pack(pop)
 }
@@ -78,6 +76,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::BrickColorMap::$$c*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: GlobalNamespace::BrickColorMap::$$c::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::BrickColorMap::$$c::$InitializeDictionary$b__5_0
 // Il2CppName: <InitializeDictionary>b__5_0
 template<>
@@ -96,7 +98,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (Global
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::BrickColorMap::$$c*), "<InitializeDictionary>b__5_1", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{i});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::BrickColorMap::$$c::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -41,7 +41,7 @@ namespace System::Reflection {
     static_assert(sizeof(::System::Reflection::Module*) == 0x8);
     public:
     // Get instance field reference: private System.Reflection.Module module
-    [[deprecated]] ::System::Reflection::Module*& dyn_module();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::Module*& dyn_module();
     // public System.Void .ctor(System.Byte* pointer, System.Int64 length, System.Reflection.Module module)
     // Offset: 0x54DEB0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

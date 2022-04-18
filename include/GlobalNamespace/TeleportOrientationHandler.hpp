@@ -79,11 +79,11 @@ namespace GlobalNamespace {
     static_assert(sizeof(::GlobalNamespace::LocomotionTeleport::AimData*) == 0x8);
     public:
     // Get instance field reference: private readonly System.Action _updateOrientationAction
-    [[deprecated]] ::System::Action*& dyn__updateOrientationAction();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn__updateOrientationAction();
     // Get instance field reference: private readonly System.Action`1<LocomotionTeleport/AimData> _updateAimDataAction
-    [[deprecated]] ::System::Action_1<::GlobalNamespace::LocomotionTeleport::AimData*>*& dyn__updateAimDataAction();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::GlobalNamespace::LocomotionTeleport::AimData*>*& dyn__updateAimDataAction();
     // Get instance field reference: protected LocomotionTeleport/AimData AimData
-    [[deprecated]] ::GlobalNamespace::LocomotionTeleport::AimData*& dyn_AimData();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::LocomotionTeleport::AimData*& dyn_AimData();
     // private System.Void UpdateAimData(LocomotionTeleport/AimData aimData)
     // Offset: 0x2322B0
     void UpdateAimData(::GlobalNamespace::LocomotionTeleport::AimData* aimData);
@@ -106,11 +106,6 @@ namespace GlobalNamespace {
     // Offset: 0x618C70
     // Implemented from: TeleportSupport
     // Base method: System.Void TeleportSupport::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TeleportOrientationHandler* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::TeleportOrientationHandler::.ctor");

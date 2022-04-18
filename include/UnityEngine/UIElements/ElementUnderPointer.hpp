@@ -79,17 +79,17 @@ namespace UnityEngine::UIElements {
     static_assert(sizeof(::ArrayW<bool>) == 0x8);
     public:
     // Get instance field reference: private UnityEngine.UIElements.VisualElement[] m_PendingTopElementUnderPointer
-    [[deprecated]] ::ArrayW<::UnityEngine::UIElements::VisualElement*>& dyn_m_PendingTopElementUnderPointer();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::UIElements::VisualElement*>& dyn_m_PendingTopElementUnderPointer();
     // Get instance field reference: private UnityEngine.UIElements.VisualElement[] m_TopElementUnderPointer
-    [[deprecated]] ::ArrayW<::UnityEngine::UIElements::VisualElement*>& dyn_m_TopElementUnderPointer();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::UIElements::VisualElement*>& dyn_m_TopElementUnderPointer();
     // Get instance field reference: private UnityEngine.UIElements.IPointerEvent[] m_TriggerPointerEvent
-    [[deprecated]] ::ArrayW<::UnityEngine::UIElements::IPointerEvent*>& dyn_m_TriggerPointerEvent();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::UIElements::IPointerEvent*>& dyn_m_TriggerPointerEvent();
     // Get instance field reference: private UnityEngine.UIElements.IMouseEvent[] m_TriggerMouseEvent
-    [[deprecated]] ::ArrayW<::UnityEngine::UIElements::IMouseEvent*>& dyn_m_TriggerMouseEvent();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::UIElements::IMouseEvent*>& dyn_m_TriggerMouseEvent();
     // Get instance field reference: private UnityEngine.Vector2[] m_PickingPointerPositions
-    [[deprecated]] ::ArrayW<::UnityEngine::Vector2>& dyn_m_PickingPointerPositions();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Vector2>& dyn_m_PickingPointerPositions();
     // Get instance field reference: private System.Boolean[] m_IsPickingPointerTemporaries
-    [[deprecated]] ::ArrayW<bool>& dyn_m_IsPickingPointerTemporaries();
+    [[deprecated("Use field access instead!")]] ::ArrayW<bool>& dyn_m_IsPickingPointerTemporaries();
     // UnityEngine.UIElements.VisualElement GetTopElementUnderPointer(System.Int32 pointerId, out UnityEngine.Vector2 pickPosition, out System.Boolean isTemporary)
     // Offset: 0x29E0F0
     ::UnityEngine::UIElements::VisualElement* GetTopElementUnderPointer(int pointerId, ByRef<::UnityEngine::Vector2> pickPosition, ByRef<bool> isTemporary);

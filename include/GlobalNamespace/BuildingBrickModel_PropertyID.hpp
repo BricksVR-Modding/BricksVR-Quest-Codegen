@@ -81,7 +81,7 @@ namespace GlobalNamespace {
     // Set static field: static public BuildingBrickModel/PropertyID UsingNewColors
     static void _set_UsingNewColors(::GlobalNamespace::BuildingBrickModel::PropertyID value);
     // Get instance field reference: public System.UInt32 value__
-    [[deprecated]] uint& dyn_value__();
+    [[deprecated("Use field access instead!")]] uint& dyn_value__();
   }; // BuildingBrickModel/PropertyID
   #pragma pack(pop)
   static check_size<sizeof(BuildingBrickModel::PropertyID), 0 + sizeof(uint)> __GlobalNamespace_BuildingBrickModel_PropertyIDSizeCheck;

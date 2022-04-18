@@ -147,25 +147,25 @@ namespace OculusSampleFramework {
     // Set static field: static private System.Int32 NUM_VELOCITY_FRAMES
     static void _set_NUM_VELOCITY_FRAMES(int value);
     // Get instance field reference: private OculusSampleFramework.FingerTipPokeToolView _fingerTipPokeToolView
-    [[deprecated]] ::OculusSampleFramework::FingerTipPokeToolView*& dyn__fingerTipPokeToolView();
+    [[deprecated("Use field access instead!")]] ::OculusSampleFramework::FingerTipPokeToolView*& dyn__fingerTipPokeToolView();
     // Get instance field reference: private OVRPlugin/HandFinger _fingerToFollow
-    [[deprecated]] ::GlobalNamespace::OVRPlugin::HandFinger& dyn__fingerToFollow();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRPlugin::HandFinger& dyn__fingerToFollow();
     // Get instance field reference: private UnityEngine.Vector3[] _velocityFrames
-    [[deprecated]] ::ArrayW<::UnityEngine::Vector3>& dyn__velocityFrames();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Vector3>& dyn__velocityFrames();
     // Get instance field reference: private System.Int32 _currVelocityFrame
-    [[deprecated]] int& dyn__currVelocityFrame();
+    [[deprecated("Use field access instead!")]] int& dyn__currVelocityFrame();
     // Get instance field reference: private System.Boolean _sampledMaxFramesAlready
-    [[deprecated]] bool& dyn__sampledMaxFramesAlready();
+    [[deprecated("Use field access instead!")]] bool& dyn__sampledMaxFramesAlready();
     // Get instance field reference: private UnityEngine.Vector3 _position
-    [[deprecated]] ::UnityEngine::Vector3& dyn__position();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__position();
     // Get instance field reference: private OculusSampleFramework.BoneCapsuleTriggerLogic[] _boneCapsuleTriggerLogic
-    [[deprecated]] ::ArrayW<::OculusSampleFramework::BoneCapsuleTriggerLogic*>& dyn__boneCapsuleTriggerLogic();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::OculusSampleFramework::BoneCapsuleTriggerLogic*>& dyn__boneCapsuleTriggerLogic();
     // Get instance field reference: private System.Single _lastScale
-    [[deprecated]] float& dyn__lastScale();
+    [[deprecated("Use field access instead!")]] float& dyn__lastScale();
     // Get instance field reference: private System.Boolean _isInitialized
-    [[deprecated]] bool& dyn__isInitialized();
+    [[deprecated("Use field access instead!")]] bool& dyn__isInitialized();
     // Get instance field reference: private OVRBoneCapsule _capsuleToTrack
-    [[deprecated]] ::GlobalNamespace::OVRBoneCapsule*& dyn__capsuleToTrack();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRBoneCapsule*& dyn__capsuleToTrack();
     // private System.Collections.IEnumerator AttachTriggerLogic()
     // Offset: 0x2895C0
     ::System::Collections::IEnumerator* AttachTriggerLogic();
@@ -207,11 +207,6 @@ namespace OculusSampleFramework {
     // Offset: 0x28A3D0
     // Implemented from: OculusSampleFramework.InteractableTool
     // Base method: System.Void InteractableTool::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static FingerTipPokeTool* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::OculusSampleFramework::FingerTipPokeTool::.ctor");

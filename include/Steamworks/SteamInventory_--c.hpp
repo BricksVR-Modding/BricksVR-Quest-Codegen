@@ -65,6 +65,13 @@ namespace Steamworks {
     // static private System.Void .cctor()
     // Offset: 0x5C9AE0
     static void _cctor();
+    // public System.Void .ctor()
+    // Offset: 0x1DD400
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static SteamInventory::$$c* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Steamworks::SteamInventory::$$c::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<SteamInventory::$$c*, creationType>()));
+    }
     // System.Void <InstallEvents>b__3_0(Steamworks.Data.SteamInventoryFullUpdate_t x)
     // Offset: 0x5C7D30
     void $InstallEvents$b__3_0(::Steamworks::Data::SteamInventoryFullUpdate_t x);
@@ -74,15 +81,6 @@ namespace Steamworks {
     // Steamworks.InventoryDef <GetDefinitions>b__29_0(Steamworks.Data.InventoryDefId x)
     // Offset: 0x5C7BD0
     ::Steamworks::InventoryDef* $GetDefinitions$b__29_0(::Steamworks::Data::InventoryDefId x);
-    // public System.Void .ctor()
-    // Offset: 0x1DD400
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static SteamInventory::$$c* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Steamworks::SteamInventory::$$c::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<SteamInventory::$$c*, creationType>()));
-    }
   }; // Steamworks.SteamInventory/Steamworks.<>c
   #pragma pack(pop)
 }
@@ -95,6 +93,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(Steamworks::SteamInventory::$$c*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: Steamworks::SteamInventory::$$c::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Steamworks::SteamInventory::$$c::$InstallEvents$b__3_0
 // Il2CppName: <InstallEvents>b__3_0
 template<>
@@ -122,7 +124,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Steamwork
     return ::il2cpp_utils::FindMethod(classof(Steamworks::SteamInventory::$$c*), "<GetDefinitions>b__29_0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{x});
   }
 };
-// Writing MetadataGetter for method: Steamworks::SteamInventory::$$c::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

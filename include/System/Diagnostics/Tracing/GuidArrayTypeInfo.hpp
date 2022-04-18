@@ -21,7 +21,6 @@
 namespace System::Diagnostics::Tracing {
   // Forward declaring type: TraceLoggingDataCollector
   class TraceLoggingDataCollector;
-  // Skipping declaration: TraceLoggingTypeInfo because it is already included!
   // Forward declaring type: TraceLoggingMetadataCollector
   class TraceLoggingMetadataCollector;
   // Forward declaring type: EventFieldFormat

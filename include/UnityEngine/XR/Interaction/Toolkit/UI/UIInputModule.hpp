@@ -122,29 +122,36 @@ namespace UnityEngine::XR::Interaction::Toolkit::UI {
     static_assert(sizeof(::UnityEngine::XR::Interaction::Toolkit::UI::TrackedDeviceEventData*) == 0x8);
     public:
     // Get instance field reference: private UnityEngine.Camera m_Camera
-    [[deprecated]] ::UnityEngine::Camera*& dyn_m_Camera();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Camera*& dyn_m_Camera();
     // Get instance field reference: public System.Single clickSpeed
-    [[deprecated]] float& dyn_clickSpeed();
+    [[deprecated("Use field access instead!")]] float& dyn_clickSpeed();
     // Get instance field reference: public System.Single moveDeadzone
-    [[deprecated]] float& dyn_moveDeadzone();
+    [[deprecated("Use field access instead!")]] float& dyn_moveDeadzone();
     // Get instance field reference: public System.Single repeatDelay
-    [[deprecated]] float& dyn_repeatDelay();
+    [[deprecated("Use field access instead!")]] float& dyn_repeatDelay();
     // Get instance field reference: public System.Single repeatRate
-    [[deprecated]] float& dyn_repeatRate();
+    [[deprecated("Use field access instead!")]] float& dyn_repeatRate();
     // Get instance field reference: public System.Single trackedDeviceDragThresholdMultiplier
-    [[deprecated]] float& dyn_trackedDeviceDragThresholdMultiplier();
+    [[deprecated("Use field access instead!")]] float& dyn_trackedDeviceDragThresholdMultiplier();
     // Get instance field reference: private UnityEngine.EventSystems.AxisEventData m_CachedAxisEvent
-    [[deprecated]] ::UnityEngine::EventSystems::AxisEventData*& dyn_m_CachedAxisEvent();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::EventSystems::AxisEventData*& dyn_m_CachedAxisEvent();
     // Get instance field reference: private UnityEngine.EventSystems.PointerEventData m_CachedPointerEvent
-    [[deprecated]] ::UnityEngine::EventSystems::PointerEventData*& dyn_m_CachedPointerEvent();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::EventSystems::PointerEventData*& dyn_m_CachedPointerEvent();
     // Get instance field reference: private UnityEngine.XR.Interaction.Toolkit.UI.TrackedDeviceEventData m_CachedTrackedDeviceEventData
-    [[deprecated]] ::UnityEngine::XR::Interaction::Toolkit::UI::TrackedDeviceEventData*& dyn_m_CachedTrackedDeviceEventData();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::Interaction::Toolkit::UI::TrackedDeviceEventData*& dyn_m_CachedTrackedDeviceEventData();
     // public UnityEngine.Camera get_uiCamera()
     // Offset: 0x232190
     ::UnityEngine::Camera* get_uiCamera();
     // public System.Void set_uiCamera(UnityEngine.Camera value)
     // Offset: 0x2322A0
     void set_uiCamera(::UnityEngine::Camera* value);
+    // protected System.Void .ctor()
+    // Offset: 0x2FF0C0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static UIInputModule* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::XR::Interaction::Toolkit::UI::UIInputModule::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<UIInputModule*, creationType>()));
+    }
     // protected System.Void DoProcess()
     // Offset: 0xFFFFFFFFFFFFFFFF
     void DoProcess();
@@ -184,21 +191,6 @@ namespace UnityEngine::XR::Interaction::Toolkit::UI {
     // private UnityEngine.EventSystems.AxisEventData GetOrCreateCachedAxisEvent()
     // Offset: 0x2FC4B0
     ::UnityEngine::EventSystems::AxisEventData* GetOrCreateCachedAxisEvent();
-    // protected System.Void .ctor()
-    // Offset: 0x2FF0C0
-    // Implemented from: UnityEngine.EventSystems.BaseInputModule
-    // Base method: System.Void BaseInputModule::.ctor()
-    // Base method: System.Void UIBehaviour::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static UIInputModule* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::XR::Interaction::Toolkit::UI::UIInputModule::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<UIInputModule*, creationType>()));
-    }
     // public override System.Void Process()
     // Offset: 0x2FEF70
     // Implemented from: UnityEngine.EventSystems.BaseInputModule
@@ -227,6 +219,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::XR::Interaction::Toolkit::UI::UIInputModule*), "set_uiCamera", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::XR::Interaction::Toolkit::UI::UIInputModule::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::XR::Interaction::Toolkit::UI::UIInputModule::DoProcess
 // Il2CppName: DoProcess
 template<>
@@ -343,10 +339,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::XR::Interaction::Toolkit::UI::UIInputModule*), "GetOrCreateCachedAxisEvent", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::XR::Interaction::Toolkit::UI::UIInputModule::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::XR::Interaction::Toolkit::UI::UIInputModule::Process
 // Il2CppName: Process
 template<>

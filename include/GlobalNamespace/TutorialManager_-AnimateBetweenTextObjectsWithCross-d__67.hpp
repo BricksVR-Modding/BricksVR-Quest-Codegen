@@ -92,21 +92,21 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<::Il2CppObject*>*>(this);
     }
     // Get instance field reference: private System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: private System.Object <>2__current
-    [[deprecated]] ::Il2CppObject*& dyn_$$2__current();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_$$2__current();
     // Get instance field reference: public TMPro.TextMeshProUGUI oldText
-    [[deprecated]] ::TMPro::TextMeshProUGUI*& dyn_oldText();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshProUGUI*& dyn_oldText();
     // Get instance field reference: public TMPro.TextMeshProUGUI newText
-    [[deprecated]] ::TMPro::TextMeshProUGUI*& dyn_newText();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshProUGUI*& dyn_newText();
     // Get instance field reference: private System.Single <fadeSpeed>5__2
-    [[deprecated]] float& dyn_$fadeSpeed$5__2();
+    [[deprecated("Use field access instead!")]] float& dyn_$fadeSpeed$5__2();
     // Get instance field reference: private System.Single <alpha>5__3
-    [[deprecated]] float& dyn_$alpha$5__3();
+    [[deprecated("Use field access instead!")]] float& dyn_$alpha$5__3();
     // Get instance field reference: private UnityEngine.Color <oldTextColor>5__4
-    [[deprecated]] ::UnityEngine::Color& dyn_$oldTextColor$5__4();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_$oldTextColor$5__4();
     // Get instance field reference: private UnityEngine.Color <newTextColor>5__5
-    [[deprecated]] ::UnityEngine::Color& dyn_$newTextColor$5__5();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_$newTextColor$5__5();
     // private System.Object System.Collections.Generic.IEnumerator<System.Object>.get_Current()
     // Offset: 0x1E1520
     ::Il2CppObject* System_Collections_Generic_IEnumerator$System_Object$_get_Current();

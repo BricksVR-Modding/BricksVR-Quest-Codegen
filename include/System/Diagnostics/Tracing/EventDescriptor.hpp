@@ -87,21 +87,21 @@ namespace System::Diagnostics::Tracing {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private System.Int32 m_traceloggingId
-    [[deprecated]] int& dyn_m_traceloggingId();
+    [[deprecated("Use field access instead!")]] int& dyn_m_traceloggingId();
     // Get instance field reference: private System.UInt16 m_id
-    [[deprecated]] uint16_t& dyn_m_id();
+    [[deprecated("Use field access instead!")]] uint16_t& dyn_m_id();
     // Get instance field reference: private System.Byte m_version
-    [[deprecated]] uint8_t& dyn_m_version();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn_m_version();
     // Get instance field reference: private System.Byte m_channel
-    [[deprecated]] uint8_t& dyn_m_channel();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn_m_channel();
     // Get instance field reference: private System.Byte m_level
-    [[deprecated]] uint8_t& dyn_m_level();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn_m_level();
     // Get instance field reference: private System.Byte m_opcode
-    [[deprecated]] uint8_t& dyn_m_opcode();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn_m_opcode();
     // Get instance field reference: private System.UInt16 m_task
-    [[deprecated]] uint16_t& dyn_m_task();
+    [[deprecated("Use field access instead!")]] uint16_t& dyn_m_task();
     // Get instance field reference: private System.Int64 m_keywords
-    [[deprecated]] int64_t& dyn_m_keywords();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_m_keywords();
     // public System.Int32 get_EventId()
     // Offset: 0x217820
     int get_EventId();

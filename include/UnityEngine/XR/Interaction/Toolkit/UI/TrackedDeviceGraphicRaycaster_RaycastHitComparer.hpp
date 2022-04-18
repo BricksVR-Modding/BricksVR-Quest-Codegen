@@ -29,22 +29,24 @@ namespace UnityEngine::XR::Interaction::Toolkit::UI {
     operator ::System::Collections::Generic::IComparer_1<::UnityEngine::XR::Interaction::Toolkit::UI::TrackedDeviceGraphicRaycaster::RaycastHitData>() noexcept {
       return *reinterpret_cast<::System::Collections::Generic::IComparer_1<::UnityEngine::XR::Interaction::Toolkit::UI::TrackedDeviceGraphicRaycaster::RaycastHitData>*>(this);
     }
-    // public System.Int32 Compare(UnityEngine.XR.Interaction.Toolkit.UI.TrackedDeviceGraphicRaycaster/UnityEngine.XR.Interaction.Toolkit.UI.RaycastHitData a, UnityEngine.XR.Interaction.Toolkit.UI.TrackedDeviceGraphicRaycaster/UnityEngine.XR.Interaction.Toolkit.UI.RaycastHitData b)
-    // Offset: 0x2F8570
-    int Compare(::UnityEngine::XR::Interaction::Toolkit::UI::TrackedDeviceGraphicRaycaster::RaycastHitData a, ::UnityEngine::XR::Interaction::Toolkit::UI::TrackedDeviceGraphicRaycaster::RaycastHitData b);
     // public System.Void .ctor()
     // Offset: 0x1DD400
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TrackedDeviceGraphicRaycaster::RaycastHitComparer* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::XR::Interaction::Toolkit::UI::TrackedDeviceGraphicRaycaster::RaycastHitComparer::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<TrackedDeviceGraphicRaycaster::RaycastHitComparer*, creationType>()));
     }
+    // public System.Int32 Compare(UnityEngine.XR.Interaction.Toolkit.UI.TrackedDeviceGraphicRaycaster/UnityEngine.XR.Interaction.Toolkit.UI.RaycastHitData a, UnityEngine.XR.Interaction.Toolkit.UI.TrackedDeviceGraphicRaycaster/UnityEngine.XR.Interaction.Toolkit.UI.RaycastHitData b)
+    // Offset: 0x2F8570
+    int Compare(::UnityEngine::XR::Interaction::Toolkit::UI::TrackedDeviceGraphicRaycaster::RaycastHitData a, ::UnityEngine::XR::Interaction::Toolkit::UI::TrackedDeviceGraphicRaycaster::RaycastHitData b);
   }; // UnityEngine.XR.Interaction.Toolkit.UI.TrackedDeviceGraphicRaycaster/UnityEngine.XR.Interaction.Toolkit.UI.RaycastHitComparer
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: UnityEngine::XR::Interaction::Toolkit::UI::TrackedDeviceGraphicRaycaster::RaycastHitComparer::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::XR::Interaction::Toolkit::UI::TrackedDeviceGraphicRaycaster::RaycastHitComparer::Compare
 // Il2CppName: Compare
 template<>
@@ -55,7 +57,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (UnityE
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::XR::Interaction::Toolkit::UI::TrackedDeviceGraphicRaycaster::RaycastHitComparer*), "Compare", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{a, b});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::XR::Interaction::Toolkit::UI::TrackedDeviceGraphicRaycaster::RaycastHitComparer::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

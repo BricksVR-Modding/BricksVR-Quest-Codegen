@@ -46,27 +46,29 @@ namespace Normal::Realtime {
     static_assert(sizeof(::Normal::Realtime::Realtime::$$c__DisplayClass81_0*) == 0x8);
     public:
     // Get instance field reference: public Normal.Realtime.RealtimeView view
-    [[deprecated]] ::Normal::Realtime::RealtimeView*& dyn_view();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::RealtimeView*& dyn_view();
     // Get instance field reference: public Normal.Realtime.Realtime/Normal.Realtime.<>c__DisplayClass81_0 CS$<>8__locals1
-    [[deprecated]] ::Normal::Realtime::Realtime::$$c__DisplayClass81_0*& dyn_CS$$$8__locals1();
-    // System.Void <ConnectSceneViewsToDatastore>b__0(System.Boolean success)
-    // Offset: 0x8CDD90
-    void $ConnectSceneViewsToDatastore$b__0(bool success);
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::Realtime::$$c__DisplayClass81_0*& dyn_CS$$$8__locals1();
     // public System.Void .ctor()
     // Offset: 0x1DD400
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Realtime::$$c__DisplayClass81_1* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::Realtime::$$c__DisplayClass81_1::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<Realtime::$$c__DisplayClass81_1*, creationType>()));
     }
+    // System.Void <ConnectSceneViewsToDatastore>b__0(System.Boolean success)
+    // Offset: 0x8CDD90
+    void $ConnectSceneViewsToDatastore$b__0(bool success);
   }; // Normal.Realtime.Realtime/Normal.Realtime.<>c__DisplayClass81_1
   #pragma pack(pop)
   static check_size<sizeof(Realtime::$$c__DisplayClass81_1), 24 + sizeof(::Normal::Realtime::Realtime::$$c__DisplayClass81_0*)> __Normal_Realtime_Realtime_$$c__DisplayClass81_1SizeCheck;
   static_assert(sizeof(Realtime::$$c__DisplayClass81_1) == 0x20);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Normal::Realtime::Realtime::$$c__DisplayClass81_1::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Normal::Realtime::Realtime::$$c__DisplayClass81_1::$ConnectSceneViewsToDatastore$b__0
 // Il2CppName: <ConnectSceneViewsToDatastore>b__0
 template<>
@@ -76,7 +78,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Norma
     return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::Realtime::$$c__DisplayClass81_1*), "<ConnectSceneViewsToDatastore>b__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{success});
   }
 };
-// Writing MetadataGetter for method: Normal::Realtime::Realtime::$$c__DisplayClass81_1::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

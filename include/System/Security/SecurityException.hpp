@@ -19,10 +19,6 @@ namespace System::Runtime::Serialization {
   // Forward declaring type: SerializationInfo
   class SerializationInfo;
 }
-// Forward declaring namespace: System
-namespace System {
-  // Skipping declaration: Exception because it is already included!
-}
 // Completed forward declares
 // Type namespace: System.Security
 namespace System::Security {
@@ -54,7 +50,7 @@ namespace System::Security {
       return permissionState;
     }
     // Get instance field reference: private System.String permissionState
-    [[deprecated]] ::StringW& dyn_permissionState();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_permissionState();
     // public System.Void .ctor()
     // Offset: 0x5276A0
     // Implemented from: System.SystemException

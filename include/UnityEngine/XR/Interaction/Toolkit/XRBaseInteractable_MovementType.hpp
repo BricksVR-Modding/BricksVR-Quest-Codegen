@@ -57,7 +57,7 @@ namespace UnityEngine::XR::Interaction::Toolkit {
     // Set static field: static public UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable/UnityEngine.XR.Interaction.Toolkit.MovementType Instantaneous
     static void _set_Instantaneous(::UnityEngine::XR::Interaction::Toolkit::XRBaseInteractable::MovementType value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable/UnityEngine.XR.Interaction.Toolkit.MovementType
   #pragma pack(pop)
   static check_size<sizeof(XRBaseInteractable::MovementType), 0 + sizeof(int)> __UnityEngine_XR_Interaction_Toolkit_XRBaseInteractable_MovementTypeSizeCheck;

@@ -56,9 +56,9 @@ namespace GlobalNamespace {
     static_assert(sizeof(::UnityEngine::AI::NavMeshPath*) == 0x8);
     public:
     // Get instance field reference: public System.Int32 NavMeshAreaMask
-    [[deprecated]] int& dyn_NavMeshAreaMask();
+    [[deprecated("Use field access instead!")]] int& dyn_NavMeshAreaMask();
     // Get instance field reference: private UnityEngine.AI.NavMeshPath _path
-    [[deprecated]] ::UnityEngine::AI::NavMeshPath*& dyn__path();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AI::NavMeshPath*& dyn__path();
     // private System.Void Awake()
     // Offset: 0x618FB0
     void Awake();
@@ -70,11 +70,6 @@ namespace GlobalNamespace {
     // Implemented from: TeleportTargetHandler
     // Base method: System.Void TeleportTargetHandler::.ctor()
     // Base method: System.Void TeleportSupport::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TeleportTargetHandlerNavMesh* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::TeleportTargetHandlerNavMesh::.ctor");

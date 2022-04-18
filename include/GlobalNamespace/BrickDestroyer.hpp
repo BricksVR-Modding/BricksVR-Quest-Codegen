@@ -49,6 +49,13 @@ namespace GlobalNamespace {
     static ::GlobalNamespace::BrickDestroyer* _get__instance();
     // Set static field: static private BrickDestroyer _instance
     static void _set__instance(::GlobalNamespace::BrickDestroyer* value);
+    // public System.Void .ctor()
+    // Offset: 0x1DDE30
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static BrickDestroyer* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::BrickDestroyer::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<BrickDestroyer*, creationType>()));
+    }
     // static public BrickDestroyer GetInstance()
     // Offset: 0x6ED7D0
     static ::GlobalNamespace::BrickDestroyer* GetInstance();
@@ -61,23 +68,14 @@ namespace GlobalNamespace {
     // private System.Collections.IEnumerator DelayedDestroyIEnum(UnityEngine.GameObject obj)
     // Offset: 0x6ED6E0
     ::System::Collections::IEnumerator* DelayedDestroyIEnum(::UnityEngine::GameObject* obj);
-    // public System.Void .ctor()
-    // Offset: 0x1DDE30
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static BrickDestroyer* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::BrickDestroyer::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<BrickDestroyer*, creationType>()));
-    }
   }; // BrickDestroyer
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::BrickDestroyer::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::BrickDestroyer::GetInstance
 // Il2CppName: GetInstance
 template<>
@@ -112,7 +110,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::C
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::BrickDestroyer*), "DelayedDestroyIEnum", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{obj});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::BrickDestroyer::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

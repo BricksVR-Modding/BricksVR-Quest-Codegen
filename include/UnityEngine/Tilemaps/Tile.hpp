@@ -99,7 +99,7 @@ namespace UnityEngine::Tilemaps {
       // Set static field: static public UnityEngine.Tilemaps.Tile/UnityEngine.Tilemaps.ColliderType Grid
       static void _set_Grid(::UnityEngine::Tilemaps::Tile::ColliderType value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // UnityEngine.Tilemaps.Tile/UnityEngine.Tilemaps.ColliderType
     #pragma pack(pop)
     static check_size<sizeof(Tile::ColliderType), 0 + sizeof(int)> __UnityEngine_Tilemaps_Tile_ColliderTypeSizeCheck;
@@ -145,17 +145,17 @@ namespace UnityEngine::Tilemaps {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.Sprite m_Sprite
-    [[deprecated]] ::UnityEngine::Sprite*& dyn_m_Sprite();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Sprite*& dyn_m_Sprite();
     // Get instance field reference: private UnityEngine.Color m_Color
-    [[deprecated]] ::UnityEngine::Color& dyn_m_Color();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_m_Color();
     // Get instance field reference: private UnityEngine.Matrix4x4 m_Transform
-    [[deprecated]] ::UnityEngine::Matrix4x4& dyn_m_Transform();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Matrix4x4& dyn_m_Transform();
     // Get instance field reference: private UnityEngine.GameObject m_InstancedGameObject
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_m_InstancedGameObject();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_m_InstancedGameObject();
     // Get instance field reference: private UnityEngine.Tilemaps.TileFlags m_Flags
-    [[deprecated]] ::UnityEngine::Tilemaps::TileFlags& dyn_m_Flags();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Tilemaps::TileFlags& dyn_m_Flags();
     // Get instance field reference: private UnityEngine.Tilemaps.Tile/UnityEngine.Tilemaps.ColliderType m_ColliderType
-    [[deprecated]] ::UnityEngine::Tilemaps::Tile::ColliderType& dyn_m_ColliderType();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Tilemaps::Tile::ColliderType& dyn_m_ColliderType();
     // public UnityEngine.Sprite get_sprite()
     // Offset: 0x625270
     ::UnityEngine::Sprite* get_sprite();
@@ -196,9 +196,6 @@ namespace UnityEngine::Tilemaps {
     // Offset: 0x66F0C0
     // Implemented from: UnityEngine.Tilemaps.TileBase
     // Base method: System.Void TileBase::.ctor()
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Tile* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Tilemaps::Tile::.ctor");

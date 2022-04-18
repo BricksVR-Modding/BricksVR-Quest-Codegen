@@ -55,11 +55,11 @@ namespace OVRTouchSample {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Boolean m_allowPointing
-    [[deprecated]] bool& dyn_m_allowPointing();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_allowPointing();
     // Get instance field reference: private System.Boolean m_allowThumbsUp
-    [[deprecated]] bool& dyn_m_allowThumbsUp();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_allowThumbsUp();
     // Get instance field reference: private OVRTouchSample.HandPoseId m_poseId
-    [[deprecated]] ::OVRTouchSample::HandPoseId& dyn_m_poseId();
+    [[deprecated("Use field access instead!")]] ::OVRTouchSample::HandPoseId& dyn_m_poseId();
     // public System.Boolean get_AllowPointing()
     // Offset: 0x2512D0
     bool get_AllowPointing();
@@ -71,12 +71,6 @@ namespace OVRTouchSample {
     ::OVRTouchSample::HandPoseId get_PoseId();
     // public System.Void .ctor()
     // Offset: 0x1DDE30
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static HandPose* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::OVRTouchSample::HandPose::.ctor");

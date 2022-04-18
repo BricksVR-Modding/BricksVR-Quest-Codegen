@@ -89,19 +89,19 @@ namespace UnityEngine {
     static_assert(sizeof(::ArrayW<::UnityEngine::ContactPoint>) == 0x8);
     public:
     // Get instance field reference: UnityEngine.Vector3 m_Impulse
-    [[deprecated]] ::UnityEngine::Vector3& dyn_m_Impulse();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_m_Impulse();
     // Get instance field reference: UnityEngine.Vector3 m_RelativeVelocity
-    [[deprecated]] ::UnityEngine::Vector3& dyn_m_RelativeVelocity();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_m_RelativeVelocity();
     // Get instance field reference: UnityEngine.Rigidbody m_Rigidbody
-    [[deprecated]] ::UnityEngine::Rigidbody*& dyn_m_Rigidbody();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Rigidbody*& dyn_m_Rigidbody();
     // Get instance field reference: UnityEngine.Collider m_Collider
-    [[deprecated]] ::UnityEngine::Collider*& dyn_m_Collider();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Collider*& dyn_m_Collider();
     // Get instance field reference: System.Int32 m_ContactCount
-    [[deprecated]] int& dyn_m_ContactCount();
+    [[deprecated("Use field access instead!")]] int& dyn_m_ContactCount();
     // Get instance field reference: UnityEngine.ContactPoint[] m_ReusedContacts
-    [[deprecated]] ::ArrayW<::UnityEngine::ContactPoint>& dyn_m_ReusedContacts();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::ContactPoint>& dyn_m_ReusedContacts();
     // Get instance field reference: UnityEngine.ContactPoint[] m_LegacyContacts
-    [[deprecated]] ::ArrayW<::UnityEngine::ContactPoint>& dyn_m_LegacyContacts();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::ContactPoint>& dyn_m_LegacyContacts();
     // public UnityEngine.Vector3 get_relativeVelocity()
     // Offset: 0x644C60
     ::UnityEngine::Vector3 get_relativeVelocity();

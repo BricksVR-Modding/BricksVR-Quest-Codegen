@@ -86,19 +86,19 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<::Il2CppObject*>*>(this);
     }
     // Get instance field reference: private System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: private System.Object <>2__current
-    [[deprecated]] ::Il2CppObject*& dyn_$$2__current();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_$$2__current();
     // Get instance field reference: public DownloadBricksOnLoad <>4__this
-    [[deprecated]] ::GlobalNamespace::DownloadBricksOnLoad*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::DownloadBricksOnLoad*& dyn_$$4__this();
     // Get instance field reference: public System.String roomName
-    [[deprecated]] ::StringW& dyn_roomName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_roomName();
     // Get instance field reference: private DownloadBricksOnLoad/FetchAllBricksResponse <parsedResponse>5__2
-    [[deprecated]] ::GlobalNamespace::DownloadBricksOnLoad::FetchAllBricksResponse*& dyn_$parsedResponse$5__2();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::DownloadBricksOnLoad::FetchAllBricksResponse*& dyn_$parsedResponse$5__2();
     // Get instance field reference: private BrickAttach[] <createdBricks>5__3
-    [[deprecated]] ::ArrayW<::GlobalNamespace::BrickAttach*>& dyn_$createdBricks$5__3();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::GlobalNamespace::BrickAttach*>& dyn_$createdBricks$5__3();
     // Get instance field reference: private System.Int32 <i>5__4
-    [[deprecated]] int& dyn_$i$5__4();
+    [[deprecated("Use field access instead!")]] int& dyn_$i$5__4();
     // private System.Object System.Collections.Generic.IEnumerator<System.Object>.get_Current()
     // Offset: 0x1E1520
     ::Il2CppObject* System_Collections_Generic_IEnumerator$System_Object$_get_Current();

@@ -134,25 +134,25 @@ namespace Normal::Realtime {
       return *reinterpret_cast<::Normal::Realtime::Serialization::IModel*>(this);
     }
     // Get instance field reference: private System.Boolean <isFreshModel>k__BackingField
-    [[deprecated]] bool& dyn_$isFreshModel$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$isFreshModel$k__BackingField();
     // Get instance field reference: private Normal.Realtime.Serialization.MetaModel _metaModel
-    [[deprecated]] ::Normal::Realtime::Serialization::MetaModel*& dyn__metaModel();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::Serialization::MetaModel*& dyn__metaModel();
     // Get instance field reference: private Normal.Realtime.RealtimeModel _parent
-    [[deprecated]] ::Normal::Realtime::RealtimeModel*& dyn__parent();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::RealtimeModel*& dyn__parent();
     // Get instance field reference: private Normal.Realtime.RealtimeModel[] _children
-    [[deprecated]] ::ArrayW<::Normal::Realtime::RealtimeModel*>& dyn__children();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Normal::Realtime::RealtimeModel*>& dyn__children();
     // Get instance field reference: private Normal.Realtime.Room _room
-    [[deprecated]] ::Normal::Realtime::Room*& dyn__room();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::Room*& dyn__room();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<Normal.Realtime.RealtimeModelEvent,System.Action> _callbacks
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::Normal::Realtime::RealtimeModelEvent, ::System::Action*>*& dyn__callbacks();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::Normal::Realtime::RealtimeModelEvent, ::System::Action*>*& dyn__callbacks();
     // Get instance field reference: private Normal.Realtime.Serialization.StreamContext _cachedReliableContext
-    [[deprecated]] ::Normal::Realtime::Serialization::StreamContext& dyn__cachedReliableContext();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::Serialization::StreamContext& dyn__cachedReliableContext();
     // Get instance field reference: private System.Int32 _cachedReliableLength
-    [[deprecated]] int& dyn__cachedReliableLength();
+    [[deprecated("Use field access instead!")]] int& dyn__cachedReliableLength();
     // Get instance field reference: private Normal.Realtime.Serialization.StreamContext _cachedUnreliableContext
-    [[deprecated]] ::Normal::Realtime::Serialization::StreamContext& dyn__cachedUnreliableContext();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::Serialization::StreamContext& dyn__cachedUnreliableContext();
     // Get instance field reference: private System.Int32 _cachedUnreliableLength
-    [[deprecated]] int& dyn__cachedUnreliableLength();
+    [[deprecated("Use field access instead!")]] int& dyn__cachedUnreliableLength();
     // public System.Boolean get_isFreshModel()
     // Offset: 0x245FD0
     bool get_isFreshModel();

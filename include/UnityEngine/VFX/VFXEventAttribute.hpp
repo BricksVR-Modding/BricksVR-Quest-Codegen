@@ -57,11 +57,11 @@ namespace UnityEngine::VFX {
     static_assert(sizeof(::UnityEngine::VFX::VisualEffectAsset*) == 0x8);
     public:
     // Get instance field reference: private System.IntPtr m_Ptr
-    [[deprecated]] ::System::IntPtr& dyn_m_Ptr();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_m_Ptr();
     // Get instance field reference: private System.Boolean m_Owner
-    [[deprecated]] bool& dyn_m_Owner();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_Owner();
     // Get instance field reference: private UnityEngine.VFX.VisualEffectAsset m_VfxAsset
-    [[deprecated]] ::UnityEngine::VFX::VisualEffectAsset*& dyn_m_VfxAsset();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::VFX::VisualEffectAsset*& dyn_m_VfxAsset();
   }; // UnityEngine.VFX.VFXEventAttribute
   #pragma pack(pop)
   static check_size<sizeof(VFXEventAttribute), 32 + sizeof(::UnityEngine::VFX::VisualEffectAsset*)> __UnityEngine_VFX_VFXEventAttributeSizeCheck;

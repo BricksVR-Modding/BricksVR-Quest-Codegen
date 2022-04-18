@@ -118,21 +118,21 @@ namespace UnityEngine::Networking {
       return *reinterpret_cast<::System::IDisposable*>(this);
     }
     // Get instance field reference: System.IntPtr m_Ptr
-    [[deprecated]] ::System::IntPtr& dyn_m_Ptr();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_m_Ptr();
     // Get instance field reference: UnityEngine.Networking.DownloadHandler m_DownloadHandler
-    [[deprecated]] ::UnityEngine::Networking::DownloadHandler*& dyn_m_DownloadHandler();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Networking::DownloadHandler*& dyn_m_DownloadHandler();
     // Get instance field reference: UnityEngine.Networking.UploadHandler m_UploadHandler
-    [[deprecated]] ::UnityEngine::Networking::UploadHandler*& dyn_m_UploadHandler();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Networking::UploadHandler*& dyn_m_UploadHandler();
     // Get instance field reference: UnityEngine.Networking.CertificateHandler m_CertificateHandler
-    [[deprecated]] ::UnityEngine::Networking::CertificateHandler*& dyn_m_CertificateHandler();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Networking::CertificateHandler*& dyn_m_CertificateHandler();
     // Get instance field reference: System.Uri m_Uri
-    [[deprecated]] ::System::Uri*& dyn_m_Uri();
+    [[deprecated("Use field access instead!")]] ::System::Uri*& dyn_m_Uri();
     // Get instance field reference: private System.Boolean <disposeCertificateHandlerOnDispose>k__BackingField
-    [[deprecated]] bool& dyn_$disposeCertificateHandlerOnDispose$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$disposeCertificateHandlerOnDispose$k__BackingField();
     // Get instance field reference: private System.Boolean <disposeDownloadHandlerOnDispose>k__BackingField
-    [[deprecated]] bool& dyn_$disposeDownloadHandlerOnDispose$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$disposeDownloadHandlerOnDispose$k__BackingField();
     // Get instance field reference: private System.Boolean <disposeUploadHandlerOnDispose>k__BackingField
-    [[deprecated]] bool& dyn_$disposeUploadHandlerOnDispose$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$disposeUploadHandlerOnDispose$k__BackingField();
     // public System.Boolean get_disposeCertificateHandlerOnDispose()
     // Offset: 0x251310
     bool get_disposeCertificateHandlerOnDispose();

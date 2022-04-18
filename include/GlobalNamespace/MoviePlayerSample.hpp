@@ -108,7 +108,7 @@ namespace GlobalNamespace {
       // Set static field: static public MoviePlayerSample/VideoShape Quad
       static void _set_Quad(::GlobalNamespace::MoviePlayerSample::VideoShape value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // MoviePlayerSample/VideoShape
     #pragma pack(pop)
     static check_size<sizeof(MoviePlayerSample::VideoShape), 0 + sizeof(int)> __GlobalNamespace_MoviePlayerSample_VideoShapeSizeCheck;
@@ -156,7 +156,7 @@ namespace GlobalNamespace {
       // Set static field: static public MoviePlayerSample/VideoStereo LeftRight
       static void _set_LeftRight(::GlobalNamespace::MoviePlayerSample::VideoStereo value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // MoviePlayerSample/VideoStereo
     #pragma pack(pop)
     static check_size<sizeof(MoviePlayerSample::VideoStereo), 0 + sizeof(int)> __GlobalNamespace_MoviePlayerSample_VideoStereoSizeCheck;
@@ -282,41 +282,41 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Boolean videoPausedBeforeAppPause
-    [[deprecated]] bool& dyn_videoPausedBeforeAppPause();
+    [[deprecated("Use field access instead!")]] bool& dyn_videoPausedBeforeAppPause();
     // Get instance field reference: private UnityEngine.Video.VideoPlayer videoPlayer
-    [[deprecated]] ::UnityEngine::Video::VideoPlayer*& dyn_videoPlayer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Video::VideoPlayer*& dyn_videoPlayer();
     // Get instance field reference: private OVROverlay overlay
-    [[deprecated]] ::GlobalNamespace::OVROverlay*& dyn_overlay();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVROverlay*& dyn_overlay();
     // Get instance field reference: private UnityEngine.Renderer mediaRenderer
-    [[deprecated]] ::UnityEngine::Renderer*& dyn_mediaRenderer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Renderer*& dyn_mediaRenderer();
     // Get instance field reference: private System.Boolean <IsPlaying>k__BackingField
-    [[deprecated]] bool& dyn_$IsPlaying$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsPlaying$k__BackingField();
     // Get instance field reference: private System.Int64 <Duration>k__BackingField
-    [[deprecated]] int64_t& dyn_$Duration$k__BackingField();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_$Duration$k__BackingField();
     // Get instance field reference: private System.Int64 <PlaybackPosition>k__BackingField
-    [[deprecated]] int64_t& dyn_$PlaybackPosition$k__BackingField();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_$PlaybackPosition$k__BackingField();
     // Get instance field reference: private UnityEngine.RenderTexture copyTexture
-    [[deprecated]] ::UnityEngine::RenderTexture*& dyn_copyTexture();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RenderTexture*& dyn_copyTexture();
     // Get instance field reference: private UnityEngine.Material externalTex2DMaterial
-    [[deprecated]] ::UnityEngine::Material*& dyn_externalTex2DMaterial();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn_externalTex2DMaterial();
     // Get instance field reference: public System.String MovieName
-    [[deprecated]] ::StringW& dyn_MovieName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_MovieName();
     // Get instance field reference: public System.String DrmLicenseUrl
-    [[deprecated]] ::StringW& dyn_DrmLicenseUrl();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_DrmLicenseUrl();
     // Get instance field reference: public System.Boolean LoopVideo
-    [[deprecated]] bool& dyn_LoopVideo();
+    [[deprecated("Use field access instead!")]] bool& dyn_LoopVideo();
     // Get instance field reference: public MoviePlayerSample/VideoShape Shape
-    [[deprecated]] ::GlobalNamespace::MoviePlayerSample::VideoShape& dyn_Shape();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::MoviePlayerSample::VideoShape& dyn_Shape();
     // Get instance field reference: public MoviePlayerSample/VideoStereo Stereo
-    [[deprecated]] ::GlobalNamespace::MoviePlayerSample::VideoStereo& dyn_Stereo();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::MoviePlayerSample::VideoStereo& dyn_Stereo();
     // Get instance field reference: public System.Boolean DisplayMono
-    [[deprecated]] bool& dyn_DisplayMono();
+    [[deprecated("Use field access instead!")]] bool& dyn_DisplayMono();
     // Get instance field reference: private MoviePlayerSample/VideoShape _LastShape
-    [[deprecated]] ::GlobalNamespace::MoviePlayerSample::VideoShape& dyn__LastShape();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::MoviePlayerSample::VideoShape& dyn__LastShape();
     // Get instance field reference: private MoviePlayerSample/VideoStereo _LastStereo
-    [[deprecated]] ::GlobalNamespace::MoviePlayerSample::VideoStereo& dyn__LastStereo();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::MoviePlayerSample::VideoStereo& dyn__LastStereo();
     // Get instance field reference: private System.Boolean _LastDisplayMono
-    [[deprecated]] bool& dyn__LastDisplayMono();
+    [[deprecated("Use field access instead!")]] bool& dyn__LastDisplayMono();
     // public System.Boolean get_IsPlaying()
     // Offset: 0x251310
     bool get_IsPlaying();
@@ -335,6 +335,13 @@ namespace GlobalNamespace {
     // private System.Void set_PlaybackPosition(System.Int64 value)
     // Offset: 0x294ED0
     void set_PlaybackPosition(int64_t value);
+    // public System.Void .ctor()
+    // Offset: 0x294E90
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static MoviePlayerSample* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::MoviePlayerSample::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<MoviePlayerSample*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0x2934C0
     void Awake();
@@ -371,19 +378,6 @@ namespace GlobalNamespace {
     // private System.Void OnApplicationPause(System.Boolean appWasPaused)
     // Offset: 0x293730
     void OnApplicationPause(bool appWasPaused);
-    // public System.Void .ctor()
-    // Offset: 0x294E90
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static MoviePlayerSample* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::MoviePlayerSample::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<MoviePlayerSample*, creationType>()));
-    }
   }; // MoviePlayerSample
   #pragma pack(pop)
   static check_size<sizeof(MoviePlayerSample), 136 + sizeof(bool)> __GlobalNamespace_MoviePlayerSampleSizeCheck;
@@ -445,6 +439,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::MoviePlayerSample*), "set_PlaybackPosition", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: GlobalNamespace::MoviePlayerSample::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::MoviePlayerSample::Awake
 // Il2CppName: Awake
 template<>
@@ -547,7 +545,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::MoviePlayerSample*), "OnApplicationPause", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{appWasPaused});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::MoviePlayerSample::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

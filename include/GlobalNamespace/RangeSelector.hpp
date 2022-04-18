@@ -77,15 +77,22 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public TMPro.TextMeshProUGUI text
-    [[deprecated]] ::TMPro::TextMeshProUGUI*& dyn_text();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshProUGUI*& dyn_text();
     // Get instance field reference: public System.Int32 min
-    [[deprecated]] int& dyn_min();
+    [[deprecated("Use field access instead!")]] int& dyn_min();
     // Get instance field reference: public System.Int32 max
-    [[deprecated]] int& dyn_max();
+    [[deprecated("Use field access instead!")]] int& dyn_max();
     // Get instance field reference: private System.Int32 _currentValue
-    [[deprecated]] int& dyn__currentValue();
+    [[deprecated("Use field access instead!")]] int& dyn__currentValue();
     // Get instance field reference: public RangeSelector/SerializableIntEvent ValueUpdated
-    [[deprecated]] ::GlobalNamespace::RangeSelector::SerializableIntEvent*& dyn_ValueUpdated();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::RangeSelector::SerializableIntEvent*& dyn_ValueUpdated();
+    // public System.Void .ctor()
+    // Offset: 0x1DDE30
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static RangeSelector* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::RangeSelector::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<RangeSelector*, creationType>()));
+    }
     // public System.Void Next()
     // Offset: 0x6C8580
     void Next();
@@ -101,25 +108,16 @@ namespace GlobalNamespace {
     // private System.Void UpdateUIText()
     // Offset: 0x6C8750
     void UpdateUIText();
-    // public System.Void .ctor()
-    // Offset: 0x1DDE30
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static RangeSelector* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::RangeSelector::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<RangeSelector*, creationType>()));
-    }
   }; // RangeSelector
   #pragma pack(pop)
   static check_size<sizeof(RangeSelector), 48 + sizeof(::GlobalNamespace::RangeSelector::SerializableIntEvent*)> __GlobalNamespace_RangeSelectorSizeCheck;
   static_assert(sizeof(RangeSelector) == 0x38);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::RangeSelector::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::RangeSelector::Next
 // Il2CppName: Next
 template<>
@@ -161,7 +159,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::RangeSelector*), "UpdateUIText", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::RangeSelector::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

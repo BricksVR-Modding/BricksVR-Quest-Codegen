@@ -56,9 +56,9 @@ namespace System::Reflection {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private System.Type argumentType
-    [[deprecated]] ::System::Type*& dyn_argumentType();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_argumentType();
     // Get instance field reference: private System.Object value
-    [[deprecated]] ::Il2CppObject*& dyn_value();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_value();
     // public System.Object get_Value()
     // Offset: 0x217830
     ::Il2CppObject* get_Value();

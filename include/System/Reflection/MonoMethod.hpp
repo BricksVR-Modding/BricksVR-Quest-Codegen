@@ -22,14 +22,13 @@
 namespace System {
   // Forward declaring type: Type
   class Type;
-  // Forward declaring type: Exception
-  class Exception;
   // Forward declaring type: RuntimeMethodHandle
   struct RuntimeMethodHandle;
+  // Forward declaring type: Exception
+  class Exception;
 }
 // Forward declaring namespace: System::Reflection
 namespace System::Reflection {
-  // Skipping declaration: MethodBase because it is already included!
   // Forward declaring type: Binder
   class Binder;
   // Forward declaring type: ParameterInfo
@@ -38,12 +37,10 @@ namespace System::Reflection {
   struct BindingFlags;
   // Forward declaring type: PInvokeAttributes
   struct PInvokeAttributes;
-  // Skipping declaration: MethodInfo because it is already included!
   // Forward declaring type: MethodAttributes
   struct MethodAttributes;
   // Forward declaring type: CallingConventions
   struct CallingConventions;
-  // Skipping declaration: MemberInfo because it is already included!
   // Forward declaring type: MethodImplAttributes
   struct MethodImplAttributes;
   // Forward declaring type: MethodBody
@@ -101,11 +98,11 @@ namespace System::Reflection {
     static_assert(sizeof(::System::Type*) == 0x8);
     public:
     // Get instance field reference: System.IntPtr mhandle
-    [[deprecated]] ::System::IntPtr& dyn_mhandle();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_mhandle();
     // Get instance field reference: private System.String name
-    [[deprecated]] ::StringW& dyn_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_name();
     // Get instance field reference: private System.Type reftype
-    [[deprecated]] ::System::Type*& dyn_reftype();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_reftype();
     // static System.String get_name(System.Reflection.MethodBase method)
     // Offset: 0x546B30
     static ::StringW get_name(::System::Reflection::MethodBase* method);

@@ -46,27 +46,29 @@ namespace GlobalNamespace {
     static_assert(sizeof(::UnityEngine::UI::Toggle*) == 0x8);
     public:
     // Get instance field reference: public DebugUIBuilder/OnToggleValueChange handler
-    [[deprecated]] ::GlobalNamespace::DebugUIBuilder::OnToggleValueChange*& dyn_handler();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::DebugUIBuilder::OnToggleValueChange*& dyn_handler();
     // Get instance field reference: public UnityEngine.UI.Toggle tb
-    [[deprecated]] ::UnityEngine::UI::Toggle*& dyn_tb();
-    // System.Void <AddRadio>b__0(System.Boolean <p0>)
-    // Offset: 0x29B880
-    void $AddRadio$b__0(bool $p0$);
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Toggle*& dyn_tb();
     // public System.Void .ctor()
     // Offset: 0x1DD400
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static DebugUIBuilder::$$c__DisplayClass41_0* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::DebugUIBuilder::$$c__DisplayClass41_0::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<DebugUIBuilder::$$c__DisplayClass41_0*, creationType>()));
     }
+    // System.Void <AddRadio>b__0(System.Boolean <p0>)
+    // Offset: 0x29B880
+    void $AddRadio$b__0(bool $p0$);
   }; // DebugUIBuilder/<>c__DisplayClass41_0
   #pragma pack(pop)
   static check_size<sizeof(DebugUIBuilder::$$c__DisplayClass41_0), 24 + sizeof(::UnityEngine::UI::Toggle*)> __GlobalNamespace_DebugUIBuilder_$$c__DisplayClass41_0SizeCheck;
   static_assert(sizeof(DebugUIBuilder::$$c__DisplayClass41_0) == 0x20);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::DebugUIBuilder::$$c__DisplayClass41_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::DebugUIBuilder::$$c__DisplayClass41_0::$AddRadio$b__0
 // Il2CppName: <AddRadio>b__0
 template<>
@@ -76,7 +78,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::DebugUIBuilder::$$c__DisplayClass41_0*), "<AddRadio>b__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{$p0$});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::DebugUIBuilder::$$c__DisplayClass41_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

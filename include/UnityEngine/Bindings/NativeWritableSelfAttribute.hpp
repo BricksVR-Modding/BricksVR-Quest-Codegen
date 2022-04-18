@@ -44,15 +44,12 @@ namespace UnityEngine::Bindings {
       return WritableSelf;
     }
     // Get instance field reference: private System.Boolean <WritableSelf>k__BackingField
-    [[deprecated]] bool& dyn_$WritableSelf$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$WritableSelf$k__BackingField();
     // public System.Void set_WritableSelf(System.Boolean value)
     // Offset: 0x2F6C00
     void set_WritableSelf(bool value);
     // public System.Void .ctor()
     // Offset: 0x6667E0
-    // Implemented from: System.Attribute
-    // Base method: System.Void Attribute::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static NativeWritableSelfAttribute* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Bindings::NativeWritableSelfAttribute::.ctor");

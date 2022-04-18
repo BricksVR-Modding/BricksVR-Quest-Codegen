@@ -63,15 +63,15 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private OVRPlugin/Posef <RootPose>k__BackingField
-    [[deprecated]] ::GlobalNamespace::OVRPlugin::Posef& dyn_$RootPose$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRPlugin::Posef& dyn_$RootPose$k__BackingField();
     // Get instance field reference: private System.Single <RootScale>k__BackingField
-    [[deprecated]] float& dyn_$RootScale$k__BackingField();
+    [[deprecated("Use field access instead!")]] float& dyn_$RootScale$k__BackingField();
     // Get instance field reference: private OVRPlugin/Quatf[] <BoneRotations>k__BackingField
-    [[deprecated]] ::ArrayW<::GlobalNamespace::OVRPlugin::Quatf>& dyn_$BoneRotations$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::GlobalNamespace::OVRPlugin::Quatf>& dyn_$BoneRotations$k__BackingField();
     // Get instance field reference: private System.Boolean <IsDataValid>k__BackingField
-    [[deprecated]] bool& dyn_$IsDataValid$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsDataValid$k__BackingField();
     // Get instance field reference: private System.Boolean <IsDataHighConfidence>k__BackingField
-    [[deprecated]] bool& dyn_$IsDataHighConfidence$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsDataHighConfidence$k__BackingField();
     // public OVRPlugin/Posef get_RootPose()
     // Offset: 0x5FB800
     ::GlobalNamespace::OVRPlugin::Posef get_RootPose();

@@ -115,29 +115,29 @@ namespace Sigtrap::VrTunnellingPro {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.Boolean _drawSkybox
-    [[deprecated]] bool& dyn__drawSkybox();
+    [[deprecated("Use field access instead!")]] bool& dyn__drawSkybox();
     // Get instance field reference: private System.Boolean _overrideDrawSkybox
-    [[deprecated]] bool& dyn__overrideDrawSkybox();
+    [[deprecated("Use field access instead!")]] bool& dyn__overrideDrawSkybox();
     // Get instance field reference: private System.Boolean _drawBeforeTransparent
-    [[deprecated]] bool& dyn__drawBeforeTransparent();
+    [[deprecated("Use field access instead!")]] bool& dyn__drawBeforeTransparent();
     // Get instance field reference: private System.Boolean _overrideDrawBeforeTransparent
-    [[deprecated]] bool& dyn__overrideDrawBeforeTransparent();
+    [[deprecated("Use field access instead!")]] bool& dyn__overrideDrawBeforeTransparent();
     // Get instance field reference: private System.Boolean _useMask
-    [[deprecated]] bool& dyn__useMask();
+    [[deprecated("Use field access instead!")]] bool& dyn__useMask();
     // Get instance field reference: private System.Boolean _overrideUseMask
-    [[deprecated]] bool& dyn__overrideUseMask();
+    [[deprecated("Use field access instead!")]] bool& dyn__overrideUseMask();
     // Get instance field reference: private System.Int32 _stencilReference
-    [[deprecated]] int& dyn__stencilReference();
+    [[deprecated("Use field access instead!")]] int& dyn__stencilReference();
     // Get instance field reference: private System.Boolean _overrideStencilReference
-    [[deprecated]] bool& dyn__overrideStencilReference();
+    [[deprecated("Use field access instead!")]] bool& dyn__overrideStencilReference();
     // Get instance field reference: private System.Int32 _stencilMask
-    [[deprecated]] int& dyn__stencilMask();
+    [[deprecated("Use field access instead!")]] int& dyn__stencilMask();
     // Get instance field reference: private System.Boolean _overrideStencilMask
-    [[deprecated]] bool& dyn__overrideStencilMask();
+    [[deprecated("Use field access instead!")]] bool& dyn__overrideStencilMask();
     // Get instance field reference: private System.Int32 _stencilBias
-    [[deprecated]] int& dyn__stencilBias();
+    [[deprecated("Use field access instead!")]] int& dyn__stencilBias();
     // Get instance field reference: private System.Boolean _overrideStencilBias
-    [[deprecated]] bool& dyn__overrideStencilBias();
+    [[deprecated("Use field access instead!")]] bool& dyn__overrideStencilBias();
     // public System.Boolean get_drawSkybox()
     // Offset: 0x321FA0
     bool get_drawSkybox();
@@ -178,9 +178,6 @@ namespace Sigtrap::VrTunnellingPro {
     // Offset: 0x6D9A90
     // Implemented from: Sigtrap.VrTunnellingPro.TunnellingPresetBase
     // Base method: System.Void TunnellingPresetBase::.ctor()
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TunnellingPresetMobile* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Sigtrap::VrTunnellingPro::TunnellingPresetMobile::.ctor");

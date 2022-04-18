@@ -76,13 +76,13 @@ namespace Steamworks::Data {
     // Set static field: static public System.Int32 _datasize
     static void _set__datasize(int value);
     // Get instance field reference: Steamworks.Result Result
-    [[deprecated]] ::Steamworks::Result& dyn_Result();
+    [[deprecated("Use field access instead!")]] ::Steamworks::Result& dyn_Result();
     // Get instance field reference: System.Int32 Rank
-    [[deprecated]] int& dyn_Rank();
+    [[deprecated("Use field access instead!")]] int& dyn_Rank();
     // Get instance field reference: System.UInt32 TotalConnects
-    [[deprecated]] uint& dyn_TotalConnects();
+    [[deprecated("Use field access instead!")]] uint& dyn_TotalConnects();
     // Get instance field reference: System.UInt32 TotalMinutesPlayed
-    [[deprecated]] uint& dyn_TotalMinutesPlayed();
+    [[deprecated("Use field access instead!")]] uint& dyn_TotalMinutesPlayed();
     // public Steamworks.CallbackType get_CallbackType()
     // Offset: 0x45FE00
     ::Steamworks::CallbackType get_CallbackType();

@@ -67,7 +67,7 @@ namespace OculusSampleFramework {
     // Set static field: static public OculusSampleFramework.InteractableToolTags All
     static void _set_All(::OculusSampleFramework::InteractableToolTags value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // OculusSampleFramework.InteractableToolTags
   #pragma pack(pop)
   static check_size<sizeof(InteractableToolTags), 0 + sizeof(int)> __OculusSampleFramework_InteractableToolTagsSizeCheck;

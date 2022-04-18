@@ -46,11 +46,9 @@ namespace GlobalNamespace {
       return data;
     }
     // Get instance field reference: public System.Collections.Generic.List`1<UnityEngine.Vector3> data
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::Vector3>*& dyn_data();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::Vector3>*& dyn_data();
     // public System.Void .ctor()
     // Offset: 0x1DD400
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Outline::ListVector3* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::Outline::ListVector3::.ctor");

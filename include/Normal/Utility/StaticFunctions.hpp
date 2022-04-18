@@ -40,6 +40,13 @@ namespace Normal::Utility {
   // [TokenAttribute] Offset: FFFFFFFF
   class StaticFunctions : public ::Il2CppObject {
     public:
+    // public System.Void .ctor()
+    // Offset: 0x1DD400
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static StaticFunctions* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Utility::StaticFunctions::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<StaticFunctions*, creationType>()));
+    }
     // static public System.Void SetLayerRecursively(UnityEngine.GameObject gameObject, System.Int32 layer)
     // Offset: 0x89F6B0
     static void SetLayerRecursively(::UnityEngine::GameObject* gameObject, int layer);
@@ -61,19 +68,14 @@ namespace Normal::Utility {
     // static public System.Double LerpClamped(System.Double a, System.Double b, System.Double t)
     // Offset: 0x89F430
     static double LerpClamped(double a, double b, double t);
-    // public System.Void .ctor()
-    // Offset: 0x1DD400
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static StaticFunctions* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Utility::StaticFunctions::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<StaticFunctions*, creationType>()));
-    }
   }; // Normal.Utility.StaticFunctions
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Normal::Utility::StaticFunctions::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Normal::Utility::StaticFunctions::SetLayerRecursively
 // Il2CppName: SetLayerRecursively
 template<>
@@ -144,7 +146,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<double (*)(
     return ::il2cpp_utils::FindMethod(classof(Normal::Utility::StaticFunctions*), "LerpClamped", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{a, b, t});
   }
 };
-// Writing MetadataGetter for method: Normal::Utility::StaticFunctions::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

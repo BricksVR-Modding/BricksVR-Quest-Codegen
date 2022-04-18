@@ -15,7 +15,6 @@
 namespace System::Reflection {
   // Forward declaring type: FieldAttributes
   struct FieldAttributes;
-  // Skipping declaration: MemberInfo because it is already included!
   // Forward declaring type: BindingFlags
   struct BindingFlags;
   // Forward declaring type: Binder

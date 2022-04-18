@@ -157,31 +157,34 @@ namespace GlobalNamespace {
     // Set static field: static private readonly System.Int32 ShaderColorProperty
     static void _set_ShaderColorProperty(int value);
     // Get instance field reference: public UnityEngine.UI.Image backgroundImage
-    [[deprecated]] ::UnityEngine::UI::Image*& dyn_backgroundImage();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Image*& dyn_backgroundImage();
     // Get instance field reference: public TMPro.TextMeshProUGUI brickLabel
-    [[deprecated]] ::TMPro::TextMeshProUGUI*& dyn_brickLabel();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshProUGUI*& dyn_brickLabel();
     // Get instance field reference: private BrickData/Brick _brickData
-    [[deprecated]] ::GlobalNamespace::BrickData::Brick& dyn__brickData();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::BrickData::Brick& dyn__brickData();
     // Get instance field reference: private UnityEngine.MeshRenderer _brickMeshRenderer
-    [[deprecated]] ::UnityEngine::MeshRenderer*& dyn__brickMeshRenderer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::MeshRenderer*& dyn__brickMeshRenderer();
     // Get instance field reference: public UnityEngine.Color32 backgroundColor
-    [[deprecated]] ::UnityEngine::Color32& dyn_backgroundColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color32& dyn_backgroundColor();
     // Get instance field reference: public UnityEngine.Color32 hoveredColor
-    [[deprecated]] ::UnityEngine::Color32& dyn_hoveredColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color32& dyn_hoveredColor();
     // Get instance field reference: private UnityEngine.Color _color
-    [[deprecated]] ::UnityEngine::Color& dyn__color();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__color();
     // Get instance field reference: private UnityEngine.MaterialPropertyBlock _materialPropertyBlock
-    [[deprecated]] ::UnityEngine::MaterialPropertyBlock*& dyn__materialPropertyBlock();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::MaterialPropertyBlock*& dyn__materialPropertyBlock();
     // Get instance field reference: private BrickPickerManager _manager
-    [[deprecated]] ::GlobalNamespace::BrickPickerManager*& dyn__manager();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::BrickPickerManager*& dyn__manager();
     // Get instance field reference: private UnityEngine.Transform _transform
-    [[deprecated]] ::UnityEngine::Transform*& dyn__transform();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__transform();
     // Get instance field reference: private System.Boolean _isHovered
-    [[deprecated]] bool& dyn__isHovered();
+    [[deprecated("Use field access instead!")]] bool& dyn__isHovered();
     // Get instance field reference: private UnityEngine.Collider _hoveringCollider
-    [[deprecated]] ::UnityEngine::Collider*& dyn__hoveringCollider();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Collider*& dyn__hoveringCollider();
     // Get instance field reference: private System.Single _lastHoveredFixedTime
-    [[deprecated]] float& dyn__lastHoveredFixedTime();
+    [[deprecated("Use field access instead!")]] float& dyn__lastHoveredFixedTime();
+    // static private System.Void .cctor()
+    // Offset: 0x6F0780
+    static void _cctor();
     // public System.Void Initialize(BrickData/Brick brickData, UnityEngine.Color color, BrickPickerManager manager)
     // Offset: 0x6EFE30
     void Initialize(::GlobalNamespace::BrickData::Brick brickData, ::UnityEngine::Color color, ::GlobalNamespace::BrickPickerManager* manager);
@@ -213,21 +216,11 @@ namespace GlobalNamespace {
     // Offset: 0x6F07D0
     // Implemented from: QuickInteractable
     // Base method: System.Void QuickInteractable::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static BrickPickerBrick* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::BrickPickerBrick::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<BrickPickerBrick*, creationType>()));
     }
-    // static private System.Void .cctor()
-    // Offset: 0x6F0780
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.cctor()
-    static void _cctor();
     // public override System.Void Interact(QuickInteractor interactor)
     // Offset: 0x6F00F0
     // Implemented from: QuickInteractable
@@ -239,6 +232,14 @@ namespace GlobalNamespace {
   static_assert(sizeof(BrickPickerBrick) == 0xBC);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::BrickPickerBrick::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&GlobalNamespace::BrickPickerBrick::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::BrickPickerBrick*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
 // Writing MetadataGetter for method: GlobalNamespace::BrickPickerBrick::Initialize
 // Il2CppName: Initialize
 template<>
@@ -322,14 +323,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
 // Try using FindMethod instead!
-// Writing MetadataGetter for method: GlobalNamespace::BrickPickerBrick::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&GlobalNamespace::BrickPickerBrick::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::BrickPickerBrick*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
-  }
-};
 // Writing MetadataGetter for method: GlobalNamespace::BrickPickerBrick::Interact
 // Il2CppName: Interact
 template<>

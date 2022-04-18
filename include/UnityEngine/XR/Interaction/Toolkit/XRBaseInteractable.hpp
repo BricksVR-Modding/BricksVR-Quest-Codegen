@@ -187,39 +187,39 @@ namespace UnityEngine::XR::Interaction::Toolkit {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.XR.Interaction.Toolkit.XRInteractionManager m_InteractionManager
-    [[deprecated]] ::UnityEngine::XR::Interaction::Toolkit::XRInteractionManager*& dyn_m_InteractionManager();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::Interaction::Toolkit::XRInteractionManager*& dyn_m_InteractionManager();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.Collider> m_Colliders
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::Collider*>*& dyn_m_Colliders();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::Collider*>*& dyn_m_Colliders();
     // Get instance field reference: private UnityEngine.LayerMask m_InteractionLayerMask
-    [[deprecated]] ::UnityEngine::LayerMask& dyn_m_InteractionLayerMask();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::LayerMask& dyn_m_InteractionLayerMask();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor> m_HoveringInteractors
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::XR::Interaction::Toolkit::XRBaseInteractor*>*& dyn_m_HoveringInteractors();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::XR::Interaction::Toolkit::XRBaseInteractor*>*& dyn_m_HoveringInteractors();
     // Get instance field reference: private System.Boolean <isHovered>k__BackingField
-    [[deprecated]] bool& dyn_$isHovered$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$isHovered$k__BackingField();
     // Get instance field reference: private System.Boolean <isSelected>k__BackingField
-    [[deprecated]] bool& dyn_$isSelected$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$isSelected$k__BackingField();
     // Get instance field reference: private UnityEngine.XR.Interaction.Toolkit.XRInteractionManager m_RegisteredInteractionManager
-    [[deprecated]] ::UnityEngine::XR::Interaction::Toolkit::XRInteractionManager*& dyn_m_RegisteredInteractionManager();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::Interaction::Toolkit::XRInteractionManager*& dyn_m_RegisteredInteractionManager();
     // Get instance field reference: private UnityEngine.XR.Interaction.Toolkit.XRInteractableEvent m_OnFirstHoverEnter
-    [[deprecated]] ::UnityEngine::XR::Interaction::Toolkit::XRInteractableEvent*& dyn_m_OnFirstHoverEnter();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::Interaction::Toolkit::XRInteractableEvent*& dyn_m_OnFirstHoverEnter();
     // Get instance field reference: private UnityEngine.XR.Interaction.Toolkit.XRInteractableEvent m_OnHoverEnter
-    [[deprecated]] ::UnityEngine::XR::Interaction::Toolkit::XRInteractableEvent*& dyn_m_OnHoverEnter();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::Interaction::Toolkit::XRInteractableEvent*& dyn_m_OnHoverEnter();
     // Get instance field reference: private UnityEngine.XR.Interaction.Toolkit.XRInteractableEvent m_OnHoverExit
-    [[deprecated]] ::UnityEngine::XR::Interaction::Toolkit::XRInteractableEvent*& dyn_m_OnHoverExit();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::Interaction::Toolkit::XRInteractableEvent*& dyn_m_OnHoverExit();
     // Get instance field reference: private UnityEngine.XR.Interaction.Toolkit.XRInteractableEvent m_OnLastHoverExit
-    [[deprecated]] ::UnityEngine::XR::Interaction::Toolkit::XRInteractableEvent*& dyn_m_OnLastHoverExit();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::Interaction::Toolkit::XRInteractableEvent*& dyn_m_OnLastHoverExit();
     // Get instance field reference: private UnityEngine.XR.Interaction.Toolkit.XRInteractableEvent m_OnSelectEnter
-    [[deprecated]] ::UnityEngine::XR::Interaction::Toolkit::XRInteractableEvent*& dyn_m_OnSelectEnter();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::Interaction::Toolkit::XRInteractableEvent*& dyn_m_OnSelectEnter();
     // Get instance field reference: private UnityEngine.XR.Interaction.Toolkit.XRInteractableEvent m_OnSelectExit
-    [[deprecated]] ::UnityEngine::XR::Interaction::Toolkit::XRInteractableEvent*& dyn_m_OnSelectExit();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::Interaction::Toolkit::XRInteractableEvent*& dyn_m_OnSelectExit();
     // Get instance field reference: private UnityEngine.XR.Interaction.Toolkit.XRInteractableEvent m_OnActivate
-    [[deprecated]] ::UnityEngine::XR::Interaction::Toolkit::XRInteractableEvent*& dyn_m_OnActivate();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::Interaction::Toolkit::XRInteractableEvent*& dyn_m_OnActivate();
     // Get instance field reference: private UnityEngine.XR.Interaction.Toolkit.XRInteractableEvent m_OnDeactivate
-    [[deprecated]] ::UnityEngine::XR::Interaction::Toolkit::XRInteractableEvent*& dyn_m_OnDeactivate();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::Interaction::Toolkit::XRInteractableEvent*& dyn_m_OnDeactivate();
     // Get instance field reference: private UnityEngine.GameObject m_CustomReticle
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_m_CustomReticle();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_m_CustomReticle();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor,UnityEngine.GameObject> m_ReticleCache
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::UnityEngine::XR::Interaction::Toolkit::XRBaseInteractor*, ::UnityEngine::GameObject*>*& dyn_m_ReticleCache();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::UnityEngine::XR::Interaction::Toolkit::XRBaseInteractor*, ::UnityEngine::GameObject*>*& dyn_m_ReticleCache();
     // public UnityEngine.XR.Interaction.Toolkit.XRInteractionManager get_interactionManager()
     // Offset: 0x1E1520
     ::UnityEngine::XR::Interaction::Toolkit::XRInteractionManager* get_interactionManager();
@@ -304,6 +304,13 @@ namespace UnityEngine::XR::Interaction::Toolkit {
     // public System.Void set_customReticle(UnityEngine.GameObject value)
     // Offset: 0x301350
     void set_customReticle(::UnityEngine::GameObject* value);
+    // protected System.Void .ctor()
+    // Offset: 0x301120
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static XRBaseInteractable* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::XR::Interaction::Toolkit::XRBaseInteractable::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<XRBaseInteractable*, creationType>()));
+    }
     // public System.Void CustomForceDrop()
     // Offset: 0x300560
     void CustomForceDrop();
@@ -361,19 +368,6 @@ namespace UnityEngine::XR::Interaction::Toolkit {
     // public System.Void ProcessInteractable(UnityEngine.XR.Interaction.Toolkit.XRInteractionUpdateOrder/UnityEngine.XR.Interaction.Toolkit.UpdatePhase updatePhase)
     // Offset: 0x1DDF00
     void ProcessInteractable(::UnityEngine::XR::Interaction::Toolkit::XRInteractionUpdateOrder::UpdatePhase updatePhase);
-    // protected System.Void .ctor()
-    // Offset: 0x301120
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static XRBaseInteractable* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::XR::Interaction::Toolkit::XRBaseInteractable::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<XRBaseInteractable*, creationType>()));
-    }
   }; // UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
   #pragma pack(pop)
   static check_size<sizeof(XRBaseInteractable), 144 + sizeof(::System::Collections::Generic::Dictionary_2<::UnityEngine::XR::Interaction::Toolkit::XRBaseInteractor*, ::UnityEngine::GameObject*>*)> __UnityEngine_XR_Interaction_Toolkit_XRBaseInteractableSizeCheck;
@@ -617,6 +611,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::XR::Interaction::Toolkit::XRBaseInteractable*), "set_customReticle", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::XR::Interaction::Toolkit::XRBaseInteractable::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::XR::Interaction::Toolkit::XRBaseInteractable::CustomForceDrop
 // Il2CppName: CustomForceDrop
 template<>
@@ -782,7 +780,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::XR::Interaction::Toolkit::XRBaseInteractable*), "ProcessInteractable", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{updatePhase});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::XR::Interaction::Toolkit::XRBaseInteractable::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

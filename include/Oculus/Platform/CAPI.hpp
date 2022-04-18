@@ -207,15 +207,15 @@ namespace Oculus::Platform {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: public System.String key_
-      [[deprecated]] ::StringW& dyn_key_();
+      [[deprecated("Use field access instead!")]] ::StringW& dyn_key_();
       // Get instance field reference: private Oculus.Platform.KeyValuePairType valueType_
-      [[deprecated]] ::Oculus::Platform::KeyValuePairType& dyn_valueType_();
+      [[deprecated("Use field access instead!")]] ::Oculus::Platform::KeyValuePairType& dyn_valueType_();
       // Get instance field reference: public System.String stringValue_
-      [[deprecated]] ::StringW& dyn_stringValue_();
+      [[deprecated("Use field access instead!")]] ::StringW& dyn_stringValue_();
       // Get instance field reference: public System.Int32 intValue_
-      [[deprecated]] int& dyn_intValue_();
+      [[deprecated("Use field access instead!")]] int& dyn_intValue_();
       // Get instance field reference: public System.Double doubleValue_
-      [[deprecated]] double& dyn_doubleValue_();
+      [[deprecated("Use field access instead!")]] double& dyn_doubleValue_();
       // public System.Void .ctor(System.String key, System.String value)
       // Offset: 0x850370
       ovrKeyValuePair(::StringW key, ::StringW value);
@@ -245,6 +245,13 @@ namespace Oculus::Platform {
     static int _get_VoipFilterBufferSize();
     // Set static field: static public System.Int32 VoipFilterBufferSize
     static void _set_VoipFilterBufferSize(int value);
+    // public System.Void .ctor()
+    // Offset: 0x1DD400
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static CAPI* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::CAPI::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<CAPI*, creationType>()));
+    }
     // static private System.Void .cctor()
     // Offset: 0x6FD140
     static void _cctor();
@@ -3248,21 +3255,16 @@ namespace Oculus::Platform {
     // static public System.Void ovr_VoipOptions_SetCreateNewConnectionUseDtx(System.IntPtr handle, Oculus.Platform.VoipDtxState value)
     // Offset: 0x729C70
     static void ovr_VoipOptions_SetCreateNewConnectionUseDtx(::System::IntPtr handle, ::Oculus::Platform::VoipDtxState value);
-    // public System.Void .ctor()
-    // Offset: 0x1DD400
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static CAPI* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::CAPI::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<CAPI*, creationType>()));
-    }
   }; // Oculus.Platform.CAPI
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-type-check.hpp"
 DEFINE_IL2CPP_ARG_TYPE(::Oculus::Platform::CAPI::ovrKeyValuePair, "Oculus.Platform", "CAPI/ovrKeyValuePair");
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Oculus::Platform::CAPI::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Oculus::Platform::CAPI::_cctor
 // Il2CppName: .cctor
 template<>
@@ -12579,7 +12581,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(::
     return ::il2cpp_utils::FindMethod(classof(Oculus::Platform::CAPI*), "ovr_VoipOptions_SetCreateNewConnectionUseDtx", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{handle, value});
   }
 };
-// Writing MetadataGetter for method: Oculus::Platform::CAPI::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

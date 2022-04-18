@@ -60,7 +60,7 @@ namespace UnityEngine::Yoga {
     // Set static field: static public UnityEngine.Yoga.YogaMeasureMode AtMost
     static void _set_AtMost(::UnityEngine::Yoga::YogaMeasureMode value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // UnityEngine.Yoga.YogaMeasureMode
   #pragma pack(pop)
   static check_size<sizeof(YogaMeasureMode), 0 + sizeof(int)> __UnityEngine_Yoga_YogaMeasureModeSizeCheck;

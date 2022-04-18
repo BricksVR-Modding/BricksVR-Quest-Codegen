@@ -46,9 +46,9 @@ namespace UnityEngine::Windows::WebCam {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public UnityEngine.Windows.WebCam.PhotoCapture/UnityEngine.Windows.WebCam.CaptureResultType resultType
-    [[deprecated]] ::UnityEngine::Windows::WebCam::PhotoCapture::CaptureResultType& dyn_resultType();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Windows::WebCam::PhotoCapture::CaptureResultType& dyn_resultType();
     // Get instance field reference: public System.Int64 hResult
-    [[deprecated]] int64_t& dyn_hResult();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_hResult();
   }; // UnityEngine.Windows.WebCam.PhotoCapture/UnityEngine.Windows.WebCam.PhotoCaptureResult
   #pragma pack(pop)
   static check_size<sizeof(PhotoCapture::PhotoCaptureResult), 8 + sizeof(int64_t)> __UnityEngine_Windows_WebCam_PhotoCapture_PhotoCaptureResultSizeCheck;

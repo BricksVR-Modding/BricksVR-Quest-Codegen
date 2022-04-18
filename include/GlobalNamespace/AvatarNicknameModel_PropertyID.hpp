@@ -75,7 +75,7 @@ namespace GlobalNamespace {
     // Set static field: static public AvatarNicknameModel/PropertyID AvatarMouth
     static void _set_AvatarMouth(::GlobalNamespace::AvatarNicknameModel::PropertyID value);
     // Get instance field reference: public System.UInt32 value__
-    [[deprecated]] uint& dyn_value__();
+    [[deprecated("Use field access instead!")]] uint& dyn_value__();
   }; // AvatarNicknameModel/PropertyID
   #pragma pack(pop)
   static check_size<sizeof(AvatarNicknameModel::PropertyID), 0 + sizeof(uint)> __GlobalNamespace_AvatarNicknameModel_PropertyIDSizeCheck;

@@ -45,9 +45,9 @@ namespace UnityEngine::XR::Interaction::Toolkit {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private UnityEngine.XR.Interaction.Toolkit.TeleportRequest m_CurrentRequest
-    [[deprecated]] ::UnityEngine::XR::Interaction::Toolkit::TeleportRequest& dyn_m_CurrentRequest();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::Interaction::Toolkit::TeleportRequest& dyn_m_CurrentRequest();
     // Get instance field reference: private System.Boolean m_ValidRequest
-    [[deprecated]] bool& dyn_m_ValidRequest();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_ValidRequest();
     // public System.Boolean QueueTeleportRequest(UnityEngine.XR.Interaction.Toolkit.TeleportRequest teleportRequest)
     // Offset: 0x2F9420
     bool QueueTeleportRequest(::UnityEngine::XR::Interaction::Toolkit::TeleportRequest teleportRequest);
@@ -58,11 +58,6 @@ namespace UnityEngine::XR::Interaction::Toolkit {
     // Offset: 0x1DDE30
     // Implemented from: UnityEngine.XR.Interaction.Toolkit.LocomotionProvider
     // Base method: System.Void LocomotionProvider::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TeleportationProvider* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::XR::Interaction::Toolkit::TeleportationProvider::.ctor");

@@ -74,7 +74,7 @@ namespace UnityEngine::Windows::WebCam {
     // Set static field: static private readonly System.Int64 HR_SUCCESS
     static void _set_HR_SUCCESS(int64_t value);
     // Get instance field reference: System.IntPtr m_NativePtr
-    [[deprecated]] ::System::IntPtr& dyn_m_NativePtr();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_m_NativePtr();
     // private System.Void .ctor(System.IntPtr nativeCaptureObject)
     // Offset: 0x98B3D0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

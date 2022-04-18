@@ -47,9 +47,9 @@ namespace Oculus::Platform::Models {
     static_assert(sizeof(::Oculus::Platform::PermissionGrantStatus) == 0x4);
     public:
     // Get instance field reference: public readonly System.Boolean HasPermission
-    [[deprecated]] bool& dyn_HasPermission();
+    [[deprecated("Use field access instead!")]] bool& dyn_HasPermission();
     // Get instance field reference: public readonly Oculus.Platform.PermissionGrantStatus PermissionGrantStatus
-    [[deprecated]] ::Oculus::Platform::PermissionGrantStatus& dyn_PermissionGrantStatus();
+    [[deprecated("Use field access instead!")]] ::Oculus::Platform::PermissionGrantStatus& dyn_PermissionGrantStatus();
     // public System.Void .ctor(System.IntPtr o)
     // Offset: 0x84F670
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

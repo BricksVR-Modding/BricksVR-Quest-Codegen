@@ -83,17 +83,17 @@ namespace Normal::Realtime::Serialization {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public readonly Normal.Realtime.Serialization.StreamEventDispatcher dispatcher
-    [[deprecated]] ::Normal::Realtime::Serialization::StreamEventDispatcher*& dyn_dispatcher();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::Serialization::StreamEventDispatcher*& dyn_dispatcher();
     // Get instance field reference: public readonly Normal.Realtime.Serialization.InflightUpdateNotifier inflightUpdateNotifier
-    [[deprecated]] ::Normal::Realtime::Serialization::InflightUpdateNotifier*& dyn_inflightUpdateNotifier();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::Serialization::InflightUpdateNotifier*& dyn_inflightUpdateNotifier();
     // Get instance field reference: public readonly System.Boolean fullModel
-    [[deprecated]] bool& dyn_fullModel();
+    [[deprecated("Use field access instead!")]] bool& dyn_fullModel();
     // Get instance field reference: public readonly System.Boolean reliableChannel
-    [[deprecated]] bool& dyn_reliableChannel();
+    [[deprecated("Use field access instead!")]] bool& dyn_reliableChannel();
     // Get instance field reference: public readonly System.UInt32 updateID
-    [[deprecated]] uint& dyn_updateID();
+    [[deprecated("Use field access instead!")]] uint& dyn_updateID();
     // Get instance field reference: public readonly System.Double packetRoomTime
-    [[deprecated]] double& dyn_packetRoomTime();
+    [[deprecated("Use field access instead!")]] double& dyn_packetRoomTime();
     // public System.Boolean get_deltaUpdatesOnly()
     // Offset: 0x8A01D0
     bool get_deltaUpdatesOnly();

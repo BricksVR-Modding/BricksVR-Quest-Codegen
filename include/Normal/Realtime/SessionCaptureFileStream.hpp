@@ -87,7 +87,7 @@ namespace Normal::Realtime {
       // Set static field: static public Normal.Realtime.SessionCaptureFileStream/Normal.Realtime.Mode Read
       static void _set_Read(::Normal::Realtime::SessionCaptureFileStream::Mode value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // Normal.Realtime.SessionCaptureFileStream/Normal.Realtime.Mode
     #pragma pack(pop)
     static check_size<sizeof(SessionCaptureFileStream::Mode), 0 + sizeof(int)> __Normal_Realtime_SessionCaptureFileStream_ModeSizeCheck;
@@ -153,23 +153,23 @@ namespace Normal::Realtime {
     static_assert(sizeof(uint) == 0x4);
     public:
     // Get instance field reference: private System.String _filePath
-    [[deprecated]] ::StringW& dyn__filePath();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__filePath();
     // Get instance field reference: private Normal.Realtime.SessionCaptureFileStream/Normal.Realtime.Mode _mode
-    [[deprecated]] ::Normal::Realtime::SessionCaptureFileStream::Mode& dyn__mode();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::SessionCaptureFileStream::Mode& dyn__mode();
     // Get instance field reference: private System.IO.FileStream _fileStream
-    [[deprecated]] ::System::IO::FileStream*& dyn__fileStream();
+    [[deprecated("Use field access instead!")]] ::System::IO::FileStream*& dyn__fileStream();
     // Get instance field reference: private System.IO.Compression.GZipStream _gzipStream
-    [[deprecated]] ::System::IO::Compression::GZipStream*& dyn__gzipStream();
+    [[deprecated("Use field access instead!")]] ::System::IO::Compression::GZipStream*& dyn__gzipStream();
     // Get instance field reference: private System.Boolean _writing
-    [[deprecated]] bool& dyn__writing();
+    [[deprecated("Use field access instead!")]] bool& dyn__writing();
     // Get instance field reference: private System.Boolean _reading
-    [[deprecated]] bool& dyn__reading();
+    [[deprecated("Use field access instead!")]] bool& dyn__reading();
     // Get instance field reference: private System.Double _startTimestamp
-    [[deprecated]] double& dyn__startTimestamp();
+    [[deprecated("Use field access instead!")]] double& dyn__startTimestamp();
     // Get instance field reference: private System.Int32 _clientID
-    [[deprecated]] int& dyn__clientID();
+    [[deprecated("Use field access instead!")]] int& dyn__clientID();
     // Get instance field reference: private System.UInt32 _nextUpdateDeltaTimestamp
-    [[deprecated]] uint& dyn__nextUpdateDeltaTimestamp();
+    [[deprecated("Use field access instead!")]] uint& dyn__nextUpdateDeltaTimestamp();
     // public System.String get_filePath()
     // Offset: 0x1E1920
     ::StringW get_filePath();

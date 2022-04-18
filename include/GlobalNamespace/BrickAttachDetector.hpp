@@ -204,49 +204,56 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public System.Boolean isBeingHeld
-    [[deprecated]] bool& dyn_isBeingHeld();
+    [[deprecated("Use field access instead!")]] bool& dyn_isBeingHeld();
     // Get instance field reference: public System.Boolean isAttached
-    [[deprecated]] bool& dyn_isAttached();
+    [[deprecated("Use field access instead!")]] bool& dyn_isAttached();
     // Get instance field reference: public UnityEngine.GameObject maleConnectorParent
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_maleConnectorParent();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_maleConnectorParent();
     // Get instance field reference: public UnityEngine.GameObject femaleConnectorParent
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_femaleConnectorParent();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_femaleConnectorParent();
     // Get instance field reference: private RoomOwnershipSync _roomOwnershipSync
-    [[deprecated]] ::GlobalNamespace::RoomOwnershipSync*& dyn__roomOwnershipSync();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::RoomOwnershipSync*& dyn__roomOwnershipSync();
     // Get instance field reference: public System.Collections.Generic.List`1<UnityEngine.GameObject> _maleConnectors
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::GameObject*>*& dyn__maleConnectors();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::GameObject*>*& dyn__maleConnectors();
     // Get instance field reference: public System.Collections.Generic.List`1<UnityEngine.GameObject> _femaleConnectors
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::GameObject*>*& dyn__femaleConnectors();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::GameObject*>*& dyn__femaleConnectors();
     // Get instance field reference: public UnityEngine.GameObject model
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_model();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_model();
     // Get instance field reference: private UnityEngine.Vector3 _collisionExtents
-    [[deprecated]] ::UnityEngine::Vector3& dyn__collisionExtents();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__collisionExtents();
     // Get instance field reference: private UnityEngine.Vector3 _colliderOffset
-    [[deprecated]] ::UnityEngine::Vector3& dyn__colliderOffset();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__colliderOffset();
     // Get instance field reference: private UnityEngine.Transform _transform
-    [[deprecated]] ::UnityEngine::Transform*& dyn__transform();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__transform();
     // Get instance field reference: private HapticsManager _hapticsManager
-    [[deprecated]] ::GlobalNamespace::HapticsManager*& dyn__hapticsManager();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::HapticsManager*& dyn__hapticsManager();
     // Get instance field reference: private UnityEngine.XR.Interaction.Toolkit.XRGrabInteractable _xrGrabInteractable
-    [[deprecated]] ::UnityEngine::XR::Interaction::Toolkit::XRGrabInteractable*& dyn__xrGrabInteractable();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::Interaction::Toolkit::XRGrabInteractable*& dyn__xrGrabInteractable();
     // Get instance field reference: private OwnedPhysicsBricksStore _ownedPhysicsBricksStore
-    [[deprecated]] ::GlobalNamespace::OwnedPhysicsBricksStore*& dyn__ownedPhysicsBricksStore();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OwnedPhysicsBricksStore*& dyn__ownedPhysicsBricksStore();
     // Get instance field reference: public System.Boolean skipGrabCallbacks
-    [[deprecated]] bool& dyn_skipGrabCallbacks();
+    [[deprecated("Use field access instead!")]] bool& dyn_skipGrabCallbacks();
     // Get instance field reference: public System.Boolean tile
-    [[deprecated]] bool& dyn_tile();
+    [[deprecated("Use field access instead!")]] bool& dyn_tile();
     // Get instance field reference: public System.Boolean window
-    [[deprecated]] bool& dyn_window();
+    [[deprecated("Use field access instead!")]] bool& dyn_window();
     // Get instance field reference: public UnityEngine.BoxCollider[] colliders
-    [[deprecated]] ::ArrayW<::UnityEngine::BoxCollider*>& dyn_colliders();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::BoxCollider*>& dyn_colliders();
     // Get instance field reference: private System.Boolean _usingBuiltInColliders
-    [[deprecated]] bool& dyn__usingBuiltInColliders();
+    [[deprecated("Use field access instead!")]] bool& dyn__usingBuiltInColliders();
     // Get instance field reference: public System.Single heightOverride
-    [[deprecated]] float& dyn_heightOverride();
+    [[deprecated("Use field access instead!")]] float& dyn_heightOverride();
     // Get instance field reference: private readonly System.ValueTuple`4<System.Boolean,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Vector3> _nullResponse
-    [[deprecated]] ::System::ValueTuple_4<bool, ::UnityEngine::Vector3, ::UnityEngine::Quaternion, ::UnityEngine::Vector3>& dyn__nullResponse();
+    [[deprecated("Use field access instead!")]] ::System::ValueTuple_4<bool, ::UnityEngine::Vector3, ::UnityEngine::Quaternion, ::UnityEngine::Vector3>& dyn__nullResponse();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.GameObject> testObjects
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::GameObject*>*& dyn_testObjects();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::GameObject*>*& dyn_testObjects();
+    // public System.Void .ctor()
+    // Offset: 0x6E6290
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static BrickAttachDetector* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::BrickAttachDetector::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<BrickAttachDetector*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0x6E2D10
     void Awake();
@@ -313,23 +320,14 @@ namespace GlobalNamespace {
     // private System.Void OnValidate()
     // Offset: 0x6E59F0
     void OnValidate();
-    // public System.Void .ctor()
-    // Offset: 0x6E6290
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static BrickAttachDetector* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::BrickAttachDetector::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<BrickAttachDetector*, creationType>()));
-    }
   }; // BrickAttachDetector
   // WARNING Not writing size check since size may be invalid!
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::BrickAttachDetector::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::BrickAttachDetector::Awake
 // Il2CppName: Awake
 template<>
@@ -523,7 +521,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::BrickAttachDetector*), "OnValidate", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::BrickAttachDetector::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

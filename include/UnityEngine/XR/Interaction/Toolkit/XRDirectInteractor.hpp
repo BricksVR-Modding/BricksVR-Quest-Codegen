@@ -16,7 +16,6 @@
 // Forward declaring namespace: UnityEngine::XR::Interaction::Toolkit
 namespace UnityEngine::XR::Interaction::Toolkit {
   // Skipping declaration: XRBaseInteractable because it is already included!
-  // Skipping declaration: XRBaseInteractor because it is already included!
 }
 // Forward declaring namespace: System::Collections::Generic
 namespace System::Collections::Generic {
@@ -80,11 +79,11 @@ namespace UnityEngine::XR::Interaction::Toolkit {
     static_assert(sizeof(::System::Comparison_1<::UnityEngine::XR::Interaction::Toolkit::XRBaseInteractable*>*) == 0x8);
     public:
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable> m_ValidTargets
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::XR::Interaction::Toolkit::XRBaseInteractable*>*& dyn_m_ValidTargets();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::XR::Interaction::Toolkit::XRBaseInteractable*>*& dyn_m_ValidTargets();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable,System.Single> m_InteractableDistanceSqrMap
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::UnityEngine::XR::Interaction::Toolkit::XRBaseInteractable*, float>*& dyn_m_InteractableDistanceSqrMap();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::UnityEngine::XR::Interaction::Toolkit::XRBaseInteractable*, float>*& dyn_m_InteractableDistanceSqrMap();
     // Get instance field reference: private System.Comparison`1<UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable> m_InteractableSortComparison
-    [[deprecated]] ::System::Comparison_1<::UnityEngine::XR::Interaction::Toolkit::XRBaseInteractable*>*& dyn_m_InteractableSortComparison();
+    [[deprecated("Use field access instead!")]] ::System::Comparison_1<::UnityEngine::XR::Interaction::Toolkit::XRBaseInteractable*>*& dyn_m_InteractableSortComparison();
     // private System.Int32 InteractableSortComparison(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable x, UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable y)
     // Offset: 0x304AA0
     int InteractableSortComparison(::UnityEngine::XR::Interaction::Toolkit::XRBaseInteractable* x, ::UnityEngine::XR::Interaction::Toolkit::XRBaseInteractable* y);
@@ -107,11 +106,6 @@ namespace UnityEngine::XR::Interaction::Toolkit {
     // Implemented from: UnityEngine.XR.Interaction.Toolkit.XRBaseControllerInteractor
     // Base method: System.Void XRBaseControllerInteractor::.ctor()
     // Base method: System.Void XRBaseInteractor::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XRDirectInteractor* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::XR::Interaction::Toolkit::XRDirectInteractor::.ctor");

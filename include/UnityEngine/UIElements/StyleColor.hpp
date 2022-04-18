@@ -64,11 +64,11 @@ namespace UnityEngine::UIElements {
       return *reinterpret_cast<::System::IEquatable_1<::UnityEngine::UIElements::StyleColor>*>(this);
     }
     // Get instance field reference: private UnityEngine.UIElements.StyleKeyword m_Keyword
-    [[deprecated]] ::UnityEngine::UIElements::StyleKeyword& dyn_m_Keyword();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::StyleKeyword& dyn_m_Keyword();
     // Get instance field reference: private UnityEngine.Color m_Value
-    [[deprecated]] ::UnityEngine::Color& dyn_m_Value();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_m_Value();
     // Get instance field reference: private System.Int32 m_Specificity
-    [[deprecated]] int& dyn_m_Specificity();
+    [[deprecated("Use field access instead!")]] int& dyn_m_Specificity();
     // public UnityEngine.Color get_value()
     // Offset: 0x2AC710
     ::UnityEngine::Color get_value();

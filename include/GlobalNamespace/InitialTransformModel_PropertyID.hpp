@@ -51,7 +51,7 @@ namespace GlobalNamespace {
     // Set static field: static public InitialTransformModel/PropertyID Rotation
     static void _set_Rotation(::GlobalNamespace::InitialTransformModel::PropertyID value);
     // Get instance field reference: public System.UInt32 value__
-    [[deprecated]] uint& dyn_value__();
+    [[deprecated("Use field access instead!")]] uint& dyn_value__();
   }; // InitialTransformModel/PropertyID
   #pragma pack(pop)
   static check_size<sizeof(InitialTransformModel::PropertyID), 0 + sizeof(uint)> __GlobalNamespace_InitialTransformModel_PropertyIDSizeCheck;

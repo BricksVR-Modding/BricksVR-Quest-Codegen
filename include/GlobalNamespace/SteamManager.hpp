@@ -52,11 +52,18 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public System.UInt32 steamAppId
-    [[deprecated]] uint& dyn_steamAppId();
+    [[deprecated("Use field access instead!")]] uint& dyn_steamAppId();
     // Get instance field reference: private System.Boolean _initialized
-    [[deprecated]] bool& dyn__initialized();
+    [[deprecated("Use field access instead!")]] bool& dyn__initialized();
     // Get instance field reference: private System.Boolean _initializationSucceeded
-    [[deprecated]] bool& dyn__initializationSucceeded();
+    [[deprecated("Use field access instead!")]] bool& dyn__initializationSucceeded();
+    // public System.Void .ctor()
+    // Offset: 0x1DDE30
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static SteamManager* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::SteamManager::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<SteamManager*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0x6CFCC0
     void Awake();
@@ -69,25 +76,16 @@ namespace GlobalNamespace {
     // public System.Void RestartAppIfNecessary()
     // Offset: 0x6CFE70
     void RestartAppIfNecessary();
-    // public System.Void .ctor()
-    // Offset: 0x1DDE30
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static SteamManager* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::SteamManager::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<SteamManager*, creationType>()));
-    }
   }; // SteamManager
   #pragma pack(pop)
   static check_size<sizeof(SteamManager), 29 + sizeof(bool)> __GlobalNamespace_SteamManagerSizeCheck;
   static_assert(sizeof(SteamManager) == 0x1E);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::SteamManager::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::SteamManager::Awake
 // Il2CppName: Awake
 template<>
@@ -120,7 +118,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::SteamManager*), "RestartAppIfNecessary", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::SteamManager::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

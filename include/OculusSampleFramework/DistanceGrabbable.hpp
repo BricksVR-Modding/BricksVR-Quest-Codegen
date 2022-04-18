@@ -92,19 +92,19 @@ namespace OculusSampleFramework {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: public System.String m_materialColorField
-    [[deprecated]] ::StringW& dyn_m_materialColorField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_materialColorField();
     // Get instance field reference: private OculusSampleFramework.GrabbableCrosshair m_crosshair
-    [[deprecated]] ::OculusSampleFramework::GrabbableCrosshair*& dyn_m_crosshair();
+    [[deprecated("Use field access instead!")]] ::OculusSampleFramework::GrabbableCrosshair*& dyn_m_crosshair();
     // Get instance field reference: private OculusSampleFramework.GrabManager m_crosshairManager
-    [[deprecated]] ::OculusSampleFramework::GrabManager*& dyn_m_crosshairManager();
+    [[deprecated("Use field access instead!")]] ::OculusSampleFramework::GrabManager*& dyn_m_crosshairManager();
     // Get instance field reference: private UnityEngine.Renderer m_renderer
-    [[deprecated]] ::UnityEngine::Renderer*& dyn_m_renderer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Renderer*& dyn_m_renderer();
     // Get instance field reference: private UnityEngine.MaterialPropertyBlock m_mpb
-    [[deprecated]] ::UnityEngine::MaterialPropertyBlock*& dyn_m_mpb();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::MaterialPropertyBlock*& dyn_m_mpb();
     // Get instance field reference: private System.Boolean m_inRange
-    [[deprecated]] bool& dyn_m_inRange();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_inRange();
     // Get instance field reference: private System.Boolean m_targeted
-    [[deprecated]] bool& dyn_m_targeted();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_targeted();
     // public System.Boolean get_InRange()
     // Offset: 0x287590
     bool get_InRange();
@@ -117,6 +117,13 @@ namespace OculusSampleFramework {
     // public System.Void set_Targeted(System.Boolean value)
     // Offset: 0x2875C0
     void set_Targeted(bool value);
+    // public System.Void .ctor()
+    // Offset: 0x287580
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static DistanceGrabbable* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::OculusSampleFramework::DistanceGrabbable::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<DistanceGrabbable*, creationType>()));
+    }
     // private System.Void RefreshCrosshair()
     // Offset: 0x287220
     void RefreshCrosshair();
@@ -126,20 +133,6 @@ namespace OculusSampleFramework {
     // public System.Void ClearColor()
     // Offset: 0x2871B0
     void ClearColor();
-    // public System.Void .ctor()
-    // Offset: 0x287580
-    // Implemented from: OVRGrabbable
-    // Base method: System.Void OVRGrabbable::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static DistanceGrabbable* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::OculusSampleFramework::DistanceGrabbable::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<DistanceGrabbable*, creationType>()));
-    }
     // protected override System.Void Start()
     // Offset: 0x287410
     // Implemented from: OVRGrabbable
@@ -185,6 +178,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Oculu
     return ::il2cpp_utils::FindMethod(classof(OculusSampleFramework::DistanceGrabbable*), "set_Targeted", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: OculusSampleFramework::DistanceGrabbable::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: OculusSampleFramework::DistanceGrabbable::RefreshCrosshair
 // Il2CppName: RefreshCrosshair
 template<>
@@ -210,10 +207,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Oculu
     return ::il2cpp_utils::FindMethod(classof(OculusSampleFramework::DistanceGrabbable*), "ClearColor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: OculusSampleFramework::DistanceGrabbable::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: OculusSampleFramework::DistanceGrabbable::Start
 // Il2CppName: Start
 template<>

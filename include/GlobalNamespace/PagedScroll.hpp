@@ -115,28 +115,35 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public UnityEngine.UI.Button upButton
-    [[deprecated]] ::UnityEngine::UI::Button*& dyn_upButton();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Button*& dyn_upButton();
     // Get instance field reference: public UnityEngine.UI.Button downButton
-    [[deprecated]] ::UnityEngine::UI::Button*& dyn_downButton();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Button*& dyn_downButton();
     // Get instance field reference: public System.Int32 itemsPerPage
-    [[deprecated]] int& dyn_itemsPerPage();
+    [[deprecated("Use field access instead!")]] int& dyn_itemsPerPage();
     // Get instance field reference: public UnityEngine.GameObject listObject
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_listObject();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_listObject();
     // Get instance field reference: public UnityEngine.Transform listObjectTransform
-    [[deprecated]] ::UnityEngine::Transform*& dyn_listObjectTransform();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_listObjectTransform();
     // Get instance field reference: public System.Collections.Generic.List`1<UnityEngine.GameObject> listChildren
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::GameObject*>*& dyn_listChildren();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::GameObject*>*& dyn_listChildren();
     // Get instance field reference: private System.Int32 _page
-    [[deprecated]] int& dyn__page();
+    [[deprecated("Use field access instead!")]] int& dyn__page();
     // Get instance field reference: private System.Int32 _cachedChildCount
-    [[deprecated]] int& dyn__cachedChildCount();
+    [[deprecated("Use field access instead!")]] int& dyn__cachedChildCount();
     // Get instance field reference: private System.Int32 fixedElementCount
-    [[deprecated]] int& dyn_fixedElementCount();
+    [[deprecated("Use field access instead!")]] int& dyn_fixedElementCount();
     // Get instance field reference: private System.Boolean usingFixedElementCount
-    [[deprecated]] bool& dyn_usingFixedElementCount();
+    [[deprecated("Use field access instead!")]] bool& dyn_usingFixedElementCount();
     // private System.Int32 get_LastPage()
     // Offset: 0x6781C0
     int get_LastPage();
+    // public System.Void .ctor()
+    // Offset: 0x1DDE30
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static PagedScroll* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::PagedScroll::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<PagedScroll*, creationType>()));
+    }
     // public System.Void SetFixedElementCount(System.Int32 count)
     // Offset: 0x678030
     void SetFixedElementCount(int count);
@@ -158,19 +165,6 @@ namespace GlobalNamespace {
     // private System.Void SetPageButtonStates()
     // Offset: 0x678170
     void SetPageButtonStates();
-    // public System.Void .ctor()
-    // Offset: 0x1DDE30
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static PagedScroll* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::PagedScroll::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<PagedScroll*, creationType>()));
-    }
   }; // PagedScroll
   #pragma pack(pop)
   static check_size<sizeof(PagedScroll), 84 + sizeof(bool)> __GlobalNamespace_PagedScrollSizeCheck;
@@ -185,6 +179,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (Global
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::PagedScroll*), "get_LastPage", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: GlobalNamespace::PagedScroll::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::PagedScroll::SetFixedElementCount
 // Il2CppName: SetFixedElementCount
 template<>
@@ -242,7 +240,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::PagedScroll*), "SetPageButtonStates", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::PagedScroll::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

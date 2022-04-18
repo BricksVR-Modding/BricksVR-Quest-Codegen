@@ -50,9 +50,9 @@ namespace Normal::Realtime::Native {
       return *reinterpret_cast<::System::IDisposable*>(this);
     }
     // Get instance field reference: private System.IntPtr _nativeAudioOutputStream
-    [[deprecated]] ::System::IntPtr& dyn__nativeAudioOutputStream();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn__nativeAudioOutputStream();
     // Get instance field reference: private System.IntPtr _nativeAudioOutputStreamIdentifier
-    [[deprecated]] ::System::IntPtr& dyn__nativeAudioOutputStreamIdentifier();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn__nativeAudioOutputStreamIdentifier();
     // public System.Boolean get_nativePointerIsNull()
     // Offset: 0x8B3C30
     bool get_nativePointerIsNull();

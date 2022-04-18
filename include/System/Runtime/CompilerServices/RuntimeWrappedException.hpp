@@ -48,7 +48,7 @@ namespace System::Runtime::CompilerServices {
       return m_wrappedException;
     }
     // Get instance field reference: private System.Object m_wrappedException
-    [[deprecated]] ::Il2CppObject*& dyn_m_wrappedException();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_m_wrappedException();
     // private System.Void .ctor(System.Object thrownObject)
     // Offset: 0x4AF000
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

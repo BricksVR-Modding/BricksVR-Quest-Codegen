@@ -24,10 +24,6 @@ namespace System {
   // Forward declaring type: String
   class String;
 }
-// Forward declaring namespace: System::Security::Cryptography
-namespace System::Security::Cryptography {
-  // Skipping declaration: AsnEncodedData because it is already included!
-}
 // Completed forward declares
 // Type namespace: System.Security.Cryptography.X509Certificates
 namespace System::Security::Cryptography::X509Certificates {
@@ -82,9 +78,9 @@ namespace System::Security::Cryptography::X509Certificates {
     // Set static field: static System.Security.Cryptography.X509Certificates.X509KeyUsageFlags all
     static void _set_all(::System::Security::Cryptography::X509Certificates::X509KeyUsageFlags value);
     // Get instance field reference: private System.Security.Cryptography.X509Certificates.X509KeyUsageFlags _keyUsages
-    [[deprecated]] ::System::Security::Cryptography::X509Certificates::X509KeyUsageFlags& dyn__keyUsages();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::X509Certificates::X509KeyUsageFlags& dyn__keyUsages();
     // Get instance field reference: private System.Security.Cryptography.AsnDecodeStatus _status
-    [[deprecated]] ::System::Security::Cryptography::AsnDecodeStatus& dyn__status();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::AsnDecodeStatus& dyn__status();
     // public System.Security.Cryptography.X509Certificates.X509KeyUsageFlags get_KeyUsages()
     // Offset: 0x41E5B0
     ::System::Security::Cryptography::X509Certificates::X509KeyUsageFlags get_KeyUsages();
@@ -116,7 +112,6 @@ namespace System::Security::Cryptography::X509Certificates {
     // Implemented from: System.Security.Cryptography.X509Certificates.X509Extension
     // Base method: System.Void X509Extension::.ctor()
     // Base method: System.Void AsnEncodedData::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static X509KeyUsageExtension* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Security::Cryptography::X509Certificates::X509KeyUsageExtension::.ctor");

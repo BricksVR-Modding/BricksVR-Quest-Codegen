@@ -80,11 +80,11 @@ namespace AdvancedColorPicker {
     // Set static field: static public AdvancedColorPicker.ColorType Flag
     static void _set_Flag(::AdvancedColorPicker::ColorType value);
     // Get instance field reference: public System.Double H
-    [[deprecated]] double& dyn_H();
+    [[deprecated("Use field access instead!")]] double& dyn_H();
     // Get instance field reference: public System.Double S
-    [[deprecated]] double& dyn_S();
+    [[deprecated("Use field access instead!")]] double& dyn_S();
     // Get instance field reference: public System.Double V
-    [[deprecated]] double& dyn_V();
+    [[deprecated("Use field access instead!")]] double& dyn_V();
     // public System.Single get_NormalizedH()
     // Offset: 0x5B73F0
     float get_NormalizedH();

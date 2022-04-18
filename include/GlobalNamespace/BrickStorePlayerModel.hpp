@@ -70,27 +70,25 @@ namespace GlobalNamespace {
     static_assert(sizeof(::Normal::Realtime::ReliableProperty_1<int>*) == 0x8);
     public:
     // Get instance field reference: private System.Int32 _brickId
-    [[deprecated]] int& dyn__brickId();
+    [[deprecated("Use field access instead!")]] int& dyn__brickId();
     // Get instance field reference: private Normal.Realtime.ReliableProperty`1<System.Int32> _brickIdProperty
-    [[deprecated]] ::Normal::Realtime::ReliableProperty_1<int>*& dyn__brickIdProperty();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::ReliableProperty_1<int>*& dyn__brickIdProperty();
     // public System.Int32 get_brickId()
     // Offset: 0x6F4410
     int get_brickId();
     // public System.Void set_brickId(System.Int32 value)
     // Offset: 0x6F4450
     void set_brickId(int value);
-    // private System.Void UpdateBackingFields()
-    // Offset: 0x6F4220
-    void UpdateBackingFields();
     // public System.Void .ctor()
     // Offset: 0x6F4380
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static BrickStorePlayerModel* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::BrickStorePlayerModel::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<BrickStorePlayerModel*, creationType>()));
     }
+    // private System.Void UpdateBackingFields()
+    // Offset: 0x6F4220
+    void UpdateBackingFields();
     // protected override System.Void OnParentReplaced(Normal.Realtime.RealtimeModel previousParent, Normal.Realtime.RealtimeModel currentParent)
     // Offset: 0x6F40C0
     // Implemented from: Normal.Realtime.RealtimeModel
@@ -134,6 +132,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::BrickStorePlayerModel*), "set_brickId", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: GlobalNamespace::BrickStorePlayerModel::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::BrickStorePlayerModel::UpdateBackingFields
 // Il2CppName: UpdateBackingFields
 template<>
@@ -142,10 +144,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::BrickStorePlayerModel*), "UpdateBackingFields", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::BrickStorePlayerModel::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::BrickStorePlayerModel::OnParentReplaced
 // Il2CppName: OnParentReplaced
 template<>

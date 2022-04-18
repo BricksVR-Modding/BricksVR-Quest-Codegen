@@ -37,7 +37,6 @@ namespace System {
 namespace UnityEngine::UI {
   // Forward declaring type: VertexHelper
   class VertexHelper;
-  // Skipping declaration: MaskableGraphic because it is already included!
 }
 // Completed forward declares
 // Type namespace: UnityEngine.UI.ProceduralImage
@@ -85,11 +84,11 @@ namespace UnityEngine::UI::ProceduralImage {
     // Set static field: static private UnityEngine.Material materialInstance
     static void _set_materialInstance(::UnityEngine::Material* value);
     // Get instance field reference: private System.Single borderWidth
-    [[deprecated]] float& dyn_borderWidth();
+    [[deprecated("Use field access instead!")]] float& dyn_borderWidth();
     // Get instance field reference: private UnityEngine.UI.ProceduralImage.ProceduralImageModifier modifier
-    [[deprecated]] ::UnityEngine::UI::ProceduralImage::ProceduralImageModifier*& dyn_modifier();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::ProceduralImage::ProceduralImageModifier*& dyn_modifier();
     // Get instance field reference: private System.Single falloffDistance
-    [[deprecated]] float& dyn_falloffDistance();
+    [[deprecated("Use field access instead!")]] float& dyn_falloffDistance();
     // static private UnityEngine.Material get_DefaultProceduralImageMaterial()
     // Offset: 0x921C10
     static ::UnityEngine::Material* get_DefaultProceduralImageMaterial();
@@ -120,6 +119,13 @@ namespace UnityEngine::UI::ProceduralImage {
     // public System.Void set_ModifierType(System.Type value)
     // Offset: 0x921FE0
     void set_ModifierType(::System::Type* value);
+    // public System.Void .ctor()
+    // Offset: 0x921BB0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ProceduralImage* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::UI::ProceduralImage::ProceduralImage::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ProceduralImage*, creationType>()));
+    }
     // private System.Void Init()
     // Offset: 0x921770
     void Init();
@@ -154,23 +160,6 @@ namespace UnityEngine::UI::ProceduralImage {
     // Implemented from: UnityEngine.UI.Image
     // Base method: System.Void Image::set_material(UnityEngine.Material value)
     void set_material(::UnityEngine::Material* value);
-    // public System.Void .ctor()
-    // Offset: 0x921BB0
-    // Implemented from: UnityEngine.UI.Image
-    // Base method: System.Void Image::.ctor()
-    // Base method: System.Void MaskableGraphic::.ctor()
-    // Base method: System.Void Graphic::.ctor()
-    // Base method: System.Void UIBehaviour::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ProceduralImage* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::UI::ProceduralImage::ProceduralImage::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ProceduralImage*, creationType>()));
-    }
     // protected override System.Void OnEnable()
     // Offset: 0x921960
     // Implemented from: UnityEngine.UI.Image
@@ -282,6 +271,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::UI::ProceduralImage::ProceduralImage*), "set_ModifierType", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::UI::ProceduralImage::ProceduralImage::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::UI::ProceduralImage::ProceduralImage::Init
 // Il2CppName: Init
 template<>
@@ -369,10 +362,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::UI::ProceduralImage::ProceduralImage*), "set_material", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::UI::ProceduralImage::ProceduralImage::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::UI::ProceduralImage::ProceduralImage::OnEnable
 // Il2CppName: OnEnable
 template<>

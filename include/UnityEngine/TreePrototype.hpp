@@ -50,27 +50,25 @@ namespace UnityEngine {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: UnityEngine.GameObject m_Prefab
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_m_Prefab();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_m_Prefab();
     // Get instance field reference: System.Single m_BendFactor
-    [[deprecated]] float& dyn_m_BendFactor();
+    [[deprecated("Use field access instead!")]] float& dyn_m_BendFactor();
     // public UnityEngine.GameObject get_prefab()
     // Offset: 0x64E270
     ::UnityEngine::GameObject* get_prefab();
     // public System.Single get_bendFactor()
     // Offset: 0x64E260
     float get_bendFactor();
-    // private System.Boolean Equals(UnityEngine.TreePrototype other)
-    // Offset: 0x64E160
-    bool Equals(::UnityEngine::TreePrototype* other);
     // public System.Void .ctor()
     // Offset: 0x1DD400
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TreePrototype* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::TreePrototype::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<TreePrototype*, creationType>()));
     }
+    // private System.Boolean Equals(UnityEngine.TreePrototype other)
+    // Offset: 0x64E160
+    bool Equals(::UnityEngine::TreePrototype* other);
     // public override System.Boolean Equals(System.Object obj)
     // Offset: 0x64E060
     // Implemented from: System.Object
@@ -103,6 +101,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<float (Unit
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::TreePrototype*), "get_bendFactor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::TreePrototype::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::TreePrototype::Equals
 // Il2CppName: Equals
 template<>
@@ -112,10 +114,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::TreePrototype*), "Equals", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{other});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::TreePrototype::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::TreePrototype::Equals
 // Il2CppName: Equals
 template<>

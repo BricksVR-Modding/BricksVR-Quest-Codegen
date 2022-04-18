@@ -93,7 +93,7 @@ namespace OculusSampleFramework {
       // Set static field: static public OculusSampleFramework.PinchStateModule/OculusSampleFramework.PinchState PinchUp
       static void _set_PinchUp(::OculusSampleFramework::PinchStateModule::PinchState value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // OculusSampleFramework.PinchStateModule/OculusSampleFramework.PinchState
     #pragma pack(pop)
     static check_size<sizeof(PinchStateModule::PinchState), 0 + sizeof(int)> __OculusSampleFramework_PinchStateModule_PinchStateSizeCheck;
@@ -121,9 +121,9 @@ namespace OculusSampleFramework {
     // Set static field: static private System.Single PINCH_STRENGTH_THRESHOLD
     static void _set_PINCH_STRENGTH_THRESHOLD(float value);
     // Get instance field reference: private OculusSampleFramework.PinchStateModule/OculusSampleFramework.PinchState _currPinchState
-    [[deprecated]] ::OculusSampleFramework::PinchStateModule::PinchState& dyn__currPinchState();
+    [[deprecated("Use field access instead!")]] ::OculusSampleFramework::PinchStateModule::PinchState& dyn__currPinchState();
     // Get instance field reference: private OculusSampleFramework.Interactable _firstFocusedInteractable
-    [[deprecated]] ::OculusSampleFramework::Interactable*& dyn__firstFocusedInteractable();
+    [[deprecated("Use field access instead!")]] ::OculusSampleFramework::Interactable*& dyn__firstFocusedInteractable();
     // public System.Boolean get_PinchUpAndDownOnFocusedObject()
     // Offset: 0x612870
     bool get_PinchUpAndDownOnFocusedObject();
@@ -133,18 +133,16 @@ namespace OculusSampleFramework {
     // public System.Boolean get_PinchDownOnFocusedObject()
     // Offset: 0x612790
     bool get_PinchDownOnFocusedObject();
-    // public System.Void UpdateState(OVRHand hand, OculusSampleFramework.Interactable currFocusedInteractable)
-    // Offset: 0x612570
-    void UpdateState(::GlobalNamespace::OVRHand* hand, ::OculusSampleFramework::Interactable* currFocusedInteractable);
     // public System.Void .ctor()
     // Offset: 0x612760
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static PinchStateModule* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::OculusSampleFramework::PinchStateModule::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<PinchStateModule*, creationType>()));
     }
+    // public System.Void UpdateState(OVRHand hand, OculusSampleFramework.Interactable currFocusedInteractable)
+    // Offset: 0x612570
+    void UpdateState(::GlobalNamespace::OVRHand* hand, ::OculusSampleFramework::Interactable* currFocusedInteractable);
   }; // OculusSampleFramework.PinchStateModule
   #pragma pack(pop)
   static check_size<sizeof(PinchStateModule), 24 + sizeof(::OculusSampleFramework::Interactable*)> __OculusSampleFramework_PinchStateModuleSizeCheck;
@@ -177,6 +175,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Oculu
     return ::il2cpp_utils::FindMethod(classof(OculusSampleFramework::PinchStateModule*), "get_PinchDownOnFocusedObject", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: OculusSampleFramework::PinchStateModule::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: OculusSampleFramework::PinchStateModule::UpdateState
 // Il2CppName: UpdateState
 template<>
@@ -187,7 +189,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Oculu
     return ::il2cpp_utils::FindMethod(classof(OculusSampleFramework::PinchStateModule*), "UpdateState", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{hand, currFocusedInteractable});
   }
 };
-// Writing MetadataGetter for method: OculusSampleFramework::PinchStateModule::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

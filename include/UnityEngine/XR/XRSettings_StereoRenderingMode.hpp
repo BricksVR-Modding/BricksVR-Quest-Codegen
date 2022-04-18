@@ -63,7 +63,7 @@ namespace UnityEngine::XR {
     // Set static field: static public UnityEngine.XR.XRSettings/UnityEngine.XR.StereoRenderingMode SinglePassMultiview
     static void _set_SinglePassMultiview(::UnityEngine::XR::XRSettings::StereoRenderingMode value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // UnityEngine.XR.XRSettings/UnityEngine.XR.StereoRenderingMode
   #pragma pack(pop)
   static check_size<sizeof(XRSettings::StereoRenderingMode), 0 + sizeof(int)> __UnityEngine_XR_XRSettings_StereoRenderingModeSizeCheck;

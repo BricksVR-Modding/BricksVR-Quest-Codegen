@@ -79,13 +79,13 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public readonly UnityEngine.GameObject GameObject
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_GameObject();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_GameObject();
     // Get instance field reference: public readonly UnityEngine.MeshRenderer MeshRenderer
-    [[deprecated]] ::UnityEngine::MeshRenderer*& dyn_MeshRenderer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::MeshRenderer*& dyn_MeshRenderer();
     // Get instance field reference: public readonly System.Int32 VertexCount
-    [[deprecated]] int& dyn_VertexCount();
+    [[deprecated("Use field access instead!")]] int& dyn_VertexCount();
     // Get instance field reference: public readonly System.Collections.Generic.List`1<LegoConnectorScript> ConnectorScripts
-    [[deprecated]] ::System::Collections::Generic::List_1<::GlobalNamespace::LegoConnectorScript*>*& dyn_ConnectorScripts();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::GlobalNamespace::LegoConnectorScript*>*& dyn_ConnectorScripts();
     // public System.Void .ctor(UnityEngine.GameObject o)
     // Offset: 0x6AF7C0
     ChunkedBrick(::UnityEngine::GameObject* o);

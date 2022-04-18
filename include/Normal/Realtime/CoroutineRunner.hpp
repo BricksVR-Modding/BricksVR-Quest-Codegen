@@ -52,7 +52,14 @@ namespace Normal::Realtime {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Collections.Generic.HashSet`1<Normal.Realtime.CoroutineRunner/Normal.Realtime.CoroutineContext> _activeCoroutines
-    [[deprecated]] ::System::Collections::Generic::HashSet_1<::Normal::Realtime::CoroutineRunner::CoroutineContext*>*& dyn__activeCoroutines();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::HashSet_1<::Normal::Realtime::CoroutineRunner::CoroutineContext*>*& dyn__activeCoroutines();
+    // public System.Void .ctor()
+    // Offset: 0x8B7660
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static CoroutineRunner* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::CoroutineRunner::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<CoroutineRunner*, creationType>()));
+    }
     // public Normal.Realtime.CoroutineRunner/Normal.Realtime.CoroutineContext RunCoroutine(Normal.Realtime.CoroutineRunner/Normal.Realtime.CoroutineContext coroutineContext)
     // Offset: 0x8B7430
     ::Normal::Realtime::CoroutineRunner::CoroutineContext* RunCoroutine(::Normal::Realtime::CoroutineRunner::CoroutineContext* coroutineContext);
@@ -62,25 +69,16 @@ namespace Normal::Realtime {
     // private System.Void OnDestroy()
     // Offset: 0x8B72F0
     void OnDestroy();
-    // public System.Void .ctor()
-    // Offset: 0x8B7660
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static CoroutineRunner* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::CoroutineRunner::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<CoroutineRunner*, creationType>()));
-    }
   }; // Normal.Realtime.CoroutineRunner
   #pragma pack(pop)
   static check_size<sizeof(CoroutineRunner), 24 + sizeof(::System::Collections::Generic::HashSet_1<::Normal::Realtime::CoroutineRunner::CoroutineContext*>*)> __Normal_Realtime_CoroutineRunnerSizeCheck;
   static_assert(sizeof(CoroutineRunner) == 0x20);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Normal::Realtime::CoroutineRunner::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Normal::Realtime::CoroutineRunner::RunCoroutine
 // Il2CppName: RunCoroutine
 template<>
@@ -107,7 +105,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Norma
     return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::CoroutineRunner*), "OnDestroy", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: Normal::Realtime::CoroutineRunner::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

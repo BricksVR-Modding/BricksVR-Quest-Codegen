@@ -47,7 +47,7 @@ namespace UnityEngine::XR::WSA {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.XR.WSA.WorldAnchor/UnityEngine.XR.WSA.OnTrackingChangedDelegate OnTrackingChanged
-    [[deprecated]] ::UnityEngine::XR::WSA::WorldAnchor::OnTrackingChangedDelegate*& dyn_OnTrackingChanged();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::WSA::WorldAnchor::OnTrackingChangedDelegate*& dyn_OnTrackingChanged();
     // static private System.Void Internal_TriggerEventOnTrackingLost(UnityEngine.XR.WSA.WorldAnchor worldAnchor, System.Boolean located)
     // Offset: 0x66F4A0
     static void Internal_TriggerEventOnTrackingLost(::UnityEngine::XR::WSA::WorldAnchor* worldAnchor, bool located);

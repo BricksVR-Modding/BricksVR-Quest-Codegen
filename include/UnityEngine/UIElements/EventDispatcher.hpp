@@ -90,9 +90,9 @@ namespace UnityEngine::UIElements {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: public UnityEngine.UIElements.EventBase m_Event
-      [[deprecated]] ::UnityEngine::UIElements::EventBase*& dyn_m_Event();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::EventBase*& dyn_m_Event();
       // Get instance field reference: public UnityEngine.UIElements.IPanel m_Panel
-      [[deprecated]] ::UnityEngine::UIElements::IPanel*& dyn_m_Panel();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::IPanel*& dyn_m_Panel();
     }; // UnityEngine.UIElements.EventDispatcher/UnityEngine.UIElements.EventRecord
     #pragma pack(pop)
     static check_size<sizeof(EventDispatcher::EventRecord), 8 + sizeof(::UnityEngine::UIElements::IPanel*)> __UnityEngine_UIElements_EventDispatcher_EventRecordSizeCheck;
@@ -127,9 +127,9 @@ namespace UnityEngine::UIElements {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: public System.UInt32 m_GateCount
-      [[deprecated]] uint& dyn_m_GateCount();
+      [[deprecated("Use field access instead!")]] uint& dyn_m_GateCount();
       // Get instance field reference: public System.Collections.Generic.Queue`1<UnityEngine.UIElements.EventDispatcher/UnityEngine.UIElements.EventRecord> m_Queue
-      [[deprecated]] ::System::Collections::Generic::Queue_1<::UnityEngine::UIElements::EventDispatcher::EventRecord>*& dyn_m_Queue();
+      [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Queue_1<::UnityEngine::UIElements::EventDispatcher::EventRecord>*& dyn_m_Queue();
     }; // UnityEngine.UIElements.EventDispatcher/UnityEngine.UIElements.DispatchContext
     #pragma pack(pop)
     static check_size<sizeof(EventDispatcher::DispatchContext), 8 + sizeof(::System::Collections::Generic::Queue_1<::UnityEngine::UIElements::EventDispatcher::EventRecord>*)> __UnityEngine_UIElements_EventDispatcher_DispatchContextSizeCheck;
@@ -180,23 +180,30 @@ namespace UnityEngine::UIElements {
     // Set static field: static private readonly UnityEngine.UIElements.ObjectPool`1<System.Collections.Generic.Queue`1<UnityEngine.UIElements.EventDispatcher/UnityEngine.UIElements.EventRecord>> k_EventQueuePool
     static void _set_k_EventQueuePool(::UnityEngine::UIElements::ObjectPool_1<::System::Collections::Generic::Queue_1<::UnityEngine::UIElements::EventDispatcher::EventRecord>*>* value);
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.UIElements.IEventDispatchingStrategy> m_DispatchingStrategies
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::UIElements::IEventDispatchingStrategy*>*& dyn_m_DispatchingStrategies();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::UIElements::IEventDispatchingStrategy*>*& dyn_m_DispatchingStrategies();
     // Get instance field reference: private System.Collections.Generic.Queue`1<UnityEngine.UIElements.EventDispatcher/UnityEngine.UIElements.EventRecord> m_Queue
-    [[deprecated]] ::System::Collections::Generic::Queue_1<::UnityEngine::UIElements::EventDispatcher::EventRecord>*& dyn_m_Queue();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Queue_1<::UnityEngine::UIElements::EventDispatcher::EventRecord>*& dyn_m_Queue();
     // Get instance field reference: private readonly UnityEngine.UIElements.PointerDispatchState <pointerState>k__BackingField
-    [[deprecated]] ::UnityEngine::UIElements::PointerDispatchState*& dyn_$pointerState$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::PointerDispatchState*& dyn_$pointerState$k__BackingField();
     // Get instance field reference: private System.UInt32 m_GateCount
-    [[deprecated]] uint& dyn_m_GateCount();
+    [[deprecated("Use field access instead!")]] uint& dyn_m_GateCount();
     // Get instance field reference: private System.Collections.Generic.Stack`1<UnityEngine.UIElements.EventDispatcher/UnityEngine.UIElements.DispatchContext> m_DispatchContexts
-    [[deprecated]] ::System::Collections::Generic::Stack_1<::UnityEngine::UIElements::EventDispatcher::DispatchContext>*& dyn_m_DispatchContexts();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Stack_1<::UnityEngine::UIElements::EventDispatcher::DispatchContext>*& dyn_m_DispatchContexts();
     // Get instance field reference: private System.Boolean m_Immediate
-    [[deprecated]] bool& dyn_m_Immediate();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_Immediate();
     // UnityEngine.UIElements.PointerDispatchState get_pointerState()
     // Offset: 0x1E1950
     ::UnityEngine::UIElements::PointerDispatchState* get_pointerState();
     // private System.Boolean get_dispatchImmediately()
     // Offset: 0x2A1740
     bool get_dispatchImmediately();
+    // System.Void .ctor()
+    // Offset: 0x2A1450
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static EventDispatcher* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::UIElements::EventDispatcher::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<EventDispatcher*, creationType>()));
+    }
     // static private System.Void .cctor()
     // Offset: 0x2A13E0
     static void _cctor();
@@ -218,15 +225,6 @@ namespace UnityEngine::UIElements {
     // private System.Void ApplyDispatchingStrategies(UnityEngine.UIElements.EventBase evt, UnityEngine.UIElements.IPanel panel, System.Boolean imguiEventIsInitiallyUsed)
     // Offset: 0x2A08F0
     void ApplyDispatchingStrategies(::UnityEngine::UIElements::EventBase* evt, ::UnityEngine::UIElements::IPanel* panel, bool imguiEventIsInitiallyUsed);
-    // System.Void .ctor()
-    // Offset: 0x2A1450
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static EventDispatcher* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::UIElements::EventDispatcher::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<EventDispatcher*, creationType>()));
-    }
   }; // UnityEngine.UIElements.EventDispatcher
   #pragma pack(pop)
   static check_size<sizeof(EventDispatcher), 56 + sizeof(bool)> __UnityEngine_UIElements_EventDispatcherSizeCheck;
@@ -253,6 +251,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::UIElements::EventDispatcher*), "get_dispatchImmediately", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::UIElements::EventDispatcher::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::UIElements::EventDispatcher::_cctor
 // Il2CppName: .cctor
 template<>
@@ -317,7 +319,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::UIElements::EventDispatcher*), "ApplyDispatchingStrategies", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{evt, panel, imguiEventIsInitiallyUsed});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::UIElements::EventDispatcher::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

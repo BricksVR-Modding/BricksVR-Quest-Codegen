@@ -67,7 +67,7 @@ namespace System::Diagnostics::Tracing {
     // Set static field: static public System.Diagnostics.Tracing.EventActivityOptions Detachable
     static void _set_Detachable(::System::Diagnostics::Tracing::EventActivityOptions value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // System.Diagnostics.Tracing.EventActivityOptions
   #pragma pack(pop)
   static check_size<sizeof(EventActivityOptions), 0 + sizeof(int)> __System_Diagnostics_Tracing_EventActivityOptionsSizeCheck;

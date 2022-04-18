@@ -92,17 +92,17 @@ namespace UnityEngine::XR::Interaction::Toolkit {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: public System.Double time
-      [[deprecated]] double& dyn_time();
+      [[deprecated("Use field access instead!")]] double& dyn_time();
       // Get instance field reference: public UnityEngine.Vector3 position
-      [[deprecated]] ::UnityEngine::Vector3& dyn_position();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_position();
       // Get instance field reference: public UnityEngine.Quaternion rotation
-      [[deprecated]] ::UnityEngine::Quaternion& dyn_rotation();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::Quaternion& dyn_rotation();
       // Get instance field reference: public System.Boolean selectActive
-      [[deprecated]] bool& dyn_selectActive();
+      [[deprecated("Use field access instead!")]] bool& dyn_selectActive();
       // Get instance field reference: public System.Boolean activateActive
-      [[deprecated]] bool& dyn_activateActive();
+      [[deprecated("Use field access instead!")]] bool& dyn_activateActive();
       // Get instance field reference: public System.Boolean pressActive
-      [[deprecated]] bool& dyn_pressActive();
+      [[deprecated("Use field access instead!")]] bool& dyn_pressActive();
       // public System.Void .ctor(System.Double time, UnityEngine.Vector3 position, UnityEngine.Quaternion rotation, System.Boolean selectActive, System.Boolean activateActive, System.Boolean pressActive)
       // Offset: 0x2F5180
       // ABORTED: conflicts with another method.  Frame(double time, ::UnityEngine::Vector3 position, ::UnityEngine::Quaternion rotation, bool selectActive, bool activateActive, bool pressActive);
@@ -127,13 +127,20 @@ namespace UnityEngine::XR::Interaction::Toolkit {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.XR.Interaction.Toolkit.XRControllerRecording/UnityEngine.XR.Interaction.Toolkit.Frame> m_Frames
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::XR::Interaction::Toolkit::XRControllerRecording::Frame>*& dyn_m_Frames();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::XR::Interaction::Toolkit::XRControllerRecording::Frame>*& dyn_m_Frames();
     // System.Collections.Generic.List`1<UnityEngine.XR.Interaction.Toolkit.XRControllerRecording/UnityEngine.XR.Interaction.Toolkit.Frame> get_frames()
     // Offset: 0x1E1520
     ::System::Collections::Generic::List_1<::UnityEngine::XR::Interaction::Toolkit::XRControllerRecording::Frame>* get_frames();
     // public System.Double get_duration()
     // Offset: 0x302D60
     double get_duration();
+    // public System.Void .ctor()
+    // Offset: 0x302CF0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static XRControllerRecording* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::XR::Interaction::Toolkit::XRControllerRecording::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<XRControllerRecording*, creationType>()));
+    }
     // System.Void AddRecordingFrame(System.Double time, UnityEngine.Vector3 position, UnityEngine.Quaternion rotation, System.Boolean selectActive, System.Boolean activateActive, System.Boolean pressActive)
     // Offset: 0x302BB0
     void AddRecordingFrame(double time, ::UnityEngine::Vector3 position, ::UnityEngine::Quaternion rotation, bool selectActive, bool activateActive, bool pressActive);
@@ -143,17 +150,6 @@ namespace UnityEngine::XR::Interaction::Toolkit {
     // System.Void SaveRecording()
     // Offset: 0x1DDF00
     void SaveRecording();
-    // public System.Void .ctor()
-    // Offset: 0x302CF0
-    // Implemented from: UnityEngine.ScriptableObject
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static XRControllerRecording* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::XR::Interaction::Toolkit::XRControllerRecording::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<XRControllerRecording*, creationType>()));
-    }
   }; // UnityEngine.XR.Interaction.Toolkit.XRControllerRecording
   #pragma pack(pop)
   static check_size<sizeof(XRControllerRecording), 24 + sizeof(::System::Collections::Generic::List_1<::UnityEngine::XR::Interaction::Toolkit::XRControllerRecording::Frame>*)> __UnityEngine_XR_Interaction_Toolkit_XRControllerRecordingSizeCheck;
@@ -178,6 +174,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<double (Uni
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::XR::Interaction::Toolkit::XRControllerRecording*), "get_duration", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::XR::Interaction::Toolkit::XRControllerRecording::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::XR::Interaction::Toolkit::XRControllerRecording::AddRecordingFrame
 // Il2CppName: AddRecordingFrame
 template<>
@@ -208,7 +208,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::XR::Interaction::Toolkit::XRControllerRecording*), "SaveRecording", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::XR::Interaction::Toolkit::XRControllerRecording::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

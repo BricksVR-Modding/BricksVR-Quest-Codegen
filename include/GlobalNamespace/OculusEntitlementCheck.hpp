@@ -58,7 +58,7 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Action`2<System.Boolean,System.String> _entitlementCallback
-    [[deprecated]] ::System::Action_2<bool, ::StringW>*& dyn__entitlementCallback();
+    [[deprecated("Use field access instead!")]] ::System::Action_2<bool, ::StringW>*& dyn__entitlementCallback();
     // private System.Void EntitlementCallback(Oculus.Platform.Message msg)
     // Offset: 0x7D0530
     void EntitlementCallback(::Oculus::Platform::Message* msg);
@@ -66,11 +66,6 @@ namespace GlobalNamespace {
     // Offset: 0x4D3750
     // Implemented from: BaseEntitlementCheck
     // Base method: System.Void BaseEntitlementCheck::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OculusEntitlementCheck* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OculusEntitlementCheck::.ctor");

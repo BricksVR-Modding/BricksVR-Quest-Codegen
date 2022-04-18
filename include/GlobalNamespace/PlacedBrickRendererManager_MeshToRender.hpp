@@ -44,9 +44,9 @@ namespace GlobalNamespace {
     static_assert(sizeof(::UnityEngine::Vector4) == 0x10);
     public:
     // Get instance field reference: public readonly UnityEngine.Matrix4x4 TransformationMatrix
-    [[deprecated]] ::UnityEngine::Matrix4x4& dyn_TransformationMatrix();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Matrix4x4& dyn_TransformationMatrix();
     // Get instance field reference: public readonly UnityEngine.Vector4 Color
-    [[deprecated]] ::UnityEngine::Vector4& dyn_Color();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector4& dyn_Color();
     // public System.Void .ctor(UnityEngine.Matrix4x4 transformationMatrix, UnityEngine.Color color)
     // Offset: 0x6732D0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

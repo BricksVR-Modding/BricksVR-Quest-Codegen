@@ -73,9 +73,9 @@ namespace System::Diagnostics::Tracing {
     // Set static field: static private System.Int64 m_nextId
     static void _set_m_nextId(int64_t value);
     // Get instance field reference: private System.Threading.AsyncLocal`1<System.Diagnostics.Tracing.ActivityTracker/System.Diagnostics.Tracing.ActivityInfo> m_current
-    [[deprecated]] ::System::Threading::AsyncLocal_1<::System::Diagnostics::Tracing::ActivityTracker::ActivityInfo*>*& dyn_m_current();
+    [[deprecated("Use field access instead!")]] ::System::Threading::AsyncLocal_1<::System::Diagnostics::Tracing::ActivityTracker::ActivityInfo*>*& dyn_m_current();
     // Get instance field reference: private System.Boolean m_checkedForEnable
-    [[deprecated]] bool& dyn_m_checkedForEnable();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_checkedForEnable();
     // static public System.Diagnostics.Tracing.ActivityTracker get_Instance()
     // Offset: 0x208B90
     static ::System::Diagnostics::Tracing::ActivityTracker* get_Instance();

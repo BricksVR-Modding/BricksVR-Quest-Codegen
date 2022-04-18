@@ -22,7 +22,6 @@
 namespace System {
   // Forward declaring type: MonoTypeInfo
   class MonoTypeInfo;
-  // Skipping declaration: Type because it is already included!
   // Forward declaring type: TypeNameKind
   struct TypeNameKind;
   // Skipping declaration: IntPtr because it is already included!
@@ -34,7 +33,10 @@ namespace System {
 namespace System::Reflection {
   // Forward declaring type: RuntimeConstructorInfo
   class RuntimeConstructorInfo;
-  // Skipping declaration: MemberInfo because it is already included!
+  // Forward declaring type: Module
+  class Module;
+  // Forward declaring type: TypeAttributes
+  struct TypeAttributes;
   // Forward declaring type: RuntimeMethodInfo
   class RuntimeMethodInfo;
   // Forward declaring type: CallingConventions
@@ -67,14 +69,10 @@ namespace System::Reflection {
   class RuntimeFieldInfo;
   // Forward declaring type: RuntimeEventInfo
   class RuntimeEventInfo;
-  // Forward declaring type: Module
-  class Module;
   // Forward declaring type: Assembly
   class Assembly;
   // Forward declaring type: MemberTypes
   struct MemberTypes;
-  // Forward declaring type: TypeAttributes
-  struct TypeAttributes;
   // Forward declaring type: CustomAttributeData
   class CustomAttributeData;
 }
@@ -237,11 +235,11 @@ namespace System {
     // Set static field: static private System.RuntimeType s_typedRef
     static void _set_s_typedRef(::System::RuntimeType* value);
     // Get instance field reference: private System.MonoTypeInfo type_info
-    [[deprecated]] ::System::MonoTypeInfo*& dyn_type_info();
+    [[deprecated("Use field access instead!")]] ::System::MonoTypeInfo*& dyn_type_info();
     // Get instance field reference: System.Object GenericCache
-    [[deprecated]] ::Il2CppObject*& dyn_GenericCache();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_GenericCache();
     // Get instance field reference: private System.Reflection.RuntimeConstructorInfo m_serializationCtor
-    [[deprecated]] ::System::Reflection::RuntimeConstructorInfo*& dyn_m_serializationCtor();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::RuntimeConstructorInfo*& dyn_m_serializationCtor();
     // static private System.Void ThrowIfTypeNeverValidGenericArgument(System.RuntimeType type)
     // Offset: 0x2C5020
     static void ThrowIfTypeNeverValidGenericArgument(::System::RuntimeType* type);

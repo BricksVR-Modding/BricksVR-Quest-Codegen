@@ -108,19 +108,26 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public TMPro.TextMeshProUGUI nameText
-    [[deprecated]] ::TMPro::TextMeshProUGUI*& dyn_nameText();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshProUGUI*& dyn_nameText();
     // Get instance field reference: public UnityEngine.GameObject ownerCrown
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_ownerCrown();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_ownerCrown();
     // Get instance field reference: public UnityEngine.UI.Image micImage
-    [[deprecated]] ::UnityEngine::UI::Image*& dyn_micImage();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Image*& dyn_micImage();
     // Get instance field reference: public UnityEngine.UI.Button micButton
-    [[deprecated]] ::UnityEngine::UI::Button*& dyn_micButton();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Button*& dyn_micButton();
     // Get instance field reference: public UnityEngine.Sprite micMutedSprite
-    [[deprecated]] ::UnityEngine::Sprite*& dyn_micMutedSprite();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Sprite*& dyn_micMutedSprite();
     // Get instance field reference: public UnityEngine.Sprite micEnabledSprite
-    [[deprecated]] ::UnityEngine::Sprite*& dyn_micEnabledSprite();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Sprite*& dyn_micEnabledSprite();
     // Get instance field reference: private SyncVoiceWithSettings _syncVoiceWithSettings
-    [[deprecated]] ::GlobalNamespace::SyncVoiceWithSettings*& dyn__syncVoiceWithSettings();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::SyncVoiceWithSettings*& dyn__syncVoiceWithSettings();
+    // public System.Void .ctor()
+    // Offset: 0x1DDE30
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static PlayerListItem* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::PlayerListItem::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<PlayerListItem*, creationType>()));
+    }
     // public System.Void Initialize(Normal.Realtime.RealtimeAvatar avatar, RoomOwnershipSync ownershipSync)
     // Offset: 0x67AC40
     void Initialize(::Normal::Realtime::RealtimeAvatar* avatar, ::GlobalNamespace::RoomOwnershipSync* ownershipSync);
@@ -130,25 +137,16 @@ namespace GlobalNamespace {
     // private System.Void SetMicrophoneSprite()
     // Offset: 0x67AE00
     void SetMicrophoneSprite();
-    // public System.Void .ctor()
-    // Offset: 0x1DDE30
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static PlayerListItem* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::PlayerListItem::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<PlayerListItem*, creationType>()));
-    }
   }; // PlayerListItem
   #pragma pack(pop)
   static check_size<sizeof(PlayerListItem), 72 + sizeof(::GlobalNamespace::SyncVoiceWithSettings*)> __GlobalNamespace_PlayerListItemSizeCheck;
   static_assert(sizeof(PlayerListItem) == 0x50);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::PlayerListItem::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::PlayerListItem::Initialize
 // Il2CppName: Initialize
 template<>
@@ -175,7 +173,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::PlayerListItem*), "SetMicrophoneSprite", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::PlayerListItem::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

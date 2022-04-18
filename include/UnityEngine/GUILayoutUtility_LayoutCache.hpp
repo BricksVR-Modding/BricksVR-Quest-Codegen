@@ -57,15 +57,13 @@ namespace UnityEngine {
     static_assert(sizeof(::UnityEngine::GUILayoutGroup*) == 0x8);
     public:
     // Get instance field reference: UnityEngine.GUILayoutGroup topLevel
-    [[deprecated]] ::UnityEngine::GUILayoutGroup*& dyn_topLevel();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GUILayoutGroup*& dyn_topLevel();
     // Get instance field reference: UnityEngineInternal.GenericStack layoutGroups
-    [[deprecated]] ::UnityEngineInternal::GenericStack*& dyn_layoutGroups();
+    [[deprecated("Use field access instead!")]] ::UnityEngineInternal::GenericStack*& dyn_layoutGroups();
     // Get instance field reference: UnityEngine.GUILayoutGroup windows
-    [[deprecated]] ::UnityEngine::GUILayoutGroup*& dyn_windows();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GUILayoutGroup*& dyn_windows();
     // System.Void .ctor()
     // Offset: 0x62A450
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static GUILayoutUtility::LayoutCache* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::GUILayoutUtility::LayoutCache::.ctor");

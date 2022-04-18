@@ -89,15 +89,15 @@ namespace System::IO::Compression {
     static_assert(sizeof(::System::IO::Compression::DeflateStreamNative*) == 0x8);
     public:
     // Get instance field reference: private System.IO.Stream base_stream
-    [[deprecated]] ::System::IO::Stream*& dyn_base_stream();
+    [[deprecated("Use field access instead!")]] ::System::IO::Stream*& dyn_base_stream();
     // Get instance field reference: private System.IO.Compression.CompressionMode mode
-    [[deprecated]] ::System::IO::Compression::CompressionMode& dyn_mode();
+    [[deprecated("Use field access instead!")]] ::System::IO::Compression::CompressionMode& dyn_mode();
     // Get instance field reference: private System.Boolean leaveOpen
-    [[deprecated]] bool& dyn_leaveOpen();
+    [[deprecated("Use field access instead!")]] bool& dyn_leaveOpen();
     // Get instance field reference: private System.Boolean disposed
-    [[deprecated]] bool& dyn_disposed();
+    [[deprecated("Use field access instead!")]] bool& dyn_disposed();
     // Get instance field reference: private System.IO.Compression.DeflateStreamNative native
-    [[deprecated]] ::System::IO::Compression::DeflateStreamNative*& dyn_native();
+    [[deprecated("Use field access instead!")]] ::System::IO::Compression::DeflateStreamNative*& dyn_native();
     // System.Void .ctor(System.IO.Stream stream, System.IO.Compression.CompressionMode mode, System.Boolean leaveOpen, System.Int32 windowsBits)
     // Offset: 0x54FFB0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

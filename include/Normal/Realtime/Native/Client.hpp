@@ -122,21 +122,21 @@ namespace Normal::Realtime::Native {
     // Set static field: static private readonly System.Object __numberOfClientsLock
     static void _set___numberOfClientsLock(::Il2CppObject* value);
     // Get instance field reference: private Normal.Realtime.Native.Client/Normal.Realtime.Native.PersistenceMessageReceived persistenceMessageReceived
-    [[deprecated]] ::Normal::Realtime::Native::Client::PersistenceMessageReceived*& dyn_persistenceMessageReceived();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::Native::Client::PersistenceMessageReceived*& dyn_persistenceMessageReceived();
     // Get instance field reference: private Normal.Realtime.Native.Client/Normal.Realtime.Native.RPCMessageReceived rpcMessageReceived
-    [[deprecated]] ::Normal::Realtime::Native::Client::RPCMessageReceived*& dyn_rpcMessageReceived();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::Native::Client::RPCMessageReceived*& dyn_rpcMessageReceived();
     // Get instance field reference: private Normal.Realtime.Native.Client/Normal.Realtime.Native.AudioOutputStreamCreated audioOutputStreamCreated
-    [[deprecated]] ::Normal::Realtime::Native::Client::AudioOutputStreamCreated*& dyn_audioOutputStreamCreated();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::Native::Client::AudioOutputStreamCreated*& dyn_audioOutputStreamCreated();
     // Get instance field reference: private Normal.Realtime.Native.Client/Normal.Realtime.Native.AudioOutputStreamClosed audioOutputStreamClosed
-    [[deprecated]] ::Normal::Realtime::Native::Client::AudioOutputStreamClosed*& dyn_audioOutputStreamClosed();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::Native::Client::AudioOutputStreamClosed*& dyn_audioOutputStreamClosed();
     // Get instance field reference: private System.IntPtr _nativeClient
-    [[deprecated]] ::System::IntPtr& dyn__nativeClient();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn__nativeClient();
     // Get instance field reference: private System.Collections.Generic.List`1<Normal.Realtime.Native.AudioOutputStream> _audioOutputStreams
-    [[deprecated]] ::System::Collections::Generic::List_1<::Normal::Realtime::Native::AudioOutputStream*>*& dyn__audioOutputStreams();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::Normal::Realtime::Native::AudioOutputStream*>*& dyn__audioOutputStreams();
     // Get instance field reference: private System.Byte[] _persistenceMessageBuffer
-    [[deprecated]] ::ArrayW<uint8_t>& dyn__persistenceMessageBuffer();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn__persistenceMessageBuffer();
     // Get instance field reference: private System.Byte[] _rpcMessageBuffer
-    [[deprecated]] ::ArrayW<uint8_t>& dyn__rpcMessageBuffer();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn__rpcMessageBuffer();
     // public System.Void add_persistenceMessageReceived(Normal.Realtime.Native.Client/Normal.Realtime.Native.PersistenceMessageReceived value)
     // Offset: 0x8B6650
     void add_persistenceMessageReceived(::Normal::Realtime::Native::Client::PersistenceMessageReceived* value);
@@ -161,6 +161,13 @@ namespace Normal::Realtime::Native {
     // public System.Void remove_audioOutputStreamClosed(Normal.Realtime.Native.Client/Normal.Realtime.Native.AudioOutputStreamClosed value)
     // Offset: 0x8B6790
     void remove_audioOutputStreamClosed(::Normal::Realtime::Native::Client::AudioOutputStreamClosed* value);
+    // public System.Void .ctor()
+    // Offset: 0x8B6380
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static Client* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::Native::Client::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<Client*, creationType>()));
+    }
     // static private System.Void .cctor()
     // Offset: 0x8B6300
     static void _cctor();
@@ -230,15 +237,6 @@ namespace Normal::Realtime::Native {
     // private System.Void ReceiveRPCMessages()
     // Offset: 0x8B55C0
     void ReceiveRPCMessages();
-    // public System.Void .ctor()
-    // Offset: 0x8B6380
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static Client* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::Native::Client::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<Client*, creationType>()));
-    }
     // protected override System.Void Finalize()
     // Offset: 0x8B4A90
     // Implemented from: System.Object
@@ -322,6 +320,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Norma
     return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::Native::Client*), "remove_audioOutputStreamClosed", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: Normal::Realtime::Native::Client::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Normal::Realtime::Native::Client::_cctor
 // Il2CppName: .cctor
 template<>
@@ -522,10 +524,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Norma
     return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::Native::Client*), "ReceiveRPCMessages", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: Normal::Realtime::Native::Client::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: Normal::Realtime::Native::Client::Finalize
 // Il2CppName: Finalize
 template<>

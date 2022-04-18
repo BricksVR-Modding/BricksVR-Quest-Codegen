@@ -45,7 +45,7 @@ namespace Steamworks::Data {
       return Id;
     }
     // Get instance field reference: private Steamworks.SteamId <Id>k__BackingField
-    [[deprecated]] ::Steamworks::SteamId& dyn_$Id$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Steamworks::SteamId& dyn_$Id$k__BackingField();
     // System.Void set_Id(Steamworks.SteamId value)
     // Offset: 0x2BACA0
     void set_Id(::Steamworks::SteamId value);

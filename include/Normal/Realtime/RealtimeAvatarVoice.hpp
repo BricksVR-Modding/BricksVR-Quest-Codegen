@@ -154,37 +154,37 @@ namespace Normal::Realtime {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.Single <voiceVolume>k__BackingField
-    [[deprecated]] float& dyn_$voiceVolume$k__BackingField();
+    [[deprecated("Use field access instead!")]] float& dyn_$voiceVolume$k__BackingField();
     // Get instance field reference: private System.Boolean _mute
-    [[deprecated]] bool& dyn__mute();
+    [[deprecated("Use field access instead!")]] bool& dyn__mute();
     // Get instance field reference: private Normal.Realtime.OculusMicrophoneDevice _oculusMicrophoneDevice
-    [[deprecated]] ::Normal::Realtime::OculusMicrophoneDevice*& dyn__oculusMicrophoneDevice();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::OculusMicrophoneDevice*& dyn__oculusMicrophoneDevice();
     // Get instance field reference: private Normal.Realtime.Native.Microphone _nativeMicrophoneDevice
-    [[deprecated]] ::Normal::Realtime::Native::Microphone*& dyn__nativeMicrophoneDevice();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::Native::Microphone*& dyn__nativeMicrophoneDevice();
     // Get instance field reference: private Normal.Realtime.MicrophoneDevice _unityMicrophoneDevice
-    [[deprecated]] ::Normal::Realtime::MicrophoneDevice*& dyn__unityMicrophoneDevice();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::MicrophoneDevice*& dyn__unityMicrophoneDevice();
     // Get instance field reference: private Normal.Realtime.AudioDeviceDataReader _unityMicrophoneDeviceDataReader
-    [[deprecated]] ::Normal::Realtime::AudioDeviceDataReader*& dyn__unityMicrophoneDeviceDataReader();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::AudioDeviceDataReader*& dyn__unityMicrophoneDeviceDataReader();
     // Get instance field reference: private System.Int32 _microphoneSampleRate
-    [[deprecated]] int& dyn__microphoneSampleRate();
+    [[deprecated("Use field access instead!")]] int& dyn__microphoneSampleRate();
     // Get instance field reference: private System.Int32 _microphoneChannels
-    [[deprecated]] int& dyn__microphoneChannels();
+    [[deprecated("Use field access instead!")]] int& dyn__microphoneChannels();
     // Get instance field reference: private System.Int32 _microphoneFrameSize
-    [[deprecated]] int& dyn__microphoneFrameSize();
+    [[deprecated("Use field access instead!")]] int& dyn__microphoneFrameSize();
     // Get instance field reference: private System.Single[] _microphoneFrameData
-    [[deprecated]] ::ArrayW<float>& dyn__microphoneFrameData();
+    [[deprecated("Use field access instead!")]] ::ArrayW<float>& dyn__microphoneFrameData();
     // Get instance field reference: private Normal.Realtime.Native.AudioInputStream _microphoneStream
-    [[deprecated]] ::Normal::Realtime::Native::AudioInputStream*& dyn__microphoneStream();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::Native::AudioInputStream*& dyn__microphoneStream();
     // Get instance field reference: private Normal.Realtime.Native.AudioPreprocessor _audioPreprocessor
-    [[deprecated]] ::Normal::Realtime::Native::AudioPreprocessor*& dyn__audioPreprocessor();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::Native::AudioPreprocessor*& dyn__audioPreprocessor();
     // Get instance field reference: private Normal.Realtime.AudioPreprocessorPlaybackListener _audioPreprocessorPlaybackListener
-    [[deprecated]] ::Normal::Realtime::AudioPreprocessorPlaybackListener*& dyn__audioPreprocessorPlaybackListener();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::AudioPreprocessorPlaybackListener*& dyn__audioPreprocessorPlaybackListener();
     // Get instance field reference: private System.Single _microphoneDbLevel
-    [[deprecated]] float& dyn__microphoneDbLevel();
+    [[deprecated("Use field access instead!")]] float& dyn__microphoneDbLevel();
     // Get instance field reference: private Normal.Realtime.AudioOutput _audioOutput
-    [[deprecated]] ::Normal::Realtime::AudioOutput*& dyn__audioOutput();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::AudioOutput*& dyn__audioOutput();
     // Get instance field reference: private System.Boolean _rebuildAudioStream
-    [[deprecated]] bool& dyn__rebuildAudioStream();
+    [[deprecated("Use field access instead!")]] bool& dyn__rebuildAudioStream();
     // public System.Single get_voiceVolume()
     // Offset: 0x4CC750
     float get_voiceVolume();
@@ -200,6 +200,13 @@ namespace Normal::Realtime {
     // private System.Boolean get__hasMicrophone()
     // Offset: 0xBE09A0
     bool get__hasMicrophone();
+    // public System.Void .ctor()
+    // Offset: 0xBE0950
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static RealtimeAvatarVoice* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::RealtimeAvatarVoice::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<RealtimeAvatarVoice*, creationType>()));
+    }
     // private System.Void Update()
     // Offset: 0xBE0800
     void Update();
@@ -242,20 +249,6 @@ namespace Normal::Realtime {
     // private System.Void SetMute(System.Boolean mute)
     // Offset: 0xBE0710
     void SetMute(bool mute);
-    // public System.Void .ctor()
-    // Offset: 0xBE0950
-    // Implemented from: Normal.Realtime.RealtimeComponent`1
-    // Base method: System.Void RealtimeComponent_1::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static RealtimeAvatarVoice* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::RealtimeAvatarVoice::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<RealtimeAvatarVoice*, creationType>()));
-    }
   }; // Normal.Realtime.RealtimeAvatarVoice
   // WARNING Not writing size check since size may be invalid!
 }
@@ -302,6 +295,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Norma
     return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::RealtimeAvatarVoice*), "get__hasMicrophone", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: Normal::Realtime::RealtimeAvatarVoice::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Normal::Realtime::RealtimeAvatarVoice::Update
 // Il2CppName: Update
 template<>
@@ -422,7 +419,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Norma
     return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::RealtimeAvatarVoice*), "SetMute", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{mute});
   }
 };
-// Writing MetadataGetter for method: Normal::Realtime::RealtimeAvatarVoice::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -59,11 +59,18 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public OptionsTabSystem/Tab[] tabs
-    [[deprecated]] ::ArrayW<::GlobalNamespace::OptionsTabSystem::Tab*>& dyn_tabs();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::GlobalNamespace::OptionsTabSystem::Tab*>& dyn_tabs();
     // Get instance field reference: public System.Int32 defaultTab
-    [[deprecated]] int& dyn_defaultTab();
+    [[deprecated("Use field access instead!")]] int& dyn_defaultTab();
     // Get instance field reference: private System.Int32 _selectedTab
-    [[deprecated]] int& dyn__selectedTab();
+    [[deprecated("Use field access instead!")]] int& dyn__selectedTab();
+    // public System.Void .ctor()
+    // Offset: 0x1DDE30
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static OptionsTabSystem* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OptionsTabSystem::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<OptionsTabSystem*, creationType>()));
+    }
     // private System.Void Start()
     // Offset: 0x7D3470
     void Start();
@@ -76,25 +83,16 @@ namespace GlobalNamespace {
     // private System.Void EnableTab(System.Int32 index)
     // Offset: 0x7D3320
     void EnableTab(int index);
-    // public System.Void .ctor()
-    // Offset: 0x1DDE30
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static OptionsTabSystem* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OptionsTabSystem::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<OptionsTabSystem*, creationType>()));
-    }
   }; // OptionsTabSystem
   #pragma pack(pop)
   static check_size<sizeof(OptionsTabSystem), 36 + sizeof(int)> __GlobalNamespace_OptionsTabSystemSizeCheck;
   static_assert(sizeof(OptionsTabSystem) == 0x28);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::OptionsTabSystem::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::OptionsTabSystem::Start
 // Il2CppName: Start
 template<>
@@ -130,7 +128,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OptionsTabSystem*), "EnableTab", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{index});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::OptionsTabSystem::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

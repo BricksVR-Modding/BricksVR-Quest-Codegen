@@ -64,9 +64,9 @@ namespace Steamworks::Data {
     // Set static field: static public System.Int32 _datasize
     static void _set__datasize(int value);
     // Get instance field reference: Steamworks.Data.SteamUGCDetails_t Details
-    [[deprecated]] ::Steamworks::Data::SteamUGCDetails_t& dyn_Details();
+    [[deprecated("Use field access instead!")]] ::Steamworks::Data::SteamUGCDetails_t& dyn_Details();
     // Get instance field reference: System.Boolean CachedData
-    [[deprecated]] bool& dyn_CachedData();
+    [[deprecated("Use field access instead!")]] bool& dyn_CachedData();
     // public Steamworks.CallbackType get_CallbackType()
     // Offset: 0x4671E0
     ::Steamworks::CallbackType get_CallbackType();

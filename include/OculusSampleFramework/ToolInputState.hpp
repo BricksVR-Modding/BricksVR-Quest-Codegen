@@ -66,7 +66,7 @@ namespace OculusSampleFramework {
     // Set static field: static public OculusSampleFramework.ToolInputState PrimaryInputUp
     static void _set_PrimaryInputUp(::OculusSampleFramework::ToolInputState value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // OculusSampleFramework.ToolInputState
   #pragma pack(pop)
   static check_size<sizeof(ToolInputState), 0 + sizeof(int)> __OculusSampleFramework_ToolInputStateSizeCheck;

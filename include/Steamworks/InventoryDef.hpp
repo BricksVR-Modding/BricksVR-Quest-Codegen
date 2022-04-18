@@ -47,7 +47,7 @@ namespace Steamworks {
       return id;
     }
     // Get instance field reference: Steamworks.Data.InventoryDefId _id
-    [[deprecated]] ::Steamworks::Data::InventoryDefId& dyn__id();
+    [[deprecated("Use field access instead!")]] ::Steamworks::Data::InventoryDefId& dyn__id();
     // public System.Int32 get_Id()
     // Offset: 0x1DD410
     int get_Id();

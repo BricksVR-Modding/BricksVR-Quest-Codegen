@@ -28,8 +28,6 @@ namespace UnityEngine::XR::Interaction::Toolkit::AR {
     public:
     // public System.Void .ctor()
     // Offset: 0x1DD400
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ARBaseGestureInteractable* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::XR::Interaction::Toolkit::AR::ARBaseGestureInteractable::.ctor");

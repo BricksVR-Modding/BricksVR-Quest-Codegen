@@ -60,7 +60,7 @@ namespace Normal::Realtime::Native {
       return nativeMatcher;
     }
     // Get instance field reference: private System.IntPtr _nativeMatcher
-    [[deprecated]] ::System::IntPtr& dyn__nativeMatcher();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn__nativeMatcher();
     // public System.Void .ctor(System.String address)
     // Offset: 0x8BA3D0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

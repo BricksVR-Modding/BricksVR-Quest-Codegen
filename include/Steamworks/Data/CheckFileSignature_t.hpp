@@ -62,7 +62,7 @@ namespace Steamworks::Data {
     // Set static field: static public System.Int32 _datasize
     static void _set__datasize(int value);
     // Get instance field reference: Steamworks.CheckFileSignature CheckFileSignature
-    [[deprecated]] ::Steamworks::CheckFileSignature& dyn_CheckFileSignature();
+    [[deprecated("Use field access instead!")]] ::Steamworks::CheckFileSignature& dyn_CheckFileSignature();
     // public Steamworks.CallbackType get_CallbackType()
     // Offset: 0x45CB90
     ::Steamworks::CallbackType get_CallbackType();

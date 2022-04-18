@@ -19,7 +19,6 @@
 namespace System::Reflection {
   // Forward declaring type: RuntimeAssembly
   class RuntimeAssembly;
-  // Skipping declaration: Module because it is already included!
   // Forward declaring type: Assembly
   class Assembly;
 }

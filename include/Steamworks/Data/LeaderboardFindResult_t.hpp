@@ -62,9 +62,9 @@ namespace Steamworks::Data {
     // Set static field: static public System.Int32 _datasize
     static void _set__datasize(int value);
     // Get instance field reference: System.UInt64 SteamLeaderboard
-    [[deprecated]] uint64_t& dyn_SteamLeaderboard();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_SteamLeaderboard();
     // Get instance field reference: System.Byte LeaderboardFound
-    [[deprecated]] uint8_t& dyn_LeaderboardFound();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn_LeaderboardFound();
     // public Steamworks.CallbackType get_CallbackType()
     // Offset: 0x462900
     ::Steamworks::CallbackType get_CallbackType();

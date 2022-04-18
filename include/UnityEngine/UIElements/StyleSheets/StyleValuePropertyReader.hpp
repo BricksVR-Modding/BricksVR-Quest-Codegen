@@ -28,8 +28,6 @@ namespace UnityEngine::UIElements::StyleSheets {
     public:
     // public System.Void .ctor()
     // Offset: 0x1DD400
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static StyleValuePropertyReader* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::UIElements::StyleSheets::StyleValuePropertyReader::.ctor");

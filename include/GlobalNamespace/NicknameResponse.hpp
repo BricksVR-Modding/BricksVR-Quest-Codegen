@@ -40,11 +40,9 @@ namespace GlobalNamespace {
       return nickname;
     }
     // Get instance field reference: public System.String nickname
-    [[deprecated]] ::StringW& dyn_nickname();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_nickname();
     // public System.Void .ctor()
     // Offset: 0x1DD400
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static NicknameResponse* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::NicknameResponse::.ctor");

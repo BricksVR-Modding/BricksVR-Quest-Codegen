@@ -23,7 +23,6 @@ namespace System::Reflection {
   struct BindingFlags;
   // Forward declaring type: Binder
   class Binder;
-  // Skipping declaration: MemberInfo because it is already included!
   // Forward declaring type: Module
   class Module;
   // Forward declaring type: FieldAttributes
@@ -73,9 +72,9 @@ namespace System::Runtime::Serialization {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private System.Reflection.RuntimeFieldInfo m_field
-    [[deprecated]] ::System::Reflection::RuntimeFieldInfo*& dyn_m_field();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::RuntimeFieldInfo*& dyn_m_field();
     // Get instance field reference: private System.String m_serializationName
-    [[deprecated]] ::StringW& dyn_m_serializationName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_serializationName();
     // System.Reflection.RuntimeFieldInfo get_FieldInfo()
     // Offset: 0x1E1920
     ::System::Reflection::RuntimeFieldInfo* get_FieldInfo();

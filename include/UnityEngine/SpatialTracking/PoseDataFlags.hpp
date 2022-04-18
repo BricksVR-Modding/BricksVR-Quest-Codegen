@@ -61,7 +61,7 @@ namespace UnityEngine::SpatialTracking {
     // Set static field: static public UnityEngine.SpatialTracking.PoseDataFlags Rotation
     static void _set_Rotation(::UnityEngine::SpatialTracking::PoseDataFlags value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // UnityEngine.SpatialTracking.PoseDataFlags
   #pragma pack(pop)
   static check_size<sizeof(PoseDataFlags), 0 + sizeof(int)> __UnityEngine_SpatialTracking_PoseDataFlagsSizeCheck;

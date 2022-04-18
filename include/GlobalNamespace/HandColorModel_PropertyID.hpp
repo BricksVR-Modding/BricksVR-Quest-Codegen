@@ -45,7 +45,7 @@ namespace GlobalNamespace {
     // Set static field: static public HandColorModel/PropertyID Color
     static void _set_Color(::GlobalNamespace::HandColorModel::PropertyID value);
     // Get instance field reference: public System.UInt32 value__
-    [[deprecated]] uint& dyn_value__();
+    [[deprecated("Use field access instead!")]] uint& dyn_value__();
   }; // HandColorModel/PropertyID
   #pragma pack(pop)
   static check_size<sizeof(HandColorModel::PropertyID), 0 + sizeof(uint)> __GlobalNamespace_HandColorModel_PropertyIDSizeCheck;

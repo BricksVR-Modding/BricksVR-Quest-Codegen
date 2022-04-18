@@ -90,7 +90,6 @@ namespace UnityEngine {
     // Offset: 0xA3C410
     // Implemented from: UnityEngine.Object
     // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Shader* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Shader::.ctor");

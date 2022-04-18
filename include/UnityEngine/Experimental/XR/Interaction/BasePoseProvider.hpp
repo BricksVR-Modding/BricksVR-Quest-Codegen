@@ -40,29 +40,27 @@ namespace UnityEngine::Experimental::XR::Interaction {
   // [TokenAttribute] Offset: FFFFFFFF
   class BasePoseProvider : public ::UnityEngine::MonoBehaviour {
     public:
+    // protected System.Void .ctor()
+    // Offset: 0x1DDE30
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static BasePoseProvider* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Experimental::XR::Interaction::BasePoseProvider::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<BasePoseProvider*, creationType>()));
+    }
     // public UnityEngine.SpatialTracking.PoseDataFlags GetPoseFromProvider(out UnityEngine.Pose output)
     // Offset: 0x662AB0
     ::UnityEngine::SpatialTracking::PoseDataFlags GetPoseFromProvider(ByRef<::UnityEngine::Pose> output);
     // public System.Boolean TryGetPoseFromProvider(out UnityEngine.Pose output)
     // Offset: 0x662AD0
     bool TryGetPoseFromProvider(ByRef<::UnityEngine::Pose> output);
-    // protected System.Void .ctor()
-    // Offset: 0x1DDE30
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static BasePoseProvider* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Experimental::XR::Interaction::BasePoseProvider::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<BasePoseProvider*, creationType>()));
-    }
   }; // UnityEngine.Experimental.XR.Interaction.BasePoseProvider
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: UnityEngine::Experimental::XR::Interaction::BasePoseProvider::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::Experimental::XR::Interaction::BasePoseProvider::GetPoseFromProvider
 // Il2CppName: GetPoseFromProvider
 template<>
@@ -81,7 +79,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Experimental::XR::Interaction::BasePoseProvider*), "TryGetPoseFromProvider", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{output});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::Experimental::XR::Interaction::BasePoseProvider::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

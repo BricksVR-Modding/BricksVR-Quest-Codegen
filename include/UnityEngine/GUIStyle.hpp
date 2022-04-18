@@ -143,33 +143,33 @@ namespace UnityEngine {
     // Set static field: static private UnityEngine.GUIStyle s_None
     static void _set_s_None(::UnityEngine::GUIStyle* value);
     // Get instance field reference: System.IntPtr m_Ptr
-    [[deprecated]] ::System::IntPtr& dyn_m_Ptr();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_m_Ptr();
     // Get instance field reference: private UnityEngine.GUIStyleState m_Normal
-    [[deprecated]] ::UnityEngine::GUIStyleState*& dyn_m_Normal();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GUIStyleState*& dyn_m_Normal();
     // Get instance field reference: private UnityEngine.GUIStyleState m_Hover
-    [[deprecated]] ::UnityEngine::GUIStyleState*& dyn_m_Hover();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GUIStyleState*& dyn_m_Hover();
     // Get instance field reference: private UnityEngine.GUIStyleState m_Active
-    [[deprecated]] ::UnityEngine::GUIStyleState*& dyn_m_Active();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GUIStyleState*& dyn_m_Active();
     // Get instance field reference: private UnityEngine.GUIStyleState m_Focused
-    [[deprecated]] ::UnityEngine::GUIStyleState*& dyn_m_Focused();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GUIStyleState*& dyn_m_Focused();
     // Get instance field reference: private UnityEngine.GUIStyleState m_OnNormal
-    [[deprecated]] ::UnityEngine::GUIStyleState*& dyn_m_OnNormal();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GUIStyleState*& dyn_m_OnNormal();
     // Get instance field reference: private UnityEngine.GUIStyleState m_OnHover
-    [[deprecated]] ::UnityEngine::GUIStyleState*& dyn_m_OnHover();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GUIStyleState*& dyn_m_OnHover();
     // Get instance field reference: private UnityEngine.GUIStyleState m_OnActive
-    [[deprecated]] ::UnityEngine::GUIStyleState*& dyn_m_OnActive();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GUIStyleState*& dyn_m_OnActive();
     // Get instance field reference: private UnityEngine.GUIStyleState m_OnFocused
-    [[deprecated]] ::UnityEngine::GUIStyleState*& dyn_m_OnFocused();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GUIStyleState*& dyn_m_OnFocused();
     // Get instance field reference: private UnityEngine.RectOffset m_Border
-    [[deprecated]] ::UnityEngine::RectOffset*& dyn_m_Border();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectOffset*& dyn_m_Border();
     // Get instance field reference: private UnityEngine.RectOffset m_Padding
-    [[deprecated]] ::UnityEngine::RectOffset*& dyn_m_Padding();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectOffset*& dyn_m_Padding();
     // Get instance field reference: private UnityEngine.RectOffset m_Margin
-    [[deprecated]] ::UnityEngine::RectOffset*& dyn_m_Margin();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectOffset*& dyn_m_Margin();
     // Get instance field reference: private UnityEngine.RectOffset m_Overflow
-    [[deprecated]] ::UnityEngine::RectOffset*& dyn_m_Overflow();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectOffset*& dyn_m_Overflow();
     // Get instance field reference: private System.String m_Name
-    [[deprecated]] ::StringW& dyn_m_Name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_Name();
     // System.String get_rawName()
     // Offset: 0x626F30
     ::StringW get_rawName();
@@ -209,6 +209,13 @@ namespace UnityEngine {
     // static public UnityEngine.GUIStyle get_none()
     // Offset: 0x626D00
     static ::UnityEngine::GUIStyle* get_none();
+    // public System.Void .ctor()
+    // Offset: 0x626AF0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static GUIStyle* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::GUIStyle::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<GUIStyle*, creationType>()));
+    }
     // static private System.Void .cctor()
     // Offset: 0x626AB0
     static void _cctor();
@@ -245,15 +252,6 @@ namespace UnityEngine {
     // private System.Void Internal_Draw2_Injected(ref UnityEngine.Rect position, UnityEngine.GUIContent content, System.Int32 controlID, System.Boolean on)
     // Offset: 0x626760
     void Internal_Draw2_Injected(ByRef<::UnityEngine::Rect> position, ::UnityEngine::GUIContent* content, int controlID, bool on);
-    // public System.Void .ctor()
-    // Offset: 0x626AF0
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static GUIStyle* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::GUIStyle::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<GUIStyle*, creationType>()));
-    }
     // protected override System.Void Finalize()
     // Offset: 0x626580
     // Implemented from: System.Object
@@ -377,6 +375,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::GUIStyle*), "get_none", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::GUIStyle::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::GUIStyle::_cctor
 // Il2CppName: .cctor
 template<>
@@ -510,10 +512,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::GUIStyle*), "Internal_Draw2_Injected", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{position, content, controlID, on});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::GUIStyle::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::GUIStyle::Finalize
 // Il2CppName: Finalize
 template<>

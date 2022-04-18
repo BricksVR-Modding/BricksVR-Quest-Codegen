@@ -103,9 +103,9 @@ namespace Steamworks {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: public System.Action continuation
-      [[deprecated]] ::System::Action*& dyn_continuation();
+      [[deprecated("Use field access instead!")]] ::System::Action*& dyn_continuation();
       // Get instance field reference: public System.Boolean server
-      [[deprecated]] bool& dyn_server();
+      [[deprecated("Use field access instead!")]] bool& dyn_server();
     }; // Steamworks.Dispatch/Steamworks.ResultCallback
     #pragma pack(pop)
     static check_size<sizeof(Dispatch::ResultCallback), 8 + sizeof(bool)> __Steamworks_Dispatch_ResultCallbackSizeCheck;
@@ -138,9 +138,9 @@ namespace Steamworks {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: public System.Action`1<System.IntPtr> action
-      [[deprecated]] ::System::Action_1<::System::IntPtr>*& dyn_action();
+      [[deprecated("Use field access instead!")]] ::System::Action_1<::System::IntPtr>*& dyn_action();
       // Get instance field reference: public System.Boolean server
-      [[deprecated]] bool& dyn_server();
+      [[deprecated("Use field access instead!")]] bool& dyn_server();
     }; // Steamworks.Dispatch/Steamworks.Callback
     #pragma pack(pop)
     static check_size<sizeof(Dispatch::Callback), 8 + sizeof(bool)> __Steamworks_Dispatch_CallbackSizeCheck;

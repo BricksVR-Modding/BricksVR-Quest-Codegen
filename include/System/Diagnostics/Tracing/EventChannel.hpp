@@ -73,7 +73,7 @@ namespace System::Diagnostics::Tracing {
     // Set static field: static public System.Diagnostics.Tracing.EventChannel Debug
     static void _set_Debug(::System::Diagnostics::Tracing::EventChannel value);
     // Get instance field reference: public System.Byte value__
-    [[deprecated]] uint8_t& dyn_value__();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn_value__();
   }; // System.Diagnostics.Tracing.EventChannel
   #pragma pack(pop)
   static check_size<sizeof(EventChannel), 0 + sizeof(uint8_t)> __System_Diagnostics_Tracing_EventChannelSizeCheck;

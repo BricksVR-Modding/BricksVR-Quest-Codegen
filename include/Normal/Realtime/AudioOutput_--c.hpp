@@ -38,18 +38,16 @@ namespace Normal::Realtime {
     // static private System.Void .cctor()
     // Offset: 0xBE2470
     static void _cctor();
-    // System.Void <StartWithAudioOutputStream>b__15_0(System.Single[] data)
-    // Offset: 0xBE23B0
-    void $StartWithAudioOutputStream$b__15_0(::ArrayW<float> data);
     // public System.Void .ctor()
     // Offset: 0x1DD400
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AudioOutput::$$c* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::AudioOutput::$$c::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<AudioOutput::$$c*, creationType>()));
     }
+    // System.Void <StartWithAudioOutputStream>b__15_0(System.Single[] data)
+    // Offset: 0xBE23B0
+    void $StartWithAudioOutputStream$b__15_0(::ArrayW<float> data);
   }; // Normal.Realtime.AudioOutput/Normal.Realtime.<>c
   #pragma pack(pop)
 }
@@ -62,6 +60,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::AudioOutput::$$c*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: Normal::Realtime::AudioOutput::$$c::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Normal::Realtime::AudioOutput::$$c::$StartWithAudioOutputStream$b__15_0
 // Il2CppName: <StartWithAudioOutputStream>b__15_0
 template<>
@@ -71,7 +73,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Norma
     return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::AudioOutput::$$c*), "<StartWithAudioOutputStream>b__15_0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{data});
   }
 };
-// Writing MetadataGetter for method: Normal::Realtime::AudioOutput::$$c::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -75,17 +75,17 @@ namespace UnityEngine::XR::Interaction::Toolkit {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public UnityEngine.Vector3 destinationPosition
-    [[deprecated]] ::UnityEngine::Vector3& dyn_destinationPosition();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_destinationPosition();
     // Get instance field reference: public UnityEngine.Quaternion destinationRotation
-    [[deprecated]] ::UnityEngine::Quaternion& dyn_destinationRotation();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Quaternion& dyn_destinationRotation();
     // Get instance field reference: public UnityEngine.Vector3 destinationUpVector
-    [[deprecated]] ::UnityEngine::Vector3& dyn_destinationUpVector();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_destinationUpVector();
     // Get instance field reference: public UnityEngine.Vector3 destinationForwardVector
-    [[deprecated]] ::UnityEngine::Vector3& dyn_destinationForwardVector();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_destinationForwardVector();
     // Get instance field reference: public System.Single requestTime
-    [[deprecated]] float& dyn_requestTime();
+    [[deprecated("Use field access instead!")]] float& dyn_requestTime();
     // Get instance field reference: public UnityEngine.XR.Interaction.Toolkit.MatchOrientation matchOrientation
-    [[deprecated]] ::UnityEngine::XR::Interaction::Toolkit::MatchOrientation& dyn_matchOrientation();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::Interaction::Toolkit::MatchOrientation& dyn_matchOrientation();
   }; // UnityEngine.XR.Interaction.Toolkit.TeleportRequest
   #pragma pack(pop)
   static check_size<sizeof(TeleportRequest), 56 + sizeof(::UnityEngine::XR::Interaction::Toolkit::MatchOrientation)> __UnityEngine_XR_Interaction_Toolkit_TeleportRequestSizeCheck;

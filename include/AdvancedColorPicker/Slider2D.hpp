@@ -44,7 +44,6 @@ namespace UnityEngine::UI {
 namespace UnityEngine::EventSystems {
   // Forward declaring type: PointerEventData
   class PointerEventData;
-  // Skipping declaration: UIBehaviour because it is already included!
   // Forward declaring type: AxisEventData
   class AxisEventData;
 }
@@ -160,31 +159,31 @@ namespace AdvancedColorPicker {
       return *reinterpret_cast<::UnityEngine::UI::ICanvasElement*>(this);
     }
     // Get instance field reference: private UnityEngine.RectTransform m_HandleRect
-    [[deprecated]] ::UnityEngine::RectTransform*& dyn_m_HandleRect();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectTransform*& dyn_m_HandleRect();
     // Get instance field reference: private UnityEngine.Vector2 m_MinValue
-    [[deprecated]] ::UnityEngine::Vector2& dyn_m_MinValue();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn_m_MinValue();
     // Get instance field reference: private UnityEngine.Vector2 m_MaxValue
-    [[deprecated]] ::UnityEngine::Vector2& dyn_m_MaxValue();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn_m_MaxValue();
     // Get instance field reference: private System.Boolean m_WholeNumbers
-    [[deprecated]] bool& dyn_m_WholeNumbers();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_WholeNumbers();
     // Get instance field reference: protected System.Single m_ValueX
-    [[deprecated]] float& dyn_m_ValueX();
+    [[deprecated("Use field access instead!")]] float& dyn_m_ValueX();
     // Get instance field reference: protected System.Single m_ValueY
-    [[deprecated]] float& dyn_m_ValueY();
+    [[deprecated("Use field access instead!")]] float& dyn_m_ValueY();
     // Get instance field reference: protected System.Boolean inverseX
-    [[deprecated]] bool& dyn_inverseX();
+    [[deprecated("Use field access instead!")]] bool& dyn_inverseX();
     // Get instance field reference: protected System.Boolean inverseY
-    [[deprecated]] bool& dyn_inverseY();
+    [[deprecated("Use field access instead!")]] bool& dyn_inverseY();
     // Get instance field reference: private AdvancedColorPicker.Slider2D/AdvancedColorPicker.Slider2DEvent m_OnValueChanged
-    [[deprecated]] ::AdvancedColorPicker::Slider2D::Slider2DEvent*& dyn_m_OnValueChanged();
+    [[deprecated("Use field access instead!")]] ::AdvancedColorPicker::Slider2D::Slider2DEvent*& dyn_m_OnValueChanged();
     // Get instance field reference: private UnityEngine.Transform m_HandleTransform
-    [[deprecated]] ::UnityEngine::Transform*& dyn_m_HandleTransform();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_m_HandleTransform();
     // Get instance field reference: protected UnityEngine.RectTransform m_HandleContainerRect
-    [[deprecated]] ::UnityEngine::RectTransform*& dyn_m_HandleContainerRect();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectTransform*& dyn_m_HandleContainerRect();
     // Get instance field reference: private UnityEngine.Vector2 m_Offset
-    [[deprecated]] ::UnityEngine::Vector2& dyn_m_Offset();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn_m_Offset();
     // Get instance field reference: private UnityEngine.DrivenRectTransformTracker m_Tracker
-    [[deprecated]] ::UnityEngine::DrivenRectTransformTracker& dyn_m_Tracker();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::DrivenRectTransformTracker& dyn_m_Tracker();
     // public UnityEngine.RectTransform get_handleRect()
     // Offset: 0x30BCD0
     ::UnityEngine::RectTransform* get_handleRect();
@@ -254,6 +253,13 @@ namespace AdvancedColorPicker {
     // private UnityEngine.Transform UnityEngine.UI.ICanvasElement.get_transform()
     // Offset: 0x276FE0
     ::UnityEngine::Transform* UnityEngine_UI_ICanvasElement_get_transform();
+    // protected System.Void .ctor()
+    // Offset: 0x5BA630
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static Slider2D* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::AdvancedColorPicker::Slider2D::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<Slider2D*, creationType>()));
+    }
     // public System.Void Rebuild(UnityEngine.UI.CanvasUpdate executing)
     // Offset: 0x1DDF00
     void Rebuild(::UnityEngine::UI::CanvasUpdate executing);
@@ -299,21 +305,6 @@ namespace AdvancedColorPicker {
     // public System.Void LayoutComplete()
     // Offset: 0x1DDF00
     void LayoutComplete();
-    // protected System.Void .ctor()
-    // Offset: 0x5BA630
-    // Implemented from: UnityEngine.UI.Selectable
-    // Base method: System.Void Selectable::.ctor()
-    // Base method: System.Void UIBehaviour::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static Slider2D* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::AdvancedColorPicker::Slider2D::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<Slider2D*, creationType>()));
-    }
     // protected override System.Void OnEnable()
     // Offset: 0x5B96F0
     // Implemented from: UnityEngine.UI.Selectable
@@ -543,6 +534,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
     return ::il2cpp_utils::FindMethod(classof(AdvancedColorPicker::Slider2D*), "UnityEngine.UI.ICanvasElement.get_transform", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: AdvancedColorPicker::Slider2D::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: AdvancedColorPicker::Slider2D::Rebuild
 // Il2CppName: Rebuild
 template<>
@@ -678,10 +673,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Advan
     return ::il2cpp_utils::FindMethod(classof(AdvancedColorPicker::Slider2D*), "LayoutComplete", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: AdvancedColorPicker::Slider2D::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: AdvancedColorPicker::Slider2D::OnEnable
 // Il2CppName: OnEnable
 template<>

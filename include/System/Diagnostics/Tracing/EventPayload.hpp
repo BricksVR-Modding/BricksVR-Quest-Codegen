@@ -72,9 +72,9 @@ namespace System::Diagnostics::Tracing {
       return *reinterpret_cast<::System::Collections::Generic::IDictionary_2<::StringW, ::Il2CppObject*>*>(this);
     }
     // Get instance field reference: private System.Collections.Generic.List`1<System.String> m_names
-    [[deprecated]] ::System::Collections::Generic::List_1<::StringW>*& dyn_m_names();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::StringW>*& dyn_m_names();
     // Get instance field reference: private System.Collections.Generic.List`1<System.Object> m_values
-    [[deprecated]] ::System::Collections::Generic::List_1<::Il2CppObject*>*& dyn_m_values();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::Il2CppObject*>*& dyn_m_values();
     // public System.Collections.Generic.ICollection`1<System.String> get_Keys()
     // Offset: 0x1E1920
     ::System::Collections::Generic::ICollection_1<::StringW>* get_Keys();

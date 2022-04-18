@@ -91,19 +91,19 @@ namespace System::Diagnostics::Tracing {
     static_assert(sizeof(::System::Collections::ObjectModel::ReadOnlyCollection_1<::StringW>*) == 0x8);
     public:
     // Get instance field reference: private System.Int32 <EventId>k__BackingField
-    [[deprecated]] int& dyn_$EventId$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$EventId$k__BackingField();
     // Get instance field reference: private System.Guid <RelatedActivityId>k__BackingField
-    [[deprecated]] ::System::Guid& dyn_$RelatedActivityId$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Guid& dyn_$RelatedActivityId$k__BackingField();
     // Get instance field reference: private System.Collections.ObjectModel.ReadOnlyCollection`1<System.Object> <Payload>k__BackingField
-    [[deprecated]] ::System::Collections::ObjectModel::ReadOnlyCollection_1<::Il2CppObject*>*& dyn_$Payload$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ObjectModel::ReadOnlyCollection_1<::Il2CppObject*>*& dyn_$Payload$k__BackingField();
     // Get instance field reference: private System.String m_message
-    [[deprecated]] ::StringW& dyn_m_message();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_message();
     // Get instance field reference: private System.String m_eventName
-    [[deprecated]] ::StringW& dyn_m_eventName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_eventName();
     // Get instance field reference: private System.Diagnostics.Tracing.EventSource m_eventSource
-    [[deprecated]] ::System::Diagnostics::Tracing::EventSource*& dyn_m_eventSource();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::EventSource*& dyn_m_eventSource();
     // Get instance field reference: private System.Collections.ObjectModel.ReadOnlyCollection`1<System.String> m_payloadNames
-    [[deprecated]] ::System::Collections::ObjectModel::ReadOnlyCollection_1<::StringW>*& dyn_m_payloadNames();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ObjectModel::ReadOnlyCollection_1<::StringW>*& dyn_m_payloadNames();
     // System.Void set_EventName(System.String value)
     // Offset: 0x2322B0
     void set_EventName(::StringW value);

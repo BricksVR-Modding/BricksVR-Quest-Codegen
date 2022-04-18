@@ -88,19 +88,19 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<::Il2CppObject*>*>(this);
     }
     // Get instance field reference: private System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: private System.Object <>2__current
-    [[deprecated]] ::Il2CppObject*& dyn_$$2__current();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_$$2__current();
     // Get instance field reference: public UnityEngine.AudioSource music
-    [[deprecated]] ::UnityEngine::AudioSource*& dyn_music();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AudioSource*& dyn_music();
     // Get instance field reference: private UnityEngine.Material <loadingMaterial>5__2
-    [[deprecated]] ::UnityEngine::Material*& dyn_$loadingMaterial$5__2();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn_$loadingMaterial$5__2();
     // Get instance field reference: private UnityEngine.Color <loadingMatColor>5__3
-    [[deprecated]] ::UnityEngine::Color& dyn_$loadingMatColor$5__3();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_$loadingMatColor$5__3();
     // Get instance field reference: private System.Single <alpha>5__4
-    [[deprecated]] float& dyn_$alpha$5__4();
+    [[deprecated("Use field access instead!")]] float& dyn_$alpha$5__4();
     // Get instance field reference: private System.Single <maxVolume>5__5
-    [[deprecated]] float& dyn_$maxVolume$5__5();
+    [[deprecated("Use field access instead!")]] float& dyn_$maxVolume$5__5();
     // private System.Object System.Collections.Generic.IEnumerator<System.Object>.get_Current()
     // Offset: 0x1E1520
     ::Il2CppObject* System_Collections_Generic_IEnumerator$System_Object$_get_Current();

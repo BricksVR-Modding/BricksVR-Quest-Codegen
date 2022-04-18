@@ -192,35 +192,35 @@ namespace UnityEngine::XR::Interaction::Toolkit {
     // Set static field: static private System.Int32 k_DefaultLayerMask
     static void _set_k_DefaultLayerMask(int value);
     // Get instance field reference: private System.Single m_MaxRaycastDistance
-    [[deprecated]] float& dyn_m_MaxRaycastDistance();
+    [[deprecated("Use field access instead!")]] float& dyn_m_MaxRaycastDistance();
     // Get instance field reference: private UnityEngine.GameObject m_ReticlePrefab
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_m_ReticlePrefab();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_m_ReticlePrefab();
     // Get instance field reference: private System.Single m_PrefabScalingFactor
-    [[deprecated]] float& dyn_m_PrefabScalingFactor();
+    [[deprecated("Use field access instead!")]] float& dyn_m_PrefabScalingFactor();
     // Get instance field reference: private System.Boolean m_UndoDistanceScaling
-    [[deprecated]] bool& dyn_m_UndoDistanceScaling();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_UndoDistanceScaling();
     // Get instance field reference: private System.Boolean m_AlignPrefabWithSurfaceNormal
-    [[deprecated]] bool& dyn_m_AlignPrefabWithSurfaceNormal();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_AlignPrefabWithSurfaceNormal();
     // Get instance field reference: private System.Single m_EndpointSmoothingTime
-    [[deprecated]] float& dyn_m_EndpointSmoothingTime();
+    [[deprecated("Use field access instead!")]] float& dyn_m_EndpointSmoothingTime();
     // Get instance field reference: private System.Boolean m_DrawWhileSelecting
-    [[deprecated]] bool& dyn_m_DrawWhileSelecting();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_DrawWhileSelecting();
     // Get instance field reference: private UnityEngine.LayerMask m_RaycastMask
-    [[deprecated]] ::UnityEngine::LayerMask& dyn_m_RaycastMask();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::LayerMask& dyn_m_RaycastMask();
     // Get instance field reference: private UnityEngine.GameObject m_ReticleInstance
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_m_ReticleInstance();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_m_ReticleInstance();
     // Get instance field reference: private UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor m_Interactor
-    [[deprecated]] ::UnityEngine::XR::Interaction::Toolkit::XRBaseInteractor*& dyn_m_Interactor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::Interaction::Toolkit::XRBaseInteractor*& dyn_m_Interactor();
     // Get instance field reference: private UnityEngine.Vector3 m_TargetEndPoint
-    [[deprecated]] ::UnityEngine::Vector3& dyn_m_TargetEndPoint();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_m_TargetEndPoint();
     // Get instance field reference: private UnityEngine.Vector3 m_TargetEndNormal
-    [[deprecated]] ::UnityEngine::Vector3& dyn_m_TargetEndNormal();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_m_TargetEndNormal();
     // Get instance field reference: private UnityEngine.RaycastHit[] m_RaycastHits
-    [[deprecated]] ::ArrayW<::UnityEngine::RaycastHit>& dyn_m_RaycastHits();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::RaycastHit>& dyn_m_RaycastHits();
     // Get instance field reference: private System.Boolean m_ReticleActive
-    [[deprecated]] bool& dyn_m_ReticleActive();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_ReticleActive();
     // Get instance field reference: private System.Boolean m_HasSelectedInteractable
-    [[deprecated]] bool& dyn_m_HasSelectedInteractable();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_HasSelectedInteractable();
     // public System.Single get_maxRaycastDistance()
     // Offset: 0x5FF290
     float get_maxRaycastDistance();
@@ -275,6 +275,13 @@ namespace UnityEngine::XR::Interaction::Toolkit {
     // public System.Void set_reticleActive(System.Boolean value)
     // Offset: 0x6000D0
     void set_reticleActive(bool value);
+    // public System.Void .ctor()
+    // Offset: 0x600000
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static XRInteractorReticleVisual* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::XR::Interaction::Toolkit::XRInteractorReticleVisual::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<XRInteractorReticleVisual*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0x5FF680
     void Awake();
@@ -305,19 +312,6 @@ namespace UnityEngine::XR::Interaction::Toolkit {
     // private System.Void OnSelectExit(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable interactable)
     // Offset: 0x5FF910
     void OnSelectExit(::UnityEngine::XR::Interaction::Toolkit::XRBaseInteractable* interactable);
-    // public System.Void .ctor()
-    // Offset: 0x600000
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static XRInteractorReticleVisual* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::XR::Interaction::Toolkit::XRInteractorReticleVisual::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<XRInteractorReticleVisual*, creationType>()));
-    }
   }; // UnityEngine.XR.Interaction.Toolkit.XRInteractorReticleVisual
   #pragma pack(pop)
   static check_size<sizeof(XRInteractorReticleVisual), 113 + sizeof(bool)> __UnityEngine_XR_Interaction_Toolkit_XRInteractorReticleVisualSizeCheck;
@@ -477,6 +471,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::XR::Interaction::Toolkit::XRInteractorReticleVisual*), "set_reticleActive", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::XR::Interaction::Toolkit::XRInteractorReticleVisual::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::XR::Interaction::Toolkit::XRInteractorReticleVisual::Awake
 // Il2CppName: Awake
 template<>
@@ -563,7 +561,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::XR::Interaction::Toolkit::XRInteractorReticleVisual*), "OnSelectExit", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{interactable});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::XR::Interaction::Toolkit::XRInteractorReticleVisual::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

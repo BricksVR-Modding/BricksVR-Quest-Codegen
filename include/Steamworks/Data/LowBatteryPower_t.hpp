@@ -60,7 +60,7 @@ namespace Steamworks::Data {
     // Set static field: static public System.Int32 _datasize
     static void _set__datasize(int value);
     // Get instance field reference: System.Byte MinutesBatteryLeft
-    [[deprecated]] uint8_t& dyn_MinutesBatteryLeft();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn_MinutesBatteryLeft();
     // public Steamworks.CallbackType get_CallbackType()
     // Offset: 0x4632A0
     ::Steamworks::CallbackType get_CallbackType();

@@ -59,11 +59,11 @@ namespace UnityEngine::Yoga {
     static_assert(sizeof(::UnityEngine::Yoga::BaselineFunction*) == 0x8);
     public:
     // Get instance field reference: System.IntPtr _ygNode
-    [[deprecated]] ::System::IntPtr& dyn__ygNode();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn__ygNode();
     // Get instance field reference: private UnityEngine.Yoga.MeasureFunction _measureFunction
-    [[deprecated]] ::UnityEngine::Yoga::MeasureFunction*& dyn__measureFunction();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Yoga::MeasureFunction*& dyn__measureFunction();
     // Get instance field reference: private UnityEngine.Yoga.BaselineFunction _baselineFunction
-    [[deprecated]] ::UnityEngine::Yoga::BaselineFunction*& dyn__baselineFunction();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Yoga::BaselineFunction*& dyn__baselineFunction();
     // public System.Single get_LayoutX()
     // Offset: 0x6565B0
     float get_LayoutX();

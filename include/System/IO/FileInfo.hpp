@@ -46,7 +46,7 @@ namespace System::IO {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: private System.String _name
-    [[deprecated]] ::StringW& dyn__name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__name();
     // public System.Void .ctor(System.String fileName)
     // Offset: 0x3E48B0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -92,7 +92,7 @@ namespace Normal::Realtime {
       // Set static field: static public Normal.Realtime.SessionCapture/Normal.Realtime.Mode Playback
       static void _set_Playback(::Normal::Realtime::SessionCapture::Mode value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // Normal.Realtime.SessionCapture/Normal.Realtime.Mode
     #pragma pack(pop)
     static check_size<sizeof(SessionCapture::Mode), 0 + sizeof(int)> __Normal_Realtime_SessionCapture_ModeSizeCheck;
@@ -180,31 +180,31 @@ namespace Normal::Realtime {
     static_assert(sizeof(::System::Collections::Generic::Queue_1<::Normal::Realtime::SessionCapture::DeltaUpdate*>*) == 0x8);
     public:
     // Get instance field reference: private Normal.Realtime.SessionCapture/Normal.Realtime.Mode _mode
-    [[deprecated]] ::Normal::Realtime::SessionCapture::Mode& dyn__mode();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::SessionCapture::Mode& dyn__mode();
     // Get instance field reference: private System.Boolean _recording
-    [[deprecated]] bool& dyn__recording();
+    [[deprecated("Use field access instead!")]] bool& dyn__recording();
     // Get instance field reference: private System.Boolean _playing
-    [[deprecated]] bool& dyn__playing();
+    [[deprecated("Use field access instead!")]] bool& dyn__playing();
     // Get instance field reference: private System.String _recordFilePath
-    [[deprecated]] ::StringW& dyn__recordFilePath();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__recordFilePath();
     // Get instance field reference: private Normal.Realtime.SessionCaptureFileStream _recordFileStream
-    [[deprecated]] ::Normal::Realtime::SessionCaptureFileStream*& dyn__recordFileStream();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::SessionCaptureFileStream*& dyn__recordFileStream();
     // Get instance field reference: private System.Double _playbackTime
-    [[deprecated]] double& dyn__playbackTime();
+    [[deprecated("Use field access instead!")]] double& dyn__playbackTime();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.Int32,System.Collections.Generic.Dictionary`2<System.UInt32,Normal.Realtime.SessionCapture/Normal.Realtime.DeltaUpdate>> _clientToIncomingReliableUpdatesMap
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<int, ::System::Collections::Generic::Dictionary_2<uint, ::Normal::Realtime::SessionCapture::DeltaUpdate*>*>*& dyn__clientToIncomingReliableUpdatesMap();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<int, ::System::Collections::Generic::Dictionary_2<uint, ::Normal::Realtime::SessionCapture::DeltaUpdate*>*>*& dyn__clientToIncomingReliableUpdatesMap();
     // Get instance field reference: private System.String _primaryPlaybackFilePath
-    [[deprecated]] ::StringW& dyn__primaryPlaybackFilePath();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__primaryPlaybackFilePath();
     // Get instance field reference: private Normal.Realtime.SessionCapture/Normal.Realtime.PlaybackStream _primaryPlaybackStream
-    [[deprecated]] ::Normal::Realtime::SessionCapture::PlaybackStream*& dyn__primaryPlaybackStream();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::SessionCapture::PlaybackStream*& dyn__primaryPlaybackStream();
     // Get instance field reference: private System.Collections.Generic.Queue`1<Normal.Realtime.SessionCapture/Normal.Realtime.DeltaUpdate> _primaryPlaybackDeltaUpdatesToBeProcessed
-    [[deprecated]] ::System::Collections::Generic::Queue_1<::Normal::Realtime::SessionCapture::DeltaUpdate*>*& dyn__primaryPlaybackDeltaUpdatesToBeProcessed();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Queue_1<::Normal::Realtime::SessionCapture::DeltaUpdate*>*& dyn__primaryPlaybackDeltaUpdatesToBeProcessed();
     // Get instance field reference: private System.String[] _secondaryPlaybackFilePaths
-    [[deprecated]] ::ArrayW<::StringW>& dyn__secondaryPlaybackFilePaths();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn__secondaryPlaybackFilePaths();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.Int32,Normal.Realtime.SessionCapture/Normal.Realtime.PlaybackStream> _secondaryPlaybackStreams
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<int, ::Normal::Realtime::SessionCapture::PlaybackStream*>*& dyn__secondaryPlaybackStreams();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<int, ::Normal::Realtime::SessionCapture::PlaybackStream*>*& dyn__secondaryPlaybackStreams();
     // Get instance field reference: private System.Collections.Generic.Queue`1<Normal.Realtime.SessionCapture/Normal.Realtime.DeltaUpdate> _playbackDeltaUpdates
-    [[deprecated]] ::System::Collections::Generic::Queue_1<::Normal::Realtime::SessionCapture::DeltaUpdate*>*& dyn__playbackDeltaUpdates();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Queue_1<::Normal::Realtime::SessionCapture::DeltaUpdate*>*& dyn__playbackDeltaUpdates();
     // public Normal.Realtime.SessionCapture/Normal.Realtime.Mode get_mode()
     // Offset: 0x1DD410
     ::Normal::Realtime::SessionCapture::Mode get_mode();

@@ -52,17 +52,11 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public UnityEngine.GameObject leftHand
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_leftHand();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_leftHand();
     // Get instance field reference: public UnityEngine.GameObject rightHand
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_rightHand();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_rightHand();
     // public System.Void .ctor()
     // Offset: 0x1DDE30
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static HandReference* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::HandReference::.ctor");

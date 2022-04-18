@@ -124,29 +124,29 @@ namespace Steamworks::Data {
     // Set static field: static public System.Int32 _datasize
     static void _set__datasize(int value);
     // Get instance field reference: System.UInt32 UnBrowserHandle
-    [[deprecated]] uint& dyn_UnBrowserHandle();
+    [[deprecated("Use field access instead!")]] uint& dyn_UnBrowserHandle();
     // Get instance field reference: System.String PBGRA
-    [[deprecated]] ::StringW& dyn_PBGRA();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_PBGRA();
     // Get instance field reference: System.UInt32 UnWide
-    [[deprecated]] uint& dyn_UnWide();
+    [[deprecated("Use field access instead!")]] uint& dyn_UnWide();
     // Get instance field reference: System.UInt32 UnTall
-    [[deprecated]] uint& dyn_UnTall();
+    [[deprecated("Use field access instead!")]] uint& dyn_UnTall();
     // Get instance field reference: System.UInt32 UnUpdateX
-    [[deprecated]] uint& dyn_UnUpdateX();
+    [[deprecated("Use field access instead!")]] uint& dyn_UnUpdateX();
     // Get instance field reference: System.UInt32 UnUpdateY
-    [[deprecated]] uint& dyn_UnUpdateY();
+    [[deprecated("Use field access instead!")]] uint& dyn_UnUpdateY();
     // Get instance field reference: System.UInt32 UnUpdateWide
-    [[deprecated]] uint& dyn_UnUpdateWide();
+    [[deprecated("Use field access instead!")]] uint& dyn_UnUpdateWide();
     // Get instance field reference: System.UInt32 UnUpdateTall
-    [[deprecated]] uint& dyn_UnUpdateTall();
+    [[deprecated("Use field access instead!")]] uint& dyn_UnUpdateTall();
     // Get instance field reference: System.UInt32 UnScrollX
-    [[deprecated]] uint& dyn_UnScrollX();
+    [[deprecated("Use field access instead!")]] uint& dyn_UnScrollX();
     // Get instance field reference: System.UInt32 UnScrollY
-    [[deprecated]] uint& dyn_UnScrollY();
+    [[deprecated("Use field access instead!")]] uint& dyn_UnScrollY();
     // Get instance field reference: System.Single FlPageScale
-    [[deprecated]] float& dyn_FlPageScale();
+    [[deprecated("Use field access instead!")]] float& dyn_FlPageScale();
     // Get instance field reference: System.UInt32 UnPageSerial
-    [[deprecated]] uint& dyn_UnPageSerial();
+    [[deprecated("Use field access instead!")]] uint& dyn_UnPageSerial();
     // public Steamworks.CallbackType get_CallbackType()
     // Offset: 0x461910
     ::Steamworks::CallbackType get_CallbackType();

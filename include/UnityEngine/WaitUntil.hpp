@@ -49,7 +49,7 @@ namespace UnityEngine {
       return m_Predicate;
     }
     // Get instance field reference: private System.Func`1<System.Boolean> m_Predicate
-    [[deprecated]] ::System::Func_1<bool>*& dyn_m_Predicate();
+    [[deprecated("Use field access instead!")]] ::System::Func_1<bool>*& dyn_m_Predicate();
     // public System.Void .ctor(System.Func`1<System.Boolean> predicate)
     // Offset: 0x209300
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

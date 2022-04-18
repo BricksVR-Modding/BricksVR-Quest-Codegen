@@ -103,7 +103,7 @@ namespace AdvancedColorPicker {
     // Set static field: static public AdvancedColorPicker.ColorValueType HSL_L
     static void _set_HSL_L(::AdvancedColorPicker::ColorValueType value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // AdvancedColorPicker.ColorValueType
   #pragma pack(pop)
   static check_size<sizeof(ColorValueType), 0 + sizeof(int)> __AdvancedColorPicker_ColorValueTypeSizeCheck;

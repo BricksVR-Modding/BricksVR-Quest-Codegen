@@ -88,7 +88,7 @@ namespace UnityEngine::Rendering {
       // Set static field: static public UnityEngine.Rendering.SupportedRenderingFeatures/UnityEngine.Rendering.ReflectionProbeModes Rotation
       static void _set_Rotation(::UnityEngine::Rendering::SupportedRenderingFeatures::ReflectionProbeModes value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // UnityEngine.Rendering.SupportedRenderingFeatures/UnityEngine.Rendering.ReflectionProbeModes
     #pragma pack(pop)
     static check_size<sizeof(SupportedRenderingFeatures::ReflectionProbeModes), 0 + sizeof(int)> __UnityEngine_Rendering_SupportedRenderingFeatures_ReflectionProbeModesSizeCheck;
@@ -143,7 +143,7 @@ namespace UnityEngine::Rendering {
       // Set static field: static public UnityEngine.Rendering.SupportedRenderingFeatures/UnityEngine.Rendering.LightmapMixedBakeModes Shadowmask
       static void _set_Shadowmask(::UnityEngine::Rendering::SupportedRenderingFeatures::LightmapMixedBakeModes value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // UnityEngine.Rendering.SupportedRenderingFeatures/UnityEngine.Rendering.LightmapMixedBakeModes
     #pragma pack(pop)
     static check_size<sizeof(SupportedRenderingFeatures::LightmapMixedBakeModes), 0 + sizeof(int)> __UnityEngine_Rendering_SupportedRenderingFeatures_LightmapMixedBakeModesSizeCheck;
@@ -281,41 +281,41 @@ namespace UnityEngine::Rendering {
     // Set static field: static private UnityEngine.Rendering.SupportedRenderingFeatures s_Active
     static void _set_s_Active(::UnityEngine::Rendering::SupportedRenderingFeatures* value);
     // Get instance field reference: private UnityEngine.Rendering.SupportedRenderingFeatures/UnityEngine.Rendering.ReflectionProbeModes <reflectionProbeModes>k__BackingField
-    [[deprecated]] ::UnityEngine::Rendering::SupportedRenderingFeatures::ReflectionProbeModes& dyn_$reflectionProbeModes$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Rendering::SupportedRenderingFeatures::ReflectionProbeModes& dyn_$reflectionProbeModes$k__BackingField();
     // Get instance field reference: private UnityEngine.Rendering.SupportedRenderingFeatures/UnityEngine.Rendering.LightmapMixedBakeModes <defaultMixedLightingModes>k__BackingField
-    [[deprecated]] ::UnityEngine::Rendering::SupportedRenderingFeatures::LightmapMixedBakeModes& dyn_$defaultMixedLightingModes$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Rendering::SupportedRenderingFeatures::LightmapMixedBakeModes& dyn_$defaultMixedLightingModes$k__BackingField();
     // Get instance field reference: private UnityEngine.Rendering.SupportedRenderingFeatures/UnityEngine.Rendering.LightmapMixedBakeModes <mixedLightingModes>k__BackingField
-    [[deprecated]] ::UnityEngine::Rendering::SupportedRenderingFeatures::LightmapMixedBakeModes& dyn_$mixedLightingModes$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Rendering::SupportedRenderingFeatures::LightmapMixedBakeModes& dyn_$mixedLightingModes$k__BackingField();
     // Get instance field reference: private UnityEngine.LightmapBakeType <lightmapBakeTypes>k__BackingField
-    [[deprecated]] ::UnityEngine::LightmapBakeType& dyn_$lightmapBakeTypes$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::LightmapBakeType& dyn_$lightmapBakeTypes$k__BackingField();
     // Get instance field reference: private UnityEngine.LightmapsMode <lightmapsModes>k__BackingField
-    [[deprecated]] ::UnityEngine::LightmapsMode& dyn_$lightmapsModes$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::LightmapsMode& dyn_$lightmapsModes$k__BackingField();
     // Get instance field reference: private System.Boolean <enlighten>k__BackingField
-    [[deprecated]] bool& dyn_$enlighten$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$enlighten$k__BackingField();
     // Get instance field reference: private System.Boolean <lightProbeProxyVolumes>k__BackingField
-    [[deprecated]] bool& dyn_$lightProbeProxyVolumes$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$lightProbeProxyVolumes$k__BackingField();
     // Get instance field reference: private System.Boolean <motionVectors>k__BackingField
-    [[deprecated]] bool& dyn_$motionVectors$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$motionVectors$k__BackingField();
     // Get instance field reference: private System.Boolean <receiveShadows>k__BackingField
-    [[deprecated]] bool& dyn_$receiveShadows$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$receiveShadows$k__BackingField();
     // Get instance field reference: private System.Boolean <reflectionProbes>k__BackingField
-    [[deprecated]] bool& dyn_$reflectionProbes$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$reflectionProbes$k__BackingField();
     // Get instance field reference: private System.Boolean <rendererPriority>k__BackingField
-    [[deprecated]] bool& dyn_$rendererPriority$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$rendererPriority$k__BackingField();
     // Get instance field reference: private System.Boolean <terrainDetailUnsupported>k__BackingField
-    [[deprecated]] bool& dyn_$terrainDetailUnsupported$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$terrainDetailUnsupported$k__BackingField();
     // Get instance field reference: private System.Boolean <overridesEnvironmentLighting>k__BackingField
-    [[deprecated]] bool& dyn_$overridesEnvironmentLighting$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$overridesEnvironmentLighting$k__BackingField();
     // Get instance field reference: private System.Boolean <overridesFog>k__BackingField
-    [[deprecated]] bool& dyn_$overridesFog$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$overridesFog$k__BackingField();
     // Get instance field reference: private System.Boolean <overridesOtherLightingSettings>k__BackingField
-    [[deprecated]] bool& dyn_$overridesOtherLightingSettings$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$overridesOtherLightingSettings$k__BackingField();
     // Get instance field reference: private System.Boolean <editableMaterialRenderQueue>k__BackingField
-    [[deprecated]] bool& dyn_$editableMaterialRenderQueue$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$editableMaterialRenderQueue$k__BackingField();
     // Get instance field reference: private System.Boolean <overridesLODBias>k__BackingField
-    [[deprecated]] bool& dyn_$overridesLODBias$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$overridesLODBias$k__BackingField();
     // Get instance field reference: private System.Boolean <overridesMaximumLODLevel>k__BackingField
-    [[deprecated]] bool& dyn_$overridesMaximumLODLevel$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$overridesMaximumLODLevel$k__BackingField();
     // static public UnityEngine.Rendering.SupportedRenderingFeatures get_active()
     // Offset: 0xA3EAE0
     static ::UnityEngine::Rendering::SupportedRenderingFeatures* get_active();
@@ -337,6 +337,13 @@ namespace UnityEngine::Rendering {
     // public System.Boolean get_enlighten()
     // Offset: 0x217250
     bool get_enlighten();
+    // public System.Void .ctor()
+    // Offset: 0xA3EAA0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static SupportedRenderingFeatures* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Rendering::SupportedRenderingFeatures::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<SupportedRenderingFeatures*, creationType>()));
+    }
     // static private System.Void .cctor()
     // Offset: 0xA3EA10
     static void _cctor();
@@ -364,15 +371,6 @@ namespace UnityEngine::Rendering {
     // static System.Void FallbackLightmapperByRef(System.IntPtr lightmapperPtr)
     // Offset: 0xA3E170
     static void FallbackLightmapperByRef(::System::IntPtr lightmapperPtr);
-    // public System.Void .ctor()
-    // Offset: 0xA3EAA0
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static SupportedRenderingFeatures* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Rendering::SupportedRenderingFeatures::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<SupportedRenderingFeatures*, creationType>()));
-    }
   }; // UnityEngine.Rendering.SupportedRenderingFeatures
   #pragma pack(pop)
   static check_size<sizeof(SupportedRenderingFeatures), 48 + sizeof(bool)> __UnityEngine_Rendering_SupportedRenderingFeaturesSizeCheck;
@@ -440,6 +438,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Rendering::SupportedRenderingFeatures*), "get_enlighten", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::Rendering::SupportedRenderingFeatures::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::Rendering::SupportedRenderingFeatures::_cctor
 // Il2CppName: .cctor
 template<>
@@ -524,7 +526,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(::
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Rendering::SupportedRenderingFeatures*), "FallbackLightmapperByRef", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{lightmapperPtr});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::Rendering::SupportedRenderingFeatures::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

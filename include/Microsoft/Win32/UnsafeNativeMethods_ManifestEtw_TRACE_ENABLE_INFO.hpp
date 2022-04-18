@@ -78,21 +78,21 @@ namespace Microsoft::Win32 {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Int32 IsEnabled
-    [[deprecated]] int& dyn_IsEnabled();
+    [[deprecated("Use field access instead!")]] int& dyn_IsEnabled();
     // Get instance field reference: public System.Byte Level
-    [[deprecated]] uint8_t& dyn_Level();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn_Level();
     // Get instance field reference: public System.Byte Reserved1
-    [[deprecated]] uint8_t& dyn_Reserved1();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn_Reserved1();
     // Get instance field reference: public System.UInt16 LoggerId
-    [[deprecated]] uint16_t& dyn_LoggerId();
+    [[deprecated("Use field access instead!")]] uint16_t& dyn_LoggerId();
     // Get instance field reference: public System.Int32 EnableProperty
-    [[deprecated]] int& dyn_EnableProperty();
+    [[deprecated("Use field access instead!")]] int& dyn_EnableProperty();
     // Get instance field reference: public System.Int32 Reserved2
-    [[deprecated]] int& dyn_Reserved2();
+    [[deprecated("Use field access instead!")]] int& dyn_Reserved2();
     // Get instance field reference: public System.Int64 MatchAnyKeyword
-    [[deprecated]] int64_t& dyn_MatchAnyKeyword();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_MatchAnyKeyword();
     // Get instance field reference: public System.Int64 MatchAllKeyword
-    [[deprecated]] int64_t& dyn_MatchAllKeyword();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_MatchAllKeyword();
   }; // Microsoft.Win32.UnsafeNativeMethods/Microsoft.Win32.ManifestEtw/Microsoft.Win32.TRACE_ENABLE_INFO
   #pragma pack(pop)
   static check_size<sizeof(UnsafeNativeMethods_ManifestEtw::TRACE_ENABLE_INFO), 24 + sizeof(int64_t)> __Microsoft_Win32_UnsafeNativeMethods_ManifestEtw_TRACE_ENABLE_INFOSizeCheck;

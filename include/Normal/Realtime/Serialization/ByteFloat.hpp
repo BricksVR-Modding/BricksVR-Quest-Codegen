@@ -43,9 +43,9 @@ namespace Normal::Realtime::Serialization {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private System.Single value
-    [[deprecated]] float& dyn_value();
+    [[deprecated("Use field access instead!")]] float& dyn_value();
     // Get instance field reference: private System.UInt32 bytes
-    [[deprecated]] uint& dyn_bytes();
+    [[deprecated("Use field access instead!")]] uint& dyn_bytes();
     // static public System.Single Reinterpret(System.UInt32 value)
     // Offset: 0x88BD30
     static float Reinterpret(uint value);

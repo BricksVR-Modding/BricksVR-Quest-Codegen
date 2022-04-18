@@ -98,19 +98,19 @@ namespace Steamworks::Data {
     // Set static field: static public System.Int32 _datasize
     static void _set__datasize(int value);
     // Get instance field reference: Steamworks.Result Result
-    [[deprecated]] ::Steamworks::Result& dyn_Result();
+    [[deprecated("Use field access instead!")]] ::Steamworks::Result& dyn_Result();
     // Get instance field reference: System.UInt32 ReputationScore
-    [[deprecated]] uint& dyn_ReputationScore();
+    [[deprecated("Use field access instead!")]] uint& dyn_ReputationScore();
     // Get instance field reference: System.Boolean Banned
-    [[deprecated]] bool& dyn_Banned();
+    [[deprecated("Use field access instead!")]] bool& dyn_Banned();
     // Get instance field reference: System.UInt32 BannedIP
-    [[deprecated]] uint& dyn_BannedIP();
+    [[deprecated("Use field access instead!")]] uint& dyn_BannedIP();
     // Get instance field reference: System.UInt16 BannedPort
-    [[deprecated]] uint16_t& dyn_BannedPort();
+    [[deprecated("Use field access instead!")]] uint16_t& dyn_BannedPort();
     // Get instance field reference: System.UInt64 BannedGameID
-    [[deprecated]] uint64_t& dyn_BannedGameID();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_BannedGameID();
     // Get instance field reference: System.UInt32 BanExpires
-    [[deprecated]] uint& dyn_BanExpires();
+    [[deprecated("Use field access instead!")]] uint& dyn_BanExpires();
     // public Steamworks.CallbackType get_CallbackType()
     // Offset: 0x45FF60
     ::Steamworks::CallbackType get_CallbackType();

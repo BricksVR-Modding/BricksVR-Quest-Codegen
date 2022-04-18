@@ -62,9 +62,9 @@ namespace Steamworks::Data {
     // Set static field: static public System.Int32 _datasize
     static void _set__datasize(int value);
     // Get instance field reference: System.UInt64 SteamIDClanChat
-    [[deprecated]] uint64_t& dyn_SteamIDClanChat();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_SteamIDClanChat();
     // Get instance field reference: System.UInt64 SteamIDUser
-    [[deprecated]] uint64_t& dyn_SteamIDUser();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_SteamIDUser();
     // public Steamworks.CallbackType get_CallbackType()
     // Offset: 0x460170
     ::Steamworks::CallbackType get_CallbackType();

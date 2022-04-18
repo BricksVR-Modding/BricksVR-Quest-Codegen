@@ -56,9 +56,9 @@ namespace UnityEngine {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private UnityEngine.Vector3 m_Normal
-    [[deprecated]] ::UnityEngine::Vector3& dyn_m_Normal();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_m_Normal();
     // Get instance field reference: private System.Single m_Distance
-    [[deprecated]] float& dyn_m_Distance();
+    [[deprecated("Use field access instead!")]] float& dyn_m_Distance();
     // public System.Void .ctor(UnityEngine.Vector3 inNormal, UnityEngine.Vector3 inPoint)
     // Offset: 0x972FF0
     Plane(::UnityEngine::Vector3 inNormal, ::UnityEngine::Vector3 inPoint);

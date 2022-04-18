@@ -44,15 +44,12 @@ namespace UnityEngine::Bindings {
       return DoesNotContributeToSize;
     }
     // Get instance field reference: private System.Boolean <DoesNotContributeToSize>k__BackingField
-    [[deprecated]] bool& dyn_$DoesNotContributeToSize$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$DoesNotContributeToSize$k__BackingField();
     // public System.Void set_DoesNotContributeToSize(System.Boolean value)
     // Offset: 0x2F6C00
     void set_DoesNotContributeToSize(bool value);
     // public System.Void .ctor()
     // Offset: 0x1E10D0
-    // Implemented from: System.Attribute
-    // Base method: System.Void Attribute::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static IgnoreAttribute* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Bindings::IgnoreAttribute::.ctor");

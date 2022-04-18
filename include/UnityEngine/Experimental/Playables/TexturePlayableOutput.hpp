@@ -49,7 +49,7 @@ namespace UnityEngine::Experimental::Playables {
       return m_Handle;
     }
     // Get instance field reference: private UnityEngine.Playables.PlayableOutputHandle m_Handle
-    [[deprecated]] ::UnityEngine::Playables::PlayableOutputHandle& dyn_m_Handle();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Playables::PlayableOutputHandle& dyn_m_Handle();
   }; // UnityEngine.Experimental.Playables.TexturePlayableOutput
   #pragma pack(pop)
   static check_size<sizeof(TexturePlayableOutput), 0 + sizeof(::UnityEngine::Playables::PlayableOutputHandle)> __UnityEngine_Experimental_Playables_TexturePlayableOutputSizeCheck;

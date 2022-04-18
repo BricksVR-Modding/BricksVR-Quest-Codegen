@@ -72,13 +72,13 @@ namespace Steamworks {
     static_assert(sizeof(::Steamworks::Data::HSteamNetPollGroup) == 0x4);
     public:
     // Get instance field reference: private Steamworks.ISocketManager <Interface>k__BackingField
-    [[deprecated]] ::Steamworks::ISocketManager*& dyn_$Interface$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Steamworks::ISocketManager*& dyn_$Interface$k__BackingField();
     // Get instance field reference: public System.Collections.Generic.List`1<Steamworks.Data.Connection> Connecting
-    [[deprecated]] ::System::Collections::Generic::List_1<::Steamworks::Data::Connection>*& dyn_Connecting();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::Steamworks::Data::Connection>*& dyn_Connecting();
     // Get instance field reference: public System.Collections.Generic.List`1<Steamworks.Data.Connection> Connected
-    [[deprecated]] ::System::Collections::Generic::List_1<::Steamworks::Data::Connection>*& dyn_Connected();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::Steamworks::Data::Connection>*& dyn_Connected();
     // Get instance field reference: Steamworks.Data.HSteamNetPollGroup pollGroup
-    [[deprecated]] ::Steamworks::Data::HSteamNetPollGroup& dyn_pollGroup();
+    [[deprecated("Use field access instead!")]] ::Steamworks::Data::HSteamNetPollGroup& dyn_pollGroup();
     // public Steamworks.ISocketManager get_Interface()
     // Offset: 0x1E1920
     ::Steamworks::ISocketManager* get_Interface();

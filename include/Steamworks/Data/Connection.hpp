@@ -51,7 +51,7 @@ namespace Steamworks::Data {
       return Id;
     }
     // Get instance field reference: private System.UInt32 <Id>k__BackingField
-    [[deprecated]] uint& dyn_$Id$k__BackingField();
+    [[deprecated("Use field access instead!")]] uint& dyn_$Id$k__BackingField();
     // public System.UInt32 get_Id()
     // Offset: 0x269910
     uint get_Id();

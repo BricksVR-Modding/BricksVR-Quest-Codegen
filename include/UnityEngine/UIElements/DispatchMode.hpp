@@ -60,7 +60,7 @@ namespace UnityEngine::UIElements {
     // Set static field: static public UnityEngine.UIElements.DispatchMode Immediate
     static void _set_Immediate(::UnityEngine::UIElements::DispatchMode value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // UnityEngine.UIElements.DispatchMode
   #pragma pack(pop)
   static check_size<sizeof(DispatchMode), 0 + sizeof(int)> __UnityEngine_UIElements_DispatchModeSizeCheck;

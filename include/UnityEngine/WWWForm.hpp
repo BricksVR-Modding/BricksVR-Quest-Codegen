@@ -83,17 +83,17 @@ namespace UnityEngine {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.Collections.Generic.List`1<System.Byte[]> formData
-    [[deprecated]] ::System::Collections::Generic::List_1<::ArrayW<uint8_t>>*& dyn_formData();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::ArrayW<uint8_t>>*& dyn_formData();
     // Get instance field reference: private System.Collections.Generic.List`1<System.String> fieldNames
-    [[deprecated]] ::System::Collections::Generic::List_1<::StringW>*& dyn_fieldNames();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::StringW>*& dyn_fieldNames();
     // Get instance field reference: private System.Collections.Generic.List`1<System.String> fileNames
-    [[deprecated]] ::System::Collections::Generic::List_1<::StringW>*& dyn_fileNames();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::StringW>*& dyn_fileNames();
     // Get instance field reference: private System.Collections.Generic.List`1<System.String> types
-    [[deprecated]] ::System::Collections::Generic::List_1<::StringW>*& dyn_types();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::StringW>*& dyn_types();
     // Get instance field reference: private System.Byte[] boundary
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_boundary();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_boundary();
     // Get instance field reference: private System.Boolean containsFiles
-    [[deprecated]] bool& dyn_containsFiles();
+    [[deprecated("Use field access instead!")]] bool& dyn_containsFiles();
     // static System.Text.Encoding get_DefaultEncoding()
     // Offset: 0x641A60
     static ::System::Text::Encoding* get_DefaultEncoding();
@@ -103,6 +103,13 @@ namespace UnityEngine {
     // public System.Byte[] get_data()
     // Offset: 0x641A70
     ::ArrayW<uint8_t> get_data();
+    // public System.Void .ctor()
+    // Offset: 0x6418F0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static WWWForm* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::WWWForm::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<WWWForm*, creationType>()));
+    }
     // public System.Void AddField(System.String fieldName, System.String value)
     // Offset: 0x6416A0
     void AddField(::StringW fieldName, ::StringW value);
@@ -112,15 +119,6 @@ namespace UnityEngine {
     // public System.Void AddField(System.String fieldName, System.Int32 i)
     // Offset: 0x6417C0
     void AddField(::StringW fieldName, int i);
-    // public System.Void .ctor()
-    // Offset: 0x6418F0
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static WWWForm* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::WWWForm::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<WWWForm*, creationType>()));
-    }
   }; // UnityEngine.WWWForm
   #pragma pack(pop)
   static check_size<sizeof(WWWForm), 56 + sizeof(bool)> __UnityEngine_WWWFormSizeCheck;
@@ -151,6 +149,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::ArrayW<ui
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::WWWForm*), "get_data", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::WWWForm::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::WWWForm::AddField
 // Il2CppName: AddField
 template<>
@@ -182,7 +184,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::WWWForm*), "AddField", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{fieldName, i});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::WWWForm::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

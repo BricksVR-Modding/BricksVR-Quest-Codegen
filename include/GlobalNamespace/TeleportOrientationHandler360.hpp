@@ -33,11 +33,6 @@ namespace GlobalNamespace {
     // Implemented from: TeleportOrientationHandler
     // Base method: System.Void TeleportOrientationHandler::.ctor()
     // Base method: System.Void TeleportSupport::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TeleportOrientationHandler360* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::TeleportOrientationHandler360::.ctor");

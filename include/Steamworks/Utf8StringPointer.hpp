@@ -45,7 +45,7 @@ namespace Steamworks {
       return ptr;
     }
     // Get instance field reference: System.IntPtr ptr
-    [[deprecated]] ::System::IntPtr& dyn_ptr();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_ptr();
   }; // Steamworks.Utf8StringPointer
   #pragma pack(pop)
   static check_size<sizeof(Utf8StringPointer), 0 + sizeof(::System::IntPtr)> __Steamworks_Utf8StringPointerSizeCheck;

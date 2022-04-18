@@ -17,19 +17,17 @@
 #include "beatsaber-hook/shared/utils/typedefs-string.hpp"
 // Completed includes
 // Begin forward declares
-// Forward declaring namespace: System::Reflection
-namespace System::Reflection {
-  // Skipping declaration: MemberInfo because it is already included!
-  // Skipping declaration: EventInfo because it is already included!
-  // Forward declaring type: MethodInfo
-  class MethodInfo;
-  // Forward declaring type: CustomAttributeData
-  class CustomAttributeData;
-}
 // Forward declaring namespace: System
 namespace System {
   // Forward declaring type: Type
   class Type;
+}
+// Forward declaring namespace: System::Reflection
+namespace System::Reflection {
+  // Forward declaring type: MethodInfo
+  class MethodInfo;
+  // Forward declaring type: CustomAttributeData
+  class CustomAttributeData;
 }
 // Forward declaring namespace: System::Collections::Generic
 namespace System::Collections::Generic {
@@ -72,9 +70,9 @@ namespace System::Reflection {
     // Deleting conversion operator: operator ::System::Reflection::EventInfo::AddEventAdapter*
     constexpr operator ::System::Reflection::EventInfo::AddEventAdapter*() const noexcept = delete;
     // Get instance field reference: private System.IntPtr klass
-    [[deprecated]] ::System::IntPtr& dyn_klass();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_klass();
     // Get instance field reference: private System.IntPtr handle
-    [[deprecated]] ::System::IntPtr& dyn_handle();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_handle();
     // public override System.Type get_DeclaringType()
     // Offset: 0x545430
     // Implemented from: System.Reflection.MemberInfo

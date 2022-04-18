@@ -72,7 +72,7 @@ namespace UnityEngine::UIElements {
     // Set static field: static public UnityEngine.UIElements.StyleKeyword Initial
     static void _set_Initial(::UnityEngine::UIElements::StyleKeyword value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // UnityEngine.UIElements.StyleKeyword
   #pragma pack(pop)
   static check_size<sizeof(StyleKeyword), 0 + sizeof(int)> __UnityEngine_UIElements_StyleKeywordSizeCheck;

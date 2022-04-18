@@ -45,7 +45,7 @@ namespace Steamworks::Data {
       return inner;
     }
     // Get instance field reference: Steamworks.Data.DurationControl_t _inner
-    [[deprecated]] ::Steamworks::Data::DurationControl_t& dyn__inner();
+    [[deprecated("Use field access instead!")]] ::Steamworks::Data::DurationControl_t& dyn__inner();
   }; // Steamworks.Data.DurationControl
   #pragma pack(pop)
   static check_size<sizeof(DurationControl), 0 + sizeof(::Steamworks::Data::DurationControl_t)> __Steamworks_Data_DurationControlSizeCheck;

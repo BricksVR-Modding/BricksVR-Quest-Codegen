@@ -44,7 +44,7 @@ namespace GlobalNamespace {
       return event;
     }
     // Get instance field reference: public readonly Normal.Realtime.RealtimeModelEvent event
-    [[deprecated]] ::Normal::Realtime::RealtimeModelEvent& dyn_event();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::RealtimeModelEvent& dyn_event();
     // public System.Void .ctor(Normal.Realtime.RealtimeModelEvent event)
     // Offset: 0x20A3C0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

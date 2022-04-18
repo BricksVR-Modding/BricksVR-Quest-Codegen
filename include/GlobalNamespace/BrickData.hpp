@@ -123,21 +123,21 @@ namespace GlobalNamespace {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: public readonly System.String PrefabName
-      [[deprecated]] ::StringW& dyn_PrefabName();
+      [[deprecated("Use field access instead!")]] ::StringW& dyn_PrefabName();
       // Get instance field reference: public readonly System.String DisplayName
-      [[deprecated]] ::StringW& dyn_DisplayName();
+      [[deprecated("Use field access instead!")]] ::StringW& dyn_DisplayName();
       // Get instance field reference: public readonly System.String CompleteMeshPath
-      [[deprecated]] ::StringW& dyn_CompleteMeshPath();
+      [[deprecated("Use field access instead!")]] ::StringW& dyn_CompleteMeshPath();
       // Get instance field reference: public readonly System.String Category
-      [[deprecated]] ::StringW& dyn_Category();
+      [[deprecated("Use field access instead!")]] ::StringW& dyn_Category();
       // Get instance field reference: public readonly UnityEngine.Mesh Mesh
-      [[deprecated]] ::UnityEngine::Mesh*& dyn_Mesh();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::Mesh*& dyn_Mesh();
       // Get instance field reference: public readonly System.Single UIScaleModifier
-      [[deprecated]] float& dyn_UIScaleModifier();
+      [[deprecated("Use field access instead!")]] float& dyn_UIScaleModifier();
       // Get instance field reference: public readonly UnityEngine.Vector3 Rotation
-      [[deprecated]] ::UnityEngine::Vector3& dyn_Rotation();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_Rotation();
       // Get instance field reference: public readonly UnityEngine.Vector3 HandSpawnerPositionOffset
-      [[deprecated]] ::UnityEngine::Vector3& dyn_HandSpawnerPositionOffset();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_HandSpawnerPositionOffset();
       // public System.Void .ctor(System.String prefabName, System.String displayName, System.String category, System.String completeMeshPath, System.Single uiScaleModifier, System.Nullable`1<UnityEngine.Vector3> rotation, System.Nullable`1<UnityEngine.Vector3> handSpawnerPositionOffset)
       // Offset: 0x6F54F0
       Brick(::StringW prefabName, ::StringW displayName, ::StringW category, ::StringW completeMeshPath, float uiScaleModifier, ::System::Nullable_1<::UnityEngine::Vector3> rotation, ::System::Nullable_1<::UnityEngine::Vector3> handSpawnerPositionOffset);

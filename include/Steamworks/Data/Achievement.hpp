@@ -43,7 +43,7 @@ namespace Steamworks::Data {
       return Value;
     }
     // Get instance field reference: System.String Value
-    [[deprecated]] ::StringW& dyn_Value();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_Value();
     // public System.Void .ctor(System.String name)
     // Offset: 0x2F6BE0
     // ABORTED: conflicts with another method.  Achievement(::StringW name);

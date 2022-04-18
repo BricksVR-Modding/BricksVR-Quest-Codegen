@@ -76,15 +76,15 @@ namespace Normal::Realtime {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public readonly UnityEngine.Vector3 position
-    [[deprecated]] ::UnityEngine::Vector3& dyn_position();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_position();
     // Get instance field reference: public readonly UnityEngine.Quaternion rotation
-    [[deprecated]] ::UnityEngine::Quaternion& dyn_rotation();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Quaternion& dyn_rotation();
     // Get instance field reference: public readonly UnityEngine.Vector3 scale
-    [[deprecated]] ::UnityEngine::Vector3& dyn_scale();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_scale();
     // Get instance field reference: public readonly UnityEngine.Vector3 velocity
-    [[deprecated]] ::UnityEngine::Vector3& dyn_velocity();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_velocity();
     // Get instance field reference: public readonly UnityEngine.Vector3 angularVelocity
-    [[deprecated]] ::UnityEngine::Vector3& dyn_angularVelocity();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_angularVelocity();
     // public System.Void .ctor(UnityEngine.Vector3 position, UnityEngine.Quaternion rotation, UnityEngine.Vector3 scale, UnityEngine.Vector3 velocity, UnityEngine.Vector3 angularVelocity)
     // Offset: 0x896EF0
     // ABORTED: conflicts with another method.  RigidbodyPhysicsBodyFrame(::UnityEngine::Vector3 position, ::UnityEngine::Quaternion rotation, ::UnityEngine::Vector3 scale, ::UnityEngine::Vector3 velocity, ::UnityEngine::Vector3 angularVelocity);

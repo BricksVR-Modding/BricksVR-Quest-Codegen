@@ -118,23 +118,30 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.GameObject> _hoveredObjects
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::GameObject*>*& dyn__hoveredObjects();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::GameObject*>*& dyn__hoveredObjects();
     // Get instance field reference: private UnityEngine.GameObject _hovered
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__hovered();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__hovered();
     // Get instance field reference: private BrickAttach _hoveredAttach
-    [[deprecated]] ::GlobalNamespace::BrickAttach*& dyn__hoveredAttach();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::BrickAttach*& dyn__hoveredAttach();
     // Get instance field reference: private UnityEngine.Color32 _hoverColor
-    [[deprecated]] ::UnityEngine::Color32& dyn__hoverColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color32& dyn__hoverColor();
     // Get instance field reference: private UnityEngine.GameObject _tempHoveredObject
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__tempHoveredObject();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__tempHoveredObject();
     // Get instance field reference: private BrickAttach _tempAttach
-    [[deprecated]] ::GlobalNamespace::BrickAttach*& dyn__tempAttach();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::BrickAttach*& dyn__tempAttach();
     // Get instance field reference: private System.Boolean _holdingSomething
-    [[deprecated]] bool& dyn__holdingSomething();
+    [[deprecated("Use field access instead!")]] bool& dyn__holdingSomething();
     // Get instance field reference: public UnityEngine.LayerMask interactionLayerMask
-    [[deprecated]] ::UnityEngine::LayerMask& dyn_interactionLayerMask();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::LayerMask& dyn_interactionLayerMask();
     // Get instance field reference: public System.Boolean left
-    [[deprecated]] bool& dyn_left();
+    [[deprecated("Use field access instead!")]] bool& dyn_left();
+    // public System.Void .ctor()
+    // Offset: 0x1DDE30
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static BrickHover* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::BrickHover::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<BrickHover*, creationType>()));
+    }
     // private System.Void Start()
     // Offset: 0x6EE8F0
     void Start();
@@ -177,25 +184,16 @@ namespace GlobalNamespace {
     // private System.Single <Update>b__11_1(UnityEngine.GameObject o)
     // Offset: 0x6EEAD0
     float $Update$b__11_1(::UnityEngine::GameObject* o);
-    // public System.Void .ctor()
-    // Offset: 0x1DDE30
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static BrickHover* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::BrickHover::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<BrickHover*, creationType>()));
-    }
   }; // BrickHover
   #pragma pack(pop)
   static check_size<sizeof(BrickHover), 80 + sizeof(bool)> __GlobalNamespace_BrickHoverSizeCheck;
   static_assert(sizeof(BrickHover) == 0x51);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::BrickHover::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::BrickHover::Start
 // Il2CppName: Start
 template<>
@@ -317,7 +315,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<float (Glob
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::BrickHover*), "<Update>b__11_1", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{o});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::BrickHover::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

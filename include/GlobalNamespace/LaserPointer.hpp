@@ -90,7 +90,7 @@ namespace GlobalNamespace {
       // Set static field: static public LaserPointer/LaserBeamBehavior OnWhenHitTarget
       static void _set_OnWhenHitTarget(::GlobalNamespace::LaserPointer::LaserBeamBehavior value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // LaserPointer/LaserBeamBehavior
     #pragma pack(pop)
     static check_size<sizeof(LaserPointer::LaserBeamBehavior), 0 + sizeof(int)> __GlobalNamespace_LaserPointer_LaserBeamBehaviorSizeCheck;
@@ -158,29 +158,36 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public UnityEngine.GameObject cursorVisual
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_cursorVisual();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_cursorVisual();
     // Get instance field reference: public System.Single maxLength
-    [[deprecated]] float& dyn_maxLength();
+    [[deprecated("Use field access instead!")]] float& dyn_maxLength();
     // Get instance field reference: private LaserPointer/LaserBeamBehavior _laserBeamBehavior
-    [[deprecated]] ::GlobalNamespace::LaserPointer::LaserBeamBehavior& dyn__laserBeamBehavior();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::LaserPointer::LaserBeamBehavior& dyn__laserBeamBehavior();
     // Get instance field reference: private System.Boolean m_restoreOnInputAcquired
-    [[deprecated]] bool& dyn_m_restoreOnInputAcquired();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_restoreOnInputAcquired();
     // Get instance field reference: private UnityEngine.Vector3 _startPoint
-    [[deprecated]] ::UnityEngine::Vector3& dyn__startPoint();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__startPoint();
     // Get instance field reference: private UnityEngine.Vector3 _forward
-    [[deprecated]] ::UnityEngine::Vector3& dyn__forward();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__forward();
     // Get instance field reference: private UnityEngine.Vector3 _endPoint
-    [[deprecated]] ::UnityEngine::Vector3& dyn__endPoint();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__endPoint();
     // Get instance field reference: private System.Boolean _hitTarget
-    [[deprecated]] bool& dyn__hitTarget();
+    [[deprecated("Use field access instead!")]] bool& dyn__hitTarget();
     // Get instance field reference: private UnityEngine.LineRenderer lineRenderer
-    [[deprecated]] ::UnityEngine::LineRenderer*& dyn_lineRenderer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::LineRenderer*& dyn_lineRenderer();
     // public LaserPointer/LaserBeamBehavior get_laserBeamBehavior()
     // Offset: 0x2512C0
     ::GlobalNamespace::LaserPointer::LaserBeamBehavior get_laserBeamBehavior();
     // public System.Void set_laserBeamBehavior(LaserPointer/LaserBeamBehavior value)
     // Offset: 0x28ED40
     void set_laserBeamBehavior(::GlobalNamespace::LaserPointer::LaserBeamBehavior value);
+    // public System.Void .ctor()
+    // Offset: 0x28ED30
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static LaserPointer* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::LaserPointer::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<LaserPointer*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0x28E470
     void Awake();
@@ -205,20 +212,6 @@ namespace GlobalNamespace {
     // private System.Void OnDestroy()
     // Offset: 0x28E7F0
     void OnDestroy();
-    // public System.Void .ctor()
-    // Offset: 0x28ED30
-    // Implemented from: OVRCursor
-    // Base method: System.Void OVRCursor::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static LaserPointer* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::LaserPointer::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<LaserPointer*, creationType>()));
-    }
     // public override System.Void SetCursorStartDest(UnityEngine.Vector3 start, UnityEngine.Vector3 dest, UnityEngine.Vector3 normal)
     // Offset: 0x28EAE0
     // Implemented from: OVRCursor
@@ -254,6 +247,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::LaserPointer*), "set_laserBeamBehavior", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: GlobalNamespace::LaserPointer::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::LaserPointer::Awake
 // Il2CppName: Awake
 template<>
@@ -320,10 +317,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::LaserPointer*), "OnDestroy", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::LaserPointer::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::LaserPointer::SetCursorStartDest
 // Il2CppName: SetCursorStartDest
 template<>

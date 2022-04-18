@@ -71,17 +71,17 @@ namespace UnityEngine::UI::ProceduralImage {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Single width
-    [[deprecated]] float& dyn_width();
+    [[deprecated("Use field access instead!")]] float& dyn_width();
     // Get instance field reference: public System.Single height
-    [[deprecated]] float& dyn_height();
+    [[deprecated("Use field access instead!")]] float& dyn_height();
     // Get instance field reference: public System.Single fallOffDistance
-    [[deprecated]] float& dyn_fallOffDistance();
+    [[deprecated("Use field access instead!")]] float& dyn_fallOffDistance();
     // Get instance field reference: public UnityEngine.Vector4 radius
-    [[deprecated]] ::UnityEngine::Vector4& dyn_radius();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector4& dyn_radius();
     // Get instance field reference: public System.Single borderWidth
-    [[deprecated]] float& dyn_borderWidth();
+    [[deprecated("Use field access instead!")]] float& dyn_borderWidth();
     // Get instance field reference: public System.Single pixelSize
-    [[deprecated]] float& dyn_pixelSize();
+    [[deprecated("Use field access instead!")]] float& dyn_pixelSize();
     // public System.Void .ctor(System.Single width, System.Single height, System.Single fallOffDistance, System.Single pixelSize, UnityEngine.Vector4 radius, System.Single borderWidth)
     // Offset: 0x920BA0
     ProceduralImageInfo(float width, float height, float fallOffDistance, float pixelSize, ::UnityEngine::Vector4 radius, float borderWidth);

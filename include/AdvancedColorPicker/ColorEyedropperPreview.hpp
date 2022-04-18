@@ -33,7 +33,6 @@ namespace System::Collections {
 }
 // Forward declaring namespace: UnityEngine::UI
 namespace UnityEngine::UI {
-  // Skipping declaration: Graphic because it is already included!
   // Forward declaring type: VertexHelper
   class VertexHelper;
 }
@@ -102,7 +101,7 @@ namespace AdvancedColorPicker {
       // Set static field: static public AdvancedColorPicker.ColorEyedropperPreview/AdvancedColorPicker.EyedropperPreviewType PixelAmountVertical
       static void _set_PixelAmountVertical(::AdvancedColorPicker::ColorEyedropperPreview::EyedropperPreviewType value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // AdvancedColorPicker.ColorEyedropperPreview/AdvancedColorPicker.EyedropperPreviewType
     #pragma pack(pop)
     static check_size<sizeof(ColorEyedropperPreview::EyedropperPreviewType), 0 + sizeof(int)> __AdvancedColorPicker_ColorEyedropperPreview_EyedropperPreviewTypeSizeCheck;
@@ -166,23 +165,23 @@ namespace AdvancedColorPicker {
     static_assert(sizeof(::ArrayW<::UnityEngine::Color32>) == 0x8);
     public:
     // Get instance field reference: private AdvancedColorPicker.ColorEyedropperPreview/AdvancedColorPicker.EyedropperPreviewType type
-    [[deprecated]] ::AdvancedColorPicker::ColorEyedropperPreview::EyedropperPreviewType& dyn_type();
+    [[deprecated("Use field access instead!")]] ::AdvancedColorPicker::ColorEyedropperPreview::EyedropperPreviewType& dyn_type();
     // Get instance field reference: private System.Single pixelSize
-    [[deprecated]] float& dyn_pixelSize();
+    [[deprecated("Use field access instead!")]] float& dyn_pixelSize();
     // Get instance field reference: private System.Single borderSize
-    [[deprecated]] float& dyn_borderSize();
+    [[deprecated("Use field access instead!")]] float& dyn_borderSize();
     // Get instance field reference: private System.Single horizontalPixels
-    [[deprecated]] float& dyn_horizontalPixels();
+    [[deprecated("Use field access instead!")]] float& dyn_horizontalPixels();
     // Get instance field reference: private System.Single verticalPixels
-    [[deprecated]] float& dyn_verticalPixels();
+    [[deprecated("Use field access instead!")]] float& dyn_verticalPixels();
     // Get instance field reference: private UnityEngine.Color32 selectionBoxColor
-    [[deprecated]] ::UnityEngine::Color32& dyn_selectionBoxColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color32& dyn_selectionBoxColor();
     // Get instance field reference: private System.Boolean activated
-    [[deprecated]] bool& dyn_activated();
+    [[deprecated("Use field access instead!")]] bool& dyn_activated();
     // Get instance field reference: private UnityEngine.Coroutine coroutine
-    [[deprecated]] ::UnityEngine::Coroutine*& dyn_coroutine();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Coroutine*& dyn_coroutine();
     // Get instance field reference: private UnityEngine.Color32[] pixelsToDisplay
-    [[deprecated]] ::ArrayW<::UnityEngine::Color32>& dyn_pixelsToDisplay();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Color32>& dyn_pixelsToDisplay();
     // private UnityEngine.Color32 get_InactiveColor()
     // Offset: 0x5AA480
     ::UnityEngine::Color32 get_InactiveColor();
@@ -231,6 +230,13 @@ namespace AdvancedColorPicker {
     // public System.Void set_Activated(System.Boolean value)
     // Offset: 0x5AA4D0
     void set_Activated(bool value);
+    // public System.Void .ctor()
+    // Offset: 0x5AA340
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ColorEyedropperPreview* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::AdvancedColorPicker::ColorEyedropperPreview::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ColorEyedropperPreview*, creationType>()));
+    }
     // private System.Void CalculateOtherValues()
     // Offset: 0x5A8600
     void CalculateOtherValues();
@@ -246,22 +252,6 @@ namespace AdvancedColorPicker {
     // private System.Void SetQuadColors(UnityEngine.UIVertex[] verts, UnityEngine.Color32 color)
     // Offset: 0x5A9F10
     void SetQuadColors(::ArrayW<::UnityEngine::UIVertex> verts, ::UnityEngine::Color32 color);
-    // public System.Void .ctor()
-    // Offset: 0x5AA340
-    // Implemented from: UnityEngine.UI.MaskableGraphic
-    // Base method: System.Void MaskableGraphic::.ctor()
-    // Base method: System.Void Graphic::.ctor()
-    // Base method: System.Void UIBehaviour::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ColorEyedropperPreview* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::AdvancedColorPicker::ColorEyedropperPreview::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ColorEyedropperPreview*, creationType>()));
-    }
     // protected override System.Void OnEnable()
     // Offset: 0x5A8890
     // Implemented from: UnityEngine.UI.MaskableGraphic
@@ -430,6 +420,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Advan
     return ::il2cpp_utils::FindMethod(classof(AdvancedColorPicker::ColorEyedropperPreview*), "set_Activated", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: AdvancedColorPicker::ColorEyedropperPreview::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: AdvancedColorPicker::ColorEyedropperPreview::CalculateOtherValues
 // Il2CppName: CalculateOtherValues
 template<>
@@ -479,10 +473,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Advan
     return ::il2cpp_utils::FindMethod(classof(AdvancedColorPicker::ColorEyedropperPreview*), "SetQuadColors", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{verts, color});
   }
 };
-// Writing MetadataGetter for method: AdvancedColorPicker::ColorEyedropperPreview::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: AdvancedColorPicker::ColorEyedropperPreview::OnEnable
 // Il2CppName: OnEnable
 template<>

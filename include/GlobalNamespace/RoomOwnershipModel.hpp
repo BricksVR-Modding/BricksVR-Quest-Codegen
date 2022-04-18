@@ -117,23 +117,23 @@ namespace GlobalNamespace {
     static_assert(sizeof(::Normal::Realtime::ReliableProperty_1<bool>*) == 0x8);
     public:
     // Get instance field reference: private System.Boolean _locked
-    [[deprecated]] bool& dyn__locked();
+    [[deprecated("Use field access instead!")]] bool& dyn__locked();
     // Get instance field reference: private System.Boolean _lowGravity
-    [[deprecated]] bool& dyn__lowGravity();
+    [[deprecated("Use field access instead!")]] bool& dyn__lowGravity();
     // Get instance field reference: private System.Boolean _blockedFromMovingThroughBricks
-    [[deprecated]] bool& dyn__blockedFromMovingThroughBricks();
+    [[deprecated("Use field access instead!")]] bool& dyn__blockedFromMovingThroughBricks();
     // Get instance field reference: private RoomOwnershipModel/PropertyChangedHandler`1<System.Boolean> lockedDidChange
-    [[deprecated]] ::GlobalNamespace::RoomOwnershipModel::PropertyChangedHandler_1<bool>*& dyn_lockedDidChange();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::RoomOwnershipModel::PropertyChangedHandler_1<bool>*& dyn_lockedDidChange();
     // Get instance field reference: private RoomOwnershipModel/PropertyChangedHandler`1<System.Boolean> lowGravityDidChange
-    [[deprecated]] ::GlobalNamespace::RoomOwnershipModel::PropertyChangedHandler_1<bool>*& dyn_lowGravityDidChange();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::RoomOwnershipModel::PropertyChangedHandler_1<bool>*& dyn_lowGravityDidChange();
     // Get instance field reference: private RoomOwnershipModel/PropertyChangedHandler`1<System.Boolean> blockedFromMovingThroughBricksDidChange
-    [[deprecated]] ::GlobalNamespace::RoomOwnershipModel::PropertyChangedHandler_1<bool>*& dyn_blockedFromMovingThroughBricksDidChange();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::RoomOwnershipModel::PropertyChangedHandler_1<bool>*& dyn_blockedFromMovingThroughBricksDidChange();
     // Get instance field reference: private Normal.Realtime.ReliableProperty`1<System.Boolean> _lockedProperty
-    [[deprecated]] ::Normal::Realtime::ReliableProperty_1<bool>*& dyn__lockedProperty();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::ReliableProperty_1<bool>*& dyn__lockedProperty();
     // Get instance field reference: private Normal.Realtime.ReliableProperty`1<System.Boolean> _lowGravityProperty
-    [[deprecated]] ::Normal::Realtime::ReliableProperty_1<bool>*& dyn__lowGravityProperty();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::ReliableProperty_1<bool>*& dyn__lowGravityProperty();
     // Get instance field reference: private Normal.Realtime.ReliableProperty`1<System.Boolean> _blockedFromMovingThroughBricksProperty
-    [[deprecated]] ::Normal::Realtime::ReliableProperty_1<bool>*& dyn__blockedFromMovingThroughBricksProperty();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::ReliableProperty_1<bool>*& dyn__blockedFromMovingThroughBricksProperty();
     // public System.Boolean get_locked()
     // Offset: 0x6CB2C0
     bool get_locked();
@@ -170,6 +170,13 @@ namespace GlobalNamespace {
     // public System.Void remove_blockedFromMovingThroughBricksDidChange(RoomOwnershipModel/PropertyChangedHandler`1<System.Boolean> value)
     // Offset: 0x6CB340
     void remove_blockedFromMovingThroughBricksDidChange(::GlobalNamespace::RoomOwnershipModel::PropertyChangedHandler_1<bool>* value);
+    // public System.Void .ctor()
+    // Offset: 0x6CAF90
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static RoomOwnershipModel* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::RoomOwnershipModel::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<RoomOwnershipModel*, creationType>()));
+    }
     // private System.Void FireLockedDidChange(System.Boolean value)
     // Offset: 0x6CA800
     void FireLockedDidChange(bool value);
@@ -182,15 +189,6 @@ namespace GlobalNamespace {
     // private System.Void UpdateBackingFields()
     // Offset: 0x6CACC0
     void UpdateBackingFields();
-    // public System.Void .ctor()
-    // Offset: 0x6CAF90
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static RoomOwnershipModel* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::RoomOwnershipModel::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<RoomOwnershipModel*, creationType>()));
-    }
     // protected override System.Void OnParentReplaced(Normal.Realtime.RealtimeModel previousParent, Normal.Realtime.RealtimeModel currentParent)
     // Offset: 0x6CA940
     // Implemented from: Normal.Realtime.RealtimeModel
@@ -322,6 +320,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::RoomOwnershipModel*), "remove_blockedFromMovingThroughBricksDidChange", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: GlobalNamespace::RoomOwnershipModel::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::RoomOwnershipModel::FireLockedDidChange
 // Il2CppName: FireLockedDidChange
 template<>
@@ -357,10 +359,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::RoomOwnershipModel*), "UpdateBackingFields", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::RoomOwnershipModel::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::RoomOwnershipModel::OnParentReplaced
 // Il2CppName: OnParentReplaced
 template<>

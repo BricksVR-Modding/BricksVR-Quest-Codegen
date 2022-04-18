@@ -83,21 +83,21 @@ namespace Normal::Realtime::Native {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Single roundTripTime
-    [[deprecated]] float& dyn_roundTripTime();
+    [[deprecated("Use field access instead!")]] float& dyn_roundTripTime();
     // Get instance field reference: public System.Single percentOfPacketsLost
-    [[deprecated]] float& dyn_percentOfPacketsLost();
+    [[deprecated("Use field access instead!")]] float& dyn_percentOfPacketsLost();
     // Get instance field reference: public System.Single sentBandwidth
-    [[deprecated]] float& dyn_sentBandwidth();
+    [[deprecated("Use field access instead!")]] float& dyn_sentBandwidth();
     // Get instance field reference: public System.Single receivedBandwidth
-    [[deprecated]] float& dyn_receivedBandwidth();
+    [[deprecated("Use field access instead!")]] float& dyn_receivedBandwidth();
     // Get instance field reference: public System.Single ackedBandwidth
-    [[deprecated]] float& dyn_ackedBandwidth();
+    [[deprecated("Use field access instead!")]] float& dyn_ackedBandwidth();
     // Get instance field reference: public System.UInt64 numberOfPacketsSent
-    [[deprecated]] uint64_t& dyn_numberOfPacketsSent();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_numberOfPacketsSent();
     // Get instance field reference: public System.UInt64 numberOfPacketsReceived
-    [[deprecated]] uint64_t& dyn_numberOfPacketsReceived();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_numberOfPacketsReceived();
     // Get instance field reference: public System.UInt64 numberOfPacketsAcked
-    [[deprecated]] uint64_t& dyn_numberOfPacketsAcked();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_numberOfPacketsAcked();
   }; // Normal.Realtime.Native.NetworkInfo
   #pragma pack(pop)
   static check_size<sizeof(NetworkInfo), 40 + sizeof(uint64_t)> __Normal_Realtime_Native_NetworkInfoSizeCheck;

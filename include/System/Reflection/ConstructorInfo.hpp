@@ -23,7 +23,6 @@ namespace System::Reflection {
   struct BindingFlags;
   // Forward declaring type: Binder
   class Binder;
-  // Skipping declaration: MemberInfo because it is already included!
   // Forward declaring type: MemberTypes
   struct MemberTypes;
 }

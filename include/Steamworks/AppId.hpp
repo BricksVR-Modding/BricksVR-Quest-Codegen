@@ -43,7 +43,7 @@ namespace Steamworks {
       return Value;
     }
     // Get instance field reference: public System.UInt32 Value
-    [[deprecated]] uint& dyn_Value();
+    [[deprecated("Use field access instead!")]] uint& dyn_Value();
     // public override System.String ToString()
     // Offset: 0x45A830
     // Implemented from: System.ValueType

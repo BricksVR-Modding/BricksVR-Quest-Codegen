@@ -75,6 +75,13 @@ namespace Steamworks {
     // static private System.Void .cctor()
     // Offset: 0x5C9840
     static void _cctor();
+    // public System.Void .ctor()
+    // Offset: 0x1DD400
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static SteamFriends::$$c* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Steamworks::SteamFriends::$$c::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<SteamFriends::$$c*, creationType>()));
+    }
     // System.Void <InstallEvents>b__4_0(Steamworks.Data.PersonaStateChange_t x)
     // Offset: 0x5C8610
     void $InstallEvents$b__4_0(::Steamworks::Data::PersonaStateChange_t x);
@@ -93,15 +100,6 @@ namespace Steamworks {
     // System.Void <InstallEvents>b__4_5(Steamworks.Data.FriendRichPresenceUpdate_t x)
     // Offset: 0x5C8A20
     void $InstallEvents$b__4_5(::Steamworks::Data::FriendRichPresenceUpdate_t x);
-    // public System.Void .ctor()
-    // Offset: 0x1DD400
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static SteamFriends::$$c* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Steamworks::SteamFriends::$$c::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<SteamFriends::$$c*, creationType>()));
-    }
   }; // Steamworks.SteamFriends/Steamworks.<>c
   #pragma pack(pop)
 }
@@ -114,6 +112,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(Steamworks::SteamFriends::$$c*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: Steamworks::SteamFriends::$$c::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Steamworks::SteamFriends::$$c::$InstallEvents$b__4_0
 // Il2CppName: <InstallEvents>b__4_0
 template<>
@@ -168,7 +170,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Steam
     return ::il2cpp_utils::FindMethod(classof(Steamworks::SteamFriends::$$c*), "<InstallEvents>b__4_5", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{x});
   }
 };
-// Writing MetadataGetter for method: Steamworks::SteamFriends::$$c::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

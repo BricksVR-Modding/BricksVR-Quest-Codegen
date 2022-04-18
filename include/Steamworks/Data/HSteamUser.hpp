@@ -58,7 +58,7 @@ namespace Steamworks::Data {
       return Value;
     }
     // Get instance field reference: public System.Int32 Value
-    [[deprecated]] int& dyn_Value();
+    [[deprecated("Use field access instead!")]] int& dyn_Value();
     // public System.Boolean Equals(Steamworks.Data.HSteamUser p)
     // Offset: 0x460E90
     bool Equals(::Steamworks::Data::HSteamUser p);

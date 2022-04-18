@@ -67,36 +67,34 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.Vector3 m_initialOffset
-    [[deprecated]] ::UnityEngine::Vector3& dyn_m_initialOffset();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_m_initialOffset();
     // Get instance field reference: public OVRCameraRig m_playerOrigin
-    [[deprecated]] ::GlobalNamespace::OVRCameraRig*& dyn_m_playerOrigin();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRCameraRig*& dyn_m_playerOrigin();
     // Get instance field reference: public GuardianBoundaryEnforcer m_enforcer
-    [[deprecated]] ::GlobalNamespace::GuardianBoundaryEnforcer*& dyn_m_enforcer();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::GuardianBoundaryEnforcer*& dyn_m_enforcer();
     // Get instance field reference: private System.Nullable`1<UnityEngine.Bounds> m_bounds
-    [[deprecated]] ::System::Nullable_1<::UnityEngine::Bounds>& dyn_m_bounds();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<::UnityEngine::Bounds>& dyn_m_bounds();
+    // public System.Void .ctor()
+    // Offset: 0x1DDE30
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static BoundsLockedObject* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::BoundsLockedObject::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<BoundsLockedObject*, creationType>()));
+    }
     // private System.Void Start()
     // Offset: 0x282F10
     void Start();
     // private System.Void RefreshDisplay()
     // Offset: 0x282910
     void RefreshDisplay();
-    // public System.Void .ctor()
-    // Offset: 0x1DDE30
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static BoundsLockedObject* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::BoundsLockedObject::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<BoundsLockedObject*, creationType>()));
-    }
   }; // BoundsLockedObject
   // WARNING Not writing size check since size may be invalid!
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::BoundsLockedObject::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::BoundsLockedObject::Start
 // Il2CppName: Start
 template<>
@@ -113,7 +111,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::BoundsLockedObject*), "RefreshDisplay", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::BoundsLockedObject::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -43,7 +43,7 @@ namespace UnityEngine::UIElements {
       return m_VisualTreeUpdaters;
     }
     // Get instance field reference: private UnityEngine.UIElements.IVisualTreeUpdater[] m_VisualTreeUpdaters
-    [[deprecated]] ::ArrayW<::UnityEngine::UIElements::IVisualTreeUpdater*>& dyn_m_VisualTreeUpdaters();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::UIElements::IVisualTreeUpdater*>& dyn_m_VisualTreeUpdaters();
     // public UnityEngine.UIElements.IVisualTreeUpdater get_Item(UnityEngine.UIElements.VisualTreeUpdatePhase phase)
     // Offset: 0x29E0B0
     ::UnityEngine::UIElements::IVisualTreeUpdater* get_Item(::UnityEngine::UIElements::VisualTreeUpdatePhase phase);

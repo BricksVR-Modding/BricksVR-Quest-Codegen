@@ -97,17 +97,17 @@ namespace System::Collections {
       return *reinterpret_cast<::System::ICloneable*>(this);
     }
     // Get instance field reference: private System.Object[] _array
-    [[deprecated]] ::ArrayW<::Il2CppObject*>& dyn__array();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Il2CppObject*>& dyn__array();
     // Get instance field reference: private System.Int32 _head
-    [[deprecated]] int& dyn__head();
+    [[deprecated("Use field access instead!")]] int& dyn__head();
     // Get instance field reference: private System.Int32 _tail
-    [[deprecated]] int& dyn__tail();
+    [[deprecated("Use field access instead!")]] int& dyn__tail();
     // Get instance field reference: private System.Int32 _size
-    [[deprecated]] int& dyn__size();
+    [[deprecated("Use field access instead!")]] int& dyn__size();
     // Get instance field reference: private System.Int32 _growFactor
-    [[deprecated]] int& dyn__growFactor();
+    [[deprecated("Use field access instead!")]] int& dyn__growFactor();
     // Get instance field reference: private System.Int32 _version
-    [[deprecated]] int& dyn__version();
+    [[deprecated("Use field access instead!")]] int& dyn__version();
     // public System.Int32 get_Count()
     // Offset: 0x217240
     int get_Count();

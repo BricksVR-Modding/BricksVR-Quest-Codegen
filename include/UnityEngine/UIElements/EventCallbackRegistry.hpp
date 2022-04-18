@@ -58,11 +58,11 @@ namespace UnityEngine::UIElements {
     // Set static field: static private readonly UnityEngine.UIElements.EventCallbackListPool s_ListPool
     static void _set_s_ListPool(::UnityEngine::UIElements::EventCallbackListPool* value);
     // Get instance field reference: private UnityEngine.UIElements.EventCallbackList m_Callbacks
-    [[deprecated]] ::UnityEngine::UIElements::EventCallbackList*& dyn_m_Callbacks();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::EventCallbackList*& dyn_m_Callbacks();
     // Get instance field reference: private UnityEngine.UIElements.EventCallbackList m_TemporaryCallbacks
-    [[deprecated]] ::UnityEngine::UIElements::EventCallbackList*& dyn_m_TemporaryCallbacks();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::EventCallbackList*& dyn_m_TemporaryCallbacks();
     // Get instance field reference: private System.Int32 m_IsInvoking
-    [[deprecated]] int& dyn_m_IsInvoking();
+    [[deprecated("Use field access instead!")]] int& dyn_m_IsInvoking();
     // static private System.Void .cctor()
     // Offset: 0x29FBD0
     static void _cctor();

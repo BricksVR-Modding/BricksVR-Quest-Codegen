@@ -55,11 +55,11 @@ namespace System::Diagnostics::Tracing {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: System.Int64 m_Ptr
-    [[deprecated]] int64_t& dyn_m_Ptr();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_m_Ptr();
     // Get instance field reference: System.Int32 m_Size
-    [[deprecated]] int& dyn_m_Size();
+    [[deprecated("Use field access instead!")]] int& dyn_m_Size();
     // Get instance field reference: System.Int32 m_Reserved
-    [[deprecated]] int& dyn_m_Reserved();
+    [[deprecated("Use field access instead!")]] int& dyn_m_Reserved();
     // public System.IntPtr get_DataPointer()
     // Offset: 0x2E5580
     ::System::IntPtr get_DataPointer();

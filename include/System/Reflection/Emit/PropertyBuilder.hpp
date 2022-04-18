@@ -15,7 +15,6 @@
 namespace System::Reflection {
   // Forward declaring type: PropertyAttributes
   struct PropertyAttributes;
-  // Skipping declaration: MemberInfo because it is already included!
   // Forward declaring type: ParameterInfo
   class ParameterInfo;
   // Forward declaring type: MethodInfo

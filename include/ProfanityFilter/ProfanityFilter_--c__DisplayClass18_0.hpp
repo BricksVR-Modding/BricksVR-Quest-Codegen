@@ -38,25 +38,27 @@ namespace ProfanityFilter {
       return postAllowListSentence;
     }
     // Get instance field reference: public System.String postAllowListSentence
-    [[deprecated]] ::StringW& dyn_postAllowListSentence();
-    // System.Boolean <AddMultiWordProfanities>b__0(System.String profanity)
-    // Offset: 0x6DC2B0
-    bool $AddMultiWordProfanities$b__0(::StringW profanity);
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_postAllowListSentence();
     // public System.Void .ctor()
     // Offset: 0x1DD400
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ProfanityFilter::$$c__DisplayClass18_0* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::ProfanityFilter::ProfanityFilter::$$c__DisplayClass18_0::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<ProfanityFilter::$$c__DisplayClass18_0*, creationType>()));
     }
+    // System.Boolean <AddMultiWordProfanities>b__0(System.String profanity)
+    // Offset: 0x6DC2B0
+    bool $AddMultiWordProfanities$b__0(::StringW profanity);
   }; // ProfanityFilter.ProfanityFilter/ProfanityFilter.<>c__DisplayClass18_0
   #pragma pack(pop)
   static check_size<sizeof(ProfanityFilter::$$c__DisplayClass18_0), 16 + sizeof(::StringW)> __ProfanityFilter_ProfanityFilter_$$c__DisplayClass18_0SizeCheck;
   static_assert(sizeof(ProfanityFilter::$$c__DisplayClass18_0) == 0x18);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: ProfanityFilter::ProfanityFilter::$$c__DisplayClass18_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: ProfanityFilter::ProfanityFilter::$$c__DisplayClass18_0::$AddMultiWordProfanities$b__0
 // Il2CppName: <AddMultiWordProfanities>b__0
 template<>
@@ -66,7 +68,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Profa
     return ::il2cpp_utils::FindMethod(classof(ProfanityFilter::ProfanityFilter::$$c__DisplayClass18_0*), "<AddMultiWordProfanities>b__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{profanity});
   }
 };
-// Writing MetadataGetter for method: ProfanityFilter::ProfanityFilter::$$c__DisplayClass18_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

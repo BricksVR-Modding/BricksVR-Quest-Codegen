@@ -46,7 +46,7 @@ namespace UnityEngine::UIElements {
       return targetTexture;
     }
     // Get instance field reference: UnityEngine.RenderTexture targetTexture
-    [[deprecated]] ::UnityEngine::RenderTexture*& dyn_targetTexture();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RenderTexture*& dyn_targetTexture();
   }; // UnityEngine.UIElements.RuntimePanel
   #pragma pack(pop)
   static check_size<sizeof(RuntimePanel), 136 + sizeof(::UnityEngine::RenderTexture*)> __UnityEngine_UIElements_RuntimePanelSizeCheck;

@@ -48,20 +48,8 @@ namespace OculusSampleFramework {
     // static public System.Collections.Generic.HashSet`1<OculusSampleFramework.Interactable> get_Interactables()
     // Offset: 0x28CDD0
     static ::System::Collections::Generic::HashSet_1<::OculusSampleFramework::Interactable*>* get_Interactables();
-    // static public System.Void RegisterInteractable(OculusSampleFramework.Interactable interactable)
-    // Offset: 0x28CBF0
-    static void RegisterInteractable(::OculusSampleFramework::Interactable* interactable);
-    // static public System.Void UnregisterInteractable(OculusSampleFramework.Interactable interactable)
-    // Offset: 0x28CCB0
-    static void UnregisterInteractable(::OculusSampleFramework::Interactable* interactable);
     // public System.Void .ctor()
     // Offset: 0x1DDE30
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static InteractableRegistry* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::OculusSampleFramework::InteractableRegistry::.ctor");
@@ -69,9 +57,13 @@ namespace OculusSampleFramework {
     }
     // static private System.Void .cctor()
     // Offset: 0x28CD70
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.cctor()
     static void _cctor();
+    // static public System.Void RegisterInteractable(OculusSampleFramework.Interactable interactable)
+    // Offset: 0x28CBF0
+    static void RegisterInteractable(::OculusSampleFramework::Interactable* interactable);
+    // static public System.Void UnregisterInteractable(OculusSampleFramework.Interactable interactable)
+    // Offset: 0x28CCB0
+    static void UnregisterInteractable(::OculusSampleFramework::Interactable* interactable);
   }; // OculusSampleFramework.InteractableRegistry
   #pragma pack(pop)
 }
@@ -82,6 +74,18 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::Collections::Generic::HashSet_1<::OculusSampleFramework::Interactable*>* (*)()>(&OculusSampleFramework::InteractableRegistry::get_Interactables)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(OculusSampleFramework::InteractableRegistry*), "get_Interactables", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
+// Writing MetadataGetter for method: OculusSampleFramework::InteractableRegistry::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
+// Writing MetadataGetter for method: OculusSampleFramework::InteractableRegistry::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&OculusSampleFramework::InteractableRegistry::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(OculusSampleFramework::InteractableRegistry*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
 // Writing MetadataGetter for method: OculusSampleFramework::InteractableRegistry::RegisterInteractable
@@ -100,17 +104,5 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(::
   static const MethodInfo* get() {
     static auto* interactable = &::il2cpp_utils::GetClassFromName("OculusSampleFramework", "Interactable")->byval_arg;
     return ::il2cpp_utils::FindMethod(classof(OculusSampleFramework::InteractableRegistry*), "UnregisterInteractable", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{interactable});
-  }
-};
-// Writing MetadataGetter for method: OculusSampleFramework::InteractableRegistry::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
-// Writing MetadataGetter for method: OculusSampleFramework::InteractableRegistry::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&OculusSampleFramework::InteractableRegistry::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(OculusSampleFramework::InteractableRegistry*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };

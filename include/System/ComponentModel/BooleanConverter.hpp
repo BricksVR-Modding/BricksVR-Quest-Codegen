@@ -36,7 +36,6 @@ namespace System::ComponentModel {
     // Offset: 0x1DD400
     // Implemented from: System.ComponentModel.TypeConverter
     // Base method: System.Void TypeConverter::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static BooleanConverter* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::ComponentModel::BooleanConverter::.ctor");

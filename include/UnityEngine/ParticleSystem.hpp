@@ -172,39 +172,39 @@ namespace UnityEngine {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: private UnityEngine.Vector3 m_Position
-      [[deprecated]] ::UnityEngine::Vector3& dyn_m_Position();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_m_Position();
       // Get instance field reference: private UnityEngine.Vector3 m_Velocity
-      [[deprecated]] ::UnityEngine::Vector3& dyn_m_Velocity();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_m_Velocity();
       // Get instance field reference: private UnityEngine.Vector3 m_AnimatedVelocity
-      [[deprecated]] ::UnityEngine::Vector3& dyn_m_AnimatedVelocity();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_m_AnimatedVelocity();
       // Get instance field reference: private UnityEngine.Vector3 m_InitialVelocity
-      [[deprecated]] ::UnityEngine::Vector3& dyn_m_InitialVelocity();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_m_InitialVelocity();
       // Get instance field reference: private UnityEngine.Vector3 m_AxisOfRotation
-      [[deprecated]] ::UnityEngine::Vector3& dyn_m_AxisOfRotation();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_m_AxisOfRotation();
       // Get instance field reference: private UnityEngine.Vector3 m_Rotation
-      [[deprecated]] ::UnityEngine::Vector3& dyn_m_Rotation();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_m_Rotation();
       // Get instance field reference: private UnityEngine.Vector3 m_AngularVelocity
-      [[deprecated]] ::UnityEngine::Vector3& dyn_m_AngularVelocity();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_m_AngularVelocity();
       // Get instance field reference: private UnityEngine.Vector3 m_StartSize
-      [[deprecated]] ::UnityEngine::Vector3& dyn_m_StartSize();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_m_StartSize();
       // Get instance field reference: private UnityEngine.Color32 m_StartColor
-      [[deprecated]] ::UnityEngine::Color32& dyn_m_StartColor();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::Color32& dyn_m_StartColor();
       // Get instance field reference: private System.UInt32 m_RandomSeed
-      [[deprecated]] uint& dyn_m_RandomSeed();
+      [[deprecated("Use field access instead!")]] uint& dyn_m_RandomSeed();
       // Get instance field reference: private System.UInt32 m_ParentRandomSeed
-      [[deprecated]] uint& dyn_m_ParentRandomSeed();
+      [[deprecated("Use field access instead!")]] uint& dyn_m_ParentRandomSeed();
       // Get instance field reference: private System.Single m_Lifetime
-      [[deprecated]] float& dyn_m_Lifetime();
+      [[deprecated("Use field access instead!")]] float& dyn_m_Lifetime();
       // Get instance field reference: private System.Single m_StartLifetime
-      [[deprecated]] float& dyn_m_StartLifetime();
+      [[deprecated("Use field access instead!")]] float& dyn_m_StartLifetime();
       // Get instance field reference: private System.Int32 m_MeshIndex
-      [[deprecated]] int& dyn_m_MeshIndex();
+      [[deprecated("Use field access instead!")]] int& dyn_m_MeshIndex();
       // Get instance field reference: private System.Single m_EmitAccumulator0
-      [[deprecated]] float& dyn_m_EmitAccumulator0();
+      [[deprecated("Use field access instead!")]] float& dyn_m_EmitAccumulator0();
       // Get instance field reference: private System.Single m_EmitAccumulator1
-      [[deprecated]] float& dyn_m_EmitAccumulator1();
+      [[deprecated("Use field access instead!")]] float& dyn_m_EmitAccumulator1();
       // Get instance field reference: private System.UInt32 m_Flags
-      [[deprecated]] uint& dyn_m_Flags();
+      [[deprecated("Use field access instead!")]] uint& dyn_m_Flags();
       // public System.Void set_lifetime(System.Single value)
       // Offset: 0x66DB50
       void set_lifetime(float value);

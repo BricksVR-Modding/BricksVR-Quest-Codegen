@@ -76,13 +76,13 @@ namespace Steamworks::Data {
     // Set static field: static public System.Int32 _datasize
     static void _set__datasize(int value);
     // Get instance field reference: Steamworks.Result Result
-    [[deprecated]] ::Steamworks::Result& dyn_Result();
+    [[deprecated("Use field access instead!")]] ::Steamworks::Result& dyn_Result();
     // Get instance field reference: System.UInt64 SteamID
-    [[deprecated]] uint64_t& dyn_SteamID();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_SteamID();
     // Get instance field reference: System.Int32 UmEligiblePromoItemDefs
-    [[deprecated]] int& dyn_UmEligiblePromoItemDefs();
+    [[deprecated("Use field access instead!")]] int& dyn_UmEligiblePromoItemDefs();
     // Get instance field reference: System.Boolean CachedData
-    [[deprecated]] bool& dyn_CachedData();
+    [[deprecated("Use field access instead!")]] bool& dyn_CachedData();
     // public Steamworks.CallbackType get_CallbackType()
     // Offset: 0x466600
     ::Steamworks::CallbackType get_CallbackType();

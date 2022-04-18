@@ -51,9 +51,9 @@ namespace UnityEngine::Playables {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: System.IntPtr m_Handle
-    [[deprecated]] ::System::IntPtr& dyn_m_Handle();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_m_Handle();
     // Get instance field reference: System.UInt32 m_Version
-    [[deprecated]] uint& dyn_m_Version();
+    [[deprecated("Use field access instead!")]] uint& dyn_m_Version();
   }; // UnityEngine.Playables.PlayableGraph
   #pragma pack(pop)
   static check_size<sizeof(PlayableGraph), 8 + sizeof(uint)> __UnityEngine_Playables_PlayableGraphSizeCheck;

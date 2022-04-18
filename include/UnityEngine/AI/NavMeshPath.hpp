@@ -56,12 +56,19 @@ namespace UnityEngine::AI {
     static_assert(sizeof(::ArrayW<::UnityEngine::Vector3>) == 0x8);
     public:
     // Get instance field reference: System.IntPtr m_Ptr
-    [[deprecated]] ::System::IntPtr& dyn_m_Ptr();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_m_Ptr();
     // Get instance field reference: UnityEngine.Vector3[] m_Corners
-    [[deprecated]] ::ArrayW<::UnityEngine::Vector3>& dyn_m_Corners();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Vector3>& dyn_m_Corners();
     // public UnityEngine.AI.NavMeshPathStatus get_status()
     // Offset: 0x670890
     ::UnityEngine::AI::NavMeshPathStatus get_status();
+    // public System.Void .ctor()
+    // Offset: 0x670850
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static NavMeshPath* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::AI::NavMeshPath::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<NavMeshPath*, creationType>()));
+    }
     // static private System.IntPtr InitializeNavMeshPath()
     // Offset: 0x670820
     static ::System::IntPtr InitializeNavMeshPath();
@@ -74,15 +81,6 @@ namespace UnityEngine::AI {
     // public System.Void ClearCorners()
     // Offset: 0x6706E0
     void ClearCorners();
-    // public System.Void .ctor()
-    // Offset: 0x670850
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static NavMeshPath* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::AI::NavMeshPath::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<NavMeshPath*, creationType>()));
-    }
     // protected override System.Void Finalize()
     // Offset: 0x670770
     // Implemented from: System.Object
@@ -102,6 +100,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::AI::NavMeshPath*), "get_status", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::AI::NavMeshPath::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::AI::NavMeshPath::InitializeNavMeshPath
 // Il2CppName: InitializeNavMeshPath
 template<>
@@ -135,10 +137,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::AI::NavMeshPath*), "ClearCorners", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::AI::NavMeshPath::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::AI::NavMeshPath::Finalize
 // Il2CppName: Finalize
 template<>

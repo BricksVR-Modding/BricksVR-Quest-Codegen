@@ -69,7 +69,7 @@ namespace Microsoft::Win32 {
     // Set static field: static public Microsoft.Win32.UnsafeNativeMethods/Microsoft.Win32.ManifestEtw/Microsoft.Win32.TRACE_QUERY_INFO_CLASS MaxTraceSetInfoClass
     static void _set_MaxTraceSetInfoClass(::Microsoft::Win32::UnsafeNativeMethods_ManifestEtw::TRACE_QUERY_INFO_CLASS value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // Microsoft.Win32.UnsafeNativeMethods/Microsoft.Win32.ManifestEtw/Microsoft.Win32.TRACE_QUERY_INFO_CLASS
   #pragma pack(pop)
   static check_size<sizeof(UnsafeNativeMethods_ManifestEtw::TRACE_QUERY_INFO_CLASS), 0 + sizeof(int)> __Microsoft_Win32_UnsafeNativeMethods_ManifestEtw_TRACE_QUERY_INFO_CLASSSizeCheck;

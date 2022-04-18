@@ -45,7 +45,7 @@ namespace Steamworks {
       return Id;
     }
     // Get instance field reference: public Steamworks.SteamId Id
-    [[deprecated]] ::Steamworks::SteamId& dyn_Id();
+    [[deprecated("Use field access instead!")]] ::Steamworks::SteamId& dyn_Id();
     // public System.String get_Name()
     // Offset: 0x5BD430
     ::StringW get_Name();

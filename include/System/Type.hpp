@@ -155,7 +155,7 @@ namespace System {
     // Set static field: static System.Reflection.BindingFlags DeclaredOnlyLookup
     static void _set_DeclaredOnlyLookup(::System::Reflection::BindingFlags value);
     // Get instance field reference: System.RuntimeTypeHandle _impl
-    [[deprecated]] ::System::RuntimeTypeHandle& dyn__impl();
+    [[deprecated("Use field access instead!")]] ::System::RuntimeTypeHandle& dyn__impl();
     // public System.Reflection.MethodBase get_DeclaringMethod()
     // Offset: 0x1ED920
     ::System::Reflection::MethodBase* get_DeclaringMethod();

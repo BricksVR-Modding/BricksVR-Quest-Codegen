@@ -58,7 +58,7 @@ namespace UnityEngine::UIElements {
     // Set static field: static public UnityEngine.UIElements.PropagationPaths/UnityEngine.UIElements.Type BubbleUp
     static void _set_BubbleUp(::UnityEngine::UIElements::PropagationPaths::Type value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // UnityEngine.UIElements.PropagationPaths/UnityEngine.UIElements.Type
   #pragma pack(pop)
   static check_size<sizeof(PropagationPaths::Type), 0 + sizeof(int)> __UnityEngine_UIElements_PropagationPaths_TypeSizeCheck;

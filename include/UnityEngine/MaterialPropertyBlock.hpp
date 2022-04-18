@@ -58,7 +58,14 @@ namespace UnityEngine {
       return m_Ptr;
     }
     // Get instance field reference: System.IntPtr m_Ptr
-    [[deprecated]] ::System::IntPtr& dyn_m_Ptr();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_m_Ptr();
+    // public System.Void .ctor()
+    // Offset: 0x992B40
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static MaterialPropertyBlock* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::MaterialPropertyBlock::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<MaterialPropertyBlock*, creationType>()));
+    }
     // private System.Void SetFloatImpl(System.Int32 name, System.Single value)
     // Offset: 0x992830
     void SetFloatImpl(int name, float value);
@@ -113,15 +120,6 @@ namespace UnityEngine {
     // private System.Void SetColorImpl_Injected(System.Int32 name, ref UnityEngine.Color value)
     // Offset: 0x992440
     void SetColorImpl_Injected(int name, ByRef<::UnityEngine::Color> value);
-    // public System.Void .ctor()
-    // Offset: 0x992B40
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static MaterialPropertyBlock* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::MaterialPropertyBlock::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<MaterialPropertyBlock*, creationType>()));
-    }
     // protected override System.Void Finalize()
     // Offset: 0x992350
     // Implemented from: System.Object
@@ -133,6 +131,10 @@ namespace UnityEngine {
   static_assert(sizeof(MaterialPropertyBlock) == 0x18);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: UnityEngine::MaterialPropertyBlock::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::MaterialPropertyBlock::SetFloatImpl
 // Il2CppName: SetFloatImpl
 template<>
@@ -312,10 +314,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::MaterialPropertyBlock*), "SetColorImpl_Injected", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{name, value});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::MaterialPropertyBlock::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::MaterialPropertyBlock::Finalize
 // Il2CppName: Finalize
 template<>

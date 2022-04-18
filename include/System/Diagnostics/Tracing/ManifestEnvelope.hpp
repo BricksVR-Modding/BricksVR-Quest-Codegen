@@ -59,7 +59,7 @@ namespace System::Diagnostics::Tracing {
       // Set static field: static public System.Diagnostics.Tracing.ManifestEnvelope/System.Diagnostics.Tracing.ManifestFormats SimpleXmlFormat
       static void _set_SimpleXmlFormat(::System::Diagnostics::Tracing::ManifestEnvelope::ManifestFormats value);
       // Get instance field reference: public System.Byte value__
-      [[deprecated]] uint8_t& dyn_value__();
+      [[deprecated("Use field access instead!")]] uint8_t& dyn_value__();
     }; // System.Diagnostics.Tracing.ManifestEnvelope/System.Diagnostics.Tracing.ManifestFormats
     #pragma pack(pop)
     static check_size<sizeof(ManifestEnvelope::ManifestFormats), 0 + sizeof(uint8_t)> __System_Diagnostics_Tracing_ManifestEnvelope_ManifestFormatsSizeCheck;
@@ -109,17 +109,17 @@ namespace System::Diagnostics::Tracing {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Diagnostics.Tracing.ManifestEnvelope/System.Diagnostics.Tracing.ManifestFormats Format
-    [[deprecated]] ::System::Diagnostics::Tracing::ManifestEnvelope::ManifestFormats& dyn_Format();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::ManifestEnvelope::ManifestFormats& dyn_Format();
     // Get instance field reference: public System.Byte MajorVersion
-    [[deprecated]] uint8_t& dyn_MajorVersion();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn_MajorVersion();
     // Get instance field reference: public System.Byte MinorVersion
-    [[deprecated]] uint8_t& dyn_MinorVersion();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn_MinorVersion();
     // Get instance field reference: public System.Byte Magic
-    [[deprecated]] uint8_t& dyn_Magic();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn_Magic();
     // Get instance field reference: public System.UInt16 TotalChunks
-    [[deprecated]] uint16_t& dyn_TotalChunks();
+    [[deprecated("Use field access instead!")]] uint16_t& dyn_TotalChunks();
     // Get instance field reference: public System.UInt16 ChunkNumber
-    [[deprecated]] uint16_t& dyn_ChunkNumber();
+    [[deprecated("Use field access instead!")]] uint16_t& dyn_ChunkNumber();
   }; // System.Diagnostics.Tracing.ManifestEnvelope
   #pragma pack(pop)
   static check_size<sizeof(ManifestEnvelope), 6 + sizeof(uint16_t)> __System_Diagnostics_Tracing_ManifestEnvelopeSizeCheck;

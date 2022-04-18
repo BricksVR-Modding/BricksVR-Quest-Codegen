@@ -92,7 +92,7 @@ namespace ProfanityFilter {
       return AllowList;
     }
     // Get instance field reference: private readonly ProfanityFilter.Interfaces.IAllowList <AllowList>k__BackingField
-    [[deprecated]] ::ProfanityFilter::Interfaces::IAllowList*& dyn_$AllowList$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::ProfanityFilter::Interfaces::IAllowList*& dyn_$AllowList$k__BackingField();
     // public ProfanityFilter.Interfaces.IAllowList get_AllowList()
     // Offset: 0x1E1950
     ::ProfanityFilter::Interfaces::IAllowList* get_AllowList();
@@ -142,7 +142,6 @@ namespace ProfanityFilter {
     // Offset: 0x6C7A10
     // Implemented from: ProfanityFilter.ProfanityBase
     // Base method: System.Void ProfanityBase::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ProfanityFilter* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::ProfanityFilter::ProfanityFilter::.ctor");

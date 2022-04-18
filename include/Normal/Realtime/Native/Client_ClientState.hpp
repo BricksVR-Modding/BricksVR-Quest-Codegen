@@ -75,7 +75,7 @@ namespace Normal::Realtime::Native {
     // Set static field: static public Normal.Realtime.Native.Client/Normal.Realtime.Native.ClientState Closed
     static void _set_Closed(::Normal::Realtime::Native::Client::ClientState value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // Normal.Realtime.Native.Client/Normal.Realtime.Native.ClientState
   #pragma pack(pop)
   static check_size<sizeof(Client::ClientState), 0 + sizeof(int)> __Normal_Realtime_Native_Client_ClientStateSizeCheck;

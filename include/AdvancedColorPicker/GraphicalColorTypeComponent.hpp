@@ -64,15 +64,15 @@ namespace AdvancedColorPicker {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: private AdvancedColorPicker.ColorType valueType1
-    [[deprecated]] ::AdvancedColorPicker::ColorType& dyn_valueType1();
+    [[deprecated("Use field access instead!")]] ::AdvancedColorPicker::ColorType& dyn_valueType1();
     // Get instance field reference: private AdvancedColorPicker.ColorType valueType2
-    [[deprecated]] ::AdvancedColorPicker::ColorType& dyn_valueType2();
+    [[deprecated("Use field access instead!")]] ::AdvancedColorPicker::ColorType& dyn_valueType2();
     // Get instance field reference: private AdvancedColorPicker.ColorType valueType3
-    [[deprecated]] ::AdvancedColorPicker::ColorType& dyn_valueType3();
+    [[deprecated("Use field access instead!")]] ::AdvancedColorPicker::ColorType& dyn_valueType3();
     // Get instance field reference: private System.Single fixedValue2
-    [[deprecated]] float& dyn_fixedValue2();
+    [[deprecated("Use field access instead!")]] float& dyn_fixedValue2();
     // Get instance field reference: private System.Single fixedValue3
-    [[deprecated]] float& dyn_fixedValue3();
+    [[deprecated("Use field access instead!")]] float& dyn_fixedValue3();
     // public AdvancedColorPicker.ColorType get_RangeType()
     // Offset: 0x5B6A30
     ::AdvancedColorPicker::ColorType get_RangeType();
@@ -128,14 +128,6 @@ namespace AdvancedColorPicker {
     // Offset: 0x5B5F40
     // Implemented from: AdvancedColorPicker.GraphicalColorComponent
     // Base method: System.Void GraphicalColorComponent::.ctor()
-    // Base method: System.Void MaskableGraphic::.ctor()
-    // Base method: System.Void Graphic::.ctor()
-    // Base method: System.Void UIBehaviour::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static GraphicalColorTypeComponent* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::AdvancedColorPicker::GraphicalColorTypeComponent::.ctor");

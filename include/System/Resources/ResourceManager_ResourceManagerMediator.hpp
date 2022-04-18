@@ -63,7 +63,7 @@ namespace System::Resources {
       return rm;
     }
     // Get instance field reference: private System.Resources.ResourceManager _rm
-    [[deprecated]] ::System::Resources::ResourceManager*& dyn__rm();
+    [[deprecated("Use field access instead!")]] ::System::Resources::ResourceManager*& dyn__rm();
     // System.String get_ModuleDir()
     // Offset: 0x4A51C0
     ::StringW get_ModuleDir();

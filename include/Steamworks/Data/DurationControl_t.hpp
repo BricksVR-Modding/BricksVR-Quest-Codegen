@@ -108,21 +108,21 @@ namespace Steamworks::Data {
     // Set static field: static public System.Int32 _datasize
     static void _set__datasize(int value);
     // Get instance field reference: Steamworks.Result Result
-    [[deprecated]] ::Steamworks::Result& dyn_Result();
+    [[deprecated("Use field access instead!")]] ::Steamworks::Result& dyn_Result();
     // Get instance field reference: Steamworks.AppId Appid
-    [[deprecated]] ::Steamworks::AppId& dyn_Appid();
+    [[deprecated("Use field access instead!")]] ::Steamworks::AppId& dyn_Appid();
     // Get instance field reference: System.Boolean Applicable
-    [[deprecated]] bool& dyn_Applicable();
+    [[deprecated("Use field access instead!")]] bool& dyn_Applicable();
     // Get instance field reference: System.Int32 CsecsLast5h
-    [[deprecated]] int& dyn_CsecsLast5h();
+    [[deprecated("Use field access instead!")]] int& dyn_CsecsLast5h();
     // Get instance field reference: Steamworks.DurationControlProgress Progress
-    [[deprecated]] ::Steamworks::DurationControlProgress& dyn_Progress();
+    [[deprecated("Use field access instead!")]] ::Steamworks::DurationControlProgress& dyn_Progress();
     // Get instance field reference: Steamworks.DurationControlNotification Otification
-    [[deprecated]] ::Steamworks::DurationControlNotification& dyn_Otification();
+    [[deprecated("Use field access instead!")]] ::Steamworks::DurationControlNotification& dyn_Otification();
     // Get instance field reference: System.Int32 CsecsToday
-    [[deprecated]] int& dyn_CsecsToday();
+    [[deprecated("Use field access instead!")]] int& dyn_CsecsToday();
     // Get instance field reference: System.Int32 CsecsRemaining
-    [[deprecated]] int& dyn_CsecsRemaining();
+    [[deprecated("Use field access instead!")]] int& dyn_CsecsRemaining();
     // public Steamworks.CallbackType get_CallbackType()
     // Offset: 0x45F3B0
     ::Steamworks::CallbackType get_CallbackType();

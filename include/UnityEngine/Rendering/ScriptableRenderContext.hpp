@@ -66,7 +66,7 @@ namespace UnityEngine::Rendering {
       return m_Ptr;
     }
     // Get instance field reference: private System.IntPtr m_Ptr
-    [[deprecated]] ::System::IntPtr& dyn_m_Ptr();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_m_Ptr();
     // System.Void .ctor(System.IntPtr ptr)
     // Offset: 0x2BACA0
     // ABORTED: conflicts with another method.  ScriptableRenderContext(::System::IntPtr ptr);

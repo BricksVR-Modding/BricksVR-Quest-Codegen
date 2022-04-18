@@ -43,7 +43,7 @@ namespace UnityEngine {
       return m_Ptr;
     }
     // Get instance field reference: System.IntPtr m_Ptr
-    [[deprecated]] ::System::IntPtr& dyn_m_Ptr();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_m_Ptr();
     // public System.Boolean get_isDone()
     // Offset: 0x972970
     bool get_isDone();

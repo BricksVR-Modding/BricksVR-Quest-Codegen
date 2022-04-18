@@ -79,13 +79,13 @@ namespace OculusSampleFramework {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.MeshRenderer _sphereMeshRenderer
-    [[deprecated]] ::UnityEngine::MeshRenderer*& dyn__sphereMeshRenderer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::MeshRenderer*& dyn__sphereMeshRenderer();
     // Get instance field reference: private OculusSampleFramework.InteractableTool <InteractableTool>k__BackingField
-    [[deprecated]] ::OculusSampleFramework::InteractableTool*& dyn_$InteractableTool$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::OculusSampleFramework::InteractableTool*& dyn_$InteractableTool$k__BackingField();
     // Get instance field reference: private System.Boolean <ToolActivateState>k__BackingField
-    [[deprecated]] bool& dyn_$ToolActivateState$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$ToolActivateState$k__BackingField();
     // Get instance field reference: private System.Single <SphereRadius>k__BackingField
-    [[deprecated]] float& dyn_$SphereRadius$k__BackingField();
+    [[deprecated("Use field access instead!")]] float& dyn_$SphereRadius$k__BackingField();
     // public OculusSampleFramework.InteractableTool get_InteractableTool()
     // Offset: 0x1E1950
     ::OculusSampleFramework::InteractableTool* get_InteractableTool();
@@ -110,25 +110,19 @@ namespace OculusSampleFramework {
     // private System.Void set_SphereRadius(System.Single value)
     // Offset: 0x246000
     void set_SphereRadius(float value);
+    // public System.Void .ctor()
+    // Offset: 0x1DDE30
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static FingerTipPokeToolView* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::OculusSampleFramework::FingerTipPokeToolView::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<FingerTipPokeToolView*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0x289510
     void Awake();
     // public System.Void SetFocusedInteractable(OculusSampleFramework.Interactable interactable)
     // Offset: 0x1DDF00
     void SetFocusedInteractable(::OculusSampleFramework::Interactable* interactable);
-    // public System.Void .ctor()
-    // Offset: 0x1DDE30
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static FingerTipPokeToolView* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::OculusSampleFramework::FingerTipPokeToolView::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<FingerTipPokeToolView*, creationType>()));
-    }
   }; // OculusSampleFramework.FingerTipPokeToolView
   #pragma pack(pop)
   static check_size<sizeof(FingerTipPokeToolView), 44 + sizeof(float)> __OculusSampleFramework_FingerTipPokeToolViewSizeCheck;
@@ -203,6 +197,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Oculu
     return ::il2cpp_utils::FindMethod(classof(OculusSampleFramework::FingerTipPokeToolView*), "set_SphereRadius", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: OculusSampleFramework::FingerTipPokeToolView::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: OculusSampleFramework::FingerTipPokeToolView::Awake
 // Il2CppName: Awake
 template<>
@@ -220,7 +218,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Oculu
     return ::il2cpp_utils::FindMethod(classof(OculusSampleFramework::FingerTipPokeToolView*), "SetFocusedInteractable", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{interactable});
   }
 };
-// Writing MetadataGetter for method: OculusSampleFramework::FingerTipPokeToolView::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

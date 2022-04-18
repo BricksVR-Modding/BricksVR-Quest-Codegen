@@ -19,7 +19,6 @@ namespace System::Reflection {
   struct BindingFlags;
   // Forward declaring type: Binder
   class Binder;
-  // Skipping declaration: FieldInfo because it is already included!
 }
 // Forward declaring namespace: System::Globalization
 namespace System::Globalization {

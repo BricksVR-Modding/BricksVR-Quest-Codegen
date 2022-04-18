@@ -216,53 +216,60 @@ namespace GlobalNamespace {
     // Set static field: static private System.String configFileName
     static void _set_configFileName(::StringW value);
     // Get instance field reference: public System.Boolean enableMixedReality
-    [[deprecated]] bool& dyn_enableMixedReality();
+    [[deprecated("Use field access instead!")]] bool& dyn_enableMixedReality();
     // Get instance field reference: public UnityEngine.LayerMask extraHiddenLayers
-    [[deprecated]] ::UnityEngine::LayerMask& dyn_extraHiddenLayers();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::LayerMask& dyn_extraHiddenLayers();
     // Get instance field reference: public OVRManager/CompositionMethod compositionMethod
-    [[deprecated]] ::GlobalNamespace::OVRManager_CompositionMethod& dyn_compositionMethod();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRManager_CompositionMethod& dyn_compositionMethod();
     // Get instance field reference: public UnityEngine.Color externalCompositionBackdropColorRift
-    [[deprecated]] ::UnityEngine::Color& dyn_externalCompositionBackdropColorRift();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_externalCompositionBackdropColorRift();
     // Get instance field reference: public UnityEngine.Color externalCompositionBackdropColorQuest
-    [[deprecated]] ::UnityEngine::Color& dyn_externalCompositionBackdropColorQuest();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_externalCompositionBackdropColorQuest();
     // Get instance field reference: public OVRManager/CameraDevice capturingCameraDevice
-    [[deprecated]] ::GlobalNamespace::OVRManager_CameraDevice& dyn_capturingCameraDevice();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRManager_CameraDevice& dyn_capturingCameraDevice();
     // Get instance field reference: public System.Boolean flipCameraFrameHorizontally
-    [[deprecated]] bool& dyn_flipCameraFrameHorizontally();
+    [[deprecated("Use field access instead!")]] bool& dyn_flipCameraFrameHorizontally();
     // Get instance field reference: public System.Boolean flipCameraFrameVertically
-    [[deprecated]] bool& dyn_flipCameraFrameVertically();
+    [[deprecated("Use field access instead!")]] bool& dyn_flipCameraFrameVertically();
     // Get instance field reference: public System.Single handPoseStateLatency
-    [[deprecated]] float& dyn_handPoseStateLatency();
+    [[deprecated("Use field access instead!")]] float& dyn_handPoseStateLatency();
     // Get instance field reference: public System.Single sandwichCompositionRenderLatency
-    [[deprecated]] float& dyn_sandwichCompositionRenderLatency();
+    [[deprecated("Use field access instead!")]] float& dyn_sandwichCompositionRenderLatency();
     // Get instance field reference: public System.Int32 sandwichCompositionBufferedFrames
-    [[deprecated]] int& dyn_sandwichCompositionBufferedFrames();
+    [[deprecated("Use field access instead!")]] int& dyn_sandwichCompositionBufferedFrames();
     // Get instance field reference: public UnityEngine.Color chromaKeyColor
-    [[deprecated]] ::UnityEngine::Color& dyn_chromaKeyColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_chromaKeyColor();
     // Get instance field reference: public System.Single chromaKeySimilarity
-    [[deprecated]] float& dyn_chromaKeySimilarity();
+    [[deprecated("Use field access instead!")]] float& dyn_chromaKeySimilarity();
     // Get instance field reference: public System.Single chromaKeySmoothRange
-    [[deprecated]] float& dyn_chromaKeySmoothRange();
+    [[deprecated("Use field access instead!")]] float& dyn_chromaKeySmoothRange();
     // Get instance field reference: public System.Single chromaKeySpillRange
-    [[deprecated]] float& dyn_chromaKeySpillRange();
+    [[deprecated("Use field access instead!")]] float& dyn_chromaKeySpillRange();
     // Get instance field reference: public System.Boolean useDynamicLighting
-    [[deprecated]] bool& dyn_useDynamicLighting();
+    [[deprecated("Use field access instead!")]] bool& dyn_useDynamicLighting();
     // Get instance field reference: public OVRManager/DepthQuality depthQuality
-    [[deprecated]] ::GlobalNamespace::OVRManager_DepthQuality& dyn_depthQuality();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRManager_DepthQuality& dyn_depthQuality();
     // Get instance field reference: public System.Single dynamicLightingSmoothFactor
-    [[deprecated]] float& dyn_dynamicLightingSmoothFactor();
+    [[deprecated("Use field access instead!")]] float& dyn_dynamicLightingSmoothFactor();
     // Get instance field reference: public System.Single dynamicLightingDepthVariationClampingValue
-    [[deprecated]] float& dyn_dynamicLightingDepthVariationClampingValue();
+    [[deprecated("Use field access instead!")]] float& dyn_dynamicLightingDepthVariationClampingValue();
     // Get instance field reference: public OVRManager/VirtualGreenScreenType virtualGreenScreenType
-    [[deprecated]] ::GlobalNamespace::OVRManager_VirtualGreenScreenType& dyn_virtualGreenScreenType();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRManager_VirtualGreenScreenType& dyn_virtualGreenScreenType();
     // Get instance field reference: public System.Single virtualGreenScreenTopY
-    [[deprecated]] float& dyn_virtualGreenScreenTopY();
+    [[deprecated("Use field access instead!")]] float& dyn_virtualGreenScreenTopY();
     // Get instance field reference: public System.Single virtualGreenScreenBottomY
-    [[deprecated]] float& dyn_virtualGreenScreenBottomY();
+    [[deprecated("Use field access instead!")]] float& dyn_virtualGreenScreenBottomY();
     // Get instance field reference: public System.Boolean virtualGreenScreenApplyDepthCulling
-    [[deprecated]] bool& dyn_virtualGreenScreenApplyDepthCulling();
+    [[deprecated("Use field access instead!")]] bool& dyn_virtualGreenScreenApplyDepthCulling();
     // Get instance field reference: public System.Single virtualGreenScreenDepthTolerance
-    [[deprecated]] float& dyn_virtualGreenScreenDepthTolerance();
+    [[deprecated("Use field access instead!")]] float& dyn_virtualGreenScreenDepthTolerance();
+    // public System.Void .ctor()
+    // Offset: 0x36DA40
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static OVRMixedRealityCaptureSettings* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRMixedRealityCaptureSettings::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<OVRMixedRealityCaptureSettings*, creationType>()));
+    }
     // public System.Void ReadFrom(OVRManager manager)
     // Offset: 0x36D7F0
     void ReadFrom(::GlobalNamespace::OVRManager* manager);
@@ -275,23 +282,16 @@ namespace GlobalNamespace {
     // public System.Void CombineWithConfigurationFile()
     // Offset: 0x36D650
     void CombineWithConfigurationFile();
-    // public System.Void .ctor()
-    // Offset: 0x36DA40
-    // Implemented from: UnityEngine.ScriptableObject
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static OVRMixedRealityCaptureSettings* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRMixedRealityCaptureSettings::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<OVRMixedRealityCaptureSettings*, creationType>()));
-    }
   }; // OVRMixedRealityCaptureSettings
   #pragma pack(pop)
   static check_size<sizeof(OVRMixedRealityCaptureSettings), 148 + sizeof(float)> __GlobalNamespace_OVRMixedRealityCaptureSettingsSizeCheck;
   static_assert(sizeof(OVRMixedRealityCaptureSettings) == 0x98);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::OVRMixedRealityCaptureSettings::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::OVRMixedRealityCaptureSettings::ReadFrom
 // Il2CppName: ReadFrom
 template<>
@@ -326,7 +326,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRMixedRealityCaptureSettings*), "CombineWithConfigurationFile", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::OVRMixedRealityCaptureSettings::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -70,13 +70,20 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private BrickAttachDetector _detector
-    [[deprecated]] ::GlobalNamespace::BrickAttachDetector*& dyn__detector();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::BrickAttachDetector*& dyn__detector();
     // Get instance field reference: public UnityEngine.GameObject currentGhostPrefab
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_currentGhostPrefab();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_currentGhostPrefab();
     // Get instance field reference: private System.String _prefabName
-    [[deprecated]] ::StringW& dyn__prefabName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__prefabName();
     // Get instance field reference: private System.Boolean _isGhostVisible
-    [[deprecated]] bool& dyn__isGhostVisible();
+    [[deprecated("Use field access instead!")]] bool& dyn__isGhostVisible();
+    // public System.Void .ctor()
+    // Offset: 0x1DDE30
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ShowSnappableBrickPositions* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::ShowSnappableBrickPositions::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ShowSnappableBrickPositions*, creationType>()));
+    }
     // private System.Void Start()
     // Offset: 0x6CE380
     void Start();
@@ -92,25 +99,16 @@ namespace GlobalNamespace {
     // private System.Void Update()
     // Offset: 0x6CE400
     void Update();
-    // public System.Void .ctor()
-    // Offset: 0x1DDE30
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ShowSnappableBrickPositions* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::ShowSnappableBrickPositions::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ShowSnappableBrickPositions*, creationType>()));
-    }
   }; // ShowSnappableBrickPositions
   #pragma pack(pop)
   static check_size<sizeof(ShowSnappableBrickPositions), 48 + sizeof(bool)> __GlobalNamespace_ShowSnappableBrickPositionsSizeCheck;
   static_assert(sizeof(ShowSnappableBrickPositions) == 0x31);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::ShowSnappableBrickPositions::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::ShowSnappableBrickPositions::Start
 // Il2CppName: Start
 template<>
@@ -151,7 +149,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::ShowSnappableBrickPositions*), "Update", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::ShowSnappableBrickPositions::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

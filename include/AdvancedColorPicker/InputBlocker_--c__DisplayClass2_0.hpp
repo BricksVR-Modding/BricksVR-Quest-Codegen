@@ -51,27 +51,29 @@ namespace AdvancedColorPicker {
     static_assert(sizeof(::UnityEngine::Events::UnityAction*) == 0x8);
     public:
     // Get instance field reference: public UnityEngine.GameObject go
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_go();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_go();
     // Get instance field reference: public UnityEngine.Events.UnityAction onClosed
-    [[deprecated]] ::UnityEngine::Events::UnityAction*& dyn_onClosed();
-    // System.Void <CreateBlocker>b__0()
-    // Offset: 0x5BD0E0
-    void $CreateBlocker$b__0();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Events::UnityAction*& dyn_onClosed();
     // public System.Void .ctor()
     // Offset: 0x1DD400
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static InputBlocker::$$c__DisplayClass2_0* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::AdvancedColorPicker::InputBlocker::$$c__DisplayClass2_0::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<InputBlocker::$$c__DisplayClass2_0*, creationType>()));
     }
+    // System.Void <CreateBlocker>b__0()
+    // Offset: 0x5BD0E0
+    void $CreateBlocker$b__0();
   }; // AdvancedColorPicker.InputBlocker/AdvancedColorPicker.<>c__DisplayClass2_0
   #pragma pack(pop)
   static check_size<sizeof(InputBlocker::$$c__DisplayClass2_0), 24 + sizeof(::UnityEngine::Events::UnityAction*)> __AdvancedColorPicker_InputBlocker_$$c__DisplayClass2_0SizeCheck;
   static_assert(sizeof(InputBlocker::$$c__DisplayClass2_0) == 0x20);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: AdvancedColorPicker::InputBlocker::$$c__DisplayClass2_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: AdvancedColorPicker::InputBlocker::$$c__DisplayClass2_0::$CreateBlocker$b__0
 // Il2CppName: <CreateBlocker>b__0
 template<>
@@ -80,7 +82,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Advan
     return ::il2cpp_utils::FindMethod(classof(AdvancedColorPicker::InputBlocker::$$c__DisplayClass2_0*), "<CreateBlocker>b__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: AdvancedColorPicker::InputBlocker::$$c__DisplayClass2_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

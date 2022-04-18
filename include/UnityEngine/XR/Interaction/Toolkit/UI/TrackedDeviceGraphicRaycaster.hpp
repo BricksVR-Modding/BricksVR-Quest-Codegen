@@ -113,13 +113,13 @@ namespace UnityEngine::XR::Interaction::Toolkit::UI {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: private UnityEngine.UI.Graphic <graphic>k__BackingField
-      [[deprecated]] ::UnityEngine::UI::Graphic*& dyn_$graphic$k__BackingField();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Graphic*& dyn_$graphic$k__BackingField();
       // Get instance field reference: private UnityEngine.Vector3 <worldHitPosition>k__BackingField
-      [[deprecated]] ::UnityEngine::Vector3& dyn_$worldHitPosition$k__BackingField();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_$worldHitPosition$k__BackingField();
       // Get instance field reference: private UnityEngine.Vector2 <screenPosition>k__BackingField
-      [[deprecated]] ::UnityEngine::Vector2& dyn_$screenPosition$k__BackingField();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn_$screenPosition$k__BackingField();
       // Get instance field reference: private System.Single <distance>k__BackingField
-      [[deprecated]] float& dyn_$distance$k__BackingField();
+      [[deprecated("Use field access instead!")]] float& dyn_$distance$k__BackingField();
       // public UnityEngine.UI.Graphic get_graphic()
       // Offset: 0x2BAE20
       ::UnityEngine::UI::Graphic* get_graphic();
@@ -234,30 +234,40 @@ namespace UnityEngine::XR::Interaction::Toolkit::UI {
     // Set static field: static private UnityEngine.Vector3[] s_Corners
     static void _set_s_Corners(::ArrayW<::UnityEngine::Vector3> value);
     // Get instance field reference: private System.Boolean m_IgnoreReversedGraphics
-    [[deprecated]] bool& dyn_m_IgnoreReversedGraphics();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_IgnoreReversedGraphics();
     // Get instance field reference: private System.Boolean m_CheckFor2DOcclusion
-    [[deprecated]] bool& dyn_m_CheckFor2DOcclusion();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_CheckFor2DOcclusion();
     // Get instance field reference: private System.Boolean m_CheckFor3DOcclusion
-    [[deprecated]] bool& dyn_m_CheckFor3DOcclusion();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_CheckFor3DOcclusion();
     // Get instance field reference: private UnityEngine.LayerMask m_BlockingMask
-    [[deprecated]] ::UnityEngine::LayerMask& dyn_m_BlockingMask();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::LayerMask& dyn_m_BlockingMask();
     // Get instance field reference: private UnityEngine.Canvas m_Canvas
-    [[deprecated]] ::UnityEngine::Canvas*& dyn_m_Canvas();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Canvas*& dyn_m_Canvas();
     // Get instance field reference: private UnityEngine.RaycastHit[] occlusionHits3D
-    [[deprecated]] ::ArrayW<::UnityEngine::RaycastHit>& dyn_occlusionHits3D();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::RaycastHit>& dyn_occlusionHits3D();
     // Get instance field reference: private UnityEngine.RaycastHit2D[] occlusionHits2D
-    [[deprecated]] ::ArrayW<::UnityEngine::RaycastHit2D>& dyn_occlusionHits2D();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::RaycastHit2D>& dyn_occlusionHits2D();
     // Get instance field reference: private UnityEngine.XR.Interaction.Toolkit.UI.TrackedDeviceGraphicRaycaster/UnityEngine.XR.Interaction.Toolkit.UI.RaycastHitComparer m_raycastHitComparer
-    [[deprecated]] ::UnityEngine::XR::Interaction::Toolkit::UI::TrackedDeviceGraphicRaycaster::RaycastHitComparer*& dyn_m_raycastHitComparer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::Interaction::Toolkit::UI::TrackedDeviceGraphicRaycaster::RaycastHitComparer*& dyn_m_raycastHitComparer();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.XR.Interaction.Toolkit.UI.TrackedDeviceGraphicRaycaster/UnityEngine.XR.Interaction.Toolkit.UI.RaycastHitData> m_RaycastResultsCache
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::XR::Interaction::Toolkit::UI::TrackedDeviceGraphicRaycaster::RaycastHitData>*& dyn_m_RaycastResultsCache();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::XR::Interaction::Toolkit::UI::TrackedDeviceGraphicRaycaster::RaycastHitData>*& dyn_m_RaycastResultsCache();
     // Get instance field reference: private UnityEngine.RaycastHit[] physicsHits
-    [[deprecated]] ::ArrayW<::UnityEngine::RaycastHit>& dyn_physicsHits();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::RaycastHit>& dyn_physicsHits();
     // Get instance field reference: private UnityEngine.RaycastHit2D[] graphicHits
-    [[deprecated]] ::ArrayW<::UnityEngine::RaycastHit2D>& dyn_graphicHits();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::RaycastHit2D>& dyn_graphicHits();
     // private UnityEngine.Canvas get_canvas()
     // Offset: 0x2FBA80
     ::UnityEngine::Canvas* get_canvas();
+    // public System.Void .ctor()
+    // Offset: 0x2FB920
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static TrackedDeviceGraphicRaycaster* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::XR::Interaction::Toolkit::UI::TrackedDeviceGraphicRaycaster::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<TrackedDeviceGraphicRaycaster*, creationType>()));
+    }
+    // static private System.Void .cctor()
+    // Offset: 0x2FB870
+    static void _cctor();
     // static private UnityEngine.RaycastHit FindClosestHit(UnityEngine.RaycastHit[] hits, System.Int32 count)
     // Offset: 0x2F9D00
     static ::UnityEngine::RaycastHit FindClosestHit(::ArrayW<::UnityEngine::RaycastHit> hits, int count);
@@ -281,26 +291,6 @@ namespace UnityEngine::XR::Interaction::Toolkit::UI {
     // Implemented from: UnityEngine.EventSystems.BaseRaycaster
     // Base method: UnityEngine.Camera BaseRaycaster::get_eventCamera()
     ::UnityEngine::Camera* get_eventCamera();
-    // public System.Void .ctor()
-    // Offset: 0x2FB920
-    // Implemented from: UnityEngine.EventSystems.BaseRaycaster
-    // Base method: System.Void BaseRaycaster::.ctor()
-    // Base method: System.Void UIBehaviour::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static TrackedDeviceGraphicRaycaster* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::XR::Interaction::Toolkit::UI::TrackedDeviceGraphicRaycaster::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<TrackedDeviceGraphicRaycaster*, creationType>()));
-    }
-    // static private System.Void .cctor()
-    // Offset: 0x2FB870
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.cctor()
-    static void _cctor();
     // public override System.Void Raycast(UnityEngine.EventSystems.PointerEventData eventData, System.Collections.Generic.List`1<UnityEngine.EventSystems.RaycastResult> resultAppendList)
     // Offset: 0x2FB140
     // Implemented from: UnityEngine.EventSystems.BaseRaycaster
@@ -320,6 +310,18 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngine::Canvas* (UnityEngine::XR::Interaction::Toolkit::UI::TrackedDeviceGraphicRaycaster::*)()>(&UnityEngine::XR::Interaction::Toolkit::UI::TrackedDeviceGraphicRaycaster::get_canvas)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::XR::Interaction::Toolkit::UI::TrackedDeviceGraphicRaycaster*), "get_canvas", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
+// Writing MetadataGetter for method: UnityEngine::XR::Interaction::Toolkit::UI::TrackedDeviceGraphicRaycaster::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
+// Writing MetadataGetter for method: UnityEngine::XR::Interaction::Toolkit::UI::TrackedDeviceGraphicRaycaster::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&UnityEngine::XR::Interaction::Toolkit::UI::TrackedDeviceGraphicRaycaster::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(UnityEngine::XR::Interaction::Toolkit::UI::TrackedDeviceGraphicRaycaster*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
 // Writing MetadataGetter for method: UnityEngine::XR::Interaction::Toolkit::UI::TrackedDeviceGraphicRaycaster::FindClosestHit
@@ -395,18 +397,6 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngine::Camera* (UnityEngine::XR::Interaction::Toolkit::UI::TrackedDeviceGraphicRaycaster::*)()>(&UnityEngine::XR::Interaction::Toolkit::UI::TrackedDeviceGraphicRaycaster::get_eventCamera)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::XR::Interaction::Toolkit::UI::TrackedDeviceGraphicRaycaster*), "get_eventCamera", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
-  }
-};
-// Writing MetadataGetter for method: UnityEngine::XR::Interaction::Toolkit::UI::TrackedDeviceGraphicRaycaster::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
-// Writing MetadataGetter for method: UnityEngine::XR::Interaction::Toolkit::UI::TrackedDeviceGraphicRaycaster::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&UnityEngine::XR::Interaction::Toolkit::UI::TrackedDeviceGraphicRaycaster::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(UnityEngine::XR::Interaction::Toolkit::UI::TrackedDeviceGraphicRaycaster*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
 // Writing MetadataGetter for method: UnityEngine::XR::Interaction::Toolkit::UI::TrackedDeviceGraphicRaycaster::Raycast

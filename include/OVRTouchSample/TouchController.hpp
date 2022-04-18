@@ -62,11 +62,18 @@ namespace OVRTouchSample {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private OVRInput/Controller m_controller
-    [[deprecated]] ::GlobalNamespace::OVRInput::Controller& dyn_m_controller();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRInput::Controller& dyn_m_controller();
     // Get instance field reference: private UnityEngine.Animator m_animator
-    [[deprecated]] ::UnityEngine::Animator*& dyn_m_animator();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Animator*& dyn_m_animator();
     // Get instance field reference: private System.Boolean m_restoreOnInputAcquired
-    [[deprecated]] bool& dyn_m_restoreOnInputAcquired();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_restoreOnInputAcquired();
+    // public System.Void .ctor()
+    // Offset: 0x1DDE30
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static TouchController* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::OVRTouchSample::TouchController::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<TouchController*, creationType>()));
+    }
     // private System.Void Update()
     // Offset: 0x299E60
     void Update();
@@ -76,25 +83,16 @@ namespace OVRTouchSample {
     // private System.Void OnInputFocusAcquired()
     // Offset: 0x299DD0
     void OnInputFocusAcquired();
-    // public System.Void .ctor()
-    // Offset: 0x1DDE30
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static TouchController* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::OVRTouchSample::TouchController::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<TouchController*, creationType>()));
-    }
   }; // OVRTouchSample.TouchController
   #pragma pack(pop)
   static check_size<sizeof(TouchController), 40 + sizeof(bool)> __OVRTouchSample_TouchControllerSizeCheck;
   static_assert(sizeof(TouchController) == 0x29);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: OVRTouchSample::TouchController::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: OVRTouchSample::TouchController::Update
 // Il2CppName: Update
 template<>
@@ -119,7 +117,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (OVRTo
     return ::il2cpp_utils::FindMethod(classof(OVRTouchSample::TouchController*), "OnInputFocusAcquired", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: OVRTouchSample::TouchController::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

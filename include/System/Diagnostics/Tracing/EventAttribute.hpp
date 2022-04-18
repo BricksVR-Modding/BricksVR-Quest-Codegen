@@ -107,25 +107,25 @@ namespace System::Diagnostics::Tracing {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.Int32 <EventId>k__BackingField
-    [[deprecated]] int& dyn_$EventId$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$EventId$k__BackingField();
     // Get instance field reference: private System.Diagnostics.Tracing.EventLevel <Level>k__BackingField
-    [[deprecated]] ::System::Diagnostics::Tracing::EventLevel& dyn_$Level$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::EventLevel& dyn_$Level$k__BackingField();
     // Get instance field reference: private System.Diagnostics.Tracing.EventKeywords <Keywords>k__BackingField
-    [[deprecated]] ::System::Diagnostics::Tracing::EventKeywords& dyn_$Keywords$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::EventKeywords& dyn_$Keywords$k__BackingField();
     // Get instance field reference: private System.Diagnostics.Tracing.EventTask <Task>k__BackingField
-    [[deprecated]] ::System::Diagnostics::Tracing::EventTask& dyn_$Task$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::EventTask& dyn_$Task$k__BackingField();
     // Get instance field reference: private System.Byte <Version>k__BackingField
-    [[deprecated]] uint8_t& dyn_$Version$k__BackingField();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn_$Version$k__BackingField();
     // Get instance field reference: private System.String <Message>k__BackingField
-    [[deprecated]] ::StringW& dyn_$Message$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$Message$k__BackingField();
     // Get instance field reference: private System.Diagnostics.Tracing.EventTags <Tags>k__BackingField
-    [[deprecated]] ::System::Diagnostics::Tracing::EventTags& dyn_$Tags$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::EventTags& dyn_$Tags$k__BackingField();
     // Get instance field reference: private System.Diagnostics.Tracing.EventActivityOptions <ActivityOptions>k__BackingField
-    [[deprecated]] ::System::Diagnostics::Tracing::EventActivityOptions& dyn_$ActivityOptions$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::EventActivityOptions& dyn_$ActivityOptions$k__BackingField();
     // Get instance field reference: private System.Diagnostics.Tracing.EventOpcode m_opcode
-    [[deprecated]] ::System::Diagnostics::Tracing::EventOpcode& dyn_m_opcode();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::EventOpcode& dyn_m_opcode();
     // Get instance field reference: private System.Boolean m_opcodeSet
-    [[deprecated]] bool& dyn_m_opcodeSet();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_opcodeSet();
     // public System.Int32 get_EventId()
     // Offset: 0x1DD410
     int get_EventId();

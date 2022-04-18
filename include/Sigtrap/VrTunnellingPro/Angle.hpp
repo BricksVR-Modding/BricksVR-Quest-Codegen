@@ -53,7 +53,7 @@ namespace Sigtrap::VrTunnellingPro {
       return angle;
     }
     // Get instance field reference: private System.Single _angle
-    [[deprecated]] float& dyn__angle();
+    [[deprecated("Use field access instead!")]] float& dyn__angle();
     // public System.Single get_angle()
     // Offset: 0x1DD610
     float get_angle();

@@ -57,7 +57,7 @@ namespace Normal::Realtime {
     // Set static field: static public Normal.Realtime.Datastore/Normal.Realtime.Properties PrefabRealtimeViewModels
     static void _set_PrefabRealtimeViewModels(::Normal::Realtime::Datastore::Properties value);
     // Get instance field reference: public System.UInt32 value__
-    [[deprecated]] uint& dyn_value__();
+    [[deprecated("Use field access instead!")]] uint& dyn_value__();
   }; // Normal.Realtime.Datastore/Normal.Realtime.Properties
   #pragma pack(pop)
   static check_size<sizeof(Datastore::Properties), 0 + sizeof(uint)> __Normal_Realtime_Datastore_PropertiesSizeCheck;

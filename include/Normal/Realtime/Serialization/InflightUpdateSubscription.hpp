@@ -63,11 +63,11 @@ namespace Normal::Realtime::Serialization {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public readonly Normal.Realtime.Serialization.InflightUpdateNotifier notifier
-    [[deprecated]] ::Normal::Realtime::Serialization::InflightUpdateNotifier*& dyn_notifier();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::Serialization::InflightUpdateNotifier*& dyn_notifier();
     // Get instance field reference: public readonly Normal.Realtime.IConfirmedProperty property
-    [[deprecated]] ::Normal::Realtime::IConfirmedProperty*& dyn_property();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::IConfirmedProperty*& dyn_property();
     // Get instance field reference: public readonly System.UInt32 updateID
-    [[deprecated]] uint& dyn_updateID();
+    [[deprecated("Use field access instead!")]] uint& dyn_updateID();
     // public System.Void .ctor(Normal.Realtime.Serialization.InflightUpdateNotifier notifier, Normal.Realtime.IConfirmedProperty property, System.UInt32 updateID)
     // Offset: 0x88CC00
     // ABORTED: conflicts with another method.  InflightUpdateSubscription(::Normal::Realtime::Serialization::InflightUpdateNotifier* notifier, ::Normal::Realtime::IConfirmedProperty* property, uint updateID);

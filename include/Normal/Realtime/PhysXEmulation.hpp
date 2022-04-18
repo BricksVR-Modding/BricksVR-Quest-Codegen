@@ -37,29 +37,27 @@ namespace Normal::Realtime {
   // [TokenAttribute] Offset: FFFFFFFF
   class PhysXEmulation : public ::UnityEngine::MonoBehaviour {
     public:
+    // public System.Void .ctor()
+    // Offset: 0x1DDE30
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static PhysXEmulation* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::PhysXEmulation::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<PhysXEmulation*, creationType>()));
+    }
     // static public System.Single SimulatePhysX(ref UnityEngine.Vector3 position, ref UnityEngine.Quaternion rotation, ref UnityEngine.Vector3 linearVelocity, ref UnityEngine.Vector3 angularVelocity, System.Boolean useGravity, UnityEngine.Vector3 gravity, System.Single linearDamping, System.Single angularDamping, System.Single maxLinearVelocity, System.Single maxAngularVelocity, UnityEngine.RigidbodyConstraints constraints, System.Single deltaTime, System.Single timeStep)
     // Offset: 0x8BBB30
     static float SimulatePhysX(ByRef<::UnityEngine::Vector3> position, ByRef<::UnityEngine::Quaternion> rotation, ByRef<::UnityEngine::Vector3> linearVelocity, ByRef<::UnityEngine::Vector3> angularVelocity, bool useGravity, ::UnityEngine::Vector3 gravity, float linearDamping, float angularDamping, float maxLinearVelocity, float maxAngularVelocity, ::UnityEngine::RigidbodyConstraints constraints, float deltaTime, float timeStep);
     // static private System.Void SimulatePhysXTick(ref UnityEngine.Vector3 position, ref UnityEngine.Quaternion rotation, ref UnityEngine.Vector3 linearVelocity, ref UnityEngine.Vector3 angularVelocity, System.Boolean useGravity, UnityEngine.Vector3 gravity, System.Single linearDamping, System.Single angularDamping, System.Single maxLinearVelocity, System.Single maxAngularVelocity, UnityEngine.RigidbodyConstraints constraints, System.Single deltaTime)
     // Offset: 0x8BB4B0
     static void SimulatePhysXTick(ByRef<::UnityEngine::Vector3> position, ByRef<::UnityEngine::Quaternion> rotation, ByRef<::UnityEngine::Vector3> linearVelocity, ByRef<::UnityEngine::Vector3> angularVelocity, bool useGravity, ::UnityEngine::Vector3 gravity, float linearDamping, float angularDamping, float maxLinearVelocity, float maxAngularVelocity, ::UnityEngine::RigidbodyConstraints constraints, float deltaTime);
-    // public System.Void .ctor()
-    // Offset: 0x1DDE30
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static PhysXEmulation* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::PhysXEmulation::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<PhysXEmulation*, creationType>()));
-    }
   }; // Normal.Realtime.PhysXEmulation
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Normal::Realtime::PhysXEmulation::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Normal::Realtime::PhysXEmulation::SimulatePhysX
 // Il2CppName: SimulatePhysX
 template<>
@@ -101,7 +99,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(By
     return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::PhysXEmulation*), "SimulatePhysXTick", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{position, rotation, linearVelocity, angularVelocity, useGravity, gravity, linearDamping, angularDamping, maxLinearVelocity, maxAngularVelocity, constraints, deltaTime});
   }
 };
-// Writing MetadataGetter for method: Normal::Realtime::PhysXEmulation::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

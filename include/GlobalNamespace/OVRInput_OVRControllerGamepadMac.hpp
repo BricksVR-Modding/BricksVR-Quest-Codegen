@@ -61,7 +61,7 @@ namespace GlobalNamespace {
     // Set static field: static private System.String DllName
     static void _set_DllName(::StringW value);
     // Get instance field reference: private System.Boolean initialized
-    [[deprecated]] bool& dyn_initialized();
+    [[deprecated("Use field access instead!")]] bool& dyn_initialized();
     // static private System.Boolean OVR_GamepadController_Initialize()
     // Offset: 0x3C6BB0
     static bool OVR_GamepadController_Initialize();
@@ -84,7 +84,6 @@ namespace GlobalNamespace {
     // Offset: 0x3C7410
     // Implemented from: OVRInput/OVRControllerBase
     // Base method: System.Void OVRControllerBase::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OVRInput::OVRControllerGamepadMac* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRInput::OVRControllerGamepadMac::.ctor");

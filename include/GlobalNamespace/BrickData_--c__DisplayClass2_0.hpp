@@ -38,25 +38,27 @@ namespace GlobalNamespace {
       return category;
     }
     // Get instance field reference: public System.String category
-    [[deprecated]] ::StringW& dyn_category();
-    // System.Boolean <BricksForCategory>b__0(BrickData/Brick b)
-    // Offset: 0x6F7DB0
-    bool $BricksForCategory$b__0(::GlobalNamespace::BrickData::Brick b);
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_category();
     // public System.Void .ctor()
     // Offset: 0x1DD400
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static BrickData::$$c__DisplayClass2_0* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::BrickData::$$c__DisplayClass2_0::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<BrickData::$$c__DisplayClass2_0*, creationType>()));
     }
+    // System.Boolean <BricksForCategory>b__0(BrickData/Brick b)
+    // Offset: 0x6F7DB0
+    bool $BricksForCategory$b__0(::GlobalNamespace::BrickData::Brick b);
   }; // BrickData/<>c__DisplayClass2_0
   #pragma pack(pop)
   static check_size<sizeof(BrickData::$$c__DisplayClass2_0), 16 + sizeof(::StringW)> __GlobalNamespace_BrickData_$$c__DisplayClass2_0SizeCheck;
   static_assert(sizeof(BrickData::$$c__DisplayClass2_0) == 0x18);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::BrickData::$$c__DisplayClass2_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::BrickData::$$c__DisplayClass2_0::$BricksForCategory$b__0
 // Il2CppName: <BricksForCategory>b__0
 template<>
@@ -66,7 +68,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::BrickData::$$c__DisplayClass2_0*), "<BricksForCategory>b__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{b});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::BrickData::$$c__DisplayClass2_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

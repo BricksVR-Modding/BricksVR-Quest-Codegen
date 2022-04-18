@@ -19,10 +19,6 @@ namespace System::Runtime::Serialization {
   // Forward declaring type: SerializationInfo
   class SerializationInfo;
 }
-// Forward declaring namespace: System
-namespace System {
-  // Skipping declaration: Exception because it is already included!
-}
 // Completed forward declares
 // Type namespace: System.Runtime.InteropServices
 namespace System::Runtime::InteropServices {

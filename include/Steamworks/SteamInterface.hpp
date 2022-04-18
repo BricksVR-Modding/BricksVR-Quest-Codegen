@@ -62,18 +62,25 @@ namespace Steamworks {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: public System.IntPtr Self
-    [[deprecated]] ::System::IntPtr& dyn_Self();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_Self();
     // Get instance field reference: public System.IntPtr SelfGlobal
-    [[deprecated]] ::System::IntPtr& dyn_SelfGlobal();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_SelfGlobal();
     // Get instance field reference: public System.IntPtr SelfServer
-    [[deprecated]] ::System::IntPtr& dyn_SelfServer();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_SelfServer();
     // Get instance field reference: public System.IntPtr SelfClient
-    [[deprecated]] ::System::IntPtr& dyn_SelfClient();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_SelfClient();
     // Get instance field reference: private System.Boolean <IsServer>k__BackingField
-    [[deprecated]] bool& dyn_$IsServer$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsServer$k__BackingField();
     // private System.Void set_IsServer(System.Boolean value)
     // Offset: 0x30EC70
     void set_IsServer(bool value);
+    // protected System.Void .ctor()
+    // Offset: 0x1DD400
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static SteamInterface* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Steamworks::SteamInterface::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<SteamInterface*, creationType>()));
+    }
     // public System.IntPtr GetUserInterfacePointer()
     // Offset: 0x5C2000
     ::System::IntPtr GetUserInterfacePointer();
@@ -86,15 +93,6 @@ namespace Steamworks {
     // System.Void SetupInterface(System.Boolean gameServer)
     // Offset: 0x5C2030
     void SetupInterface(bool gameServer);
-    // protected System.Void .ctor()
-    // Offset: 0x1DD400
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static SteamInterface* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Steamworks::SteamInterface::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<SteamInterface*, creationType>()));
-    }
   }; // Steamworks.SteamInterface
   #pragma pack(pop)
   static check_size<sizeof(SteamInterface), 48 + sizeof(bool)> __Steamworks_SteamInterfaceSizeCheck;
@@ -110,6 +108,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Steam
     return ::il2cpp_utils::FindMethod(classof(Steamworks::SteamInterface*), "set_IsServer", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: Steamworks::SteamInterface::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Steamworks::SteamInterface::GetUserInterfacePointer
 // Il2CppName: GetUserInterfacePointer
 template<>
@@ -143,7 +145,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Steam
     return ::il2cpp_utils::FindMethod(classof(Steamworks::SteamInterface*), "SetupInterface", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{gameServer});
   }
 };
-// Writing MetadataGetter for method: Steamworks::SteamInterface::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

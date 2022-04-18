@@ -31,6 +31,13 @@ namespace UnityEngine {
   // [NativeHeaderAttribute] Offset: 102EA0
   class UnityLogWriter : public ::System::IO::TextWriter {
     public:
+    // public System.Void .ctor()
+    // Offset: 0xA457F0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static UnityLogWriter* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::UnityLogWriter::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<UnityLogWriter*, creationType>()));
+    }
     // static public System.Void WriteStringToUnityLog(System.String s)
     // Offset: 0xA456D0
     static void WriteStringToUnityLog(::StringW s);
@@ -40,17 +47,6 @@ namespace UnityEngine {
     // static public System.Void Init()
     // Offset: 0xA455F0
     static void Init();
-    // public System.Void .ctor()
-    // Offset: 0xA457F0
-    // Implemented from: System.IO.TextWriter
-    // Base method: System.Void TextWriter::.ctor()
-    // Base method: System.Void MarshalByRefObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static UnityLogWriter* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::UnityLogWriter::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<UnityLogWriter*, creationType>()));
-    }
     // public override System.Void Write(System.Char value)
     // Offset: 0xA45710
     // Implemented from: System.IO.TextWriter
@@ -70,6 +66,10 @@ namespace UnityEngine {
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: UnityEngine::UnityLogWriter::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::UnityLogWriter::WriteStringToUnityLog
 // Il2CppName: WriteStringToUnityLog
 template<>
@@ -96,10 +96,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::UnityLogWriter*), "Init", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::UnityLogWriter::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::UnityLogWriter::Write
 // Il2CppName: Write
 template<>

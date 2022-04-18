@@ -125,27 +125,27 @@ namespace System::Diagnostics::Tracing {
     static_assert(sizeof(::System::Diagnostics::Tracing::EventCommandEventArgs*) == 0x8);
     public:
     // Get instance field reference: private System.Diagnostics.Tracing.EventCommand <Command>k__BackingField
-    [[deprecated]] ::System::Diagnostics::Tracing::EventCommand& dyn_$Command$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::EventCommand& dyn_$Command$k__BackingField();
     // Get instance field reference: private System.Collections.Generic.IDictionary`2<System.String,System.String> <Arguments>k__BackingField
-    [[deprecated]] ::System::Collections::Generic::IDictionary_2<::StringW, ::StringW>*& dyn_$Arguments$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::IDictionary_2<::StringW, ::StringW>*& dyn_$Arguments$k__BackingField();
     // Get instance field reference: System.Diagnostics.Tracing.EventSource eventSource
-    [[deprecated]] ::System::Diagnostics::Tracing::EventSource*& dyn_eventSource();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::EventSource*& dyn_eventSource();
     // Get instance field reference: System.Diagnostics.Tracing.EventDispatcher dispatcher
-    [[deprecated]] ::System::Diagnostics::Tracing::EventDispatcher*& dyn_dispatcher();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::EventDispatcher*& dyn_dispatcher();
     // Get instance field reference: System.Diagnostics.Tracing.EventListener listener
-    [[deprecated]] ::System::Diagnostics::Tracing::EventListener*& dyn_listener();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::EventListener*& dyn_listener();
     // Get instance field reference: System.Int32 perEventSourceSessionId
-    [[deprecated]] int& dyn_perEventSourceSessionId();
+    [[deprecated("Use field access instead!")]] int& dyn_perEventSourceSessionId();
     // Get instance field reference: System.Int32 etwSessionId
-    [[deprecated]] int& dyn_etwSessionId();
+    [[deprecated("Use field access instead!")]] int& dyn_etwSessionId();
     // Get instance field reference: System.Boolean enable
-    [[deprecated]] bool& dyn_enable();
+    [[deprecated("Use field access instead!")]] bool& dyn_enable();
     // Get instance field reference: System.Diagnostics.Tracing.EventLevel level
-    [[deprecated]] ::System::Diagnostics::Tracing::EventLevel& dyn_level();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::EventLevel& dyn_level();
     // Get instance field reference: System.Diagnostics.Tracing.EventKeywords matchAnyKeyword
-    [[deprecated]] ::System::Diagnostics::Tracing::EventKeywords& dyn_matchAnyKeyword();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::EventKeywords& dyn_matchAnyKeyword();
     // Get instance field reference: System.Diagnostics.Tracing.EventCommandEventArgs nextCommand
-    [[deprecated]] ::System::Diagnostics::Tracing::EventCommandEventArgs*& dyn_nextCommand();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::EventCommandEventArgs*& dyn_nextCommand();
     // public System.Diagnostics.Tracing.EventCommand get_Command()
     // Offset: 0x1DD410
     ::System::Diagnostics::Tracing::EventCommand get_Command();

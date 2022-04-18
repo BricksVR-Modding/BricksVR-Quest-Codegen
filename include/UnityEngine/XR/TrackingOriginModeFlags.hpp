@@ -66,7 +66,7 @@ namespace UnityEngine::XR {
     // Set static field: static public UnityEngine.XR.TrackingOriginModeFlags TrackingReference
     static void _set_TrackingReference(::UnityEngine::XR::TrackingOriginModeFlags value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // UnityEngine.XR.TrackingOriginModeFlags
   #pragma pack(pop)
   static check_size<sizeof(TrackingOriginModeFlags), 0 + sizeof(int)> __UnityEngine_XR_TrackingOriginModeFlagsSizeCheck;

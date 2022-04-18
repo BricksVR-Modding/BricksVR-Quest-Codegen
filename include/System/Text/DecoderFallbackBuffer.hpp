@@ -42,9 +42,9 @@ namespace System::Text {
     static_assert(sizeof(::Il2CppChar*) == 0x8);
     public:
     // Get instance field reference: System.Byte* byteStart
-    [[deprecated]] uint8_t*& dyn_byteStart();
+    [[deprecated("Use field access instead!")]] uint8_t*& dyn_byteStart();
     // Get instance field reference: System.Char* charEnd
-    [[deprecated]] ::Il2CppChar*& dyn_charEnd();
+    [[deprecated("Use field access instead!")]] ::Il2CppChar*& dyn_charEnd();
     // public System.Boolean Fallback(System.Byte[] bytesUnknown, System.Int32 index)
     // Offset: 0xFFFFFFFFFFFFFFFF
     bool Fallback(::ArrayW<uint8_t> bytesUnknown, int index);

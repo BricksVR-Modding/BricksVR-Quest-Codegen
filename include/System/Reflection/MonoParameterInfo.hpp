@@ -14,16 +14,15 @@
 #include "beatsaber-hook/shared/utils/typedefs-array.hpp"
 // Completed includes
 // Begin forward declares
-// Forward declaring namespace: System::Reflection
-namespace System::Reflection {
-  // Skipping declaration: ParameterInfo because it is already included!
-  // Forward declaring type: MemberInfo
-  class MemberInfo;
-}
 // Forward declaring namespace: System
 namespace System {
   // Forward declaring type: Type
   class Type;
+}
+// Forward declaring namespace: System::Reflection
+namespace System::Reflection {
+  // Forward declaring type: MemberInfo
+  class MemberInfo;
 }
 // Completed forward declares
 // Type namespace: System.Reflection

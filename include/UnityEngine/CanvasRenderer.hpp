@@ -61,7 +61,7 @@ namespace UnityEngine {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Boolean <isMask>k__BackingField
-    [[deprecated]] bool& dyn_$isMask$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$isMask$k__BackingField();
     // public System.Void set_hasPopInstruction(System.Boolean value)
     // Offset: 0x65CA90
     void set_hasPopInstruction(bool value);

@@ -24,7 +24,6 @@ namespace UnityEngine {
 }
 // Forward declaring namespace: GlobalNamespace
 namespace GlobalNamespace {
-  // Skipping declaration: OVRComposition because it is already included!
   // Forward declaring type: CompositionMethod
   struct OVRManager_CompositionMethod;
 }
@@ -74,13 +73,13 @@ namespace GlobalNamespace {
     static_assert(sizeof(::UnityEngine::RenderTexture*) == 0x8);
     public:
     // Get instance field reference: private UnityEngine.GameObject previousMainCameraObject
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_previousMainCameraObject();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_previousMainCameraObject();
     // Get instance field reference: public UnityEngine.GameObject directCompositionCameraGameObject
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_directCompositionCameraGameObject();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_directCompositionCameraGameObject();
     // Get instance field reference: public UnityEngine.Camera directCompositionCamera
-    [[deprecated]] ::UnityEngine::Camera*& dyn_directCompositionCamera();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Camera*& dyn_directCompositionCamera();
     // Get instance field reference: public UnityEngine.RenderTexture boundaryMeshMaskTexture
-    [[deprecated]] ::UnityEngine::RenderTexture*& dyn_boundaryMeshMaskTexture();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RenderTexture*& dyn_boundaryMeshMaskTexture();
     // private System.Void RefreshCameraObjects(UnityEngine.GameObject parentObject, UnityEngine.Camera mainCamera)
     // Offset: 0x23A0E0
     void RefreshCameraObjects(::UnityEngine::GameObject* parentObject, ::UnityEngine::Camera* mainCamera);

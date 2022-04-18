@@ -64,7 +64,7 @@ namespace UnityEngine::UIElements {
       return m_Dispatcher;
     }
     // Get instance field reference: private readonly UnityEngine.UIElements.EventDispatcher m_Dispatcher
-    [[deprecated]] ::UnityEngine::UIElements::EventDispatcher*& dyn_m_Dispatcher();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::EventDispatcher*& dyn_m_Dispatcher();
     // public System.Void .ctor(UnityEngine.UIElements.EventDispatcher d)
     // Offset: 0x2A0860
     // ABORTED: conflicts with another method.  EventDispatcherGate(::UnityEngine::UIElements::EventDispatcher* d);

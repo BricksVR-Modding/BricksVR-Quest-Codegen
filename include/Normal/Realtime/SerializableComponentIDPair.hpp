@@ -53,9 +53,9 @@ namespace Normal::Realtime {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Int32 componentID
-    [[deprecated]] int& dyn_componentID();
+    [[deprecated("Use field access instead!")]] int& dyn_componentID();
     // Get instance field reference: public UnityEngine.Component component
-    [[deprecated]] ::UnityEngine::Component*& dyn_component();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Component*& dyn_component();
     // public System.Void .ctor(System.UInt32 componentID, UnityEngine.Component component)
     // Offset: 0x540440
     SerializableComponentIDPair(uint componentID, ::UnityEngine::Component* component);

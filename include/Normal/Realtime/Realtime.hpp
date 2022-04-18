@@ -143,15 +143,15 @@ namespace Normal::Realtime {
       // Set static field: static public readonly Normal.Realtime.Realtime/Normal.Realtime.InstantiateOptions defaults
       static void _set_defaults(::Normal::Realtime::Realtime::InstantiateOptions value);
       // Get instance field reference: public System.Nullable`1<System.Boolean> ownedByClient
-      [[deprecated]] ::System::Nullable_1<bool>& dyn_ownedByClient();
+      [[deprecated("Use field access instead!")]] ::System::Nullable_1<bool>& dyn_ownedByClient();
       // Get instance field reference: public System.Nullable`1<System.Boolean> preventOwnershipTakeover
-      [[deprecated]] ::System::Nullable_1<bool>& dyn_preventOwnershipTakeover();
+      [[deprecated("Use field access instead!")]] ::System::Nullable_1<bool>& dyn_preventOwnershipTakeover();
       // Get instance field reference: public System.Nullable`1<System.Boolean> destroyWhenOwnerLeaves
-      [[deprecated]] ::System::Nullable_1<bool>& dyn_destroyWhenOwnerLeaves();
+      [[deprecated("Use field access instead!")]] ::System::Nullable_1<bool>& dyn_destroyWhenOwnerLeaves();
       // Get instance field reference: public System.Nullable`1<System.Boolean> destroyWhenLastClientLeaves
-      [[deprecated]] ::System::Nullable_1<bool>& dyn_destroyWhenLastClientLeaves();
+      [[deprecated("Use field access instead!")]] ::System::Nullable_1<bool>& dyn_destroyWhenLastClientLeaves();
       // Get instance field reference: public Normal.Realtime.Realtime useInstance
-      [[deprecated]] ::Normal::Realtime::Realtime*& dyn_useInstance();
+      [[deprecated("Use field access instead!")]] ::Normal::Realtime::Realtime*& dyn_useInstance();
       // static private System.Void .cctor()
       // Offset: 0x8B9210
       static void _cctor();
@@ -255,29 +255,29 @@ namespace Normal::Realtime {
     // Set static field: static private System.String UNSUPPORTED_DESTROY_MESSAGE
     static void _set_UNSUPPORTED_DESTROY_MESSAGE(::StringW value);
     // Get instance field reference: private Normal.Realtime.Realtime/Normal.Realtime.RealtimeEvent didConnectToRoom
-    [[deprecated]] ::Normal::Realtime::Realtime::RealtimeEvent*& dyn_didConnectToRoom();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::Realtime::RealtimeEvent*& dyn_didConnectToRoom();
     // Get instance field reference: private Normal.Realtime.Realtime/Normal.Realtime.RealtimeEvent didDisconnectFromRoom
-    [[deprecated]] ::Normal::Realtime::Realtime::RealtimeEvent*& dyn_didDisconnectFromRoom();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::Realtime::RealtimeEvent*& dyn_didDisconnectFromRoom();
     // Get instance field reference: private System.String _obsoleteAppKey
-    [[deprecated]] ::StringW& dyn__obsoleteAppKey();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__obsoleteAppKey();
     // Get instance field reference: private Normal.NormcoreAppSettings _normcoreAppSettings
-    [[deprecated]] ::Normal::NormcoreAppSettings*& dyn__normcoreAppSettings();
+    [[deprecated("Use field access instead!")]] ::Normal::NormcoreAppSettings*& dyn__normcoreAppSettings();
     // Get instance field reference: private System.String _roomToJoinOnStart
-    [[deprecated]] ::StringW& dyn__roomToJoinOnStart();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__roomToJoinOnStart();
     // Get instance field reference: private System.Boolean _joinRoomOnStart
-    [[deprecated]] bool& dyn__joinRoomOnStart();
+    [[deprecated("Use field access instead!")]] bool& dyn__joinRoomOnStart();
     // Get instance field reference: private Normal.Realtime.Room _room
-    [[deprecated]] ::Normal::Realtime::Room*& dyn__room();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::Room*& dyn__room();
     // Get instance field reference: private System.Collections.Generic.HashSet`1<Normal.Realtime.RealtimeView> _sceneViews
-    [[deprecated]] ::System::Collections::Generic::HashSet_1<::Normal::Realtime::RealtimeView*>*& dyn__sceneViews();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::HashSet_1<::Normal::Realtime::RealtimeView*>*& dyn__sceneViews();
     // Get instance field reference: private System.Boolean _sceneViewsConnected
-    [[deprecated]] bool& dyn__sceneViewsConnected();
+    [[deprecated("Use field access instead!")]] bool& dyn__sceneViewsConnected();
     // Get instance field reference: private System.Collections.Generic.HashSet`1<Normal.Realtime.RealtimeView> _prefabViews
-    [[deprecated]] ::System::Collections::Generic::HashSet_1<::Normal::Realtime::RealtimeView*>*& dyn__prefabViews();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::HashSet_1<::Normal::Realtime::RealtimeView*>*& dyn__prefabViews();
     // Get instance field reference: private UnityEngine.GameObject _lastPrefabInstantiated
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__lastPrefabInstantiated();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__lastPrefabInstantiated();
     // Get instance field reference: private UnityEngine.Coroutine _connectSceneViewsTimeoutRoutine
-    [[deprecated]] ::UnityEngine::Coroutine*& dyn__connectSceneViewsTimeoutRoutine();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Coroutine*& dyn__connectSceneViewsTimeoutRoutine();
     // static public System.Collections.Generic.IReadOnlyCollection`1<Normal.Realtime.Realtime> get_instances()
     // Offset: 0x8CCEF0
     static ::System::Collections::Generic::IReadOnlyCollection_1<::Normal::Realtime::Realtime*>* get_instances();
@@ -323,6 +323,16 @@ namespace Normal::Realtime {
     // public System.Void remove_didDisconnectFromRoom(Normal.Realtime.Realtime/Normal.Realtime.RealtimeEvent value)
     // Offset: 0x8CCFF0
     void remove_didDisconnectFromRoom(::Normal::Realtime::Realtime::RealtimeEvent* value);
+    // public System.Void .ctor()
+    // Offset: 0x8CCC90
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static Realtime* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::Realtime::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<Realtime*, creationType>()));
+    }
+    // static private System.Void .cctor()
+    // Offset: 0x8CCC30
+    static void _cctor();
     // static public UnityEngine.GameObject Instantiate(System.String prefabName, System.Nullable`1<Normal.Realtime.Realtime/Normal.Realtime.InstantiateOptions> options)
     // Offset: 0x8CB620
     static ::UnityEngine::GameObject* Instantiate(::StringW prefabName, ::System::Nullable_1<::Normal::Realtime::Realtime::InstantiateOptions> options);
@@ -353,6 +363,42 @@ namespace Normal::Realtime {
     // static public UnityEngine.Object Instantiate(UnityEngine.Object original, UnityEngine.Vector3 position, UnityEngine.Quaternion rotation, UnityEngine.Transform parent)
     // Offset: 0x8CB800
     static ::UnityEngine::Object* Instantiate(::UnityEngine::Object* original, ::UnityEngine::Vector3 position, ::UnityEngine::Quaternion rotation, ::UnityEngine::Transform* parent);
+    // static public UnityEngine.Object Instantiate(UnityEngine.Object original)
+    // Offset: 0x8CB5C0
+    static ::UnityEngine::Object* Instantiate(::UnityEngine::Object* original);
+    // static public UnityEngine.Object Instantiate(UnityEngine.Object original, UnityEngine.Vector3 position, UnityEngine.Quaternion rotation)
+    // Offset: 0x8CB320
+    static ::UnityEngine::Object* Instantiate(::UnityEngine::Object* original, ::UnityEngine::Vector3 position, ::UnityEngine::Quaternion rotation);
+    // static public T Instantiate(T original, UnityEngine.Transform parent, System.Boolean worldPositionStays)
+    // Offset: 0xFFFFFFFFFFFFFFFF
+    template<class T>
+    static T Instantiate(T original, ::UnityEngine::Transform* parent, bool worldPositionStays) {
+      static_assert(std::is_convertible_v<T, ::UnityEngine::Object*>);
+      static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::Realtime::Instantiate");
+      static auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod("Normal.Realtime", "Realtime", "Instantiate", std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<T>::get()}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(original), ::il2cpp_utils::ExtractType(parent), ::il2cpp_utils::ExtractType(worldPositionStays)})));
+      static auto* ___generic__method = THROW_UNLESS(::il2cpp_utils::MakeGenericMethod(___internal__method, std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<T>::get()}));
+      return ::il2cpp_utils::RunMethodRethrow<T, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method, original, parent, worldPositionStays);
+    }
+    // static public T Instantiate(T original)
+    // Offset: 0xFFFFFFFFFFFFFFFF
+    template<class T>
+    static T Instantiate(T original) {
+      static_assert(std::is_convertible_v<T, ::UnityEngine::Object*>);
+      static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::Realtime::Instantiate");
+      static auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod("Normal.Realtime", "Realtime", "Instantiate", std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<T>::get()}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(original)})));
+      static auto* ___generic__method = THROW_UNLESS(::il2cpp_utils::MakeGenericMethod(___internal__method, std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<T>::get()}));
+      return ::il2cpp_utils::RunMethodRethrow<T, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method, original);
+    }
+    // static public T Instantiate(T original, UnityEngine.Transform parent)
+    // Offset: 0xFFFFFFFFFFFFFFFF
+    template<class T>
+    static T Instantiate(T original, ::UnityEngine::Transform* parent) {
+      static_assert(std::is_convertible_v<T, ::UnityEngine::Object*>);
+      static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::Realtime::Instantiate");
+      static auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod("Normal.Realtime", "Realtime", "Instantiate", std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<T>::get()}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(original), ::il2cpp_utils::ExtractType(parent)})));
+      static auto* ___generic__method = THROW_UNLESS(::il2cpp_utils::MakeGenericMethod(___internal__method, std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<T>::get()}));
+      return ::il2cpp_utils::RunMethodRethrow<T, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method, original, parent);
+    }
     // static public T Instantiate(T original, UnityEngine.Vector3 position, UnityEngine.Quaternion rotation, UnityEngine.Transform parent)
     // Offset: 0xFFFFFFFFFFFFFFFF
     template<class T>
@@ -363,12 +409,37 @@ namespace Normal::Realtime {
       static auto* ___generic__method = THROW_UNLESS(::il2cpp_utils::MakeGenericMethod(___internal__method, std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<T>::get()}));
       return ::il2cpp_utils::RunMethodRethrow<T, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method, original, position, rotation, parent);
     }
+    // static public T Instantiate(T original, UnityEngine.Vector3 position, UnityEngine.Quaternion rotation)
+    // Offset: 0xFFFFFFFFFFFFFFFF
+    template<class T>
+    static T Instantiate(T original, ::UnityEngine::Vector3 position, ::UnityEngine::Quaternion rotation) {
+      static_assert(std::is_convertible_v<T, ::UnityEngine::Object*>);
+      static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::Realtime::Instantiate");
+      static auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod("Normal.Realtime", "Realtime", "Instantiate", std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<T>::get()}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(original), ::il2cpp_utils::ExtractType(position), ::il2cpp_utils::ExtractType(rotation)})));
+      static auto* ___generic__method = THROW_UNLESS(::il2cpp_utils::MakeGenericMethod(___internal__method, std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<T>::get()}));
+      return ::il2cpp_utils::RunMethodRethrow<T, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method, original, position, rotation);
+    }
     // static public UnityEngine.GameObject Instantiate(UnityEngine.GameObject original)
     // Offset: 0x8CBA40
     static ::UnityEngine::GameObject* Instantiate(::UnityEngine::GameObject* original);
+    // static public UnityEngine.Object Instantiate(UnityEngine.Object original, UnityEngine.Transform parent, System.Boolean instantiateInWorldSpace)
+    // Offset: 0x8CB490
+    static ::UnityEngine::Object* Instantiate(::UnityEngine::Object* original, ::UnityEngine::Transform* parent, bool instantiateInWorldSpace);
     // static public UnityEngine.Object Instantiate(UnityEngine.Object original, UnityEngine.Transform parent)
     // Offset: 0x8CB7A0
     static ::UnityEngine::Object* Instantiate(::UnityEngine::Object* original, ::UnityEngine::Transform* parent);
+    // static public System.Void Destroy(UnityEngine.Object obj)
+    // Offset: 0x8CA8B0
+    static void Destroy(::UnityEngine::Object* obj);
+    // static public System.Void Destroy(UnityEngine.Object obj, System.Single t)
+    // Offset: 0x8CA910
+    static void Destroy(::UnityEngine::Object* obj, float t);
+    // static public System.Void DestroyImmediate(UnityEngine.Object obj, System.Boolean allowDestroyingAssets)
+    // Offset: 0x8CA510
+    static void DestroyImmediate(::UnityEngine::Object* obj, bool allowDestroyingAssets);
+    // static public System.Void DestroyImmediate(UnityEngine.Object obj)
+    // Offset: 0x8CA4C0
+    static void DestroyImmediate(::UnityEngine::Object* obj);
     // static public System.Void DestroyObject(UnityEngine.Object obj, System.Single t)
     // Offset: 0x8CA560
     static void DestroyObject(::UnityEngine::Object* obj, float t);
@@ -465,107 +536,6 @@ namespace Normal::Realtime {
     // private System.Void <SetRoom>b__78_0()
     // Offset: 0x8CCAB0
     void $SetRoom$b__78_0();
-    // public System.Void .ctor()
-    // Offset: 0x8CCC90
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static Realtime* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::Realtime::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<Realtime*, creationType>()));
-    }
-    // static private System.Void .cctor()
-    // Offset: 0x8CCC30
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.cctor()
-    static void _cctor();
-    // static public UnityEngine.Object Instantiate(UnityEngine.Object original)
-    // Offset: 0x8CB5C0
-    // Implemented from: UnityEngine.Object
-    // Base method: UnityEngine.Object Object::Instantiate(UnityEngine.Object original)
-    static ::UnityEngine::Object* Instantiate(::UnityEngine::Object* original);
-    // static public UnityEngine.Object Instantiate(UnityEngine.Object original, UnityEngine.Vector3 position, UnityEngine.Quaternion rotation)
-    // Offset: 0x8CB320
-    // Implemented from: UnityEngine.Object
-    // Base method: UnityEngine.Object Object::Instantiate(UnityEngine.Object original, UnityEngine.Vector3 position, UnityEngine.Quaternion rotation)
-    static ::UnityEngine::Object* Instantiate(::UnityEngine::Object* original, ::UnityEngine::Vector3 position, ::UnityEngine::Quaternion rotation);
-    // static public T Instantiate(T original, UnityEngine.Transform parent, System.Boolean worldPositionStays)
-    // Offset: 0xFFFFFFFFFFFFFFFF
-    // Implemented from: UnityEngine.Object
-    // Base method: T Object::Instantiate(T original, UnityEngine.Transform parent, System.Boolean worldPositionStays)
-    template<class T>
-    static T Instantiate(T original, ::UnityEngine::Transform* parent, bool worldPositionStays) {
-      static_assert(std::is_convertible_v<T, ::UnityEngine::Object*>);
-      static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::Realtime::Instantiate");
-      static auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod("Normal.Realtime", "Realtime", "Instantiate", std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<T>::get()}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(original), ::il2cpp_utils::ExtractType(parent), ::il2cpp_utils::ExtractType(worldPositionStays)})));
-      static auto* ___generic__method = THROW_UNLESS(::il2cpp_utils::MakeGenericMethod(___internal__method, std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<T>::get()}));
-      return ::il2cpp_utils::RunMethodRethrow<T, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method, original, parent, worldPositionStays);
-    }
-    // static public T Instantiate(T original)
-    // Offset: 0xFFFFFFFFFFFFFFFF
-    // Implemented from: UnityEngine.Object
-    // Base method: T Object::Instantiate(T original)
-    template<class T>
-    static T Instantiate(T original) {
-      static_assert(std::is_convertible_v<T, ::UnityEngine::Object*>);
-      static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::Realtime::Instantiate");
-      static auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod("Normal.Realtime", "Realtime", "Instantiate", std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<T>::get()}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(original)})));
-      static auto* ___generic__method = THROW_UNLESS(::il2cpp_utils::MakeGenericMethod(___internal__method, std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<T>::get()}));
-      return ::il2cpp_utils::RunMethodRethrow<T, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method, original);
-    }
-    // static public T Instantiate(T original, UnityEngine.Transform parent)
-    // Offset: 0xFFFFFFFFFFFFFFFF
-    // Implemented from: UnityEngine.Object
-    // Base method: T Object::Instantiate(T original, UnityEngine.Transform parent)
-    template<class T>
-    static T Instantiate(T original, ::UnityEngine::Transform* parent) {
-      static_assert(std::is_convertible_v<T, ::UnityEngine::Object*>);
-      static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::Realtime::Instantiate");
-      static auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod("Normal.Realtime", "Realtime", "Instantiate", std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<T>::get()}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(original), ::il2cpp_utils::ExtractType(parent)})));
-      static auto* ___generic__method = THROW_UNLESS(::il2cpp_utils::MakeGenericMethod(___internal__method, std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<T>::get()}));
-      return ::il2cpp_utils::RunMethodRethrow<T, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method, original, parent);
-    }
-    // static public T Instantiate(T original, UnityEngine.Vector3 position, UnityEngine.Quaternion rotation)
-    // Offset: 0xFFFFFFFFFFFFFFFF
-    // Implemented from: UnityEngine.Object
-    // Base method: T Object::Instantiate(T original, UnityEngine.Vector3 position, UnityEngine.Quaternion rotation)
-    template<class T>
-    static T Instantiate(T original, ::UnityEngine::Vector3 position, ::UnityEngine::Quaternion rotation) {
-      static_assert(std::is_convertible_v<T, ::UnityEngine::Object*>);
-      static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::Realtime::Instantiate");
-      static auto* ___internal__method = THROW_UNLESS((::il2cpp_utils::FindMethod("Normal.Realtime", "Realtime", "Instantiate", std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<T>::get()}, ::std::vector<const Il2CppType*>{::il2cpp_utils::ExtractType(original), ::il2cpp_utils::ExtractType(position), ::il2cpp_utils::ExtractType(rotation)})));
-      static auto* ___generic__method = THROW_UNLESS(::il2cpp_utils::MakeGenericMethod(___internal__method, std::vector<Il2CppClass*>{::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<T>::get()}));
-      return ::il2cpp_utils::RunMethodRethrow<T, false>(static_cast<Il2CppObject*>(nullptr), ___generic__method, original, position, rotation);
-    }
-    // static public UnityEngine.Object Instantiate(UnityEngine.Object original, UnityEngine.Transform parent, System.Boolean instantiateInWorldSpace)
-    // Offset: 0x8CB490
-    // Implemented from: UnityEngine.Object
-    // Base method: UnityEngine.Object Object::Instantiate(UnityEngine.Object original, UnityEngine.Transform parent, System.Boolean instantiateInWorldSpace)
-    static ::UnityEngine::Object* Instantiate(::UnityEngine::Object* original, ::UnityEngine::Transform* parent, bool instantiateInWorldSpace);
-    // static public System.Void Destroy(UnityEngine.Object obj)
-    // Offset: 0x8CA8B0
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::Destroy(UnityEngine.Object obj)
-    static void Destroy(::UnityEngine::Object* obj);
-    // static public System.Void Destroy(UnityEngine.Object obj, System.Single t)
-    // Offset: 0x8CA910
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::Destroy(UnityEngine.Object obj, System.Single t)
-    static void Destroy(::UnityEngine::Object* obj, float t);
-    // static public System.Void DestroyImmediate(UnityEngine.Object obj, System.Boolean allowDestroyingAssets)
-    // Offset: 0x8CA510
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::DestroyImmediate(UnityEngine.Object obj, System.Boolean allowDestroyingAssets)
-    static void DestroyImmediate(::UnityEngine::Object* obj, bool allowDestroyingAssets);
-    // static public System.Void DestroyImmediate(UnityEngine.Object obj)
-    // Offset: 0x8CA4C0
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::DestroyImmediate(UnityEngine.Object obj)
-    static void DestroyImmediate(::UnityEngine::Object* obj);
   }; // Normal.Realtime.Realtime
   #pragma pack(pop)
   static check_size<sizeof(Realtime), 112 + sizeof(::UnityEngine::Coroutine*)> __Normal_Realtime_RealtimeSizeCheck;
@@ -700,6 +670,18 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Norma
     return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::Realtime*), "remove_didDisconnectFromRoom", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: Normal::Realtime::Realtime::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
+// Writing MetadataGetter for method: Normal::Realtime::Realtime::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&Normal::Realtime::Realtime::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::Realtime*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
 // Writing MetadataGetter for method: Normal::Realtime::Realtime::Instantiate
 // Il2CppName: Instantiate
 template<>
@@ -811,6 +793,38 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
 };
 // Writing MetadataGetter for method: Normal::Realtime::Realtime::Instantiate
 // Il2CppName: Instantiate
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngine::Object* (*)(::UnityEngine::Object*)>(&Normal::Realtime::Realtime::Instantiate)> {
+  static const MethodInfo* get() {
+    static auto* original = &::il2cpp_utils::GetClassFromName("UnityEngine", "Object")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::Realtime*), "Instantiate", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{original});
+  }
+};
+// Writing MetadataGetter for method: Normal::Realtime::Realtime::Instantiate
+// Il2CppName: Instantiate
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngine::Object* (*)(::UnityEngine::Object*, ::UnityEngine::Vector3, ::UnityEngine::Quaternion)>(&Normal::Realtime::Realtime::Instantiate)> {
+  static const MethodInfo* get() {
+    static auto* original = &::il2cpp_utils::GetClassFromName("UnityEngine", "Object")->byval_arg;
+    static auto* position = &::il2cpp_utils::GetClassFromName("UnityEngine", "Vector3")->byval_arg;
+    static auto* rotation = &::il2cpp_utils::GetClassFromName("UnityEngine", "Quaternion")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::Realtime*), "Instantiate", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{original, position, rotation});
+  }
+};
+// Writing MetadataGetter for method: Normal::Realtime::Realtime::Instantiate
+// Il2CppName: Instantiate
+// Cannot write MetadataGetter for generic methods!
+// Writing MetadataGetter for method: Normal::Realtime::Realtime::Instantiate
+// Il2CppName: Instantiate
+// Cannot write MetadataGetter for generic methods!
+// Writing MetadataGetter for method: Normal::Realtime::Realtime::Instantiate
+// Il2CppName: Instantiate
+// Cannot write MetadataGetter for generic methods!
+// Writing MetadataGetter for method: Normal::Realtime::Realtime::Instantiate
+// Il2CppName: Instantiate
+// Cannot write MetadataGetter for generic methods!
+// Writing MetadataGetter for method: Normal::Realtime::Realtime::Instantiate
+// Il2CppName: Instantiate
 // Cannot write MetadataGetter for generic methods!
 // Writing MetadataGetter for method: Normal::Realtime::Realtime::Instantiate
 // Il2CppName: Instantiate
@@ -824,11 +838,60 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
 // Writing MetadataGetter for method: Normal::Realtime::Realtime::Instantiate
 // Il2CppName: Instantiate
 template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngine::Object* (*)(::UnityEngine::Object*, ::UnityEngine::Transform*, bool)>(&Normal::Realtime::Realtime::Instantiate)> {
+  static const MethodInfo* get() {
+    static auto* original = &::il2cpp_utils::GetClassFromName("UnityEngine", "Object")->byval_arg;
+    static auto* parent = &::il2cpp_utils::GetClassFromName("UnityEngine", "Transform")->byval_arg;
+    static auto* instantiateInWorldSpace = &::il2cpp_utils::GetClassFromName("System", "Boolean")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::Realtime*), "Instantiate", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{original, parent, instantiateInWorldSpace});
+  }
+};
+// Writing MetadataGetter for method: Normal::Realtime::Realtime::Instantiate
+// Il2CppName: Instantiate
+template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngine::Object* (*)(::UnityEngine::Object*, ::UnityEngine::Transform*)>(&Normal::Realtime::Realtime::Instantiate)> {
   static const MethodInfo* get() {
     static auto* original = &::il2cpp_utils::GetClassFromName("UnityEngine", "Object")->byval_arg;
     static auto* parent = &::il2cpp_utils::GetClassFromName("UnityEngine", "Transform")->byval_arg;
     return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::Realtime*), "Instantiate", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{original, parent});
+  }
+};
+// Writing MetadataGetter for method: Normal::Realtime::Realtime::Destroy
+// Il2CppName: Destroy
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(::UnityEngine::Object*)>(&Normal::Realtime::Realtime::Destroy)> {
+  static const MethodInfo* get() {
+    static auto* obj = &::il2cpp_utils::GetClassFromName("UnityEngine", "Object")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::Realtime*), "Destroy", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{obj});
+  }
+};
+// Writing MetadataGetter for method: Normal::Realtime::Realtime::Destroy
+// Il2CppName: Destroy
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(::UnityEngine::Object*, float)>(&Normal::Realtime::Realtime::Destroy)> {
+  static const MethodInfo* get() {
+    static auto* obj = &::il2cpp_utils::GetClassFromName("UnityEngine", "Object")->byval_arg;
+    static auto* t = &::il2cpp_utils::GetClassFromName("System", "Single")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::Realtime*), "Destroy", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{obj, t});
+  }
+};
+// Writing MetadataGetter for method: Normal::Realtime::Realtime::DestroyImmediate
+// Il2CppName: DestroyImmediate
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(::UnityEngine::Object*, bool)>(&Normal::Realtime::Realtime::DestroyImmediate)> {
+  static const MethodInfo* get() {
+    static auto* obj = &::il2cpp_utils::GetClassFromName("UnityEngine", "Object")->byval_arg;
+    static auto* allowDestroyingAssets = &::il2cpp_utils::GetClassFromName("System", "Boolean")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::Realtime*), "DestroyImmediate", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{obj, allowDestroyingAssets});
+  }
+};
+// Writing MetadataGetter for method: Normal::Realtime::Realtime::DestroyImmediate
+// Il2CppName: DestroyImmediate
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(::UnityEngine::Object*)>(&Normal::Realtime::Realtime::DestroyImmediate)> {
+  static const MethodInfo* get() {
+    static auto* obj = &::il2cpp_utils::GetClassFromName("UnityEngine", "Object")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::Realtime*), "DestroyImmediate", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{obj});
   }
 };
 // Writing MetadataGetter for method: Normal::Realtime::Realtime::DestroyObject
@@ -1119,98 +1182,5 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Normal::Realtime::Realtime::*)()>(&Normal::Realtime::Realtime::$SetRoom$b__78_0)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::Realtime*), "<SetRoom>b__78_0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
-  }
-};
-// Writing MetadataGetter for method: Normal::Realtime::Realtime::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
-// Writing MetadataGetter for method: Normal::Realtime::Realtime::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&Normal::Realtime::Realtime::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::Realtime*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
-  }
-};
-// Writing MetadataGetter for method: Normal::Realtime::Realtime::Instantiate
-// Il2CppName: Instantiate
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngine::Object* (*)(::UnityEngine::Object*)>(&Normal::Realtime::Realtime::Instantiate)> {
-  static const MethodInfo* get() {
-    static auto* original = &::il2cpp_utils::GetClassFromName("UnityEngine", "Object")->byval_arg;
-    return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::Realtime*), "Instantiate", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{original});
-  }
-};
-// Writing MetadataGetter for method: Normal::Realtime::Realtime::Instantiate
-// Il2CppName: Instantiate
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngine::Object* (*)(::UnityEngine::Object*, ::UnityEngine::Vector3, ::UnityEngine::Quaternion)>(&Normal::Realtime::Realtime::Instantiate)> {
-  static const MethodInfo* get() {
-    static auto* original = &::il2cpp_utils::GetClassFromName("UnityEngine", "Object")->byval_arg;
-    static auto* position = &::il2cpp_utils::GetClassFromName("UnityEngine", "Vector3")->byval_arg;
-    static auto* rotation = &::il2cpp_utils::GetClassFromName("UnityEngine", "Quaternion")->byval_arg;
-    return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::Realtime*), "Instantiate", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{original, position, rotation});
-  }
-};
-// Writing MetadataGetter for method: Normal::Realtime::Realtime::Instantiate
-// Il2CppName: Instantiate
-// Cannot write MetadataGetter for generic methods!
-// Writing MetadataGetter for method: Normal::Realtime::Realtime::Instantiate
-// Il2CppName: Instantiate
-// Cannot write MetadataGetter for generic methods!
-// Writing MetadataGetter for method: Normal::Realtime::Realtime::Instantiate
-// Il2CppName: Instantiate
-// Cannot write MetadataGetter for generic methods!
-// Writing MetadataGetter for method: Normal::Realtime::Realtime::Instantiate
-// Il2CppName: Instantiate
-// Cannot write MetadataGetter for generic methods!
-// Writing MetadataGetter for method: Normal::Realtime::Realtime::Instantiate
-// Il2CppName: Instantiate
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngine::Object* (*)(::UnityEngine::Object*, ::UnityEngine::Transform*, bool)>(&Normal::Realtime::Realtime::Instantiate)> {
-  static const MethodInfo* get() {
-    static auto* original = &::il2cpp_utils::GetClassFromName("UnityEngine", "Object")->byval_arg;
-    static auto* parent = &::il2cpp_utils::GetClassFromName("UnityEngine", "Transform")->byval_arg;
-    static auto* instantiateInWorldSpace = &::il2cpp_utils::GetClassFromName("System", "Boolean")->byval_arg;
-    return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::Realtime*), "Instantiate", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{original, parent, instantiateInWorldSpace});
-  }
-};
-// Writing MetadataGetter for method: Normal::Realtime::Realtime::Destroy
-// Il2CppName: Destroy
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(::UnityEngine::Object*)>(&Normal::Realtime::Realtime::Destroy)> {
-  static const MethodInfo* get() {
-    static auto* obj = &::il2cpp_utils::GetClassFromName("UnityEngine", "Object")->byval_arg;
-    return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::Realtime*), "Destroy", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{obj});
-  }
-};
-// Writing MetadataGetter for method: Normal::Realtime::Realtime::Destroy
-// Il2CppName: Destroy
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(::UnityEngine::Object*, float)>(&Normal::Realtime::Realtime::Destroy)> {
-  static const MethodInfo* get() {
-    static auto* obj = &::il2cpp_utils::GetClassFromName("UnityEngine", "Object")->byval_arg;
-    static auto* t = &::il2cpp_utils::GetClassFromName("System", "Single")->byval_arg;
-    return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::Realtime*), "Destroy", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{obj, t});
-  }
-};
-// Writing MetadataGetter for method: Normal::Realtime::Realtime::DestroyImmediate
-// Il2CppName: DestroyImmediate
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(::UnityEngine::Object*, bool)>(&Normal::Realtime::Realtime::DestroyImmediate)> {
-  static const MethodInfo* get() {
-    static auto* obj = &::il2cpp_utils::GetClassFromName("UnityEngine", "Object")->byval_arg;
-    static auto* allowDestroyingAssets = &::il2cpp_utils::GetClassFromName("System", "Boolean")->byval_arg;
-    return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::Realtime*), "DestroyImmediate", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{obj, allowDestroyingAssets});
-  }
-};
-// Writing MetadataGetter for method: Normal::Realtime::Realtime::DestroyImmediate
-// Il2CppName: DestroyImmediate
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(::UnityEngine::Object*)>(&Normal::Realtime::Realtime::DestroyImmediate)> {
-  static const MethodInfo* get() {
-    static auto* obj = &::il2cpp_utils::GetClassFromName("UnityEngine", "Object")->byval_arg;
-    return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::Realtime*), "DestroyImmediate", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{obj});
   }
 };

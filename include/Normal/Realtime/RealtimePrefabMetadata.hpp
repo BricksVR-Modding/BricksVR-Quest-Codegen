@@ -43,7 +43,7 @@ namespace Normal::Realtime {
       return prefabName;
     }
     // Get instance field reference: public System.String prefabName
-    [[deprecated]] ::StringW& dyn_prefabName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_prefabName();
   }; // Normal.Realtime.RealtimePrefabMetadata
   #pragma pack(pop)
   static check_size<sizeof(RealtimePrefabMetadata), 0 + sizeof(::StringW)> __Normal_Realtime_RealtimePrefabMetadataSizeCheck;

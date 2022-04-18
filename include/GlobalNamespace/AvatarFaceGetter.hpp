@@ -58,9 +58,16 @@ namespace GlobalNamespace {
     // Set static field: static private AvatarFaceGetter _instance
     static void _set__instance(::GlobalNamespace::AvatarFaceGetter* value);
     // Get instance field reference: public UnityEngine.Sprite[] mouths
-    [[deprecated]] ::ArrayW<::UnityEngine::Sprite*>& dyn_mouths();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Sprite*>& dyn_mouths();
     // Get instance field reference: public UnityEngine.Sprite[] eyes
-    [[deprecated]] ::ArrayW<::UnityEngine::Sprite*>& dyn_eyes();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Sprite*>& dyn_eyes();
+    // public System.Void .ctor()
+    // Offset: 0x1DDE30
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static AvatarFaceGetter* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::AvatarFaceGetter::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<AvatarFaceGetter*, creationType>()));
+    }
     // static public AvatarFaceGetter GetInstance()
     // Offset: 0x6DE810
     static ::GlobalNamespace::AvatarFaceGetter* GetInstance();
@@ -70,25 +77,16 @@ namespace GlobalNamespace {
     // public UnityEngine.Sprite GetEyes(System.Int32 index)
     // Offset: 0x6DE7D0
     ::UnityEngine::Sprite* GetEyes(int index);
-    // public System.Void .ctor()
-    // Offset: 0x1DDE30
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static AvatarFaceGetter* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::AvatarFaceGetter::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<AvatarFaceGetter*, creationType>()));
-    }
   }; // AvatarFaceGetter
   #pragma pack(pop)
   static check_size<sizeof(AvatarFaceGetter), 32 + sizeof(::ArrayW<::UnityEngine::Sprite*>)> __GlobalNamespace_AvatarFaceGetterSizeCheck;
   static_assert(sizeof(AvatarFaceGetter) == 0x28);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::AvatarFaceGetter::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::AvatarFaceGetter::GetInstance
 // Il2CppName: GetInstance
 template<>
@@ -115,7 +113,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::AvatarFaceGetter*), "GetEyes", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{index});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::AvatarFaceGetter::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

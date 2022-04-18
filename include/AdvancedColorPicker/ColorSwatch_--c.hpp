@@ -50,18 +50,16 @@ namespace AdvancedColorPicker {
     // static private System.Void .cctor()
     // Offset: 0x5BD300
     static void _cctor();
-    // UnityEngine.Color32 <SaveSwatch>b__42_0(AdvancedColorPicker.ColorPreset x)
-    // Offset: 0x5BD090
-    ::UnityEngine::Color32 $SaveSwatch$b__42_0(::AdvancedColorPicker::ColorPreset* x);
     // public System.Void .ctor()
     // Offset: 0x1DD400
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ColorSwatch::$$c* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::AdvancedColorPicker::ColorSwatch::$$c::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<ColorSwatch::$$c*, creationType>()));
     }
+    // UnityEngine.Color32 <SaveSwatch>b__42_0(AdvancedColorPicker.ColorPreset x)
+    // Offset: 0x5BD090
+    ::UnityEngine::Color32 $SaveSwatch$b__42_0(::AdvancedColorPicker::ColorPreset* x);
   }; // AdvancedColorPicker.ColorSwatch/AdvancedColorPicker.<>c
   #pragma pack(pop)
 }
@@ -74,6 +72,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(AdvancedColorPicker::ColorSwatch::$$c*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: AdvancedColorPicker::ColorSwatch::$$c::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: AdvancedColorPicker::ColorSwatch::$$c::$SaveSwatch$b__42_0
 // Il2CppName: <SaveSwatch>b__42_0
 template<>
@@ -83,7 +85,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
     return ::il2cpp_utils::FindMethod(classof(AdvancedColorPicker::ColorSwatch::$$c*), "<SaveSwatch>b__42_0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{x});
   }
 };
-// Writing MetadataGetter for method: AdvancedColorPicker::ColorSwatch::$$c::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

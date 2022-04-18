@@ -77,13 +77,13 @@ namespace UnityEngine {
       return *reinterpret_cast<::System::IEquatable_1<::UnityEngine::Color>*>(this);
     }
     // Get instance field reference: public System.Single r
-    [[deprecated]] float& dyn_r();
+    [[deprecated("Use field access instead!")]] float& dyn_r();
     // Get instance field reference: public System.Single g
-    [[deprecated]] float& dyn_g();
+    [[deprecated("Use field access instead!")]] float& dyn_g();
     // Get instance field reference: public System.Single b
-    [[deprecated]] float& dyn_b();
+    [[deprecated("Use field access instead!")]] float& dyn_b();
     // Get instance field reference: public System.Single a
-    [[deprecated]] float& dyn_a();
+    [[deprecated("Use field access instead!")]] float& dyn_a();
     // static public UnityEngine.Color get_red()
     // Offset: 0x987570
     static ::UnityEngine::Color get_red();

@@ -56,28 +56,30 @@ namespace UnityEngine::Tilemaps {
     // Set static field: static UnityEngine.Tilemaps.ITilemap s_Instance
     static void _set_s_Instance(::UnityEngine::Tilemaps::ITilemap* value);
     // Get instance field reference: UnityEngine.Tilemaps.Tilemap m_Tilemap
-    [[deprecated]] ::UnityEngine::Tilemaps::Tilemap*& dyn_m_Tilemap();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Tilemaps::Tilemap*& dyn_m_Tilemap();
+    // System.Void .ctor()
+    // Offset: 0x1DD400
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ITilemap* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Tilemaps::ITilemap::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ITilemap*, creationType>()));
+    }
     // public System.Void RefreshTile(UnityEngine.Vector3Int position)
     // Offset: 0x66EE00
     void RefreshTile(::UnityEngine::Vector3Int position);
     // static private UnityEngine.Tilemaps.ITilemap CreateInstance()
     // Offset: 0x66ED90
     static ::UnityEngine::Tilemaps::ITilemap* CreateInstance();
-    // System.Void .ctor()
-    // Offset: 0x1DD400
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ITilemap* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Tilemaps::ITilemap::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ITilemap*, creationType>()));
-    }
   }; // UnityEngine.Tilemaps.ITilemap
   #pragma pack(pop)
   static check_size<sizeof(ITilemap), 16 + sizeof(::UnityEngine::Tilemaps::Tilemap*)> __UnityEngine_Tilemaps_ITilemapSizeCheck;
   static_assert(sizeof(ITilemap) == 0x18);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: UnityEngine::Tilemaps::ITilemap::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::Tilemaps::ITilemap::RefreshTile
 // Il2CppName: RefreshTile
 template<>
@@ -95,7 +97,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Tilemaps::ITilemap*), "CreateInstance", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::Tilemaps::ITilemap::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

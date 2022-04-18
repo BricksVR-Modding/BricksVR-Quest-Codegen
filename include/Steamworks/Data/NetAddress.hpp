@@ -92,19 +92,19 @@ namespace Steamworks::Data {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: System.UInt64 m_8zeros
-      [[deprecated]] uint64_t& dyn_m_8zeros();
+      [[deprecated("Use field access instead!")]] uint64_t& dyn_m_8zeros();
       // Get instance field reference: System.UInt16 m_0000
-      [[deprecated]] uint16_t& dyn_m_0000();
+      [[deprecated("Use field access instead!")]] uint16_t& dyn_m_0000();
       // Get instance field reference: System.UInt16 m_ffff
-      [[deprecated]] uint16_t& dyn_m_ffff();
+      [[deprecated("Use field access instead!")]] uint16_t& dyn_m_ffff();
       // Get instance field reference: System.Byte ip0
-      [[deprecated]] uint8_t& dyn_ip0();
+      [[deprecated("Use field access instead!")]] uint8_t& dyn_ip0();
       // Get instance field reference: System.Byte ip1
-      [[deprecated]] uint8_t& dyn_ip1();
+      [[deprecated("Use field access instead!")]] uint8_t& dyn_ip1();
       // Get instance field reference: System.Byte ip2
-      [[deprecated]] uint8_t& dyn_ip2();
+      [[deprecated("Use field access instead!")]] uint8_t& dyn_ip2();
       // Get instance field reference: System.Byte ip3
-      [[deprecated]] uint8_t& dyn_ip3();
+      [[deprecated("Use field access instead!")]] uint8_t& dyn_ip3();
     }; // Steamworks.Data.NetAddress/Steamworks.Data.IPV4
     #pragma pack(pop)
     static check_size<sizeof(NetAddress::IPV4), 15 + sizeof(uint8_t)> __Steamworks_Data_NetAddress_IPV4SizeCheck;
@@ -130,9 +130,9 @@ namespace Steamworks::Data {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: Steamworks.Data.NetAddress/Steamworks.Data.IPV4 ip
-    [[deprecated]] ::Steamworks::Data::NetAddress::IPV4& dyn_ip();
+    [[deprecated("Use field access instead!")]] ::Steamworks::Data::NetAddress::IPV4& dyn_ip();
     // Get instance field reference: System.UInt16 port
-    [[deprecated]] uint16_t& dyn_port();
+    [[deprecated("Use field access instead!")]] uint16_t& dyn_port();
     // static System.Void InternalToString(ref Steamworks.Data.NetAddress self, System.IntPtr buf, System.UInt32 cbBuf, System.Boolean bWithPort)
     // Offset: 0x463DB0
     static void InternalToString(ByRef<::Steamworks::Data::NetAddress> self, ::System::IntPtr buf, uint cbBuf, bool bWithPort);

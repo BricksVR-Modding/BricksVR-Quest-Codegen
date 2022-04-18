@@ -33,7 +33,7 @@ namespace System::Collections {
       return sortedList;
     }
     // Get instance field reference: private System.Collections.SortedList sortedList
-    [[deprecated]] ::System::Collections::SortedList*& dyn_sortedList();
+    [[deprecated("Use field access instead!")]] ::System::Collections::SortedList*& dyn_sortedList();
   }; // System.Collections.SortedList/System.Collections.KeyList
   #pragma pack(pop)
   static check_size<sizeof(SortedList::KeyList), 16 + sizeof(::System::Collections::SortedList*)> __System_Collections_SortedList_KeyListSizeCheck;

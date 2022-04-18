@@ -155,7 +155,7 @@ namespace Normal::Realtime {
       // Set static field: static public Normal.Realtime.Room/Normal.Realtime.ConnectionState Ready
       static void _set_Ready(::Normal::Realtime::Room::ConnectionState value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // Normal.Realtime.Room/Normal.Realtime.ConnectionState
     #pragma pack(pop)
     static check_size<sizeof(Room::ConnectionState), 0 + sizeof(int)> __Normal_Realtime_Room_ConnectionStateSizeCheck;
@@ -305,49 +305,49 @@ namespace Normal::Realtime {
       return *reinterpret_cast<::System::IDisposable*>(this);
     }
     // Get instance field reference: private Normal.Realtime.Room/Normal.Realtime.ConnectionStateChanged connectionStateChanged
-    [[deprecated]] ::Normal::Realtime::Room::ConnectionStateChanged*& dyn_connectionStateChanged();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::Room::ConnectionStateChanged*& dyn_connectionStateChanged();
     // Get instance field reference: private Normal.Realtime.Room/Normal.Realtime.RPCMessageReceived rpcMessageReceived
-    [[deprecated]] ::Normal::Realtime::Room::RPCMessageReceived*& dyn_rpcMessageReceived();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::Room::RPCMessageReceived*& dyn_rpcMessageReceived();
     // Get instance field reference: private System.String _name
-    [[deprecated]] ::StringW& dyn__name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__name();
     // Get instance field reference: private System.Double _time
-    [[deprecated]] double& dyn__time();
+    [[deprecated("Use field access instead!")]] double& dyn__time();
     // Get instance field reference: private Normal.Realtime.Room/Normal.Realtime.ConnectionState _connectionState
-    [[deprecated]] ::Normal::Realtime::Room::ConnectionState& dyn__connectionState();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::Room::ConnectionState& dyn__connectionState();
     // Get instance field reference: private System.Double <datastoreFrameDuration>k__BackingField
-    [[deprecated]] double& dyn_$datastoreFrameDuration$k__BackingField();
+    [[deprecated("Use field access instead!")]] double& dyn_$datastoreFrameDuration$k__BackingField();
     // Get instance field reference: private System.Boolean _debugLogging
-    [[deprecated]] bool& dyn__debugLogging();
+    [[deprecated("Use field access instead!")]] bool& dyn__debugLogging();
     // Get instance field reference: private Normal.Realtime.Native.Client _client
-    [[deprecated]] ::Normal::Realtime::Native::Client*& dyn__client();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::Native::Client*& dyn__client();
     // Get instance field reference: private Normal.Realtime.CoroutineRunner _coroutineRunner
-    [[deprecated]] ::Normal::Realtime::CoroutineRunner*& dyn__coroutineRunner();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::CoroutineRunner*& dyn__coroutineRunner();
     // Get instance field reference: private Normal.Realtime.CoroutineRunner/Normal.Realtime.CoroutineContext _activeConnectToServerCoroutine
-    [[deprecated]] ::Normal::Realtime::CoroutineRunner::CoroutineContext*& dyn__activeConnectToServerCoroutine();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::CoroutineRunner::CoroutineContext*& dyn__activeConnectToServerCoroutine();
     // Get instance field reference: private UnityEngine.Component <realtime>k__BackingField
-    [[deprecated]] ::UnityEngine::Component*& dyn_$realtime$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Component*& dyn_$realtime$k__BackingField();
     // Get instance field reference: private Normal.Realtime.Datastore _datastore
-    [[deprecated]] ::Normal::Realtime::Datastore*& dyn__datastore();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::Datastore*& dyn__datastore();
     // Get instance field reference: private System.Double _deltaTime
-    [[deprecated]] double& dyn__deltaTime();
+    [[deprecated("Use field access instead!")]] double& dyn__deltaTime();
     // Get instance field reference: private System.UInt32 _nextUpdateID
-    [[deprecated]] uint& dyn__nextUpdateID();
+    [[deprecated("Use field access instead!")]] uint& dyn__nextUpdateID();
     // Get instance field reference: private Normal.Realtime.RealtimeModel _roomModel
-    [[deprecated]] ::Normal::Realtime::RealtimeModel*& dyn__roomModel();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::RealtimeModel*& dyn__roomModel();
     // Get instance field reference: private Normal.Realtime.SessionCapture _sessionCapture
-    [[deprecated]] ::Normal::Realtime::SessionCapture*& dyn__sessionCapture();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::SessionCapture*& dyn__sessionCapture();
     // Get instance field reference: private Normal.Realtime.Room/Normal.Realtime.RoomEventHandler onWillWrite
-    [[deprecated]] ::Normal::Realtime::Room::RoomEventHandler*& dyn_onWillWrite();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::Room::RoomEventHandler*& dyn_onWillWrite();
     // Get instance field reference: private Normal.Realtime.Room/Normal.Realtime.RoomEventHandler onWillRead
-    [[deprecated]] ::Normal::Realtime::Room::RoomEventHandler*& dyn_onWillRead();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::Room::RoomEventHandler*& dyn_onWillRead();
     // Get instance field reference: private Normal.Realtime.Room/Normal.Realtime.RoomEventHandler onDidWrite
-    [[deprecated]] ::Normal::Realtime::Room::RoomEventHandler*& dyn_onDidWrite();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::Room::RoomEventHandler*& dyn_onDidWrite();
     // Get instance field reference: private Normal.Realtime.Room/Normal.Realtime.RoomEventHandler onDidRead
-    [[deprecated]] ::Normal::Realtime::Room::RoomEventHandler*& dyn_onDidRead();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::Room::RoomEventHandler*& dyn_onDidRead();
     // Get instance field reference: private Normal.Realtime.IRealtimePrefabLoadDelegate <prefabLoadDelegate>k__BackingField
-    [[deprecated]] ::Normal::Realtime::IRealtimePrefabLoadDelegate*& dyn_$prefabLoadDelegate$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::IRealtimePrefabLoadDelegate*& dyn_$prefabLoadDelegate$k__BackingField();
     // Get instance field reference: private Normal.Realtime.IRealtimePrefabInstantiateDelegate <prefabInstantiateDelegate>k__BackingField
-    [[deprecated]] ::Normal::Realtime::IRealtimePrefabInstantiateDelegate*& dyn_$prefabInstantiateDelegate$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::IRealtimePrefabInstantiateDelegate*& dyn_$prefabInstantiateDelegate$k__BackingField();
     // public System.String get_name()
     // Offset: 0x1E1950
     ::StringW get_name();
@@ -444,6 +444,13 @@ namespace Normal::Realtime {
     // public System.Void remove_onDidRead(Normal.Realtime.Room/Normal.Realtime.RoomEventHandler value)
     // Offset: 0x899D40
     void remove_onDidRead(::Normal::Realtime::Room::RoomEventHandler* value);
+    // public System.Void .ctor()
+    // Offset: 0x899500
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static Room* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::Room::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<Room*, creationType>()));
+    }
     // public System.Void .ctor(Normal.Realtime.SessionCapture sessionCapture)
     // Offset: 0x899680
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -547,15 +554,6 @@ namespace Normal::Realtime {
     // public Normal.Realtime.Native.NetworkInfo GetNetworkStatistics()
     // Offset: 0x897E10
     ::Normal::Realtime::Native::NetworkInfo GetNetworkStatistics();
-    // public System.Void .ctor()
-    // Offset: 0x899500
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static Room* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::Room::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<Room*, creationType>()));
-    }
     // protected override System.Void Finalize()
     // Offset: 0x897D70
     // Implemented from: System.Object
@@ -842,6 +840,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Norma
     return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::Room*), "remove_onDidRead", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: Normal::Realtime::Room::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Normal::Realtime::Room::New_ctor
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
@@ -1152,10 +1154,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Normal::R
     return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::Room*), "GetNetworkStatistics", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: Normal::Realtime::Room::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: Normal::Realtime::Room::Finalize
 // Il2CppName: Finalize
 template<>

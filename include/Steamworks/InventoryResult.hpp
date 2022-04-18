@@ -57,9 +57,9 @@ namespace Steamworks {
       return *reinterpret_cast<::System::IDisposable*>(this);
     }
     // Get instance field reference: Steamworks.Data.SteamInventoryResult_t _id
-    [[deprecated]] ::Steamworks::Data::SteamInventoryResult_t& dyn__id();
+    [[deprecated("Use field access instead!")]] ::Steamworks::Data::SteamInventoryResult_t& dyn__id();
     // Get instance field reference: private System.Boolean <Expired>k__BackingField
-    [[deprecated]] bool& dyn_$Expired$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$Expired$k__BackingField();
     // System.Void set_Expired(System.Boolean value)
     // Offset: 0x2F8160
     void set_Expired(bool value);

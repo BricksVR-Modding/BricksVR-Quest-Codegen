@@ -48,18 +48,16 @@ namespace GlobalNamespace {
     // static private System.Void .cctor()
     // Offset: 0x6DC440
     static void _cctor();
-    // System.Boolean <CleanHoveredList>b__13_0(UnityEngine.GameObject k)
-    // Offset: 0x6DC170
-    bool $CleanHoveredList$b__13_0(::UnityEngine::GameObject* k);
     // public System.Void .ctor()
     // Offset: 0x1DD400
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static QuickInteractor::$$c* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::QuickInteractor::$$c::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<QuickInteractor::$$c*, creationType>()));
     }
+    // System.Boolean <CleanHoveredList>b__13_0(UnityEngine.GameObject k)
+    // Offset: 0x6DC170
+    bool $CleanHoveredList$b__13_0(::UnityEngine::GameObject* k);
   }; // QuickInteractor/<>c
   #pragma pack(pop)
 }
@@ -72,6 +70,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::QuickInteractor::$$c*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: GlobalNamespace::QuickInteractor::$$c::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::QuickInteractor::$$c::$CleanHoveredList$b__13_0
 // Il2CppName: <CleanHoveredList>b__13_0
 template<>
@@ -81,7 +83,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::QuickInteractor::$$c*), "<CleanHoveredList>b__13_0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{k});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::QuickInteractor::$$c::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

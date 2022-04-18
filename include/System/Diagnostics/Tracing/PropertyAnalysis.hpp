@@ -68,13 +68,13 @@ namespace System::Diagnostics::Tracing {
     static_assert(sizeof(::System::Diagnostics::Tracing::EventFieldAttribute*) == 0x8);
     public:
     // Get instance field reference: readonly System.String name
-    [[deprecated]] ::StringW& dyn_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_name();
     // Get instance field reference: readonly System.Reflection.MethodInfo getterInfo
-    [[deprecated]] ::System::Reflection::MethodInfo*& dyn_getterInfo();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::MethodInfo*& dyn_getterInfo();
     // Get instance field reference: readonly System.Diagnostics.Tracing.TraceLoggingTypeInfo typeInfo
-    [[deprecated]] ::System::Diagnostics::Tracing::TraceLoggingTypeInfo*& dyn_typeInfo();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::TraceLoggingTypeInfo*& dyn_typeInfo();
     // Get instance field reference: readonly System.Diagnostics.Tracing.EventFieldAttribute fieldAttribute
-    [[deprecated]] ::System::Diagnostics::Tracing::EventFieldAttribute*& dyn_fieldAttribute();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::EventFieldAttribute*& dyn_fieldAttribute();
     // public System.Void .ctor(System.String name, System.Reflection.MethodInfo getterInfo, System.Diagnostics.Tracing.TraceLoggingTypeInfo typeInfo, System.Diagnostics.Tracing.EventFieldAttribute fieldAttribute)
     // Offset: 0x2EE4B0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

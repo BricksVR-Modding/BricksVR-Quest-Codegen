@@ -50,13 +50,11 @@ namespace GlobalNamespace {
     static_assert(sizeof(::GlobalNamespace::UIButtonEvents*) == 0x8);
     public:
     // Get instance field reference: public UnityEngine.GameObject tabObject
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_tabObject();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_tabObject();
     // Get instance field reference: public UIButtonEvents tabButtonEvents
-    [[deprecated]] ::GlobalNamespace::UIButtonEvents*& dyn_tabButtonEvents();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::UIButtonEvents*& dyn_tabButtonEvents();
     // public System.Void .ctor()
     // Offset: 0x1DD400
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OptionsTabSystem::Tab* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OptionsTabSystem::Tab::.ctor");

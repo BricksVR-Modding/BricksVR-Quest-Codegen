@@ -60,22 +60,20 @@ namespace GlobalNamespace {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: public System.String ownerIdPrefix
-    [[deprecated]] ::StringW& dyn_ownerIdPrefix();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_ownerIdPrefix();
     // Get instance field reference: public System.String brickCount
-    [[deprecated]] ::StringW& dyn_brickCount();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_brickCount();
     // Get instance field reference: public System.String locked
-    [[deprecated]] ::StringW& dyn_locked();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_locked();
     // Get instance field reference: public System.String name
-    [[deprecated]] ::StringW& dyn_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_name();
     // Get instance field reference: public System.Boolean error
-    [[deprecated]] bool& dyn_error();
+    [[deprecated("Use field access instead!")]] bool& dyn_error();
     // public System.Boolean get_Exists()
     // Offset: 0x474D70
     bool get_Exists();
     // public System.Void .ctor()
     // Offset: 0x1DD400
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static RoomInfoResponse* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::RoomInfoResponse::.ctor");

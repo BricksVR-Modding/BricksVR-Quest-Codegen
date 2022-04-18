@@ -132,29 +132,36 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public UnityEngine.Transform sliderMarker
-    [[deprecated]] ::UnityEngine::Transform*& dyn_sliderMarker();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_sliderMarker();
     // Get instance field reference: public UnityEngine.Material hoverMaterial
-    [[deprecated]] ::UnityEngine::Material*& dyn_hoverMaterial();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn_hoverMaterial();
     // Get instance field reference: public UnityEngine.RectTransform gradientBackground
-    [[deprecated]] ::UnityEngine::RectTransform*& dyn_gradientBackground();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectTransform*& dyn_gradientBackground();
     // Get instance field reference: public UnityEngine.UI.Slider slider
-    [[deprecated]] ::UnityEngine::UI::Slider*& dyn_slider();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Slider*& dyn_slider();
     // Get instance field reference: private UnityEngine.Transform _slider
-    [[deprecated]] ::UnityEngine::Transform*& dyn__slider();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__slider();
     // Get instance field reference: private UnityEngine.Material _defaultMaterial
-    [[deprecated]] ::UnityEngine::Material*& dyn__defaultMaterial();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn__defaultMaterial();
     // Get instance field reference: private UnityEngine.MeshRenderer _meshRenderer
-    [[deprecated]] ::UnityEngine::MeshRenderer*& dyn__meshRenderer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::MeshRenderer*& dyn__meshRenderer();
     // Get instance field reference: private System.Boolean _grabbed
-    [[deprecated]] bool& dyn__grabbed();
+    [[deprecated("Use field access instead!")]] bool& dyn__grabbed();
     // Get instance field reference: private System.Single _usableSliderLength
-    [[deprecated]] float& dyn__usableSliderLength();
+    [[deprecated("Use field access instead!")]] float& dyn__usableSliderLength();
     // Get instance field reference: public System.Single defaultSliderValue
-    [[deprecated]] float& dyn_defaultSliderValue();
+    [[deprecated("Use field access instead!")]] float& dyn_defaultSliderValue();
     // Get instance field reference: private System.Int32 _hoveredCount
-    [[deprecated]] int& dyn__hoveredCount();
+    [[deprecated("Use field access instead!")]] int& dyn__hoveredCount();
     // Get instance field reference: private System.Single _value
-    [[deprecated]] float& dyn__value();
+    [[deprecated("Use field access instead!")]] float& dyn__value();
+    // public System.Void .ctor()
+    // Offset: 0x6CF9F0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static SliderGrabbable* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::SliderGrabbable::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<SliderGrabbable*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0x6CEA50
     void Awake();
@@ -197,25 +204,16 @@ namespace GlobalNamespace {
     // private System.Void OnDisable()
     // Offset: 0x6CED20
     void OnDisable();
-    // public System.Void .ctor()
-    // Offset: 0x6CF9F0
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static SliderGrabbable* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::SliderGrabbable::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<SliderGrabbable*, creationType>()));
-    }
   }; // SliderGrabbable
   #pragma pack(pop)
   static check_size<sizeof(SliderGrabbable), 96 + sizeof(float)> __GlobalNamespace_SliderGrabbableSizeCheck;
   static_assert(sizeof(SliderGrabbable) == 0x64);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::SliderGrabbable::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::SliderGrabbable::Awake
 // Il2CppName: Awake
 template<>
@@ -336,7 +334,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::SliderGrabbable*), "OnDisable", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::SliderGrabbable::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

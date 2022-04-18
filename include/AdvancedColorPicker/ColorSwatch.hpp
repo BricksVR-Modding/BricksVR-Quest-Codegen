@@ -121,23 +121,23 @@ namespace AdvancedColorPicker {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private AdvancedColorPicker.ColorPicker _picker
-    [[deprecated]] ::AdvancedColorPicker::ColorPicker*& dyn__picker();
+    [[deprecated("Use field access instead!")]] ::AdvancedColorPicker::ColorPicker*& dyn__picker();
     // Get instance field reference: private AdvancedColorPicker.ColorPreset _presetPrefab
-    [[deprecated]] ::AdvancedColorPicker::ColorPreset*& dyn__presetPrefab();
+    [[deprecated("Use field access instead!")]] ::AdvancedColorPicker::ColorPreset*& dyn__presetPrefab();
     // Get instance field reference: private UnityEngine.RectTransform _viewport
-    [[deprecated]] ::UnityEngine::RectTransform*& dyn__viewport();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectTransform*& dyn__viewport();
     // Get instance field reference: private System.String _swatchName
-    [[deprecated]] ::StringW& dyn__swatchName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__swatchName();
     // Get instance field reference: private System.Boolean _autoSave
-    [[deprecated]] bool& dyn__autoSave();
+    [[deprecated("Use field access instead!")]] bool& dyn__autoSave();
     // Get instance field reference: private AdvancedColorPicker.ColorSwatch/AdvancedColorPicker.PresetChangedEvent _presetAdded
-    [[deprecated]] ::AdvancedColorPicker::ColorSwatch::PresetChangedEvent*& dyn__presetAdded();
+    [[deprecated("Use field access instead!")]] ::AdvancedColorPicker::ColorSwatch::PresetChangedEvent*& dyn__presetAdded();
     // Get instance field reference: private AdvancedColorPicker.ColorSwatch/AdvancedColorPicker.PresetChangedEvent _presetRemoved
-    [[deprecated]] ::AdvancedColorPicker::ColorSwatch::PresetChangedEvent*& dyn__presetRemoved();
+    [[deprecated("Use field access instead!")]] ::AdvancedColorPicker::ColorSwatch::PresetChangedEvent*& dyn__presetRemoved();
     // Get instance field reference: private AdvancedColorPicker.ColorSwatch/AdvancedColorPicker.PresetChangedEvent _presetEdited
-    [[deprecated]] ::AdvancedColorPicker::ColorSwatch::PresetChangedEvent*& dyn__presetEdited();
+    [[deprecated("Use field access instead!")]] ::AdvancedColorPicker::ColorSwatch::PresetChangedEvent*& dyn__presetEdited();
     // Get instance field reference: private System.Collections.Generic.List`1<AdvancedColorPicker.ColorPreset> _colorSwatches
-    [[deprecated]] ::System::Collections::Generic::List_1<::AdvancedColorPicker::ColorPreset*>*& dyn__colorSwatches();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::AdvancedColorPicker::ColorPreset*>*& dyn__colorSwatches();
     // public System.Int32 get_Count()
     // Offset: 0x5AE600
     int get_Count();
@@ -186,6 +186,13 @@ namespace AdvancedColorPicker {
     // public System.String get_SwatchName()
     // Offset: 0x1E0EB0
     ::StringW get_SwatchName();
+    // public System.Void .ctor()
+    // Offset: 0x5AE4A0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ColorSwatch* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::AdvancedColorPicker::ColorSwatch::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ColorSwatch*, creationType>()));
+    }
     // private System.Void Start()
     // Offset: 0x5AE3D0
     void Start();
@@ -246,19 +253,6 @@ namespace AdvancedColorPicker {
     // public System.Void Remove(AdvancedColorPicker.ColorPreset preset)
     // Offset: 0x5ADEF0
     void Remove(::AdvancedColorPicker::ColorPreset* preset);
-    // public System.Void .ctor()
-    // Offset: 0x5AE4A0
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ColorSwatch* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::AdvancedColorPicker::ColorSwatch::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ColorSwatch*, creationType>()));
-    }
   }; // AdvancedColorPicker.ColorSwatch
   #pragma pack(pop)
   static check_size<sizeof(ColorSwatch), 88 + sizeof(::System::Collections::Generic::List_1<::AdvancedColorPicker::ColorPreset*>*)> __AdvancedColorPicker_ColorSwatchSizeCheck;
@@ -400,6 +394,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (
     return ::il2cpp_utils::FindMethod(classof(AdvancedColorPicker::ColorSwatch*), "get_SwatchName", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: AdvancedColorPicker::ColorSwatch::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: AdvancedColorPicker::ColorSwatch::Start
 // Il2CppName: Start
 template<>
@@ -583,7 +581,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Advan
     return ::il2cpp_utils::FindMethod(classof(AdvancedColorPicker::ColorSwatch*), "Remove", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{preset});
   }
 };
-// Writing MetadataGetter for method: AdvancedColorPicker::ColorSwatch::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

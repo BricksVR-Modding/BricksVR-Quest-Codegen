@@ -56,7 +56,7 @@ namespace System::Collections {
       return m_text;
     }
     // Get instance field reference: private System.Globalization.TextInfo m_text
-    [[deprecated]] ::System::Globalization::TextInfo*& dyn_m_text();
+    [[deprecated("Use field access instead!")]] ::System::Globalization::TextInfo*& dyn_m_text();
     // static public System.Collections.CaseInsensitiveHashCodeProvider get_Default()
     // Offset: 0x574330
     static ::System::Collections::CaseInsensitiveHashCodeProvider* get_Default();

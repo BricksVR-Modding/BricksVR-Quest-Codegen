@@ -130,27 +130,34 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public System.Collections.Generic.List`1<UnityEngine.GameObject> connectorsCollidingWith
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::GameObject*>*& dyn_connectorsCollidingWith();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::GameObject*>*& dyn_connectorsCollidingWith();
     // Get instance field reference: public System.Boolean female
-    [[deprecated]] bool& dyn_female();
+    [[deprecated("Use field access instead!")]] bool& dyn_female();
     // Get instance field reference: private System.String _otherLabel
-    [[deprecated]] ::StringW& dyn__otherLabel();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__otherLabel();
     // Get instance field reference: private UnityEngine.Collider[] _colliderBuffer
-    [[deprecated]] ::ArrayW<::UnityEngine::Collider*>& dyn__colliderBuffer();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Collider*>& dyn__colliderBuffer();
     // Get instance field reference: private UnityEngine.BoxCollider _collider
-    [[deprecated]] ::UnityEngine::BoxCollider*& dyn__collider();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::BoxCollider*& dyn__collider();
     // Get instance field reference: private UnityEngine.GameObject _brick
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__brick();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__brick();
     // Get instance field reference: private BrickAttach _brickAttach
-    [[deprecated]] ::GlobalNamespace::BrickAttach*& dyn__brickAttach();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::BrickAttach*& dyn__brickAttach();
     // Get instance field reference: public System.Boolean covered
-    [[deprecated]] bool& dyn_covered();
+    [[deprecated("Use field access instead!")]] bool& dyn_covered();
     // Get instance field reference: public System.Boolean outOfRenderDistance
-    [[deprecated]] bool& dyn_outOfRenderDistance();
+    [[deprecated("Use field access instead!")]] bool& dyn_outOfRenderDistance();
     // Get instance field reference: public System.Boolean placed
-    [[deprecated]] bool& dyn_placed();
+    [[deprecated("Use field access instead!")]] bool& dyn_placed();
     // Get instance field reference: private System.String _uuid
-    [[deprecated]] ::StringW& dyn__uuid();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__uuid();
+    // public System.Void .ctor()
+    // Offset: 0x1DDE30
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static LegoConnectorScript* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::LegoConnectorScript::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<LegoConnectorScript*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0x6BC190
     void Awake();
@@ -187,25 +194,16 @@ namespace GlobalNamespace {
     // public System.String Uuid()
     // Offset: 0x6BCF70
     ::StringW Uuid();
-    // public System.Void .ctor()
-    // Offset: 0x1DDE30
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static LegoConnectorScript* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::LegoConnectorScript::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<LegoConnectorScript*, creationType>()));
-    }
   }; // LegoConnectorScript
   #pragma pack(pop)
   static check_size<sizeof(LegoConnectorScript), 88 + sizeof(::StringW)> __GlobalNamespace_LegoConnectorScriptSizeCheck;
   static_assert(sizeof(LegoConnectorScript) == 0x60);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::LegoConnectorScript::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::LegoConnectorScript::Awake
 // Il2CppName: Awake
 template<>
@@ -307,7 +305,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::LegoConnectorScript*), "Uuid", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::LegoConnectorScript::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

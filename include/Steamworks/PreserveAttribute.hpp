@@ -30,9 +30,6 @@ namespace Steamworks {
     public:
     // public System.Void .ctor()
     // Offset: 0x1E10D0
-    // Implemented from: System.Attribute
-    // Base method: System.Void Attribute::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static PreserveAttribute* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Steamworks::PreserveAttribute::.ctor");

@@ -46,9 +46,9 @@ namespace System::Resources {
     static_assert(sizeof(::System::Resources::ResourceSet*) == 0x8);
     public:
     // Get instance field reference: public System.String lastCultureName
-    [[deprecated]] ::StringW& dyn_lastCultureName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_lastCultureName();
     // Get instance field reference: public System.Resources.ResourceSet lastResourceSet
-    [[deprecated]] ::System::Resources::ResourceSet*& dyn_lastResourceSet();
+    [[deprecated("Use field access instead!")]] ::System::Resources::ResourceSet*& dyn_lastResourceSet();
     // public System.Void .ctor()
     // Offset: 0x1DD400
     // Implemented from: System.Object

@@ -94,13 +94,13 @@ namespace GlobalNamespace {
     // Set static field: static private System.Single ERROR_MARGIN
     static void _set_ERROR_MARGIN(float value);
     // Get instance field reference: public UnityEngine.LayerMask AimCollisionLayerMask
-    [[deprecated]] ::UnityEngine::LayerMask& dyn_AimCollisionLayerMask();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::LayerMask& dyn_AimCollisionLayerMask();
     // Get instance field reference: protected readonly LocomotionTeleport/AimData AimData
-    [[deprecated]] ::GlobalNamespace::LocomotionTeleport::AimData*& dyn_AimData();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::LocomotionTeleport::AimData*& dyn_AimData();
     // Get instance field reference: private readonly System.Action _startAimAction
-    [[deprecated]] ::System::Action*& dyn__startAimAction();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn__startAimAction();
     // Get instance field reference: private readonly System.Collections.Generic.List`1<UnityEngine.Vector3> _aimPoints
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::Vector3>*& dyn__aimPoints();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::Vector3>*& dyn__aimPoints();
     // private System.Collections.IEnumerator TargetAimCoroutine()
     // Offset: 0x619B50
     ::System::Collections::IEnumerator* TargetAimCoroutine();
@@ -120,11 +120,6 @@ namespace GlobalNamespace {
     // Offset: 0x619C30
     // Implemented from: TeleportSupport
     // Base method: System.Void TeleportSupport::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TeleportTargetHandler* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::TeleportTargetHandler::.ctor");

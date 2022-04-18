@@ -42,6 +42,13 @@ namespace Normal::Realtime::Serialization {
     static double _get___clockBufferTime();
     // Set static field: static private readonly System.Double __clockBufferTime
     static void _set___clockBufferTime(double value);
+    // public System.Void .ctor()
+    // Offset: 0x1DD400
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static StreamContextRoomTime* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::Serialization::StreamContextRoomTime::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<StreamContextRoomTime*, creationType>()));
+    }
     // static private System.Void .cctor()
     // Offset: 0x89FF50
     static void _cctor();
@@ -57,19 +64,14 @@ namespace Normal::Realtime::Serialization {
     // static private System.Double ConvertFixedToFloat(System.UInt64 fixedValue)
     // Offset: 0x89FBC0
     static double ConvertFixedToFloat(uint64_t fixedValue);
-    // public System.Void .ctor()
-    // Offset: 0x1DD400
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static StreamContextRoomTime* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::Serialization::StreamContextRoomTime::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<StreamContextRoomTime*, creationType>()));
-    }
   }; // Normal.Realtime.Serialization.StreamContextRoomTime
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Normal::Realtime::Serialization::StreamContextRoomTime::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Normal::Realtime::Serialization::StreamContextRoomTime::_cctor
 // Il2CppName: .cctor
 template<>
@@ -115,7 +117,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<double (*)(
     return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::Serialization::StreamContextRoomTime*), "ConvertFixedToFloat", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{fixedValue});
   }
 };
-// Writing MetadataGetter for method: Normal::Realtime::Serialization::StreamContextRoomTime::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

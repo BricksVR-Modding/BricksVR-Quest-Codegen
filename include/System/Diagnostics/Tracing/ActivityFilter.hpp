@@ -128,23 +128,23 @@ namespace System::Diagnostics::Tracing {
       return *reinterpret_cast<::System::IDisposable*>(this);
     }
     // Get instance field reference: private System.Collections.Concurrent.ConcurrentDictionary`2<System.Guid,System.Int32> m_activeActivities
-    [[deprecated]] ::System::Collections::Concurrent::ConcurrentDictionary_2<::System::Guid, int>*& dyn_m_activeActivities();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Concurrent::ConcurrentDictionary_2<::System::Guid, int>*& dyn_m_activeActivities();
     // Get instance field reference: private System.Collections.Concurrent.ConcurrentDictionary`2<System.Guid,System.Tuple`2<System.Guid,System.Int32>> m_rootActiveActivities
-    [[deprecated]] ::System::Collections::Concurrent::ConcurrentDictionary_2<::System::Guid, ::System::Tuple_2<::System::Guid, int>*>*& dyn_m_rootActiveActivities();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Concurrent::ConcurrentDictionary_2<::System::Guid, ::System::Tuple_2<::System::Guid, int>*>*& dyn_m_rootActiveActivities();
     // Get instance field reference: private System.Guid m_providerGuid
-    [[deprecated]] ::System::Guid& dyn_m_providerGuid();
+    [[deprecated("Use field access instead!")]] ::System::Guid& dyn_m_providerGuid();
     // Get instance field reference: private System.Int32 m_eventId
-    [[deprecated]] int& dyn_m_eventId();
+    [[deprecated("Use field access instead!")]] int& dyn_m_eventId();
     // Get instance field reference: private System.Int32 m_samplingFreq
-    [[deprecated]] int& dyn_m_samplingFreq();
+    [[deprecated("Use field access instead!")]] int& dyn_m_samplingFreq();
     // Get instance field reference: private System.Int32 m_curSampleCount
-    [[deprecated]] int& dyn_m_curSampleCount();
+    [[deprecated("Use field access instead!")]] int& dyn_m_curSampleCount();
     // Get instance field reference: private System.Int32 m_perEventSourceSessionId
-    [[deprecated]] int& dyn_m_perEventSourceSessionId();
+    [[deprecated("Use field access instead!")]] int& dyn_m_perEventSourceSessionId();
     // Get instance field reference: private System.Diagnostics.Tracing.ActivityFilter m_next
-    [[deprecated]] ::System::Diagnostics::Tracing::ActivityFilter*& dyn_m_next();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::ActivityFilter*& dyn_m_next();
     // Get instance field reference: private System.Action`1<System.Guid> m_myActivityDelegate
-    [[deprecated]] ::System::Action_1<::System::Guid>*& dyn_m_myActivityDelegate();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::System::Guid>*& dyn_m_myActivityDelegate();
     // private System.Void .ctor(System.Diagnostics.Tracing.EventSource source, System.Int32 perEventSourceSessionId, System.Int32 eventId, System.Int32 samplingFreq, System.Diagnostics.Tracing.ActivityFilter existingFilter)
     // Offset: 0x2075B0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

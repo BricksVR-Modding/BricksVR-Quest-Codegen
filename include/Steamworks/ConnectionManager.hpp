@@ -62,13 +62,13 @@ namespace Steamworks {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private Steamworks.IConnectionManager <Interface>k__BackingField
-    [[deprecated]] ::Steamworks::IConnectionManager*& dyn_$Interface$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Steamworks::IConnectionManager*& dyn_$Interface$k__BackingField();
     // Get instance field reference: private Steamworks.Data.ConnectionInfo <ConnectionInfo>k__BackingField
-    [[deprecated]] ::Steamworks::Data::ConnectionInfo& dyn_$ConnectionInfo$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Steamworks::Data::ConnectionInfo& dyn_$ConnectionInfo$k__BackingField();
     // Get instance field reference: public System.Boolean Connected
-    [[deprecated]] bool& dyn_Connected();
+    [[deprecated("Use field access instead!")]] bool& dyn_Connected();
     // Get instance field reference: public System.Boolean Connecting
-    [[deprecated]] bool& dyn_Connecting();
+    [[deprecated("Use field access instead!")]] bool& dyn_Connecting();
     // public Steamworks.IConnectionManager get_Interface()
     // Offset: 0x1E1920
     ::Steamworks::IConnectionManager* get_Interface();

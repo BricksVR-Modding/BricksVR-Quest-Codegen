@@ -93,17 +93,17 @@ namespace Normal::Realtime {
     static_assert(sizeof(::Normal::Realtime::ReliableProperty_1<int>*) == 0x8);
     public:
     // Get instance field reference: private System.Int32 _clientID
-    [[deprecated]] int& dyn__clientID();
+    [[deprecated("Use field access instead!")]] int& dyn__clientID();
     // Get instance field reference: private System.Int32 _streamID
-    [[deprecated]] int& dyn__streamID();
+    [[deprecated("Use field access instead!")]] int& dyn__streamID();
     // Get instance field reference: private Normal.Realtime.RealtimeAvatarVoiceModel/Normal.Realtime.PropertyChangedHandler`1<System.Int32> clientIDDidChange
-    [[deprecated]] ::Normal::Realtime::RealtimeAvatarVoiceModel::PropertyChangedHandler_1<int>*& dyn_clientIDDidChange();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::RealtimeAvatarVoiceModel::PropertyChangedHandler_1<int>*& dyn_clientIDDidChange();
     // Get instance field reference: private Normal.Realtime.RealtimeAvatarVoiceModel/Normal.Realtime.PropertyChangedHandler`1<System.Int32> streamIDDidChange
-    [[deprecated]] ::Normal::Realtime::RealtimeAvatarVoiceModel::PropertyChangedHandler_1<int>*& dyn_streamIDDidChange();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::RealtimeAvatarVoiceModel::PropertyChangedHandler_1<int>*& dyn_streamIDDidChange();
     // Get instance field reference: private Normal.Realtime.ReliableProperty`1<System.Int32> _clientIDProperty
-    [[deprecated]] ::Normal::Realtime::ReliableProperty_1<int>*& dyn__clientIDProperty();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::ReliableProperty_1<int>*& dyn__clientIDProperty();
     // Get instance field reference: private Normal.Realtime.ReliableProperty`1<System.Int32> _streamIDProperty
-    [[deprecated]] ::Normal::Realtime::ReliableProperty_1<int>*& dyn__streamIDProperty();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::ReliableProperty_1<int>*& dyn__streamIDProperty();
     // public System.Int32 get_clientID()
     // Offset: 0xBDEFA0
     int get_clientID();
@@ -128,6 +128,13 @@ namespace Normal::Realtime {
     // public System.Void remove_streamIDDidChange(Normal.Realtime.RealtimeAvatarVoiceModel/Normal.Realtime.PropertyChangedHandler`1<System.Int32> value)
     // Offset: 0xBDF0C0
     void remove_streamIDDidChange(::Normal::Realtime::RealtimeAvatarVoiceModel::PropertyChangedHandler_1<int>* value);
+    // public System.Void .ctor()
+    // Offset: 0xBDED80
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static RealtimeAvatarVoiceModel* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::RealtimeAvatarVoiceModel::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<RealtimeAvatarVoiceModel*, creationType>()));
+    }
     // private System.Void FireClientIDDidChange(System.Int32 value)
     // Offset: 0xBDE7A0
     void FireClientIDDidChange(int value);
@@ -137,15 +144,6 @@ namespace Normal::Realtime {
     // private System.Void UpdateBackingFields()
     // Offset: 0xBDEB60
     void UpdateBackingFields();
-    // public System.Void .ctor()
-    // Offset: 0xBDED80
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static RealtimeAvatarVoiceModel* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::RealtimeAvatarVoiceModel::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<RealtimeAvatarVoiceModel*, creationType>()));
-    }
     // protected override System.Void OnParentReplaced(Normal.Realtime.RealtimeModel previousParent, Normal.Realtime.RealtimeModel currentParent)
     // Offset: 0xBDE8E0
     // Implemented from: Normal.Realtime.RealtimeModel
@@ -242,6 +240,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Norma
     return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::RealtimeAvatarVoiceModel*), "remove_streamIDDidChange", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: Normal::Realtime::RealtimeAvatarVoiceModel::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Normal::Realtime::RealtimeAvatarVoiceModel::FireClientIDDidChange
 // Il2CppName: FireClientIDDidChange
 template<>
@@ -268,10 +270,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Norma
     return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::RealtimeAvatarVoiceModel*), "UpdateBackingFields", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: Normal::Realtime::RealtimeAvatarVoiceModel::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: Normal::Realtime::RealtimeAvatarVoiceModel::OnParentReplaced
 // Il2CppName: OnParentReplaced
 template<>

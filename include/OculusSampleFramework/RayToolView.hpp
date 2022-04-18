@@ -122,21 +122,21 @@ namespace OculusSampleFramework {
     // Set static field: static private System.Single DEFAULT_RAY_CAST_DISTANCE
     static void _set_DEFAULT_RAY_CAST_DISTANCE(float value);
     // Get instance field reference: private UnityEngine.Transform _targetTransform
-    [[deprecated]] ::UnityEngine::Transform*& dyn__targetTransform();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__targetTransform();
     // Get instance field reference: private UnityEngine.LineRenderer _lineRenderer
-    [[deprecated]] ::UnityEngine::LineRenderer*& dyn__lineRenderer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::LineRenderer*& dyn__lineRenderer();
     // Get instance field reference: private System.Boolean _toolActivateState
-    [[deprecated]] bool& dyn__toolActivateState();
+    [[deprecated("Use field access instead!")]] bool& dyn__toolActivateState();
     // Get instance field reference: private UnityEngine.Transform _focusedTransform
-    [[deprecated]] ::UnityEngine::Transform*& dyn__focusedTransform();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__focusedTransform();
     // Get instance field reference: private UnityEngine.Vector3[] linePositions
-    [[deprecated]] ::ArrayW<::UnityEngine::Vector3>& dyn_linePositions();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Vector3>& dyn_linePositions();
     // Get instance field reference: private UnityEngine.Gradient _oldColorGradient
-    [[deprecated]] ::UnityEngine::Gradient*& dyn__oldColorGradient();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Gradient*& dyn__oldColorGradient();
     // Get instance field reference: private UnityEngine.Gradient _highLightColorGradient
-    [[deprecated]] ::UnityEngine::Gradient*& dyn__highLightColorGradient();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Gradient*& dyn__highLightColorGradient();
     // Get instance field reference: private OculusSampleFramework.InteractableTool <InteractableTool>k__BackingField
-    [[deprecated]] ::OculusSampleFramework::InteractableTool*& dyn_$InteractableTool$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::OculusSampleFramework::InteractableTool*& dyn_$InteractableTool$k__BackingField();
     // public System.Boolean get_EnableState()
     // Offset: 0x6135A0
     bool get_EnableState();
@@ -155,6 +155,13 @@ namespace OculusSampleFramework {
     // public System.Void set_InteractableTool(OculusSampleFramework.InteractableTool value)
     // Offset: 0x2322C0
     void set_InteractableTool(::OculusSampleFramework::InteractableTool* value);
+    // public System.Void .ctor()
+    // Offset: 0x613540
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static RayToolView* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::OculusSampleFramework::RayToolView::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<RayToolView*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0x6128E0
     void Awake();
@@ -167,19 +174,6 @@ namespace OculusSampleFramework {
     // static public UnityEngine.Vector3 GetPointOnBezierCurve(UnityEngine.Vector3 p0, UnityEngine.Vector3 p1, UnityEngine.Vector3 p2, UnityEngine.Vector3 p3, System.Single t)
     // Offset: 0x612B90
     static ::UnityEngine::Vector3 GetPointOnBezierCurve(::UnityEngine::Vector3 p0, ::UnityEngine::Vector3 p1, ::UnityEngine::Vector3 p2, ::UnityEngine::Vector3 p3, float t);
-    // public System.Void .ctor()
-    // Offset: 0x613540
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static RayToolView* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::OculusSampleFramework::RayToolView::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<RayToolView*, creationType>()));
-    }
   }; // OculusSampleFramework.RayToolView
   #pragma pack(pop)
   static check_size<sizeof(RayToolView), 80 + sizeof(::OculusSampleFramework::InteractableTool*)> __OculusSampleFramework_RayToolViewSizeCheck;
@@ -237,6 +231,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Oculu
     return ::il2cpp_utils::FindMethod(classof(OculusSampleFramework::RayToolView*), "set_InteractableTool", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: OculusSampleFramework::RayToolView::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: OculusSampleFramework::RayToolView::Awake
 // Il2CppName: Awake
 template<>
@@ -275,7 +273,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
     return ::il2cpp_utils::FindMethod(classof(OculusSampleFramework::RayToolView*), "GetPointOnBezierCurve", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{p0, p1, p2, p3, t});
   }
 };
-// Writing MetadataGetter for method: OculusSampleFramework::RayToolView::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

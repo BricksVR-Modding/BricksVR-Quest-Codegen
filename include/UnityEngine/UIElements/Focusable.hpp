@@ -49,9 +49,9 @@ namespace UnityEngine::UIElements {
     // Deleting conversion operator: operator ::UnityEngine::UIElements::EventCallbackRegistry*
     constexpr operator ::UnityEngine::UIElements::EventCallbackRegistry*() const noexcept = delete;
     // Get instance field reference: private System.Boolean <focusable>k__BackingField
-    [[deprecated]] bool& dyn_$focusable$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$focusable$k__BackingField();
     // Get instance field reference: System.Boolean isIMGUIContainer
-    [[deprecated]] bool& dyn_isIMGUIContainer();
+    [[deprecated("Use field access instead!")]] bool& dyn_isIMGUIContainer();
     // public UnityEngine.UIElements.FocusController get_focusController()
     // Offset: 0xFFFFFFFFFFFFFFFF
     ::UnityEngine::UIElements::FocusController* get_focusController();

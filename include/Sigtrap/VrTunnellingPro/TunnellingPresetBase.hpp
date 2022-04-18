@@ -288,75 +288,75 @@ namespace Sigtrap::VrTunnellingPro {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Boolean _overrideAll
-    [[deprecated]] bool& dyn__overrideAll();
+    [[deprecated("Use field access instead!")]] bool& dyn__overrideAll();
     // Get instance field reference: private System.Single _effectCoverage
-    [[deprecated]] float& dyn__effectCoverage();
+    [[deprecated("Use field access instead!")]] float& dyn__effectCoverage();
     // Get instance field reference: private System.Boolean _overrideEffectCoverage
-    [[deprecated]] bool& dyn__overrideEffectCoverage();
+    [[deprecated("Use field access instead!")]] bool& dyn__overrideEffectCoverage();
     // Get instance field reference: private UnityEngine.Color _effectColor
-    [[deprecated]] ::UnityEngine::Color& dyn__effectColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__effectColor();
     // Get instance field reference: private System.Boolean _overrideEffectColor
-    [[deprecated]] bool& dyn__overrideEffectColor();
+    [[deprecated("Use field access instead!")]] bool& dyn__overrideEffectColor();
     // Get instance field reference: private System.Single _effectFeather
-    [[deprecated]] float& dyn__effectFeather();
+    [[deprecated("Use field access instead!")]] float& dyn__effectFeather();
     // Get instance field reference: private System.Boolean _overrideEffectFeather
-    [[deprecated]] bool& dyn__overrideEffectFeather();
+    [[deprecated("Use field access instead!")]] bool& dyn__overrideEffectFeather();
     // Get instance field reference: private System.Boolean _applyColorToBackground
-    [[deprecated]] bool& dyn__applyColorToBackground();
+    [[deprecated("Use field access instead!")]] bool& dyn__applyColorToBackground();
     // Get instance field reference: private System.Boolean _overrideApplyColorToBackground
-    [[deprecated]] bool& dyn__overrideApplyColorToBackground();
+    [[deprecated("Use field access instead!")]] bool& dyn__overrideApplyColorToBackground();
     // Get instance field reference: private UnityEngine.Cubemap _skybox
-    [[deprecated]] ::UnityEngine::Cubemap*& dyn__skybox();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Cubemap*& dyn__skybox();
     // Get instance field reference: private System.Boolean _overrideSkybox
-    [[deprecated]] bool& dyn__overrideSkybox();
+    [[deprecated("Use field access instead!")]] bool& dyn__overrideSkybox();
     // Get instance field reference: private Sigtrap.VrTunnellingPro.TunnellingPresetBase/Sigtrap.VrTunnellingPro.MotionSettings _angularVelocity
-    [[deprecated]] ::Sigtrap::VrTunnellingPro::TunnellingPresetBase::MotionSettings*& dyn__angularVelocity();
+    [[deprecated("Use field access instead!")]] ::Sigtrap::VrTunnellingPro::TunnellingPresetBase::MotionSettings*& dyn__angularVelocity();
     // Get instance field reference: private System.Boolean _overrideAngularVelocity
-    [[deprecated]] bool& dyn__overrideAngularVelocity();
+    [[deprecated("Use field access instead!")]] bool& dyn__overrideAngularVelocity();
     // Get instance field reference: private Sigtrap.VrTunnellingPro.TunnellingPresetBase/Sigtrap.VrTunnellingPro.MotionSettings _acceleration
-    [[deprecated]] ::Sigtrap::VrTunnellingPro::TunnellingPresetBase::MotionSettings*& dyn__acceleration();
+    [[deprecated("Use field access instead!")]] ::Sigtrap::VrTunnellingPro::TunnellingPresetBase::MotionSettings*& dyn__acceleration();
     // Get instance field reference: private System.Boolean _overrideAcceleration
-    [[deprecated]] bool& dyn__overrideAcceleration();
+    [[deprecated("Use field access instead!")]] bool& dyn__overrideAcceleration();
     // Get instance field reference: private Sigtrap.VrTunnellingPro.TunnellingPresetBase/Sigtrap.VrTunnellingPro.MotionSettings _velocity
-    [[deprecated]] ::Sigtrap::VrTunnellingPro::TunnellingPresetBase::MotionSettings*& dyn__velocity();
+    [[deprecated("Use field access instead!")]] ::Sigtrap::VrTunnellingPro::TunnellingPresetBase::MotionSettings*& dyn__velocity();
     // Get instance field reference: private System.Boolean _overrideVelocity
-    [[deprecated]] bool& dyn__overrideVelocity();
+    [[deprecated("Use field access instead!")]] bool& dyn__overrideVelocity();
     // Get instance field reference: private System.Boolean _useCounterMotion
-    [[deprecated]] bool& dyn__useCounterMotion();
+    [[deprecated("Use field access instead!")]] bool& dyn__useCounterMotion();
     // Get instance field reference: private System.Boolean _overrideUseCounterMotion
-    [[deprecated]] bool& dyn__overrideUseCounterMotion();
+    [[deprecated("Use field access instead!")]] bool& dyn__overrideUseCounterMotion();
     // Get instance field reference: private System.Single _counterRotationStrength
-    [[deprecated]] float& dyn__counterRotationStrength();
+    [[deprecated("Use field access instead!")]] float& dyn__counterRotationStrength();
     // Get instance field reference: private System.Boolean _overrideCounterRotationStrength
-    [[deprecated]] bool& dyn__overrideCounterRotationStrength();
+    [[deprecated("Use field access instead!")]] bool& dyn__overrideCounterRotationStrength();
     // Get instance field reference: private UnityEngine.Vector3 _counterRotationPerAxis
-    [[deprecated]] ::UnityEngine::Vector3& dyn__counterRotationPerAxis();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__counterRotationPerAxis();
     // Get instance field reference: private System.Boolean _overrideCounterRotationPerAxis
-    [[deprecated]] bool& dyn__overrideCounterRotationPerAxis();
+    [[deprecated("Use field access instead!")]] bool& dyn__overrideCounterRotationPerAxis();
     // Get instance field reference: private System.Boolean _useArtificialTilt
-    [[deprecated]] bool& dyn__useArtificialTilt();
+    [[deprecated("Use field access instead!")]] bool& dyn__useArtificialTilt();
     // Get instance field reference: private System.Boolean _overrideUseArtificialTilt
-    [[deprecated]] bool& dyn__overrideUseArtificialTilt();
+    [[deprecated("Use field access instead!")]] bool& dyn__overrideUseArtificialTilt();
     // Get instance field reference: private System.Int32 _framerateDivision
-    [[deprecated]] int& dyn__framerateDivision();
+    [[deprecated("Use field access instead!")]] int& dyn__framerateDivision();
     // Get instance field reference: private System.Boolean _overrideFramerateDivision
-    [[deprecated]] bool& dyn__overrideFramerateDivision();
+    [[deprecated("Use field access instead!")]] bool& dyn__overrideFramerateDivision();
     // Get instance field reference: private System.Boolean _divideTranslation
-    [[deprecated]] bool& dyn__divideTranslation();
+    [[deprecated("Use field access instead!")]] bool& dyn__divideTranslation();
     // Get instance field reference: private System.Boolean _overrideDivideTranslation
-    [[deprecated]] bool& dyn__overrideDivideTranslation();
+    [[deprecated("Use field access instead!")]] bool& dyn__overrideDivideTranslation();
     // Get instance field reference: private System.Boolean _divideRotation
-    [[deprecated]] bool& dyn__divideRotation();
+    [[deprecated("Use field access instead!")]] bool& dyn__divideRotation();
     // Get instance field reference: private System.Boolean _overrideDivideRotation
-    [[deprecated]] bool& dyn__overrideDivideRotation();
+    [[deprecated("Use field access instead!")]] bool& dyn__overrideDivideRotation();
     // Get instance field reference: private Sigtrap.VrTunnellingPro.TunnellingBase/Sigtrap.VrTunnellingPro.ForceVignetteMode _forceVignetteMode
-    [[deprecated]] ::Sigtrap::VrTunnellingPro::TunnellingBase::ForceVignetteMode& dyn__forceVignetteMode();
+    [[deprecated("Use field access instead!")]] ::Sigtrap::VrTunnellingPro::TunnellingBase::ForceVignetteMode& dyn__forceVignetteMode();
     // Get instance field reference: private System.Boolean _overrideForceVignetteMode
-    [[deprecated]] bool& dyn__overrideForceVignetteMode();
+    [[deprecated("Use field access instead!")]] bool& dyn__overrideForceVignetteMode();
     // Get instance field reference: private System.Single _forceVignetteValue
-    [[deprecated]] float& dyn__forceVignetteValue();
+    [[deprecated("Use field access instead!")]] float& dyn__forceVignetteValue();
     // Get instance field reference: private System.Boolean _overrideForceVignetteValue
-    [[deprecated]] bool& dyn__overrideForceVignetteValue();
+    [[deprecated("Use field access instead!")]] bool& dyn__overrideForceVignetteValue();
     // protected System.Boolean get_overrideAll()
     // Offset: 0x2512D0
     bool get_overrideAll();
@@ -464,10 +464,6 @@ namespace Sigtrap::VrTunnellingPro {
     bool get_overrideForceVignetteValue();
     // protected System.Void .ctor()
     // Offset: 0x6D9800
-    // Implemented from: UnityEngine.ScriptableObject
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TunnellingPresetBase* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Sigtrap::VrTunnellingPro::TunnellingPresetBase::.ctor");

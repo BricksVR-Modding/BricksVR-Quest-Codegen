@@ -18,7 +18,6 @@ namespace AdvancedColorPicker {
   // Forward declaring type: SliderCircle2D
   class SliderCircle2D;
   // Skipping declaration: ColorType because it is already included!
-  // Skipping declaration: GraphicalColorComponent because it is already included!
 }
 // Forward declaring namespace: UnityEngine
 namespace UnityEngine {
@@ -28,13 +27,8 @@ namespace UnityEngine {
 }
 // Forward declaring namespace: UnityEngine::UI
 namespace UnityEngine::UI {
-  // Skipping declaration: Graphic because it is already included!
   // Forward declaring type: VertexHelper
   class VertexHelper;
-}
-// Forward declaring namespace: UnityEngine::EventSystems
-namespace UnityEngine::EventSystems {
-  // Skipping declaration: UIBehaviour because it is already included!
 }
 // Completed forward declares
 // Type namespace: AdvancedColorPicker
@@ -72,9 +66,9 @@ namespace AdvancedColorPicker {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private AdvancedColorPicker.SliderCircle2D slider
-    [[deprecated]] ::AdvancedColorPicker::SliderCircle2D*& dyn_slider();
+    [[deprecated("Use field access instead!")]] ::AdvancedColorPicker::SliderCircle2D*& dyn_slider();
     // Get instance field reference: private System.Boolean dontListenToSlider
-    [[deprecated]] bool& dyn_dontListenToSlider();
+    [[deprecated("Use field access instead!")]] bool& dyn_dontListenToSlider();
     // private System.Void UpdatePickerValues(System.Single xValue, System.Single yValue)
     // Offset: 0x5B5CF0
     void UpdatePickerValues(float xValue, float yValue);
@@ -97,14 +91,6 @@ namespace AdvancedColorPicker {
     // Implemented from: AdvancedColorPicker.GraphicalColorTypeComponent
     // Base method: System.Void GraphicalColorTypeComponent::.ctor()
     // Base method: System.Void GraphicalColorComponent::.ctor()
-    // Base method: System.Void MaskableGraphic::.ctor()
-    // Base method: System.Void Graphic::.ctor()
-    // Base method: System.Void UIBehaviour::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static GradientCircle* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::AdvancedColorPicker::GradientCircle::.ctor");

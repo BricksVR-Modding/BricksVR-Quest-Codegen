@@ -49,7 +49,7 @@ namespace UnityEngine::Bindings {
       return TargetType;
     }
     // Get instance field reference: private UnityEngine.Bindings.TargetType <TargetType>k__BackingField
-    [[deprecated]] ::UnityEngine::Bindings::TargetType& dyn_$TargetType$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Bindings::TargetType& dyn_$TargetType$k__BackingField();
     // public System.Void set_TargetType(UnityEngine.Bindings.TargetType value)
     // Offset: 0x2172B0
     void set_TargetType(::UnityEngine::Bindings::TargetType value);
@@ -64,8 +64,6 @@ namespace UnityEngine::Bindings {
     // Offset: 0x1E10D0
     // Implemented from: UnityEngine.Bindings.NativeMethodAttribute
     // Base method: System.Void NativeMethodAttribute::.ctor()
-    // Base method: System.Void Attribute::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static NativePropertyAttribute* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Bindings::NativePropertyAttribute::.ctor");

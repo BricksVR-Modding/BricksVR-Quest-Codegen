@@ -182,39 +182,39 @@ namespace GlobalNamespace {
     // Set static field: static private readonly UnityEngine.Vector3 NameTextOffset
     static void _set_NameTextOffset(::UnityEngine::Vector3 value);
     // Get instance field reference: public TMPro.TextMeshProUGUI nameText
-    [[deprecated]] ::TMPro::TextMeshProUGUI*& dyn_nameText();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshProUGUI*& dyn_nameText();
     // Get instance field reference: public UnityEngine.Transform nameTransform
-    [[deprecated]] ::UnityEngine::Transform*& dyn_nameTransform();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_nameTransform();
     // Get instance field reference: public UnityEngine.Transform headTransform
-    [[deprecated]] ::UnityEngine::Transform*& dyn_headTransform();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_headTransform();
     // Get instance field reference: public Normal.Realtime.RealtimeAvatarVoice realtimeAvatarVoice
-    [[deprecated]] ::Normal::Realtime::RealtimeAvatarVoice*& dyn_realtimeAvatarVoice();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::RealtimeAvatarVoice*& dyn_realtimeAvatarVoice();
     // Get instance field reference: public UnityEngine.Transform avatarTransform
-    [[deprecated]] ::UnityEngine::Transform*& dyn_avatarTransform();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_avatarTransform();
     // Get instance field reference: private UnityEngine.Transform _currentCameraTransform
-    [[deprecated]] ::UnityEngine::Transform*& dyn__currentCameraTransform();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__currentCameraTransform();
     // Get instance field reference: public UnityEngine.GameObject face
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_face();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_face();
     // Get instance field reference: public SetColorOnPrefabBrick[] primaryHeadBricks
-    [[deprecated]] ::ArrayW<::GlobalNamespace::SetColorOnPrefabBrick*>& dyn_primaryHeadBricks();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::GlobalNamespace::SetColorOnPrefabBrick*>& dyn_primaryHeadBricks();
     // Get instance field reference: public SetColorOnPrefabBrick[] secondaryHeadBricks
-    [[deprecated]] ::ArrayW<::GlobalNamespace::SetColorOnPrefabBrick*>& dyn_secondaryHeadBricks();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::GlobalNamespace::SetColorOnPrefabBrick*>& dyn_secondaryHeadBricks();
     // Get instance field reference: public SetHandColors[] setHandColors
-    [[deprecated]] ::ArrayW<::GlobalNamespace::SetHandColors*>& dyn_setHandColors();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::GlobalNamespace::SetHandColors*>& dyn_setHandColors();
     // Get instance field reference: public UnityEngine.UI.Image eyesImage
-    [[deprecated]] ::UnityEngine::UI::Image*& dyn_eyesImage();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Image*& dyn_eyesImage();
     // Get instance field reference: public UnityEngine.UI.Image mouthImage
-    [[deprecated]] ::UnityEngine::UI::Image*& dyn_mouthImage();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Image*& dyn_mouthImage();
     // Get instance field reference: private System.Single[] _lastVolumes
-    [[deprecated]] ::ArrayW<float>& dyn__lastVolumes();
+    [[deprecated("Use field access instead!")]] ::ArrayW<float>& dyn__lastVolumes();
     // Get instance field reference: private System.Int32 _nextVolumeIndex
-    [[deprecated]] int& dyn__nextVolumeIndex();
+    [[deprecated("Use field access instead!")]] int& dyn__nextVolumeIndex();
     // Get instance field reference: private System.Boolean _isSelf
-    [[deprecated]] bool& dyn__isSelf();
+    [[deprecated("Use field access instead!")]] bool& dyn__isSelf();
     // Get instance field reference: public UnityEngine.Sprite[] volumeSprites
-    [[deprecated]] ::ArrayW<::UnityEngine::Sprite*>& dyn_volumeSprites();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Sprite*>& dyn_volumeSprites();
     // Get instance field reference: public UnityEngine.UI.Image volumeUIImage
-    [[deprecated]] ::UnityEngine::UI::Image*& dyn_volumeUIImage();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Image*& dyn_volumeUIImage();
     // public System.String get_Nickname()
     // Offset: 0x6E1D70
     ::StringW get_Nickname();
@@ -233,6 +233,16 @@ namespace GlobalNamespace {
     // public System.Int32 get_AvatarMouth()
     // Offset: 0x6E1D00
     int get_AvatarMouth();
+    // public System.Void .ctor()
+    // Offset: 0x6E1C30
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static AvatarNicknameSync* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::AvatarNicknameSync::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<AvatarNicknameSync*, creationType>()));
+    }
+    // static private System.Void .cctor()
+    // Offset: 0x6E1BC0
+    static void _cctor();
     // private System.Void Start()
     // Offset: 0x6E12D0
     void Start();
@@ -296,25 +306,6 @@ namespace GlobalNamespace {
     // private System.Void UpdateVolumeIndicator()
     // Offset: 0x6E1730
     void UpdateVolumeIndicator();
-    // public System.Void .ctor()
-    // Offset: 0x6E1C30
-    // Implemented from: Normal.Realtime.RealtimeComponent`1
-    // Base method: System.Void RealtimeComponent_1::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static AvatarNicknameSync* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::AvatarNicknameSync::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<AvatarNicknameSync*, creationType>()));
-    }
-    // static private System.Void .cctor()
-    // Offset: 0x6E1BC0
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.cctor()
-    static void _cctor();
   }; // AvatarNicknameSync
   // WARNING Not writing size check since size may be invalid!
 }
@@ -365,6 +356,18 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (GlobalNamespace::AvatarNicknameSync::*)()>(&GlobalNamespace::AvatarNicknameSync::get_AvatarMouth)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::AvatarNicknameSync*), "get_AvatarMouth", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
+// Writing MetadataGetter for method: GlobalNamespace::AvatarNicknameSync::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
+// Writing MetadataGetter for method: GlobalNamespace::AvatarNicknameSync::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&GlobalNamespace::AvatarNicknameSync::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::AvatarNicknameSync*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
 // Writing MetadataGetter for method: GlobalNamespace::AvatarNicknameSync::Start
@@ -551,17 +554,5 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (GlobalNamespace::AvatarNicknameSync::*)()>(&GlobalNamespace::AvatarNicknameSync::UpdateVolumeIndicator)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::AvatarNicknameSync*), "UpdateVolumeIndicator", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
-  }
-};
-// Writing MetadataGetter for method: GlobalNamespace::AvatarNicknameSync::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
-// Writing MetadataGetter for method: GlobalNamespace::AvatarNicknameSync::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&GlobalNamespace::AvatarNicknameSync::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::AvatarNicknameSync*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };

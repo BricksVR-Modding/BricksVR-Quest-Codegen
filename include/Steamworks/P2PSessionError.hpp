@@ -78,7 +78,7 @@ namespace Steamworks {
     // Set static field: static public Steamworks.P2PSessionError Max
     static void _set_Max(::Steamworks::P2PSessionError value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // Steamworks.P2PSessionError
   #pragma pack(pop)
   static check_size<sizeof(P2PSessionError), 0 + sizeof(int)> __Steamworks_P2PSessionErrorSizeCheck;

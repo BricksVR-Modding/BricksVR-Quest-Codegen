@@ -92,15 +92,15 @@ namespace Normal::Realtime {
     // Set static field: static private System.Collections.Generic.List`1<UnityEngine.XR.XRNodeState> _nodeStates
     static void _set__nodeStates(::System::Collections::Generic::List_1<::UnityEngine::XR::XRNodeState>* value);
     // Get instance field reference: private Normal.Realtime.RealtimeAvatar/Normal.Realtime.LocalPlayer _localPlayer
-    [[deprecated]] ::Normal::Realtime::RealtimeAvatar::LocalPlayer*& dyn__localPlayer();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::RealtimeAvatar::LocalPlayer*& dyn__localPlayer();
     // Get instance field reference: private UnityEngine.Transform _head
-    [[deprecated]] ::UnityEngine::Transform*& dyn__head();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__head();
     // Get instance field reference: private UnityEngine.Transform _leftHand
-    [[deprecated]] ::UnityEngine::Transform*& dyn__leftHand();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__leftHand();
     // Get instance field reference: private UnityEngine.Transform _rightHand
-    [[deprecated]] ::UnityEngine::Transform*& dyn__rightHand();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__rightHand();
     // Get instance field reference: private Normal.Realtime.RealtimeAvatarManager _realtimeAvatarManager
-    [[deprecated]] ::Normal::Realtime::RealtimeAvatarManager*& dyn__realtimeAvatarManager();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::RealtimeAvatarManager*& dyn__realtimeAvatarManager();
     // public Normal.Realtime.RealtimeAvatar/Normal.Realtime.LocalPlayer get_localPlayer()
     // Offset: 0x1E1930
     ::Normal::Realtime::RealtimeAvatar::LocalPlayer* get_localPlayer();
@@ -128,6 +128,16 @@ namespace Normal::Realtime {
     // public UnityEngine.Transform get_rightHand()
     // Offset: 0x1E0CA0
     ::UnityEngine::Transform* get_rightHand();
+    // public System.Void .ctor()
+    // Offset: 0xBE2140
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static RealtimeAvatar* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::RealtimeAvatar::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<RealtimeAvatar*, creationType>()));
+    }
+    // static private System.Void .cctor()
+    // Offset: 0xBE20E0
+    static void _cctor();
     // private System.Void Start()
     // Offset: 0xBE12A0
     void Start();
@@ -158,25 +168,6 @@ namespace Normal::Realtime {
     // static private System.Void UpdateTransformWithNodeState(UnityEngine.Transform transform, UnityEngine.XR.XRNodeState state)
     // Offset: 0xBE2030
     static void UpdateTransformWithNodeState(::UnityEngine::Transform* transform, ::UnityEngine::XR::XRNodeState state);
-    // public System.Void .ctor()
-    // Offset: 0xBE2140
-    // Implemented from: Normal.Realtime.RealtimeComponent`1
-    // Base method: System.Void RealtimeComponent_1::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static RealtimeAvatar* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::RealtimeAvatar::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<RealtimeAvatar*, creationType>()));
-    }
-    // static private System.Void .cctor()
-    // Offset: 0xBE20E0
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.cctor()
-    static void _cctor();
   }; // Normal.Realtime.RealtimeAvatar
   // WARNING Not writing size check since size may be invalid!
 }
@@ -254,6 +245,18 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngine::Transform* (Normal::Realtime::RealtimeAvatar::*)()>(&Normal::Realtime::RealtimeAvatar::get_rightHand)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::RealtimeAvatar*), "get_rightHand", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
+// Writing MetadataGetter for method: Normal::Realtime::RealtimeAvatar::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
+// Writing MetadataGetter for method: Normal::Realtime::RealtimeAvatar::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&Normal::Realtime::RealtimeAvatar::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::RealtimeAvatar*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
 // Writing MetadataGetter for method: Normal::Realtime::RealtimeAvatar::Start
@@ -341,17 +344,5 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(::
     static auto* transform = &::il2cpp_utils::GetClassFromName("UnityEngine", "Transform")->byval_arg;
     static auto* state = &::il2cpp_utils::GetClassFromName("UnityEngine.XR", "XRNodeState")->byval_arg;
     return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::RealtimeAvatar*), "UpdateTransformWithNodeState", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{transform, state});
-  }
-};
-// Writing MetadataGetter for method: Normal::Realtime::RealtimeAvatar::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
-// Writing MetadataGetter for method: Normal::Realtime::RealtimeAvatar::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&Normal::Realtime::RealtimeAvatar::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::RealtimeAvatar*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };

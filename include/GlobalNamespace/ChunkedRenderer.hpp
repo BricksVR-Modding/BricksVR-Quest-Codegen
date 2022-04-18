@@ -87,9 +87,9 @@ namespace GlobalNamespace {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: public System.Int32 x
-      [[deprecated]] int& dyn_x();
+      [[deprecated("Use field access instead!")]] int& dyn_x();
       // Get instance field reference: public System.Int32 z
-      [[deprecated]] int& dyn_z();
+      [[deprecated("Use field access instead!")]] int& dyn_z();
       // public System.Void .ctor(System.Int32 x, System.Int32 z)
       // Offset: 0x229080
       // ABORTED: conflicts with another method.  Coord(int x, int z);
@@ -176,23 +176,30 @@ namespace GlobalNamespace {
     // Set static field: static private ChunkedRenderer _instance
     static void _set__instance(::GlobalNamespace::ChunkedRenderer* value);
     // Get instance field reference: public UnityEngine.Transform chunkingCenterPointTransform
-    [[deprecated]] ::UnityEngine::Transform*& dyn_chunkingCenterPointTransform();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_chunkingCenterPointTransform();
     // Get instance field reference: private UnityEngine.Vector3 _chunkingCenterPoint
-    [[deprecated]] ::UnityEngine::Vector3& dyn__chunkingCenterPoint();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__chunkingCenterPoint();
     // Get instance field reference: public System.Int32 renderDistance
-    [[deprecated]] int& dyn_renderDistance();
+    [[deprecated("Use field access instead!")]] int& dyn_renderDistance();
     // Get instance field reference: private System.Boolean _uncappedRenderDistance
-    [[deprecated]] bool& dyn__uncappedRenderDistance();
+    [[deprecated("Use field access instead!")]] bool& dyn__uncappedRenderDistance();
     // Get instance field reference: public System.Single chunkSize
-    [[deprecated]] float& dyn_chunkSize();
+    [[deprecated("Use field access instead!")]] float& dyn_chunkSize();
     // Get instance field reference: public System.Single playerScale
-    [[deprecated]] float& dyn_playerScale();
+    [[deprecated("Use field access instead!")]] float& dyn_playerScale();
     // Get instance field reference: public UnityEngine.Transform playerHeadTransform
-    [[deprecated]] ::UnityEngine::Transform*& dyn_playerHeadTransform();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_playerHeadTransform();
     // Get instance field reference: private readonly System.Collections.Generic.Dictionary`2<ChunkedRenderer/Coord,ChunkedRenderer/Chunk> _chunkDictionary
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::GlobalNamespace::ChunkedRenderer::Coord, ::GlobalNamespace::ChunkedRenderer::Chunk*>*& dyn__chunkDictionary();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::GlobalNamespace::ChunkedRenderer::Coord, ::GlobalNamespace::ChunkedRenderer::Chunk*>*& dyn__chunkDictionary();
     // Get instance field reference: private readonly System.Collections.Generic.Queue`1<SetConnectorStatesTask> _workQueue
-    [[deprecated]] ::System::Collections::Generic::Queue_1<::GlobalNamespace::SetConnectorStatesTask>*& dyn__workQueue();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Queue_1<::GlobalNamespace::SetConnectorStatesTask>*& dyn__workQueue();
+    // public System.Void .ctor()
+    // Offset: 0x6B08F0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ChunkedRenderer* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::ChunkedRenderer::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ChunkedRenderer*, creationType>()));
+    }
     // static public ChunkedRenderer GetInstance()
     // Offset: 0x6AFF20
     static ::GlobalNamespace::ChunkedRenderer* GetInstance();
@@ -232,19 +239,6 @@ namespace GlobalNamespace {
     // static private System.Single DistanceBetweenCoords(ChunkedRenderer/Coord one, ChunkedRenderer/Coord two)
     // Offset: 0x6AFB40
     static float DistanceBetweenCoords(::GlobalNamespace::ChunkedRenderer::Coord one, ::GlobalNamespace::ChunkedRenderer::Coord two);
-    // public System.Void .ctor()
-    // Offset: 0x6B08F0
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ChunkedRenderer* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::ChunkedRenderer::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ChunkedRenderer*, creationType>()));
-    }
   }; // ChunkedRenderer
   #pragma pack(pop)
   static check_size<sizeof(ChunkedRenderer), 80 + sizeof(::System::Collections::Generic::Queue_1<::GlobalNamespace::SetConnectorStatesTask>*)> __GlobalNamespace_ChunkedRendererSizeCheck;
@@ -253,6 +247,10 @@ namespace GlobalNamespace {
 #include "beatsaber-hook/shared/utils/il2cpp-type-check.hpp"
 DEFINE_IL2CPP_ARG_TYPE(::GlobalNamespace::ChunkedRenderer::Coord, "", "ChunkedRenderer/Coord");
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::ChunkedRenderer::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::ChunkedRenderer::GetInstance
 // Il2CppName: GetInstance
 template<>
@@ -365,7 +363,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<float (*)(:
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::ChunkedRenderer*), "DistanceBetweenCoords", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{one, two});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::ChunkedRenderer::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

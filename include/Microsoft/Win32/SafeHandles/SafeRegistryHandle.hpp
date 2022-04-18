@@ -12,12 +12,6 @@
 #include "beatsaber-hook/shared/utils/il2cpp-utils-fields.hpp"
 #include "beatsaber-hook/shared/utils/utils.h"
 // Completed includes
-// Begin forward declares
-// Forward declaring namespace: System::Runtime::InteropServices
-namespace System::Runtime::InteropServices {
-  // Skipping declaration: SafeHandle because it is already included!
-}
-// Completed forward declares
 // Type namespace: Microsoft.Win32.SafeHandles
 namespace Microsoft::Win32::SafeHandles {
   // Forward declaring type: SafeRegistryHandle

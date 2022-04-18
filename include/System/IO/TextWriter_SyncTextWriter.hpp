@@ -41,7 +41,7 @@ namespace System::IO {
     static_assert(sizeof(::System::IO::TextWriter*) == 0x8);
     public:
     // Get instance field reference: private System.IO.TextWriter _out
-    [[deprecated]] ::System::IO::TextWriter*& dyn__out();
+    [[deprecated("Use field access instead!")]] ::System::IO::TextWriter*& dyn__out();
     // System.Void .ctor(System.IO.TextWriter t)
     // Offset: 0x33AFB0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

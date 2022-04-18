@@ -95,25 +95,25 @@ namespace System::Diagnostics::Tracing {
     static_assert(sizeof(::System::Guid) == 0x10);
     public:
     // Get instance field reference: readonly System.String m_name
-    [[deprecated]] ::StringW& dyn_m_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_name();
     // Get instance field reference: private readonly System.Int64 m_uniqueId
-    [[deprecated]] int64_t& dyn_m_uniqueId();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_m_uniqueId();
     // Get instance field reference: readonly System.Guid m_guid
-    [[deprecated]] ::System::Guid& dyn_m_guid();
+    [[deprecated("Use field access instead!")]] ::System::Guid& dyn_m_guid();
     // Get instance field reference: readonly System.Int32 m_activityPathGuidOffset
-    [[deprecated]] int& dyn_m_activityPathGuidOffset();
+    [[deprecated("Use field access instead!")]] int& dyn_m_activityPathGuidOffset();
     // Get instance field reference: readonly System.Int32 m_level
-    [[deprecated]] int& dyn_m_level();
+    [[deprecated("Use field access instead!")]] int& dyn_m_level();
     // Get instance field reference: readonly System.Diagnostics.Tracing.EventActivityOptions m_eventOptions
-    [[deprecated]] ::System::Diagnostics::Tracing::EventActivityOptions& dyn_m_eventOptions();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::EventActivityOptions& dyn_m_eventOptions();
     // Get instance field reference: System.Int64 m_lastChildID
-    [[deprecated]] int64_t& dyn_m_lastChildID();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_m_lastChildID();
     // Get instance field reference: System.Int32 m_stopped
-    [[deprecated]] int& dyn_m_stopped();
+    [[deprecated("Use field access instead!")]] int& dyn_m_stopped();
     // Get instance field reference: readonly System.Diagnostics.Tracing.ActivityTracker/System.Diagnostics.Tracing.ActivityInfo m_creator
-    [[deprecated]] ::System::Diagnostics::Tracing::ActivityTracker::ActivityInfo*& dyn_m_creator();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::ActivityTracker::ActivityInfo*& dyn_m_creator();
     // Get instance field reference: readonly System.Guid m_activityIdToRestore
-    [[deprecated]] ::System::Guid& dyn_m_activityIdToRestore();
+    [[deprecated("Use field access instead!")]] ::System::Guid& dyn_m_activityIdToRestore();
     // public System.Guid get_ActivityId()
     // Offset: 0x207F10
     ::System::Guid get_ActivityId();

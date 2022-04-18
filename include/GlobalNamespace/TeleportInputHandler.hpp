@@ -71,9 +71,9 @@ namespace GlobalNamespace {
     static_assert(sizeof(::System::Action*) == 0x8);
     public:
     // Get instance field reference: private readonly System.Action _startReadyAction
-    [[deprecated]] ::System::Action*& dyn__startReadyAction();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn__startReadyAction();
     // Get instance field reference: private readonly System.Action _startAimAction
-    [[deprecated]] ::System::Action*& dyn__startAimAction();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn__startAimAction();
     // private System.Collections.IEnumerator TeleportReadyCoroutine()
     // Offset: 0x617C50
     ::System::Collections::IEnumerator* TeleportReadyCoroutine();
@@ -96,11 +96,6 @@ namespace GlobalNamespace {
     // Offset: 0x617270
     // Implemented from: TeleportSupport
     // Base method: System.Void TeleportSupport::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TeleportInputHandler* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::TeleportInputHandler::.ctor");

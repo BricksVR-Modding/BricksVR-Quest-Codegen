@@ -67,13 +67,13 @@ namespace GlobalNamespace {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: public UnityEngine.Mesh Mesh
-    [[deprecated]] ::UnityEngine::Mesh*& dyn_Mesh();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Mesh*& dyn_Mesh();
     // Get instance field reference: private System.Collections.Generic.LinkedList`1<PlacedBrickRendererManager/MeshToRender> MeshesToRender
-    [[deprecated]] ::System::Collections::Generic::LinkedList_1<::GlobalNamespace::PlacedBrickRendererManager::MeshToRender*>*& dyn_MeshesToRender();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::LinkedList_1<::GlobalNamespace::PlacedBrickRendererManager::MeshToRender*>*& dyn_MeshesToRender();
     // Get instance field reference: private PlacedBrickRendererManager/MeshRenderBucketGroup[] _meshRenderBucketGroups
-    [[deprecated]] ::ArrayW<::GlobalNamespace::PlacedBrickRendererManager::MeshRenderBucketGroup*>& dyn__meshRenderBucketGroups();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::GlobalNamespace::PlacedBrickRendererManager::MeshRenderBucketGroup*>& dyn__meshRenderBucketGroups();
     // Get instance field reference: private System.Boolean _dirty
-    [[deprecated]] bool& dyn__dirty();
+    [[deprecated("Use field access instead!")]] bool& dyn__dirty();
     // public System.Int32 get_Count()
     // Offset: 0x672800
     int get_Count();

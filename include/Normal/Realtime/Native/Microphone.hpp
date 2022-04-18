@@ -48,7 +48,14 @@ namespace Normal::Realtime::Native {
       return nativeMicrophone;
     }
     // Get instance field reference: private System.IntPtr _nativeMicrophone
-    [[deprecated]] ::System::IntPtr& dyn__nativeMicrophone();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn__nativeMicrophone();
+    // public System.Void .ctor()
+    // Offset: 0x8BAC00
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static Microphone* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::Native::Microphone::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<Microphone*, creationType>()));
+    }
     // static public System.Boolean PlatformSupported()
     // Offset: 0x8BA880
     static bool PlatformSupported();
@@ -73,15 +80,6 @@ namespace Normal::Realtime::Native {
     // public System.Boolean GetAudioData(System.Single[] audioData)
     // Offset: 0x8BA760
     bool GetAudioData(::ArrayW<float> audioData);
-    // public System.Void .ctor()
-    // Offset: 0x8BAC00
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static Microphone* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::Native::Microphone::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<Microphone*, creationType>()));
-    }
     // protected override System.Void Finalize()
     // Offset: 0x8BA6F0
     // Implemented from: System.Object
@@ -93,6 +91,10 @@ namespace Normal::Realtime::Native {
   static_assert(sizeof(Microphone) == 0x18);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Normal::Realtime::Native::Microphone::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Normal::Realtime::Native::Microphone::PlatformSupported
 // Il2CppName: PlatformSupported
 template<>
@@ -159,10 +161,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Norma
     return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::Native::Microphone*), "GetAudioData", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{audioData});
   }
 };
-// Writing MetadataGetter for method: Normal::Realtime::Native::Microphone::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: Normal::Realtime::Native::Microphone::Finalize
 // Il2CppName: Finalize
 template<>

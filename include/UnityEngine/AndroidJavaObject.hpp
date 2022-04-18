@@ -65,9 +65,9 @@ namespace UnityEngine {
     // Set static field: static private System.Boolean enableDebugPrints
     static void _set_enableDebugPrints(bool value);
     // Get instance field reference: UnityEngine.GlobalJavaObjectRef m_jobject
-    [[deprecated]] ::UnityEngine::GlobalJavaObjectRef*& dyn_m_jobject();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GlobalJavaObjectRef*& dyn_m_jobject();
     // Get instance field reference: UnityEngine.GlobalJavaObjectRef m_jclass
-    [[deprecated]] ::UnityEngine::GlobalJavaObjectRef*& dyn_m_jclass();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GlobalJavaObjectRef*& dyn_m_jclass();
     // public System.Void .ctor(System.String className, params System.Object[] args)
     // Offset: 0x636370
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -81,6 +81,13 @@ namespace UnityEngine {
     static AndroidJavaObject* New_ctor(::System::IntPtr jobject) {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::AndroidJavaObject::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<AndroidJavaObject*, creationType>(jobject)));
+    }
+    // System.Void .ctor()
+    // Offset: 0x1DD400
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static AndroidJavaObject* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::AndroidJavaObject::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<AndroidJavaObject*, creationType>()));
     }
     // static private System.Void .cctor()
     // Offset: 0x6361E0
@@ -151,15 +158,6 @@ namespace UnityEngine {
     // protected System.IntPtr _GetRawClass()
     // Offset: 0x635DB0
     ::System::IntPtr _GetRawClass();
-    // System.Void .ctor()
-    // Offset: 0x1DD400
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static AndroidJavaObject* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::AndroidJavaObject::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<AndroidJavaObject*, creationType>()));
-    }
     // protected override System.Void Finalize()
     // Offset: 0x635D30
     // Implemented from: System.Object
@@ -171,6 +169,10 @@ namespace UnityEngine {
   static_assert(sizeof(AndroidJavaObject) == 0x20);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: UnityEngine::AndroidJavaObject::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::AndroidJavaObject::New_ctor
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
@@ -285,10 +287,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::I
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::AndroidJavaObject*), "_GetRawClass", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::AndroidJavaObject::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::AndroidJavaObject::Finalize
 // Il2CppName: Finalize
 template<>

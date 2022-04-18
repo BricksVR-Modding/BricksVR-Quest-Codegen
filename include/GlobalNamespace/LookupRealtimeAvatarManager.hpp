@@ -39,26 +39,24 @@ namespace GlobalNamespace {
     static ::Normal::Realtime::RealtimeAvatarManager* _get__instance();
     // Set static field: static private Normal.Realtime.RealtimeAvatarManager _instance
     static void _set__instance(::Normal::Realtime::RealtimeAvatarManager* value);
-    // static public Normal.Realtime.RealtimeAvatarManager GetInstance()
-    // Offset: 0x6BD4A0
-    static ::Normal::Realtime::RealtimeAvatarManager* GetInstance();
     // public System.Void .ctor()
     // Offset: 0x1DDE30
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static LookupRealtimeAvatarManager* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::LookupRealtimeAvatarManager::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<LookupRealtimeAvatarManager*, creationType>()));
     }
+    // static public Normal.Realtime.RealtimeAvatarManager GetInstance()
+    // Offset: 0x6BD4A0
+    static ::Normal::Realtime::RealtimeAvatarManager* GetInstance();
   }; // LookupRealtimeAvatarManager
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::LookupRealtimeAvatarManager::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::LookupRealtimeAvatarManager::GetInstance
 // Il2CppName: GetInstance
 template<>
@@ -67,7 +65,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Normal::R
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::LookupRealtimeAvatarManager*), "GetInstance", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::LookupRealtimeAvatarManager::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -60,9 +60,9 @@ namespace UnityEngine {
     // Set static field: static private readonly UnityEngine.Pose k_Identity
     static void _set_k_Identity(::UnityEngine::Pose value);
     // Get instance field reference: public UnityEngine.Vector3 position
-    [[deprecated]] ::UnityEngine::Vector3& dyn_position();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_position();
     // Get instance field reference: public UnityEngine.Quaternion rotation
-    [[deprecated]] ::UnityEngine::Quaternion& dyn_rotation();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Quaternion& dyn_rotation();
     // static public UnityEngine.Pose get_identity()
     // Offset: 0x976F20
     static ::UnityEngine::Pose get_identity();

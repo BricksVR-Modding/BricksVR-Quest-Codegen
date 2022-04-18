@@ -71,9 +71,9 @@ namespace UnityEngine::UIElements::StyleSheets {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: public readonly System.Int32 sheetInstanceID
-      [[deprecated]] int& dyn_sheetInstanceID();
+      [[deprecated("Use field access instead!")]] int& dyn_sheetInstanceID();
       // Get instance field reference: public readonly System.Int32 index
-      [[deprecated]] int& dyn_index();
+      [[deprecated("Use field access instead!")]] int& dyn_index();
     }; // UnityEngine.UIElements.StyleSheets.StyleSheetCache/UnityEngine.UIElements.StyleSheets.SheetHandleKey
     #pragma pack(pop)
     static check_size<sizeof(StyleSheetCache::SheetHandleKey), 4 + sizeof(int)> __UnityEngine_UIElements_StyleSheets_StyleSheetCache_SheetHandleKeySizeCheck;

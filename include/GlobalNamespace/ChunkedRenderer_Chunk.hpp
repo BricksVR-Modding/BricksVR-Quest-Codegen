@@ -74,13 +74,20 @@ namespace GlobalNamespace {
     static_assert(sizeof(::UnityEngine::Vector3) == 0xC);
     public:
     // Get instance field reference: private readonly System.Collections.Generic.List`1<ChunkedBrick> _bricks
-    [[deprecated]] ::System::Collections::Generic::List_1<::GlobalNamespace::ChunkedBrick>*& dyn__bricks();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::GlobalNamespace::ChunkedBrick>*& dyn__bricks();
     // Get instance field reference: private System.Boolean _renderersEnabled
-    [[deprecated]] bool& dyn__renderersEnabled();
+    [[deprecated("Use field access instead!")]] bool& dyn__renderersEnabled();
     // Get instance field reference: private System.Boolean _connectorsEnabled
-    [[deprecated]] bool& dyn__connectorsEnabled();
+    [[deprecated("Use field access instead!")]] bool& dyn__connectorsEnabled();
     // Get instance field reference: public UnityEngine.Vector3 Position
-    [[deprecated]] ::UnityEngine::Vector3& dyn_Position();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_Position();
+    // public System.Void .ctor()
+    // Offset: 0x6AF750
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ChunkedRenderer::Chunk* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::ChunkedRenderer::Chunk::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ChunkedRenderer::Chunk*, creationType>()));
+    }
     // public System.Void AddBrick(UnityEngine.GameObject brickObject, System.Collections.Generic.Queue`1<SetConnectorStatesTask> workQueue)
     // Offset: 0x6AF1E0
     void AddBrick(::UnityEngine::GameObject* brickObject, ::System::Collections::Generic::Queue_1<::GlobalNamespace::SetConnectorStatesTask>* workQueue);
@@ -96,21 +103,16 @@ namespace GlobalNamespace {
     // public System.Collections.Generic.List`1<ChunkedBrick> Bricks()
     // Offset: 0x1E1920
     ::System::Collections::Generic::List_1<::GlobalNamespace::ChunkedBrick>* Bricks();
-    // public System.Void .ctor()
-    // Offset: 0x6AF750
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ChunkedRenderer::Chunk* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::ChunkedRenderer::Chunk::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ChunkedRenderer::Chunk*, creationType>()));
-    }
   }; // ChunkedRenderer/Chunk
   #pragma pack(pop)
   static check_size<sizeof(ChunkedRenderer::Chunk), 28 + sizeof(::UnityEngine::Vector3)> __GlobalNamespace_ChunkedRenderer_ChunkSizeCheck;
   static_assert(sizeof(ChunkedRenderer::Chunk) == 0x28);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::ChunkedRenderer::Chunk::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::ChunkedRenderer::Chunk::AddBrick
 // Il2CppName: AddBrick
 template<>
@@ -158,7 +160,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::C
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::ChunkedRenderer::Chunk*), "Bricks", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::ChunkedRenderer::Chunk::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

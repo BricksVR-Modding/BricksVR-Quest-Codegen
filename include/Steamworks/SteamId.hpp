@@ -44,7 +44,7 @@ namespace Steamworks {
       return Value;
     }
     // Get instance field reference: public System.UInt64 Value
-    [[deprecated]] uint64_t& dyn_Value();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_Value();
     // public override System.String ToString()
     // Offset: 0x462410
     // Implemented from: System.ValueType

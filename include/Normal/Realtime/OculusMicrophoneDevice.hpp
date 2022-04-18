@@ -79,10 +79,17 @@ namespace Normal::Realtime {
     // Set static field: static public System.String OVR_DLL_NAME
     static void _set_OVR_DLL_NAME(::StringW value);
     // Get instance field reference: private System.IntPtr _microphone
-    [[deprecated]] ::System::IntPtr& dyn__microphone();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn__microphone();
     // static private System.Void .cctor()
     // Offset: 0xBDBE50
     static void _cctor();
+    // public System.Void .ctor()
+    // Offset: 0xBDC000
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static OculusMicrophoneDevice* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::OculusMicrophoneDevice::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<OculusMicrophoneDevice*, creationType>()));
+    }
     // static public System.Boolean IsOculusPlatformAvailable()
     // Offset: 0xBDBA40
     static bool IsOculusPlatformAvailable();
@@ -119,15 +126,6 @@ namespace Normal::Realtime {
     // public System.Boolean GetAudioData(System.Single[] audioData)
     // Offset: 0xBDB640
     bool GetAudioData(::ArrayW<float> audioData);
-    // public System.Void .ctor()
-    // Offset: 0xBDC000
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static OculusMicrophoneDevice* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::OculusMicrophoneDevice::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<OculusMicrophoneDevice*, creationType>()));
-    }
     // protected override System.Void Finalize()
     // Offset: 0xBDB5D0
     // Implemented from: System.Object
@@ -147,6 +145,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::OculusMicrophoneDevice*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: Normal::Realtime::OculusMicrophoneDevice::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Normal::Realtime::OculusMicrophoneDevice::IsOculusPlatformAvailable
 // Il2CppName: IsOculusPlatformAvailable
 template<>
@@ -251,10 +253,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Norma
     return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::OculusMicrophoneDevice*), "GetAudioData", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{audioData});
   }
 };
-// Writing MetadataGetter for method: Normal::Realtime::OculusMicrophoneDevice::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: Normal::Realtime::OculusMicrophoneDevice::Finalize
 // Il2CppName: Finalize
 template<>

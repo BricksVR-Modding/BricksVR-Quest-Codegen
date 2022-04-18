@@ -134,33 +134,40 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.GameObject leftHand
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_leftHand();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_leftHand();
     // Get instance field reference: private UnityEngine.GameObject rightHand
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_rightHand();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_rightHand();
     // Get instance field reference: private UnityEngine.GameObject leftMenuHand
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_leftMenuHand();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_leftMenuHand();
     // Get instance field reference: private UnityEngine.GameObject rightMenuHand
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_rightMenuHand();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_rightMenuHand();
     // Get instance field reference: private UnityEngine.GameObject head
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_head();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_head();
     // Get instance field reference: public System.Single lookSpeed
-    [[deprecated]] float& dyn_lookSpeed();
+    [[deprecated("Use field access instead!")]] float& dyn_lookSpeed();
     // Get instance field reference: public System.Single moveSpeed
-    [[deprecated]] float& dyn_moveSpeed();
+    [[deprecated("Use field access instead!")]] float& dyn_moveSpeed();
     // Get instance field reference: public System.Single handMoveSpeed
-    [[deprecated]] float& dyn_handMoveSpeed();
+    [[deprecated("Use field access instead!")]] float& dyn_handMoveSpeed();
     // Get instance field reference: public System.Single playerHeight
-    [[deprecated]] float& dyn_playerHeight();
+    [[deprecated("Use field access instead!")]] float& dyn_playerHeight();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<UnityEngine.GameObject,UnityEngine.Vector3> _handPositionOffsets
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::UnityEngine::GameObject*, ::UnityEngine::Vector3>*& dyn__handPositionOffsets();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::UnityEngine::GameObject*, ::UnityEngine::Vector3>*& dyn__handPositionOffsets();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<UnityEngine.GameObject,UnityEngine.Quaternion> _handRotationOffsets
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::UnityEngine::GameObject*, ::UnityEngine::Quaternion>*& dyn__handRotationOffsets();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::UnityEngine::GameObject*, ::UnityEngine::Quaternion>*& dyn__handRotationOffsets();
     // Get instance field reference: private System.Single _rotX
-    [[deprecated]] float& dyn__rotX();
+    [[deprecated("Use field access instead!")]] float& dyn__rotX();
     // Get instance field reference: private System.Single _rotY
-    [[deprecated]] float& dyn__rotY();
+    [[deprecated("Use field access instead!")]] float& dyn__rotY();
     // Get instance field reference: private UnityEngine.GameObject _currentlyControlledBodypart
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__currentlyControlledBodypart();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__currentlyControlledBodypart();
+    // public System.Void .ctor()
+    // Offset: 0x927E40
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static VRSimulator* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::VRSimulator::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<VRSimulator*, creationType>()));
+    }
     // private System.Void Start()
     // Offset: 0x927CA0
     void Start();
@@ -191,25 +198,16 @@ namespace GlobalNamespace {
     // static public System.Single WrapAngle(System.Single angle)
     // Offset: 0x927E10
     static float WrapAngle(float angle);
-    // public System.Void .ctor()
-    // Offset: 0x927E40
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static VRSimulator* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::VRSimulator::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<VRSimulator*, creationType>()));
-    }
   }; // VRSimulator
   #pragma pack(pop)
   static check_size<sizeof(VRSimulator), 104 + sizeof(::UnityEngine::GameObject*)> __GlobalNamespace_VRSimulatorSizeCheck;
   static_assert(sizeof(VRSimulator) == 0x70);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::VRSimulator::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::VRSimulator::Start
 // Il2CppName: Start
 template<>
@@ -291,7 +289,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<float (*)(f
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::VRSimulator*), "WrapAngle", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{angle});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::VRSimulator::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

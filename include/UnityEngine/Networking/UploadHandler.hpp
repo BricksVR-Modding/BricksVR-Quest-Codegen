@@ -49,22 +49,20 @@ namespace UnityEngine::Networking {
       return m_Ptr;
     }
     // Get instance field reference: System.IntPtr m_Ptr
-    [[deprecated]] ::System::IntPtr& dyn_m_Ptr();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_m_Ptr();
+    // System.Void .ctor()
+    // Offset: 0x1DD400
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static UploadHandler* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Networking::UploadHandler::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<UploadHandler*, creationType>()));
+    }
     // private System.Void Release()
     // Offset: 0x641550
     void Release();
     // public System.Void Dispose()
     // Offset: 0x641420
     void Dispose();
-    // System.Void .ctor()
-    // Offset: 0x1DD400
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static UploadHandler* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Networking::UploadHandler::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<UploadHandler*, creationType>()));
-    }
     // protected override System.Void Finalize()
     // Offset: 0x641490
     // Implemented from: System.Object
@@ -76,6 +74,10 @@ namespace UnityEngine::Networking {
   static_assert(sizeof(UploadHandler) == 0x18);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: UnityEngine::Networking::UploadHandler::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::Networking::UploadHandler::Release
 // Il2CppName: Release
 template<>
@@ -92,10 +94,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Networking::UploadHandler*), "Dispose", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::Networking::UploadHandler::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::Networking::UploadHandler::Finalize
 // Il2CppName: Finalize
 template<>

@@ -54,9 +54,9 @@ namespace UnityEngine::UIElements {
       return *reinterpret_cast<::System::IEquatable_1<::UnityEngine::UIElements::Length>*>(this);
     }
     // Get instance field reference: private System.Single m_Value
-    [[deprecated]] float& dyn_m_Value();
+    [[deprecated("Use field access instead!")]] float& dyn_m_Value();
     // Get instance field reference: private UnityEngine.UIElements.LengthUnit m_Unit
-    [[deprecated]] ::UnityEngine::UIElements::LengthUnit& dyn_m_Unit();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::LengthUnit& dyn_m_Unit();
     // public System.Single get_value()
     // Offset: 0x2A5AA0
     float get_value();

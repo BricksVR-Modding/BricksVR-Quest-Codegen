@@ -43,9 +43,9 @@ namespace Normal::Realtime::Serialization {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private System.Byte[] _buffer
-    [[deprecated]] ::ArrayW<uint8_t>& dyn__buffer();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn__buffer();
     // Get instance field reference: private System.Int32 _position
-    [[deprecated]] int& dyn__position();
+    [[deprecated("Use field access instead!")]] int& dyn__position();
     // public System.Int32 get_bytesRead()
     // Offset: 0x1E1910
     int get_bytesRead();

@@ -88,17 +88,17 @@ namespace UnityEngine::Tilemaps {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private UnityEngine.Sprite m_Sprite
-    [[deprecated]] ::UnityEngine::Sprite*& dyn_m_Sprite();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Sprite*& dyn_m_Sprite();
     // Get instance field reference: private UnityEngine.Color m_Color
-    [[deprecated]] ::UnityEngine::Color& dyn_m_Color();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_m_Color();
     // Get instance field reference: private UnityEngine.Matrix4x4 m_Transform
-    [[deprecated]] ::UnityEngine::Matrix4x4& dyn_m_Transform();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Matrix4x4& dyn_m_Transform();
     // Get instance field reference: private UnityEngine.GameObject m_GameObject
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_m_GameObject();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_m_GameObject();
     // Get instance field reference: private UnityEngine.Tilemaps.TileFlags m_Flags
-    [[deprecated]] ::UnityEngine::Tilemaps::TileFlags& dyn_m_Flags();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Tilemaps::TileFlags& dyn_m_Flags();
     // Get instance field reference: private UnityEngine.Tilemaps.Tile/UnityEngine.Tilemaps.ColliderType m_ColliderType
-    [[deprecated]] ::UnityEngine::Tilemaps::Tile::ColliderType& dyn_m_ColliderType();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Tilemaps::Tile::ColliderType& dyn_m_ColliderType();
     // public System.Void set_sprite(UnityEngine.Sprite value)
     // Offset: 0x2F6BE0
     void set_sprite(::UnityEngine::Sprite* value);

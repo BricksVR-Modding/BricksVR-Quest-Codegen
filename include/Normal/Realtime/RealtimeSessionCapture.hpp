@@ -89,7 +89,7 @@ namespace Normal::Realtime {
       // Set static field: static public Normal.Realtime.RealtimeSessionCapture/Normal.Realtime.Mode Playback
       static void _set_Playback(::Normal::Realtime::RealtimeSessionCapture::Mode value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // Normal.Realtime.RealtimeSessionCapture/Normal.Realtime.Mode
     #pragma pack(pop)
     static check_size<sizeof(RealtimeSessionCapture::Mode), 0 + sizeof(int)> __Normal_Realtime_RealtimeSessionCapture_ModeSizeCheck;
@@ -126,29 +126,23 @@ namespace Normal::Realtime {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private Normal.Realtime.RealtimeSessionCapture/Normal.Realtime.Mode _mode
-    [[deprecated]] ::Normal::Realtime::RealtimeSessionCapture::Mode& dyn__mode();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::RealtimeSessionCapture::Mode& dyn__mode();
     // Get instance field reference: private System.String[] _playbackCaptureFiles
-    [[deprecated]] ::ArrayW<::StringW>& dyn__playbackCaptureFiles();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn__playbackCaptureFiles();
     // Get instance field reference: private Normal.Realtime.Realtime _realtime
-    [[deprecated]] ::Normal::Realtime::Realtime*& dyn__realtime();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::Realtime*& dyn__realtime();
     // Get instance field reference: private Normal.Realtime.Room _room
-    [[deprecated]] ::Normal::Realtime::Room*& dyn__room();
-    // private System.Void Awake()
-    // Offset: 0x8C1540
-    void Awake();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::Room*& dyn__room();
     // public System.Void .ctor()
     // Offset: 0x1DDE30
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static RealtimeSessionCapture* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::RealtimeSessionCapture::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<RealtimeSessionCapture*, creationType>()));
     }
+    // private System.Void Awake()
+    // Offset: 0x8C1540
+    void Awake();
   }; // Normal.Realtime.RealtimeSessionCapture
   #pragma pack(pop)
   static check_size<sizeof(RealtimeSessionCapture), 48 + sizeof(::Normal::Realtime::Room*)> __Normal_Realtime_RealtimeSessionCaptureSizeCheck;
@@ -157,6 +151,10 @@ namespace Normal::Realtime {
 #include "beatsaber-hook/shared/utils/il2cpp-type-check.hpp"
 DEFINE_IL2CPP_ARG_TYPE(::Normal::Realtime::RealtimeSessionCapture::Mode, "Normal.Realtime", "RealtimeSessionCapture/Mode");
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Normal::Realtime::RealtimeSessionCapture::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Normal::Realtime::RealtimeSessionCapture::Awake
 // Il2CppName: Awake
 template<>
@@ -165,7 +163,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Norma
     return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::RealtimeSessionCapture*), "Awake", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: Normal::Realtime::RealtimeSessionCapture::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

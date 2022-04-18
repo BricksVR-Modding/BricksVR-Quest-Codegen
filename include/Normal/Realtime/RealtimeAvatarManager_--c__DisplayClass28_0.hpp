@@ -50,25 +50,27 @@ namespace Normal::Realtime {
       return avatar;
     }
     // Get instance field reference: public Normal.Realtime.RealtimeAvatar avatar
-    [[deprecated]] ::Normal::Realtime::RealtimeAvatar*& dyn_avatar();
-    // System.Boolean <_UnregisterAvatar>b__0(System.Collections.Generic.KeyValuePair`2<System.Int32,Normal.Realtime.RealtimeAvatar> keyValuePair)
-    // Offset: 0xBE2400
-    bool $_UnregisterAvatar$b__0(::System::Collections::Generic::KeyValuePair_2<int, ::Normal::Realtime::RealtimeAvatar*> keyValuePair);
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::RealtimeAvatar*& dyn_avatar();
     // public System.Void .ctor()
     // Offset: 0x1DD400
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static RealtimeAvatarManager::$$c__DisplayClass28_0* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::RealtimeAvatarManager::$$c__DisplayClass28_0::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<RealtimeAvatarManager::$$c__DisplayClass28_0*, creationType>()));
     }
+    // System.Boolean <_UnregisterAvatar>b__0(System.Collections.Generic.KeyValuePair`2<System.Int32,Normal.Realtime.RealtimeAvatar> keyValuePair)
+    // Offset: 0xBE2400
+    bool $_UnregisterAvatar$b__0(::System::Collections::Generic::KeyValuePair_2<int, ::Normal::Realtime::RealtimeAvatar*> keyValuePair);
   }; // Normal.Realtime.RealtimeAvatarManager/Normal.Realtime.<>c__DisplayClass28_0
   #pragma pack(pop)
   static check_size<sizeof(RealtimeAvatarManager::$$c__DisplayClass28_0), 16 + sizeof(::Normal::Realtime::RealtimeAvatar*)> __Normal_Realtime_RealtimeAvatarManager_$$c__DisplayClass28_0SizeCheck;
   static_assert(sizeof(RealtimeAvatarManager::$$c__DisplayClass28_0) == 0x18);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Normal::Realtime::RealtimeAvatarManager::$$c__DisplayClass28_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Normal::Realtime::RealtimeAvatarManager::$$c__DisplayClass28_0::$_UnregisterAvatar$b__0
 // Il2CppName: <_UnregisterAvatar>b__0
 template<>
@@ -78,7 +80,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Norma
     return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::RealtimeAvatarManager::$$c__DisplayClass28_0*), "<_UnregisterAvatar>b__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{keyValuePair});
   }
 };
-// Writing MetadataGetter for method: Normal::Realtime::RealtimeAvatarManager::$$c__DisplayClass28_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

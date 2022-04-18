@@ -66,7 +66,7 @@ namespace UnityEngine::Windows::Speech {
     // Set static field: static public UnityEngine.Windows.Speech.ConfidenceLevel Rejected
     static void _set_Rejected(::UnityEngine::Windows::Speech::ConfidenceLevel value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // UnityEngine.Windows.Speech.ConfidenceLevel
   #pragma pack(pop)
   static check_size<sizeof(ConfidenceLevel), 0 + sizeof(int)> __UnityEngine_Windows_Speech_ConfidenceLevelSizeCheck;

@@ -122,23 +122,30 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public System.Boolean leftHand
-    [[deprecated]] bool& dyn_leftHand();
+    [[deprecated("Use field access instead!")]] bool& dyn_leftHand();
     // Get instance field reference: public UnityEngine.LayerMask interactionMask
-    [[deprecated]] ::UnityEngine::LayerMask& dyn_interactionMask();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::LayerMask& dyn_interactionMask();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<UnityEngine.GameObject,QuickInteractable> _hoveredObjects
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::UnityEngine::GameObject*, ::GlobalNamespace::QuickInteractable*>*& dyn__hoveredObjects();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::UnityEngine::GameObject*, ::GlobalNamespace::QuickInteractable*>*& dyn__hoveredObjects();
     // Get instance field reference: private OVRInput/Button _trigger
-    [[deprecated]] ::GlobalNamespace::OVRInput::Button& dyn__trigger();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRInput::Button& dyn__trigger();
     // Get instance field reference: private UnityEngine.GameObject _tempHoveredObject
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__tempHoveredObject();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__tempHoveredObject();
     // Get instance field reference: private QuickInteractable _tempHoveredInteractable
-    [[deprecated]] ::GlobalNamespace::QuickInteractable*& dyn__tempHoveredInteractable();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::QuickInteractable*& dyn__tempHoveredInteractable();
     // Get instance field reference: private BrickHover _brickHover
-    [[deprecated]] ::GlobalNamespace::BrickHover*& dyn__brickHover();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::BrickHover*& dyn__brickHover();
     // Get instance field reference: private System.Boolean _debugGrabEnabled
-    [[deprecated]] bool& dyn__debugGrabEnabled();
+    [[deprecated("Use field access instead!")]] bool& dyn__debugGrabEnabled();
     // Get instance field reference: private System.Boolean _interacting
-    [[deprecated]] bool& dyn__interacting();
+    [[deprecated("Use field access instead!")]] bool& dyn__interacting();
+    // public System.Void .ctor()
+    // Offset: 0x1DDE30
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static QuickInteractor* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::QuickInteractor::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<QuickInteractor*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0x6C7AF0
     void Awake();
@@ -166,25 +173,16 @@ namespace GlobalNamespace {
     // private System.Void <CleanHoveredList>b__13_1(UnityEngine.GameObject k)
     // Offset: 0x6C7FD0
     void $CleanHoveredList$b__13_1(::UnityEngine::GameObject* k);
-    // public System.Void .ctor()
-    // Offset: 0x1DDE30
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static QuickInteractor* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::QuickInteractor::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<QuickInteractor*, creationType>()));
-    }
   }; // QuickInteractor
   #pragma pack(pop)
   static check_size<sizeof(QuickInteractor), 73 + sizeof(bool)> __GlobalNamespace_QuickInteractorSizeCheck;
   static_assert(sizeof(QuickInteractor) == 0x4A);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::QuickInteractor::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::QuickInteractor::Awake
 // Il2CppName: Awake
 template<>
@@ -263,7 +261,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::QuickInteractor*), "<CleanHoveredList>b__13_1", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{k});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::QuickInteractor::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

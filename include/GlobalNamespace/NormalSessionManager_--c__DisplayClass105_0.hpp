@@ -57,29 +57,31 @@ namespace GlobalNamespace {
     static_assert(sizeof(::GlobalNamespace::BrickDestroyer*) == 0x8);
     public:
     // Get instance field reference: public NormalSessionManager <>4__this
-    [[deprecated]] ::GlobalNamespace::NormalSessionManager*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::NormalSessionManager*& dyn_$$4__this();
     // Get instance field reference: public UnityEngine.GameObject brick4x2
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_brick4x2();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_brick4x2();
     // Get instance field reference: public BrickDestroyer destroyer
-    [[deprecated]] ::GlobalNamespace::BrickDestroyer*& dyn_destroyer();
-    // System.Void <WarmOtherCaches>b__0()
-    // Offset: 0x819C20
-    void $WarmOtherCaches$b__0();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::BrickDestroyer*& dyn_destroyer();
     // public System.Void .ctor()
     // Offset: 0x1DD400
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static NormalSessionManager::$$c__DisplayClass105_0* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::NormalSessionManager::$$c__DisplayClass105_0::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<NormalSessionManager::$$c__DisplayClass105_0*, creationType>()));
     }
+    // System.Void <WarmOtherCaches>b__0()
+    // Offset: 0x819C20
+    void $WarmOtherCaches$b__0();
   }; // NormalSessionManager/<>c__DisplayClass105_0
   #pragma pack(pop)
   static check_size<sizeof(NormalSessionManager::$$c__DisplayClass105_0), 32 + sizeof(::GlobalNamespace::BrickDestroyer*)> __GlobalNamespace_NormalSessionManager_$$c__DisplayClass105_0SizeCheck;
   static_assert(sizeof(NormalSessionManager::$$c__DisplayClass105_0) == 0x28);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::NormalSessionManager::$$c__DisplayClass105_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::NormalSessionManager::$$c__DisplayClass105_0::$WarmOtherCaches$b__0
 // Il2CppName: <WarmOtherCaches>b__0
 template<>
@@ -88,7 +90,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::NormalSessionManager::$$c__DisplayClass105_0*), "<WarmOtherCaches>b__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::NormalSessionManager::$$c__DisplayClass105_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

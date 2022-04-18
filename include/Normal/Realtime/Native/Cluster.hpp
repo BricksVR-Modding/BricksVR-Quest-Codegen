@@ -51,11 +51,11 @@ namespace Normal::Realtime::Native {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public readonly System.String name
-    [[deprecated]] ::StringW& dyn_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_name();
     // Get instance field reference: public readonly System.String address
-    [[deprecated]] ::StringW& dyn_address();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_address();
     // Get instance field reference: public System.Int32 ping
-    [[deprecated]] int& dyn_ping();
+    [[deprecated("Use field access instead!")]] int& dyn_ping();
     // public System.Void .ctor(System.String name, System.String address)
     // Offset: 0x8B6A10
     Cluster(::StringW name, ::StringW address);

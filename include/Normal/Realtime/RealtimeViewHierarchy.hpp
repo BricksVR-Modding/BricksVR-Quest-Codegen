@@ -70,13 +70,13 @@ namespace Normal::Realtime {
     static_assert(sizeof(::System::Collections::Generic::IReadOnlyCollection_1<::Normal::Realtime::IRealtimeComponent*>*) == 0x8);
     public:
     // Get instance field reference: public readonly Normal.Realtime.RealtimeView root
-    [[deprecated]] ::Normal::Realtime::RealtimeView*& dyn_root();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::RealtimeView*& dyn_root();
     // Get instance field reference: public readonly Normal.Realtime.RealtimeView parent
-    [[deprecated]] ::Normal::Realtime::RealtimeView*& dyn_parent();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::RealtimeView*& dyn_parent();
     // Get instance field reference: public readonly System.Collections.Generic.IReadOnlyCollection`1<Normal.Realtime.RealtimeView> children
-    [[deprecated]] ::System::Collections::Generic::IReadOnlyCollection_1<::Normal::Realtime::RealtimeView*>*& dyn_children();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::IReadOnlyCollection_1<::Normal::Realtime::RealtimeView*>*& dyn_children();
     // Get instance field reference: public readonly System.Collections.Generic.IReadOnlyCollection`1<Normal.Realtime.IRealtimeComponent> components
-    [[deprecated]] ::System::Collections::Generic::IReadOnlyCollection_1<::Normal::Realtime::IRealtimeComponent*>*& dyn_components();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::IReadOnlyCollection_1<::Normal::Realtime::IRealtimeComponent*>*& dyn_components();
     // public System.Void .ctor(Normal.Realtime.RealtimeView view, Normal.Realtime.RealtimeViewMap children)
     // Offset: 0x891800
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

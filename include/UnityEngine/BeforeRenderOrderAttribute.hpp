@@ -43,7 +43,7 @@ namespace UnityEngine {
       return order;
     }
     // Get instance field reference: private System.Int32 <order>k__BackingField
-    [[deprecated]] int& dyn_$order$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$order$k__BackingField();
     // public System.Int32 get_order()
     // Offset: 0x1DD410
     int get_order();

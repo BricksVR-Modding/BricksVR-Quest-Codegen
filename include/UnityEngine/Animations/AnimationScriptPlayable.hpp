@@ -60,7 +60,7 @@ namespace UnityEngine::Animations {
     // Set static field: static private readonly UnityEngine.Animations.AnimationScriptPlayable m_NullPlayable
     static void _set_m_NullPlayable(::UnityEngine::Animations::AnimationScriptPlayable value);
     // Get instance field reference: private UnityEngine.Playables.PlayableHandle m_Handle
-    [[deprecated]] ::UnityEngine::Playables::PlayableHandle& dyn_m_Handle();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Playables::PlayableHandle& dyn_m_Handle();
     // System.Void .ctor(UnityEngine.Playables.PlayableHandle handle)
     // Offset: 0x6575A0
     // ABORTED: conflicts with another method.  AnimationScriptPlayable(::UnityEngine::Playables::PlayableHandle handle);

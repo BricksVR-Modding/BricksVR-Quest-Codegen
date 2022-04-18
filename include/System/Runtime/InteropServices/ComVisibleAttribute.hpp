@@ -43,7 +43,7 @@ namespace System::Runtime::InteropServices {
       return val;
     }
     // Get instance field reference: System.Boolean _val
-    [[deprecated]] bool& dyn__val();
+    [[deprecated("Use field access instead!")]] bool& dyn__val();
     // public System.Void .ctor(System.Boolean visibility)
     // Offset: 0x49DDB0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

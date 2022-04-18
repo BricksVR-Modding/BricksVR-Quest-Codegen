@@ -37,25 +37,27 @@ namespace GlobalNamespace {
       return handler;
     }
     // Get instance field reference: public DebugUIBuilder/OnClick handler
-    [[deprecated]] ::GlobalNamespace::DebugUIBuilder::OnClick*& dyn_handler();
-    // System.Void <AddButton>b__0()
-    // Offset: 0x29B840
-    void $AddButton$b__0();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::DebugUIBuilder::OnClick*& dyn_handler();
     // public System.Void .ctor()
     // Offset: 0x1DD400
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static DebugUIBuilder::$$c__DisplayClass35_0* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::DebugUIBuilder::$$c__DisplayClass35_0::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<DebugUIBuilder::$$c__DisplayClass35_0*, creationType>()));
     }
+    // System.Void <AddButton>b__0()
+    // Offset: 0x29B840
+    void $AddButton$b__0();
   }; // DebugUIBuilder/<>c__DisplayClass35_0
   #pragma pack(pop)
   static check_size<sizeof(DebugUIBuilder::$$c__DisplayClass35_0), 16 + sizeof(::GlobalNamespace::DebugUIBuilder::OnClick*)> __GlobalNamespace_DebugUIBuilder_$$c__DisplayClass35_0SizeCheck;
   static_assert(sizeof(DebugUIBuilder::$$c__DisplayClass35_0) == 0x18);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::DebugUIBuilder::$$c__DisplayClass35_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::DebugUIBuilder::$$c__DisplayClass35_0::$AddButton$b__0
 // Il2CppName: <AddButton>b__0
 template<>
@@ -64,7 +66,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::DebugUIBuilder::$$c__DisplayClass35_0*), "<AddButton>b__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::DebugUIBuilder::$$c__DisplayClass35_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

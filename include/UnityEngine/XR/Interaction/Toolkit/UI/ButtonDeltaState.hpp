@@ -61,7 +61,7 @@ namespace UnityEngine::XR::Interaction::Toolkit::UI {
     // Set static field: static public UnityEngine.XR.Interaction.Toolkit.UI.ButtonDeltaState Released
     static void _set_Released(::UnityEngine::XR::Interaction::Toolkit::UI::ButtonDeltaState value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // UnityEngine.XR.Interaction.Toolkit.UI.ButtonDeltaState
   #pragma pack(pop)
   static check_size<sizeof(ButtonDeltaState), 0 + sizeof(int)> __UnityEngine_XR_Interaction_Toolkit_UI_ButtonDeltaStateSizeCheck;

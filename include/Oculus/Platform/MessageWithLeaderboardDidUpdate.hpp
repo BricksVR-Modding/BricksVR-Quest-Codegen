@@ -12,12 +12,6 @@
 #include "beatsaber-hook/shared/utils/il2cpp-utils-fields.hpp"
 #include "beatsaber-hook/shared/utils/utils.h"
 // Completed includes
-// Begin forward declares
-// Forward declaring namespace: Oculus::Platform
-namespace Oculus::Platform {
-  // Skipping declaration: Message because it is already included!
-}
-// Completed forward declares
 // Type namespace: Oculus.Platform
 namespace Oculus::Platform {
   // Forward declaring type: MessageWithLeaderboardDidUpdate

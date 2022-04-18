@@ -27,25 +27,27 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class UserId : public ::Il2CppObject {
     public:
+    // public System.Void .ctor()
+    // Offset: 0x1DD400
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static UserId* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::UserId::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<UserId*, creationType>()));
+    }
     // static public System.String Get()
     // Offset: 0x925050
     static ::StringW Get();
     // static public System.String GetShortId()
     // Offset: 0x925010
     static ::StringW GetShortId();
-    // public System.Void .ctor()
-    // Offset: 0x1DD400
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static UserId* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::UserId::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<UserId*, creationType>()));
-    }
   }; // UserId
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::UserId::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::UserId::Get
 // Il2CppName: Get
 template<>
@@ -62,7 +64,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::UserId*), "GetShortId", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::UserId::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

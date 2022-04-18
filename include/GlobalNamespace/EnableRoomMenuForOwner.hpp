@@ -98,37 +98,35 @@ namespace GlobalNamespace {
     // Set static field: static private System.String NotOwnerText
     static void _set_NotOwnerText(::StringW value);
     // Get instance field reference: public UnityEngine.UI.Toggle lockRoomToggle
-    [[deprecated]] ::UnityEngine::UI::Toggle*& dyn_lockRoomToggle();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Toggle*& dyn_lockRoomToggle();
     // Get instance field reference: public UnityEngine.UI.Toggle lowGravityToggle
-    [[deprecated]] ::UnityEngine::UI::Toggle*& dyn_lowGravityToggle();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Toggle*& dyn_lowGravityToggle();
     // Get instance field reference: public UnityEngine.UI.Toggle movingThroughBricksAllowedToggle
-    [[deprecated]] ::UnityEngine::UI::Toggle*& dyn_movingThroughBricksAllowedToggle();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Toggle*& dyn_movingThroughBricksAllowedToggle();
     // Get instance field reference: public RoomOwnershipSync ownershipSync
-    [[deprecated]] ::GlobalNamespace::RoomOwnershipSync*& dyn_ownershipSync();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::RoomOwnershipSync*& dyn_ownershipSync();
     // Get instance field reference: public TMPro.TextMeshProUGUI menuSubtitle
-    [[deprecated]] ::TMPro::TextMeshProUGUI*& dyn_menuSubtitle();
-    // private System.Void OnEnable()
-    // Offset: 0x6B36F0
-    void OnEnable();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshProUGUI*& dyn_menuSubtitle();
     // public System.Void .ctor()
     // Offset: 0x1DDE30
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static EnableRoomMenuForOwner* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::EnableRoomMenuForOwner::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<EnableRoomMenuForOwner*, creationType>()));
     }
+    // private System.Void OnEnable()
+    // Offset: 0x6B36F0
+    void OnEnable();
   }; // EnableRoomMenuForOwner
   #pragma pack(pop)
   static check_size<sizeof(EnableRoomMenuForOwner), 56 + sizeof(::TMPro::TextMeshProUGUI*)> __GlobalNamespace_EnableRoomMenuForOwnerSizeCheck;
   static_assert(sizeof(EnableRoomMenuForOwner) == 0x40);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::EnableRoomMenuForOwner::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::EnableRoomMenuForOwner::OnEnable
 // Il2CppName: OnEnable
 template<>
@@ -137,7 +135,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::EnableRoomMenuForOwner*), "OnEnable", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::EnableRoomMenuForOwner::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

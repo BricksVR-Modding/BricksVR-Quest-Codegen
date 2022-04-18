@@ -52,28 +52,30 @@ namespace UnityEngine::UIElements {
       return m_Stack;
     }
     // Get instance field reference: private readonly System.Collections.Generic.Stack`1<UnityEngine.UIElements.EventCallbackList> m_Stack
-    [[deprecated]] ::System::Collections::Generic::Stack_1<::UnityEngine::UIElements::EventCallbackList*>*& dyn_m_Stack();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Stack_1<::UnityEngine::UIElements::EventCallbackList*>*& dyn_m_Stack();
+    // public System.Void .ctor()
+    // Offset: 0x29F3D0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static EventCallbackListPool* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::UIElements::EventCallbackListPool::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<EventCallbackListPool*, creationType>()));
+    }
     // public UnityEngine.UIElements.EventCallbackList Get(UnityEngine.UIElements.EventCallbackList initializer)
     // Offset: 0x29F1E0
     ::UnityEngine::UIElements::EventCallbackList* Get(::UnityEngine::UIElements::EventCallbackList* initializer);
     // public System.Void Release(UnityEngine.UIElements.EventCallbackList element)
     // Offset: 0x29F340
     void Release(::UnityEngine::UIElements::EventCallbackList* element);
-    // public System.Void .ctor()
-    // Offset: 0x29F3D0
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static EventCallbackListPool* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::UIElements::EventCallbackListPool::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<EventCallbackListPool*, creationType>()));
-    }
   }; // UnityEngine.UIElements.EventCallbackListPool
   #pragma pack(pop)
   static check_size<sizeof(EventCallbackListPool), 16 + sizeof(::System::Collections::Generic::Stack_1<::UnityEngine::UIElements::EventCallbackList*>*)> __UnityEngine_UIElements_EventCallbackListPoolSizeCheck;
   static_assert(sizeof(EventCallbackListPool) == 0x18);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: UnityEngine::UIElements::EventCallbackListPool::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::UIElements::EventCallbackListPool::Get
 // Il2CppName: Get
 template<>
@@ -92,7 +94,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::UIElements::EventCallbackListPool*), "Release", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{element});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::UIElements::EventCallbackListPool::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

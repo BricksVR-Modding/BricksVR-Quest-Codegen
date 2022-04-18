@@ -59,18 +59,13 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public SteamManager steamManager
-    [[deprecated]] ::GlobalNamespace::SteamManager*& dyn_steamManager();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::SteamManager*& dyn_steamManager();
     // Get instance field reference: private System.Boolean _isCheckingEntitlement
-    [[deprecated]] bool& dyn__isCheckingEntitlement();
+    [[deprecated("Use field access instead!")]] bool& dyn__isCheckingEntitlement();
     // public System.Void .ctor()
     // Offset: 0x4D3750
     // Implemented from: BaseEntitlementCheck
     // Base method: System.Void BaseEntitlementCheck::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SteamEntitlementCheck* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::SteamEntitlementCheck::.ctor");

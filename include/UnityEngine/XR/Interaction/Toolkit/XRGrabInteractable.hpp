@@ -339,77 +339,77 @@ namespace UnityEngine::XR::Interaction::Toolkit {
     // Set static field: static private System.Single k_DefaultThrowAngularVelocityScale
     static void _set_k_DefaultThrowAngularVelocityScale(float value);
     // Get instance field reference: private UnityEngine.Transform m_AttachTransform
-    [[deprecated]] ::UnityEngine::Transform*& dyn_m_AttachTransform();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_m_AttachTransform();
     // Get instance field reference: private System.Single m_AttachEaseInTime
-    [[deprecated]] float& dyn_m_AttachEaseInTime();
+    [[deprecated("Use field access instead!")]] float& dyn_m_AttachEaseInTime();
     // Get instance field reference: private UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable/UnityEngine.XR.Interaction.Toolkit.MovementType m_MovementType
-    [[deprecated]] ::UnityEngine::XR::Interaction::Toolkit::XRBaseInteractable::MovementType& dyn_m_MovementType();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::Interaction::Toolkit::XRBaseInteractable::MovementType& dyn_m_MovementType();
     // Get instance field reference: private System.Boolean m_TrackPosition
-    [[deprecated]] bool& dyn_m_TrackPosition();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_TrackPosition();
     // Get instance field reference: private System.Boolean m_SmoothPosition
-    [[deprecated]] bool& dyn_m_SmoothPosition();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_SmoothPosition();
     // Get instance field reference: private System.Single m_SmoothPositionAmount
-    [[deprecated]] float& dyn_m_SmoothPositionAmount();
+    [[deprecated("Use field access instead!")]] float& dyn_m_SmoothPositionAmount();
     // Get instance field reference: private System.Single m_TightenPosition
-    [[deprecated]] float& dyn_m_TightenPosition();
+    [[deprecated("Use field access instead!")]] float& dyn_m_TightenPosition();
     // Get instance field reference: private System.Boolean m_TrackRotation
-    [[deprecated]] bool& dyn_m_TrackRotation();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_TrackRotation();
     // Get instance field reference: private System.Boolean m_SmoothRotation
-    [[deprecated]] bool& dyn_m_SmoothRotation();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_SmoothRotation();
     // Get instance field reference: private System.Single m_SmoothRotationAmount
-    [[deprecated]] float& dyn_m_SmoothRotationAmount();
+    [[deprecated("Use field access instead!")]] float& dyn_m_SmoothRotationAmount();
     // Get instance field reference: private System.Single m_TightenRotation
-    [[deprecated]] float& dyn_m_TightenRotation();
+    [[deprecated("Use field access instead!")]] float& dyn_m_TightenRotation();
     // Get instance field reference: private System.Boolean m_ThrowOnDetach
-    [[deprecated]] bool& dyn_m_ThrowOnDetach();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_ThrowOnDetach();
     // Get instance field reference: private System.Single m_ThrowSmoothingDuration
-    [[deprecated]] float& dyn_m_ThrowSmoothingDuration();
+    [[deprecated("Use field access instead!")]] float& dyn_m_ThrowSmoothingDuration();
     // Get instance field reference: private UnityEngine.AnimationCurve m_ThrowSmoothingCurve
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn_m_ThrowSmoothingCurve();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn_m_ThrowSmoothingCurve();
     // Get instance field reference: private System.Single m_ThrowVelocityScale
-    [[deprecated]] float& dyn_m_ThrowVelocityScale();
+    [[deprecated("Use field access instead!")]] float& dyn_m_ThrowVelocityScale();
     // Get instance field reference: private System.Single m_ThrowAngularVelocityScale
-    [[deprecated]] float& dyn_m_ThrowAngularVelocityScale();
+    [[deprecated("Use field access instead!")]] float& dyn_m_ThrowAngularVelocityScale();
     // Get instance field reference: private System.Boolean m_GravityOnDetach
-    [[deprecated]] bool& dyn_m_GravityOnDetach();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_GravityOnDetach();
     // Get instance field reference: private System.Boolean m_WasKinematic
-    [[deprecated]] bool& dyn_m_WasKinematic();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_WasKinematic();
     // Get instance field reference: private System.Boolean m_UsedGravity
-    [[deprecated]] bool& dyn_m_UsedGravity();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_UsedGravity();
     // Get instance field reference: public UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor m_SelectingInteractor
-    [[deprecated]] ::UnityEngine::XR::Interaction::Toolkit::XRBaseInteractor*& dyn_m_SelectingInteractor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::Interaction::Toolkit::XRBaseInteractor*& dyn_m_SelectingInteractor();
     // Get instance field reference: private UnityEngine.Vector3 m_InteractorLocalPosition
-    [[deprecated]] ::UnityEngine::Vector3& dyn_m_InteractorLocalPosition();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_m_InteractorLocalPosition();
     // Get instance field reference: private UnityEngine.Quaternion m_InteractorLocalRotation
-    [[deprecated]] ::UnityEngine::Quaternion& dyn_m_InteractorLocalRotation();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Quaternion& dyn_m_InteractorLocalRotation();
     // Get instance field reference: private UnityEngine.Vector3 m_TargetWorldPosition
-    [[deprecated]] ::UnityEngine::Vector3& dyn_m_TargetWorldPosition();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_m_TargetWorldPosition();
     // Get instance field reference: private UnityEngine.Quaternion m_TargetWorldRotation
-    [[deprecated]] ::UnityEngine::Quaternion& dyn_m_TargetWorldRotation();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Quaternion& dyn_m_TargetWorldRotation();
     // Get instance field reference: private System.Single m_CurrentAttachEaseTime
-    [[deprecated]] float& dyn_m_CurrentAttachEaseTime();
+    [[deprecated("Use field access instead!")]] float& dyn_m_CurrentAttachEaseTime();
     // Get instance field reference: private UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable/UnityEngine.XR.Interaction.Toolkit.MovementType m_CurrentMovementType
-    [[deprecated]] ::UnityEngine::XR::Interaction::Toolkit::XRBaseInteractable::MovementType& dyn_m_CurrentMovementType();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::Interaction::Toolkit::XRBaseInteractable::MovementType& dyn_m_CurrentMovementType();
     // Get instance field reference: private System.Boolean m_DetachInLateUpdate
-    [[deprecated]] bool& dyn_m_DetachInLateUpdate();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_DetachInLateUpdate();
     // Get instance field reference: private UnityEngine.Vector3 m_DetachVelocity
-    [[deprecated]] ::UnityEngine::Vector3& dyn_m_DetachVelocity();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_m_DetachVelocity();
     // Get instance field reference: private UnityEngine.Vector3 m_DetachAngularVelocity
-    [[deprecated]] ::UnityEngine::Vector3& dyn_m_DetachAngularVelocity();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_m_DetachAngularVelocity();
     // Get instance field reference: private System.Int32 m_ThrowSmoothingCurrentFrame
-    [[deprecated]] int& dyn_m_ThrowSmoothingCurrentFrame();
+    [[deprecated("Use field access instead!")]] int& dyn_m_ThrowSmoothingCurrentFrame();
     // Get instance field reference: private System.Single[] m_ThrowSmoothingFrameTimes
-    [[deprecated]] ::ArrayW<float>& dyn_m_ThrowSmoothingFrameTimes();
+    [[deprecated("Use field access instead!")]] ::ArrayW<float>& dyn_m_ThrowSmoothingFrameTimes();
     // Get instance field reference: private UnityEngine.Vector3[] m_ThrowSmoothingVelocityFrames
-    [[deprecated]] ::ArrayW<::UnityEngine::Vector3>& dyn_m_ThrowSmoothingVelocityFrames();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Vector3>& dyn_m_ThrowSmoothingVelocityFrames();
     // Get instance field reference: private UnityEngine.Vector3[] m_ThrowSmoothingAngularVelocityFrames
-    [[deprecated]] ::ArrayW<::UnityEngine::Vector3>& dyn_m_ThrowSmoothingAngularVelocityFrames();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Vector3>& dyn_m_ThrowSmoothingAngularVelocityFrames();
     // Get instance field reference: private UnityEngine.Rigidbody m_RigidBody
-    [[deprecated]] ::UnityEngine::Rigidbody*& dyn_m_RigidBody();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Rigidbody*& dyn_m_RigidBody();
     // Get instance field reference: private UnityEngine.Vector3 m_LastPosition
-    [[deprecated]] ::UnityEngine::Vector3& dyn_m_LastPosition();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_m_LastPosition();
     // Get instance field reference: private UnityEngine.Quaternion m_LastRotation
-    [[deprecated]] ::UnityEngine::Quaternion& dyn_m_LastRotation();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Quaternion& dyn_m_LastRotation();
     // public UnityEngine.Transform get_attachTransform()
     // Offset: 0x2F4B70
     ::UnityEngine::Transform* get_attachTransform();
@@ -549,11 +549,6 @@ namespace UnityEngine::XR::Interaction::Toolkit {
     // Offset: 0x3076C0
     // Implemented from: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
     // Base method: System.Void XRBaseInteractable::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XRGrabInteractable* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::XR::Interaction::Toolkit::XRGrabInteractable::.ctor");

@@ -123,23 +123,23 @@ namespace OculusSampleFramework {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Boolean <IsRightHandedTool>k__BackingField
-    [[deprecated]] bool& dyn_$IsRightHandedTool$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsRightHandedTool$k__BackingField();
     // Get instance field reference: private UnityEngine.Vector3 <Velocity>k__BackingField
-    [[deprecated]] ::UnityEngine::Vector3& dyn_$Velocity$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_$Velocity$k__BackingField();
     // Get instance field reference: private UnityEngine.Vector3 <InteractionPosition>k__BackingField
-    [[deprecated]] ::UnityEngine::Vector3& dyn_$InteractionPosition$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_$InteractionPosition$k__BackingField();
     // Get instance field reference: protected System.Collections.Generic.List`1<OculusSampleFramework.InteractableCollisionInfo> _currentIntersectingObjects
-    [[deprecated]] ::System::Collections::Generic::List_1<::OculusSampleFramework::InteractableCollisionInfo*>*& dyn__currentIntersectingObjects();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::OculusSampleFramework::InteractableCollisionInfo*>*& dyn__currentIntersectingObjects();
     // Get instance field reference: private System.Collections.Generic.List`1<OculusSampleFramework.Interactable> _addedInteractables
-    [[deprecated]] ::System::Collections::Generic::List_1<::OculusSampleFramework::Interactable*>*& dyn__addedInteractables();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::OculusSampleFramework::Interactable*>*& dyn__addedInteractables();
     // Get instance field reference: private System.Collections.Generic.List`1<OculusSampleFramework.Interactable> _removedInteractables
-    [[deprecated]] ::System::Collections::Generic::List_1<::OculusSampleFramework::Interactable*>*& dyn__removedInteractables();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::OculusSampleFramework::Interactable*>*& dyn__removedInteractables();
     // Get instance field reference: private System.Collections.Generic.List`1<OculusSampleFramework.Interactable> _remainingInteractables
-    [[deprecated]] ::System::Collections::Generic::List_1<::OculusSampleFramework::Interactable*>*& dyn__remainingInteractables();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::OculusSampleFramework::Interactable*>*& dyn__remainingInteractables();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<OculusSampleFramework.Interactable,OculusSampleFramework.InteractableCollisionInfo> _currInteractableToCollisionInfos
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::OculusSampleFramework::Interactable*, ::OculusSampleFramework::InteractableCollisionInfo*>*& dyn__currInteractableToCollisionInfos();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::OculusSampleFramework::Interactable*, ::OculusSampleFramework::InteractableCollisionInfo*>*& dyn__currInteractableToCollisionInfos();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<OculusSampleFramework.Interactable,OculusSampleFramework.InteractableCollisionInfo> _prevInteractableToCollisionInfos
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::OculusSampleFramework::Interactable*, ::OculusSampleFramework::InteractableCollisionInfo*>*& dyn__prevInteractableToCollisionInfos();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::OculusSampleFramework::Interactable*, ::OculusSampleFramework::InteractableCollisionInfo*>*& dyn__prevInteractableToCollisionInfos();
     // public UnityEngine.Transform get_ToolTransform()
     // Offset: 0x276FE0
     ::UnityEngine::Transform* get_ToolTransform();
@@ -176,6 +176,13 @@ namespace OculusSampleFramework {
     // public System.Void set_EnableState(System.Boolean value)
     // Offset: 0xFFFFFFFFFFFFFFFF
     void set_EnableState(bool value);
+    // protected System.Void .ctor()
+    // Offset: 0x28D9F0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static InteractableTool* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::OculusSampleFramework::InteractableTool::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<InteractableTool*, creationType>()));
+    }
     // public System.Collections.Generic.List`1<OculusSampleFramework.InteractableCollisionInfo> GetCurrentIntersectingObjects()
     // Offset: 0x1E1940
     ::System::Collections::Generic::List_1<::OculusSampleFramework::InteractableCollisionInfo*>* GetCurrentIntersectingObjects();
@@ -203,19 +210,6 @@ namespace OculusSampleFramework {
     // public System.Void UpdateLatestCollisionData()
     // Offset: 0x28D230
     void UpdateLatestCollisionData();
-    // protected System.Void .ctor()
-    // Offset: 0x28D9F0
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static InteractableTool* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::OculusSampleFramework::InteractableTool::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<InteractableTool*, creationType>()));
-    }
   }; // OculusSampleFramework.InteractableTool
   #pragma pack(pop)
   static check_size<sizeof(InteractableTool), 96 + sizeof(::System::Collections::Generic::Dictionary_2<::OculusSampleFramework::Interactable*, ::OculusSampleFramework::InteractableCollisionInfo*>*)> __OculusSampleFramework_InteractableToolSizeCheck;
@@ -322,6 +316,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Oculu
     return ::il2cpp_utils::FindMethod(classof(OculusSampleFramework::InteractableTool*), "set_EnableState", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: OculusSampleFramework::InteractableTool::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: OculusSampleFramework::InteractableTool::GetCurrentIntersectingObjects
 // Il2CppName: GetCurrentIntersectingObjects
 template<>
@@ -396,7 +394,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Oculu
     return ::il2cpp_utils::FindMethod(classof(OculusSampleFramework::InteractableTool*), "UpdateLatestCollisionData", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: OculusSampleFramework::InteractableTool::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

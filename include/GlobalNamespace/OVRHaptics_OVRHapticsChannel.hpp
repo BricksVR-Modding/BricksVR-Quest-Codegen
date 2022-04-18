@@ -43,7 +43,7 @@ namespace GlobalNamespace {
       return m_output;
     }
     // Get instance field reference: private OVRHaptics/OVRHapticsOutput m_output
-    [[deprecated]] ::GlobalNamespace::OVRHaptics::OVRHapticsOutput*& dyn_m_output();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRHaptics::OVRHapticsOutput*& dyn_m_output();
     // public System.Void .ctor(System.UInt32 outputIndex)
     // Offset: 0x3CD0A0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -65,11 +65,11 @@ namespace Sigtrap::VrTunnellingPro {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public Sigtrap.VrTunnellingPro.Angle x
-    [[deprecated]] ::Sigtrap::VrTunnellingPro::Angle& dyn_x();
+    [[deprecated("Use field access instead!")]] ::Sigtrap::VrTunnellingPro::Angle& dyn_x();
     // Get instance field reference: public Sigtrap.VrTunnellingPro.Angle y
-    [[deprecated]] ::Sigtrap::VrTunnellingPro::Angle& dyn_y();
+    [[deprecated("Use field access instead!")]] ::Sigtrap::VrTunnellingPro::Angle& dyn_y();
     // Get instance field reference: public Sigtrap.VrTunnellingPro.Angle z
-    [[deprecated]] ::Sigtrap::VrTunnellingPro::Angle& dyn_z();
+    [[deprecated("Use field access instead!")]] ::Sigtrap::VrTunnellingPro::Angle& dyn_z();
     // public UnityEngine.Vector3 get_eulerAngles()
     // Offset: 0x6C44C0
     ::UnityEngine::Vector3 get_eulerAngles();

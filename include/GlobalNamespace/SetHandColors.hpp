@@ -52,9 +52,19 @@ namespace GlobalNamespace {
     // Set static field: static private readonly System.Int32 ColorProp
     static void _set_ColorProp(int value);
     // Get instance field reference: private UnityEngine.Color color1
-    [[deprecated]] ::UnityEngine::Color& dyn_color1();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_color1();
     // Get instance field reference: private UnityEngine.Color color2
-    [[deprecated]] ::UnityEngine::Color& dyn_color2();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_color2();
+    // public System.Void .ctor()
+    // Offset: 0x1DDE30
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static SetHandColors* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::SetHandColors::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<SetHandColors*, creationType>()));
+    }
+    // static private System.Void .cctor()
+    // Offset: 0x6CE170
+    static void _cctor();
     // private System.Void Awake()
     // Offset: 0x6CE010
     void Awake();
@@ -67,30 +77,24 @@ namespace GlobalNamespace {
     // private System.Void SetPropertyBlocksOnRenderer()
     // Offset: 0x6CE030
     void SetPropertyBlocksOnRenderer();
-    // public System.Void .ctor()
-    // Offset: 0x1DDE30
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static SetHandColors* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::SetHandColors::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<SetHandColors*, creationType>()));
-    }
-    // static private System.Void .cctor()
-    // Offset: 0x6CE170
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.cctor()
-    static void _cctor();
   }; // SetHandColors
   #pragma pack(pop)
   static check_size<sizeof(SetHandColors), 40 + sizeof(::UnityEngine::Color)> __GlobalNamespace_SetHandColorsSizeCheck;
   static_assert(sizeof(SetHandColors) == 0x38);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::SetHandColors::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
+// Writing MetadataGetter for method: GlobalNamespace::SetHandColors::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&GlobalNamespace::SetHandColors::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::SetHandColors*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
 // Writing MetadataGetter for method: GlobalNamespace::SetHandColors::Awake
 // Il2CppName: Awake
 template<>
@@ -123,17 +127,5 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (GlobalNamespace::SetHandColors::*)()>(&GlobalNamespace::SetHandColors::SetPropertyBlocksOnRenderer)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::SetHandColors*), "SetPropertyBlocksOnRenderer", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
-  }
-};
-// Writing MetadataGetter for method: GlobalNamespace::SetHandColors::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
-// Writing MetadataGetter for method: GlobalNamespace::SetHandColors::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&GlobalNamespace::SetHandColors::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::SetHandColors*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };

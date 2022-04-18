@@ -96,19 +96,19 @@ namespace OculusSampleFramework {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: protected OculusSampleFramework.ColliderZone _proximityZoneCollider
-    [[deprecated]] ::OculusSampleFramework::ColliderZone*& dyn__proximityZoneCollider();
+    [[deprecated("Use field access instead!")]] ::OculusSampleFramework::ColliderZone*& dyn__proximityZoneCollider();
     // Get instance field reference: protected OculusSampleFramework.ColliderZone _contactZoneCollider
-    [[deprecated]] ::OculusSampleFramework::ColliderZone*& dyn__contactZoneCollider();
+    [[deprecated("Use field access instead!")]] ::OculusSampleFramework::ColliderZone*& dyn__contactZoneCollider();
     // Get instance field reference: protected OculusSampleFramework.ColliderZone _actionZoneCollider
-    [[deprecated]] ::OculusSampleFramework::ColliderZone*& dyn__actionZoneCollider();
+    [[deprecated("Use field access instead!")]] ::OculusSampleFramework::ColliderZone*& dyn__actionZoneCollider();
     // Get instance field reference: private System.Action`1<OculusSampleFramework.ColliderZoneArgs> ProximityZoneEvent
-    [[deprecated]] ::System::Action_1<::OculusSampleFramework::ColliderZoneArgs*>*& dyn_ProximityZoneEvent();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::OculusSampleFramework::ColliderZoneArgs*>*& dyn_ProximityZoneEvent();
     // Get instance field reference: private System.Action`1<OculusSampleFramework.ColliderZoneArgs> ContactZoneEvent
-    [[deprecated]] ::System::Action_1<::OculusSampleFramework::ColliderZoneArgs*>*& dyn_ContactZoneEvent();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::OculusSampleFramework::ColliderZoneArgs*>*& dyn_ContactZoneEvent();
     // Get instance field reference: private System.Action`1<OculusSampleFramework.ColliderZoneArgs> ActionZoneEvent
-    [[deprecated]] ::System::Action_1<::OculusSampleFramework::ColliderZoneArgs*>*& dyn_ActionZoneEvent();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::OculusSampleFramework::ColliderZoneArgs*>*& dyn_ActionZoneEvent();
     // Get instance field reference: public OculusSampleFramework.Interactable/OculusSampleFramework.InteractableStateArgsEvent InteractableStateChanged
-    [[deprecated]] ::OculusSampleFramework::Interactable::InteractableStateArgsEvent*& dyn_InteractableStateChanged();
+    [[deprecated("Use field access instead!")]] ::OculusSampleFramework::Interactable::InteractableStateArgsEvent*& dyn_InteractableStateChanged();
     // public OculusSampleFramework.ColliderZone get_ProximityCollider()
     // Offset: 0x1E1520
     ::OculusSampleFramework::ColliderZone* get_ProximityCollider();
@@ -139,6 +139,13 @@ namespace OculusSampleFramework {
     // public System.Void remove_ActionZoneEvent(System.Action`1<OculusSampleFramework.ColliderZoneArgs> value)
     // Offset: 0x28E290
     void remove_ActionZoneEvent(::System::Action_1<::OculusSampleFramework::ColliderZoneArgs*>* value);
+    // protected System.Void .ctor()
+    // Offset: 0x1DDE30
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static Interactable* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::OculusSampleFramework::Interactable::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<Interactable*, creationType>()));
+    }
     // protected System.Void OnProximityZoneEvent(OculusSampleFramework.ColliderZoneArgs args)
     // Offset: 0x28E050
     void OnProximityZoneEvent(::OculusSampleFramework::ColliderZoneArgs* args);
@@ -157,19 +164,6 @@ namespace OculusSampleFramework {
     // protected System.Void OnDestroy()
     // Offset: 0x28DF50
     void OnDestroy();
-    // protected System.Void .ctor()
-    // Offset: 0x1DDE30
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static Interactable* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::OculusSampleFramework::Interactable::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<Interactable*, creationType>()));
-    }
   }; // OculusSampleFramework.Interactable
   #pragma pack(pop)
   static check_size<sizeof(Interactable), 72 + sizeof(::OculusSampleFramework::Interactable::InteractableStateArgsEvent*)> __OculusSampleFramework_InteractableSizeCheck;
@@ -262,6 +256,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Oculu
     return ::il2cpp_utils::FindMethod(classof(OculusSampleFramework::Interactable*), "remove_ActionZoneEvent", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: OculusSampleFramework::Interactable::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: OculusSampleFramework::Interactable::OnProximityZoneEvent
 // Il2CppName: OnProximityZoneEvent
 template<>
@@ -317,7 +315,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Oculu
     return ::il2cpp_utils::FindMethod(classof(OculusSampleFramework::Interactable*), "OnDestroy", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: OculusSampleFramework::Interactable::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

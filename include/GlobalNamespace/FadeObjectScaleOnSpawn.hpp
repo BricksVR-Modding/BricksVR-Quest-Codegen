@@ -84,15 +84,25 @@ namespace GlobalNamespace {
     // Set static field: static private readonly UnityEngine.Vector3 ScaleToStartAt
     static void _set_ScaleToStartAt(::UnityEngine::Vector3 value);
     // Get instance field reference: private UnityEngine.Vector3 _initialScale
-    [[deprecated]] ::UnityEngine::Vector3& dyn__initialScale();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__initialScale();
     // Get instance field reference: private UnityEngine.Transform _t
-    [[deprecated]] ::UnityEngine::Transform*& dyn__t();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__t();
     // Get instance field reference: private System.Single _timeStartedFading
-    [[deprecated]] float& dyn__timeStartedFading();
+    [[deprecated("Use field access instead!")]] float& dyn__timeStartedFading();
     // Get instance field reference: public UnityEngine.GameObject objectToScale
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_objectToScale();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_objectToScale();
     // Get instance field reference: private System.Boolean _fadeBackwards
-    [[deprecated]] bool& dyn__fadeBackwards();
+    [[deprecated("Use field access instead!")]] bool& dyn__fadeBackwards();
+    // public System.Void .ctor()
+    // Offset: 0x1DDE30
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static FadeObjectScaleOnSpawn* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::FadeObjectScaleOnSpawn::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<FadeObjectScaleOnSpawn*, creationType>()));
+    }
+    // static private System.Void .cctor()
+    // Offset: 0x6B5130
+    static void _cctor();
     // private System.Void OnEnable()
     // Offset: 0x6B4D40
     void OnEnable();
@@ -102,30 +112,24 @@ namespace GlobalNamespace {
     // private System.Void Update()
     // Offset: 0x6B4F40
     void Update();
-    // public System.Void .ctor()
-    // Offset: 0x1DDE30
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static FadeObjectScaleOnSpawn* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::FadeObjectScaleOnSpawn::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<FadeObjectScaleOnSpawn*, creationType>()));
-    }
-    // static private System.Void .cctor()
-    // Offset: 0x6B5130
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.cctor()
-    static void _cctor();
   }; // FadeObjectScaleOnSpawn
   #pragma pack(pop)
   static check_size<sizeof(FadeObjectScaleOnSpawn), 64 + sizeof(bool)> __GlobalNamespace_FadeObjectScaleOnSpawnSizeCheck;
   static_assert(sizeof(FadeObjectScaleOnSpawn) == 0x41);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::FadeObjectScaleOnSpawn::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
+// Writing MetadataGetter for method: GlobalNamespace::FadeObjectScaleOnSpawn::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&GlobalNamespace::FadeObjectScaleOnSpawn::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::FadeObjectScaleOnSpawn*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
 // Writing MetadataGetter for method: GlobalNamespace::FadeObjectScaleOnSpawn::OnEnable
 // Il2CppName: OnEnable
 template<>
@@ -148,17 +152,5 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (GlobalNamespace::FadeObjectScaleOnSpawn::*)()>(&GlobalNamespace::FadeObjectScaleOnSpawn::Update)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::FadeObjectScaleOnSpawn*), "Update", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
-  }
-};
-// Writing MetadataGetter for method: GlobalNamespace::FadeObjectScaleOnSpawn::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
-// Writing MetadataGetter for method: GlobalNamespace::FadeObjectScaleOnSpawn::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&GlobalNamespace::FadeObjectScaleOnSpawn::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::FadeObjectScaleOnSpawn*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };

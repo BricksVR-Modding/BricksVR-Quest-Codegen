@@ -41,25 +41,27 @@ namespace UnityEngine::UIElements {
     operator ::UnityEngine::UIElements::IEventDispatchingStrategy() noexcept {
       return *reinterpret_cast<::UnityEngine::UIElements::IEventDispatchingStrategy*>(this);
     }
+    // public System.Void .ctor()
+    // Offset: 0x1DD400
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static MouseEventDispatchingStrategy* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::UIElements::MouseEventDispatchingStrategy::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<MouseEventDispatchingStrategy*, creationType>()));
+    }
     // public System.Boolean CanDispatchEvent(UnityEngine.UIElements.EventBase evt)
     // Offset: 0x2A6D30
     bool CanDispatchEvent(::UnityEngine::UIElements::EventBase* evt);
     // public System.Void DispatchEvent(UnityEngine.UIElements.EventBase evt, UnityEngine.UIElements.IPanel panel)
     // Offset: 0x2A6D70
     void DispatchEvent(::UnityEngine::UIElements::EventBase* evt, ::UnityEngine::UIElements::IPanel* panel);
-    // public System.Void .ctor()
-    // Offset: 0x1DD400
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static MouseEventDispatchingStrategy* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::UIElements::MouseEventDispatchingStrategy::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<MouseEventDispatchingStrategy*, creationType>()));
-    }
   }; // UnityEngine.UIElements.MouseEventDispatchingStrategy
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: UnityEngine::UIElements::MouseEventDispatchingStrategy::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::UIElements::MouseEventDispatchingStrategy::CanDispatchEvent
 // Il2CppName: CanDispatchEvent
 template<>
@@ -79,7 +81,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::UIElements::MouseEventDispatchingStrategy*), "DispatchEvent", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{evt, panel});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::UIElements::MouseEventDispatchingStrategy::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

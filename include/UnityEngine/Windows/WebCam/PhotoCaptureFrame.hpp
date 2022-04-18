@@ -71,13 +71,13 @@ namespace UnityEngine::Windows::WebCam {
       return *reinterpret_cast<::System::IDisposable*>(this);
     }
     // Get instance field reference: private System.IntPtr m_NativePtr
-    [[deprecated]] ::System::IntPtr& dyn_m_NativePtr();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_m_NativePtr();
     // Get instance field reference: private System.Int32 <dataLength>k__BackingField
-    [[deprecated]] int& dyn_$dataLength$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$dataLength$k__BackingField();
     // Get instance field reference: private System.Boolean <hasLocationData>k__BackingField
-    [[deprecated]] bool& dyn_$hasLocationData$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$hasLocationData$k__BackingField();
     // Get instance field reference: private UnityEngine.Windows.WebCam.CapturePixelFormat <pixelFormat>k__BackingField
-    [[deprecated]] ::UnityEngine::Windows::WebCam::CapturePixelFormat& dyn_$pixelFormat$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Windows::WebCam::CapturePixelFormat& dyn_$pixelFormat$k__BackingField();
     // public System.Int32 get_dataLength()
     // Offset: 0x1E1910
     int get_dataLength();

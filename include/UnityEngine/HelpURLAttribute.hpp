@@ -44,7 +44,7 @@ namespace UnityEngine {
       return m_Url;
     }
     // Get instance field reference: readonly System.String m_Url
-    [[deprecated]] ::StringW& dyn_m_Url();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_Url();
     // public System.Void .ctor(System.String url)
     // Offset: 0x209300
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

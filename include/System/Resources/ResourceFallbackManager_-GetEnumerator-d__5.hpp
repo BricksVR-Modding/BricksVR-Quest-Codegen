@@ -72,15 +72,15 @@ namespace System::Resources {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<::System::Globalization::CultureInfo*>*>(this);
     }
     // Get instance field reference: private System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: private System.Globalization.CultureInfo <>2__current
-    [[deprecated]] ::System::Globalization::CultureInfo*& dyn_$$2__current();
+    [[deprecated("Use field access instead!")]] ::System::Globalization::CultureInfo*& dyn_$$2__current();
     // Get instance field reference: public System.Resources.ResourceFallbackManager <>4__this
-    [[deprecated]] ::System::Resources::ResourceFallbackManager*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::System::Resources::ResourceFallbackManager*& dyn_$$4__this();
     // Get instance field reference: private System.Globalization.CultureInfo <currentCulture>5__1
-    [[deprecated]] ::System::Globalization::CultureInfo*& dyn_$currentCulture$5__1();
+    [[deprecated("Use field access instead!")]] ::System::Globalization::CultureInfo*& dyn_$currentCulture$5__1();
     // Get instance field reference: private System.Boolean <reachedNeutralResourcesCulture>5__2
-    [[deprecated]] bool& dyn_$reachedNeutralResourcesCulture$5__2();
+    [[deprecated("Use field access instead!")]] bool& dyn_$reachedNeutralResourcesCulture$5__2();
     // private System.Globalization.CultureInfo System.Collections.Generic.IEnumerator<System.Globalization.CultureInfo>.get_Current()
     // Offset: 0x1E1520
     ::System::Globalization::CultureInfo* System_Collections_Generic_IEnumerator$System_Globalization_CultureInfo$_get_Current();

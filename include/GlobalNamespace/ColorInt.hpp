@@ -51,11 +51,11 @@ namespace GlobalNamespace {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private readonly System.Int32 _colorInt
-    [[deprecated]] int& dyn__colorInt();
+    [[deprecated("Use field access instead!")]] int& dyn__colorInt();
     // Get instance field reference: private UnityEngine.Color _cachedColor
-    [[deprecated]] ::UnityEngine::Color& dyn__cachedColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__cachedColor();
     // Get instance field reference: private System.Boolean _cachedColorSet
-    [[deprecated]] bool& dyn__cachedColorSet();
+    [[deprecated("Use field access instead!")]] bool& dyn__cachedColorSet();
     // public System.Void .ctor(System.Int32 colorInt)
     // Offset: 0x206110
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

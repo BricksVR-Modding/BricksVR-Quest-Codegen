@@ -71,15 +71,22 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public UnityEngine.GameObject cameraFrameGameObj
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_cameraFrameGameObj();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_cameraFrameGameObj();
     // Get instance field reference: public OVRCameraComposition composition
-    [[deprecated]] ::GlobalNamespace::OVRCameraComposition*& dyn_composition();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRCameraComposition*& dyn_composition();
     // Get instance field reference: public UnityEngine.RenderTexture boundaryMeshMaskTexture
-    [[deprecated]] ::UnityEngine::RenderTexture*& dyn_boundaryMeshMaskTexture();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RenderTexture*& dyn_boundaryMeshMaskTexture();
     // Get instance field reference: private UnityEngine.Material cameraFrameMaterial
-    [[deprecated]] ::UnityEngine::Material*& dyn_cameraFrameMaterial();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn_cameraFrameMaterial();
     // Get instance field reference: private UnityEngine.Material whiteMaterial
-    [[deprecated]] ::UnityEngine::Material*& dyn_whiteMaterial();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn_whiteMaterial();
+    // public System.Void .ctor()
+    // Offset: 0x1DDE30
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static OVRCameraComposition::OVRCameraFrameCompositionManager* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRCameraComposition::OVRCameraFrameCompositionManager::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<OVRCameraComposition::OVRCameraFrameCompositionManager*, creationType>()));
+    }
     // private System.Void Start()
     // Offset: 0x22FAF0
     void Start();
@@ -89,25 +96,16 @@ namespace GlobalNamespace {
     // private System.Void OnPostRender()
     // Offset: 0x22F660
     void OnPostRender();
-    // public System.Void .ctor()
-    // Offset: 0x1DDE30
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static OVRCameraComposition::OVRCameraFrameCompositionManager* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRCameraComposition::OVRCameraFrameCompositionManager::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<OVRCameraComposition::OVRCameraFrameCompositionManager*, creationType>()));
-    }
   }; // OVRCameraComposition/OVRCameraFrameCompositionManager
   #pragma pack(pop)
   static check_size<sizeof(OVRCameraComposition::OVRCameraFrameCompositionManager), 56 + sizeof(::UnityEngine::Material*)> __GlobalNamespace_OVRCameraComposition_OVRCameraFrameCompositionManagerSizeCheck;
   static_assert(sizeof(OVRCameraComposition::OVRCameraFrameCompositionManager) == 0x40);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::OVRCameraComposition::OVRCameraFrameCompositionManager::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::OVRCameraComposition::OVRCameraFrameCompositionManager::Start
 // Il2CppName: Start
 template<>
@@ -132,7 +130,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRCameraComposition::OVRCameraFrameCompositionManager*), "OnPostRender", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::OVRCameraComposition::OVRCameraFrameCompositionManager::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

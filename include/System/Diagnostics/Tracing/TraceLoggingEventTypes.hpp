@@ -122,27 +122,27 @@ namespace System::Diagnostics::Tracing {
     ::System::Diagnostics::Tracing::ConcurrentSet_2<::System::Collections::Generic::KeyValuePair_2<::StringW, ::System::Diagnostics::Tracing::EventTags>, ::System::Diagnostics::Tracing::NameInfo*> nameInfos;
     public:
     // Get instance field reference: readonly System.Diagnostics.Tracing.TraceLoggingTypeInfo[] typeInfos
-    [[deprecated]] ::ArrayW<::System::Diagnostics::Tracing::TraceLoggingTypeInfo*>& dyn_typeInfos();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Diagnostics::Tracing::TraceLoggingTypeInfo*>& dyn_typeInfos();
     // Get instance field reference: readonly System.String name
-    [[deprecated]] ::StringW& dyn_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_name();
     // Get instance field reference: readonly System.Diagnostics.Tracing.EventTags tags
-    [[deprecated]] ::System::Diagnostics::Tracing::EventTags& dyn_tags();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::EventTags& dyn_tags();
     // Get instance field reference: readonly System.Byte level
-    [[deprecated]] uint8_t& dyn_level();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn_level();
     // Get instance field reference: readonly System.Byte opcode
-    [[deprecated]] uint8_t& dyn_opcode();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn_opcode();
     // Get instance field reference: readonly System.Diagnostics.Tracing.EventKeywords keywords
-    [[deprecated]] ::System::Diagnostics::Tracing::EventKeywords& dyn_keywords();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::EventKeywords& dyn_keywords();
     // Get instance field reference: readonly System.Byte[] typeMetadata
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_typeMetadata();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_typeMetadata();
     // Get instance field reference: readonly System.Int32 scratchSize
-    [[deprecated]] int& dyn_scratchSize();
+    [[deprecated("Use field access instead!")]] int& dyn_scratchSize();
     // Get instance field reference: readonly System.Int32 dataCount
-    [[deprecated]] int& dyn_dataCount();
+    [[deprecated("Use field access instead!")]] int& dyn_dataCount();
     // Get instance field reference: readonly System.Int32 pinCount
-    [[deprecated]] int& dyn_pinCount();
+    [[deprecated("Use field access instead!")]] int& dyn_pinCount();
     // Get instance field reference: private System.Diagnostics.Tracing.ConcurrentSet`2<System.Collections.Generic.KeyValuePair`2<System.String,System.Diagnostics.Tracing.EventTags>,System.Diagnostics.Tracing.NameInfo> nameInfos
-    [[deprecated]] ::System::Diagnostics::Tracing::ConcurrentSet_2<::System::Collections::Generic::KeyValuePair_2<::StringW, ::System::Diagnostics::Tracing::EventTags>, ::System::Diagnostics::Tracing::NameInfo*>& dyn_nameInfos();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::ConcurrentSet_2<::System::Collections::Generic::KeyValuePair_2<::StringW, ::System::Diagnostics::Tracing::EventTags>, ::System::Diagnostics::Tracing::NameInfo*>& dyn_nameInfos();
     // System.String get_Name()
     // Offset: 0x1E1520
     ::StringW get_Name();

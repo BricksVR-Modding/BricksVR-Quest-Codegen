@@ -67,38 +67,36 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public System.Single explosionRadius
-    [[deprecated]] float& dyn_explosionRadius();
+    [[deprecated("Use field access instead!")]] float& dyn_explosionRadius();
     // Get instance field reference: public System.Single explositonPower
-    [[deprecated]] float& dyn_explositonPower();
+    [[deprecated("Use field access instead!")]] float& dyn_explositonPower();
     // Get instance field reference: private UnityEngine.Collider[] _results
-    [[deprecated]] ::ArrayW<::UnityEngine::Collider*>& dyn__results();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Collider*>& dyn__results();
     // Get instance field reference: private System.Int32 _lastExplosionFrame
-    [[deprecated]] int& dyn__lastExplosionFrame();
+    [[deprecated("Use field access instead!")]] int& dyn__lastExplosionFrame();
+    // public System.Void .ctor()
+    // Offset: 0x1DDE30
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static Hammer* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::Hammer::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<Hammer*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0x6B5A60
     void Awake();
     // private System.Void OnCollisionEnter(UnityEngine.Collision mainCollision)
     // Offset: 0x6B5AB0
     void OnCollisionEnter(::UnityEngine::Collision* mainCollision);
-    // public System.Void .ctor()
-    // Offset: 0x1DDE30
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static Hammer* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::Hammer::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<Hammer*, creationType>()));
-    }
   }; // Hammer
   #pragma pack(pop)
   static check_size<sizeof(Hammer), 40 + sizeof(int)> __GlobalNamespace_HammerSizeCheck;
   static_assert(sizeof(Hammer) == 0x2C);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::Hammer::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::Hammer::Awake
 // Il2CppName: Awake
 template<>
@@ -116,7 +114,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::Hammer*), "OnCollisionEnter", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{mainCollision});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::Hammer::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

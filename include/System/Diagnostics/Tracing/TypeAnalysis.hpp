@@ -95,17 +95,17 @@ namespace System::Diagnostics::Tracing {
     static_assert(sizeof(::System::Diagnostics::Tracing::EventTags) == 0x4);
     public:
     // Get instance field reference: readonly System.Diagnostics.Tracing.PropertyAnalysis[] properties
-    [[deprecated]] ::ArrayW<::System::Diagnostics::Tracing::PropertyAnalysis*>& dyn_properties();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Diagnostics::Tracing::PropertyAnalysis*>& dyn_properties();
     // Get instance field reference: readonly System.String name
-    [[deprecated]] ::StringW& dyn_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_name();
     // Get instance field reference: readonly System.Diagnostics.Tracing.EventKeywords keywords
-    [[deprecated]] ::System::Diagnostics::Tracing::EventKeywords& dyn_keywords();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::EventKeywords& dyn_keywords();
     // Get instance field reference: readonly System.Diagnostics.Tracing.EventLevel level
-    [[deprecated]] ::System::Diagnostics::Tracing::EventLevel& dyn_level();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::EventLevel& dyn_level();
     // Get instance field reference: readonly System.Diagnostics.Tracing.EventOpcode opcode
-    [[deprecated]] ::System::Diagnostics::Tracing::EventOpcode& dyn_opcode();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::EventOpcode& dyn_opcode();
     // Get instance field reference: readonly System.Diagnostics.Tracing.EventTags tags
-    [[deprecated]] ::System::Diagnostics::Tracing::EventTags& dyn_tags();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::EventTags& dyn_tags();
     // public System.Void .ctor(System.Type dataType, System.Diagnostics.Tracing.EventDataAttribute eventAttrib, System.Collections.Generic.List`1<System.Type> recursionCheck)
     // Offset: 0x2F3340
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

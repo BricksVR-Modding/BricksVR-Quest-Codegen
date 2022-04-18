@@ -95,7 +95,7 @@ namespace GlobalNamespace {
       // Set static field: static public TeleportInputHandlerTouch/InputModes ThumbstickTeleportForwardBackOnly
       static void _set_ThumbstickTeleportForwardBackOnly(::GlobalNamespace::TeleportInputHandlerTouch::InputModes value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // TeleportInputHandlerTouch/InputModes
     #pragma pack(pop)
     static check_size<sizeof(TeleportInputHandlerTouch::InputModes), 0 + sizeof(int)> __GlobalNamespace_TeleportInputHandlerTouch_InputModesSizeCheck;
@@ -173,7 +173,7 @@ namespace GlobalNamespace {
       // Set static field: static public TeleportInputHandlerTouch/AimCapTouchButtons Y
       static void _set_Y(::GlobalNamespace::TeleportInputHandlerTouch::AimCapTouchButtons value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // TeleportInputHandlerTouch/AimCapTouchButtons
     #pragma pack(pop)
     static check_size<sizeof(TeleportInputHandlerTouch::AimCapTouchButtons), 0 + sizeof(int)> __GlobalNamespace_TeleportInputHandlerTouch_AimCapTouchButtonsSizeCheck;
@@ -241,23 +241,23 @@ namespace GlobalNamespace {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: public UnityEngine.Transform LeftHand
-    [[deprecated]] ::UnityEngine::Transform*& dyn_LeftHand();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_LeftHand();
     // Get instance field reference: public UnityEngine.Transform RightHand
-    [[deprecated]] ::UnityEngine::Transform*& dyn_RightHand();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_RightHand();
     // Get instance field reference: public TeleportInputHandlerTouch/InputModes InputMode
-    [[deprecated]] ::GlobalNamespace::TeleportInputHandlerTouch::InputModes& dyn_InputMode();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::TeleportInputHandlerTouch::InputModes& dyn_InputMode();
     // Get instance field reference: private readonly OVRInput/RawButton[] _rawButtons
-    [[deprecated]] ::ArrayW<::GlobalNamespace::OVRInput::RawButton>& dyn__rawButtons();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::GlobalNamespace::OVRInput::RawButton>& dyn__rawButtons();
     // Get instance field reference: private readonly OVRInput/RawTouch[] _rawTouch
-    [[deprecated]] ::ArrayW<::GlobalNamespace::OVRInput::RawTouch>& dyn__rawTouch();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::GlobalNamespace::OVRInput::RawTouch>& dyn__rawTouch();
     // Get instance field reference: public OVRInput/Controller AimingController
-    [[deprecated]] ::GlobalNamespace::OVRInput::Controller& dyn_AimingController();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRInput::Controller& dyn_AimingController();
     // Get instance field reference: private OVRInput/Controller InitiatingController
-    [[deprecated]] ::GlobalNamespace::OVRInput::Controller& dyn_InitiatingController();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRInput::Controller& dyn_InitiatingController();
     // Get instance field reference: public TeleportInputHandlerTouch/AimCapTouchButtons CapacitiveAimAndTeleportButton
-    [[deprecated]] ::GlobalNamespace::TeleportInputHandlerTouch::AimCapTouchButtons& dyn_CapacitiveAimAndTeleportButton();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::TeleportInputHandlerTouch::AimCapTouchButtons& dyn_CapacitiveAimAndTeleportButton();
     // Get instance field reference: public System.Single ThumbstickTeleportThreshold
-    [[deprecated]] float& dyn_ThumbstickTeleportThreshold();
+    [[deprecated("Use field access instead!")]] float& dyn_ThumbstickTeleportThreshold();
     // private System.Void Start()
     // Offset: 0x1DDF00
     void Start();
@@ -267,11 +267,6 @@ namespace GlobalNamespace {
     // Base method: System.Void TeleportInputHandlerHMD::.ctor()
     // Base method: System.Void TeleportInputHandler::.ctor()
     // Base method: System.Void TeleportSupport::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TeleportInputHandlerTouch* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::TeleportInputHandlerTouch::.ctor");

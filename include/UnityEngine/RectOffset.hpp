@@ -47,9 +47,9 @@ namespace UnityEngine {
     static_assert(sizeof(::Il2CppObject*) == 0x8);
     public:
     // Get instance field reference: System.IntPtr m_Ptr
-    [[deprecated]] ::System::IntPtr& dyn_m_Ptr();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_m_Ptr();
     // Get instance field reference: private readonly System.Object m_SourceStyle
-    [[deprecated]] ::Il2CppObject*& dyn_m_SourceStyle();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_m_SourceStyle();
     // public System.Int32 get_left()
     // Offset: 0x97A0C0
     int get_left();
@@ -80,6 +80,13 @@ namespace UnityEngine {
     // public System.Int32 get_vertical()
     // Offset: 0x97A180
     int get_vertical();
+    // public System.Void .ctor()
+    // Offset: 0x979F00
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static RectOffset* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::RectOffset::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<RectOffset*, creationType>()));
+    }
     // System.Void .ctor(System.Object sourceStyle, System.IntPtr source)
     // Offset: 0x626200
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -103,15 +110,6 @@ namespace UnityEngine {
     // static private System.Void InternalDestroy(System.IntPtr ptr)
     // Offset: 0x979C00
     static void InternalDestroy(::System::IntPtr ptr);
-    // public System.Void .ctor()
-    // Offset: 0x979F00
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static RectOffset* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::RectOffset::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<RectOffset*, creationType>()));
-    }
     // protected override System.Void Finalize()
     // Offset: 0x979B00
     // Implemented from: System.Object
@@ -220,6 +218,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (UnityE
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
 // Try using FindMethod instead!
+// Writing MetadataGetter for method: UnityEngine::RectOffset::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::RectOffset::Destroy
 // Il2CppName: Destroy
 template<>
@@ -245,10 +247,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(::
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::RectOffset*), "InternalDestroy", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{ptr});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::RectOffset::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::RectOffset::Finalize
 // Il2CppName: Finalize
 template<>

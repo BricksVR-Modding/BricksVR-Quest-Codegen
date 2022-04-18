@@ -123,19 +123,19 @@ namespace UnityEngine::XR::Interaction::Toolkit {
     // Set static field: static private System.Collections.Generic.List`1<UnityEngine.XR.XRInputSubsystem> s_InputSubsystems
     static void _set_s_InputSubsystems(::System::Collections::Generic::List_1<::UnityEngine::XR::XRInputSubsystem*>* value);
     // Get instance field reference: private UnityEngine.GameObject m_RigBaseGameObject
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_m_RigBaseGameObject();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_m_RigBaseGameObject();
     // Get instance field reference: private UnityEngine.GameObject m_CameraFloorOffsetObject
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_m_CameraFloorOffsetObject();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_m_CameraFloorOffsetObject();
     // Get instance field reference: private UnityEngine.GameObject m_CameraGameObject
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_m_CameraGameObject();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_m_CameraGameObject();
     // Get instance field reference: private UnityEngine.XR.TrackingSpaceType m_TrackingSpace
-    [[deprecated]] ::UnityEngine::XR::TrackingSpaceType& dyn_m_TrackingSpace();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::TrackingSpaceType& dyn_m_TrackingSpace();
     // Get instance field reference: private System.Single m_CameraYOffset
-    [[deprecated]] float& dyn_m_CameraYOffset();
+    [[deprecated("Use field access instead!")]] float& dyn_m_CameraYOffset();
     // Get instance field reference: private System.Boolean m_CameraInitialized
-    [[deprecated]] bool& dyn_m_CameraInitialized();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_CameraInitialized();
     // Get instance field reference: private System.Boolean m_CameraInitializing
-    [[deprecated]] bool& dyn_m_CameraInitializing();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_CameraInitializing();
     // public UnityEngine.GameObject get_rig()
     // Offset: 0x1E1520
     ::UnityEngine::GameObject* get_rig();
@@ -175,6 +175,16 @@ namespace UnityEngine::XR::Interaction::Toolkit {
     // public System.Single get_cameraInRigSpaceHeight()
     // Offset: 0x604800
     float get_cameraInRigSpaceHeight();
+    // public System.Void .ctor()
+    // Offset: 0x6047F0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static XRRig* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::XR::Interaction::Toolkit::XRRig::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<XRRig*, creationType>()));
+    }
+    // static private System.Void .cctor()
+    // Offset: 0x604790
+    static void _cctor();
     // private System.Void Awake()
     // Offset: 0x603250
     void Awake();
@@ -220,24 +230,6 @@ namespace UnityEngine::XR::Interaction::Toolkit {
     // private System.Void OnDrawGizmos()
     // Offset: 0x603AE0
     void OnDrawGizmos();
-    // public System.Void .ctor()
-    // Offset: 0x6047F0
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static XRRig* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::XR::Interaction::Toolkit::XRRig::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<XRRig*, creationType>()));
-    }
-    // static private System.Void .cctor()
-    // Offset: 0x604790
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.cctor()
-    static void _cctor();
   }; // UnityEngine.XR.Interaction.Toolkit.XRRig
   #pragma pack(pop)
   static check_size<sizeof(XRRig), 57 + sizeof(bool)> __UnityEngine_XR_Interaction_Toolkit_XRRigSizeCheck;
@@ -351,6 +343,18 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<float (UnityEngine::XR::Interaction::Toolkit::XRRig::*)()>(&UnityEngine::XR::Interaction::Toolkit::XRRig::get_cameraInRigSpaceHeight)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::XR::Interaction::Toolkit::XRRig*), "get_cameraInRigSpaceHeight", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
+// Writing MetadataGetter for method: UnityEngine::XR::Interaction::Toolkit::XRRig::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
+// Writing MetadataGetter for method: UnityEngine::XR::Interaction::Toolkit::XRRig::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&UnityEngine::XR::Interaction::Toolkit::XRRig::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(UnityEngine::XR::Interaction::Toolkit::XRRig*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
 // Writing MetadataGetter for method: UnityEngine::XR::Interaction::Toolkit::XRRig::Awake
@@ -481,17 +485,5 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (UnityEngine::XR::Interaction::Toolkit::XRRig::*)()>(&UnityEngine::XR::Interaction::Toolkit::XRRig::OnDrawGizmos)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::XR::Interaction::Toolkit::XRRig*), "OnDrawGizmos", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
-  }
-};
-// Writing MetadataGetter for method: UnityEngine::XR::Interaction::Toolkit::XRRig::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
-// Writing MetadataGetter for method: UnityEngine::XR::Interaction::Toolkit::XRRig::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&UnityEngine::XR::Interaction::Toolkit::XRRig::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(UnityEngine::XR::Interaction::Toolkit::XRRig*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };

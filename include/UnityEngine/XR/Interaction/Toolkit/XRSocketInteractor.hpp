@@ -139,25 +139,25 @@ namespace UnityEngine::XR::Interaction::Toolkit {
     static_assert(sizeof(::System::Comparison_1<::UnityEngine::XR::Interaction::Toolkit::XRBaseInteractable*>*) == 0x8);
     public:
     // Get instance field reference: private System.Boolean m_ShowInteractableHoverMeshes
-    [[deprecated]] bool& dyn_m_ShowInteractableHoverMeshes();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_ShowInteractableHoverMeshes();
     // Get instance field reference: private UnityEngine.Material m_InteractableHoverMeshMaterial
-    [[deprecated]] ::UnityEngine::Material*& dyn_m_InteractableHoverMeshMaterial();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn_m_InteractableHoverMeshMaterial();
     // Get instance field reference: private System.Boolean m_SocketActive
-    [[deprecated]] bool& dyn_m_SocketActive();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_SocketActive();
     // Get instance field reference: private System.Single m_InteractableHoverScale
-    [[deprecated]] float& dyn_m_InteractableHoverScale();
+    [[deprecated("Use field access instead!")]] float& dyn_m_InteractableHoverScale();
     // Get instance field reference: private System.Single m_RecycleDelayTime
-    [[deprecated]] float& dyn_m_RecycleDelayTime();
+    [[deprecated("Use field access instead!")]] float& dyn_m_RecycleDelayTime();
     // Get instance field reference: private System.Single m_LastRemoveTime
-    [[deprecated]] float& dyn_m_LastRemoveTime();
+    [[deprecated("Use field access instead!")]] float& dyn_m_LastRemoveTime();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable> m_ValidTargets
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::XR::Interaction::Toolkit::XRBaseInteractable*>*& dyn_m_ValidTargets();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::XR::Interaction::Toolkit::XRBaseInteractable*>*& dyn_m_ValidTargets();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable,System.Single> m_InteractableDistanceSqrMap
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::UnityEngine::XR::Interaction::Toolkit::XRBaseInteractable*, float>*& dyn_m_InteractableDistanceSqrMap();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::UnityEngine::XR::Interaction::Toolkit::XRBaseInteractable*, float>*& dyn_m_InteractableDistanceSqrMap();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable,UnityEngine.MeshFilter[]> m_MeshFilterCache
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::UnityEngine::XR::Interaction::Toolkit::XRBaseInteractable*, ::ArrayW<::UnityEngine::MeshFilter*>>*& dyn_m_MeshFilterCache();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::UnityEngine::XR::Interaction::Toolkit::XRBaseInteractable*, ::ArrayW<::UnityEngine::MeshFilter*>>*& dyn_m_MeshFilterCache();
     // Get instance field reference: private System.Comparison`1<UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable> m_InteractableSortComparison
-    [[deprecated]] ::System::Comparison_1<::UnityEngine::XR::Interaction::Toolkit::XRBaseInteractable*>*& dyn_m_InteractableSortComparison();
+    [[deprecated("Use field access instead!")]] ::System::Comparison_1<::UnityEngine::XR::Interaction::Toolkit::XRBaseInteractable*>*& dyn_m_InteractableSortComparison();
     // public System.Boolean get_showInteractableHoverMeshes()
     // Offset: 0x300030
     bool get_showInteractableHoverMeshes();
@@ -227,11 +227,6 @@ namespace UnityEngine::XR::Interaction::Toolkit {
     // Offset: 0x605EE0
     // Implemented from: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor
     // Base method: System.Void XRBaseInteractor::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XRSocketInteractor* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::XR::Interaction::Toolkit::XRSocketInteractor::.ctor");

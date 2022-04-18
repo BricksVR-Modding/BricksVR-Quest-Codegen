@@ -58,11 +58,11 @@ namespace System::Reflection {
     static_assert(sizeof(::System::Reflection::ResourceLocation) == 0x4);
     public:
     // Get instance field reference: private System.Reflection.Assembly _containingAssembly
-    [[deprecated]] ::System::Reflection::Assembly*& dyn__containingAssembly();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::Assembly*& dyn__containingAssembly();
     // Get instance field reference: private System.String _containingFileName
-    [[deprecated]] ::StringW& dyn__containingFileName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__containingFileName();
     // Get instance field reference: private System.Reflection.ResourceLocation _resourceLocation
-    [[deprecated]] ::System::Reflection::ResourceLocation& dyn__resourceLocation();
+    [[deprecated("Use field access instead!")]] ::System::Reflection::ResourceLocation& dyn__resourceLocation();
     // public System.Reflection.Assembly get_ReferencedAssembly()
     // Offset: 0x1E1920
     ::System::Reflection::Assembly* get_ReferencedAssembly();

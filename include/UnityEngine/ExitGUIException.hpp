@@ -30,9 +30,6 @@ namespace UnityEngine {
     public:
     // public System.Void .ctor()
     // Offset: 0x61CE10
-    // Implemented from: System.Exception
-    // Base method: System.Void Exception::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ExitGUIException* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::ExitGUIException::.ctor");

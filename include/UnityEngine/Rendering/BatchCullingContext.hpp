@@ -60,13 +60,13 @@ namespace UnityEngine::Rendering {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public readonly Unity.Collections.NativeArray`1<UnityEngine.Plane> cullingPlanes
-    [[deprecated]] ::Unity::Collections::NativeArray_1<::UnityEngine::Plane>& dyn_cullingPlanes();
+    [[deprecated("Use field access instead!")]] ::Unity::Collections::NativeArray_1<::UnityEngine::Plane>& dyn_cullingPlanes();
     // Get instance field reference: public Unity.Collections.NativeArray`1<UnityEngine.Rendering.BatchVisibility> batchVisibility
-    [[deprecated]] ::Unity::Collections::NativeArray_1<::UnityEngine::Rendering::BatchVisibility>& dyn_batchVisibility();
+    [[deprecated("Use field access instead!")]] ::Unity::Collections::NativeArray_1<::UnityEngine::Rendering::BatchVisibility>& dyn_batchVisibility();
     // Get instance field reference: public Unity.Collections.NativeArray`1<System.Int32> visibleIndices
-    [[deprecated]] ::Unity::Collections::NativeArray_1<int>& dyn_visibleIndices();
+    [[deprecated("Use field access instead!")]] ::Unity::Collections::NativeArray_1<int>& dyn_visibleIndices();
     // Get instance field reference: public readonly UnityEngine.Rendering.LODParameters lodParameters
-    [[deprecated]] ::UnityEngine::Rendering::LODParameters& dyn_lodParameters();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Rendering::LODParameters& dyn_lodParameters();
     // public System.Void .ctor(Unity.Collections.NativeArray`1<UnityEngine.Plane> inCullingPlanes, Unity.Collections.NativeArray`1<UnityEngine.Rendering.BatchVisibility> inOutBatchVisibility, Unity.Collections.NativeArray`1<System.Int32> outVisibleIndices, UnityEngine.Rendering.LODParameters inLodParameters)
     // Offset: 0x9672D0
     // ABORTED: conflicts with another method.  BatchCullingContext(::Unity::Collections::NativeArray_1<::UnityEngine::Plane> inCullingPlanes, ::Unity::Collections::NativeArray_1<::UnityEngine::Rendering::BatchVisibility> inOutBatchVisibility, ::Unity::Collections::NativeArray_1<int> outVisibleIndices, ::UnityEngine::Rendering::LODParameters inLodParameters);

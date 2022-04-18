@@ -75,32 +75,19 @@ namespace OculusSampleFramework {
     // Set static field: static public readonly UnityEngine.Color COLOR_HIGHLIGHT
     static void _set_COLOR_HIGHLIGHT(::UnityEngine::Color value);
     // Get instance field reference: private UnityEngine.Color m_color
-    [[deprecated]] ::UnityEngine::Color& dyn_m_color();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_m_color();
     // Get instance field reference: private UnityEngine.MeshRenderer[] m_meshRenderers
-    [[deprecated]] ::ArrayW<::UnityEngine::MeshRenderer*>& dyn_m_meshRenderers();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::MeshRenderer*>& dyn_m_meshRenderers();
     // Get instance field reference: private System.Boolean m_highlight
-    [[deprecated]] bool& dyn_m_highlight();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_highlight();
     // public System.Boolean get_Highlight()
     // Offset: 0x285420
     bool get_Highlight();
     // public System.Void set_Highlight(System.Boolean value)
     // Offset: 0x285430
     void set_Highlight(bool value);
-    // protected System.Void UpdateColor()
-    // Offset: 0x285270
-    void UpdateColor();
-    // private System.Void SetColor(UnityEngine.Color color)
-    // Offset: 0x285160
-    void SetColor(::UnityEngine::Color color);
     // public System.Void .ctor()
     // Offset: 0x2853F0
-    // Implemented from: OVRGrabbable
-    // Base method: System.Void OVRGrabbable::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ColorGrabbable* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::OculusSampleFramework::ColorGrabbable::.ctor");
@@ -108,9 +95,16 @@ namespace OculusSampleFramework {
     }
     // static private System.Void .cctor()
     // Offset: 0x285330
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.cctor()
     static void _cctor();
+    // protected System.Void UpdateColor()
+    // Offset: 0x285270
+    void UpdateColor();
+    // private System.Void Awake()
+    // Offset: 0x284E10
+    void Awake();
+    // private System.Void SetColor(UnityEngine.Color color)
+    // Offset: 0x285160
+    void SetColor(::UnityEngine::Color color);
     // public override System.Void GrabBegin(OVRGrabber hand, UnityEngine.Collider grabPoint)
     // Offset: 0x2850F0
     // Implemented from: OVRGrabbable
@@ -121,11 +115,6 @@ namespace OculusSampleFramework {
     // Implemented from: OVRGrabbable
     // Base method: System.Void OVRGrabbable::GrabEnd(UnityEngine.Vector3 linearVelocity, UnityEngine.Vector3 angularVelocity)
     void GrabEnd(::UnityEngine::Vector3 linearVelocity, ::UnityEngine::Vector3 angularVelocity);
-    // private System.Void Awake()
-    // Offset: 0x284E10
-    // Implemented from: OVRGrabbable
-    // Base method: System.Void OVRGrabbable::Awake()
-    void Awake();
   }; // OculusSampleFramework.ColorGrabbable
   #pragma pack(pop)
   static check_size<sizeof(ColorGrabbable), 96 + sizeof(bool)> __OculusSampleFramework_ColorGrabbableSizeCheck;
@@ -149,23 +138,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Oculu
     return ::il2cpp_utils::FindMethod(classof(OculusSampleFramework::ColorGrabbable*), "set_Highlight", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
-// Writing MetadataGetter for method: OculusSampleFramework::ColorGrabbable::UpdateColor
-// Il2CppName: UpdateColor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (OculusSampleFramework::ColorGrabbable::*)()>(&OculusSampleFramework::ColorGrabbable::UpdateColor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(OculusSampleFramework::ColorGrabbable*), "UpdateColor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
-  }
-};
-// Writing MetadataGetter for method: OculusSampleFramework::ColorGrabbable::SetColor
-// Il2CppName: SetColor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (OculusSampleFramework::ColorGrabbable::*)(::UnityEngine::Color)>(&OculusSampleFramework::ColorGrabbable::SetColor)> {
-  static const MethodInfo* get() {
-    static auto* color = &::il2cpp_utils::GetClassFromName("UnityEngine", "Color")->byval_arg;
-    return ::il2cpp_utils::FindMethod(classof(OculusSampleFramework::ColorGrabbable*), "SetColor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{color});
-  }
-};
 // Writing MetadataGetter for method: OculusSampleFramework::ColorGrabbable::New_ctor
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
@@ -176,6 +148,31 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&OculusSampleFramework::ColorGrabbable::_cctor)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(OculusSampleFramework::ColorGrabbable*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
+// Writing MetadataGetter for method: OculusSampleFramework::ColorGrabbable::UpdateColor
+// Il2CppName: UpdateColor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (OculusSampleFramework::ColorGrabbable::*)()>(&OculusSampleFramework::ColorGrabbable::UpdateColor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(OculusSampleFramework::ColorGrabbable*), "UpdateColor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
+// Writing MetadataGetter for method: OculusSampleFramework::ColorGrabbable::Awake
+// Il2CppName: Awake
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (OculusSampleFramework::ColorGrabbable::*)()>(&OculusSampleFramework::ColorGrabbable::Awake)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(OculusSampleFramework::ColorGrabbable*), "Awake", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
+// Writing MetadataGetter for method: OculusSampleFramework::ColorGrabbable::SetColor
+// Il2CppName: SetColor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (OculusSampleFramework::ColorGrabbable::*)(::UnityEngine::Color)>(&OculusSampleFramework::ColorGrabbable::SetColor)> {
+  static const MethodInfo* get() {
+    static auto* color = &::il2cpp_utils::GetClassFromName("UnityEngine", "Color")->byval_arg;
+    return ::il2cpp_utils::FindMethod(classof(OculusSampleFramework::ColorGrabbable*), "SetColor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{color});
   }
 };
 // Writing MetadataGetter for method: OculusSampleFramework::ColorGrabbable::GrabBegin
@@ -196,13 +193,5 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Oculu
     static auto* linearVelocity = &::il2cpp_utils::GetClassFromName("UnityEngine", "Vector3")->byval_arg;
     static auto* angularVelocity = &::il2cpp_utils::GetClassFromName("UnityEngine", "Vector3")->byval_arg;
     return ::il2cpp_utils::FindMethod(classof(OculusSampleFramework::ColorGrabbable*), "GrabEnd", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{linearVelocity, angularVelocity});
-  }
-};
-// Writing MetadataGetter for method: OculusSampleFramework::ColorGrabbable::Awake
-// Il2CppName: Awake
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (OculusSampleFramework::ColorGrabbable::*)()>(&OculusSampleFramework::ColorGrabbable::Awake)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(OculusSampleFramework::ColorGrabbable*), "Awake", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };

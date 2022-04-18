@@ -44,7 +44,7 @@ namespace System::Diagnostics::Tracing {
       return filterList;
     }
     // Get instance field reference: public System.Diagnostics.Tracing.ActivityFilter filterList
-    [[deprecated]] ::System::Diagnostics::Tracing::ActivityFilter*& dyn_filterList();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::ActivityFilter*& dyn_filterList();
     // System.Void <GetActivityDyingDelegate>b__0(System.Guid oldActivity)
     // Offset: 0x22A8A0
     void $GetActivityDyingDelegate$b__0(::System::Guid oldActivity);

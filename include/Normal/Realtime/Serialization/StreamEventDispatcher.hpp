@@ -57,9 +57,16 @@ namespace Normal::Realtime::Serialization {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private readonly System.Collections.Generic.Dictionary`2<System.UInt32,System.Collections.Generic.HashSet`1<Normal.Realtime.Serialization.StreamEventDispatcher/Normal.Realtime.Serialization.StreamUpdateCallback>> _storage
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<uint, ::System::Collections::Generic::HashSet_1<::Normal::Realtime::Serialization::StreamEventDispatcher::StreamUpdateCallback*>*>*& dyn__storage();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<uint, ::System::Collections::Generic::HashSet_1<::Normal::Realtime::Serialization::StreamEventDispatcher::StreamUpdateCallback*>*>*& dyn__storage();
     // Get instance field reference: private System.Boolean _mutationLock
-    [[deprecated]] bool& dyn__mutationLock();
+    [[deprecated("Use field access instead!")]] bool& dyn__mutationLock();
+    // public System.Void .ctor()
+    // Offset: 0x8A0680
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static StreamEventDispatcher* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::Serialization::StreamEventDispatcher::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<StreamEventDispatcher*, creationType>()));
+    }
     // public System.Void AddStreamCallback(System.UInt32 updateID, Normal.Realtime.Serialization.StreamEventDispatcher/Normal.Realtime.Serialization.StreamUpdateCallback callback)
     // Offset: 0x8A0240
     void AddStreamCallback(uint updateID, ::Normal::Realtime::Serialization::StreamEventDispatcher::StreamUpdateCallback* callback);
@@ -72,21 +79,16 @@ namespace Normal::Realtime::Serialization {
     // private System.Void SafeInvoke(Normal.Realtime.Serialization.StreamEventDispatcher/Normal.Realtime.Serialization.StreamUpdateCallback handler, System.UInt32 updateID)
     // Offset: 0x8A05D0
     void SafeInvoke(::Normal::Realtime::Serialization::StreamEventDispatcher::StreamUpdateCallback* handler, uint updateID);
-    // public System.Void .ctor()
-    // Offset: 0x8A0680
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static StreamEventDispatcher* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::Serialization::StreamEventDispatcher::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<StreamEventDispatcher*, creationType>()));
-    }
   }; // Normal.Realtime.Serialization.StreamEventDispatcher
   #pragma pack(pop)
   static check_size<sizeof(StreamEventDispatcher), 24 + sizeof(bool)> __Normal_Realtime_Serialization_StreamEventDispatcherSizeCheck;
   static_assert(sizeof(StreamEventDispatcher) == 0x19);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Normal::Realtime::Serialization::StreamEventDispatcher::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Normal::Realtime::Serialization::StreamEventDispatcher::AddStreamCallback
 // Il2CppName: AddStreamCallback
 template<>
@@ -125,7 +127,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Norma
     return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::Serialization::StreamEventDispatcher*), "SafeInvoke", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{handler, updateID});
   }
 };
-// Writing MetadataGetter for method: Normal::Realtime::Serialization::StreamEventDispatcher::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

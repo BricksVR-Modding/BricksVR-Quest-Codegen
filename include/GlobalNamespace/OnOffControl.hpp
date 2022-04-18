@@ -72,15 +72,22 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public UIButtonEvents onButtonEvents
-    [[deprecated]] ::GlobalNamespace::UIButtonEvents*& dyn_onButtonEvents();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::UIButtonEvents*& dyn_onButtonEvents();
     // Get instance field reference: public UIButtonEvents offButtonEvents
-    [[deprecated]] ::GlobalNamespace::UIButtonEvents*& dyn_offButtonEvents();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::UIButtonEvents*& dyn_offButtonEvents();
     // Get instance field reference: public OnOffControl/SerializableBoolEvent valueUpdated
-    [[deprecated]] ::GlobalNamespace::OnOffControl::SerializableBoolEvent*& dyn_valueUpdated();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OnOffControl::SerializableBoolEvent*& dyn_valueUpdated();
     // Get instance field reference: private System.Boolean _on
-    [[deprecated]] bool& dyn__on();
+    [[deprecated("Use field access instead!")]] bool& dyn__on();
     // Get instance field reference: private System.Boolean _initialized
-    [[deprecated]] bool& dyn__initialized();
+    [[deprecated("Use field access instead!")]] bool& dyn__initialized();
+    // public System.Void .ctor()
+    // Offset: 0x1DDE30
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static OnOffControl* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OnOffControl::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<OnOffControl*, creationType>()));
+    }
     // private System.Void Start()
     // Offset: 0x7D3090
     void Start();
@@ -93,25 +100,16 @@ namespace GlobalNamespace {
     // private System.Void UpdateButtonStates()
     // Offset: 0x7D3170
     void UpdateButtonStates();
-    // public System.Void .ctor()
-    // Offset: 0x1DDE30
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static OnOffControl* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OnOffControl::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<OnOffControl*, creationType>()));
-    }
   }; // OnOffControl
   #pragma pack(pop)
   static check_size<sizeof(OnOffControl), 49 + sizeof(bool)> __GlobalNamespace_OnOffControlSizeCheck;
   static_assert(sizeof(OnOffControl) == 0x32);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::OnOffControl::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::OnOffControl::Start
 // Il2CppName: Start
 template<>
@@ -145,7 +143,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OnOffControl*), "UpdateButtonStates", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::OnOffControl::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

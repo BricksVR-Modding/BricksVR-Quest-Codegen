@@ -76,13 +76,13 @@ namespace UnityEngine::XR::Interaction::Toolkit {
     // Set static field: static private System.Single Timeout
     static void _set_Timeout(float value);
     // Get instance field reference: private UnityEngine.XR.Interaction.Toolkit.LocomotionProvider m_CurrentExclusiveProvider
-    [[deprecated]] ::UnityEngine::XR::Interaction::Toolkit::LocomotionProvider*& dyn_m_CurrentExclusiveProvider();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::Interaction::Toolkit::LocomotionProvider*& dyn_m_CurrentExclusiveProvider();
     // Get instance field reference: private System.Single m_TimeMadeExclusive
-    [[deprecated]] float& dyn_m_TimeMadeExclusive();
+    [[deprecated("Use field access instead!")]] float& dyn_m_TimeMadeExclusive();
     // Get instance field reference: private System.Single m_Timeout
-    [[deprecated]] float& dyn_m_Timeout();
+    [[deprecated("Use field access instead!")]] float& dyn_m_Timeout();
     // Get instance field reference: private UnityEngine.XR.Interaction.Toolkit.XRRig m_XRRig
-    [[deprecated]] ::UnityEngine::XR::Interaction::Toolkit::XRRig*& dyn_m_XRRig();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::Interaction::Toolkit::XRRig*& dyn_m_XRRig();
     // public System.Single get_timeout()
     // Offset: 0x2F79F0
     float get_timeout();
@@ -98,6 +98,13 @@ namespace UnityEngine::XR::Interaction::Toolkit {
     // public System.Boolean get_Busy()
     // Offset: 0x2F7990
     bool get_Busy();
+    // public System.Void .ctor()
+    // Offset: 0x2F7980
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static LocomotionSystem* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::XR::Interaction::Toolkit::LocomotionSystem::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<LocomotionSystem*, creationType>()));
+    }
     // public UnityEngine.XR.Interaction.Toolkit.RequestResult RequestExclusiveOperation(UnityEngine.XR.Interaction.Toolkit.LocomotionProvider provider)
     // Offset: 0x2F7780
     ::UnityEngine::XR::Interaction::Toolkit::RequestResult RequestExclusiveOperation(::UnityEngine::XR::Interaction::Toolkit::LocomotionProvider* provider);
@@ -113,19 +120,6 @@ namespace UnityEngine::XR::Interaction::Toolkit {
     // private System.Void Awake()
     // Offset: 0x2F75E0
     void Awake();
-    // public System.Void .ctor()
-    // Offset: 0x2F7980
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static LocomotionSystem* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::XR::Interaction::Toolkit::LocomotionSystem::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<LocomotionSystem*, creationType>()));
-    }
   }; // UnityEngine.XR.Interaction.Toolkit.LocomotionSystem
   #pragma pack(pop)
   static check_size<sizeof(LocomotionSystem), 40 + sizeof(::UnityEngine::XR::Interaction::Toolkit::XRRig*)> __UnityEngine_XR_Interaction_Toolkit_LocomotionSystemSizeCheck;
@@ -174,6 +168,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::XR::Interaction::Toolkit::LocomotionSystem*), "get_Busy", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::XR::Interaction::Toolkit::LocomotionSystem::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::XR::Interaction::Toolkit::LocomotionSystem::RequestExclusiveOperation
 // Il2CppName: RequestExclusiveOperation
 template<>
@@ -216,7 +214,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::XR::Interaction::Toolkit::LocomotionSystem*), "Awake", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::XR::Interaction::Toolkit::LocomotionSystem::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

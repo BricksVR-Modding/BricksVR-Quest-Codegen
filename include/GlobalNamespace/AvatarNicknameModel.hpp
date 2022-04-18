@@ -173,41 +173,41 @@ namespace GlobalNamespace {
     static_assert(sizeof(::Normal::Realtime::ReliableProperty_1<int>*) == 0x8);
     public:
     // Get instance field reference: private System.String _nickname
-    [[deprecated]] ::StringW& dyn__nickname();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__nickname();
     // Get instance field reference: private System.String _shortId
-    [[deprecated]] ::StringW& dyn__shortId();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__shortId();
     // Get instance field reference: private System.Int32 _primaryAvatarColor
-    [[deprecated]] int& dyn__primaryAvatarColor();
+    [[deprecated("Use field access instead!")]] int& dyn__primaryAvatarColor();
     // Get instance field reference: private System.Int32 _secondaryAvatarColor
-    [[deprecated]] int& dyn__secondaryAvatarColor();
+    [[deprecated("Use field access instead!")]] int& dyn__secondaryAvatarColor();
     // Get instance field reference: private System.Int32 _avatarEyes
-    [[deprecated]] int& dyn__avatarEyes();
+    [[deprecated("Use field access instead!")]] int& dyn__avatarEyes();
     // Get instance field reference: private System.Int32 _avatarMouth
-    [[deprecated]] int& dyn__avatarMouth();
+    [[deprecated("Use field access instead!")]] int& dyn__avatarMouth();
     // Get instance field reference: private AvatarNicknameModel/PropertyChangedHandler`1<System.String> nicknameDidChange
-    [[deprecated]] ::GlobalNamespace::AvatarNicknameModel::PropertyChangedHandler_1<::StringW>*& dyn_nicknameDidChange();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::AvatarNicknameModel::PropertyChangedHandler_1<::StringW>*& dyn_nicknameDidChange();
     // Get instance field reference: private AvatarNicknameModel/PropertyChangedHandler`1<System.String> shortIdDidChange
-    [[deprecated]] ::GlobalNamespace::AvatarNicknameModel::PropertyChangedHandler_1<::StringW>*& dyn_shortIdDidChange();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::AvatarNicknameModel::PropertyChangedHandler_1<::StringW>*& dyn_shortIdDidChange();
     // Get instance field reference: private AvatarNicknameModel/PropertyChangedHandler`1<System.Int32> primaryAvatarColorDidChange
-    [[deprecated]] ::GlobalNamespace::AvatarNicknameModel::PropertyChangedHandler_1<int>*& dyn_primaryAvatarColorDidChange();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::AvatarNicknameModel::PropertyChangedHandler_1<int>*& dyn_primaryAvatarColorDidChange();
     // Get instance field reference: private AvatarNicknameModel/PropertyChangedHandler`1<System.Int32> secondaryAvatarColorDidChange
-    [[deprecated]] ::GlobalNamespace::AvatarNicknameModel::PropertyChangedHandler_1<int>*& dyn_secondaryAvatarColorDidChange();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::AvatarNicknameModel::PropertyChangedHandler_1<int>*& dyn_secondaryAvatarColorDidChange();
     // Get instance field reference: private AvatarNicknameModel/PropertyChangedHandler`1<System.Int32> avatarEyesDidChange
-    [[deprecated]] ::GlobalNamespace::AvatarNicknameModel::PropertyChangedHandler_1<int>*& dyn_avatarEyesDidChange();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::AvatarNicknameModel::PropertyChangedHandler_1<int>*& dyn_avatarEyesDidChange();
     // Get instance field reference: private AvatarNicknameModel/PropertyChangedHandler`1<System.Int32> avatarMouthDidChange
-    [[deprecated]] ::GlobalNamespace::AvatarNicknameModel::PropertyChangedHandler_1<int>*& dyn_avatarMouthDidChange();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::AvatarNicknameModel::PropertyChangedHandler_1<int>*& dyn_avatarMouthDidChange();
     // Get instance field reference: private Normal.Realtime.ReliableProperty`1<System.String> _nicknameProperty
-    [[deprecated]] ::Normal::Realtime::ReliableProperty_1<::StringW>*& dyn__nicknameProperty();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::ReliableProperty_1<::StringW>*& dyn__nicknameProperty();
     // Get instance field reference: private Normal.Realtime.ReliableProperty`1<System.String> _shortIdProperty
-    [[deprecated]] ::Normal::Realtime::ReliableProperty_1<::StringW>*& dyn__shortIdProperty();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::ReliableProperty_1<::StringW>*& dyn__shortIdProperty();
     // Get instance field reference: private Normal.Realtime.ReliableProperty`1<System.Int32> _primaryAvatarColorProperty
-    [[deprecated]] ::Normal::Realtime::ReliableProperty_1<int>*& dyn__primaryAvatarColorProperty();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::ReliableProperty_1<int>*& dyn__primaryAvatarColorProperty();
     // Get instance field reference: private Normal.Realtime.ReliableProperty`1<System.Int32> _secondaryAvatarColorProperty
-    [[deprecated]] ::Normal::Realtime::ReliableProperty_1<int>*& dyn__secondaryAvatarColorProperty();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::ReliableProperty_1<int>*& dyn__secondaryAvatarColorProperty();
     // Get instance field reference: private Normal.Realtime.ReliableProperty`1<System.Int32> _avatarEyesProperty
-    [[deprecated]] ::Normal::Realtime::ReliableProperty_1<int>*& dyn__avatarEyesProperty();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::ReliableProperty_1<int>*& dyn__avatarEyesProperty();
     // Get instance field reference: private Normal.Realtime.ReliableProperty`1<System.Int32> _avatarMouthProperty
-    [[deprecated]] ::Normal::Realtime::ReliableProperty_1<int>*& dyn__avatarMouthProperty();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::ReliableProperty_1<int>*& dyn__avatarMouthProperty();
     // public System.String get_nickname()
     // Offset: 0x6DFE30
     ::StringW get_nickname();
@@ -280,6 +280,13 @@ namespace GlobalNamespace {
     // public System.Void remove_avatarMouthDidChange(AvatarNicknameModel/PropertyChangedHandler`1<System.Int32> value)
     // Offset: 0x6DFFD0
     void remove_avatarMouthDidChange(::GlobalNamespace::AvatarNicknameModel::PropertyChangedHandler_1<int>* value);
+    // public System.Void .ctor()
+    // Offset: 0x6DF820
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static AvatarNicknameModel* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::AvatarNicknameModel::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<AvatarNicknameModel*, creationType>()));
+    }
     // private System.Void FireNicknameDidChange(System.String value)
     // Offset: 0x6DEA50
     void FireNicknameDidChange(::StringW value);
@@ -301,15 +308,6 @@ namespace GlobalNamespace {
     // private System.Void UpdateBackingFields()
     // Offset: 0x6DF310
     void UpdateBackingFields();
-    // public System.Void .ctor()
-    // Offset: 0x6DF820
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static AvatarNicknameModel* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::AvatarNicknameModel::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<AvatarNicknameModel*, creationType>()));
-    }
     // protected override System.Void OnParentReplaced(Normal.Realtime.RealtimeModel previousParent, Normal.Realtime.RealtimeModel currentParent)
     // Offset: 0x6DECD0
     // Implemented from: Normal.Realtime.RealtimeModel
@@ -546,6 +544,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::AvatarNicknameModel*), "remove_avatarMouthDidChange", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: GlobalNamespace::AvatarNicknameModel::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::AvatarNicknameModel::FireNicknameDidChange
 // Il2CppName: FireNicknameDidChange
 template<>
@@ -608,10 +610,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::AvatarNicknameModel*), "UpdateBackingFields", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::AvatarNicknameModel::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::AvatarNicknameModel::OnParentReplaced
 // Il2CppName: OnParentReplaced
 template<>

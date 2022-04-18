@@ -45,7 +45,7 @@ namespace UnityEngine::Bindings {
       return Header;
     }
     // Get instance field reference: private System.String <Header>k__BackingField
-    [[deprecated]] ::StringW& dyn_$Header$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$Header$k__BackingField();
     // public System.Void set_Header(System.String value)
     // Offset: 0x269100
     void set_Header(::StringW value);

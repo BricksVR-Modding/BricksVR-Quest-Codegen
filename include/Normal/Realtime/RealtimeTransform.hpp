@@ -97,19 +97,19 @@ namespace Normal::Realtime {
     static_assert(sizeof(::Normal::Realtime::IRealtimeTransformStrategy*) == 0x8);
     public:
     // Get instance field reference: private System.Boolean _interpolate
-    [[deprecated]] bool& dyn__interpolate();
+    [[deprecated("Use field access instead!")]] bool& dyn__interpolate();
     // Get instance field reference: private System.Boolean _syncPosition
-    [[deprecated]] bool& dyn__syncPosition();
+    [[deprecated("Use field access instead!")]] bool& dyn__syncPosition();
     // Get instance field reference: private System.Boolean _syncRotation
-    [[deprecated]] bool& dyn__syncRotation();
+    [[deprecated("Use field access instead!")]] bool& dyn__syncRotation();
     // Get instance field reference: private System.Boolean _syncScale
-    [[deprecated]] bool& dyn__syncScale();
+    [[deprecated("Use field access instead!")]] bool& dyn__syncScale();
     // Get instance field reference: private System.Boolean _syncVelocity
-    [[deprecated]] bool& dyn__syncVelocity();
+    [[deprecated("Use field access instead!")]] bool& dyn__syncVelocity();
     // Get instance field reference: private System.Boolean _maintainOwnershipWhileSleeping
-    [[deprecated]] bool& dyn__maintainOwnershipWhileSleeping();
+    [[deprecated("Use field access instead!")]] bool& dyn__maintainOwnershipWhileSleeping();
     // Get instance field reference: private Normal.Realtime.IRealtimeTransformStrategy _strategy
-    [[deprecated]] ::Normal::Realtime::IRealtimeTransformStrategy*& dyn__strategy();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::IRealtimeTransformStrategy*& dyn__strategy();
     // public System.Boolean get_isSyncingPosition()
     // Offset: 0x553160
     bool get_isSyncingPosition();
@@ -192,11 +192,6 @@ namespace Normal::Realtime {
     // Offset: 0x8C94A0
     // Implemented from: Normal.Realtime.RealtimeComponent`1
     // Base method: System.Void RealtimeComponent_1::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static RealtimeTransform* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::RealtimeTransform::.ctor");

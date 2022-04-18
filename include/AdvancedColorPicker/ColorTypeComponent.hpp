@@ -40,7 +40,7 @@ namespace AdvancedColorPicker {
     static_assert(sizeof(::AdvancedColorPicker::ColorValueType) == 0x4);
     public:
     // Get instance field reference: private AdvancedColorPicker.ColorValueType type
-    [[deprecated]] ::AdvancedColorPicker::ColorValueType& dyn_type();
+    [[deprecated("Use field access instead!")]] ::AdvancedColorPicker::ColorValueType& dyn_type();
     // public AdvancedColorPicker.ColorValueType get_Type()
     // Offset: 0x217240
     ::AdvancedColorPicker::ColorValueType get_Type();
@@ -51,12 +51,6 @@ namespace AdvancedColorPicker {
     // Offset: 0x5AD2B0
     // Implemented from: AdvancedColorPicker.ColorComponent
     // Base method: System.Void ColorComponent::.ctor()
-    // Base method: System.Void UIBehaviour::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ColorTypeComponent* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::AdvancedColorPicker::ColorTypeComponent::.ctor");

@@ -41,7 +41,7 @@ namespace Normal::Utility {
       return order;
     }
     // Get instance field reference: public System.Int32 order
-    [[deprecated]] int& dyn_order();
+    [[deprecated("Use field access instead!")]] int& dyn_order();
     // public System.Void .ctor(System.Int32 order)
     // Offset: 0x20A3C0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

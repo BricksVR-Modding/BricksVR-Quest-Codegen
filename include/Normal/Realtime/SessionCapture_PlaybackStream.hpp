@@ -53,9 +53,9 @@ namespace Normal::Realtime {
       return *reinterpret_cast<::System::IDisposable*>(this);
     }
     // Get instance field reference: private Normal.Realtime.SessionCaptureFileStream _fileStream
-    [[deprecated]] ::Normal::Realtime::SessionCaptureFileStream*& dyn__fileStream();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::SessionCaptureFileStream*& dyn__fileStream();
     // Get instance field reference: private System.Double _sendTimestampOffset
-    [[deprecated]] double& dyn__sendTimestampOffset();
+    [[deprecated("Use field access instead!")]] double& dyn__sendTimestampOffset();
     // public System.Boolean get_reading()
     // Offset: 0x88E2F0
     bool get_reading();

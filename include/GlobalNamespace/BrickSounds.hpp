@@ -69,11 +69,18 @@ namespace GlobalNamespace {
     // Set static field: static private BrickSounds _instance
     static void _set__instance(::GlobalNamespace::BrickSounds* value);
     // Get instance field reference: public UnityEngine.AudioClip[] brickSnapClips
-    [[deprecated]] ::ArrayW<::UnityEngine::AudioClip*>& dyn_brickSnapClips();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::AudioClip*>& dyn_brickSnapClips();
     // Get instance field reference: public UnityEngine.AudioClip[] brickCarpetClips
-    [[deprecated]] ::ArrayW<::UnityEngine::AudioClip*>& dyn_brickCarpetClips();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::AudioClip*>& dyn_brickCarpetClips();
     // Get instance field reference: public AdjustPlayerScale adjustPlayerScale
-    [[deprecated]] ::GlobalNamespace::AdjustPlayerScale*& dyn_adjustPlayerScale();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::AdjustPlayerScale*& dyn_adjustPlayerScale();
+    // public System.Void .ctor()
+    // Offset: 0x1DDE30
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static BrickSounds* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::BrickSounds::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<BrickSounds*, creationType>()));
+    }
     // static public BrickSounds GetInstance()
     // Offset: 0x6F3E80
     static ::GlobalNamespace::BrickSounds* GetInstance();
@@ -89,25 +96,16 @@ namespace GlobalNamespace {
     // public System.Void PlayBrickCarpetSound(UnityEngine.Vector3 pos)
     // Offset: 0x6F3F40
     void PlayBrickCarpetSound(::UnityEngine::Vector3 pos);
-    // public System.Void .ctor()
-    // Offset: 0x1DDE30
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static BrickSounds* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::BrickSounds::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<BrickSounds*, creationType>()));
-    }
   }; // BrickSounds
   #pragma pack(pop)
   static check_size<sizeof(BrickSounds), 40 + sizeof(::GlobalNamespace::AdjustPlayerScale*)> __GlobalNamespace_BrickSoundsSizeCheck;
   static_assert(sizeof(BrickSounds) == 0x30);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::BrickSounds::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::BrickSounds::GetInstance
 // Il2CppName: GetInstance
 template<>
@@ -150,7 +148,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::BrickSounds*), "PlayBrickCarpetSound", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{pos});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::BrickSounds::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

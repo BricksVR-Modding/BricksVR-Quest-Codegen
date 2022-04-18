@@ -18,10 +18,6 @@ namespace UnityEngine {
   // Forward declaring type: Rect
   struct Rect;
 }
-// Forward declaring namespace: UnityEngine::UI
-namespace UnityEngine::UI {
-  // Skipping declaration: Graphic because it is already included!
-}
 // Completed forward declares
 // Type namespace: TMPro
 namespace TMPro {
@@ -41,15 +37,6 @@ namespace TMPro {
     public:
     // public System.Void .ctor()
     // Offset: 0x1DDF10
-    // Implemented from: UnityEngine.UI.MaskableGraphic
-    // Base method: System.Void MaskableGraphic::.ctor()
-    // Base method: System.Void Graphic::.ctor()
-    // Base method: System.Void UIBehaviour::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TMP_SelectionCaret* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::TMPro::TMP_SelectionCaret::.ctor");

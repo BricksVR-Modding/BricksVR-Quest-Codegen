@@ -51,11 +51,11 @@ namespace System::Diagnostics::Tracing {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: System.UInt64 Ptr
-    [[deprecated]] uint64_t& dyn_Ptr();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_Ptr();
     // Get instance field reference: System.UInt32 Size
-    [[deprecated]] uint& dyn_Size();
+    [[deprecated("Use field access instead!")]] uint& dyn_Size();
     // Get instance field reference: System.UInt32 Reserved
-    [[deprecated]] uint& dyn_Reserved();
+    [[deprecated("Use field access instead!")]] uint& dyn_Reserved();
   }; // System.Diagnostics.Tracing.EventProvider/System.Diagnostics.Tracing.EventData
   #pragma pack(pop)
   static check_size<sizeof(EventProvider_EventData), 12 + sizeof(uint)> __System_Diagnostics_Tracing_EventProvider_EventDataSizeCheck;

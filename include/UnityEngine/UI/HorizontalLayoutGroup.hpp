@@ -12,12 +12,6 @@
 #include "beatsaber-hook/shared/utils/il2cpp-utils-fields.hpp"
 #include "beatsaber-hook/shared/utils/utils.h"
 // Completed includes
-// Begin forward declares
-// Forward declaring namespace: UnityEngine::UI
-namespace UnityEngine::UI {
-  // Skipping declaration: LayoutGroup because it is already included!
-}
-// Completed forward declares
 // Type namespace: UnityEngine.UI
 namespace UnityEngine::UI {
   // Forward declaring type: HorizontalLayoutGroup
@@ -41,11 +35,6 @@ namespace UnityEngine::UI {
     // Base method: System.Void HorizontalOrVerticalLayoutGroup::.ctor()
     // Base method: System.Void LayoutGroup::.ctor()
     // Base method: System.Void UIBehaviour::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static HorizontalLayoutGroup* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::UI::HorizontalLayoutGroup::.ctor");

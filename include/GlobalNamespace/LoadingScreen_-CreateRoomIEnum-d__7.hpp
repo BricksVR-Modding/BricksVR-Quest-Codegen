@@ -79,17 +79,17 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<::Il2CppObject*>*>(this);
     }
     // Get instance field reference: private System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: private System.Object <>2__current
-    [[deprecated]] ::Il2CppObject*& dyn_$$2__current();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_$$2__current();
     // Get instance field reference: public LoadingScreen <>4__this
-    [[deprecated]] ::GlobalNamespace::LoadingScreen*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::LoadingScreen*& dyn_$$4__this();
     // Get instance field reference: public System.String roomName
-    [[deprecated]] ::StringW& dyn_roomName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_roomName();
     // Get instance field reference: private CoroutineWithData <isVersionSupported>5__2
-    [[deprecated]] ::GlobalNamespace::CoroutineWithData*& dyn_$isVersionSupported$5__2();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::CoroutineWithData*& dyn_$isVersionSupported$5__2();
     // Get instance field reference: private CoroutineWithData <cd>5__3
-    [[deprecated]] ::GlobalNamespace::CoroutineWithData*& dyn_$cd$5__3();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::CoroutineWithData*& dyn_$cd$5__3();
     // private System.Object System.Collections.Generic.IEnumerator<System.Object>.get_Current()
     // Offset: 0x1E1520
     ::Il2CppObject* System_Collections_Generic_IEnumerator$System_Object$_get_Current();

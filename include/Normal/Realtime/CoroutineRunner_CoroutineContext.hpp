@@ -103,7 +103,7 @@ namespace Normal::Realtime {
       // Set static field: static public Normal.Realtime.CoroutineRunner/Normal.Realtime.CoroutineContext/Normal.Realtime.State Cancelled
       static void _set_Cancelled(::Normal::Realtime::CoroutineRunner::CoroutineContext::State value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // Normal.Realtime.CoroutineRunner/Normal.Realtime.CoroutineContext/Normal.Realtime.State
     #pragma pack(pop)
     static check_size<sizeof(CoroutineRunner::CoroutineContext::State), 0 + sizeof(int)> __Normal_Realtime_CoroutineRunner_CoroutineContext_StateSizeCheck;
@@ -143,15 +143,15 @@ namespace Normal::Realtime {
     static_assert(sizeof(::System::Action*) == 0x8);
     public:
     // Get instance field reference: private Normal.Realtime.CoroutineRunner/Normal.Realtime.CoroutineContext/Normal.Realtime.State _state
-    [[deprecated]] ::Normal::Realtime::CoroutineRunner::CoroutineContext::State& dyn__state();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::CoroutineRunner::CoroutineContext::State& dyn__state();
     // Get instance field reference: private System.Collections.IEnumerator _coroutineEnumerator
-    [[deprecated]] ::System::Collections::IEnumerator*& dyn__coroutineEnumerator();
+    [[deprecated("Use field access instead!")]] ::System::Collections::IEnumerator*& dyn__coroutineEnumerator();
     // Get instance field reference: private UnityEngine.Coroutine _coroutine
-    [[deprecated]] ::UnityEngine::Coroutine*& dyn__coroutine();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Coroutine*& dyn__coroutine();
     // Get instance field reference: private Normal.Realtime.CoroutineRunner _coroutineRunner
-    [[deprecated]] ::Normal::Realtime::CoroutineRunner*& dyn__coroutineRunner();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::CoroutineRunner*& dyn__coroutineRunner();
     // Get instance field reference: private System.Action <cleanupAction>k__BackingField
-    [[deprecated]] ::System::Action*& dyn_$cleanupAction$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_$cleanupAction$k__BackingField();
     // public Normal.Realtime.CoroutineRunner/Normal.Realtime.CoroutineContext/Normal.Realtime.State get_state()
     // Offset: 0x1DD410
     ::Normal::Realtime::CoroutineRunner::CoroutineContext::State get_state();
@@ -161,6 +161,13 @@ namespace Normal::Realtime {
     // public System.Void set_cleanupAction(System.Action value)
     // Offset: 0x2322D0
     void set_cleanupAction(::System::Action* value);
+    // public System.Void .ctor()
+    // Offset: 0x8B7270
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static CoroutineRunner::CoroutineContext* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::CoroutineRunner::CoroutineContext::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<CoroutineRunner::CoroutineContext*, creationType>()));
+    }
     // public System.Void Bind(System.Collections.IEnumerator coroutineEnumerator)
     // Offset: 0x8B6F10
     void Bind(::System::Collections::IEnumerator* coroutineEnumerator);
@@ -179,15 +186,6 @@ namespace Normal::Realtime {
     // public System.Void _OnDestroy()
     // Offset: 0x8B7160
     void _OnDestroy();
-    // public System.Void .ctor()
-    // Offset: 0x8B7270
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static CoroutineRunner::CoroutineContext* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::CoroutineRunner::CoroutineContext::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<CoroutineRunner::CoroutineContext*, creationType>()));
-    }
   }; // Normal.Realtime.CoroutineRunner/Normal.Realtime.CoroutineContext
   #pragma pack(pop)
   static check_size<sizeof(CoroutineRunner::CoroutineContext), 48 + sizeof(::System::Action*)> __Normal_Realtime_CoroutineRunner_CoroutineContextSizeCheck;
@@ -221,6 +219,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Norma
     return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::CoroutineRunner::CoroutineContext*), "set_cleanupAction", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: Normal::Realtime::CoroutineRunner::CoroutineContext::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Normal::Realtime::CoroutineRunner::CoroutineContext::Bind
 // Il2CppName: Bind
 template<>
@@ -271,7 +273,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Norma
     return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::CoroutineRunner::CoroutineContext*), "_OnDestroy", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: Normal::Realtime::CoroutineRunner::CoroutineContext::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

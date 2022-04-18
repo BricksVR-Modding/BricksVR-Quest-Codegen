@@ -93,15 +93,15 @@ namespace Steamworks {
       return *reinterpret_cast<::System::IEquatable_1<::Steamworks::InventoryItem>*>(this);
     }
     // Get instance field reference: Steamworks.Data.InventoryItemId _id
-    [[deprecated]] ::Steamworks::Data::InventoryItemId& dyn__id();
+    [[deprecated("Use field access instead!")]] ::Steamworks::Data::InventoryItemId& dyn__id();
     // Get instance field reference: Steamworks.Data.InventoryDefId _def
-    [[deprecated]] ::Steamworks::Data::InventoryDefId& dyn__def();
+    [[deprecated("Use field access instead!")]] ::Steamworks::Data::InventoryDefId& dyn__def();
     // Get instance field reference: Steamworks.SteamItemFlags _flags
-    [[deprecated]] ::Steamworks::SteamItemFlags& dyn__flags();
+    [[deprecated("Use field access instead!")]] ::Steamworks::SteamItemFlags& dyn__flags();
     // Get instance field reference: System.UInt16 _quantity
-    [[deprecated]] uint16_t& dyn__quantity();
+    [[deprecated("Use field access instead!")]] uint16_t& dyn__quantity();
     // Get instance field reference: System.Collections.Generic.Dictionary`2<System.String,System.String> _properties
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::StringW, ::StringW>*& dyn__properties();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::StringW, ::StringW>*& dyn__properties();
     // static Steamworks.InventoryItem From(Steamworks.Data.SteamItemDetails_t details)
     // Offset: 0x5BFB50
     static ::Steamworks::InventoryItem From(::Steamworks::Data::SteamItemDetails_t details);

@@ -94,7 +94,7 @@ namespace OculusSampleFramework {
       // Set static field: static public OculusSampleFramework.ButtonController/OculusSampleFramework.ContactTest BackwardsPress
       static void _set_BackwardsPress(::OculusSampleFramework::ButtonController::ContactTest value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // OculusSampleFramework.ButtonController/OculusSampleFramework.ContactTest
     #pragma pack(pop)
     static check_size<sizeof(ButtonController::ContactTest), 0 + sizeof(int)> __OculusSampleFramework_ButtonController_ContactTestSizeCheck;
@@ -182,27 +182,27 @@ namespace OculusSampleFramework {
     // Set static field: static private System.Single PERP_DOT_THRESHOLD
     static void _set_PERP_DOT_THRESHOLD(float value);
     // Get instance field reference: private UnityEngine.GameObject _proximityZone
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__proximityZone();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__proximityZone();
     // Get instance field reference: private UnityEngine.GameObject _contactZone
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__contactZone();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__contactZone();
     // Get instance field reference: private UnityEngine.GameObject _actionZone
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__actionZone();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__actionZone();
     // Get instance field reference: private OculusSampleFramework.ButtonController/OculusSampleFramework.ContactTest[] _contactTests
-    [[deprecated]] ::ArrayW<::OculusSampleFramework::ButtonController::ContactTest>& dyn__contactTests();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::OculusSampleFramework::ButtonController::ContactTest>& dyn__contactTests();
     // Get instance field reference: private UnityEngine.Transform _buttonPlaneCenter
-    [[deprecated]] ::UnityEngine::Transform*& dyn__buttonPlaneCenter();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__buttonPlaneCenter();
     // Get instance field reference: private System.Boolean _makeSureToolIsOnPositiveSide
-    [[deprecated]] bool& dyn__makeSureToolIsOnPositiveSide();
+    [[deprecated("Use field access instead!")]] bool& dyn__makeSureToolIsOnPositiveSide();
     // Get instance field reference: private UnityEngine.Vector3 _localButtonDirection
-    [[deprecated]] ::UnityEngine::Vector3& dyn__localButtonDirection();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__localButtonDirection();
     // Get instance field reference: private OculusSampleFramework.InteractableToolTags[] _allValidToolsTags
-    [[deprecated]] ::ArrayW<::OculusSampleFramework::InteractableToolTags>& dyn__allValidToolsTags();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::OculusSampleFramework::InteractableToolTags>& dyn__allValidToolsTags();
     // Get instance field reference: private System.Int32 _toolTagsMask
-    [[deprecated]] int& dyn__toolTagsMask();
+    [[deprecated("Use field access instead!")]] int& dyn__toolTagsMask();
     // Get instance field reference: private OculusSampleFramework.InteractableState _currentButtonState
-    [[deprecated]] ::OculusSampleFramework::InteractableState& dyn__currentButtonState();
+    [[deprecated("Use field access instead!")]] ::OculusSampleFramework::InteractableState& dyn__currentButtonState();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<OculusSampleFramework.InteractableTool,OculusSampleFramework.InteractableState> _toolToState
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::OculusSampleFramework::InteractableTool*, ::OculusSampleFramework::InteractableState>*& dyn__toolToState();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::OculusSampleFramework::InteractableTool*, ::OculusSampleFramework::InteractableState>*& dyn__toolToState();
     // public UnityEngine.Vector3 get_LocalButtonDirection()
     // Offset: 0x284600
     ::UnityEngine::Vector3 get_LocalButtonDirection();
@@ -233,11 +233,6 @@ namespace OculusSampleFramework {
     // Offset: 0x284500
     // Implemented from: OculusSampleFramework.Interactable
     // Base method: System.Void Interactable::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ButtonController* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::OculusSampleFramework::ButtonController::.ctor");

@@ -94,21 +94,21 @@ namespace UnityEngine::XR::Tango {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Double orientation_x
-    [[deprecated]] double& dyn_orientation_x();
+    [[deprecated("Use field access instead!")]] double& dyn_orientation_x();
     // Get instance field reference: public System.Double orientation_y
-    [[deprecated]] double& dyn_orientation_y();
+    [[deprecated("Use field access instead!")]] double& dyn_orientation_y();
     // Get instance field reference: public System.Double orientation_z
-    [[deprecated]] double& dyn_orientation_z();
+    [[deprecated("Use field access instead!")]] double& dyn_orientation_z();
     // Get instance field reference: public System.Double orientation_w
-    [[deprecated]] double& dyn_orientation_w();
+    [[deprecated("Use field access instead!")]] double& dyn_orientation_w();
     // Get instance field reference: public System.Double translation_x
-    [[deprecated]] double& dyn_translation_x();
+    [[deprecated("Use field access instead!")]] double& dyn_translation_x();
     // Get instance field reference: public System.Double translation_y
-    [[deprecated]] double& dyn_translation_y();
+    [[deprecated("Use field access instead!")]] double& dyn_translation_y();
     // Get instance field reference: public System.Double translation_z
-    [[deprecated]] double& dyn_translation_z();
+    [[deprecated("Use field access instead!")]] double& dyn_translation_z();
     // Get instance field reference: public UnityEngine.XR.Tango.PoseStatus statusCode
-    [[deprecated]] ::UnityEngine::XR::Tango::PoseStatus& dyn_statusCode();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::Tango::PoseStatus& dyn_statusCode();
     // public UnityEngine.Quaternion get_rotation()
     // Offset: 0x671AF0
     ::UnityEngine::Quaternion get_rotation();

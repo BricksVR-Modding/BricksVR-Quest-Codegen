@@ -101,19 +101,19 @@ namespace Normal::Realtime {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.GameObject _localAvatarPrefab
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__localAvatarPrefab();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__localAvatarPrefab();
     // Get instance field reference: private Normal.Realtime.RealtimeAvatar/Normal.Realtime.LocalPlayer _localPlayer
-    [[deprecated]] ::Normal::Realtime::RealtimeAvatar::LocalPlayer*& dyn__localPlayer();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::RealtimeAvatar::LocalPlayer*& dyn__localPlayer();
     // Get instance field reference: private Normal.Realtime.RealtimeAvatar <localAvatar>k__BackingField
-    [[deprecated]] ::Normal::Realtime::RealtimeAvatar*& dyn_$localAvatar$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::RealtimeAvatar*& dyn_$localAvatar$k__BackingField();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.Int32,Normal.Realtime.RealtimeAvatar> <avatars>k__BackingField
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<int, ::Normal::Realtime::RealtimeAvatar*>*& dyn_$avatars$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<int, ::Normal::Realtime::RealtimeAvatar*>*& dyn_$avatars$k__BackingField();
     // Get instance field reference: private Normal.Realtime.RealtimeAvatarManager/Normal.Realtime.AvatarCreatedDestroyed avatarCreated
-    [[deprecated]] ::Normal::Realtime::RealtimeAvatarManager::AvatarCreatedDestroyed*& dyn_avatarCreated();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::RealtimeAvatarManager::AvatarCreatedDestroyed*& dyn_avatarCreated();
     // Get instance field reference: private Normal.Realtime.RealtimeAvatarManager/Normal.Realtime.AvatarCreatedDestroyed avatarDestroyed
-    [[deprecated]] ::Normal::Realtime::RealtimeAvatarManager::AvatarCreatedDestroyed*& dyn_avatarDestroyed();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::RealtimeAvatarManager::AvatarCreatedDestroyed*& dyn_avatarDestroyed();
     // Get instance field reference: private Normal.Realtime.Realtime _realtime
-    [[deprecated]] ::Normal::Realtime::Realtime*& dyn__realtime();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::Realtime*& dyn__realtime();
     // public UnityEngine.GameObject get_localAvatarPrefab()
     // Offset: 0x1E1520
     ::UnityEngine::GameObject* get_localAvatarPrefab();
@@ -144,6 +144,13 @@ namespace Normal::Realtime {
     // public System.Void remove_avatarDestroyed(Normal.Realtime.RealtimeAvatarManager/Normal.Realtime.AvatarCreatedDestroyed value)
     // Offset: 0xBDD320
     void remove_avatarDestroyed(::Normal::Realtime::RealtimeAvatarManager::AvatarCreatedDestroyed* value);
+    // public System.Void .ctor()
+    // Offset: 0x1DDE30
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static RealtimeAvatarManager* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::RealtimeAvatarManager::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<RealtimeAvatarManager*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0xBDC440
     void Awake();
@@ -177,19 +184,6 @@ namespace Normal::Realtime {
     // public System.Void DestroyAvatarIfNeeded()
     // Offset: 0xBDCA50
     void DestroyAvatarIfNeeded();
-    // public System.Void .ctor()
-    // Offset: 0x1DDE30
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static RealtimeAvatarManager* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::RealtimeAvatarManager::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<RealtimeAvatarManager*, creationType>()));
-    }
   }; // Normal.Realtime.RealtimeAvatarManager
   #pragma pack(pop)
   static check_size<sizeof(RealtimeAvatarManager), 72 + sizeof(::Normal::Realtime::Realtime*)> __Normal_Realtime_RealtimeAvatarManagerSizeCheck;
@@ -283,6 +277,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Norma
     return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::RealtimeAvatarManager*), "remove_avatarDestroyed", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: Normal::Realtime::RealtimeAvatarManager::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Normal::Realtime::RealtimeAvatarManager::Awake
 // Il2CppName: Awake
 template<>
@@ -376,7 +374,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Norma
     return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::RealtimeAvatarManager*), "DestroyAvatarIfNeeded", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: Normal::Realtime::RealtimeAvatarManager::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -69,7 +69,7 @@ namespace Normal::Realtime::Serialization {
       return buffer;
     }
     // Get instance field reference: private Normal.Realtime.Serialization.WriteBuffer _buffer
-    [[deprecated]] ::Normal::Realtime::Serialization::WriteBuffer*& dyn__buffer();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::Serialization::WriteBuffer*& dyn__buffer();
     // public System.Void .ctor(Normal.Realtime.Serialization.WriteBuffer buffer)
     // Offset: 0x2CC970
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -222,61 +222,61 @@ namespace UnityEngine::UIElements::StyleSheets {
     // Set static field: static public readonly UnityEngine.UIElements.StyleSheets.VisualElementStylesData none
     static void _set_none(::UnityEngine::UIElements::StyleSheets::VisualElementStylesData* value);
     // Get instance field reference: readonly System.Boolean isShared
-    [[deprecated]] bool& dyn_isShared();
+    [[deprecated("Use field access instead!")]] bool& dyn_isShared();
     // Get instance field reference: UnityEngine.UIElements.StyleLength width
-    [[deprecated]] ::UnityEngine::UIElements::StyleLength& dyn_width();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::StyleLength& dyn_width();
     // Get instance field reference: UnityEngine.UIElements.StyleLength height
-    [[deprecated]] ::UnityEngine::UIElements::StyleLength& dyn_height();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::StyleLength& dyn_height();
     // Get instance field reference: UnityEngine.UIElements.StyleLength maxWidth
-    [[deprecated]] ::UnityEngine::UIElements::StyleLength& dyn_maxWidth();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::StyleLength& dyn_maxWidth();
     // Get instance field reference: UnityEngine.UIElements.StyleLength maxHeight
-    [[deprecated]] ::UnityEngine::UIElements::StyleLength& dyn_maxHeight();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::StyleLength& dyn_maxHeight();
     // Get instance field reference: UnityEngine.UIElements.StyleLength minWidth
-    [[deprecated]] ::UnityEngine::UIElements::StyleLength& dyn_minWidth();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::StyleLength& dyn_minWidth();
     // Get instance field reference: UnityEngine.UIElements.StyleLength minHeight
-    [[deprecated]] ::UnityEngine::UIElements::StyleLength& dyn_minHeight();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::StyleLength& dyn_minHeight();
     // Get instance field reference: UnityEngine.UIElements.StyleLength flexBasis
-    [[deprecated]] ::UnityEngine::UIElements::StyleLength& dyn_flexBasis();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::StyleLength& dyn_flexBasis();
     // Get instance field reference: UnityEngine.UIElements.StyleFloat flexShrink
-    [[deprecated]] ::UnityEngine::UIElements::StyleFloat& dyn_flexShrink();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::StyleFloat& dyn_flexShrink();
     // Get instance field reference: UnityEngine.UIElements.StyleFloat flexGrow
-    [[deprecated]] ::UnityEngine::UIElements::StyleFloat& dyn_flexGrow();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::StyleFloat& dyn_flexGrow();
     // Get instance field reference: UnityEngine.UIElements.StyleInt overflow
-    [[deprecated]] ::UnityEngine::UIElements::StyleInt& dyn_overflow();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::StyleInt& dyn_overflow();
     // Get instance field reference: UnityEngine.UIElements.StyleLength left
-    [[deprecated]] ::UnityEngine::UIElements::StyleLength& dyn_left();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::StyleLength& dyn_left();
     // Get instance field reference: UnityEngine.UIElements.StyleLength top
-    [[deprecated]] ::UnityEngine::UIElements::StyleLength& dyn_top();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::StyleLength& dyn_top();
     // Get instance field reference: UnityEngine.UIElements.StyleLength right
-    [[deprecated]] ::UnityEngine::UIElements::StyleLength& dyn_right();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::StyleLength& dyn_right();
     // Get instance field reference: UnityEngine.UIElements.StyleLength bottom
-    [[deprecated]] ::UnityEngine::UIElements::StyleLength& dyn_bottom();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::StyleLength& dyn_bottom();
     // Get instance field reference: UnityEngine.UIElements.StyleInt alignSelf
-    [[deprecated]] ::UnityEngine::UIElements::StyleInt& dyn_alignSelf();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::StyleInt& dyn_alignSelf();
     // Get instance field reference: UnityEngine.UIElements.StyleColor color
-    [[deprecated]] ::UnityEngine::UIElements::StyleColor& dyn_color();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::StyleColor& dyn_color();
     // Get instance field reference: UnityEngine.UIElements.StyleColor unityBackgroundImageTintColor
-    [[deprecated]] ::UnityEngine::UIElements::StyleColor& dyn_unityBackgroundImageTintColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::StyleColor& dyn_unityBackgroundImageTintColor();
     // Get instance field reference: UnityEngine.UIElements.StyleInt alignItems
-    [[deprecated]] ::UnityEngine::UIElements::StyleInt& dyn_alignItems();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::StyleInt& dyn_alignItems();
     // Get instance field reference: UnityEngine.UIElements.StyleInt alignContent
-    [[deprecated]] ::UnityEngine::UIElements::StyleInt& dyn_alignContent();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::StyleInt& dyn_alignContent();
     // Get instance field reference: UnityEngine.UIElements.StyleColor borderLeftColor
-    [[deprecated]] ::UnityEngine::UIElements::StyleColor& dyn_borderLeftColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::StyleColor& dyn_borderLeftColor();
     // Get instance field reference: UnityEngine.UIElements.StyleColor borderTopColor
-    [[deprecated]] ::UnityEngine::UIElements::StyleColor& dyn_borderTopColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::StyleColor& dyn_borderTopColor();
     // Get instance field reference: UnityEngine.UIElements.StyleColor borderRightColor
-    [[deprecated]] ::UnityEngine::UIElements::StyleColor& dyn_borderRightColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::StyleColor& dyn_borderRightColor();
     // Get instance field reference: UnityEngine.UIElements.StyleColor borderBottomColor
-    [[deprecated]] ::UnityEngine::UIElements::StyleColor& dyn_borderBottomColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::StyleColor& dyn_borderBottomColor();
     // Get instance field reference: UnityEngine.UIElements.StyleFloat opacity
-    [[deprecated]] ::UnityEngine::UIElements::StyleFloat& dyn_opacity();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::StyleFloat& dyn_opacity();
     // Get instance field reference: UnityEngine.UIElements.StyleInt visibility
-    [[deprecated]] ::UnityEngine::UIElements::StyleInt& dyn_visibility();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::StyleInt& dyn_visibility();
     // Get instance field reference: UnityEngine.UIElements.StyleInt display
-    [[deprecated]] ::UnityEngine::UIElements::StyleInt& dyn_display();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::StyleInt& dyn_display();
     // Get instance field reference: System.Single dpiScaling
-    [[deprecated]] float& dyn_dpiScaling();
+    [[deprecated("Use field access instead!")]] float& dyn_dpiScaling();
     // public System.Void .ctor(System.Boolean isShared)
     // Offset: 0x2B1FA0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

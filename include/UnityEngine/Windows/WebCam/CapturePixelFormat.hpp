@@ -67,7 +67,7 @@ namespace UnityEngine::Windows::WebCam {
     // Set static field: static public UnityEngine.Windows.WebCam.CapturePixelFormat PNG
     static void _set_PNG(::UnityEngine::Windows::WebCam::CapturePixelFormat value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // UnityEngine.Windows.WebCam.CapturePixelFormat
   #pragma pack(pop)
   static check_size<sizeof(CapturePixelFormat), 0 + sizeof(int)> __UnityEngine_Windows_WebCam_CapturePixelFormatSizeCheck;

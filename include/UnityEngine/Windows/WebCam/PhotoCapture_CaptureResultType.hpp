@@ -51,7 +51,7 @@ namespace UnityEngine::Windows::WebCam {
     // Set static field: static public UnityEngine.Windows.WebCam.PhotoCapture/UnityEngine.Windows.WebCam.CaptureResultType UnknownError
     static void _set_UnknownError(::UnityEngine::Windows::WebCam::PhotoCapture::CaptureResultType value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // UnityEngine.Windows.WebCam.PhotoCapture/UnityEngine.Windows.WebCam.CaptureResultType
   #pragma pack(pop)
   static check_size<sizeof(PhotoCapture::CaptureResultType), 0 + sizeof(int)> __UnityEngine_Windows_WebCam_PhotoCapture_CaptureResultTypeSizeCheck;

@@ -73,11 +73,11 @@ namespace GlobalNamespace {
     static_assert(sizeof(::UnityEngine::AnimationCurve*) == 0x8);
     public:
     // Get instance field reference: public System.Single TransitionDuration
-    [[deprecated]] float& dyn_TransitionDuration();
+    [[deprecated("Use field access instead!")]] float& dyn_TransitionDuration();
     // Get instance field reference: public System.Single TeleportDelay
-    [[deprecated]] float& dyn_TeleportDelay();
+    [[deprecated("Use field access instead!")]] float& dyn_TeleportDelay();
     // Get instance field reference: public UnityEngine.AnimationCurve FadeLevels
-    [[deprecated]] ::UnityEngine::AnimationCurve*& dyn_FadeLevels();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AnimationCurve*& dyn_FadeLevels();
     // protected System.Collections.IEnumerator BlinkCoroutine()
     // Offset: 0x619D00
     ::System::Collections::IEnumerator* BlinkCoroutine();
@@ -86,11 +86,6 @@ namespace GlobalNamespace {
     // Implemented from: TeleportTransition
     // Base method: System.Void TeleportTransition::.ctor()
     // Base method: System.Void TeleportSupport::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TeleportTransitionBlink* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::TeleportTransitionBlink::.ctor");

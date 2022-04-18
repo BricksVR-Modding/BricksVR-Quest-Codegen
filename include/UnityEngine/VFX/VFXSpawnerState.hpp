@@ -52,9 +52,9 @@ namespace UnityEngine::VFX {
       return *reinterpret_cast<::System::IDisposable*>(this);
     }
     // Get instance field reference: private System.IntPtr m_Ptr
-    [[deprecated]] ::System::IntPtr& dyn_m_Ptr();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_m_Ptr();
     // Get instance field reference: private System.Boolean m_Owner
-    [[deprecated]] bool& dyn_m_Owner();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_Owner();
     // System.Void .ctor(System.IntPtr ptr, System.Boolean owner)
     // Offset: 0x670D90
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

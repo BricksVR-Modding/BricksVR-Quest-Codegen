@@ -18,14 +18,6 @@ namespace UnityEngine::UI {
   // Forward declaring type: Slider
   class Slider;
 }
-// Forward declaring namespace: UnityEngine::EventSystems
-namespace UnityEngine::EventSystems {
-  // Skipping declaration: UIBehaviour because it is already included!
-}
-// Forward declaring namespace: AdvancedColorPicker
-namespace AdvancedColorPicker {
-  // Skipping declaration: ColorComponent because it is already included!
-}
 // Completed forward declares
 // Type namespace: AdvancedColorPicker
 namespace AdvancedColorPicker {
@@ -62,9 +54,9 @@ namespace AdvancedColorPicker {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private UnityEngine.UI.Slider slider
-    [[deprecated]] ::UnityEngine::UI::Slider*& dyn_slider();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Slider*& dyn_slider();
     // Get instance field reference: private System.Boolean dontListenToSlider
-    [[deprecated]] bool& dyn_dontListenToSlider();
+    [[deprecated("Use field access instead!")]] bool& dyn_dontListenToSlider();
     // private System.Void SliderChanged(System.Single newValue)
     // Offset: 0x5AD200
     void SliderChanged(float newValue);
@@ -73,12 +65,6 @@ namespace AdvancedColorPicker {
     // Implemented from: AdvancedColorPicker.ColorTypeComponent
     // Base method: System.Void ColorTypeComponent::.ctor()
     // Base method: System.Void ColorComponent::.ctor()
-    // Base method: System.Void UIBehaviour::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ColorSlider* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::AdvancedColorPicker::ColorSlider::.ctor");

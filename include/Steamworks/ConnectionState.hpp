@@ -96,7 +96,7 @@ namespace Steamworks {
     // Set static field: static public Steamworks.ConnectionState Dead
     static void _set_Dead(::Steamworks::ConnectionState value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // Steamworks.ConnectionState
   #pragma pack(pop)
   static check_size<sizeof(ConnectionState), 0 + sizeof(int)> __Steamworks_ConnectionStateSizeCheck;

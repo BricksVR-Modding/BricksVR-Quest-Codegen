@@ -95,7 +95,7 @@ namespace GlobalNamespace {
       // Set static field: static public OnlyOneEdgeModifier/ProceduralImageEdge Right
       static void _set_Right(::GlobalNamespace::OnlyOneEdgeModifier::ProceduralImageEdge value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // OnlyOneEdgeModifier/ProceduralImageEdge
     #pragma pack(pop)
     static check_size<sizeof(OnlyOneEdgeModifier::ProceduralImageEdge), 0 + sizeof(int)> __GlobalNamespace_OnlyOneEdgeModifier_ProceduralImageEdgeSizeCheck;
@@ -115,9 +115,9 @@ namespace GlobalNamespace {
     static_assert(sizeof(::GlobalNamespace::OnlyOneEdgeModifier::ProceduralImageEdge) == 0x4);
     public:
     // Get instance field reference: private System.Single radius
-    [[deprecated]] float& dyn_radius();
+    [[deprecated("Use field access instead!")]] float& dyn_radius();
     // Get instance field reference: private OnlyOneEdgeModifier/ProceduralImageEdge side
-    [[deprecated]] ::GlobalNamespace::OnlyOneEdgeModifier::ProceduralImageEdge& dyn_side();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OnlyOneEdgeModifier::ProceduralImageEdge& dyn_side();
     // public System.Single get_Radius()
     // Offset: 0x30C5C0
     float get_Radius();
@@ -134,11 +134,6 @@ namespace GlobalNamespace {
     // Offset: 0x4D3750
     // Implemented from: UnityEngine.UI.ProceduralImage.ProceduralImageModifier
     // Base method: System.Void ProceduralImageModifier::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OnlyOneEdgeModifier* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OnlyOneEdgeModifier::.ctor");

@@ -74,13 +74,13 @@ namespace Steamworks::Data {
     // Set static field: static public System.Int32 _datasize
     static void _set__datasize(int value);
     // Get instance field reference: System.UInt64 SteamIDLobby
-    [[deprecated]] uint64_t& dyn_SteamIDLobby();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_SteamIDLobby();
     // Get instance field reference: System.UInt64 SteamIDGameServer
-    [[deprecated]] uint64_t& dyn_SteamIDGameServer();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_SteamIDGameServer();
     // Get instance field reference: System.UInt32 IP
-    [[deprecated]] uint& dyn_IP();
+    [[deprecated("Use field access instead!")]] uint& dyn_IP();
     // Get instance field reference: System.UInt16 Port
-    [[deprecated]] uint16_t& dyn_Port();
+    [[deprecated("Use field access instead!")]] uint16_t& dyn_Port();
     // public Steamworks.CallbackType get_CallbackType()
     // Offset: 0x462FE0
     ::Steamworks::CallbackType get_CallbackType();

@@ -127,7 +127,7 @@ namespace Normal::Realtime {
       // Set static field: static public Normal.Realtime.RealtimeTransformModel/Normal.Realtime.PhysicsState MaintainOwnershipWhileSleeping
       static void _set_MaintainOwnershipWhileSleeping(::Normal::Realtime::RealtimeTransformModel::PhysicsState value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // Normal.Realtime.RealtimeTransformModel/Normal.Realtime.PhysicsState
     #pragma pack(pop)
     static check_size<sizeof(RealtimeTransformModel::PhysicsState), 0 + sizeof(int)> __Normal_Realtime_RealtimeTransformModel_PhysicsStateSizeCheck;
@@ -295,45 +295,45 @@ namespace Normal::Realtime {
     // Set static field: static private System.Single EPSILON_ANGULAR_VELOCITY
     static void _set_EPSILON_ANGULAR_VELOCITY(float value);
     // Get instance field reference: private UnityEngine.Vector3 _position
-    [[deprecated]] ::UnityEngine::Vector3& dyn__position();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__position();
     // Get instance field reference: private UnityEngine.Quaternion _rotation
-    [[deprecated]] ::UnityEngine::Quaternion& dyn__rotation();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Quaternion& dyn__rotation();
     // Get instance field reference: private UnityEngine.Vector3 _scale
-    [[deprecated]] ::UnityEngine::Vector3& dyn__scale();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__scale();
     // Get instance field reference: private UnityEngine.Vector3 _velocity
-    [[deprecated]] ::UnityEngine::Vector3& dyn__velocity();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__velocity();
     // Get instance field reference: private UnityEngine.Vector3 _angularVelocity
-    [[deprecated]] ::UnityEngine::Vector3& dyn__angularVelocity();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__angularVelocity();
     // Get instance field reference: private Normal.Realtime.RealtimeTransformModel/Normal.Realtime.PhysicsState _physicsState
-    [[deprecated]] ::Normal::Realtime::RealtimeTransformModel::PhysicsState& dyn__physicsState();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::RealtimeTransformModel::PhysicsState& dyn__physicsState();
     // Get instance field reference: private System.Single _physicsBodyTimeOffset
-    [[deprecated]] float& dyn__physicsBodyTimeOffset();
+    [[deprecated("Use field access instead!")]] float& dyn__physicsBodyTimeOffset();
     // Get instance field reference: private System.Single _physicsStateTimeOffset
-    [[deprecated]] float& dyn__physicsStateTimeOffset();
+    [[deprecated("Use field access instead!")]] float& dyn__physicsStateTimeOffset();
     // Get instance field reference: private Normal.Realtime.RealtimeTransformModel/Normal.Realtime.TransformWriteHandler onWillWrite
-    [[deprecated]] ::Normal::Realtime::RealtimeTransformModel::TransformWriteHandler*& dyn_onWillWrite();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::RealtimeTransformModel::TransformWriteHandler*& dyn_onWillWrite();
     // Get instance field reference: private Normal.Realtime.RealtimeTransformModel/Normal.Realtime.TransformReadHandler onDidRead
-    [[deprecated]] ::Normal::Realtime::RealtimeTransformModel::TransformReadHandler*& dyn_onDidRead();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::RealtimeTransformModel::TransformReadHandler*& dyn_onDidRead();
     // Get instance field reference: private System.Double <timestamp>k__BackingField
-    [[deprecated]] double& dyn_$timestamp$k__BackingField();
+    [[deprecated("Use field access instead!")]] double& dyn_$timestamp$k__BackingField();
     // Get instance field reference: private Normal.Realtime.UnreliableProperty`1<UnityEngine.Vector3> _positionProperty
-    [[deprecated]] ::Normal::Realtime::UnreliableProperty_1<::UnityEngine::Vector3>*& dyn__positionProperty();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::UnreliableProperty_1<::UnityEngine::Vector3>*& dyn__positionProperty();
     // Get instance field reference: private Normal.Realtime.UnreliableProperty`1<UnityEngine.Quaternion> _rotationProperty
-    [[deprecated]] ::Normal::Realtime::UnreliableProperty_1<::UnityEngine::Quaternion>*& dyn__rotationProperty();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::UnreliableProperty_1<::UnityEngine::Quaternion>*& dyn__rotationProperty();
     // Get instance field reference: private Normal.Realtime.UnreliableProperty`1<UnityEngine.Vector3> _scaleProperty
-    [[deprecated]] ::Normal::Realtime::UnreliableProperty_1<::UnityEngine::Vector3>*& dyn__scaleProperty();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::UnreliableProperty_1<::UnityEngine::Vector3>*& dyn__scaleProperty();
     // Get instance field reference: private Normal.Realtime.UnreliableProperty`1<UnityEngine.Vector3> _velocityProperty
-    [[deprecated]] ::Normal::Realtime::UnreliableProperty_1<::UnityEngine::Vector3>*& dyn__velocityProperty();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::UnreliableProperty_1<::UnityEngine::Vector3>*& dyn__velocityProperty();
     // Get instance field reference: private Normal.Realtime.UnreliableProperty`1<UnityEngine.Vector3> _angularVelocityProperty
-    [[deprecated]] ::Normal::Realtime::UnreliableProperty_1<::UnityEngine::Vector3>*& dyn__angularVelocityProperty();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::UnreliableProperty_1<::UnityEngine::Vector3>*& dyn__angularVelocityProperty();
     // Get instance field reference: private Normal.Realtime.ReliableProperty`1<System.UInt32> _physicsStateProperty
-    [[deprecated]] ::Normal::Realtime::ReliableProperty_1<uint>*& dyn__physicsStateProperty();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::ReliableProperty_1<uint>*& dyn__physicsStateProperty();
     // Get instance field reference: private Normal.Realtime.UnreliableProperty`1<System.Single> _physicsBodyTimeOffsetProperty
-    [[deprecated]] ::Normal::Realtime::UnreliableProperty_1<float>*& dyn__physicsBodyTimeOffsetProperty();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::UnreliableProperty_1<float>*& dyn__physicsBodyTimeOffsetProperty();
     // Get instance field reference: private Normal.Realtime.ReliableProperty`1<System.Single> _physicsStateTimeOffsetProperty
-    [[deprecated]] ::Normal::Realtime::ReliableProperty_1<float>*& dyn__physicsStateTimeOffsetProperty();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::ReliableProperty_1<float>*& dyn__physicsStateTimeOffsetProperty();
     // Get instance field reference: private readonly Normal.Realtime.RealtimeTransformModel/Normal.Realtime.PropertyChangeSet _propertyChangeSet
-    [[deprecated]] ::Normal::Realtime::RealtimeTransformModel::PropertyChangeSet*& dyn__propertyChangeSet();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::RealtimeTransformModel::PropertyChangeSet*& dyn__propertyChangeSet();
     // public System.Boolean get_useGravity()
     // Offset: 0x8C4940
     bool get_useGravity();
@@ -433,6 +433,13 @@ namespace Normal::Realtime {
     // public System.Void remove_onDidRead(Normal.Realtime.RealtimeTransformModel/Normal.Realtime.TransformReadHandler value)
     // Offset: 0x8C49F0
     void remove_onDidRead(::Normal::Realtime::RealtimeTransformModel::TransformReadHandler* value);
+    // public System.Void .ctor()
+    // Offset: 0x8C3F80
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static RealtimeTransformModel* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::RealtimeTransformModel::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<RealtimeTransformModel*, creationType>()));
+    }
     // static private System.Boolean IsVectorNaN(UnityEngine.Vector3 v)
     // Offset: 0x8C25C0
     static bool IsVectorNaN(::UnityEngine::Vector3 v);
@@ -478,15 +485,6 @@ namespace Normal::Realtime {
     // private System.Void UpdateBackingFields()
     // Offset: 0x8C3860
     void UpdateBackingFields();
-    // public System.Void .ctor()
-    // Offset: 0x8C3F80
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static RealtimeTransformModel* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::RealtimeTransformModel::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<RealtimeTransformModel*, creationType>()));
-    }
     // protected override System.Void OnParentReplaced(Normal.Realtime.RealtimeModel previousParent, Normal.Realtime.RealtimeModel currentParent)
     // Offset: 0x8C2660
     // Implemented from: Normal.Realtime.RealtimeModel
@@ -796,6 +794,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Norma
     return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::RealtimeTransformModel*), "remove_onDidRead", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: Normal::Realtime::RealtimeTransformModel::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Normal::Realtime::RealtimeTransformModel::IsVectorNaN
 // Il2CppName: IsVectorNaN
 template<>
@@ -933,10 +935,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Norma
     return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::RealtimeTransformModel*), "UpdateBackingFields", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: Normal::Realtime::RealtimeTransformModel::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: Normal::Realtime::RealtimeTransformModel::OnParentReplaced
 // Il2CppName: OnParentReplaced
 template<>

@@ -43,9 +43,9 @@ namespace Normal::Realtime {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private readonly System.Boolean[] _changeset
-    [[deprecated]] ::ArrayW<bool>& dyn__changeset();
+    [[deprecated("Use field access instead!")]] ::ArrayW<bool>& dyn__changeset();
     // Get instance field reference: private System.Boolean <anyPropertiesChanged>k__BackingField
-    [[deprecated]] bool& dyn_$anyPropertiesChanged$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$anyPropertiesChanged$k__BackingField();
     // public System.Boolean get_anyPropertiesChanged()
     // Offset: 0x2512D0
     bool get_anyPropertiesChanged();

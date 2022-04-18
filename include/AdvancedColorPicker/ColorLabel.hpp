@@ -19,14 +19,6 @@ namespace UnityEngine::UI {
   // Forward declaring type: Text
   class Text;
 }
-// Forward declaring namespace: UnityEngine::EventSystems
-namespace UnityEngine::EventSystems {
-  // Skipping declaration: UIBehaviour because it is already included!
-}
-// Forward declaring namespace: AdvancedColorPicker
-namespace AdvancedColorPicker {
-  // Skipping declaration: ColorComponent because it is already included!
-}
 // Completed forward declares
 // Type namespace: AdvancedColorPicker
 namespace AdvancedColorPicker {
@@ -74,13 +66,13 @@ namespace AdvancedColorPicker {
     static_assert(sizeof(::UnityEngine::UI::Text*) == 0x8);
     public:
     // Get instance field reference: private System.Single minValue
-    [[deprecated]] float& dyn_minValue();
+    [[deprecated("Use field access instead!")]] float& dyn_minValue();
     // Get instance field reference: private System.Single maxValue
-    [[deprecated]] float& dyn_maxValue();
+    [[deprecated("Use field access instead!")]] float& dyn_maxValue();
     // Get instance field reference: private System.String formatter
-    [[deprecated]] ::StringW& dyn_formatter();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_formatter();
     // Get instance field reference: private UnityEngine.UI.Text label
-    [[deprecated]] ::UnityEngine::UI::Text*& dyn_label();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Text*& dyn_label();
     // public System.Single get_MinValue()
     // Offset: 0x4CC750
     float get_MinValue();
@@ -99,28 +91,19 @@ namespace AdvancedColorPicker {
     // public System.Void set_Formatter(System.String value)
     // Offset: 0x65BD30
     void set_Formatter(::StringW value);
+    // public System.Void .ctor()
+    // Offset: 0x65BCE0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ColorLabel* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::AdvancedColorPicker::ColorLabel::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ColorLabel*, creationType>()));
+    }
     // private System.String ConvertToDisplayString(System.Single value)
     // Offset: 0x630C90
     ::StringW ConvertToDisplayString(float value);
     // public System.Void SetDefaultValuesForType()
     // Offset: 0x65BAE0
     void SetDefaultValuesForType();
-    // public System.Void .ctor()
-    // Offset: 0x65BCE0
-    // Implemented from: AdvancedColorPicker.ColorTypeComponent
-    // Base method: System.Void ColorTypeComponent::.ctor()
-    // Base method: System.Void ColorComponent::.ctor()
-    // Base method: System.Void UIBehaviour::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ColorLabel* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::AdvancedColorPicker::ColorLabel::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ColorLabel*, creationType>()));
-    }
     // protected override System.Void Awake()
     // Offset: 0x65B980
     // Implemented from: UnityEngine.EventSystems.UIBehaviour
@@ -188,6 +171,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Advan
     return ::il2cpp_utils::FindMethod(classof(AdvancedColorPicker::ColorLabel*), "set_Formatter", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: AdvancedColorPicker::ColorLabel::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: AdvancedColorPicker::ColorLabel::ConvertToDisplayString
 // Il2CppName: ConvertToDisplayString
 template<>
@@ -205,10 +192,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Advan
     return ::il2cpp_utils::FindMethod(classof(AdvancedColorPicker::ColorLabel*), "SetDefaultValuesForType", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: AdvancedColorPicker::ColorLabel::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: AdvancedColorPicker::ColorLabel::Awake
 // Il2CppName: Awake
 template<>

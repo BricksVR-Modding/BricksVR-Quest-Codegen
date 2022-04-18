@@ -54,13 +54,13 @@ namespace Microsoft::Win32 {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Int32 NextOffset
-    [[deprecated]] int& dyn_NextOffset();
+    [[deprecated("Use field access instead!")]] int& dyn_NextOffset();
     // Get instance field reference: public System.Int32 EnableCount
-    [[deprecated]] int& dyn_EnableCount();
+    [[deprecated("Use field access instead!")]] int& dyn_EnableCount();
     // Get instance field reference: public System.Int32 Pid
-    [[deprecated]] int& dyn_Pid();
+    [[deprecated("Use field access instead!")]] int& dyn_Pid();
     // Get instance field reference: public System.Int32 Flags
-    [[deprecated]] int& dyn_Flags();
+    [[deprecated("Use field access instead!")]] int& dyn_Flags();
   }; // Microsoft.Win32.UnsafeNativeMethods/Microsoft.Win32.ManifestEtw/Microsoft.Win32.TRACE_PROVIDER_INSTANCE_INFO
   #pragma pack(pop)
   static check_size<sizeof(UnsafeNativeMethods_ManifestEtw::TRACE_PROVIDER_INSTANCE_INFO), 12 + sizeof(int)> __Microsoft_Win32_UnsafeNativeMethods_ManifestEtw_TRACE_PROVIDER_INSTANCE_INFOSizeCheck;

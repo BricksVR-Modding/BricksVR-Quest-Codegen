@@ -74,15 +74,15 @@ namespace UnityEngine {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private System.Int32 m_MeshInstanceID
-    [[deprecated]] int& dyn_m_MeshInstanceID();
+    [[deprecated("Use field access instead!")]] int& dyn_m_MeshInstanceID();
     // Get instance field reference: private System.Int32 m_SubMeshIndex
-    [[deprecated]] int& dyn_m_SubMeshIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_m_SubMeshIndex();
     // Get instance field reference: private UnityEngine.Matrix4x4 m_Transform
-    [[deprecated]] ::UnityEngine::Matrix4x4& dyn_m_Transform();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Matrix4x4& dyn_m_Transform();
     // Get instance field reference: private UnityEngine.Vector4 m_LightmapScaleOffset
-    [[deprecated]] ::UnityEngine::Vector4& dyn_m_LightmapScaleOffset();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector4& dyn_m_LightmapScaleOffset();
     // Get instance field reference: private UnityEngine.Vector4 m_RealtimeLightmapScaleOffset
-    [[deprecated]] ::UnityEngine::Vector4& dyn_m_RealtimeLightmapScaleOffset();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector4& dyn_m_RealtimeLightmapScaleOffset();
     // public System.Void set_mesh(UnityEngine.Mesh value)
     // Offset: 0x9878F0
     void set_mesh(::UnityEngine::Mesh* value);

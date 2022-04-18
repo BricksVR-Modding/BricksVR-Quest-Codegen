@@ -47,8 +47,6 @@ namespace Oculus::Platform {
     static void set_OculusPlatformTestUserAccessToken(::StringW value);
     // public System.Void .ctor()
     // Offset: 0x1DD400
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static StandalonePlatformSettings* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Oculus::Platform::StandalonePlatformSettings::.ctor");

@@ -65,33 +65,31 @@ namespace GlobalNamespace {
     static_assert(sizeof(::System::Collections::Generic::List_1<::UnityEngine::Vector3>*) == 0x8);
     public:
     // Get instance field reference: public UnityEngine.RaycastHit TargetHitInfo
-    [[deprecated]] ::UnityEngine::RaycastHit& dyn_TargetHitInfo();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RaycastHit& dyn_TargetHitInfo();
     // Get instance field reference: public System.Boolean TargetValid
-    [[deprecated]] bool& dyn_TargetValid();
+    [[deprecated("Use field access instead!")]] bool& dyn_TargetValid();
     // Get instance field reference: public System.Nullable`1<UnityEngine.Vector3> Destination
-    [[deprecated]] ::System::Nullable_1<::UnityEngine::Vector3>& dyn_Destination();
+    [[deprecated("Use field access instead!")]] ::System::Nullable_1<::UnityEngine::Vector3>& dyn_Destination();
     // Get instance field reference: public System.Single Radius
-    [[deprecated]] float& dyn_Radius();
+    [[deprecated("Use field access instead!")]] float& dyn_Radius();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.Vector3> <Points>k__BackingField
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::Vector3>*& dyn_$Points$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::Vector3>*& dyn_$Points$k__BackingField();
     // public System.Collections.Generic.List`1<UnityEngine.Vector3> get_Points()
     // Offset: 0x2321F0
     ::System::Collections::Generic::List_1<::UnityEngine::Vector3>* get_Points();
     // private System.Void set_Points(System.Collections.Generic.List`1<UnityEngine.Vector3> value)
     // Offset: 0x2322E0
     void set_Points(::System::Collections::Generic::List_1<::UnityEngine::Vector3>* value);
-    // public System.Void Reset()
-    // Offset: 0x2822D0
-    void Reset();
     // public System.Void .ctor()
     // Offset: 0x282320
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static LocomotionTeleport::AimData* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::LocomotionTeleport::AimData::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<LocomotionTeleport::AimData*, creationType>()));
     }
+    // public System.Void Reset()
+    // Offset: 0x2822D0
+    void Reset();
   }; // LocomotionTeleport/AimData
   // WARNING Not writing size check since size may be invalid!
 }
@@ -113,6 +111,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::LocomotionTeleport::AimData*), "set_Points", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: GlobalNamespace::LocomotionTeleport::AimData::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::LocomotionTeleport::AimData::Reset
 // Il2CppName: Reset
 template<>
@@ -121,7 +123,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::LocomotionTeleport::AimData*), "Reset", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::LocomotionTeleport::AimData::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

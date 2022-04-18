@@ -48,7 +48,7 @@ namespace Normal::Realtime::Native {
       return nativeAudioInputStream;
     }
     // Get instance field reference: private System.IntPtr _nativeAudioInputStream
-    [[deprecated]] ::System::IntPtr& dyn__nativeAudioInputStream();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn__nativeAudioInputStream();
     // public System.Void .ctor(System.IntPtr nativeAudioInputStream)
     // Offset: 0x8B3290
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -84,17 +84,17 @@ namespace System::Diagnostics::Tracing {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: System.Diagnostics.Tracing.EventKeywords keywords
-    [[deprecated]] ::System::Diagnostics::Tracing::EventKeywords& dyn_keywords();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::EventKeywords& dyn_keywords();
     // Get instance field reference: System.Diagnostics.Tracing.EventTags tags
-    [[deprecated]] ::System::Diagnostics::Tracing::EventTags& dyn_tags();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::EventTags& dyn_tags();
     // Get instance field reference: System.Diagnostics.Tracing.EventActivityOptions activityOptions
-    [[deprecated]] ::System::Diagnostics::Tracing::EventActivityOptions& dyn_activityOptions();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::EventActivityOptions& dyn_activityOptions();
     // Get instance field reference: System.Byte level
-    [[deprecated]] uint8_t& dyn_level();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn_level();
     // Get instance field reference: System.Byte opcode
-    [[deprecated]] uint8_t& dyn_opcode();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn_opcode();
     // Get instance field reference: System.Byte valuesSet
-    [[deprecated]] uint8_t& dyn_valuesSet();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn_valuesSet();
     // public System.Void set_Level(System.Diagnostics.Tracing.EventLevel value)
     // Offset: 0x2E5D70
     void set_Level(::System::Diagnostics::Tracing::EventLevel value);

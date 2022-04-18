@@ -113,23 +113,33 @@ namespace GlobalNamespace {
     // Set static field: static private readonly UnityEngine.Vector3 ScaleToStartAt
     static void _set_ScaleToStartAt(::UnityEngine::Vector3 value);
     // Get instance field reference: private UnityEngine.Vector3 _initialScale
-    [[deprecated]] ::UnityEngine::Vector3& dyn__initialScale();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__initialScale();
     // Get instance field reference: private UnityEngine.Transform _t
-    [[deprecated]] ::UnityEngine::Transform*& dyn__t();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__t();
     // Get instance field reference: private System.Single _timeStartedFading
-    [[deprecated]] float& dyn__timeStartedFading();
+    [[deprecated("Use field access instead!")]] float& dyn__timeStartedFading();
     // Get instance field reference: public UnityEngine.GameObject objectToScale
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_objectToScale();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_objectToScale();
     // Get instance field reference: public SliderGrabbable hueGrabber
-    [[deprecated]] ::GlobalNamespace::SliderGrabbable*& dyn_hueGrabber();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::SliderGrabbable*& dyn_hueGrabber();
     // Get instance field reference: public SliderGrabbable satGrabber
-    [[deprecated]] ::GlobalNamespace::SliderGrabbable*& dyn_satGrabber();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::SliderGrabbable*& dyn_satGrabber();
     // Get instance field reference: public SliderGrabbable valueGrabber
-    [[deprecated]] ::GlobalNamespace::SliderGrabbable*& dyn_valueGrabber();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::SliderGrabbable*& dyn_valueGrabber();
     // Get instance field reference: private System.Boolean _fadeBackwards
-    [[deprecated]] bool& dyn__fadeBackwards();
+    [[deprecated("Use field access instead!")]] bool& dyn__fadeBackwards();
     // Get instance field reference: private System.Boolean _initialized
-    [[deprecated]] bool& dyn__initialized();
+    [[deprecated("Use field access instead!")]] bool& dyn__initialized();
+    // public System.Void .ctor()
+    // Offset: 0x1DDE30
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static FadeBrickMenu* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::FadeBrickMenu::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<FadeBrickMenu*, creationType>()));
+    }
+    // static private System.Void .cctor()
+    // Offset: 0x6B4CC0
+    static void _cctor();
     // private System.Void Initialize()
     // Offset: 0x6B4870
     void Initialize();
@@ -151,30 +161,24 @@ namespace GlobalNamespace {
     // private System.Void FixSliderPositions()
     // Offset: 0x6B4820
     void FixSliderPositions();
-    // public System.Void .ctor()
-    // Offset: 0x1DDE30
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static FadeBrickMenu* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::FadeBrickMenu::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<FadeBrickMenu*, creationType>()));
-    }
-    // static private System.Void .cctor()
-    // Offset: 0x6B4CC0
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.cctor()
-    static void _cctor();
   }; // FadeBrickMenu
   #pragma pack(pop)
   static check_size<sizeof(FadeBrickMenu), 89 + sizeof(bool)> __GlobalNamespace_FadeBrickMenuSizeCheck;
   static_assert(sizeof(FadeBrickMenu) == 0x5A);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::FadeBrickMenu::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
+// Writing MetadataGetter for method: GlobalNamespace::FadeBrickMenu::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&GlobalNamespace::FadeBrickMenu::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::FadeBrickMenu*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
 // Writing MetadataGetter for method: GlobalNamespace::FadeBrickMenu::Initialize
 // Il2CppName: Initialize
 template<>
@@ -229,17 +233,5 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (GlobalNamespace::FadeBrickMenu::*)()>(&GlobalNamespace::FadeBrickMenu::FixSliderPositions)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::FadeBrickMenu*), "FixSliderPositions", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
-  }
-};
-// Writing MetadataGetter for method: GlobalNamespace::FadeBrickMenu::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
-// Writing MetadataGetter for method: GlobalNamespace::FadeBrickMenu::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&GlobalNamespace::FadeBrickMenu::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::FadeBrickMenu*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };

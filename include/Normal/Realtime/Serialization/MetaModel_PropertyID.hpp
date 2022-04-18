@@ -63,7 +63,7 @@ namespace Normal::Realtime::Serialization {
     // Set static field: static public Normal.Realtime.Serialization.MetaModel/Normal.Realtime.Serialization.PropertyID ModelExtension
     static void _set_ModelExtension(::Normal::Realtime::Serialization::MetaModel::PropertyID value);
     // Get instance field reference: public System.UInt32 value__
-    [[deprecated]] uint& dyn_value__();
+    [[deprecated("Use field access instead!")]] uint& dyn_value__();
   }; // Normal.Realtime.Serialization.MetaModel/Normal.Realtime.Serialization.PropertyID
   #pragma pack(pop)
   static check_size<sizeof(MetaModel::PropertyID), 0 + sizeof(uint)> __Normal_Realtime_Serialization_MetaModel_PropertyIDSizeCheck;

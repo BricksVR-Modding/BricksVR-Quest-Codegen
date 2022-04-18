@@ -42,13 +42,11 @@ namespace GlobalNamespace {
     static_assert(sizeof(::StringW) == 0x8);
     public:
     // Get instance field reference: public NormcoreRPC/Brick[] bricks
-    [[deprecated]] ::ArrayW<::GlobalNamespace::NormcoreRPC::Brick*>& dyn_bricks();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::GlobalNamespace::NormcoreRPC::Brick*>& dyn_bricks();
     // Get instance field reference: public System.String ownerShortIdPrefix
-    [[deprecated]] ::StringW& dyn_ownerShortIdPrefix();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_ownerShortIdPrefix();
     // public System.Void .ctor()
     // Offset: 0x1DD400
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static DownloadBricksOnLoad::FetchAllBricksResponse* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::DownloadBricksOnLoad::FetchAllBricksResponse::.ctor");

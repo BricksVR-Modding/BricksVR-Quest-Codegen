@@ -60,7 +60,7 @@ namespace Steamworks {
     // Set static field: static public Steamworks.SteamItemFlags Consumed
     static void _set_Consumed(::Steamworks::SteamItemFlags value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // Steamworks.SteamItemFlags
   #pragma pack(pop)
   static check_size<sizeof(SteamItemFlags), 0 + sizeof(int)> __Steamworks_SteamItemFlagsSizeCheck;

@@ -38,6 +38,13 @@ namespace Normal::Realtime::Serialization {
   // [TokenAttribute] Offset: FFFFFFFF
   class SerializationException : public ::System::IO::IOException {
     public:
+    // public System.Void .ctor(System.String message)
+    // Offset: 0x89C360
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static SerializationException* New_ctor(::StringW message) {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::Serialization::SerializationException::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<SerializationException*, creationType>(message)));
+    }
     // static public Normal.Realtime.Serialization.SerializationException WriteStreamWriteInvalidPropertyID(System.UInt32 propertyID)
     // Offset: 0x89C0D0
     static ::Normal::Realtime::Serialization::SerializationException* WriteStreamWriteInvalidPropertyID(uint propertyID);
@@ -80,21 +87,14 @@ namespace Normal::Realtime::Serialization {
     // static public Normal.Realtime.Serialization.SerializationException MetaModelSuppliedMismatchedModelType(System.UInt32 serverModelType, System.UInt32 localModelType)
     // Offset: 0x89AF80
     static ::Normal::Realtime::Serialization::SerializationException* MetaModelSuppliedMismatchedModelType(uint serverModelType, uint localModelType);
-    // public System.Void .ctor(System.String message)
-    // Offset: 0x89C360
-    // Implemented from: System.IO.IOException
-    // Base method: System.Void IOException::.ctor(System.String message)
-    // Base method: System.Void SystemException::.ctor(System.String message)
-    // Base method: System.Void Exception::.ctor(System.String message)
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static SerializationException* New_ctor(::StringW message) {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::Serialization::SerializationException::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<SerializationException*, creationType>(message)));
-    }
   }; // Normal.Realtime.Serialization.SerializationException
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Normal::Realtime::Serialization::SerializationException::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Normal::Realtime::Serialization::SerializationException::WriteStreamWriteInvalidPropertyID
 // Il2CppName: WriteStreamWriteInvalidPropertyID
 template<>
@@ -226,7 +226,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Normal::R
     return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::Serialization::SerializationException*), "MetaModelSuppliedMismatchedModelType", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{serverModelType, localModelType});
   }
 };
-// Writing MetadataGetter for method: Normal::Realtime::Serialization::SerializationException::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

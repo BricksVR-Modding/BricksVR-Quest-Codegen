@@ -311,56 +311,63 @@ namespace OVRTouchSample {
     // Set static field: static private System.Single PointLockAnimationDuration
     static void _set_PointLockAnimationDuration(float value);
     // Get instance field reference: public UnityEngine.GameObject avatar
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_avatar();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_avatar();
     // Get instance field reference: private OVRInput/Controller mController
-    [[deprecated]] ::GlobalNamespace::OVRInput::Controller& dyn_mController();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRInput::Controller& dyn_mController();
     // Get instance field reference: private UnityEngine.Animator mAnimator
-    [[deprecated]] ::UnityEngine::Animator*& dyn_mAnimator();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Animator*& dyn_mAnimator();
     // Get instance field reference: private OVRTouchSample.HandPose mDefaultGrabPose
-    [[deprecated]] ::OVRTouchSample::HandPose*& dyn_mDefaultGrabPose();
+    [[deprecated("Use field access instead!")]] ::OVRTouchSample::HandPose*& dyn_mDefaultGrabPose();
     // Get instance field reference: private UnityEngine.Collider[] _mColliders
-    [[deprecated]] ::ArrayW<::UnityEngine::Collider*>& dyn__mColliders();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Collider*>& dyn__mColliders();
     // Get instance field reference: private System.Boolean _mCollisionEnabled
-    [[deprecated]] bool& dyn__mCollisionEnabled();
+    [[deprecated("Use field access instead!")]] bool& dyn__mCollisionEnabled();
     // Get instance field reference: public UnityEngine.XR.Interaction.Toolkit.XRDirectInteractor mGrabber
-    [[deprecated]] ::UnityEngine::XR::Interaction::Toolkit::XRDirectInteractor*& dyn_mGrabber();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::Interaction::Toolkit::XRDirectInteractor*& dyn_mGrabber();
     // Get instance field reference: private System.Boolean _isLocalHand
-    [[deprecated]] bool& dyn__isLocalHand();
+    [[deprecated("Use field access instead!")]] bool& dyn__isLocalHand();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.Renderer> _mShowAfterInputFocusAcquired
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::Renderer*>*& dyn__mShowAfterInputFocusAcquired();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::Renderer*>*& dyn__mShowAfterInputFocusAcquired();
     // Get instance field reference: private System.Int32 _mAnimLayerIndexThumb
-    [[deprecated]] int& dyn__mAnimLayerIndexThumb();
+    [[deprecated("Use field access instead!")]] int& dyn__mAnimLayerIndexThumb();
     // Get instance field reference: private System.Int32 _mAnimLayerIndexPoint
-    [[deprecated]] int& dyn__mAnimLayerIndexPoint();
+    [[deprecated("Use field access instead!")]] int& dyn__mAnimLayerIndexPoint();
     // Get instance field reference: private System.Int32 _mAnimParamIndexFlex
-    [[deprecated]] int& dyn__mAnimParamIndexFlex();
+    [[deprecated("Use field access instead!")]] int& dyn__mAnimParamIndexFlex();
     // Get instance field reference: private System.Int32 _mAnimParamIndexPose
-    [[deprecated]] int& dyn__mAnimParamIndexPose();
+    [[deprecated("Use field access instead!")]] int& dyn__mAnimParamIndexPose();
     // Get instance field reference: private System.Boolean _mIsPointing
-    [[deprecated]] bool& dyn__mIsPointing();
+    [[deprecated("Use field access instead!")]] bool& dyn__mIsPointing();
     // Get instance field reference: private System.Boolean _mIsGivingThumbsUp
-    [[deprecated]] bool& dyn__mIsGivingThumbsUp();
+    [[deprecated("Use field access instead!")]] bool& dyn__mIsGivingThumbsUp();
     // Get instance field reference: private System.Single _mPointBlend
-    [[deprecated]] float& dyn__mPointBlend();
+    [[deprecated("Use field access instead!")]] float& dyn__mPointBlend();
     // Get instance field reference: private System.Single _mThumbsUpBlend
-    [[deprecated]] float& dyn__mThumbsUpBlend();
+    [[deprecated("Use field access instead!")]] float& dyn__mThumbsUpBlend();
     // Get instance field reference: private System.Boolean _mPointLock
-    [[deprecated]] bool& dyn__mPointLock();
+    [[deprecated("Use field access instead!")]] bool& dyn__mPointLock();
     // Get instance field reference: private System.Single _mPointLockBegin
-    [[deprecated]] float& dyn__mPointLockBegin();
+    [[deprecated("Use field access instead!")]] float& dyn__mPointLockBegin();
     // Get instance field reference: private System.Boolean _mRestoreOnInputAcquired
-    [[deprecated]] bool& dyn__mRestoreOnInputAcquired();
+    [[deprecated("Use field access instead!")]] bool& dyn__mRestoreOnInputAcquired();
     // Get instance field reference: private ChangeHandGesture _changeHandGesture
-    [[deprecated]] ::GlobalNamespace::ChangeHandGesture*& dyn__changeHandGesture();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::ChangeHandGesture*& dyn__changeHandGesture();
     // Get instance field reference: public System.Boolean leftHand
-    [[deprecated]] bool& dyn_leftHand();
+    [[deprecated("Use field access instead!")]] bool& dyn_leftHand();
     // Get instance field reference: private System.Int32 _pointLockCounter
-    [[deprecated]] int& dyn__pointLockCounter();
+    [[deprecated("Use field access instead!")]] int& dyn__pointLockCounter();
     // Get instance field reference: private System.Single _mCollisionScaleCurrent
-    [[deprecated]] float& dyn__mCollisionScaleCurrent();
+    [[deprecated("Use field access instead!")]] float& dyn__mCollisionScaleCurrent();
     // private System.Single get__mPointLockEnd()
     // Offset: 0x72BDF0
     float get__mPointLockEnd();
+    // public System.Void .ctor()
+    // Offset: 0x72BDD0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static Hand* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::OVRTouchSample::Hand::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<Hand*, creationType>()));
+    }
     // private System.Void Start()
     // Offset: 0x72B6D0
     void Start();
@@ -397,19 +404,6 @@ namespace OVRTouchSample {
     // private System.Void CollisionEnable(System.Boolean enabled)
     // Offset: 0x72ADE0
     void CollisionEnable(bool enabled);
-    // public System.Void .ctor()
-    // Offset: 0x72BDD0
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static Hand* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::OVRTouchSample::Hand::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<Hand*, creationType>()));
-    }
   }; // OVRTouchSample.Hand
   #pragma pack(pop)
   static check_size<sizeof(Hand), 152 + sizeof(float)> __OVRTouchSample_HandSizeCheck;
@@ -424,6 +418,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<float (OVRT
     return ::il2cpp_utils::FindMethod(classof(OVRTouchSample::Hand*), "get__mPointLockEnd", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: OVRTouchSample::Hand::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: OVRTouchSample::Hand::Start
 // Il2CppName: Start
 template<>
@@ -524,7 +522,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (OVRTo
     return ::il2cpp_utils::FindMethod(classof(OVRTouchSample::Hand*), "CollisionEnable", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{enabled});
   }
 };
-// Writing MetadataGetter for method: OVRTouchSample::Hand::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

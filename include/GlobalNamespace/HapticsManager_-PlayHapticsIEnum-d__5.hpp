@@ -81,19 +81,19 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<::Il2CppObject*>*>(this);
     }
     // Get instance field reference: private System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: private System.Object <>2__current
-    [[deprecated]] ::Il2CppObject*& dyn_$$2__current();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_$$2__current();
     // Get instance field reference: public System.Boolean rightHand
-    [[deprecated]] bool& dyn_rightHand();
+    [[deprecated("Use field access instead!")]] bool& dyn_rightHand();
     // Get instance field reference: public System.Single frequency
-    [[deprecated]] float& dyn_frequency();
+    [[deprecated("Use field access instead!")]] float& dyn_frequency();
     // Get instance field reference: public System.Single amplitude
-    [[deprecated]] float& dyn_amplitude();
+    [[deprecated("Use field access instead!")]] float& dyn_amplitude();
     // Get instance field reference: public System.Boolean leftHand
-    [[deprecated]] bool& dyn_leftHand();
+    [[deprecated("Use field access instead!")]] bool& dyn_leftHand();
     // Get instance field reference: public System.Single duration
-    [[deprecated]] float& dyn_duration();
+    [[deprecated("Use field access instead!")]] float& dyn_duration();
     // private System.Object System.Collections.Generic.IEnumerator<System.Object>.get_Current()
     // Offset: 0x1E1520
     ::Il2CppObject* System_Collections_Generic_IEnumerator$System_Object$_get_Current();

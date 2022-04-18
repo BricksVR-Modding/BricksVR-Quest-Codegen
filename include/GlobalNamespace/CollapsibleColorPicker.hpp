@@ -198,59 +198,66 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public System.Boolean isOpen
-    [[deprecated]] bool& dyn_isOpen();
+    [[deprecated("Use field access instead!")]] bool& dyn_isOpen();
     // Get instance field reference: public System.Single animationTime
-    [[deprecated]] float& dyn_animationTime();
+    [[deprecated("Use field access instead!")]] float& dyn_animationTime();
     // Get instance field reference: public System.Single timeBetweenAnimations
-    [[deprecated]] float& dyn_timeBetweenAnimations();
+    [[deprecated("Use field access instead!")]] float& dyn_timeBetweenAnimations();
     // Get instance field reference: private System.Boolean _isOpening
-    [[deprecated]] bool& dyn__isOpening();
+    [[deprecated("Use field access instead!")]] bool& dyn__isOpening();
     // Get instance field reference: private System.Boolean _isClosing
-    [[deprecated]] bool& dyn__isClosing();
+    [[deprecated("Use field access instead!")]] bool& dyn__isClosing();
     // Get instance field reference: private System.Single _panelRightOpen
-    [[deprecated]] float& dyn__panelRightOpen();
+    [[deprecated("Use field access instead!")]] float& dyn__panelRightOpen();
     // Get instance field reference: public System.Single panelRightClosed
-    [[deprecated]] float& dyn_panelRightClosed();
+    [[deprecated("Use field access instead!")]] float& dyn_panelRightClosed();
     // Get instance field reference: private System.Single _animationStart
-    [[deprecated]] float& dyn__animationStart();
+    [[deprecated("Use field access instead!")]] float& dyn__animationStart();
     // Get instance field reference: public UnityEngine.Transform hueSlider
-    [[deprecated]] ::UnityEngine::Transform*& dyn_hueSlider();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_hueSlider();
     // Get instance field reference: private UnityEngine.Vector3 _hueSliderLocalPosOpen
-    [[deprecated]] ::UnityEngine::Vector3& dyn__hueSliderLocalPosOpen();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__hueSliderLocalPosOpen();
     // Get instance field reference: public UnityEngine.Transform satSlider
-    [[deprecated]] ::UnityEngine::Transform*& dyn_satSlider();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_satSlider();
     // Get instance field reference: private UnityEngine.Vector3 _satSliderLocalPosOpen
-    [[deprecated]] ::UnityEngine::Vector3& dyn__satSliderLocalPosOpen();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__satSliderLocalPosOpen();
     // Get instance field reference: public UnityEngine.Transform valSlider
-    [[deprecated]] ::UnityEngine::Transform*& dyn_valSlider();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_valSlider();
     // Get instance field reference: private UnityEngine.Vector3 _valSliderLocalPosOpen
-    [[deprecated]] ::UnityEngine::Vector3& dyn__valSliderLocalPosOpen();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__valSliderLocalPosOpen();
     // Get instance field reference: public UnityEngine.Vector3 sliderClosedPos
-    [[deprecated]] ::UnityEngine::Vector3& dyn_sliderClosedPos();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_sliderClosedPos();
     // Get instance field reference: public UnityEngine.RectTransform panelBackground
-    [[deprecated]] ::UnityEngine::RectTransform*& dyn_panelBackground();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectTransform*& dyn_panelBackground();
     // Get instance field reference: public UnityEngine.RectTransform panelTitle
-    [[deprecated]] ::UnityEngine::RectTransform*& dyn_panelTitle();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectTransform*& dyn_panelTitle();
     // Get instance field reference: public System.Single panelTitlePosClosed
-    [[deprecated]] float& dyn_panelTitlePosClosed();
+    [[deprecated("Use field access instead!")]] float& dyn_panelTitlePosClosed();
     // Get instance field reference: private System.Single _panelTitlePosOpen
-    [[deprecated]] float& dyn__panelTitlePosOpen();
+    [[deprecated("Use field access instead!")]] float& dyn__panelTitlePosOpen();
     // Get instance field reference: private UnityEngine.Vector3 _panelTitleOriginalScale
-    [[deprecated]] ::UnityEngine::Vector3& dyn__panelTitleOriginalScale();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__panelTitleOriginalScale();
     // Get instance field reference: private System.Single _sliderOriginalScale
-    [[deprecated]] float& dyn__sliderOriginalScale();
+    [[deprecated("Use field access instead!")]] float& dyn__sliderOriginalScale();
     // Get instance field reference: public UnityEngine.Collider copyBrickColorCollider
-    [[deprecated]] ::UnityEngine::Collider*& dyn_copyBrickColorCollider();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Collider*& dyn_copyBrickColorCollider();
     // Get instance field reference: public UnityEngine.Transform collapseButton
-    [[deprecated]] ::UnityEngine::Transform*& dyn_collapseButton();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_collapseButton();
     // Get instance field reference: private UnityEngine.Vector3 _collapseButtonOriginalRot
-    [[deprecated]] ::UnityEngine::Vector3& dyn__collapseButtonOriginalRot();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__collapseButtonOriginalRot();
     // private System.Boolean get_IsAnimating()
     // Offset: 0x6B1250
     bool get_IsAnimating();
     // private System.Single get_AnimationEnd()
     // Offset: 0x6B1240
     float get_AnimationEnd();
+    // public System.Void .ctor()
+    // Offset: 0x3C9020
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static CollapsibleColorPicker* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::CollapsibleColorPicker::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<CollapsibleColorPicker*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0x6B1070
     void Awake();
@@ -266,19 +273,6 @@ namespace GlobalNamespace {
     // private System.Void Animation(System.Boolean closing)
     // Offset: 0x6B0A30
     void Animation(bool closing);
-    // public System.Void .ctor()
-    // Offset: 0x3C9020
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static CollapsibleColorPicker* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::CollapsibleColorPicker::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<CollapsibleColorPicker*, creationType>()));
-    }
   }; // CollapsibleColorPicker
   #pragma pack(pop)
   static check_size<sizeof(CollapsibleColorPicker), 192 + sizeof(::UnityEngine::Vector3)> __GlobalNamespace_CollapsibleColorPickerSizeCheck;
@@ -301,6 +295,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<float (Glob
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::CollapsibleColorPicker*), "get_AnimationEnd", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: GlobalNamespace::CollapsibleColorPicker::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::CollapsibleColorPicker::Awake
 // Il2CppName: Awake
 template<>
@@ -342,7 +340,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::CollapsibleColorPicker*), "Animation", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{closing});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::CollapsibleColorPicker::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

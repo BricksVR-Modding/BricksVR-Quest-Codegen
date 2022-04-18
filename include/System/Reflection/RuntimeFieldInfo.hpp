@@ -21,7 +21,6 @@ namespace System::Reflection {
   struct BindingFlags;
   // Forward declaring type: RuntimeModule
   class RuntimeModule;
-  // Skipping declaration: MemberInfo because it is already included!
   // Forward declaring type: Module
   class Module;
 }

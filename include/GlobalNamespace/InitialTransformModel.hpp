@@ -102,17 +102,17 @@ namespace GlobalNamespace {
     static_assert(sizeof(::Normal::Realtime::ReliableProperty_1<::UnityEngine::Quaternion>*) == 0x8);
     public:
     // Get instance field reference: private UnityEngine.Vector3 _position
-    [[deprecated]] ::UnityEngine::Vector3& dyn__position();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__position();
     // Get instance field reference: private UnityEngine.Quaternion _rotation
-    [[deprecated]] ::UnityEngine::Quaternion& dyn__rotation();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Quaternion& dyn__rotation();
     // Get instance field reference: private InitialTransformModel/PropertyChangedHandler`1<UnityEngine.Vector3> positionDidChange
-    [[deprecated]] ::GlobalNamespace::InitialTransformModel::PropertyChangedHandler_1<::UnityEngine::Vector3>*& dyn_positionDidChange();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::InitialTransformModel::PropertyChangedHandler_1<::UnityEngine::Vector3>*& dyn_positionDidChange();
     // Get instance field reference: private InitialTransformModel/PropertyChangedHandler`1<UnityEngine.Quaternion> rotationDidChange
-    [[deprecated]] ::GlobalNamespace::InitialTransformModel::PropertyChangedHandler_1<::UnityEngine::Quaternion>*& dyn_rotationDidChange();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::InitialTransformModel::PropertyChangedHandler_1<::UnityEngine::Quaternion>*& dyn_rotationDidChange();
     // Get instance field reference: private Normal.Realtime.ReliableProperty`1<UnityEngine.Vector3> _positionProperty
-    [[deprecated]] ::Normal::Realtime::ReliableProperty_1<::UnityEngine::Vector3>*& dyn__positionProperty();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::ReliableProperty_1<::UnityEngine::Vector3>*& dyn__positionProperty();
     // Get instance field reference: private Normal.Realtime.ReliableProperty`1<UnityEngine.Quaternion> _rotationProperty
-    [[deprecated]] ::Normal::Realtime::ReliableProperty_1<::UnityEngine::Quaternion>*& dyn__rotationProperty();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::ReliableProperty_1<::UnityEngine::Quaternion>*& dyn__rotationProperty();
     // public UnityEngine.Vector3 get_position()
     // Offset: 0x6B9F80
     ::UnityEngine::Vector3 get_position();
@@ -137,6 +137,13 @@ namespace GlobalNamespace {
     // public System.Void remove_rotationDidChange(InitialTransformModel/PropertyChangedHandler`1<UnityEngine.Quaternion> value)
     // Offset: 0x6BA0E0
     void remove_rotationDidChange(::GlobalNamespace::InitialTransformModel::PropertyChangedHandler_1<::UnityEngine::Quaternion>* value);
+    // public System.Void .ctor()
+    // Offset: 0x6B9D50
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static InitialTransformModel* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::InitialTransformModel::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<InitialTransformModel*, creationType>()));
+    }
     // private System.Void FirePositionDidChange(UnityEngine.Vector3 value)
     // Offset: 0x6B9710
     void FirePositionDidChange(::UnityEngine::Vector3 value);
@@ -146,15 +153,6 @@ namespace GlobalNamespace {
     // private System.Void UpdateBackingFields()
     // Offset: 0x6B9B20
     void UpdateBackingFields();
-    // public System.Void .ctor()
-    // Offset: 0x6B9D50
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static InitialTransformModel* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::InitialTransformModel::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<InitialTransformModel*, creationType>()));
-    }
     // protected override System.Void OnParentReplaced(Normal.Realtime.RealtimeModel previousParent, Normal.Realtime.RealtimeModel currentParent)
     // Offset: 0x6B9860
     // Implemented from: Normal.Realtime.RealtimeModel
@@ -251,6 +249,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::InitialTransformModel*), "remove_rotationDidChange", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: GlobalNamespace::InitialTransformModel::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::InitialTransformModel::FirePositionDidChange
 // Il2CppName: FirePositionDidChange
 template<>
@@ -277,10 +279,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::InitialTransformModel*), "UpdateBackingFields", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::InitialTransformModel::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::InitialTransformModel::OnParentReplaced
 // Il2CppName: OnParentReplaced
 template<>

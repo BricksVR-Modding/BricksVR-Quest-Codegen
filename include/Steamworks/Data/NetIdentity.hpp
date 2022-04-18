@@ -86,7 +86,7 @@ namespace Steamworks::Data {
       // Set static field: static public Steamworks.Data.NetIdentity/Steamworks.Data.IdentityType SteamID
       static void _set_SteamID(::Steamworks::Data::NetIdentity::IdentityType value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // Steamworks.Data.NetIdentity/Steamworks.Data.IdentityType
     #pragma pack(pop)
     static check_size<sizeof(NetIdentity::IdentityType), 0 + sizeof(int)> __Steamworks_Data_NetIdentity_IdentityTypeSizeCheck;
@@ -127,13 +127,13 @@ namespace Steamworks::Data {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: Steamworks.Data.NetIdentity/Steamworks.Data.IdentityType type
-    [[deprecated]] ::Steamworks::Data::NetIdentity::IdentityType& dyn_type();
+    [[deprecated("Use field access instead!")]] ::Steamworks::Data::NetIdentity::IdentityType& dyn_type();
     // Get instance field reference: System.Int32 size
-    [[deprecated]] int& dyn_size();
+    [[deprecated("Use field access instead!")]] int& dyn_size();
     // Get instance field reference: System.UInt64 steamid
-    [[deprecated]] uint64_t& dyn_steamid();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_steamid();
     // Get instance field reference: Steamworks.Data.NetAddress netaddress
-    [[deprecated]] ::Steamworks::Data::NetAddress& dyn_netaddress();
+    [[deprecated("Use field access instead!")]] ::Steamworks::Data::NetAddress& dyn_netaddress();
     // public override System.String ToString()
     // Offset: 0x463F20
     // Implemented from: System.ValueType

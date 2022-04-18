@@ -92,17 +92,17 @@ namespace Steamworks::Data {
     // Set static field: static public System.Int32 _datasize
     static void _set__datasize(int value);
     // Get instance field reference: Steamworks.Result Result
-    [[deprecated]] ::Steamworks::Result& dyn_Result();
+    [[deprecated("Use field access instead!")]] ::Steamworks::Result& dyn_Result();
     // Get instance field reference: Steamworks.Data.PublishedFileId PublishedFileId
-    [[deprecated]] ::Steamworks::Data::PublishedFileId& dyn_PublishedFileId();
+    [[deprecated("Use field access instead!")]] ::Steamworks::Data::PublishedFileId& dyn_PublishedFileId();
     // Get instance field reference: System.Int32 VotesFor
-    [[deprecated]] int& dyn_VotesFor();
+    [[deprecated("Use field access instead!")]] int& dyn_VotesFor();
     // Get instance field reference: System.Int32 VotesAgainst
-    [[deprecated]] int& dyn_VotesAgainst();
+    [[deprecated("Use field access instead!")]] int& dyn_VotesAgainst();
     // Get instance field reference: System.Int32 Reports
-    [[deprecated]] int& dyn_Reports();
+    [[deprecated("Use field access instead!")]] int& dyn_Reports();
     // Get instance field reference: System.Single FScore
-    [[deprecated]] float& dyn_FScore();
+    [[deprecated("Use field access instead!")]] float& dyn_FScore();
     // public Steamworks.CallbackType get_CallbackType()
     // Offset: 0x4650F0
     ::Steamworks::CallbackType get_CallbackType();

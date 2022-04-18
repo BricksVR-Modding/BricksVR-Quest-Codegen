@@ -42,7 +42,7 @@ namespace GlobalNamespace {
       return createMetaModel;
     }
     // Get instance field reference: public readonly System.Boolean createMetaModel
-    [[deprecated]] bool& dyn_createMetaModel();
+    [[deprecated("Use field access instead!")]] bool& dyn_createMetaModel();
     // public System.Void .ctor(System.Boolean createMetaModel)
     // Offset: 0x49DDB0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

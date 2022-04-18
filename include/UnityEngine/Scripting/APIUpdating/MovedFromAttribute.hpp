@@ -45,7 +45,7 @@ namespace UnityEngine::Scripting::APIUpdating {
       return data;
     }
     // Get instance field reference: UnityEngine.Scripting.APIUpdating.MovedFromAttributeData data
-    [[deprecated]] ::UnityEngine::Scripting::APIUpdating::MovedFromAttributeData& dyn_data();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Scripting::APIUpdating::MovedFromAttributeData& dyn_data();
     // public System.Void .ctor(System.String sourceNamespace)
     // Offset: 0xA391B0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

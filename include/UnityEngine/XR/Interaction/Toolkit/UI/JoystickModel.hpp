@@ -72,11 +72,11 @@ namespace UnityEngine::XR::Interaction::Toolkit::UI {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: private System.Int32 <consecutiveMoveCount>k__BackingField
-      [[deprecated]] int& dyn_$consecutiveMoveCount$k__BackingField();
+      [[deprecated("Use field access instead!")]] int& dyn_$consecutiveMoveCount$k__BackingField();
       // Get instance field reference: private UnityEngine.EventSystems.MoveDirection <lastMoveDirection>k__BackingField
-      [[deprecated]] ::UnityEngine::EventSystems::MoveDirection& dyn_$lastMoveDirection$k__BackingField();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::EventSystems::MoveDirection& dyn_$lastMoveDirection$k__BackingField();
       // Get instance field reference: private System.Single <lastMoveTime>k__BackingField
-      [[deprecated]] float& dyn_$lastMoveTime$k__BackingField();
+      [[deprecated("Use field access instead!")]] float& dyn_$lastMoveTime$k__BackingField();
       // public System.Int32 get_consecutiveMoveCount()
       // Offset: 0x269910
       int get_consecutiveMoveCount();
@@ -147,17 +147,17 @@ namespace UnityEngine::XR::Interaction::Toolkit::UI {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private UnityEngine.Vector2 <move>k__BackingField
-    [[deprecated]] ::UnityEngine::Vector2& dyn_$move$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn_$move$k__BackingField();
     // Get instance field reference: private UnityEngine.XR.Interaction.Toolkit.UI.ButtonDeltaState <submitButtonDelta>k__BackingField
-    [[deprecated]] ::UnityEngine::XR::Interaction::Toolkit::UI::ButtonDeltaState& dyn_$submitButtonDelta$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::Interaction::Toolkit::UI::ButtonDeltaState& dyn_$submitButtonDelta$k__BackingField();
     // Get instance field reference: private UnityEngine.XR.Interaction.Toolkit.UI.ButtonDeltaState <cancelButtonDelta>k__BackingField
-    [[deprecated]] ::UnityEngine::XR::Interaction::Toolkit::UI::ButtonDeltaState& dyn_$cancelButtonDelta$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::Interaction::Toolkit::UI::ButtonDeltaState& dyn_$cancelButtonDelta$k__BackingField();
     // Get instance field reference: private UnityEngine.XR.Interaction.Toolkit.UI.JoystickModel/UnityEngine.XR.Interaction.Toolkit.UI.ImplementationData <implementationData>k__BackingField
-    [[deprecated]] ::UnityEngine::XR::Interaction::Toolkit::UI::JoystickModel::ImplementationData& dyn_$implementationData$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::Interaction::Toolkit::UI::JoystickModel::ImplementationData& dyn_$implementationData$k__BackingField();
     // Get instance field reference: private System.Boolean m_SubmitButtonDown
-    [[deprecated]] bool& dyn_m_SubmitButtonDown();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_SubmitButtonDown();
     // Get instance field reference: private System.Boolean m_CancelButtonDown
-    [[deprecated]] bool& dyn_m_CancelButtonDown();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_CancelButtonDown();
     // public UnityEngine.Vector2 get_move()
     // Offset: 0x2BAE20
     ::UnityEngine::Vector2 get_move();

@@ -124,7 +124,6 @@ namespace UnityEngine {
     // Offset: 0xA41DA0
     // Implemented from: UnityEngine.Object
     // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Texture* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Texture::.ctor");

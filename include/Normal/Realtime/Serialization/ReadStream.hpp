@@ -93,17 +93,17 @@ namespace Normal::Realtime::Serialization {
     static_assert(sizeof(uint) == 0x4);
     public:
     // Get instance field reference: public System.UInt32 recursionLevelLimit
-    [[deprecated]] uint& dyn_recursionLevelLimit();
+    [[deprecated("Use field access instead!")]] uint& dyn_recursionLevelLimit();
     // Get instance field reference: private System.UInt32 _recursionLevel
-    [[deprecated]] uint& dyn__recursionLevel();
+    [[deprecated("Use field access instead!")]] uint& dyn__recursionLevel();
     // Get instance field reference: private Normal.Realtime.Serialization.ReadBuffer _buffer
-    [[deprecated]] ::Normal::Realtime::Serialization::ReadBuffer*& dyn__buffer();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::Serialization::ReadBuffer*& dyn__buffer();
     // Get instance field reference: private Normal.Realtime.Serialization.Serialization/Normal.Realtime.Serialization.WireType _requiredWireType
-    [[deprecated]] ::Normal::Realtime::Serialization::Serialization::WireType& dyn__requiredWireType();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::Serialization::Serialization::WireType& dyn__requiredWireType();
     // Get instance field reference: private System.Int32 _currentModelEndPosition
-    [[deprecated]] int& dyn__currentModelEndPosition();
+    [[deprecated("Use field access instead!")]] int& dyn__currentModelEndPosition();
     // Get instance field reference: private System.UInt32 _lastCollectionTypeID
-    [[deprecated]] uint& dyn__lastCollectionTypeID();
+    [[deprecated("Use field access instead!")]] uint& dyn__lastCollectionTypeID();
     // public System.Void .ctor(Normal.Realtime.Serialization.ReadBuffer buffer)
     // Offset: 0x891350
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

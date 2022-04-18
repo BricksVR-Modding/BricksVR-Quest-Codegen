@@ -57,7 +57,7 @@ namespace Normal::Realtime {
     // Set static field: static public Normal.Realtime.RealtimeAvatar/Normal.Realtime.DeviceType Oculus
     static void _set_Oculus(::Normal::Realtime::RealtimeAvatar::DeviceType value);
     // Get instance field reference: public System.UInt32 value__
-    [[deprecated]] uint& dyn_value__();
+    [[deprecated("Use field access instead!")]] uint& dyn_value__();
   }; // Normal.Realtime.RealtimeAvatar/Normal.Realtime.DeviceType
   #pragma pack(pop)
   static check_size<sizeof(RealtimeAvatar::DeviceType), 0 + sizeof(uint)> __Normal_Realtime_RealtimeAvatar_DeviceTypeSizeCheck;

@@ -39,11 +39,6 @@ namespace GlobalNamespace {
     // Offset: 0x4D3750
     // Implemented from: QuickInteractable
     // Base method: System.Void QuickInteractable::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static InteractablePlacedBrick* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::InteractablePlacedBrick::.ctor");

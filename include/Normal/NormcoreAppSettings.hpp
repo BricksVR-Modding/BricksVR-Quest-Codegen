@@ -60,29 +60,25 @@ namespace Normal {
     // Set static field: static public System.String DEFAULT_MATCHER_URL
     static void _set_DEFAULT_MATCHER_URL(::StringW value);
     // Get instance field reference: private System.String _normcoreAppKey
-    [[deprecated]] ::StringW& dyn__normcoreAppKey();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__normcoreAppKey();
     // Get instance field reference: private System.String _matcherURL
-    [[deprecated]] ::StringW& dyn__matcherURL();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__matcherURL();
     // public System.String get_normcoreAppKey()
     // Offset: 0x1E1520
     ::StringW get_normcoreAppKey();
     // public System.String get_matcherURL()
     // Offset: 0x1E1950
     ::StringW get_matcherURL();
-    // static public Normal.NormcoreAppSettings CreateInstance(System.String normcoreAppKey, System.String matcherURL)
-    // Offset: 0x8BACC0
-    static ::Normal::NormcoreAppSettings* CreateInstance(::StringW normcoreAppKey, ::StringW matcherURL);
     // public System.Void .ctor()
     // Offset: 0x8BAD40
-    // Implemented from: UnityEngine.ScriptableObject
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static NormcoreAppSettings* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Normal::NormcoreAppSettings::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<NormcoreAppSettings*, creationType>()));
     }
+    // static public Normal.NormcoreAppSettings CreateInstance(System.String normcoreAppKey, System.String matcherURL)
+    // Offset: 0x8BACC0
+    static ::Normal::NormcoreAppSettings* CreateInstance(::StringW normcoreAppKey, ::StringW matcherURL);
   }; // Normal.NormcoreAppSettings
   #pragma pack(pop)
   static check_size<sizeof(NormcoreAppSettings), 32 + sizeof(::StringW)> __Normal_NormcoreAppSettingsSizeCheck;
@@ -105,6 +101,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (
     return ::il2cpp_utils::FindMethod(classof(Normal::NormcoreAppSettings*), "get_matcherURL", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: Normal::NormcoreAppSettings::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Normal::NormcoreAppSettings::CreateInstance
 // Il2CppName: CreateInstance
 template<>
@@ -115,7 +115,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Normal::N
     return ::il2cpp_utils::FindMethod(classof(Normal::NormcoreAppSettings*), "CreateInstance", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{normcoreAppKey, matcherURL});
   }
 };
-// Writing MetadataGetter for method: Normal::NormcoreAppSettings::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

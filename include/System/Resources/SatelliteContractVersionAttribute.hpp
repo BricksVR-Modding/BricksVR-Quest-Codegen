@@ -44,7 +44,7 @@ namespace System::Resources {
       return version;
     }
     // Get instance field reference: private System.String _version
-    [[deprecated]] ::StringW& dyn__version();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__version();
     // public System.String get_Version()
     // Offset: 0x1E1920
     ::StringW get_Version();

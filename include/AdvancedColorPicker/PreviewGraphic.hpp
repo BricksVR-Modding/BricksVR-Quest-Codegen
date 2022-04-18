@@ -23,10 +23,6 @@ namespace UnityEngine {
   // Forward declaring type: Color32
   struct Color32;
 }
-// Forward declaring namespace: UnityEngine::EventSystems
-namespace UnityEngine::EventSystems {
-  // Skipping declaration: UIBehaviour because it is already included!
-}
 // Completed forward declares
 // Type namespace: AdvancedColorPicker
 namespace AdvancedColorPicker {
@@ -68,11 +64,11 @@ namespace AdvancedColorPicker {
     static_assert(sizeof(uint8_t) == 0x1);
     public:
     // Get instance field reference: private UnityEngine.UI.Graphic graphic
-    [[deprecated]] ::UnityEngine::UI::Graphic*& dyn_graphic();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Graphic*& dyn_graphic();
     // Get instance field reference: private System.Boolean alphaIsFixed
-    [[deprecated]] bool& dyn_alphaIsFixed();
+    [[deprecated("Use field access instead!")]] bool& dyn_alphaIsFixed();
     // Get instance field reference: private System.Byte fixedAlpha
-    [[deprecated]] uint8_t& dyn_fixedAlpha();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn_fixedAlpha();
     // public System.Boolean get_AlphaIsFixed()
     // Offset: 0x21B7D0
     bool get_AlphaIsFixed();
@@ -92,12 +88,6 @@ namespace AdvancedColorPicker {
     // Offset: 0x5B82B0
     // Implemented from: AdvancedColorPicker.ColorComponent
     // Base method: System.Void ColorComponent::.ctor()
-    // Base method: System.Void UIBehaviour::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static PreviewGraphic* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::AdvancedColorPicker::PreviewGraphic::.ctor");

@@ -57,32 +57,34 @@ namespace Steamworks {
       return *reinterpret_cast<::System::Runtime::CompilerServices::IAsyncStateMachine*>(this);
     }
     // Get instance field reference: public System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: public System.Runtime.CompilerServices.AsyncVoidMethodBuilder <>t__builder
-    [[deprecated]] ::System::Runtime::CompilerServices::AsyncVoidMethodBuilder& dyn_$$t__builder();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::CompilerServices::AsyncVoidMethodBuilder& dyn_$$t__builder();
     // Get instance field reference: private System.Runtime.CompilerServices.TaskAwaiter <>u__1
-    [[deprecated]] ::System::Runtime::CompilerServices::TaskAwaiter& dyn_$$u__1();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::CompilerServices::TaskAwaiter& dyn_$$u__1();
+    // public System.Void .ctor()
+    // Offset: 0x1DD400
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static Dispatch::$LoopClientAsync$d__22* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Steamworks::Dispatch::$LoopClientAsync$d__22::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<Dispatch::$LoopClientAsync$d__22*, creationType>()));
+    }
     // private System.Void MoveNext()
     // Offset: 0x5C7980
     void MoveNext();
     // private System.Void SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine stateMachine)
     // Offset: 0x1DDF00
     void SetStateMachine(::System::Runtime::CompilerServices::IAsyncStateMachine* stateMachine);
-    // public System.Void .ctor()
-    // Offset: 0x1DD400
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static Dispatch::$LoopClientAsync$d__22* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Steamworks::Dispatch::$LoopClientAsync$d__22::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<Dispatch::$LoopClientAsync$d__22*, creationType>()));
-    }
   }; // Steamworks.Dispatch/Steamworks.<LoopClientAsync>d__22
   #pragma pack(pop)
   static check_size<sizeof(Dispatch::$LoopClientAsync$d__22), 56 + sizeof(::System::Runtime::CompilerServices::TaskAwaiter)> __Steamworks_Dispatch_$LoopClientAsync$d__22SizeCheck;
   static_assert(sizeof(Dispatch::$LoopClientAsync$d__22) == 0x40);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Steamworks::Dispatch::$LoopClientAsync$d__22::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Steamworks::Dispatch::$LoopClientAsync$d__22::MoveNext
 // Il2CppName: MoveNext
 template<>
@@ -100,7 +102,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Steam
     return ::il2cpp_utils::FindMethod(classof(Steamworks::Dispatch::$LoopClientAsync$d__22*), "SetStateMachine", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{stateMachine});
   }
 };
-// Writing MetadataGetter for method: Steamworks::Dispatch::$LoopClientAsync$d__22::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

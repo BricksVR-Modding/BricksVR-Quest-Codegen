@@ -55,13 +55,20 @@ namespace UnityEngine {
       return m_Ptr;
     }
     // Get instance field reference: System.IntPtr m_Ptr
-    [[deprecated]] ::System::IntPtr& dyn_m_Ptr();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_m_Ptr();
     // public System.Void .ctor(params UnityEngine.Keyframe[] keys)
     // Offset: 0x981060
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static AnimationCurve* New_ctor(::ArrayW<::UnityEngine::Keyframe> keys) {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::AnimationCurve::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<AnimationCurve*, creationType>(keys)));
+    }
+    // public System.Void .ctor()
+    // Offset: 0x981020
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static AnimationCurve* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::AnimationCurve::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<AnimationCurve*, creationType>()));
     }
     // static private System.Void Internal_Destroy(System.IntPtr ptr)
     // Offset: 0x980D60
@@ -81,15 +88,6 @@ namespace UnityEngine {
     // public System.Boolean Equals(UnityEngine.AnimationCurve other)
     // Offset: 0x980B70
     bool Equals(::UnityEngine::AnimationCurve* other);
-    // public System.Void .ctor()
-    // Offset: 0x981020
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static AnimationCurve* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::AnimationCurve::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<AnimationCurve*, creationType>()));
-    }
     // protected override System.Void Finalize()
     // Offset: 0x980C80
     // Implemented from: System.Object
@@ -111,6 +109,10 @@ namespace UnityEngine {
   static_assert(sizeof(AnimationCurve) == 0x18);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: UnityEngine::AnimationCurve::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::AnimationCurve::New_ctor
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
@@ -172,10 +174,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::AnimationCurve*), "Equals", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{other});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::AnimationCurve::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::AnimationCurve::Finalize
 // Il2CppName: Finalize
 template<>

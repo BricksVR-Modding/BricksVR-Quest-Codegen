@@ -92,17 +92,17 @@ namespace System::Diagnostics::Tracing {
     static_assert(sizeof(::System::Type*) == 0x8);
     public:
     // Get instance field reference: private readonly System.String name
-    [[deprecated]] ::StringW& dyn_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_name();
     // Get instance field reference: private readonly System.Diagnostics.Tracing.EventKeywords keywords
-    [[deprecated]] ::System::Diagnostics::Tracing::EventKeywords& dyn_keywords();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::EventKeywords& dyn_keywords();
     // Get instance field reference: private readonly System.Diagnostics.Tracing.EventLevel level
-    [[deprecated]] ::System::Diagnostics::Tracing::EventLevel& dyn_level();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::EventLevel& dyn_level();
     // Get instance field reference: private readonly System.Diagnostics.Tracing.EventOpcode opcode
-    [[deprecated]] ::System::Diagnostics::Tracing::EventOpcode& dyn_opcode();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::EventOpcode& dyn_opcode();
     // Get instance field reference: private readonly System.Diagnostics.Tracing.EventTags tags
-    [[deprecated]] ::System::Diagnostics::Tracing::EventTags& dyn_tags();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::EventTags& dyn_tags();
     // Get instance field reference: private readonly System.Type dataType
-    [[deprecated]] ::System::Type*& dyn_dataType();
+    [[deprecated("Use field access instead!")]] ::System::Type*& dyn_dataType();
     // public System.String get_Name()
     // Offset: 0x1E1920
     ::StringW get_Name();

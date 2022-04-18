@@ -62,7 +62,7 @@ namespace Normal::Realtime {
       return storage;
     }
     // Get instance field reference: private readonly System.Collections.Generic.Dictionary`2<System.UInt32,Normal.Realtime.IConfigurableComponent> _storage
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<uint, ::Normal::Realtime::IConfigurableComponent*>*& dyn__storage();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<uint, ::Normal::Realtime::IConfigurableComponent*>*& dyn__storage();
     // public System.Int32 get_count()
     // Offset: 0x8B6EC0
     int get_count();
@@ -75,6 +75,13 @@ namespace Normal::Realtime {
     // public Normal.Realtime.IConfigurableComponent get_Item(System.UInt32 componentID)
     // Offset: 0x8B6DA0
     ::Normal::Realtime::IConfigurableComponent* get_Item(uint componentID);
+    // protected System.Void .ctor()
+    // Offset: 0x8B6D30
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ConfigurableComponentMap* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::ConfigurableComponentMap::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ConfigurableComponentMap*, creationType>()));
+    }
     // public System.Boolean ContainsComponentID(System.UInt32 componentID)
     // Offset: 0x8B6C10
     bool ContainsComponentID(uint componentID);
@@ -87,15 +94,6 @@ namespace Normal::Realtime {
     // public System.Void Deprecate(System.UInt32 componentID)
     // Offset: 0x8B6CD0
     void Deprecate(uint componentID);
-    // protected System.Void .ctor()
-    // Offset: 0x8B6D30
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ConfigurableComponentMap* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::ConfigurableComponentMap::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ConfigurableComponentMap*, creationType>()));
-    }
   }; // Normal.Realtime.ConfigurableComponentMap
   #pragma pack(pop)
   static check_size<sizeof(ConfigurableComponentMap), 16 + sizeof(::System::Collections::Generic::Dictionary_2<uint, ::Normal::Realtime::IConfigurableComponent*>*)> __Normal_Realtime_ConfigurableComponentMapSizeCheck;
@@ -135,6 +133,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Normal::R
     return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::ConfigurableComponentMap*), "get_Item", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{componentID});
   }
 };
+// Writing MetadataGetter for method: Normal::Realtime::ConfigurableComponentMap::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Normal::Realtime::ConfigurableComponentMap::ContainsComponentID
 // Il2CppName: ContainsComponentID
 template<>
@@ -172,7 +174,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Norma
     return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::ConfigurableComponentMap*), "Deprecate", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{componentID});
   }
 };
-// Writing MetadataGetter for method: Normal::Realtime::ConfigurableComponentMap::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

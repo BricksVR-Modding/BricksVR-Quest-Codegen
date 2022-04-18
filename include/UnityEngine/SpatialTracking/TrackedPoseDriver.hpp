@@ -107,7 +107,7 @@ namespace UnityEngine::SpatialTracking {
       // Set static field: static public UnityEngine.SpatialTracking.TrackedPoseDriver/UnityEngine.SpatialTracking.DeviceType GenericXRRemote
       static void _set_GenericXRRemote(::UnityEngine::SpatialTracking::TrackedPoseDriver::DeviceType value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // UnityEngine.SpatialTracking.TrackedPoseDriver/UnityEngine.SpatialTracking.DeviceType
     #pragma pack(pop)
     static check_size<sizeof(TrackedPoseDriver::DeviceType), 0 + sizeof(int)> __UnityEngine_SpatialTracking_TrackedPoseDriver_DeviceTypeSizeCheck;
@@ -203,7 +203,7 @@ namespace UnityEngine::SpatialTracking {
       // Set static field: static public UnityEngine.SpatialTracking.TrackedPoseDriver/UnityEngine.SpatialTracking.TrackedPose RemotePose
       static void _set_RemotePose(::UnityEngine::SpatialTracking::TrackedPoseDriver::TrackedPose value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // UnityEngine.SpatialTracking.TrackedPoseDriver/UnityEngine.SpatialTracking.TrackedPose
     #pragma pack(pop)
     static check_size<sizeof(TrackedPoseDriver::TrackedPose), 0 + sizeof(int)> __UnityEngine_SpatialTracking_TrackedPoseDriver_TrackedPoseSizeCheck;
@@ -251,7 +251,7 @@ namespace UnityEngine::SpatialTracking {
       // Set static field: static public UnityEngine.SpatialTracking.TrackedPoseDriver/UnityEngine.SpatialTracking.TrackingType PositionOnly
       static void _set_PositionOnly(::UnityEngine::SpatialTracking::TrackedPoseDriver::TrackingType value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // UnityEngine.SpatialTracking.TrackedPoseDriver/UnityEngine.SpatialTracking.TrackingType
     #pragma pack(pop)
     static check_size<sizeof(TrackedPoseDriver::TrackingType), 0 + sizeof(int)> __UnityEngine_SpatialTracking_TrackedPoseDriver_TrackingTypeSizeCheck;
@@ -299,7 +299,7 @@ namespace UnityEngine::SpatialTracking {
       // Set static field: static public UnityEngine.SpatialTracking.TrackedPoseDriver/UnityEngine.SpatialTracking.UpdateType BeforeRender
       static void _set_BeforeRender(::UnityEngine::SpatialTracking::TrackedPoseDriver::UpdateType value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // UnityEngine.SpatialTracking.TrackedPoseDriver/UnityEngine.SpatialTracking.UpdateType
     #pragma pack(pop)
     static check_size<sizeof(TrackedPoseDriver::UpdateType), 0 + sizeof(int)> __UnityEngine_SpatialTracking_TrackedPoseDriver_UpdateTypeSizeCheck;
@@ -353,19 +353,19 @@ namespace UnityEngine::SpatialTracking {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.SpatialTracking.TrackedPoseDriver/UnityEngine.SpatialTracking.DeviceType m_Device
-    [[deprecated]] ::UnityEngine::SpatialTracking::TrackedPoseDriver::DeviceType& dyn_m_Device();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::SpatialTracking::TrackedPoseDriver::DeviceType& dyn_m_Device();
     // Get instance field reference: private UnityEngine.SpatialTracking.TrackedPoseDriver/UnityEngine.SpatialTracking.TrackedPose m_PoseSource
-    [[deprecated]] ::UnityEngine::SpatialTracking::TrackedPoseDriver::TrackedPose& dyn_m_PoseSource();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::SpatialTracking::TrackedPoseDriver::TrackedPose& dyn_m_PoseSource();
     // Get instance field reference: private UnityEngine.Experimental.XR.Interaction.BasePoseProvider m_PoseProviderComponent
-    [[deprecated]] ::UnityEngine::Experimental::XR::Interaction::BasePoseProvider*& dyn_m_PoseProviderComponent();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Experimental::XR::Interaction::BasePoseProvider*& dyn_m_PoseProviderComponent();
     // Get instance field reference: private UnityEngine.SpatialTracking.TrackedPoseDriver/UnityEngine.SpatialTracking.TrackingType m_TrackingType
-    [[deprecated]] ::UnityEngine::SpatialTracking::TrackedPoseDriver::TrackingType& dyn_m_TrackingType();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::SpatialTracking::TrackedPoseDriver::TrackingType& dyn_m_TrackingType();
     // Get instance field reference: private UnityEngine.SpatialTracking.TrackedPoseDriver/UnityEngine.SpatialTracking.UpdateType m_UpdateType
-    [[deprecated]] ::UnityEngine::SpatialTracking::TrackedPoseDriver::UpdateType& dyn_m_UpdateType();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::SpatialTracking::TrackedPoseDriver::UpdateType& dyn_m_UpdateType();
     // Get instance field reference: private System.Boolean m_UseRelativeTransform
-    [[deprecated]] bool& dyn_m_UseRelativeTransform();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_UseRelativeTransform();
     // Get instance field reference: protected UnityEngine.Pose m_OriginPose
-    [[deprecated]] ::UnityEngine::Pose& dyn_m_OriginPose();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Pose& dyn_m_OriginPose();
     // public UnityEngine.SpatialTracking.TrackedPoseDriver/UnityEngine.SpatialTracking.DeviceType get_deviceType()
     // Offset: 0x1E1910
     ::UnityEngine::SpatialTracking::TrackedPoseDriver::DeviceType get_deviceType();
@@ -408,6 +408,13 @@ namespace UnityEngine::SpatialTracking {
     // public System.Void set_originPose(UnityEngine.Pose value)
     // Offset: 0x6640A0
     void set_originPose(::UnityEngine::Pose value);
+    // public System.Void .ctor()
+    // Offset: 0x664070
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static TrackedPoseDriver* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::SpatialTracking::TrackedPoseDriver::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<TrackedPoseDriver*, creationType>()));
+    }
     // public System.Boolean SetPoseSource(UnityEngine.SpatialTracking.TrackedPoseDriver/UnityEngine.SpatialTracking.DeviceType deviceType, UnityEngine.SpatialTracking.TrackedPoseDriver/UnityEngine.SpatialTracking.TrackedPose pose)
     // Offset: 0x663E80
     bool SetPoseSource(::UnityEngine::SpatialTracking::TrackedPoseDriver::DeviceType deviceType, ::UnityEngine::SpatialTracking::TrackedPoseDriver::TrackedPose pose);
@@ -453,19 +460,6 @@ namespace UnityEngine::SpatialTracking {
     // protected System.Void PerformUpdate()
     // Offset: 0x663B60
     void PerformUpdate();
-    // public System.Void .ctor()
-    // Offset: 0x664070
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static TrackedPoseDriver* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::SpatialTracking::TrackedPoseDriver::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<TrackedPoseDriver*, creationType>()));
-    }
   }; // UnityEngine.SpatialTracking.TrackedPoseDriver
   #pragma pack(pop)
   static check_size<sizeof(TrackedPoseDriver), 52 + sizeof(::UnityEngine::Pose)> __UnityEngine_SpatialTracking_TrackedPoseDriverSizeCheck;
@@ -599,6 +593,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::SpatialTracking::TrackedPoseDriver*), "set_originPose", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::SpatialTracking::TrackedPoseDriver::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::SpatialTracking::TrackedPoseDriver::SetPoseSource
 // Il2CppName: SetPoseSource
 template<>
@@ -728,7 +726,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::SpatialTracking::TrackedPoseDriver*), "PerformUpdate", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::SpatialTracking::TrackedPoseDriver::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

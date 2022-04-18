@@ -67,11 +67,11 @@ namespace Normal::Realtime {
       return *reinterpret_cast<::Normal::Realtime::IRealtimeTransformStrategy*>(this);
     }
     // Get instance field reference: private readonly Normal.Realtime.RealtimeTransform _component
-    [[deprecated]] ::Normal::Realtime::RealtimeTransform*& dyn__component();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::RealtimeTransform*& dyn__component();
     // Get instance field reference: private readonly Normal.Realtime.Timeline`1<Normal.Realtime.StandardTransformFrame> _timeline
-    [[deprecated]] ::Normal::Realtime::Timeline_1<::Normal::Realtime::StandardTransformFrame>*& dyn__timeline();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::Timeline_1<::Normal::Realtime::StandardTransformFrame>*& dyn__timeline();
     // Get instance field reference: private readonly Normal.Realtime.InterpolationDelay _delay
-    [[deprecated]] ::Normal::Realtime::InterpolationDelay*& dyn__delay();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::InterpolationDelay*& dyn__delay();
     // private System.Double get_roomTime()
     // Offset: 0x8C2320
     double get_roomTime();

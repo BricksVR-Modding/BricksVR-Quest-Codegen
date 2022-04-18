@@ -119,7 +119,7 @@ namespace GlobalNamespace {
       // Set static field: static public Outline/Mode SilhouetteOnly
       static void _set_SilhouetteOnly(::GlobalNamespace::Outline::Mode value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // Outline/Mode
     #pragma pack(pop)
     static check_size<sizeof(Outline::Mode), 0 + sizeof(int)> __GlobalNamespace_Outline_ModeSizeCheck;
@@ -198,25 +198,25 @@ namespace GlobalNamespace {
     // Set static field: static private System.Collections.Generic.HashSet`1<UnityEngine.Mesh> registeredMeshes
     static void _set_registeredMeshes(::System::Collections::Generic::HashSet_1<::UnityEngine::Mesh*>* value);
     // Get instance field reference: private Outline/Mode outlineMode
-    [[deprecated]] ::GlobalNamespace::Outline::Mode& dyn_outlineMode();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::Outline::Mode& dyn_outlineMode();
     // Get instance field reference: private UnityEngine.Color outlineColor
-    [[deprecated]] ::UnityEngine::Color& dyn_outlineColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_outlineColor();
     // Get instance field reference: private System.Single outlineWidth
-    [[deprecated]] float& dyn_outlineWidth();
+    [[deprecated("Use field access instead!")]] float& dyn_outlineWidth();
     // Get instance field reference: private System.Boolean precomputeOutline
-    [[deprecated]] bool& dyn_precomputeOutline();
+    [[deprecated("Use field access instead!")]] bool& dyn_precomputeOutline();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.Mesh> bakeKeys
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::Mesh*>*& dyn_bakeKeys();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::Mesh*>*& dyn_bakeKeys();
     // Get instance field reference: private System.Collections.Generic.List`1<Outline/ListVector3> bakeValues
-    [[deprecated]] ::System::Collections::Generic::List_1<::GlobalNamespace::Outline::ListVector3*>*& dyn_bakeValues();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::GlobalNamespace::Outline::ListVector3*>*& dyn_bakeValues();
     // Get instance field reference: private UnityEngine.Renderer[] renderers
-    [[deprecated]] ::ArrayW<::UnityEngine::Renderer*>& dyn_renderers();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Renderer*>& dyn_renderers();
     // Get instance field reference: private UnityEngine.Material outlineMaskMaterial
-    [[deprecated]] ::UnityEngine::Material*& dyn_outlineMaskMaterial();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn_outlineMaskMaterial();
     // Get instance field reference: private UnityEngine.Material outlineFillMaterial
-    [[deprecated]] ::UnityEngine::Material*& dyn_outlineFillMaterial();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn_outlineFillMaterial();
     // Get instance field reference: private System.Boolean needsUpdate
-    [[deprecated]] bool& dyn_needsUpdate();
+    [[deprecated("Use field access instead!")]] bool& dyn_needsUpdate();
     // public Outline/Mode get_OutlineMode()
     // Offset: 0x1E1910
     ::GlobalNamespace::Outline::Mode get_OutlineMode();
@@ -235,6 +235,16 @@ namespace GlobalNamespace {
     // public System.Void set_OutlineWidth(System.Single value)
     // Offset: 0x7D4930
     void set_OutlineWidth(float value);
+    // public System.Void .ctor()
+    // Offset: 0x7D4860
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static Outline* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::Outline::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<Outline*, creationType>()));
+    }
+    // static private System.Void .cctor()
+    // Offset: 0x7D4800
+    static void _cctor();
     // private System.Void Awake()
     // Offset: 0x7D3550
     void Awake();
@@ -268,24 +278,6 @@ namespace GlobalNamespace {
     // private System.Void UpdateMaterialProperties()
     // Offset: 0x7D4610
     void UpdateMaterialProperties();
-    // public System.Void .ctor()
-    // Offset: 0x7D4860
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static Outline* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::Outline::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<Outline*, creationType>()));
-    }
-    // static private System.Void .cctor()
-    // Offset: 0x7D4800
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.cctor()
-    static void _cctor();
   }; // Outline
   #pragma pack(pop)
   static check_size<sizeof(Outline), 96 + sizeof(bool)> __GlobalNamespace_OutlineSizeCheck;
@@ -343,6 +335,18 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
   static const MethodInfo* get() {
     static auto* value = &::il2cpp_utils::GetClassFromName("System", "Single")->byval_arg;
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::Outline*), "set_OutlineWidth", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
+  }
+};
+// Writing MetadataGetter for method: GlobalNamespace::Outline::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
+// Writing MetadataGetter for method: GlobalNamespace::Outline::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&GlobalNamespace::Outline::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::Outline*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
 // Writing MetadataGetter for method: GlobalNamespace::Outline::Awake
@@ -432,17 +436,5 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (GlobalNamespace::Outline::*)()>(&GlobalNamespace::Outline::UpdateMaterialProperties)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::Outline*), "UpdateMaterialProperties", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
-  }
-};
-// Writing MetadataGetter for method: GlobalNamespace::Outline::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
-// Writing MetadataGetter for method: GlobalNamespace::Outline::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&GlobalNamespace::Outline::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::Outline*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };

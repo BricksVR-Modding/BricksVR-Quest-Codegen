@@ -20,12 +20,12 @@
 // Begin forward declares
 // Forward declaring namespace: System::Collections::Generic
 namespace System::Collections::Generic {
-  // Forward declaring type: IReadOnlyDictionary`2<TKey, TValue>
-  template<typename TKey, typename TValue>
-  class IReadOnlyDictionary_2;
   // Forward declaring type: IEnumerator`1<T>
   template<typename T>
   class IEnumerator_1;
+  // Forward declaring type: IReadOnlyDictionary`2<TKey, TValue>
+  template<typename TKey, typename TValue>
+  class IReadOnlyDictionary_2;
 }
 // Forward declaring namespace: System::Collections
 namespace System::Collections {
@@ -93,9 +93,9 @@ namespace Normal::Realtime {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: public readonly System.UInt32 propertyID
-      [[deprecated]] uint& dyn_propertyID();
+      [[deprecated("Use field access instead!")]] uint& dyn_propertyID();
       // Get instance field reference: public readonly Normal.Realtime.RealtimeModel model
-      [[deprecated]] ::Normal::Realtime::RealtimeModel*& dyn_model();
+      [[deprecated("Use field access instead!")]] ::Normal::Realtime::RealtimeModel*& dyn_model();
       // public System.Void .ctor(System.UInt32 propertyID, Normal.Realtime.RealtimeModel model)
       // Offset: 0x540440
       // ABORTED: conflicts with another method.  RealtimeModelListEntry(uint propertyID, ::Normal::Realtime::RealtimeModel* model);
@@ -122,9 +122,9 @@ namespace Normal::Realtime {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerable_1<::System::Collections::Generic::KeyValuePair_2<uint, ::Normal::Realtime::RealtimeModel*>>*>(this);
     }
     // Get instance field reference: private readonly System.Collections.Generic.IReadOnlyDictionary`2<System.UInt32,Normal.Realtime.RealtimeModel> _modelDict
-    [[deprecated]] ::System::Collections::Generic::IReadOnlyDictionary_2<uint, ::Normal::Realtime::RealtimeModel*>*& dyn__modelDict();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::IReadOnlyDictionary_2<uint, ::Normal::Realtime::RealtimeModel*>*& dyn__modelDict();
     // Get instance field reference: private readonly Normal.Realtime.ImmutableModelCollection/Normal.Realtime.RealtimeModelListEntry[] _modelList
-    [[deprecated]] ::ArrayW<::Normal::Realtime::ImmutableModelCollection::RealtimeModelListEntry>& dyn__modelList();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Normal::Realtime::ImmutableModelCollection::RealtimeModelListEntry>& dyn__modelList();
     // public Normal.Realtime.RealtimeModel get_Item(System.UInt32 id)
     // Offset: 0x8B9130
     ::Normal::Realtime::RealtimeModel* get_Item(uint id);

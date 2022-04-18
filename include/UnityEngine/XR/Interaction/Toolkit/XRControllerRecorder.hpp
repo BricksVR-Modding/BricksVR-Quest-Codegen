@@ -101,21 +101,21 @@ namespace UnityEngine::XR::Interaction::Toolkit {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Boolean m_PlayOnStart
-    [[deprecated]] bool& dyn_m_PlayOnStart();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_PlayOnStart();
     // Get instance field reference: private UnityEngine.XR.Interaction.Toolkit.XRControllerRecording m_Recording
-    [[deprecated]] ::UnityEngine::XR::Interaction::Toolkit::XRControllerRecording*& dyn_m_Recording();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::Interaction::Toolkit::XRControllerRecording*& dyn_m_Recording();
     // Get instance field reference: private UnityEngine.XR.Interaction.Toolkit.XRController m_Controller
-    [[deprecated]] ::UnityEngine::XR::Interaction::Toolkit::XRController*& dyn_m_Controller();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::Interaction::Toolkit::XRController*& dyn_m_Controller();
     // Get instance field reference: private System.Double m_CurrentTime
-    [[deprecated]] double& dyn_m_CurrentTime();
+    [[deprecated("Use field access instead!")]] double& dyn_m_CurrentTime();
     // Get instance field reference: private System.Boolean m_IsRecording
-    [[deprecated]] bool& dyn_m_IsRecording();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_IsRecording();
     // Get instance field reference: private System.Boolean m_IsPlaying
-    [[deprecated]] bool& dyn_m_IsPlaying();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_IsPlaying();
     // Get instance field reference: private System.Double m_LastPlaybackTime
-    [[deprecated]] double& dyn_m_LastPlaybackTime();
+    [[deprecated("Use field access instead!")]] double& dyn_m_LastPlaybackTime();
     // Get instance field reference: private System.Int32 m_LastFrameIdx
-    [[deprecated]] int& dyn_m_LastFrameIdx();
+    [[deprecated("Use field access instead!")]] int& dyn_m_LastFrameIdx();
     // public System.Boolean get_playOnStart()
     // Offset: 0x2512D0
     bool get_playOnStart();
@@ -152,6 +152,13 @@ namespace UnityEngine::XR::Interaction::Toolkit {
     // public System.Double get_duration()
     // Offset: 0x302960
     double get_duration();
+    // public System.Void .ctor()
+    // Offset: 0x1DDE30
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static XRControllerRecorder* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::XR::Interaction::Toolkit::XRControllerRecorder::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<XRControllerRecorder*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0x302150
     void Awake();
@@ -173,19 +180,6 @@ namespace UnityEngine::XR::Interaction::Toolkit {
     // private System.Void UpdatePlaybackTime(System.Double playbackTime)
     // Offset: 0x302460
     void UpdatePlaybackTime(double playbackTime);
-    // public System.Void .ctor()
-    // Offset: 0x1DDE30
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static XRControllerRecorder* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::XR::Interaction::Toolkit::XRControllerRecorder::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<XRControllerRecorder*, creationType>()));
-    }
   }; // UnityEngine.XR.Interaction.Toolkit.XRControllerRecorder
   #pragma pack(pop)
   static check_size<sizeof(XRControllerRecorder), 72 + sizeof(int)> __UnityEngine_XR_Interaction_Toolkit_XRControllerRecorderSizeCheck;
@@ -293,6 +287,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<double (Uni
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::XR::Interaction::Toolkit::XRControllerRecorder*), "get_duration", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::XR::Interaction::Toolkit::XRControllerRecorder::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::XR::Interaction::Toolkit::XRControllerRecorder::Awake
 // Il2CppName: Awake
 template<>
@@ -351,7 +349,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::XR::Interaction::Toolkit::XRControllerRecorder*), "UpdatePlaybackTime", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{playbackTime});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::XR::Interaction::Toolkit::XRControllerRecorder::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -170,31 +170,38 @@ namespace GlobalNamespace {
     // Set static field: static private System.Int32 NumberOfRoomsToLoad
     static void _set_NumberOfRoomsToLoad(int value);
     // Get instance field reference: public UserSettings userSettings
-    [[deprecated]] ::GlobalNamespace::UserSettings*& dyn_userSettings();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::UserSettings*& dyn_userSettings();
     // Get instance field reference: public NormalSessionManager normalSessionManager
-    [[deprecated]] ::GlobalNamespace::NormalSessionManager*& dyn_normalSessionManager();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::NormalSessionManager*& dyn_normalSessionManager();
     // Get instance field reference: public UnityEngine.GameObject noRecentRoomsObject
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_noRecentRoomsObject();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_noRecentRoomsObject();
     // Get instance field reference: public UnityEngine.GameObject recentRoomsObject
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_recentRoomsObject();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_recentRoomsObject();
     // Get instance field reference: public UnityEngine.GameObject recentRoomPrefab
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_recentRoomPrefab();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_recentRoomPrefab();
     // Get instance field reference: public UnityEngine.GameObject loadingPage
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_loadingPage();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_loadingPage();
     // Get instance field reference: private System.Boolean _initializedRecentRoomsList
-    [[deprecated]] bool& dyn__initializedRecentRoomsList();
+    [[deprecated("Use field access instead!")]] bool& dyn__initializedRecentRoomsList();
     // Get instance field reference: private System.Globalization.TextInfo _textInfo
-    [[deprecated]] ::System::Globalization::TextInfo*& dyn__textInfo();
+    [[deprecated("Use field access instead!")]] ::System::Globalization::TextInfo*& dyn__textInfo();
     // Get instance field reference: public UnityEngine.GameObject[] recentRooms
-    [[deprecated]] ::ArrayW<::UnityEngine::GameObject*>& dyn_recentRooms();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::GameObject*>& dyn_recentRooms();
     // Get instance field reference: public TMPro.TextMeshProUGUI[] recentRoomsRoomCodes
-    [[deprecated]] ::ArrayW<::TMPro::TextMeshProUGUI*>& dyn_recentRoomsRoomCodes();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::TMPro::TextMeshProUGUI*>& dyn_recentRoomsRoomCodes();
     // Get instance field reference: public TMPro.TextMeshProUGUI[] recentRoomsNames
-    [[deprecated]] ::ArrayW<::TMPro::TextMeshProUGUI*>& dyn_recentRoomsNames();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::TMPro::TextMeshProUGUI*>& dyn_recentRoomsNames();
     // Get instance field reference: public TMPro.TextMeshProUGUI[] recentRoomsBrickCounts
-    [[deprecated]] ::ArrayW<::TMPro::TextMeshProUGUI*>& dyn_recentRoomsBrickCounts();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::TMPro::TextMeshProUGUI*>& dyn_recentRoomsBrickCounts();
     // Get instance field reference: public PagedScroll pagedScroll
-    [[deprecated]] ::GlobalNamespace::PagedScroll*& dyn_pagedScroll();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::PagedScroll*& dyn_pagedScroll();
+    // public System.Void .ctor()
+    // Offset: 0x1DDE30
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static RecentRoomsManager* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::RecentRoomsManager::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<RecentRoomsManager*, creationType>()));
+    }
     // private System.Void OnEnable()
     // Offset: 0x6C9530
     void OnEnable();
@@ -225,25 +232,16 @@ namespace GlobalNamespace {
     // private System.String FormatRoomNameAnyLenNoMono(System.String roomName)
     // Offset: 0x6C88D0
     ::StringW FormatRoomNameAnyLenNoMono(::StringW roomName);
-    // public System.Void .ctor()
-    // Offset: 0x1DDE30
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static RecentRoomsManager* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::RecentRoomsManager::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<RecentRoomsManager*, creationType>()));
-    }
   }; // RecentRoomsManager
   #pragma pack(pop)
   static check_size<sizeof(RecentRoomsManager), 120 + sizeof(::GlobalNamespace::PagedScroll*)> __GlobalNamespace_RecentRoomsManagerSizeCheck;
   static_assert(sizeof(RecentRoomsManager) == 0x80);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::RecentRoomsManager::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::RecentRoomsManager::OnEnable
 // Il2CppName: OnEnable
 template<>
@@ -332,7 +330,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::StringW (
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::RecentRoomsManager*), "FormatRoomNameAnyLenNoMono", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{roomName});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::RecentRoomsManager::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

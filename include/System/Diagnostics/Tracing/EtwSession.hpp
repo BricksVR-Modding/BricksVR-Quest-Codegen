@@ -70,9 +70,9 @@ namespace System::Diagnostics::Tracing {
     // Set static field: static private System.Collections.Generic.List`1<System.WeakReference`1<System.Diagnostics.Tracing.EtwSession>> s_etwSessions
     static void _set_s_etwSessions(::System::Collections::Generic::List_1<::System::WeakReference_1<::System::Diagnostics::Tracing::EtwSession*>*>* value);
     // Get instance field reference: public readonly System.Int32 m_etwSessionId
-    [[deprecated]] int& dyn_m_etwSessionId();
+    [[deprecated("Use field access instead!")]] int& dyn_m_etwSessionId();
     // Get instance field reference: public System.Diagnostics.Tracing.ActivityFilter m_activityFilter
-    [[deprecated]] ::System::Diagnostics::Tracing::ActivityFilter*& dyn_m_activityFilter();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::ActivityFilter*& dyn_m_activityFilter();
     // private System.Void .ctor(System.Int32 etwSessionId)
     // Offset: 0x206110
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

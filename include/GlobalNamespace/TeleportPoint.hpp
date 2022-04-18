@@ -72,15 +72,22 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public System.Single dimmingSpeed
-    [[deprecated]] float& dyn_dimmingSpeed();
+    [[deprecated("Use field access instead!")]] float& dyn_dimmingSpeed();
     // Get instance field reference: public System.Single fullIntensity
-    [[deprecated]] float& dyn_fullIntensity();
+    [[deprecated("Use field access instead!")]] float& dyn_fullIntensity();
     // Get instance field reference: public System.Single lowIntensity
-    [[deprecated]] float& dyn_lowIntensity();
+    [[deprecated("Use field access instead!")]] float& dyn_lowIntensity();
     // Get instance field reference: public UnityEngine.Transform destTransform
-    [[deprecated]] ::UnityEngine::Transform*& dyn_destTransform();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_destTransform();
     // Get instance field reference: private System.Single lastLookAtTime
-    [[deprecated]] float& dyn_lastLookAtTime();
+    [[deprecated("Use field access instead!")]] float& dyn_lastLookAtTime();
+    // public System.Void .ctor()
+    // Offset: 0x618E40
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static TeleportPoint* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::TeleportPoint::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<TeleportPoint*, creationType>()));
+    }
     // private System.Void Start()
     // Offset: 0x1DDF00
     void Start();
@@ -93,25 +100,16 @@ namespace GlobalNamespace {
     // public System.Void OnLookAt()
     // Offset: 0x618D20
     void OnLookAt();
-    // public System.Void .ctor()
-    // Offset: 0x618E40
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static TeleportPoint* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::TeleportPoint::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<TeleportPoint*, creationType>()));
-    }
   }; // TeleportPoint
   #pragma pack(pop)
   static check_size<sizeof(TeleportPoint), 48 + sizeof(float)> __GlobalNamespace_TeleportPointSizeCheck;
   static_assert(sizeof(TeleportPoint) == 0x34);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::TeleportPoint::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::TeleportPoint::Start
 // Il2CppName: Start
 template<>
@@ -144,7 +142,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::TeleportPoint*), "OnLookAt", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::TeleportPoint::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

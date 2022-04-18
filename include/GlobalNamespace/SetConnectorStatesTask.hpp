@@ -47,9 +47,9 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public readonly ChunkedBrick ChunkedBrick
-    [[deprecated]] ::GlobalNamespace::ChunkedBrick& dyn_ChunkedBrick();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::ChunkedBrick& dyn_ChunkedBrick();
     // Get instance field reference: public readonly System.Boolean Enabled
-    [[deprecated]] bool& dyn_Enabled();
+    [[deprecated("Use field access instead!")]] bool& dyn_Enabled();
     // public System.Void .ctor(ChunkedBrick brick, System.Boolean enabled)
     // Offset: 0x6CDFD0
     // ABORTED: conflicts with another method.  SetConnectorStatesTask(::GlobalNamespace::ChunkedBrick brick, bool enabled);

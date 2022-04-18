@@ -128,7 +128,7 @@ namespace UnityEngine::XR::Interaction::Toolkit {
       // Set static field: static public UnityEngine.XR.Interaction.Toolkit.XRController/UnityEngine.XR.Interaction.Toolkit.InputAxes Secondary2DAxis
       static void _set_Secondary2DAxis(::UnityEngine::XR::Interaction::Toolkit::XRController::InputAxes value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // UnityEngine.XR.Interaction.Toolkit.XRController/UnityEngine.XR.Interaction.Toolkit.InputAxes
     #pragma pack(pop)
     static check_size<sizeof(XRController::InputAxes), 0 + sizeof(int)> __UnityEngine_XR_Interaction_Toolkit_XRController_InputAxesSizeCheck;
@@ -176,7 +176,7 @@ namespace UnityEngine::XR::Interaction::Toolkit {
       // Set static field: static public UnityEngine.XR.Interaction.Toolkit.XRController/UnityEngine.XR.Interaction.Toolkit.UpdateType BeforeRender
       static void _set_BeforeRender(::UnityEngine::XR::Interaction::Toolkit::XRController::UpdateType value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // UnityEngine.XR.Interaction.Toolkit.XRController/UnityEngine.XR.Interaction.Toolkit.UpdateType
     #pragma pack(pop)
     static check_size<sizeof(XRController::UpdateType), 0 + sizeof(int)> __UnityEngine_XR_Interaction_Toolkit_XRController_UpdateTypeSizeCheck;
@@ -215,11 +215,11 @@ namespace UnityEngine::XR::Interaction::Toolkit {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: public System.Boolean active
-      [[deprecated]] bool& dyn_active();
+      [[deprecated("Use field access instead!")]] bool& dyn_active();
       // Get instance field reference: public System.Boolean activatedThisFrame
-      [[deprecated]] bool& dyn_activatedThisFrame();
+      [[deprecated("Use field access instead!")]] bool& dyn_activatedThisFrame();
       // Get instance field reference: public System.Boolean deActivatedThisFrame
-      [[deprecated]] bool& dyn_deActivatedThisFrame();
+      [[deprecated("Use field access instead!")]] bool& dyn_deActivatedThisFrame();
     }; // UnityEngine.XR.Interaction.Toolkit.XRController/UnityEngine.XR.Interaction.Toolkit.InteractionState
     #pragma pack(pop)
     static check_size<sizeof(XRController::InteractionState), 2 + sizeof(bool)> __UnityEngine_XR_Interaction_Toolkit_XRController_InteractionStateSizeCheck;
@@ -380,45 +380,45 @@ namespace UnityEngine::XR::Interaction::Toolkit {
     // Set static field: static private System.String[] s_InputAxisNames
     static void _set_s_InputAxisNames(::ArrayW<::StringW> value);
     // Get instance field reference: private UnityEngine.XR.Interaction.Toolkit.XRController/UnityEngine.XR.Interaction.Toolkit.UpdateType m_UpdateTrackingType
-    [[deprecated]] ::UnityEngine::XR::Interaction::Toolkit::XRController::UpdateType& dyn_m_UpdateTrackingType();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::Interaction::Toolkit::XRController::UpdateType& dyn_m_UpdateTrackingType();
     // Get instance field reference: private System.Boolean m_EnableInputTracking
-    [[deprecated]] bool& dyn_m_EnableInputTracking();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_EnableInputTracking();
     // Get instance field reference: private System.Boolean m_EnableInputActions
-    [[deprecated]] bool& dyn_m_EnableInputActions();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_EnableInputActions();
     // Get instance field reference: private UnityEngine.XR.XRNode m_ControllerNode
-    [[deprecated]] ::UnityEngine::XR::XRNode& dyn_m_ControllerNode();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::XRNode& dyn_m_ControllerNode();
     // Get instance field reference: private UnityEngine.XR.Interaction.Toolkit.XRController/UnityEngine.XR.Interaction.Toolkit.InputAxes m_SelectUsage
-    [[deprecated]] ::UnityEngine::XR::Interaction::Toolkit::XRController::InputAxes& dyn_m_SelectUsage();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::Interaction::Toolkit::XRController::InputAxes& dyn_m_SelectUsage();
     // Get instance field reference: private UnityEngine.XR.Interaction.Toolkit.XRController/UnityEngine.XR.Interaction.Toolkit.InputAxes m_ActivateUsage
-    [[deprecated]] ::UnityEngine::XR::Interaction::Toolkit::XRController::InputAxes& dyn_m_ActivateUsage();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::Interaction::Toolkit::XRController::InputAxes& dyn_m_ActivateUsage();
     // Get instance field reference: private UnityEngine.XR.Interaction.Toolkit.XRController/UnityEngine.XR.Interaction.Toolkit.InputAxes m_UIPressUsage
-    [[deprecated]] ::UnityEngine::XR::Interaction::Toolkit::XRController::InputAxes& dyn_m_UIPressUsage();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::Interaction::Toolkit::XRController::InputAxes& dyn_m_UIPressUsage();
     // Get instance field reference: private System.Single m_AxisToPressThreshold
-    [[deprecated]] float& dyn_m_AxisToPressThreshold();
+    [[deprecated("Use field access instead!")]] float& dyn_m_AxisToPressThreshold();
     // Get instance field reference: private UnityEngine.Transform m_ModelPrefab
-    [[deprecated]] ::UnityEngine::Transform*& dyn_m_ModelPrefab();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_m_ModelPrefab();
     // Get instance field reference: private UnityEngine.Transform m_ModelTransform
-    [[deprecated]] ::UnityEngine::Transform*& dyn_m_ModelTransform();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_m_ModelTransform();
     // Get instance field reference: private System.Boolean m_AnimateModel
-    [[deprecated]] bool& dyn_m_AnimateModel();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_AnimateModel();
     // Get instance field reference: private System.String m_ModelSelectTransition
-    [[deprecated]] ::StringW& dyn_m_ModelSelectTransition();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_ModelSelectTransition();
     // Get instance field reference: private System.String m_ModelDeSelectTransition
-    [[deprecated]] ::StringW& dyn_m_ModelDeSelectTransition();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_ModelDeSelectTransition();
     // Get instance field reference: private UnityEngine.XR.Interaction.Toolkit.XRController/UnityEngine.XR.Interaction.Toolkit.InteractionState m_SelectInteractionState
-    [[deprecated]] ::UnityEngine::XR::Interaction::Toolkit::XRController::InteractionState& dyn_m_SelectInteractionState();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::Interaction::Toolkit::XRController::InteractionState& dyn_m_SelectInteractionState();
     // Get instance field reference: private UnityEngine.XR.Interaction.Toolkit.XRController/UnityEngine.XR.Interaction.Toolkit.InteractionState m_ActivateInteractionState
-    [[deprecated]] ::UnityEngine::XR::Interaction::Toolkit::XRController::InteractionState& dyn_m_ActivateInteractionState();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::Interaction::Toolkit::XRController::InteractionState& dyn_m_ActivateInteractionState();
     // Get instance field reference: private UnityEngine.XR.Interaction.Toolkit.XRController/UnityEngine.XR.Interaction.Toolkit.InteractionState m_UIPressInteractionState
-    [[deprecated]] ::UnityEngine::XR::Interaction::Toolkit::XRController::InteractionState& dyn_m_UIPressInteractionState();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::Interaction::Toolkit::XRController::InteractionState& dyn_m_UIPressInteractionState();
     // Get instance field reference: private UnityEngine.XR.InputDevice m_InputDevice
-    [[deprecated]] ::UnityEngine::XR::InputDevice& dyn_m_InputDevice();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::InputDevice& dyn_m_InputDevice();
     // Get instance field reference: private System.Boolean m_PerformSetup
-    [[deprecated]] bool& dyn_m_PerformSetup();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_PerformSetup();
     // Get instance field reference: private UnityEngine.GameObject m_ModelGO
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_m_ModelGO();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_m_ModelGO();
     // Get instance field reference: private System.Boolean m_HideControllerModel
-    [[deprecated]] bool& dyn_m_HideControllerModel();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_HideControllerModel();
     // public UnityEngine.XR.Interaction.Toolkit.XRController/UnityEngine.XR.Interaction.Toolkit.UpdateType get_updateTrackingType()
     // Offset: 0x1E1910
     ::UnityEngine::XR::Interaction::Toolkit::XRController::UpdateType get_updateTrackingType();
@@ -512,6 +512,16 @@ namespace UnityEngine::XR::Interaction::Toolkit {
     // public System.Void set_hideControllerModel(System.Boolean value)
     // Offset: 0x3042F0
     void set_hideControllerModel(bool value);
+    // public System.Void .ctor()
+    // Offset: 0x3041A0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static XRController* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::XR::Interaction::Toolkit::XRController::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<XRController*, creationType>()));
+    }
+    // static private System.Void .cctor()
+    // Offset: 0x303E80
+    static void _cctor();
     // protected System.Void OnEnable()
     // Offset: 0x3032A0
     void OnEnable();
@@ -563,24 +573,6 @@ namespace UnityEngine::XR::Interaction::Toolkit {
     // public System.Boolean SendHapticImpulse(System.Single amplitude, System.Single duration)
     // Offset: 0x303320
     bool SendHapticImpulse(float amplitude, float duration);
-    // public System.Void .ctor()
-    // Offset: 0x3041A0
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static XRController* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::XR::Interaction::Toolkit::XRController::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<XRController*, creationType>()));
-    }
-    // static private System.Void .cctor()
-    // Offset: 0x303E80
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.cctor()
-    static void _cctor();
   }; // UnityEngine.XR.Interaction.Toolkit.XRController
   #pragma pack(pop)
   static check_size<sizeof(XRController), 144 + sizeof(bool)> __UnityEngine_XR_Interaction_Toolkit_XRControllerSizeCheck;
@@ -854,6 +846,18 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::XR::Interaction::Toolkit::XRController*), "set_hideControllerModel", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::XR::Interaction::Toolkit::XRController::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
+// Writing MetadataGetter for method: UnityEngine::XR::Interaction::Toolkit::XRController::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&UnityEngine::XR::Interaction::Toolkit::XRController::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(UnityEngine::XR::Interaction::Toolkit::XRController*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
 // Writing MetadataGetter for method: UnityEngine::XR::Interaction::Toolkit::XRController::OnEnable
 // Il2CppName: OnEnable
 template<>
@@ -1001,17 +1005,5 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Unity
     static auto* amplitude = &::il2cpp_utils::GetClassFromName("System", "Single")->byval_arg;
     static auto* duration = &::il2cpp_utils::GetClassFromName("System", "Single")->byval_arg;
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::XR::Interaction::Toolkit::XRController*), "SendHapticImpulse", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{amplitude, duration});
-  }
-};
-// Writing MetadataGetter for method: UnityEngine::XR::Interaction::Toolkit::XRController::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
-// Writing MetadataGetter for method: UnityEngine::XR::Interaction::Toolkit::XRController::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&UnityEngine::XR::Interaction::Toolkit::XRController::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(UnityEngine::XR::Interaction::Toolkit::XRController*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };

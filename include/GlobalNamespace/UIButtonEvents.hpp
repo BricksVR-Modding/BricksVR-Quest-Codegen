@@ -168,41 +168,48 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public UnityEngine.Color textBaseColor
-    [[deprecated]] ::UnityEngine::Color& dyn_textBaseColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_textBaseColor();
     // Get instance field reference: public UnityEngine.Color textHoveredColor
-    [[deprecated]] ::UnityEngine::Color& dyn_textHoveredColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_textHoveredColor();
     // Get instance field reference: public UnityEngine.Color textSelectedColor
-    [[deprecated]] ::UnityEngine::Color& dyn_textSelectedColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_textSelectedColor();
     // Get instance field reference: public UnityEngine.Color imageBaseColor
-    [[deprecated]] ::UnityEngine::Color& dyn_imageBaseColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_imageBaseColor();
     // Get instance field reference: public UnityEngine.Color imageHoveredColor
-    [[deprecated]] ::UnityEngine::Color& dyn_imageHoveredColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_imageHoveredColor();
     // Get instance field reference: public UnityEngine.Color imageSelectedColor
-    [[deprecated]] ::UnityEngine::Color& dyn_imageSelectedColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_imageSelectedColor();
     // Get instance field reference: public TMPro.TextMeshProUGUI text
-    [[deprecated]] ::TMPro::TextMeshProUGUI*& dyn_text();
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshProUGUI*& dyn_text();
     // Get instance field reference: public UnityEngine.UI.Image image
-    [[deprecated]] ::UnityEngine::UI::Image*& dyn_image();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Image*& dyn_image();
     // Get instance field reference: public System.Single hoverGrowFactor
-    [[deprecated]] float& dyn_hoverGrowFactor();
+    [[deprecated("Use field access instead!")]] float& dyn_hoverGrowFactor();
     // Get instance field reference: private UnityEngine.Vector3 _initialButtonScale
-    [[deprecated]] ::UnityEngine::Vector3& dyn__initialButtonScale();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__initialButtonScale();
     // Get instance field reference: public System.Single animationSpeed
-    [[deprecated]] float& dyn_animationSpeed();
+    [[deprecated("Use field access instead!")]] float& dyn_animationSpeed();
     // Get instance field reference: private System.Single _animationIndex
-    [[deprecated]] float& dyn__animationIndex();
+    [[deprecated("Use field access instead!")]] float& dyn__animationIndex();
     // Get instance field reference: private System.Boolean _hovered
-    [[deprecated]] bool& dyn__hovered();
+    [[deprecated("Use field access instead!")]] bool& dyn__hovered();
     // Get instance field reference: private System.Boolean _selected
-    [[deprecated]] bool& dyn__selected();
+    [[deprecated("Use field access instead!")]] bool& dyn__selected();
     // Get instance field reference: private UnityEngine.Color _defaultButtonImageColor
-    [[deprecated]] ::UnityEngine::Color& dyn__defaultButtonImageColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__defaultButtonImageColor();
     // Get instance field reference: private UnityEngine.Color _selectedButtonImageColor
-    [[deprecated]] ::UnityEngine::Color& dyn__selectedButtonImageColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__selectedButtonImageColor();
     // Get instance field reference: private UnityEngine.Color _hoveredButtonImageColor
-    [[deprecated]] ::UnityEngine::Color& dyn__hoveredButtonImageColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn__hoveredButtonImageColor();
     // Get instance field reference: private UnityEngine.UI.Button _button
-    [[deprecated]] ::UnityEngine::UI::Button*& dyn__button();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Button*& dyn__button();
+    // public System.Void .ctor()
+    // Offset: 0x1DDE30
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static UIButtonEvents* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::UIButtonEvents::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<UIButtonEvents*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0x923AE0
     void Awake();
@@ -224,25 +231,16 @@ namespace GlobalNamespace {
     // public System.Void OnPointerExit(UnityEngine.EventSystems.BaseEventData eventData)
     // Offset: 0x923CB0
     void OnPointerExit(::UnityEngine::EventSystems::BaseEventData* eventData);
-    // public System.Void .ctor()
-    // Offset: 0x1DDE30
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static UIButtonEvents* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::UIButtonEvents::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<UIButtonEvents*, creationType>()));
-    }
   }; // UIButtonEvents
   #pragma pack(pop)
   static check_size<sizeof(UIButtonEvents), 216 + sizeof(::UnityEngine::UI::Button*)> __GlobalNamespace_UIButtonEventsSizeCheck;
   static_assert(sizeof(UIButtonEvents) == 0xE0);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::UIButtonEvents::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::UIButtonEvents::Awake
 // Il2CppName: Awake
 template<>
@@ -302,7 +300,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::UIButtonEvents*), "OnPointerExit", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{eventData});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::UIButtonEvents::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

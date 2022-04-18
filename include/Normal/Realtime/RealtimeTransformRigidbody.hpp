@@ -115,23 +115,23 @@ namespace Normal::Realtime {
       return *reinterpret_cast<::Normal::Realtime::IRealtimeTransformStrategy*>(this);
     }
     // Get instance field reference: private readonly Normal.Realtime.RealtimeTransform _component
-    [[deprecated]] ::Normal::Realtime::RealtimeTransform*& dyn__component();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::RealtimeTransform*& dyn__component();
     // Get instance field reference: private readonly UnityEngine.Rigidbody _rigidbody
-    [[deprecated]] ::UnityEngine::Rigidbody*& dyn__rigidbody();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Rigidbody*& dyn__rigidbody();
     // Get instance field reference: private readonly Normal.Realtime.Timeline`1<Normal.Realtime.RigidbodyPhysicsBodyFrame> _physicsBodyTimeline
-    [[deprecated]] ::Normal::Realtime::Timeline_1<::Normal::Realtime::RigidbodyPhysicsBodyFrame>*& dyn__physicsBodyTimeline();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::Timeline_1<::Normal::Realtime::RigidbodyPhysicsBodyFrame>*& dyn__physicsBodyTimeline();
     // Get instance field reference: private readonly Normal.Realtime.Timeline`1<Normal.Realtime.RigidbodyPhysicsStateFrame> _physicsStateTimeline
-    [[deprecated]] ::Normal::Realtime::Timeline_1<::Normal::Realtime::RigidbodyPhysicsStateFrame>*& dyn__physicsStateTimeline();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::Timeline_1<::Normal::Realtime::RigidbodyPhysicsStateFrame>*& dyn__physicsStateTimeline();
     // Get instance field reference: private readonly Normal.Realtime.InterpolationDelay _delay
-    [[deprecated]] ::Normal::Realtime::InterpolationDelay*& dyn__delay();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::InterpolationDelay*& dyn__delay();
     // Get instance field reference: private System.Double _fixedRoomTime
-    [[deprecated]] double& dyn__fixedRoomTime();
+    [[deprecated("Use field access instead!")]] double& dyn__fixedRoomTime();
     // Get instance field reference: private System.Boolean _fixedRoomTimeInitialized
-    [[deprecated]] bool& dyn__fixedRoomTimeInitialized();
+    [[deprecated("Use field access instead!")]] bool& dyn__fixedRoomTimeInitialized();
     // Get instance field reference: private UnityEngine.Vector3 _velocityPrevWrite
-    [[deprecated]] ::UnityEngine::Vector3& dyn__velocityPrevWrite();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__velocityPrevWrite();
     // Get instance field reference: private UnityEngine.Vector3 _angularVelocityPrevWrite
-    [[deprecated]] ::UnityEngine::Vector3& dyn__angularVelocityPrevWrite();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__angularVelocityPrevWrite();
     // private System.Double get_roomTime()
     // Offset: 0x8C8170
     double get_roomTime();

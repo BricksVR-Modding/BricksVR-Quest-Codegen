@@ -78,13 +78,20 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public UnityEngine.UI.Image borderImage
-    [[deprecated]] ::UnityEngine::UI::Image*& dyn_borderImage();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Image*& dyn_borderImage();
     // Get instance field reference: public UnityEngine.UI.Image colorImage
-    [[deprecated]] ::UnityEngine::UI::Image*& dyn_colorImage();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Image*& dyn_colorImage();
     // Get instance field reference: public BrickPickerManager brickPickerManager
-    [[deprecated]] ::GlobalNamespace::BrickPickerManager*& dyn_brickPickerManager();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::BrickPickerManager*& dyn_brickPickerManager();
     // Get instance field reference: public UnityEngine.Color color
-    [[deprecated]] ::UnityEngine::Color& dyn_color();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_color();
+    // public System.Void .ctor()
+    // Offset: 0x6B1F30
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ColorPickerSaveSpot* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::ColorPickerSaveSpot::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ColorPickerSaveSpot*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0x6B1DF0
     void Awake();
@@ -103,25 +110,16 @@ namespace GlobalNamespace {
     // public System.Void Disable()
     // Offset: 0x6B1E30
     void Disable();
-    // public System.Void .ctor()
-    // Offset: 0x6B1F30
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ColorPickerSaveSpot* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::ColorPickerSaveSpot::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ColorPickerSaveSpot*, creationType>()));
-    }
   }; // ColorPickerSaveSpot
   #pragma pack(pop)
   static check_size<sizeof(ColorPickerSaveSpot), 48 + sizeof(::UnityEngine::Color)> __GlobalNamespace_ColorPickerSaveSpotSizeCheck;
   static_assert(sizeof(ColorPickerSaveSpot) == 0x40);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::ColorPickerSaveSpot::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::ColorPickerSaveSpot::Awake
 // Il2CppName: Awake
 template<>
@@ -172,7 +170,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::ColorPickerSaveSpot*), "Disable", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::ColorPickerSaveSpot::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -51,12 +51,19 @@ namespace ProfanityFilter {
     static_assert(sizeof(::ArrayW<::StringW>) == 0x8);
     public:
     // Get instance field reference: protected System.Collections.Generic.List`1<System.String> _profanities
-    [[deprecated]] ::System::Collections::Generic::List_1<::StringW>*& dyn__profanities();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::StringW>*& dyn__profanities();
     // Get instance field reference: private readonly System.String[] _wordList
-    [[deprecated]] ::ArrayW<::StringW>& dyn__wordList();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn__wordList();
     // public System.Int32 get_Count()
     // Offset: 0x6A8F70
     int get_Count();
+    // public System.Void .ctor()
+    // Offset: 0x699E70
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ProfanityBase* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::ProfanityFilter::ProfanityBase::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ProfanityBase*, creationType>()));
+    }
     // protected System.Void .ctor(System.String[] profanityList)
     // Offset: 0x67BC50
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -92,15 +99,6 @@ namespace ProfanityFilter {
     // public System.Void Clear()
     // Offset: 0x67B8D0
     void Clear();
-    // public System.Void .ctor()
-    // Offset: 0x699E70
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ProfanityBase* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::ProfanityFilter::ProfanityBase::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ProfanityBase*, creationType>()));
-    }
   }; // ProfanityFilter.ProfanityBase
   #pragma pack(pop)
   static check_size<sizeof(ProfanityBase), 24 + sizeof(::ArrayW<::StringW>)> __ProfanityFilter_ProfanityBaseSizeCheck;
@@ -115,6 +113,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (Profan
     return ::il2cpp_utils::FindMethod(classof(ProfanityFilter::ProfanityBase*), "get_Count", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: ProfanityFilter::ProfanityBase::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: ProfanityFilter::ProfanityBase::New_ctor
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
@@ -185,7 +187,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Profa
     return ::il2cpp_utils::FindMethod(classof(ProfanityFilter::ProfanityBase*), "Clear", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: ProfanityFilter::ProfanityBase::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

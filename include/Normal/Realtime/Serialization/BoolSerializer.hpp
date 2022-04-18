@@ -41,6 +41,13 @@ namespace Normal::Realtime::Serialization {
     operator ::Normal::Realtime::Serialization::ISerializer_1<bool>() noexcept {
       return *reinterpret_cast<::Normal::Realtime::Serialization::ISerializer_1<bool>*>(this);
     }
+    // public System.Void .ctor()
+    // Offset: 0x1DD400
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static BoolSerializer* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::Serialization::BoolSerializer::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<BoolSerializer*, creationType>()));
+    }
     // public System.Int32 Length(System.Boolean value)
     // Offset: 0x88A360
     int Length(bool value);
@@ -50,19 +57,14 @@ namespace Normal::Realtime::Serialization {
     // public System.Void Read(ref Normal.Realtime.Serialization.ReadStream stream, ref System.Boolean value)
     // Offset: 0x88A370
     void Read(ByRef<::Normal::Realtime::Serialization::ReadStream*> stream, ByRef<bool> value);
-    // public System.Void .ctor()
-    // Offset: 0x1DD400
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static BoolSerializer* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::Serialization::BoolSerializer::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<BoolSerializer*, creationType>()));
-    }
   }; // Normal.Realtime.Serialization.BoolSerializer
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Normal::Realtime::Serialization::BoolSerializer::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Normal::Realtime::Serialization::BoolSerializer::Length
 // Il2CppName: Length
 template<>
@@ -92,7 +94,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Norma
     return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::Serialization::BoolSerializer*), "Read", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{stream, value});
   }
 };
-// Writing MetadataGetter for method: Normal::Realtime::Serialization::BoolSerializer::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

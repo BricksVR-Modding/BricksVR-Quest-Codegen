@@ -54,9 +54,9 @@ namespace UnityEngine {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private System.Boolean <wantsMouseMove>k__BackingField
-    [[deprecated]] bool& dyn_$wantsMouseMove$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$wantsMouseMove$k__BackingField();
     // Get instance field reference: private System.Boolean <wantsMouseEnterLeaveWindow>k__BackingField
-    [[deprecated]] bool& dyn_$wantsMouseEnterLeaveWindow$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$wantsMouseEnterLeaveWindow$k__BackingField();
     // public System.Boolean get_wantsMouseMove()
     // Offset: 0x2F6A80
     bool get_wantsMouseMove();

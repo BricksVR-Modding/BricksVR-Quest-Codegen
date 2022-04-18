@@ -93,7 +93,7 @@ namespace Normal::Realtime::Serialization {
     // Set static field: static public Normal.Realtime.Serialization.Serialization/Normal.Realtime.Serialization.WireType Bounds
     static void _set_Bounds(::Normal::Realtime::Serialization::Serialization::WireType value);
     // Get instance field reference: public System.Byte value__
-    [[deprecated]] uint8_t& dyn_value__();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn_value__();
   }; // Normal.Realtime.Serialization.Serialization/Normal.Realtime.Serialization.WireType
   #pragma pack(pop)
   static check_size<sizeof(Serialization::WireType), 0 + sizeof(uint8_t)> __Normal_Realtime_Serialization_Serialization_WireTypeSizeCheck;

@@ -101,6 +101,13 @@ namespace UnityEngine {
     // public System.Void set_maxAngularVelocity(System.Single value)
     // Offset: 0x64A6E0
     void set_maxAngularVelocity(float value);
+    // public System.Void .ctor()
+    // Offset: 0x64A090
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static Rigidbody* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Rigidbody::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<Rigidbody*, creationType>()));
+    }
     // public System.Void MovePosition(UnityEngine.Vector3 position)
     // Offset: 0x649F60
     void MovePosition(::UnityEngine::Vector3 position);
@@ -158,17 +165,6 @@ namespace UnityEngine {
     // private System.Void AddExplosionForce_Injected(System.Single explosionForce, ref UnityEngine.Vector3 explosionPosition, System.Single explosionRadius, System.Single upwardsModifier, UnityEngine.ForceMode mode)
     // Offset: 0x649D20
     void AddExplosionForce_Injected(float explosionForce, ByRef<::UnityEngine::Vector3> explosionPosition, float explosionRadius, float upwardsModifier, ::UnityEngine::ForceMode mode);
-    // public System.Void .ctor()
-    // Offset: 0x64A090
-    // Implemented from: UnityEngine.Component
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static Rigidbody* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Rigidbody::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<Rigidbody*, creationType>()));
-    }
   }; // UnityEngine.Rigidbody
   #pragma pack(pop)
 }
@@ -344,6 +340,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Rigidbody*), "set_maxAngularVelocity", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::Rigidbody::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::Rigidbody::MovePosition
 // Il2CppName: MovePosition
 template<>
@@ -523,7 +523,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Rigidbody*), "AddExplosionForce_Injected", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{explosionForce, explosionPosition, explosionRadius, upwardsModifier, mode});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::Rigidbody::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

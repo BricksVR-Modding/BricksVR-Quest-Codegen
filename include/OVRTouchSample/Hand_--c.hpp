@@ -48,18 +48,16 @@ namespace OVRTouchSample {
     // static private System.Void .cctor()
     // Offset: 0x735E20
     static void _cctor();
-    // System.Boolean <Start>b__36_0(UnityEngine.Collider childCollider)
-    // Offset: 0x735D00
-    bool $Start$b__36_0(::UnityEngine::Collider* childCollider);
     // public System.Void .ctor()
     // Offset: 0x1DD400
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Hand::$$c* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::OVRTouchSample::Hand::$$c::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<Hand::$$c*, creationType>()));
     }
+    // System.Boolean <Start>b__36_0(UnityEngine.Collider childCollider)
+    // Offset: 0x735D00
+    bool $Start$b__36_0(::UnityEngine::Collider* childCollider);
   }; // OVRTouchSample.Hand/OVRTouchSample.<>c
   #pragma pack(pop)
 }
@@ -72,6 +70,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(OVRTouchSample::Hand::$$c*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: OVRTouchSample::Hand::$$c::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: OVRTouchSample::Hand::$$c::$Start$b__36_0
 // Il2CppName: <Start>b__36_0
 template<>
@@ -81,7 +83,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (OVRTo
     return ::il2cpp_utils::FindMethod(classof(OVRTouchSample::Hand::$$c*), "<Start>b__36_0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{childCollider});
   }
 };
-// Writing MetadataGetter for method: OVRTouchSample::Hand::$$c::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -71,33 +71,35 @@ namespace Normal::Realtime {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: public System.Action`2<System.Boolean,Normal.Realtime.RealtimeViewModel> completionHandler
-    [[deprecated]] ::System::Action_2<bool, ::Normal::Realtime::RealtimeViewModel*>*& dyn_completionHandler();
+    [[deprecated("Use field access instead!")]] ::System::Action_2<bool, ::Normal::Realtime::RealtimeViewModel*>*& dyn_completionHandler();
     // Get instance field reference: public Normal.Realtime.RealtimeViewModel sceneViewViewModel
-    [[deprecated]] ::Normal::Realtime::RealtimeViewModel*& dyn_sceneViewViewModel();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::RealtimeViewModel*& dyn_sceneViewViewModel();
     // Get instance field reference: public Normal.Realtime.Datastore <>4__this
-    [[deprecated]] ::Normal::Realtime::Datastore*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::Datastore*& dyn_$$4__this();
     // Get instance field reference: public System.String sceneViewUUID
-    [[deprecated]] ::StringW& dyn_sceneViewUUID();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_sceneViewUUID();
     // Get instance field reference: public System.Int32 previousAttempts
-    [[deprecated]] int& dyn_previousAttempts();
-    // System.Void <TryInsertSceneViewModelIntoDatastore>b__0(System.Boolean success)
-    // Offset: 0x8CDC00
-    void $TryInsertSceneViewModelIntoDatastore$b__0(bool success);
+    [[deprecated("Use field access instead!")]] int& dyn_previousAttempts();
     // public System.Void .ctor()
     // Offset: 0x1DD400
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Datastore::$$c__DisplayClass22_0* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::Datastore::$$c__DisplayClass22_0::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<Datastore::$$c__DisplayClass22_0*, creationType>()));
     }
+    // System.Void <TryInsertSceneViewModelIntoDatastore>b__0(System.Boolean success)
+    // Offset: 0x8CDC00
+    void $TryInsertSceneViewModelIntoDatastore$b__0(bool success);
   }; // Normal.Realtime.Datastore/Normal.Realtime.<>c__DisplayClass22_0
   #pragma pack(pop)
   static check_size<sizeof(Datastore::$$c__DisplayClass22_0), 48 + sizeof(int)> __Normal_Realtime_Datastore_$$c__DisplayClass22_0SizeCheck;
   static_assert(sizeof(Datastore::$$c__DisplayClass22_0) == 0x34);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Normal::Realtime::Datastore::$$c__DisplayClass22_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Normal::Realtime::Datastore::$$c__DisplayClass22_0::$TryInsertSceneViewModelIntoDatastore$b__0
 // Il2CppName: <TryInsertSceneViewModelIntoDatastore>b__0
 template<>
@@ -107,7 +109,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Norma
     return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::Datastore::$$c__DisplayClass22_0*), "<TryInsertSceneViewModelIntoDatastore>b__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{success});
   }
 };
-// Writing MetadataGetter for method: Normal::Realtime::Datastore::$$c__DisplayClass22_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

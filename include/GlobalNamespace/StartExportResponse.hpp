@@ -50,11 +50,11 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Boolean Success
-    [[deprecated]] bool& dyn_Success();
+    [[deprecated("Use field access instead!")]] bool& dyn_Success();
     // Get instance field reference: public System.Boolean RateLimited
-    [[deprecated]] bool& dyn_RateLimited();
+    [[deprecated("Use field access instead!")]] bool& dyn_RateLimited();
     // Get instance field reference: public System.Boolean EmptyRoom
-    [[deprecated]] bool& dyn_EmptyRoom();
+    [[deprecated("Use field access instead!")]] bool& dyn_EmptyRoom();
   }; // StartExportResponse
   #pragma pack(pop)
   static check_size<sizeof(StartExportResponse), 2 + sizeof(bool)> __GlobalNamespace_StartExportResponseSizeCheck;

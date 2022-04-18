@@ -37,25 +37,27 @@ namespace GlobalNamespace {
       return onValueChanged;
     }
     // Get instance field reference: public DebugUIBuilder/OnSlider onValueChanged
-    [[deprecated]] ::GlobalNamespace::DebugUIBuilder::OnSlider*& dyn_onValueChanged();
-    // System.Void <AddSlider>b__0(System.Single f)
-    // Offset: 0x29B860
-    void $AddSlider$b__0(float f);
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::DebugUIBuilder::OnSlider*& dyn_onValueChanged();
     // public System.Void .ctor()
     // Offset: 0x1DD400
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static DebugUIBuilder::$$c__DisplayClass37_0* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::DebugUIBuilder::$$c__DisplayClass37_0::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<DebugUIBuilder::$$c__DisplayClass37_0*, creationType>()));
     }
+    // System.Void <AddSlider>b__0(System.Single f)
+    // Offset: 0x29B860
+    void $AddSlider$b__0(float f);
   }; // DebugUIBuilder/<>c__DisplayClass37_0
   #pragma pack(pop)
   static check_size<sizeof(DebugUIBuilder::$$c__DisplayClass37_0), 16 + sizeof(::GlobalNamespace::DebugUIBuilder::OnSlider*)> __GlobalNamespace_DebugUIBuilder_$$c__DisplayClass37_0SizeCheck;
   static_assert(sizeof(DebugUIBuilder::$$c__DisplayClass37_0) == 0x18);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::DebugUIBuilder::$$c__DisplayClass37_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::DebugUIBuilder::$$c__DisplayClass37_0::$AddSlider$b__0
 // Il2CppName: <AddSlider>b__0
 template<>
@@ -65,7 +67,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::DebugUIBuilder::$$c__DisplayClass37_0*), "<AddSlider>b__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{f});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::DebugUIBuilder::$$c__DisplayClass37_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

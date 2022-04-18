@@ -71,7 +71,7 @@ namespace System {
       return m_innerExceptions;
     }
     // Get instance field reference: private System.Collections.ObjectModel.ReadOnlyCollection`1<System.Exception> m_innerExceptions
-    [[deprecated]] ::System::Collections::ObjectModel::ReadOnlyCollection_1<::System::Exception*>*& dyn_m_innerExceptions();
+    [[deprecated("Use field access instead!")]] ::System::Collections::ObjectModel::ReadOnlyCollection_1<::System::Exception*>*& dyn_m_innerExceptions();
     // public System.Collections.ObjectModel.ReadOnlyCollection`1<System.Exception> get_InnerExceptions()
     // Offset: 0x301340
     ::System::Collections::ObjectModel::ReadOnlyCollection_1<::System::Exception*>* get_InnerExceptions();

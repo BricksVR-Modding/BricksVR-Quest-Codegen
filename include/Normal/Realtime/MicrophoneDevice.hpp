@@ -78,15 +78,15 @@ namespace Normal::Realtime {
     // Set static field: static private Normal.Realtime.MicrophoneDevice <sharedMicrophone>k__BackingField
     static void _set_$sharedMicrophone$k__BackingField(::Normal::Realtime::MicrophoneDevice* value);
     // Get instance field reference: private UnityEngine.AudioClip _microphone
-    [[deprecated]] ::UnityEngine::AudioClip*& dyn__microphone();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AudioClip*& dyn__microphone();
     // Get instance field reference: private System.String _deviceName
-    [[deprecated]] ::StringW& dyn__deviceName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__deviceName();
     // Get instance field reference: private System.Int32 _sampleRate
-    [[deprecated]] int& dyn__sampleRate();
+    [[deprecated("Use field access instead!")]] int& dyn__sampleRate();
     // Get instance field reference: private System.Int32 _numberOfChannels
-    [[deprecated]] int& dyn__numberOfChannels();
+    [[deprecated("Use field access instead!")]] int& dyn__numberOfChannels();
     // Get instance field reference: private System.Int32 _sampleCount
-    [[deprecated]] int& dyn__sampleCount();
+    [[deprecated("Use field access instead!")]] int& dyn__sampleCount();
     // static public Normal.Realtime.MicrophoneDevice get_sharedMicrophone()
     // Offset: 0xBDB400
     static ::Normal::Realtime::MicrophoneDevice* get_sharedMicrophone();

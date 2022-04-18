@@ -264,7 +264,7 @@ namespace System::Diagnostics::Tracing {
     // Set static field: static public System.Diagnostics.Tracing.TraceLoggingDataType HResult
     static void _set_HResult(::System::Diagnostics::Tracing::TraceLoggingDataType value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // System.Diagnostics.Tracing.TraceLoggingDataType
   #pragma pack(pop)
   static check_size<sizeof(TraceLoggingDataType), 0 + sizeof(int)> __System_Diagnostics_Tracing_TraceLoggingDataTypeSizeCheck;

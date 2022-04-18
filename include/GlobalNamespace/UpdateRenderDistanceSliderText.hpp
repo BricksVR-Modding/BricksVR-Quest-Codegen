@@ -46,29 +46,27 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public TMPro.TextMeshProUGUI sliderLabel
-    [[deprecated]] ::TMPro::TextMeshProUGUI*& dyn_sliderLabel();
-    // public System.Void SliderValueSet(System.Int32 value)
-    // Offset: 0x924E00
-    void SliderValueSet(int value);
+    [[deprecated("Use field access instead!")]] ::TMPro::TextMeshProUGUI*& dyn_sliderLabel();
     // public System.Void .ctor()
     // Offset: 0x1DDE30
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static UpdateRenderDistanceSliderText* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::UpdateRenderDistanceSliderText::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<UpdateRenderDistanceSliderText*, creationType>()));
     }
+    // public System.Void SliderValueSet(System.Int32 value)
+    // Offset: 0x924E00
+    void SliderValueSet(int value);
   }; // UpdateRenderDistanceSliderText
   #pragma pack(pop)
   static check_size<sizeof(UpdateRenderDistanceSliderText), 24 + sizeof(::TMPro::TextMeshProUGUI*)> __GlobalNamespace_UpdateRenderDistanceSliderTextSizeCheck;
   static_assert(sizeof(UpdateRenderDistanceSliderText) == 0x20);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::UpdateRenderDistanceSliderText::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::UpdateRenderDistanceSliderText::SliderValueSet
 // Il2CppName: SliderValueSet
 template<>
@@ -78,7 +76,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::UpdateRenderDistanceSliderText*), "SliderValueSet", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::UpdateRenderDistanceSliderText::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

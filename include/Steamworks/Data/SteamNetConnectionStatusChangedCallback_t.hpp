@@ -76,11 +76,11 @@ namespace Steamworks::Data {
     // Set static field: static public System.Int32 _datasize
     static void _set__datasize(int value);
     // Get instance field reference: Steamworks.Data.Connection Conn
-    [[deprecated]] ::Steamworks::Data::Connection& dyn_Conn();
+    [[deprecated("Use field access instead!")]] ::Steamworks::Data::Connection& dyn_Conn();
     // Get instance field reference: Steamworks.Data.ConnectionInfo Nfo
-    [[deprecated]] ::Steamworks::Data::ConnectionInfo& dyn_Nfo();
+    [[deprecated("Use field access instead!")]] ::Steamworks::Data::ConnectionInfo& dyn_Nfo();
     // Get instance field reference: Steamworks.ConnectionState OldState
-    [[deprecated]] ::Steamworks::ConnectionState& dyn_OldState();
+    [[deprecated("Use field access instead!")]] ::Steamworks::ConnectionState& dyn_OldState();
     // public Steamworks.CallbackType get_CallbackType()
     // Offset: 0x466A90
     ::Steamworks::CallbackType get_CallbackType();

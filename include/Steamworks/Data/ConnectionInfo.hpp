@@ -110,27 +110,27 @@ namespace Steamworks::Data {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: Steamworks.Data.NetIdentity identity
-    [[deprecated]] ::Steamworks::Data::NetIdentity& dyn_identity();
+    [[deprecated("Use field access instead!")]] ::Steamworks::Data::NetIdentity& dyn_identity();
     // Get instance field reference: System.Int64 userData
-    [[deprecated]] int64_t& dyn_userData();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_userData();
     // Get instance field reference: Steamworks.Data.Socket listenSocket
-    [[deprecated]] ::Steamworks::Data::Socket& dyn_listenSocket();
+    [[deprecated("Use field access instead!")]] ::Steamworks::Data::Socket& dyn_listenSocket();
     // Get instance field reference: Steamworks.Data.NetAddress address
-    [[deprecated]] ::Steamworks::Data::NetAddress& dyn_address();
+    [[deprecated("Use field access instead!")]] ::Steamworks::Data::NetAddress& dyn_address();
     // Get instance field reference: System.UInt16 pad
-    [[deprecated]] uint16_t& dyn_pad();
+    [[deprecated("Use field access instead!")]] uint16_t& dyn_pad();
     // Get instance field reference: Steamworks.Data.SteamNetworkingPOPID popRemote
-    [[deprecated]] ::Steamworks::Data::SteamNetworkingPOPID& dyn_popRemote();
+    [[deprecated("Use field access instead!")]] ::Steamworks::Data::SteamNetworkingPOPID& dyn_popRemote();
     // Get instance field reference: Steamworks.Data.SteamNetworkingPOPID popRelay
-    [[deprecated]] ::Steamworks::Data::SteamNetworkingPOPID& dyn_popRelay();
+    [[deprecated("Use field access instead!")]] ::Steamworks::Data::SteamNetworkingPOPID& dyn_popRelay();
     // Get instance field reference: Steamworks.ConnectionState state
-    [[deprecated]] ::Steamworks::ConnectionState& dyn_state();
+    [[deprecated("Use field access instead!")]] ::Steamworks::ConnectionState& dyn_state();
     // Get instance field reference: System.Int32 endReason
-    [[deprecated]] int& dyn_endReason();
+    [[deprecated("Use field access instead!")]] int& dyn_endReason();
     // Get instance field reference: System.String endDebug
-    [[deprecated]] ::StringW& dyn_endDebug();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_endDebug();
     // Get instance field reference: System.String connectionDescription
-    [[deprecated]] ::StringW& dyn_connectionDescription();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_connectionDescription();
     // public Steamworks.ConnectionState get_State()
     // Offset: 0x2F6A90
     ::Steamworks::ConnectionState get_State();

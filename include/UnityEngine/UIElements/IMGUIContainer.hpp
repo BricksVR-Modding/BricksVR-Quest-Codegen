@@ -116,19 +116,19 @@ namespace UnityEngine::UIElements {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: public UnityEngine.Matrix4x4 matrix
-      [[deprecated]] ::UnityEngine::Matrix4x4& dyn_matrix();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::Matrix4x4& dyn_matrix();
       // Get instance field reference: public UnityEngine.Color color
-      [[deprecated]] ::UnityEngine::Color& dyn_color();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_color();
       // Get instance field reference: public UnityEngine.Color contentColor
-      [[deprecated]] ::UnityEngine::Color& dyn_contentColor();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_contentColor();
       // Get instance field reference: public UnityEngine.Color backgroundColor
-      [[deprecated]] ::UnityEngine::Color& dyn_backgroundColor();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_backgroundColor();
       // Get instance field reference: public System.Boolean enabled
-      [[deprecated]] bool& dyn_enabled();
+      [[deprecated("Use field access instead!")]] bool& dyn_enabled();
       // Get instance field reference: public System.Boolean changed
-      [[deprecated]] bool& dyn_changed();
+      [[deprecated("Use field access instead!")]] bool& dyn_changed();
       // Get instance field reference: public System.Int32 displayIndex
-      [[deprecated]] int& dyn_displayIndex();
+      [[deprecated("Use field access instead!")]] int& dyn_displayIndex();
     }; // UnityEngine.UIElements.IMGUIContainer/UnityEngine.UIElements.GUIGlobals
     #pragma pack(pop)
     static check_size<sizeof(IMGUIContainer::GUIGlobals), 116 + sizeof(int)> __UnityEngine_UIElements_IMGUIContainer_GUIGlobalsSizeCheck;
@@ -247,35 +247,35 @@ namespace UnityEngine::UIElements {
     // Set static field: static public readonly System.String ussClassName
     static void _set_ussClassName(::StringW value);
     // Get instance field reference: private System.Action m_OnGUIHandler
-    [[deprecated]] ::System::Action*& dyn_m_OnGUIHandler();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_m_OnGUIHandler();
     // Get instance field reference: private UnityEngine.ObjectGUIState m_ObjectGUIState
-    [[deprecated]] ::UnityEngine::ObjectGUIState*& dyn_m_ObjectGUIState();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::ObjectGUIState*& dyn_m_ObjectGUIState();
     // Get instance field reference: System.Boolean useOwnerObjectGUIState
-    [[deprecated]] bool& dyn_useOwnerObjectGUIState();
+    [[deprecated("Use field access instead!")]] bool& dyn_useOwnerObjectGUIState();
     // Get instance field reference: private UnityEngine.Rect <lastWorldClip>k__BackingField
-    [[deprecated]] ::UnityEngine::Rect& dyn_$lastWorldClip$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Rect& dyn_$lastWorldClip$k__BackingField();
     // Get instance field reference: private UnityEngine.GUILayoutUtility/UnityEngine.LayoutCache m_Cache
-    [[deprecated]] ::UnityEngine::GUILayoutUtility::LayoutCache*& dyn_m_Cache();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GUILayoutUtility::LayoutCache*& dyn_m_Cache();
     // Get instance field reference: private UnityEngine.Rect m_CachedClippingRect
-    [[deprecated]] ::UnityEngine::Rect& dyn_m_CachedClippingRect();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Rect& dyn_m_CachedClippingRect();
     // Get instance field reference: private UnityEngine.Matrix4x4 m_CachedTransform
-    [[deprecated]] ::UnityEngine::Matrix4x4& dyn_m_CachedTransform();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Matrix4x4& dyn_m_CachedTransform();
     // Get instance field reference: private UnityEngine.UIElements.ContextType <contextType>k__BackingField
-    [[deprecated]] ::UnityEngine::UIElements::ContextType& dyn_$contextType$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::ContextType& dyn_$contextType$k__BackingField();
     // Get instance field reference: private System.Boolean lostFocus
-    [[deprecated]] bool& dyn_lostFocus();
+    [[deprecated("Use field access instead!")]] bool& dyn_lostFocus();
     // Get instance field reference: private System.Boolean receivedFocus
-    [[deprecated]] bool& dyn_receivedFocus();
+    [[deprecated("Use field access instead!")]] bool& dyn_receivedFocus();
     // Get instance field reference: private UnityEngine.UIElements.FocusChangeDirection focusChangeDirection
-    [[deprecated]] ::UnityEngine::UIElements::FocusChangeDirection*& dyn_focusChangeDirection();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::FocusChangeDirection*& dyn_focusChangeDirection();
     // Get instance field reference: private System.Boolean hasFocusableControls
-    [[deprecated]] bool& dyn_hasFocusableControls();
+    [[deprecated("Use field access instead!")]] bool& dyn_hasFocusableControls();
     // Get instance field reference: private System.Int32 newKeyboardFocusControlID
-    [[deprecated]] int& dyn_newKeyboardFocusControlID();
+    [[deprecated("Use field access instead!")]] int& dyn_newKeyboardFocusControlID();
     // Get instance field reference: private System.Boolean <focusOnlyIfHasFocusableControls>k__BackingField
-    [[deprecated]] bool& dyn_$focusOnlyIfHasFocusableControls$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$focusOnlyIfHasFocusableControls$k__BackingField();
     // Get instance field reference: private UnityEngine.UIElements.IMGUIContainer/UnityEngine.UIElements.GUIGlobals m_GUIGlobals
-    [[deprecated]] ::UnityEngine::UIElements::IMGUIContainer::GUIGlobals& dyn_m_GUIGlobals();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::IMGUIContainer::GUIGlobals& dyn_m_GUIGlobals();
     // public System.Action get_onGUIHandler()
     // Offset: 0x2A4770
     ::System::Action* get_onGUIHandler();

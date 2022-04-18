@@ -166,27 +166,27 @@ namespace OculusSampleFramework {
     // Set static field: static private System.Int32 NUM_COLLIDERS_TO_TEST
     static void _set_NUM_COLLIDERS_TO_TEST(int value);
     // Get instance field reference: private OculusSampleFramework.RayToolView _rayToolView
-    [[deprecated]] ::OculusSampleFramework::RayToolView*& dyn__rayToolView();
+    [[deprecated("Use field access instead!")]] ::OculusSampleFramework::RayToolView*& dyn__rayToolView();
     // Get instance field reference: private System.Single _coneAngleDegrees
-    [[deprecated]] float& dyn__coneAngleDegrees();
+    [[deprecated("Use field access instead!")]] float& dyn__coneAngleDegrees();
     // Get instance field reference: private System.Single _farFieldMaxDistance
-    [[deprecated]] float& dyn__farFieldMaxDistance();
+    [[deprecated("Use field access instead!")]] float& dyn__farFieldMaxDistance();
     // Get instance field reference: private OculusSampleFramework.PinchStateModule _pinchStateModule
-    [[deprecated]] ::OculusSampleFramework::PinchStateModule*& dyn__pinchStateModule();
+    [[deprecated("Use field access instead!")]] ::OculusSampleFramework::PinchStateModule*& dyn__pinchStateModule();
     // Get instance field reference: private OculusSampleFramework.Interactable _focusedInteractable
-    [[deprecated]] ::OculusSampleFramework::Interactable*& dyn__focusedInteractable();
+    [[deprecated("Use field access instead!")]] ::OculusSampleFramework::Interactable*& dyn__focusedInteractable();
     // Get instance field reference: private UnityEngine.Collider[] _collidersOverlapped
-    [[deprecated]] ::ArrayW<::UnityEngine::Collider*>& dyn__collidersOverlapped();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Collider*>& dyn__collidersOverlapped();
     // Get instance field reference: private OculusSampleFramework.Interactable _currInteractableCastedAgainst
-    [[deprecated]] ::OculusSampleFramework::Interactable*& dyn__currInteractableCastedAgainst();
+    [[deprecated("Use field access instead!")]] ::OculusSampleFramework::Interactable*& dyn__currInteractableCastedAgainst();
     // Get instance field reference: private System.Single _coneAngleReleaseDegrees
-    [[deprecated]] float& dyn__coneAngleReleaseDegrees();
+    [[deprecated("Use field access instead!")]] float& dyn__coneAngleReleaseDegrees();
     // Get instance field reference: private UnityEngine.RaycastHit[] _primaryHits
-    [[deprecated]] ::ArrayW<::UnityEngine::RaycastHit>& dyn__primaryHits();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::RaycastHit>& dyn__primaryHits();
     // Get instance field reference: private UnityEngine.Collider[] _secondaryOverlapResults
-    [[deprecated]] ::ArrayW<::UnityEngine::Collider*>& dyn__secondaryOverlapResults();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Collider*>& dyn__secondaryOverlapResults();
     // Get instance field reference: private System.Boolean _initialized
-    [[deprecated]] bool& dyn__initialized();
+    [[deprecated("Use field access instead!")]] bool& dyn__initialized();
     // private System.Void OnDestroy()
     // Offset: 0x614CD0
     void OnDestroy();
@@ -237,11 +237,6 @@ namespace OculusSampleFramework {
     // Offset: 0x615120
     // Implemented from: OculusSampleFramework.InteractableTool
     // Base method: System.Void InteractableTool::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static RayTool* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::OculusSampleFramework::RayTool::.ctor");

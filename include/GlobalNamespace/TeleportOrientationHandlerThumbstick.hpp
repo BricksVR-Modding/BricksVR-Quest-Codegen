@@ -76,27 +76,22 @@ namespace GlobalNamespace {
     static_assert(sizeof(::UnityEngine::Vector2) == 0x8);
     public:
     // Get instance field reference: public TeleportOrientationHandler/OrientationModes OrientationMode
-    [[deprecated]] ::GlobalNamespace::TeleportOrientationHandler::OrientationModes& dyn_OrientationMode();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::TeleportOrientationHandler::OrientationModes& dyn_OrientationMode();
     // Get instance field reference: public OVRInput/Controller Thumbstick
-    [[deprecated]] ::GlobalNamespace::OVRInput::Controller& dyn_Thumbstick();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRInput::Controller& dyn_Thumbstick();
     // Get instance field reference: public System.Single RotateStickThreshold
-    [[deprecated]] float& dyn_RotateStickThreshold();
+    [[deprecated("Use field access instead!")]] float& dyn_RotateStickThreshold();
     // Get instance field reference: private UnityEngine.Quaternion _initialRotation
-    [[deprecated]] ::UnityEngine::Quaternion& dyn__initialRotation();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Quaternion& dyn__initialRotation();
     // Get instance field reference: private UnityEngine.Quaternion _currentRotation
-    [[deprecated]] ::UnityEngine::Quaternion& dyn__currentRotation();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Quaternion& dyn__currentRotation();
     // Get instance field reference: private UnityEngine.Vector2 _lastValidDirection
-    [[deprecated]] ::UnityEngine::Vector2& dyn__lastValidDirection();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn__lastValidDirection();
     // public System.Void .ctor()
     // Offset: 0x6189B0
     // Implemented from: TeleportOrientationHandler
     // Base method: System.Void TeleportOrientationHandler::.ctor()
     // Base method: System.Void TeleportSupport::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TeleportOrientationHandlerThumbstick* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::TeleportOrientationHandlerThumbstick::.ctor");

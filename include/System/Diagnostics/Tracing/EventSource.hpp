@@ -214,27 +214,27 @@ namespace System::Diagnostics::Tracing {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: public System.Diagnostics.Tracing.EventDescriptor Descriptor
-      [[deprecated]] ::System::Diagnostics::Tracing::EventDescriptor& dyn_Descriptor();
+      [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::EventDescriptor& dyn_Descriptor();
       // Get instance field reference: public System.Diagnostics.Tracing.EventTags Tags
-      [[deprecated]] ::System::Diagnostics::Tracing::EventTags& dyn_Tags();
+      [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::EventTags& dyn_Tags();
       // Get instance field reference: public System.Boolean EnabledForAnyListener
-      [[deprecated]] bool& dyn_EnabledForAnyListener();
+      [[deprecated("Use field access instead!")]] bool& dyn_EnabledForAnyListener();
       // Get instance field reference: public System.Boolean EnabledForETW
-      [[deprecated]] bool& dyn_EnabledForETW();
+      [[deprecated("Use field access instead!")]] bool& dyn_EnabledForETW();
       // Get instance field reference: public System.Boolean HasRelatedActivityID
-      [[deprecated]] bool& dyn_HasRelatedActivityID();
+      [[deprecated("Use field access instead!")]] bool& dyn_HasRelatedActivityID();
       // Get instance field reference: public System.Byte TriggersActivityTracking
-      [[deprecated]] uint8_t& dyn_TriggersActivityTracking();
+      [[deprecated("Use field access instead!")]] uint8_t& dyn_TriggersActivityTracking();
       // Get instance field reference: public System.String Name
-      [[deprecated]] ::StringW& dyn_Name();
+      [[deprecated("Use field access instead!")]] ::StringW& dyn_Name();
       // Get instance field reference: public System.String Message
-      [[deprecated]] ::StringW& dyn_Message();
+      [[deprecated("Use field access instead!")]] ::StringW& dyn_Message();
       // Get instance field reference: public System.Reflection.ParameterInfo[] Parameters
-      [[deprecated]] ::ArrayW<::System::Reflection::ParameterInfo*>& dyn_Parameters();
+      [[deprecated("Use field access instead!")]] ::ArrayW<::System::Reflection::ParameterInfo*>& dyn_Parameters();
       // Get instance field reference: public System.Diagnostics.Tracing.TraceLoggingEventTypes TraceLoggingEventTypes
-      [[deprecated]] ::System::Diagnostics::Tracing::TraceLoggingEventTypes*& dyn_TraceLoggingEventTypes();
+      [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::TraceLoggingEventTypes*& dyn_TraceLoggingEventTypes();
       // Get instance field reference: public System.Diagnostics.Tracing.EventActivityOptions ActivityOptions
-      [[deprecated]] ::System::Diagnostics::Tracing::EventActivityOptions& dyn_ActivityOptions();
+      [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::EventActivityOptions& dyn_ActivityOptions();
     }; // System.Diagnostics.Tracing.EventSource/System.Diagnostics.Tracing.EventMetadata
     #pragma pack(pop)
     static check_size<sizeof(EventSource::EventMetadata), 56 + sizeof(::System::Diagnostics::Tracing::EventActivityOptions)> __System_Diagnostics_Tracing_EventSource_EventMetadataSizeCheck;
@@ -424,53 +424,53 @@ namespace System::Diagnostics::Tracing {
     // Set static field: static private readonly System.Guid AspNetEventSourceGuid
     static void _set_AspNetEventSourceGuid(::System::Guid value);
     // Get instance field reference: private System.Byte[] providerMetadata
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_providerMetadata();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_providerMetadata();
     // Get instance field reference: private System.String m_name
-    [[deprecated]] ::StringW& dyn_m_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_name();
     // Get instance field reference: System.Int32 m_id
-    [[deprecated]] int& dyn_m_id();
+    [[deprecated("Use field access instead!")]] int& dyn_m_id();
     // Get instance field reference: private System.Guid m_guid
-    [[deprecated]] ::System::Guid& dyn_m_guid();
+    [[deprecated("Use field access instead!")]] ::System::Guid& dyn_m_guid();
     // Get instance field reference: System.Diagnostics.Tracing.EventSource/System.Diagnostics.Tracing.EventMetadata[] m_eventData
-    [[deprecated]] ::ArrayW<::System::Diagnostics::Tracing::EventSource::EventMetadata>& dyn_m_eventData();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Diagnostics::Tracing::EventSource::EventMetadata>& dyn_m_eventData();
     // Get instance field reference: private System.Byte[] m_rawManifest
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_m_rawManifest();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_m_rawManifest();
     // Get instance field reference: private System.EventHandler`1<System.Diagnostics.Tracing.EventCommandEventArgs> m_eventCommandExecuted
-    [[deprecated]] ::System::EventHandler_1<::System::Diagnostics::Tracing::EventCommandEventArgs*>*& dyn_m_eventCommandExecuted();
+    [[deprecated("Use field access instead!")]] ::System::EventHandler_1<::System::Diagnostics::Tracing::EventCommandEventArgs*>*& dyn_m_eventCommandExecuted();
     // Get instance field reference: private System.Diagnostics.Tracing.EventSourceSettings m_config
-    [[deprecated]] ::System::Diagnostics::Tracing::EventSourceSettings& dyn_m_config();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::EventSourceSettings& dyn_m_config();
     // Get instance field reference: private System.Boolean m_eventSourceEnabled
-    [[deprecated]] bool& dyn_m_eventSourceEnabled();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_eventSourceEnabled();
     // Get instance field reference: System.Diagnostics.Tracing.EventLevel m_level
-    [[deprecated]] ::System::Diagnostics::Tracing::EventLevel& dyn_m_level();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::EventLevel& dyn_m_level();
     // Get instance field reference: System.Diagnostics.Tracing.EventKeywords m_matchAnyKeyword
-    [[deprecated]] ::System::Diagnostics::Tracing::EventKeywords& dyn_m_matchAnyKeyword();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::EventKeywords& dyn_m_matchAnyKeyword();
     // Get instance field reference: System.Diagnostics.Tracing.EventDispatcher m_Dispatchers
-    [[deprecated]] ::System::Diagnostics::Tracing::EventDispatcher*& dyn_m_Dispatchers();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::EventDispatcher*& dyn_m_Dispatchers();
     // Get instance field reference: private System.Diagnostics.Tracing.EventSource/System.Diagnostics.Tracing.OverideEventProvider m_provider
-    [[deprecated]] ::System::Diagnostics::Tracing::EventSource::OverideEventProvider*& dyn_m_provider();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::EventSource::OverideEventProvider*& dyn_m_provider();
     // Get instance field reference: private System.Boolean m_completelyInited
-    [[deprecated]] bool& dyn_m_completelyInited();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_completelyInited();
     // Get instance field reference: private System.Exception m_constructionException
-    [[deprecated]] ::System::Exception*& dyn_m_constructionException();
+    [[deprecated("Use field access instead!")]] ::System::Exception*& dyn_m_constructionException();
     // Get instance field reference: private System.Byte m_outOfBandMessageCount
-    [[deprecated]] uint8_t& dyn_m_outOfBandMessageCount();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn_m_outOfBandMessageCount();
     // Get instance field reference: private System.Diagnostics.Tracing.EventCommandEventArgs m_deferredCommands
-    [[deprecated]] ::System::Diagnostics::Tracing::EventCommandEventArgs*& dyn_m_deferredCommands();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::EventCommandEventArgs*& dyn_m_deferredCommands();
     // Get instance field reference: private System.String[] m_traits
-    [[deprecated]] ::ArrayW<::StringW>& dyn_m_traits();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_m_traits();
     // Get instance field reference: private System.Diagnostics.Tracing.SessionMask m_curLiveSessions
-    [[deprecated]] ::System::Diagnostics::Tracing::SessionMask& dyn_m_curLiveSessions();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::SessionMask& dyn_m_curLiveSessions();
     // Get instance field reference: private System.Diagnostics.Tracing.EtwSession[] m_etwSessionIdMap
-    [[deprecated]] ::ArrayW<::System::Diagnostics::Tracing::EtwSession*>& dyn_m_etwSessionIdMap();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Diagnostics::Tracing::EtwSession*>& dyn_m_etwSessionIdMap();
     // Get instance field reference: private System.Collections.Generic.List`1<System.Diagnostics.Tracing.EtwSession> m_legacySessions
-    [[deprecated]] ::System::Collections::Generic::List_1<::System::Diagnostics::Tracing::EtwSession*>*& dyn_m_legacySessions();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::System::Diagnostics::Tracing::EtwSession*>*& dyn_m_legacySessions();
     // Get instance field reference: System.Int64 m_keywordTriggers
-    [[deprecated]] int64_t& dyn_m_keywordTriggers();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_m_keywordTriggers();
     // Get instance field reference: System.Diagnostics.Tracing.SessionMask m_activityFilteringForETWEnabled
-    [[deprecated]] ::System::Diagnostics::Tracing::SessionMask& dyn_m_activityFilteringForETWEnabled();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::SessionMask& dyn_m_activityFilteringForETWEnabled();
     // Get instance field reference: private System.Diagnostics.Tracing.ActivityTracker m_activityTracker
-    [[deprecated]] ::System::Diagnostics::Tracing::ActivityTracker*& dyn_m_activityTracker();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::ActivityTracker*& dyn_m_activityTracker();
     // public System.String get_Name()
     // Offset: 0x1E1520
     ::StringW get_Name();

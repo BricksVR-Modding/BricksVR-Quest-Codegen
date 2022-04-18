@@ -13,10 +13,8 @@
 // Begin forward declares
 // Forward declaring namespace: System::Reflection
 namespace System::Reflection {
-  // Skipping declaration: MethodBase because it is already included!
   // Forward declaring type: MethodAttributes
   struct MethodAttributes;
-  // Skipping declaration: MemberInfo because it is already included!
   // Forward declaring type: ParameterInfo
   class ParameterInfo;
   // Forward declaring type: MethodImplAttributes

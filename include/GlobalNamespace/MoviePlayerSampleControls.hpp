@@ -111,7 +111,7 @@ namespace GlobalNamespace {
       // Set static field: static public MoviePlayerSampleControls/PlaybackState FastForwarding
       static void _set_FastForwarding(::GlobalNamespace::MoviePlayerSampleControls::PlaybackState value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // MoviePlayerSampleControls/PlaybackState
     #pragma pack(pop)
     static check_size<sizeof(MoviePlayerSampleControls::PlaybackState), 0 + sizeof(int)> __GlobalNamespace_MoviePlayerSampleControls_PlaybackStateSizeCheck;
@@ -251,47 +251,54 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public MoviePlayerSample Player
-    [[deprecated]] ::GlobalNamespace::MoviePlayerSample*& dyn_Player();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::MoviePlayerSample*& dyn_Player();
     // Get instance field reference: public UnityEngine.EventSystems.OVRInputModule InputModule
-    [[deprecated]] ::UnityEngine::EventSystems::OVRInputModule*& dyn_InputModule();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::EventSystems::OVRInputModule*& dyn_InputModule();
     // Get instance field reference: public OVRGazePointer GazePointer
-    [[deprecated]] ::GlobalNamespace::OVRGazePointer*& dyn_GazePointer();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRGazePointer*& dyn_GazePointer();
     // Get instance field reference: public UnityEngine.GameObject LeftHand
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_LeftHand();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_LeftHand();
     // Get instance field reference: public UnityEngine.GameObject RightHand
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_RightHand();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_RightHand();
     // Get instance field reference: public UnityEngine.Canvas Canvas
-    [[deprecated]] ::UnityEngine::Canvas*& dyn_Canvas();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Canvas*& dyn_Canvas();
     // Get instance field reference: public ButtonDownListener PlayPause
-    [[deprecated]] ::GlobalNamespace::ButtonDownListener*& dyn_PlayPause();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::ButtonDownListener*& dyn_PlayPause();
     // Get instance field reference: public MediaPlayerImage PlayPauseImage
-    [[deprecated]] ::GlobalNamespace::MediaPlayerImage*& dyn_PlayPauseImage();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::MediaPlayerImage*& dyn_PlayPauseImage();
     // Get instance field reference: public UnityEngine.UI.Slider ProgressBar
-    [[deprecated]] ::UnityEngine::UI::Slider*& dyn_ProgressBar();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Slider*& dyn_ProgressBar();
     // Get instance field reference: public ButtonDownListener FastForward
-    [[deprecated]] ::GlobalNamespace::ButtonDownListener*& dyn_FastForward();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::ButtonDownListener*& dyn_FastForward();
     // Get instance field reference: public MediaPlayerImage FastForwardImage
-    [[deprecated]] ::GlobalNamespace::MediaPlayerImage*& dyn_FastForwardImage();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::MediaPlayerImage*& dyn_FastForwardImage();
     // Get instance field reference: public ButtonDownListener Rewind
-    [[deprecated]] ::GlobalNamespace::ButtonDownListener*& dyn_Rewind();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::ButtonDownListener*& dyn_Rewind();
     // Get instance field reference: public MediaPlayerImage RewindImage
-    [[deprecated]] ::GlobalNamespace::MediaPlayerImage*& dyn_RewindImage();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::MediaPlayerImage*& dyn_RewindImage();
     // Get instance field reference: public System.Single TimeoutTime
-    [[deprecated]] float& dyn_TimeoutTime();
+    [[deprecated("Use field access instead!")]] float& dyn_TimeoutTime();
     // Get instance field reference: private System.Boolean _isVisible
-    [[deprecated]] bool& dyn__isVisible();
+    [[deprecated("Use field access instead!")]] bool& dyn__isVisible();
     // Get instance field reference: private System.Single _lastButtonTime
-    [[deprecated]] float& dyn__lastButtonTime();
+    [[deprecated("Use field access instead!")]] float& dyn__lastButtonTime();
     // Get instance field reference: private System.Boolean _didSeek
-    [[deprecated]] bool& dyn__didSeek();
+    [[deprecated("Use field access instead!")]] bool& dyn__didSeek();
     // Get instance field reference: private System.Int64 _seekPreviousPosition
-    [[deprecated]] int64_t& dyn__seekPreviousPosition();
+    [[deprecated("Use field access instead!")]] int64_t& dyn__seekPreviousPosition();
     // Get instance field reference: private System.Int64 _rewindStartPosition
-    [[deprecated]] int64_t& dyn__rewindStartPosition();
+    [[deprecated("Use field access instead!")]] int64_t& dyn__rewindStartPosition();
     // Get instance field reference: private System.Single _rewindStartTime
-    [[deprecated]] float& dyn__rewindStartTime();
+    [[deprecated("Use field access instead!")]] float& dyn__rewindStartTime();
     // Get instance field reference: private MoviePlayerSampleControls/PlaybackState _state
-    [[deprecated]] ::GlobalNamespace::MoviePlayerSampleControls::PlaybackState& dyn__state();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::MoviePlayerSampleControls::PlaybackState& dyn__state();
+    // public System.Void .ctor()
+    // Offset: 0x2934A0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static MoviePlayerSampleControls* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::MoviePlayerSampleControls::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<MoviePlayerSampleControls*, creationType>()));
+    }
     // private System.Void Start()
     // Offset: 0x292E90
     void Start();
@@ -316,19 +323,6 @@ namespace GlobalNamespace {
     // private System.Void SetVisible(System.Boolean visible)
     // Offset: 0x292DB0
     void SetVisible(bool visible);
-    // public System.Void .ctor()
-    // Offset: 0x2934A0
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static MoviePlayerSampleControls* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::MoviePlayerSampleControls::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<MoviePlayerSampleControls*, creationType>()));
-    }
   }; // MoviePlayerSampleControls
   #pragma pack(pop)
   static check_size<sizeof(MoviePlayerSampleControls), 164 + sizeof(::GlobalNamespace::MoviePlayerSampleControls::PlaybackState)> __GlobalNamespace_MoviePlayerSampleControlsSizeCheck;
@@ -337,6 +331,10 @@ namespace GlobalNamespace {
 #include "beatsaber-hook/shared/utils/il2cpp-type-check.hpp"
 DEFINE_IL2CPP_ARG_TYPE(::GlobalNamespace::MoviePlayerSampleControls::PlaybackState, "", "MoviePlayerSampleControls/PlaybackState");
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::MoviePlayerSampleControls::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::MoviePlayerSampleControls::Start
 // Il2CppName: Start
 template<>
@@ -404,7 +402,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::MoviePlayerSampleControls*), "SetVisible", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{visible});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::MoviePlayerSampleControls::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -61,7 +61,6 @@ namespace UnityEngine::UIElements {
   struct VersionChangeType;
   // Forward declaring type: FocusController
   class FocusController;
-  // Skipping declaration: CallbackEventHandler because it is already included!
   // Forward declaring type: EventBase
   class EventBase;
 }
@@ -119,7 +118,7 @@ namespace UnityEngine::UIElements {
         return m_Owner;
       }
       // Get instance field reference: private readonly UnityEngine.UIElements.VisualElement m_Owner
-      [[deprecated]] ::UnityEngine::UIElements::VisualElement*& dyn_m_Owner();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::VisualElement*& dyn_m_Owner();
       // public UnityEngine.UIElements.VisualElement get_parent()
       // Offset: 0x654620
       ::UnityEngine::UIElements::VisualElement* get_parent();
@@ -350,55 +349,55 @@ namespace UnityEngine::UIElements {
     // Set static field: static private readonly System.Collections.Generic.List`1<UnityEngine.UIElements.VisualElement> s_EmptyList
     static void _set_s_EmptyList(::System::Collections::Generic::List_1<::UnityEngine::UIElements::VisualElement*>* value);
     // Get instance field reference: private System.Boolean <isCompositeRoot>k__BackingField
-    [[deprecated]] bool& dyn_$isCompositeRoot$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$isCompositeRoot$k__BackingField();
     // Get instance field reference: private UnityEngine.Vector3 m_Position
-    [[deprecated]] ::UnityEngine::Vector3& dyn_m_Position();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_m_Position();
     // Get instance field reference: private UnityEngine.Quaternion m_Rotation
-    [[deprecated]] ::UnityEngine::Quaternion& dyn_m_Rotation();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Quaternion& dyn_m_Rotation();
     // Get instance field reference: private UnityEngine.Vector3 m_Scale
-    [[deprecated]] ::UnityEngine::Vector3& dyn_m_Scale();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_m_Scale();
     // Get instance field reference: private System.Boolean <isLayoutManual>k__BackingField
-    [[deprecated]] bool& dyn_$isLayoutManual$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$isLayoutManual$k__BackingField();
     // Get instance field reference: private UnityEngine.Rect m_Layout
-    [[deprecated]] ::UnityEngine::Rect& dyn_m_Layout();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Rect& dyn_m_Layout();
     // Get instance field reference: System.Boolean isBoundingBoxDirty
-    [[deprecated]] bool& dyn_isBoundingBoxDirty();
+    [[deprecated("Use field access instead!")]] bool& dyn_isBoundingBoxDirty();
     // Get instance field reference: private UnityEngine.Rect m_BoundingBox
-    [[deprecated]] ::UnityEngine::Rect& dyn_m_BoundingBox();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Rect& dyn_m_BoundingBox();
     // Get instance field reference: System.Boolean isWorldBoundingBoxDirty
-    [[deprecated]] bool& dyn_isWorldBoundingBoxDirty();
+    [[deprecated("Use field access instead!")]] bool& dyn_isWorldBoundingBoxDirty();
     // Get instance field reference: private UnityEngine.Rect m_WorldBoundingBox
-    [[deprecated]] ::UnityEngine::Rect& dyn_m_WorldBoundingBox();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Rect& dyn_m_WorldBoundingBox();
     // Get instance field reference: private System.Boolean <isWorldTransformDirty>k__BackingField
-    [[deprecated]] bool& dyn_$isWorldTransformDirty$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$isWorldTransformDirty$k__BackingField();
     // Get instance field reference: private System.Boolean <isWorldTransformInverseDirty>k__BackingField
-    [[deprecated]] bool& dyn_$isWorldTransformInverseDirty$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$isWorldTransformInverseDirty$k__BackingField();
     // Get instance field reference: private UnityEngine.Matrix4x4 m_WorldTransformCache
-    [[deprecated]] ::UnityEngine::Matrix4x4& dyn_m_WorldTransformCache();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Matrix4x4& dyn_m_WorldTransformCache();
     // Get instance field reference: private UnityEngine.Matrix4x4 m_WorldTransformInverseCache
-    [[deprecated]] ::UnityEngine::Matrix4x4& dyn_m_WorldTransformInverseCache();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Matrix4x4& dyn_m_WorldTransformInverseCache();
     // Get instance field reference: private UnityEngine.UIElements.PseudoStates m_PseudoStates
-    [[deprecated]] ::UnityEngine::UIElements::PseudoStates& dyn_m_PseudoStates();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::PseudoStates& dyn_m_PseudoStates();
     // Get instance field reference: private UnityEngine.UIElements.PickingMode <pickingMode>k__BackingField
-    [[deprecated]] ::UnityEngine::UIElements::PickingMode& dyn_$pickingMode$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::PickingMode& dyn_$pickingMode$k__BackingField();
     // Get instance field reference: private UnityEngine.Yoga.YogaNode <yogaNode>k__BackingField
-    [[deprecated]] ::UnityEngine::Yoga::YogaNode*& dyn_$yogaNode$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Yoga::YogaNode*& dyn_$yogaNode$k__BackingField();
     // Get instance field reference: UnityEngine.UIElements.StyleSheets.VisualElementStylesData m_Style
-    [[deprecated]] ::UnityEngine::UIElements::StyleSheets::VisualElementStylesData*& dyn_m_Style();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::StyleSheets::VisualElementStylesData*& dyn_m_Style();
     // Get instance field reference: private UnityEngine.UIElements.StyleSheets.InheritedStylesData m_InheritedStylesData
-    [[deprecated]] ::UnityEngine::UIElements::StyleSheets::InheritedStylesData*& dyn_m_InheritedStylesData();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::StyleSheets::InheritedStylesData*& dyn_m_InheritedStylesData();
     // Get instance field reference: private UnityEngine.UIElements.ComputedStyle <computedStyle>k__BackingField
-    [[deprecated]] ::UnityEngine::UIElements::ComputedStyle& dyn_$computedStyle$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::ComputedStyle& dyn_$computedStyle$k__BackingField();
     // Get instance field reference: System.Int32 imguiContainerDescendantCount
-    [[deprecated]] int& dyn_imguiContainerDescendantCount();
+    [[deprecated("Use field access instead!")]] int& dyn_imguiContainerDescendantCount();
     // Get instance field reference: private UnityEngine.UIElements.VisualElement/UnityEngine.UIElements.Hierarchy <hierarchy>k__BackingField
-    [[deprecated]] ::UnityEngine::UIElements::VisualElement::Hierarchy& dyn_$hierarchy$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::VisualElement::Hierarchy& dyn_$hierarchy$k__BackingField();
     // Get instance field reference: private UnityEngine.UIElements.VisualElement m_PhysicalParent
-    [[deprecated]] ::UnityEngine::UIElements::VisualElement*& dyn_m_PhysicalParent();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::VisualElement*& dyn_m_PhysicalParent();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.UIElements.VisualElement> m_Children
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::UIElements::VisualElement*>*& dyn_m_Children();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::UIElements::VisualElement*>*& dyn_m_Children();
     // Get instance field reference: private UnityEngine.UIElements.BaseVisualElementPanel <elementPanel>k__BackingField
-    [[deprecated]] ::UnityEngine::UIElements::BaseVisualElementPanel*& dyn_$elementPanel$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::BaseVisualElementPanel*& dyn_$elementPanel$k__BackingField();
     // System.Boolean get_isCompositeRoot()
     // Offset: 0x29BC10
     bool get_isCompositeRoot();

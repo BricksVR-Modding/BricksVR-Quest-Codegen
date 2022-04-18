@@ -54,7 +54,7 @@ namespace UnityEngine::XR::Interaction::Toolkit {
     static_assert(sizeof(::UnityEngine::Transform*) == 0x8);
     public:
     // Get instance field reference: private UnityEngine.Transform m_TeleportAnchorTransform
-    [[deprecated]] ::UnityEngine::Transform*& dyn_m_TeleportAnchorTransform();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_m_TeleportAnchorTransform();
     // public UnityEngine.Transform get_teleportAnchorTransform()
     // Offset: 0x2F9330
     ::UnityEngine::Transform* get_teleportAnchorTransform();
@@ -72,11 +72,6 @@ namespace UnityEngine::XR::Interaction::Toolkit {
     // Implemented from: UnityEngine.XR.Interaction.Toolkit.BaseTeleportationInteractable
     // Base method: System.Void BaseTeleportationInteractable::.ctor()
     // Base method: System.Void XRBaseInteractable::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TeleportationAnchor* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::XR::Interaction::Toolkit::TeleportationAnchor::.ctor");

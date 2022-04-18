@@ -68,13 +68,13 @@ namespace OculusSampleFramework {
     static_assert(sizeof(::OculusSampleFramework::InteractionType) == 0x4);
     public:
     // Get instance field reference: public readonly OculusSampleFramework.ColliderZone Collider
-    [[deprecated]] ::OculusSampleFramework::ColliderZone*& dyn_Collider();
+    [[deprecated("Use field access instead!")]] ::OculusSampleFramework::ColliderZone*& dyn_Collider();
     // Get instance field reference: public readonly System.Single FrameTime
-    [[deprecated]] float& dyn_FrameTime();
+    [[deprecated("Use field access instead!")]] float& dyn_FrameTime();
     // Get instance field reference: public readonly OculusSampleFramework.InteractableTool CollidingTool
-    [[deprecated]] ::OculusSampleFramework::InteractableTool*& dyn_CollidingTool();
+    [[deprecated("Use field access instead!")]] ::OculusSampleFramework::InteractableTool*& dyn_CollidingTool();
     // Get instance field reference: public readonly OculusSampleFramework.InteractionType InteractionT
-    [[deprecated]] ::OculusSampleFramework::InteractionType& dyn_InteractionT();
+    [[deprecated("Use field access instead!")]] ::OculusSampleFramework::InteractionType& dyn_InteractionT();
     // public System.Void .ctor(OculusSampleFramework.ColliderZone collider, System.Single frameTime, OculusSampleFramework.InteractableTool collidingTool, OculusSampleFramework.InteractionType interactionType)
     // Offset: 0x284D60
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

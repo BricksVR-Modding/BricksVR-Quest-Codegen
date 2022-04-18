@@ -49,7 +49,14 @@ namespace UnityEngine {
       return m_Ptr;
     }
     // Get instance field reference: System.IntPtr m_Ptr
-    [[deprecated]] ::System::IntPtr& dyn_m_Ptr();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_m_Ptr();
+    // public System.Void .ctor()
+    // Offset: 0x62A700
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ObjectGUIState* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::ObjectGUIState::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ObjectGUIState*, creationType>()));
+    }
     // public System.Void Dispose()
     // Offset: 0x62A5C0
     void Dispose();
@@ -62,15 +69,6 @@ namespace UnityEngine {
     // static private System.Void Internal_Destroy(System.IntPtr ptr)
     // Offset: 0x62A6C0
     static void Internal_Destroy(::System::IntPtr ptr);
-    // public System.Void .ctor()
-    // Offset: 0x62A700
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ObjectGUIState* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::ObjectGUIState::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ObjectGUIState*, creationType>()));
-    }
     // protected override System.Void Finalize()
     // Offset: 0x62A620
     // Implemented from: System.Object
@@ -82,6 +80,10 @@ namespace UnityEngine {
   static_assert(sizeof(ObjectGUIState) == 0x18);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: UnityEngine::ObjectGUIState::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::ObjectGUIState::Dispose
 // Il2CppName: Dispose
 template<>
@@ -115,10 +117,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(::
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::ObjectGUIState*), "Internal_Destroy", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{ptr});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::ObjectGUIState::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::ObjectGUIState::Finalize
 // Il2CppName: Finalize
 template<>

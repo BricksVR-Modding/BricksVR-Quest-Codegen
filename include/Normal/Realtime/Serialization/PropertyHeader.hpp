@@ -48,9 +48,9 @@ namespace Normal::Realtime::Serialization {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public readonly System.UInt32 propertyID
-    [[deprecated]] uint& dyn_propertyID();
+    [[deprecated("Use field access instead!")]] uint& dyn_propertyID();
     // Get instance field reference: public readonly Normal.Realtime.Serialization.Serialization/Normal.Realtime.Serialization.WireType propertyWireType
-    [[deprecated]] ::Normal::Realtime::Serialization::Serialization::WireType& dyn_propertyWireType();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::Serialization::Serialization::WireType& dyn_propertyWireType();
     // public System.Void .ctor(System.UInt32 propertyID, Normal.Realtime.Serialization.Serialization/Normal.Realtime.Serialization.WireType propertyWireType)
     // Offset: 0x5C02A0
     // ABORTED: conflicts with another method.  PropertyHeader(uint propertyID, ::Normal::Realtime::Serialization::Serialization::WireType propertyWireType);

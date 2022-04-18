@@ -61,7 +61,14 @@ namespace GlobalNamespace {
     // Set static field: static private System.Boolean _instanceSet
     static void _set__instanceSet(bool value);
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.String,UnityEngine.GameObject> _brickPrefabCache
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::StringW, ::UnityEngine::GameObject*>*& dyn__brickPrefabCache();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::StringW, ::UnityEngine::GameObject*>*& dyn__brickPrefabCache();
+    // public System.Void .ctor()
+    // Offset: 0x1DDE30
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static BrickPrefabCache* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::BrickPrefabCache::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<BrickPrefabCache*, creationType>()));
+    }
     // static public BrickPrefabCache GetInstance()
     // Offset: 0x6F2860
     static ::GlobalNamespace::BrickPrefabCache* GetInstance();
@@ -77,25 +84,16 @@ namespace GlobalNamespace {
     // private System.Void WarmGeometryAndOutlines(UnityEngine.GameObject placedBrickPrefab)
     // Offset: 0x6F2960
     void WarmGeometryAndOutlines(::UnityEngine::GameObject* placedBrickPrefab);
-    // public System.Void .ctor()
-    // Offset: 0x1DDE30
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static BrickPrefabCache* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::BrickPrefabCache::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<BrickPrefabCache*, creationType>()));
-    }
   }; // BrickPrefabCache
   #pragma pack(pop)
   static check_size<sizeof(BrickPrefabCache), 24 + sizeof(::System::Collections::Generic::Dictionary_2<::StringW, ::UnityEngine::GameObject*>*)> __GlobalNamespace_BrickPrefabCacheSizeCheck;
   static_assert(sizeof(BrickPrefabCache) == 0x20);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::BrickPrefabCache::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::BrickPrefabCache::GetInstance
 // Il2CppName: GetInstance
 template<>
@@ -138,7 +136,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::BrickPrefabCache*), "WarmGeometryAndOutlines", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{placedBrickPrefab});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::BrickPrefabCache::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -35,26 +35,24 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class QuickInteractable : public ::UnityEngine::MonoBehaviour {
     public:
-    // public System.Void Interact(QuickInteractor interactor)
-    // Offset: 0x1DDF00
-    void Interact(::GlobalNamespace::QuickInteractor* interactor);
     // protected System.Void .ctor()
     // Offset: 0x1DDE30
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static QuickInteractable* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::QuickInteractable::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<QuickInteractable*, creationType>()));
     }
+    // public System.Void Interact(QuickInteractor interactor)
+    // Offset: 0x1DDF00
+    void Interact(::GlobalNamespace::QuickInteractor* interactor);
   }; // QuickInteractable
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::QuickInteractable::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::QuickInteractable::Interact
 // Il2CppName: Interact
 template<>
@@ -64,7 +62,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::QuickInteractable*), "Interact", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{interactor});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::QuickInteractable::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -61,11 +61,11 @@ namespace UnityEngine::Playables {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Action`1<UnityEngine.Playables.PlayableDirector> played
-    [[deprecated]] ::System::Action_1<::UnityEngine::Playables::PlayableDirector*>*& dyn_played();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::UnityEngine::Playables::PlayableDirector*>*& dyn_played();
     // Get instance field reference: private System.Action`1<UnityEngine.Playables.PlayableDirector> paused
-    [[deprecated]] ::System::Action_1<::UnityEngine::Playables::PlayableDirector*>*& dyn_paused();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::UnityEngine::Playables::PlayableDirector*>*& dyn_paused();
     // Get instance field reference: private System.Action`1<UnityEngine.Playables.PlayableDirector> stopped
-    [[deprecated]] ::System::Action_1<::UnityEngine::Playables::PlayableDirector*>*& dyn_stopped();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::UnityEngine::Playables::PlayableDirector*>*& dyn_stopped();
     // private System.Void SendOnPlayableDirectorPlay()
     // Offset: 0x671BF0
     void SendOnPlayableDirectorPlay();

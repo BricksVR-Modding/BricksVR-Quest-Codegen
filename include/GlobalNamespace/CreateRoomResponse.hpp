@@ -66,21 +66,19 @@ namespace GlobalNamespace {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: public System.String name
-    [[deprecated]] ::StringW& dyn_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_name();
     // Get instance field reference: public System.String code
-    [[deprecated]] ::StringW& dyn_code();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_code();
     // Get instance field reference: public System.String normcoreRoom
-    [[deprecated]] ::StringW& dyn_normcoreRoom();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_normcoreRoom();
     // Get instance field reference: public System.String error
-    [[deprecated]] ::StringW& dyn_error();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_error();
     // Get instance field reference: public System.Boolean connectivityError
-    [[deprecated]] bool& dyn_connectivityError();
+    [[deprecated("Use field access instead!")]] bool& dyn_connectivityError();
     // Get instance field reference: public System.Boolean upstreamError
-    [[deprecated]] bool& dyn_upstreamError();
+    [[deprecated("Use field access instead!")]] bool& dyn_upstreamError();
     // public System.Void .ctor()
     // Offset: 0x1DD400
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static CreateRoomResponse* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::CreateRoomResponse::.ctor");

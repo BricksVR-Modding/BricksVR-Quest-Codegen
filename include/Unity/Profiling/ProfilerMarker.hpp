@@ -56,7 +56,7 @@ namespace Unity::Profiling {
       return m_Ptr;
     }
     // Get instance field reference: readonly System.IntPtr m_Ptr
-    [[deprecated]] ::System::IntPtr& dyn_m_Ptr();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_m_Ptr();
     // public System.Void .ctor(System.String name)
     // Offset: 0x9969B0
     ProfilerMarker(::StringW name);

@@ -63,15 +63,13 @@ namespace Normal::Realtime {
     static_assert(sizeof(::System::Collections::Generic::HashSet_1<::Normal::Realtime::RealtimeView*>*) == 0x8);
     public:
     // Get instance field reference: public Normal.Realtime.Realtime <>4__this
-    [[deprecated]] ::Normal::Realtime::Realtime*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::Realtime*& dyn_$$4__this();
     // Get instance field reference: public System.Action didConnectSceneViewsToDatastore
-    [[deprecated]] ::System::Action*& dyn_didConnectSceneViewsToDatastore();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_didConnectSceneViewsToDatastore();
     // Get instance field reference: public System.Collections.Generic.HashSet`1<Normal.Realtime.RealtimeView> viewsThatAreConnectingToTheDatastore
-    [[deprecated]] ::System::Collections::Generic::HashSet_1<::Normal::Realtime::RealtimeView*>*& dyn_viewsThatAreConnectingToTheDatastore();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::HashSet_1<::Normal::Realtime::RealtimeView*>*& dyn_viewsThatAreConnectingToTheDatastore();
     // public System.Void .ctor()
     // Offset: 0x1DD400
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Realtime::$$c__DisplayClass81_0* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::Realtime::$$c__DisplayClass81_0::.ctor");

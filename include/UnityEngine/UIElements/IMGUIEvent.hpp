@@ -42,7 +42,6 @@ namespace UnityEngine::UIElements {
     // Implemented from: UnityEngine.UIElements.EventBase`1
     // Base method: System.Void EventBase_1::.ctor()
     // Base method: System.Void EventBase::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static IMGUIEvent* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::UIElements::IMGUIEvent::.ctor");

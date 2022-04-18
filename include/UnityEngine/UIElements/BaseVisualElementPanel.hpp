@@ -104,15 +104,15 @@ namespace UnityEngine::UIElements {
       return *reinterpret_cast<::UnityEngine::UIElements::IPanel*>(this);
     }
     // Get instance field reference: private System.Single m_PixelsPerPoint
-    [[deprecated]] float& dyn_m_PixelsPerPoint();
+    [[deprecated("Use field access instead!")]] float& dyn_m_PixelsPerPoint();
     // Get instance field reference: private System.Boolean <duringLayoutPhase>k__BackingField
-    [[deprecated]] bool& dyn_$duringLayoutPhase$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$duringLayoutPhase$k__BackingField();
     // Get instance field reference: private UnityEngine.UIElements.RepaintData <repaintData>k__BackingField
-    [[deprecated]] ::UnityEngine::UIElements::RepaintData*& dyn_$repaintData$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::RepaintData*& dyn_$repaintData$k__BackingField();
     // Get instance field reference: private System.Boolean <disposed>k__BackingField
-    [[deprecated]] bool& dyn_$disposed$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$disposed$k__BackingField();
     // Get instance field reference: UnityEngine.UIElements.ElementUnderPointer m_TopElementUnderPointers
-    [[deprecated]] ::UnityEngine::UIElements::ElementUnderPointer*& dyn_m_TopElementUnderPointers();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::ElementUnderPointer*& dyn_m_TopElementUnderPointers();
     // public UnityEngine.EventInterests get_IMGUIEventInterests()
     // Offset: 0xFFFFFFFFFFFFFFFF
     ::UnityEngine::EventInterests get_IMGUIEventInterests();

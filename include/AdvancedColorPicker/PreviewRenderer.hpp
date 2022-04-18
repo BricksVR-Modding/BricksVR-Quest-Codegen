@@ -20,10 +20,6 @@ namespace UnityEngine {
   // Forward declaring type: Material
   class Material;
 }
-// Forward declaring namespace: UnityEngine::EventSystems
-namespace UnityEngine::EventSystems {
-  // Skipping declaration: UIBehaviour because it is already included!
-}
 // Completed forward declares
 // Type namespace: AdvancedColorPicker
 namespace AdvancedColorPicker {
@@ -65,11 +61,11 @@ namespace AdvancedColorPicker {
     static_assert(sizeof(::UnityEngine::Material*) == 0x8);
     public:
     // Get instance field reference: private UnityEngine.MeshRenderer _renderer
-    [[deprecated]] ::UnityEngine::MeshRenderer*& dyn__renderer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::MeshRenderer*& dyn__renderer();
     // Get instance field reference: private UnityEngine.Material _material
-    [[deprecated]] ::UnityEngine::Material*& dyn__material();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn__material();
     // Get instance field reference: private UnityEngine.Material _materialInstance
-    [[deprecated]] ::UnityEngine::Material*& dyn__materialInstance();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn__materialInstance();
     // public UnityEngine.Material get_material()
     // Offset: 0x1E1930
     ::UnityEngine::Material* get_material();
@@ -80,12 +76,6 @@ namespace AdvancedColorPicker {
     // Offset: 0x4D3750
     // Implemented from: AdvancedColorPicker.ColorComponent
     // Base method: System.Void ColorComponent::.ctor()
-    // Base method: System.Void UIBehaviour::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static PreviewRenderer* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::AdvancedColorPicker::PreviewRenderer::.ctor");

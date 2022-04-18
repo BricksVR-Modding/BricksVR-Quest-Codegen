@@ -76,11 +76,11 @@ namespace System::Resources {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerable_1<::System::Globalization::CultureInfo*>*>(this);
     }
     // Get instance field reference: private System.Globalization.CultureInfo m_startingCulture
-    [[deprecated]] ::System::Globalization::CultureInfo*& dyn_m_startingCulture();
+    [[deprecated("Use field access instead!")]] ::System::Globalization::CultureInfo*& dyn_m_startingCulture();
     // Get instance field reference: private System.Globalization.CultureInfo m_neutralResourcesCulture
-    [[deprecated]] ::System::Globalization::CultureInfo*& dyn_m_neutralResourcesCulture();
+    [[deprecated("Use field access instead!")]] ::System::Globalization::CultureInfo*& dyn_m_neutralResourcesCulture();
     // Get instance field reference: private System.Boolean m_useParents
-    [[deprecated]] bool& dyn_m_useParents();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_useParents();
     // System.Void .ctor(System.Globalization.CultureInfo startingCulture, System.Globalization.CultureInfo neutralResourcesCulture, System.Boolean useParents)
     // Offset: 0x4A4E90
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

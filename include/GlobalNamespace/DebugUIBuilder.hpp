@@ -248,43 +248,50 @@ namespace GlobalNamespace {
     // Set static field: static private System.Single marginV
     static void _set_marginV(float value);
     // Get instance field reference: private UnityEngine.RectTransform buttonPrefab
-    [[deprecated]] ::UnityEngine::RectTransform*& dyn_buttonPrefab();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectTransform*& dyn_buttonPrefab();
     // Get instance field reference: private UnityEngine.RectTransform labelPrefab
-    [[deprecated]] ::UnityEngine::RectTransform*& dyn_labelPrefab();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectTransform*& dyn_labelPrefab();
     // Get instance field reference: private UnityEngine.RectTransform sliderPrefab
-    [[deprecated]] ::UnityEngine::RectTransform*& dyn_sliderPrefab();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectTransform*& dyn_sliderPrefab();
     // Get instance field reference: private UnityEngine.RectTransform dividerPrefab
-    [[deprecated]] ::UnityEngine::RectTransform*& dyn_dividerPrefab();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectTransform*& dyn_dividerPrefab();
     // Get instance field reference: private UnityEngine.RectTransform togglePrefab
-    [[deprecated]] ::UnityEngine::RectTransform*& dyn_togglePrefab();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectTransform*& dyn_togglePrefab();
     // Get instance field reference: private UnityEngine.RectTransform radioPrefab
-    [[deprecated]] ::UnityEngine::RectTransform*& dyn_radioPrefab();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RectTransform*& dyn_radioPrefab();
     // Get instance field reference: private UnityEngine.GameObject uiHelpersToInstantiate
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_uiHelpersToInstantiate();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_uiHelpersToInstantiate();
     // Get instance field reference: private UnityEngine.Transform[] targetContentPanels
-    [[deprecated]] ::ArrayW<::UnityEngine::Transform*>& dyn_targetContentPanels();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Transform*>& dyn_targetContentPanels();
     // Get instance field reference: private System.Boolean[] reEnable
-    [[deprecated]] ::ArrayW<bool>& dyn_reEnable();
+    [[deprecated("Use field access instead!")]] ::ArrayW<bool>& dyn_reEnable();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.GameObject> toEnable
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::GameObject*>*& dyn_toEnable();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::GameObject*>*& dyn_toEnable();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.GameObject> toDisable
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::GameObject*>*& dyn_toDisable();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::GameObject*>*& dyn_toDisable();
     // Get instance field reference: private UnityEngine.Vector2[] insertPositions
-    [[deprecated]] ::ArrayW<::UnityEngine::Vector2>& dyn_insertPositions();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Vector2>& dyn_insertPositions();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.RectTransform>[] insertedElements
-    [[deprecated]] ::ArrayW<::System::Collections::Generic::List_1<::UnityEngine::RectTransform*>*>& dyn_insertedElements();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Collections::Generic::List_1<::UnityEngine::RectTransform*>*>& dyn_insertedElements();
     // Get instance field reference: private UnityEngine.Vector3 menuOffset
-    [[deprecated]] ::UnityEngine::Vector3& dyn_menuOffset();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_menuOffset();
     // Get instance field reference: private OVRCameraRig rig
-    [[deprecated]] ::GlobalNamespace::OVRCameraRig*& dyn_rig();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRCameraRig*& dyn_rig();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.String,UnityEngine.UI.ToggleGroup> radioGroups
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::StringW, ::UnityEngine::UI::ToggleGroup*>*& dyn_radioGroups();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::StringW, ::UnityEngine::UI::ToggleGroup*>*& dyn_radioGroups();
     // Get instance field reference: private LaserPointer lp
-    [[deprecated]] ::GlobalNamespace::LaserPointer*& dyn_lp();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::LaserPointer*& dyn_lp();
     // Get instance field reference: private UnityEngine.LineRenderer lr
-    [[deprecated]] ::UnityEngine::LineRenderer*& dyn_lr();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::LineRenderer*& dyn_lr();
     // Get instance field reference: public LaserPointer/LaserBeamBehavior laserBeamBehavior
-    [[deprecated]] ::GlobalNamespace::LaserPointer::LaserBeamBehavior& dyn_laserBeamBehavior();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::LaserPointer::LaserBeamBehavior& dyn_laserBeamBehavior();
+    // public System.Void .ctor()
+    // Offset: 0x287140
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static DebugUIBuilder* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::DebugUIBuilder::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<DebugUIBuilder*, creationType>()));
+    }
     // public System.Void Awake()
     // Offset: 0x286270
     void Awake();
@@ -324,25 +331,16 @@ namespace GlobalNamespace {
     // public System.Void ToggleLaserPointer(System.Boolean isOn)
     // Offset: 0x2870A0
     void ToggleLaserPointer(bool isOn);
-    // public System.Void .ctor()
-    // Offset: 0x287140
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static DebugUIBuilder* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::DebugUIBuilder::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<DebugUIBuilder*, creationType>()));
-    }
   }; // DebugUIBuilder
   #pragma pack(pop)
   static check_size<sizeof(DebugUIBuilder), 176 + sizeof(::GlobalNamespace::LaserPointer::LaserBeamBehavior)> __GlobalNamespace_DebugUIBuilderSizeCheck;
   static_assert(sizeof(DebugUIBuilder) == 0xB4);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::DebugUIBuilder::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::DebugUIBuilder::Awake
 // Il2CppName: Awake
 template<>
@@ -473,7 +471,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::DebugUIBuilder*), "ToggleLaserPointer", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{isOn});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::DebugUIBuilder::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

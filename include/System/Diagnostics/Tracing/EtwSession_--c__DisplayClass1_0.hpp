@@ -45,7 +45,7 @@ namespace System::Diagnostics::Tracing {
       return etwSession;
     }
     // Get instance field reference: public System.Diagnostics.Tracing.EtwSession etwSession
-    [[deprecated]] ::System::Diagnostics::Tracing::EtwSession*& dyn_etwSession();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::EtwSession*& dyn_etwSession();
     // System.Boolean <RemoveEtwSession>b__0(System.WeakReference`1<System.Diagnostics.Tracing.EtwSession> wrEtwSession)
     // Offset: 0x22A9B0
     bool $RemoveEtwSession$b__0(::System::WeakReference_1<::System::Diagnostics::Tracing::EtwSession*>* wrEtwSession);

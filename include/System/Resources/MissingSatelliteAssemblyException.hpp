@@ -50,7 +50,7 @@ namespace System::Resources {
       return cultureName;
     }
     // Get instance field reference: private System.String _cultureName
-    [[deprecated]] ::StringW& dyn__cultureName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__cultureName();
     // public System.Void .ctor(System.String message, System.String cultureName)
     // Offset: 0x4A31F0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

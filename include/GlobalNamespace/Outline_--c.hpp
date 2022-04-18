@@ -54,21 +54,19 @@ namespace GlobalNamespace {
     // static private System.Void .cctor()
     // Offset: 0x7EB4D0
     static void _cctor();
+    // public System.Void .ctor()
+    // Offset: 0x1DD400
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static Outline::$$c* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::Outline::$$c::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<Outline::$$c*, creationType>()));
+    }
     // System.Collections.Generic.KeyValuePair`2<UnityEngine.Vector3,System.Int32> <SmoothNormals>b__31_0(UnityEngine.Vector3 vertex, System.Int32 index)
     // Offset: 0x7EB350
     ::System::Collections::Generic::KeyValuePair_2<::UnityEngine::Vector3, int> $SmoothNormals$b__31_0(::UnityEngine::Vector3 vertex, int index);
     // UnityEngine.Vector3 <SmoothNormals>b__31_1(System.Collections.Generic.KeyValuePair`2<UnityEngine.Vector3,System.Int32> pair)
     // Offset: 0x7EB3D0
     ::UnityEngine::Vector3 $SmoothNormals$b__31_1(::System::Collections::Generic::KeyValuePair_2<::UnityEngine::Vector3, int> pair);
-    // public System.Void .ctor()
-    // Offset: 0x1DD400
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static Outline::$$c* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::Outline::$$c::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<Outline::$$c*, creationType>()));
-    }
   }; // Outline/<>c
   #pragma pack(pop)
 }
@@ -81,6 +79,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::Outline::$$c*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: GlobalNamespace::Outline::$$c::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::Outline::$$c::$SmoothNormals$b__31_0
 // Il2CppName: <SmoothNormals>b__31_0
 template<>
@@ -100,7 +102,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::Outline::$$c*), "<SmoothNormals>b__31_1", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{pair});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::Outline::$$c::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

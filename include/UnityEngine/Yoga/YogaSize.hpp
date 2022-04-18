@@ -44,9 +44,9 @@ namespace UnityEngine::Yoga {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Single width
-    [[deprecated]] float& dyn_width();
+    [[deprecated("Use field access instead!")]] float& dyn_width();
     // Get instance field reference: public System.Single height
-    [[deprecated]] float& dyn_height();
+    [[deprecated("Use field access instead!")]] float& dyn_height();
   }; // UnityEngine.Yoga.YogaSize
   #pragma pack(pop)
   static check_size<sizeof(YogaSize), 4 + sizeof(float)> __UnityEngine_Yoga_YogaSizeSizeCheck;

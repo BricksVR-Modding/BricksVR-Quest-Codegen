@@ -291,47 +291,47 @@ namespace Sigtrap::VrTunnellingPro {
     // Set static field: static private UnityEngine.Material _stencilMat
     static void _set__stencilMat(::UnityEngine::Material* value);
     // Get instance field reference: public System.Boolean drawSkybox
-    [[deprecated]] bool& dyn_drawSkybox();
+    [[deprecated("Use field access instead!")]] bool& dyn_drawSkybox();
     // Get instance field reference: public System.Boolean useMask
-    [[deprecated]] bool& dyn_useMask();
+    [[deprecated("Use field access instead!")]] bool& dyn_useMask();
     // Get instance field reference: public System.Boolean drawBeforeTransparent
-    [[deprecated]] bool& dyn_drawBeforeTransparent();
+    [[deprecated("Use field access instead!")]] bool& dyn_drawBeforeTransparent();
     // Get instance field reference: public System.Int32 stencilReference
-    [[deprecated]] int& dyn_stencilReference();
+    [[deprecated("Use field access instead!")]] int& dyn_stencilReference();
     // Get instance field reference: public System.Int32 stencilMask
-    [[deprecated]] int& dyn_stencilMask();
+    [[deprecated("Use field access instead!")]] int& dyn_stencilMask();
     // Get instance field reference: public System.Single stencilBias
-    [[deprecated]] float& dyn_stencilBias();
+    [[deprecated("Use field access instead!")]] float& dyn_stencilBias();
     // Get instance field reference: private System.Int32 _propColor
-    [[deprecated]] int& dyn__propColor();
+    [[deprecated("Use field access instead!")]] int& dyn__propColor();
     // Get instance field reference: private System.Int32 _propSkybox
-    [[deprecated]] int& dyn__propSkybox();
+    [[deprecated("Use field access instead!")]] int& dyn__propSkybox();
     // Get instance field reference: private System.Int32 _propWriteZ
-    [[deprecated]] int& dyn__propWriteZ();
+    [[deprecated("Use field access instead!")]] int& dyn__propWriteZ();
     // Get instance field reference: private System.Int32 _globPropStencilRef
-    [[deprecated]] int& dyn__globPropStencilRef();
+    [[deprecated("Use field access instead!")]] int& dyn__globPropStencilRef();
     // Get instance field reference: private System.Int32 _globPropStencilMask
-    [[deprecated]] int& dyn__globPropStencilMask();
+    [[deprecated("Use field access instead!")]] int& dyn__globPropStencilMask();
     // Get instance field reference: private System.Int32 _globPropStencilBias
-    [[deprecated]] int& dyn__globPropStencilBias();
+    [[deprecated("Use field access instead!")]] int& dyn__globPropStencilBias();
     // Get instance field reference: private UnityEngine.Material _irisMatOuter
-    [[deprecated]] ::UnityEngine::Material*& dyn__irisMatOuter();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn__irisMatOuter();
     // Get instance field reference: private UnityEngine.Material _irisMatInner
-    [[deprecated]] ::UnityEngine::Material*& dyn__irisMatInner();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn__irisMatInner();
     // Get instance field reference: private UnityEngine.Mesh _irisMesh
-    [[deprecated]] ::UnityEngine::Mesh*& dyn__irisMesh();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Mesh*& dyn__irisMesh();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<UnityEngine.Renderer,UnityEngine.MeshFilter> _maskObjects
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::UnityEngine::Renderer*, ::UnityEngine::MeshFilter*>*& dyn__maskObjects();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::UnityEngine::Renderer*, ::UnityEngine::MeshFilter*>*& dyn__maskObjects();
     // Get instance field reference: private System.Collections.Generic.Stack`1<UnityEngine.Mesh> _skinnedMeshPool
-    [[deprecated]] ::System::Collections::Generic::Stack_1<::UnityEngine::Mesh*>*& dyn__skinnedMeshPool();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Stack_1<::UnityEngine::Mesh*>*& dyn__skinnedMeshPool();
     // Get instance field reference: private System.Collections.Generic.Stack`1<UnityEngine.Mesh> _skinnedMeshesRendering
-    [[deprecated]] ::System::Collections::Generic::Stack_1<::UnityEngine::Mesh*>*& dyn__skinnedMeshesRendering();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Stack_1<::UnityEngine::Mesh*>*& dyn__skinnedMeshesRendering();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.Object> _toDestroy
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::Object*>*& dyn__toDestroy();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::Object*>*& dyn__toDestroy();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.MeshRenderer> _tempMeshChildren
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::MeshRenderer*>*& dyn__tempMeshChildren();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::MeshRenderer*>*& dyn__tempMeshChildren();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.SkinnedMeshRenderer> _tempSkinnedMeshChildren
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::SkinnedMeshRenderer*>*& dyn__tempSkinnedMeshChildren();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::SkinnedMeshRenderer*>*& dyn__tempSkinnedMeshChildren();
     // static public Sigtrap.VrTunnellingPro.TunnellingMobile get_instance()
     // Offset: 0x6D9610
     static ::Sigtrap::VrTunnellingPro::TunnellingMobile* get_instance();
@@ -369,11 +369,6 @@ namespace Sigtrap::VrTunnellingPro {
     // Offset: 0x6D9490
     // Implemented from: Sigtrap.VrTunnellingPro.TunnellingBase
     // Base method: System.Void TunnellingBase::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TunnellingMobile* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Sigtrap::VrTunnellingPro::TunnellingMobile::.ctor");

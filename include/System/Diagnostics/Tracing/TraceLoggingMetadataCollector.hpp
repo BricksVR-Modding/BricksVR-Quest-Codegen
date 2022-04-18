@@ -68,13 +68,13 @@ namespace System::Diagnostics::Tracing {
     static_assert(sizeof(::System::Diagnostics::Tracing::EventFieldTags) == 0x4);
     public:
     // Get instance field reference: private readonly System.Diagnostics.Tracing.TraceLoggingMetadataCollector/System.Diagnostics.Tracing.Impl impl
-    [[deprecated]] ::System::Diagnostics::Tracing::TraceLoggingMetadataCollector::Impl*& dyn_impl();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::TraceLoggingMetadataCollector::Impl*& dyn_impl();
     // Get instance field reference: private readonly System.Diagnostics.Tracing.FieldMetadata currentGroup
-    [[deprecated]] ::System::Diagnostics::Tracing::FieldMetadata*& dyn_currentGroup();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::FieldMetadata*& dyn_currentGroup();
     // Get instance field reference: private System.Int32 bufferedArrayFieldCount
-    [[deprecated]] int& dyn_bufferedArrayFieldCount();
+    [[deprecated("Use field access instead!")]] int& dyn_bufferedArrayFieldCount();
     // Get instance field reference: private System.Diagnostics.Tracing.EventFieldTags <Tags>k__BackingField
-    [[deprecated]] ::System::Diagnostics::Tracing::EventFieldTags& dyn_$Tags$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::EventFieldTags& dyn_$Tags$k__BackingField();
     // System.Diagnostics.Tracing.EventFieldTags get_Tags()
     // Offset: 0x2512C0
     ::System::Diagnostics::Tracing::EventFieldTags get_Tags();

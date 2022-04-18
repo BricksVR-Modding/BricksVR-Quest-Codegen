@@ -53,9 +53,9 @@ namespace UnityEngine::Windows::Speech {
     static_assert(sizeof(::UnityEngine::Windows::Speech::PhraseRecognizer::PhraseRecognizedDelegate*) == 0x8);
     public:
     // Get instance field reference: protected System.IntPtr m_Recognizer
-    [[deprecated]] ::System::IntPtr& dyn_m_Recognizer();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_m_Recognizer();
     // Get instance field reference: private UnityEngine.Windows.Speech.PhraseRecognizer/UnityEngine.Windows.Speech.PhraseRecognizedDelegate OnPhraseRecognized
-    [[deprecated]] ::UnityEngine::Windows::Speech::PhraseRecognizer::PhraseRecognizedDelegate*& dyn_OnPhraseRecognized();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Windows::Speech::PhraseRecognizer::PhraseRecognizedDelegate*& dyn_OnPhraseRecognized();
     // private System.Void InvokePhraseRecognizedEvent(System.String text, UnityEngine.Windows.Speech.ConfidenceLevel confidence, UnityEngine.Windows.Speech.SemanticMeaning[] semanticMeanings, System.Int64 phraseStartFileTime, System.Int64 phraseDurationTicks)
     // Offset: 0xA3A910
     void InvokePhraseRecognizedEvent(::StringW text, ::UnityEngine::Windows::Speech::ConfidenceLevel confidence, ::ArrayW<::UnityEngine::Windows::Speech::SemanticMeaning> semanticMeanings, int64_t phraseStartFileTime, int64_t phraseDurationTicks);

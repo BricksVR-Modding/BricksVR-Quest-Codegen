@@ -95,21 +95,28 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.XR.Interaction.Toolkit.XRDirectInteractor _interactor
-    [[deprecated]] ::UnityEngine::XR::Interaction::Toolkit::XRDirectInteractor*& dyn__interactor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::Interaction::Toolkit::XRDirectInteractor*& dyn__interactor();
     // Get instance field reference: private UnityEngine.BoxCollider _collider
-    [[deprecated]] ::UnityEngine::BoxCollider*& dyn__collider();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::BoxCollider*& dyn__collider();
     // Get instance field reference: private System.Boolean _currentlySelecting
-    [[deprecated]] bool& dyn__currentlySelecting();
+    [[deprecated("Use field access instead!")]] bool& dyn__currentlySelecting();
     // Get instance field reference: private readonly UnityEngine.Vector3 _bigColliderSize
-    [[deprecated]] ::UnityEngine::Vector3& dyn__bigColliderSize();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__bigColliderSize();
     // Get instance field reference: private UnityEngine.Vector3 _bigColliderCenter
-    [[deprecated]] ::UnityEngine::Vector3& dyn__bigColliderCenter();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__bigColliderCenter();
     // Get instance field reference: private readonly UnityEngine.Vector3 _smallColliderSize
-    [[deprecated]] ::UnityEngine::Vector3& dyn__smallColliderSize();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__smallColliderSize();
     // Get instance field reference: private UnityEngine.Vector3 _smallColliderCenter
-    [[deprecated]] ::UnityEngine::Vector3& dyn__smallColliderCenter();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn__smallColliderCenter();
     // Get instance field reference: public System.Boolean rightHand
-    [[deprecated]] bool& dyn_rightHand();
+    [[deprecated("Use field access instead!")]] bool& dyn_rightHand();
+    // public System.Void .ctor()
+    // Offset: 0x6DC950
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static AdjustHandColliderOnPose* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::AdjustHandColliderOnPose::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<AdjustHandColliderOnPose*, creationType>()));
+    }
     // private System.Void Start()
     // Offset: 0x6DC730
     void Start();
@@ -119,25 +126,16 @@ namespace GlobalNamespace {
     // private System.Void <Update>b__9_0()
     // Offset: 0x6DC7C0
     void $Update$b__9_0();
-    // public System.Void .ctor()
-    // Offset: 0x6DC950
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static AdjustHandColliderOnPose* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::AdjustHandColliderOnPose::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<AdjustHandColliderOnPose*, creationType>()));
-    }
   }; // AdjustHandColliderOnPose
   #pragma pack(pop)
   static check_size<sizeof(AdjustHandColliderOnPose), 92 + sizeof(bool)> __GlobalNamespace_AdjustHandColliderOnPoseSizeCheck;
   static_assert(sizeof(AdjustHandColliderOnPose) == 0x5D);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::AdjustHandColliderOnPose::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::AdjustHandColliderOnPose::Start
 // Il2CppName: Start
 template<>
@@ -162,7 +160,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::AdjustHandColliderOnPose*), "<Update>b__9_0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::AdjustHandColliderOnPose::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

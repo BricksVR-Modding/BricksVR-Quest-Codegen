@@ -96,23 +96,23 @@ namespace AdvancedColorPicker {
     static_assert(sizeof(uint8_t) == 0x1);
     public:
     // Get instance field reference: private AdvancedColorPicker.GradientBackground/AdvancedColorPicker.GradientPartType type
-    [[deprecated]] ::AdvancedColorPicker::GradientBackground::GradientPartType& dyn_type();
+    [[deprecated("Use field access instead!")]] ::AdvancedColorPicker::GradientBackground::GradientPartType& dyn_type();
     // Get instance field reference: private UnityEngine.Color32 color
-    [[deprecated]] ::UnityEngine::Color32& dyn_color();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color32& dyn_color();
     // Get instance field reference: public UnityEngine.Events.UnityAction callback
-    [[deprecated]] ::UnityEngine::Events::UnityAction*& dyn_callback();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Events::UnityAction*& dyn_callback();
     // Get instance field reference: private System.Boolean v2Fixed
-    [[deprecated]] bool& dyn_v2Fixed();
+    [[deprecated("Use field access instead!")]] bool& dyn_v2Fixed();
     // Get instance field reference: private System.Boolean v3Fixed
-    [[deprecated]] bool& dyn_v3Fixed();
+    [[deprecated("Use field access instead!")]] bool& dyn_v3Fixed();
     // Get instance field reference: private System.Boolean alphaFixed
-    [[deprecated]] bool& dyn_alphaFixed();
+    [[deprecated("Use field access instead!")]] bool& dyn_alphaFixed();
     // Get instance field reference: private System.Single fixedV2
-    [[deprecated]] float& dyn_fixedV2();
+    [[deprecated("Use field access instead!")]] float& dyn_fixedV2();
     // Get instance field reference: private System.Single fixedV3
-    [[deprecated]] float& dyn_fixedV3();
+    [[deprecated("Use field access instead!")]] float& dyn_fixedV3();
     // Get instance field reference: private System.Byte fixedAlpha
-    [[deprecated]] uint8_t& dyn_fixedAlpha();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn_fixedAlpha();
     // public AdvancedColorPicker.GradientBackground/AdvancedColorPicker.GradientPartType get_Type()
     // Offset: 0x1DD410
     ::AdvancedColorPicker::GradientBackground::GradientPartType get_Type();
@@ -164,6 +164,13 @@ namespace AdvancedColorPicker {
     // public System.Single get_FixedAlphaNormalized()
     // Offset: 0x5B60F0
     float get_FixedAlphaNormalized();
+    // public System.Void .ctor()
+    // Offset: 0x5B6040
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static GradientBackground::GradientPart* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::AdvancedColorPicker::GradientBackground::GradientPart::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<GradientBackground::GradientPart*, creationType>()));
+    }
     // public System.Void .ctor(AdvancedColorPicker.GradientBackground/AdvancedColorPicker.GradientPart original)
     // Offset: 0x5B6070
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
@@ -186,15 +193,6 @@ namespace AdvancedColorPicker {
     // public System.Byte GetAlpha(System.Byte requested)
     // Offset: 0x5B5FD0
     uint8_t GetAlpha(uint8_t requested);
-    // public System.Void .ctor()
-    // Offset: 0x5B6040
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static GradientBackground::GradientPart* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::AdvancedColorPicker::GradientBackground::GradientPart::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<GradientBackground::GradientPart*, creationType>()));
-    }
   }; // AdvancedColorPicker.GradientBackground/AdvancedColorPicker.GradientPart
   #pragma pack(pop)
   static check_size<sizeof(GradientBackground::GradientPart), 44 + sizeof(uint8_t)> __AdvancedColorPicker_GradientBackground_GradientPartSizeCheck;
@@ -349,6 +347,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<float (Adva
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
 // Try using FindMethod instead!
+// Writing MetadataGetter for method: AdvancedColorPicker::GradientBackground::GradientPart::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: AdvancedColorPicker::GradientBackground::GradientPart::SendChanged
 // Il2CppName: SendChanged
 template<>
@@ -393,7 +395,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<uint8_t (Ad
     return ::il2cpp_utils::FindMethod(classof(AdvancedColorPicker::GradientBackground::GradientPart*), "GetAlpha", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{requested});
   }
 };
-// Writing MetadataGetter for method: AdvancedColorPicker::GradientBackground::GradientPart::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

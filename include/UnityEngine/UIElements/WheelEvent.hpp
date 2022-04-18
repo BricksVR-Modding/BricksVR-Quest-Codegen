@@ -46,7 +46,7 @@ namespace UnityEngine::UIElements {
     static_assert(sizeof(::UnityEngine::Vector3) == 0xC);
     public:
     // Get instance field reference: private UnityEngine.Vector3 <delta>k__BackingField
-    [[deprecated]] ::UnityEngine::Vector3& dyn_$delta$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector3& dyn_$delta$k__BackingField();
     // private System.Void set_delta(UnityEngine.Vector3 value)
     // Offset: 0x6563B0
     void set_delta(::UnityEngine::Vector3 value);
@@ -59,7 +59,6 @@ namespace UnityEngine::UIElements {
     // Base method: System.Void MouseEventBase_1::.ctor()
     // Base method: System.Void EventBase_1::.ctor()
     // Base method: System.Void EventBase::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static WheelEvent* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::UIElements::WheelEvent::.ctor");

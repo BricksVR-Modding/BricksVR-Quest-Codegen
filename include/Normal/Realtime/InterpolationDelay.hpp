@@ -89,19 +89,19 @@ namespace Normal::Realtime {
     // Set static field: static private System.Single MAXIMUM_DELAY
     static void _set_MAXIMUM_DELAY(float value);
     // Get instance field reference: private System.Single <delay>k__BackingField
-    [[deprecated]] float& dyn_$delay$k__BackingField();
+    [[deprecated("Use field access instead!")]] float& dyn_$delay$k__BackingField();
     // Get instance field reference: private System.Double <basis>k__BackingField
-    [[deprecated]] double& dyn_$basis$k__BackingField();
+    [[deprecated("Use field access instead!")]] double& dyn_$basis$k__BackingField();
     // Get instance field reference: private System.Boolean _initialized
-    [[deprecated]] bool& dyn__initialized();
+    [[deprecated("Use field access instead!")]] bool& dyn__initialized();
     // Get instance field reference: private readonly System.Single _delayIncrement
-    [[deprecated]] float& dyn__delayIncrement();
+    [[deprecated("Use field access instead!")]] float& dyn__delayIncrement();
     // Get instance field reference: private readonly System.Single _delayDecrement
-    [[deprecated]] float& dyn__delayDecrement();
+    [[deprecated("Use field access instead!")]] float& dyn__delayDecrement();
     // Get instance field reference: private System.Int32 _penaltyCounter
-    [[deprecated]] int& dyn__penaltyCounter();
+    [[deprecated("Use field access instead!")]] int& dyn__penaltyCounter();
     // Get instance field reference: private System.Int32 _correctCounter
-    [[deprecated]] int& dyn__correctCounter();
+    [[deprecated("Use field access instead!")]] int& dyn__correctCounter();
     // public System.Single get_delay()
     // Offset: 0x31AB10
     float get_delay();

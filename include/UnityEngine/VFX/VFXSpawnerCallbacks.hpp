@@ -40,6 +40,13 @@ namespace UnityEngine::VFX {
   // [RequiredByNativeCodeAttribute] Offset: BB1F0
   class VFXSpawnerCallbacks : public ::UnityEngine::ScriptableObject {
     public:
+    // protected System.Void .ctor()
+    // Offset: 0x27AD80
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static VFXSpawnerCallbacks* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::VFX::VFXSpawnerCallbacks::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<VFXSpawnerCallbacks*, creationType>()));
+    }
     // public System.Void OnPlay(UnityEngine.VFX.VFXSpawnerState state, UnityEngine.VFX.VFXExpressionValues vfxValues, UnityEngine.VFX.VisualEffect vfxComponent)
     // Offset: 0xFFFFFFFFFFFFFFFF
     void OnPlay(::UnityEngine::VFX::VFXSpawnerState* state, ::UnityEngine::VFX::VFXExpressionValues* vfxValues, ::UnityEngine::VFX::VisualEffect* vfxComponent);
@@ -49,21 +56,14 @@ namespace UnityEngine::VFX {
     // public System.Void OnStop(UnityEngine.VFX.VFXSpawnerState state, UnityEngine.VFX.VFXExpressionValues vfxValues, UnityEngine.VFX.VisualEffect vfxComponent)
     // Offset: 0xFFFFFFFFFFFFFFFF
     void OnStop(::UnityEngine::VFX::VFXSpawnerState* state, ::UnityEngine::VFX::VFXExpressionValues* vfxValues, ::UnityEngine::VFX::VisualEffect* vfxComponent);
-    // protected System.Void .ctor()
-    // Offset: 0x27AD80
-    // Implemented from: UnityEngine.ScriptableObject
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static VFXSpawnerCallbacks* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::VFX::VFXSpawnerCallbacks::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<VFXSpawnerCallbacks*, creationType>()));
-    }
   }; // UnityEngine.VFX.VFXSpawnerCallbacks
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: UnityEngine::VFX::VFXSpawnerCallbacks::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::VFX::VFXSpawnerCallbacks::OnPlay
 // Il2CppName: OnPlay
 template<>
@@ -97,7 +97,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::VFX::VFXSpawnerCallbacks*), "OnStop", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{state, vfxValues, vfxComponent});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::VFX::VFXSpawnerCallbacks::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

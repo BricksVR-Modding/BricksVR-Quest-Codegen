@@ -30,10 +30,6 @@ namespace System::Collections {
   // Forward declaring type: IEnumerator
   class IEnumerator;
 }
-// Forward declaring namespace: UnityEngine::EventSystems
-namespace UnityEngine::EventSystems {
-  // Skipping declaration: UIBehaviour because it is already included!
-}
 // Completed forward declares
 // Type namespace: AdvancedColorPicker
 namespace AdvancedColorPicker {
@@ -102,19 +98,19 @@ namespace AdvancedColorPicker {
     static_assert(sizeof(::UnityEngine::Texture2D*) == 0x8);
     public:
     // Get instance field reference: public AdvancedColorPicker.ColorEyedropper/AdvancedColorPicker.ActiveChanged OnActivated
-    [[deprecated]] ::AdvancedColorPicker::ColorEyedropper::ActiveChanged*& dyn_OnActivated();
+    [[deprecated("Use field access instead!")]] ::AdvancedColorPicker::ColorEyedropper::ActiveChanged*& dyn_OnActivated();
     // Get instance field reference: public AdvancedColorPicker.ColorEyedropper/AdvancedColorPicker.ActiveChanged OnDeactivated
-    [[deprecated]] ::AdvancedColorPicker::ColorEyedropper::ActiveChanged*& dyn_OnDeactivated();
+    [[deprecated("Use field access instead!")]] ::AdvancedColorPicker::ColorEyedropper::ActiveChanged*& dyn_OnDeactivated();
     // Get instance field reference: private System.Boolean changesColorInstantly
-    [[deprecated]] bool& dyn_changesColorInstantly();
+    [[deprecated("Use field access instead!")]] bool& dyn_changesColorInstantly();
     // Get instance field reference: private System.Boolean activated
-    [[deprecated]] bool& dyn_activated();
+    [[deprecated("Use field access instead!")]] bool& dyn_activated();
     // Get instance field reference: private UnityEngine.Coroutine coroutine
-    [[deprecated]] ::UnityEngine::Coroutine*& dyn_coroutine();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Coroutine*& dyn_coroutine();
     // Get instance field reference: private UnityEngine.Color cachedColor
-    [[deprecated]] ::UnityEngine::Color& dyn_cachedColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_cachedColor();
     // Get instance field reference: private UnityEngine.Texture2D cachedImage
-    [[deprecated]] ::UnityEngine::Texture2D*& dyn_cachedImage();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Texture2D*& dyn_cachedImage();
     // public System.Boolean get_Activated()
     // Offset: 0x4B1050
     bool get_Activated();
@@ -140,12 +136,6 @@ namespace AdvancedColorPicker {
     // Offset: 0x5AAAF0
     // Implemented from: AdvancedColorPicker.ColorComponent
     // Base method: System.Void ColorComponent::.ctor()
-    // Base method: System.Void UIBehaviour::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ColorEyedropper* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::AdvancedColorPicker::ColorEyedropper::.ctor");

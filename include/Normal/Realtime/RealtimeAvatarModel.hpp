@@ -145,31 +145,31 @@ namespace Normal::Realtime {
     static_assert(sizeof(::Normal::Realtime::ReliableProperty_1<bool>*) == 0x8);
     public:
     // Get instance field reference: private Normal.Realtime.RealtimeAvatar/Normal.Realtime.DeviceType _deviceType
-    [[deprecated]] ::Normal::Realtime::RealtimeAvatar::DeviceType& dyn__deviceType();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::RealtimeAvatar::DeviceType& dyn__deviceType();
     // Get instance field reference: private System.String _deviceModel
-    [[deprecated]] ::StringW& dyn__deviceModel();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__deviceModel();
     // Get instance field reference: private System.Boolean _headActive
-    [[deprecated]] bool& dyn__headActive();
+    [[deprecated("Use field access instead!")]] bool& dyn__headActive();
     // Get instance field reference: private System.Boolean _leftHandActive
-    [[deprecated]] bool& dyn__leftHandActive();
+    [[deprecated("Use field access instead!")]] bool& dyn__leftHandActive();
     // Get instance field reference: private System.Boolean _rightHandActive
-    [[deprecated]] bool& dyn__rightHandActive();
+    [[deprecated("Use field access instead!")]] bool& dyn__rightHandActive();
     // Get instance field reference: private Normal.Realtime.RealtimeAvatarModel/Normal.Realtime.PropertyChangedHandler`1<System.Boolean> headActiveDidChange
-    [[deprecated]] ::Normal::Realtime::RealtimeAvatarModel::PropertyChangedHandler_1<bool>*& dyn_headActiveDidChange();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::RealtimeAvatarModel::PropertyChangedHandler_1<bool>*& dyn_headActiveDidChange();
     // Get instance field reference: private Normal.Realtime.RealtimeAvatarModel/Normal.Realtime.PropertyChangedHandler`1<System.Boolean> leftHandActiveDidChange
-    [[deprecated]] ::Normal::Realtime::RealtimeAvatarModel::PropertyChangedHandler_1<bool>*& dyn_leftHandActiveDidChange();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::RealtimeAvatarModel::PropertyChangedHandler_1<bool>*& dyn_leftHandActiveDidChange();
     // Get instance field reference: private Normal.Realtime.RealtimeAvatarModel/Normal.Realtime.PropertyChangedHandler`1<System.Boolean> rightHandActiveDidChange
-    [[deprecated]] ::Normal::Realtime::RealtimeAvatarModel::PropertyChangedHandler_1<bool>*& dyn_rightHandActiveDidChange();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::RealtimeAvatarModel::PropertyChangedHandler_1<bool>*& dyn_rightHandActiveDidChange();
     // Get instance field reference: private Normal.Realtime.ReliableProperty`1<System.UInt32> _deviceTypeProperty
-    [[deprecated]] ::Normal::Realtime::ReliableProperty_1<uint>*& dyn__deviceTypeProperty();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::ReliableProperty_1<uint>*& dyn__deviceTypeProperty();
     // Get instance field reference: private Normal.Realtime.ReliableProperty`1<System.String> _deviceModelProperty
-    [[deprecated]] ::Normal::Realtime::ReliableProperty_1<::StringW>*& dyn__deviceModelProperty();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::ReliableProperty_1<::StringW>*& dyn__deviceModelProperty();
     // Get instance field reference: private Normal.Realtime.ReliableProperty`1<System.Boolean> _headActiveProperty
-    [[deprecated]] ::Normal::Realtime::ReliableProperty_1<bool>*& dyn__headActiveProperty();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::ReliableProperty_1<bool>*& dyn__headActiveProperty();
     // Get instance field reference: private Normal.Realtime.ReliableProperty`1<System.Boolean> _leftHandActiveProperty
-    [[deprecated]] ::Normal::Realtime::ReliableProperty_1<bool>*& dyn__leftHandActiveProperty();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::ReliableProperty_1<bool>*& dyn__leftHandActiveProperty();
     // Get instance field reference: private Normal.Realtime.ReliableProperty`1<System.Boolean> _rightHandActiveProperty
-    [[deprecated]] ::Normal::Realtime::ReliableProperty_1<bool>*& dyn__rightHandActiveProperty();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::ReliableProperty_1<bool>*& dyn__rightHandActiveProperty();
     // public Normal.Realtime.RealtimeAvatar/Normal.Realtime.DeviceType get_deviceType()
     // Offset: 0xBDE250
     ::Normal::Realtime::RealtimeAvatar::DeviceType get_deviceType();
@@ -218,6 +218,13 @@ namespace Normal::Realtime {
     // public System.Void remove_rightHandActiveDidChange(Normal.Realtime.RealtimeAvatarModel/Normal.Realtime.PropertyChangedHandler`1<System.Boolean> value)
     // Offset: 0xBDE490
     void remove_rightHandActiveDidChange(::Normal::Realtime::RealtimeAvatarModel::PropertyChangedHandler_1<bool>* value);
+    // public System.Void .ctor()
+    // Offset: 0xBDDEA0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static RealtimeAvatarModel* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::RealtimeAvatarModel::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<RealtimeAvatarModel*, creationType>()));
+    }
     // private System.Void FireHeadActiveDidChange(System.Boolean value)
     // Offset: 0xBDD3C0
     void FireHeadActiveDidChange(bool value);
@@ -230,15 +237,6 @@ namespace Normal::Realtime {
     // private System.Void UpdateBackingFields()
     // Offset: 0xBDDA60
     void UpdateBackingFields();
-    // public System.Void .ctor()
-    // Offset: 0xBDDEA0
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static RealtimeAvatarModel* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::RealtimeAvatarModel::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<RealtimeAvatarModel*, creationType>()));
-    }
     // protected override System.Void OnParentReplaced(Normal.Realtime.RealtimeModel previousParent, Normal.Realtime.RealtimeModel currentParent)
     // Offset: 0xBDD5A0
     // Implemented from: Normal.Realtime.RealtimeModel
@@ -404,6 +402,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Norma
     return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::RealtimeAvatarModel*), "remove_rightHandActiveDidChange", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: Normal::Realtime::RealtimeAvatarModel::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Normal::Realtime::RealtimeAvatarModel::FireHeadActiveDidChange
 // Il2CppName: FireHeadActiveDidChange
 template<>
@@ -439,10 +441,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Norma
     return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::RealtimeAvatarModel*), "UpdateBackingFields", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: Normal::Realtime::RealtimeAvatarModel::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: Normal::Realtime::RealtimeAvatarModel::OnParentReplaced
 // Il2CppName: OnParentReplaced
 template<>

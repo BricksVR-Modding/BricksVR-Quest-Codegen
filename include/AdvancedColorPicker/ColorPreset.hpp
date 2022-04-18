@@ -61,9 +61,9 @@ namespace AdvancedColorPicker {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private AdvancedColorPicker.ColorPicker _picker
-    [[deprecated]] ::AdvancedColorPicker::ColorPicker*& dyn__picker();
+    [[deprecated("Use field access instead!")]] ::AdvancedColorPicker::ColorPicker*& dyn__picker();
     // Get instance field reference: private AdvancedColorPicker.ColorSwatch <Swatch>k__BackingField
-    [[deprecated]] ::AdvancedColorPicker::ColorSwatch*& dyn_$Swatch$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::AdvancedColorPicker::ColorSwatch*& dyn_$Swatch$k__BackingField();
     // public UnityEngine.Color32 get_Color()
     // Offset: 0x5ACE90
     ::UnityEngine::Color32 get_Color();
@@ -76,25 +76,19 @@ namespace AdvancedColorPicker {
     // public System.Void set_Swatch(AdvancedColorPicker.ColorSwatch value)
     // Offset: 0x1E49F0
     void set_Swatch(::AdvancedColorPicker::ColorSwatch* value);
+    // public System.Void .ctor()
+    // Offset: 0x1DDE30
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ColorPreset* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::AdvancedColorPicker::ColorPreset::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ColorPreset*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0x5ACE40
     void Awake();
     // public System.Void ApplyColorToOriginalPicker()
     // Offset: 0x5ACDB0
     void ApplyColorToOriginalPicker();
-    // public System.Void .ctor()
-    // Offset: 0x1DDE30
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ColorPreset* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::AdvancedColorPicker::ColorPreset::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ColorPreset*, creationType>()));
-    }
   }; // AdvancedColorPicker.ColorPreset
   #pragma pack(pop)
   static check_size<sizeof(ColorPreset), 32 + sizeof(::AdvancedColorPicker::ColorSwatch*)> __AdvancedColorPicker_ColorPresetSizeCheck;
@@ -135,6 +129,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Advan
     return ::il2cpp_utils::FindMethod(classof(AdvancedColorPicker::ColorPreset*), "set_Swatch", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: AdvancedColorPicker::ColorPreset::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: AdvancedColorPicker::ColorPreset::Awake
 // Il2CppName: Awake
 template<>
@@ -151,7 +149,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Advan
     return ::il2cpp_utils::FindMethod(classof(AdvancedColorPicker::ColorPreset*), "ApplyColorToOriginalPicker", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: AdvancedColorPicker::ColorPreset::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

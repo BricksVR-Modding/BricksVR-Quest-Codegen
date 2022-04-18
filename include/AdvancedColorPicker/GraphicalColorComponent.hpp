@@ -49,35 +49,26 @@ namespace AdvancedColorPicker {
     static_assert(sizeof(::AdvancedColorPicker::ColorPicker*) == 0x8);
     public:
     // Get instance field reference: private AdvancedColorPicker.ColorPicker picker
-    [[deprecated]] ::AdvancedColorPicker::ColorPicker*& dyn_picker();
+    [[deprecated("Use field access instead!")]] ::AdvancedColorPicker::ColorPicker*& dyn_picker();
     // public AdvancedColorPicker.ColorPicker get_Picker()
     // Offset: 0x1E2D00
     ::AdvancedColorPicker::ColorPicker* get_Picker();
     // public System.Void set_Picker(AdvancedColorPicker.ColorPicker value)
     // Offset: 0x5B64E0
     void set_Picker(::AdvancedColorPicker::ColorPicker* value);
+    // protected System.Void .ctor()
+    // Offset: 0x1DDF10
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static GraphicalColorComponent* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::AdvancedColorPicker::GraphicalColorComponent::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<GraphicalColorComponent*, creationType>()));
+    }
     // private System.Void OnColorChanged(UnityEngine.Color color)
     // Offset: 0x5B62F0
     void OnColorChanged(::UnityEngine::Color color);
     // protected System.Void DisplayNewColor()
     // Offset: 0xFFFFFFFFFFFFFFFF
     void DisplayNewColor();
-    // protected System.Void .ctor()
-    // Offset: 0x1DDF10
-    // Implemented from: UnityEngine.UI.MaskableGraphic
-    // Base method: System.Void MaskableGraphic::.ctor()
-    // Base method: System.Void Graphic::.ctor()
-    // Base method: System.Void UIBehaviour::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static GraphicalColorComponent* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::AdvancedColorPicker::GraphicalColorComponent::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<GraphicalColorComponent*, creationType>()));
-    }
     // protected override System.Void OnEnable()
     // Offset: 0x5B63F0
     // Implemented from: UnityEngine.UI.MaskableGraphic
@@ -111,6 +102,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Advan
     return ::il2cpp_utils::FindMethod(classof(AdvancedColorPicker::GraphicalColorComponent*), "set_Picker", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: AdvancedColorPicker::GraphicalColorComponent::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: AdvancedColorPicker::GraphicalColorComponent::OnColorChanged
 // Il2CppName: OnColorChanged
 template<>
@@ -128,10 +123,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Advan
     return ::il2cpp_utils::FindMethod(classof(AdvancedColorPicker::GraphicalColorComponent*), "DisplayNewColor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: AdvancedColorPicker::GraphicalColorComponent::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: AdvancedColorPicker::GraphicalColorComponent::OnEnable
 // Il2CppName: OnEnable
 template<>

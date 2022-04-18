@@ -69,7 +69,7 @@ namespace Microsoft::Win32 {
     // Set static field: static public Microsoft.Win32.UnsafeNativeMethods/Microsoft.Win32.ManifestEtw/Microsoft.Win32.ActivityControl EVENT_ACTIVITY_CTRL_CREATE_SET_ID
     static void _set_EVENT_ACTIVITY_CTRL_CREATE_SET_ID(::Microsoft::Win32::UnsafeNativeMethods_ManifestEtw::ActivityControl value);
     // Get instance field reference: public System.UInt32 value__
-    [[deprecated]] uint& dyn_value__();
+    [[deprecated("Use field access instead!")]] uint& dyn_value__();
   }; // Microsoft.Win32.UnsafeNativeMethods/Microsoft.Win32.ManifestEtw/Microsoft.Win32.ActivityControl
   #pragma pack(pop)
   static check_size<sizeof(UnsafeNativeMethods_ManifestEtw::ActivityControl), 0 + sizeof(uint)> __Microsoft_Win32_UnsafeNativeMethods_ManifestEtw_ActivityControlSizeCheck;

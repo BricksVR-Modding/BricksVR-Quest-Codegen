@@ -54,7 +54,7 @@ namespace System::Collections {
       return hashtable;
     }
     // Get instance field reference: private System.Collections.Hashtable _hashtable
-    [[deprecated]] ::System::Collections::Hashtable*& dyn__hashtable();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn__hashtable();
     // public System.Int32 get_Count()
     // Offset: 0x326980
     int get_Count();

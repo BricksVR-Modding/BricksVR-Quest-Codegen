@@ -88,7 +88,7 @@ namespace UnityEngine::XR::Interaction::Toolkit {
       // Set static field: static public UnityEngine.XR.Interaction.Toolkit.SnapTurnProvider/UnityEngine.XR.Interaction.Toolkit.InputAxes Secondary2DAxis
       static void _set_Secondary2DAxis(::UnityEngine::XR::Interaction::Toolkit::SnapTurnProvider::InputAxes value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // UnityEngine.XR.Interaction.Toolkit.SnapTurnProvider/UnityEngine.XR.Interaction.Toolkit.InputAxes
     #pragma pack(pop)
     static check_size<sizeof(SnapTurnProvider::InputAxes), 0 + sizeof(int)> __UnityEngine_XR_Interaction_Toolkit_SnapTurnProvider_InputAxesSizeCheck;
@@ -161,23 +161,23 @@ namespace UnityEngine::XR::Interaction::Toolkit {
     // Set static field: static private readonly UnityEngine.XR.InputFeatureUsage`1<UnityEngine.Vector2>[] m_Vec2UsageList
     static void _set_m_Vec2UsageList(::ArrayW<::UnityEngine::XR::InputFeatureUsage_1<::UnityEngine::Vector2>> value);
     // Get instance field reference: public System.Int32 turnIndex
-    [[deprecated]] int& dyn_turnIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_turnIndex();
     // Get instance field reference: private UnityEngine.XR.Interaction.Toolkit.SnapTurnProvider/UnityEngine.XR.Interaction.Toolkit.InputAxes m_TurnUsage
-    [[deprecated]] ::UnityEngine::XR::Interaction::Toolkit::SnapTurnProvider::InputAxes& dyn_m_TurnUsage();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::Interaction::Toolkit::SnapTurnProvider::InputAxes& dyn_m_TurnUsage();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.XR.Interaction.Toolkit.XRController> m_Controllers
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::XR::Interaction::Toolkit::XRController*>*& dyn_m_Controllers();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::XR::Interaction::Toolkit::XRController*>*& dyn_m_Controllers();
     // Get instance field reference: private System.Single m_TurnAmount
-    [[deprecated]] float& dyn_m_TurnAmount();
+    [[deprecated("Use field access instead!")]] float& dyn_m_TurnAmount();
     // Get instance field reference: private System.Single m_DebounceTime
-    [[deprecated]] float& dyn_m_DebounceTime();
+    [[deprecated("Use field access instead!")]] float& dyn_m_DebounceTime();
     // Get instance field reference: private System.Single m_DeadZone
-    [[deprecated]] float& dyn_m_DeadZone();
+    [[deprecated("Use field access instead!")]] float& dyn_m_DeadZone();
     // Get instance field reference: private System.Single m_CurrentTurnAmount
-    [[deprecated]] float& dyn_m_CurrentTurnAmount();
+    [[deprecated("Use field access instead!")]] float& dyn_m_CurrentTurnAmount();
     // Get instance field reference: private System.Single m_TimeStarted
-    [[deprecated]] float& dyn_m_TimeStarted();
+    [[deprecated("Use field access instead!")]] float& dyn_m_TimeStarted();
     // Get instance field reference: private System.Collections.Generic.List`1<System.Boolean> m_ControllersWereActive
-    [[deprecated]] ::System::Collections::Generic::List_1<bool>*& dyn_m_ControllersWereActive();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<bool>*& dyn_m_ControllersWereActive();
     // public UnityEngine.XR.Interaction.Toolkit.SnapTurnProvider/UnityEngine.XR.Interaction.Toolkit.InputAxes get_turnUsage()
     // Offset: 0x217200
     ::UnityEngine::XR::Interaction::Toolkit::SnapTurnProvider::InputAxes get_turnUsage();
@@ -208,6 +208,9 @@ namespace UnityEngine::XR::Interaction::Toolkit {
     // public System.Void set_deadZone(System.Single value)
     // Offset: 0x2F9060
     void set_deadZone(float value);
+    // static private System.Void .cctor()
+    // Offset: 0x2F8E90
+    static void _cctor();
     // private System.Void Update()
     // Offset: 0x2F8A40
     void Update();
@@ -224,21 +227,11 @@ namespace UnityEngine::XR::Interaction::Toolkit {
     // Offset: 0x2F8F90
     // Implemented from: UnityEngine.XR.Interaction.Toolkit.LocomotionProvider
     // Base method: System.Void LocomotionProvider::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SnapTurnProvider* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::XR::Interaction::Toolkit::SnapTurnProvider::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<SnapTurnProvider*, creationType>()));
     }
-    // static private System.Void .cctor()
-    // Offset: 0x2F8E90
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.cctor()
-    static void _cctor();
   }; // UnityEngine.XR.Interaction.Toolkit.SnapTurnProvider
   #pragma pack(pop)
   static check_size<sizeof(SnapTurnProvider), 88 + sizeof(::System::Collections::Generic::List_1<bool>*)> __UnityEngine_XR_Interaction_Toolkit_SnapTurnProviderSizeCheck;
@@ -332,6 +325,14 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::XR::Interaction::Toolkit::SnapTurnProvider*), "set_deadZone", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::XR::Interaction::Toolkit::SnapTurnProvider::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&UnityEngine::XR::Interaction::Toolkit::SnapTurnProvider::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(UnityEngine::XR::Interaction::Toolkit::SnapTurnProvider*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
 // Writing MetadataGetter for method: UnityEngine::XR::Interaction::Toolkit::SnapTurnProvider::Update
 // Il2CppName: Update
 template<>
@@ -370,11 +371,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
 // Try using FindMethod instead!
-// Writing MetadataGetter for method: UnityEngine::XR::Interaction::Toolkit::SnapTurnProvider::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&UnityEngine::XR::Interaction::Toolkit::SnapTurnProvider::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(UnityEngine::XR::Interaction::Toolkit::SnapTurnProvider*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
-  }
-};

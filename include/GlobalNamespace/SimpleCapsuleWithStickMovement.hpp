@@ -120,27 +120,27 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public System.Boolean EnableLinearMovement
-    [[deprecated]] bool& dyn_EnableLinearMovement();
+    [[deprecated("Use field access instead!")]] bool& dyn_EnableLinearMovement();
     // Get instance field reference: public System.Boolean EnableRotation
-    [[deprecated]] bool& dyn_EnableRotation();
+    [[deprecated("Use field access instead!")]] bool& dyn_EnableRotation();
     // Get instance field reference: public System.Boolean HMDRotatesPlayer
-    [[deprecated]] bool& dyn_HMDRotatesPlayer();
+    [[deprecated("Use field access instead!")]] bool& dyn_HMDRotatesPlayer();
     // Get instance field reference: public System.Boolean RotationEitherThumbstick
-    [[deprecated]] bool& dyn_RotationEitherThumbstick();
+    [[deprecated("Use field access instead!")]] bool& dyn_RotationEitherThumbstick();
     // Get instance field reference: public System.Single RotationAngle
-    [[deprecated]] float& dyn_RotationAngle();
+    [[deprecated("Use field access instead!")]] float& dyn_RotationAngle();
     // Get instance field reference: public System.Single Speed
-    [[deprecated]] float& dyn_Speed();
+    [[deprecated("Use field access instead!")]] float& dyn_Speed();
     // Get instance field reference: public OVRCameraRig CameraRig
-    [[deprecated]] ::GlobalNamespace::OVRCameraRig*& dyn_CameraRig();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRCameraRig*& dyn_CameraRig();
     // Get instance field reference: private System.Boolean ReadyToSnapTurn
-    [[deprecated]] bool& dyn_ReadyToSnapTurn();
+    [[deprecated("Use field access instead!")]] bool& dyn_ReadyToSnapTurn();
     // Get instance field reference: private UnityEngine.Rigidbody _rigidbody
-    [[deprecated]] ::UnityEngine::Rigidbody*& dyn__rigidbody();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Rigidbody*& dyn__rigidbody();
     // Get instance field reference: private System.Action CameraUpdated
-    [[deprecated]] ::System::Action*& dyn_CameraUpdated();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_CameraUpdated();
     // Get instance field reference: private System.Action PreCharacterMove
-    [[deprecated]] ::System::Action*& dyn_PreCharacterMove();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_PreCharacterMove();
     // public System.Void add_CameraUpdated(System.Action value)
     // Offset: 0x615DE0
     void add_CameraUpdated(::System::Action* value);
@@ -153,6 +153,13 @@ namespace GlobalNamespace {
     // public System.Void remove_PreCharacterMove(System.Action value)
     // Offset: 0x615FC0
     void remove_PreCharacterMove(::System::Action* value);
+    // public System.Void .ctor()
+    // Offset: 0x615DC0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static SimpleCapsuleWithStickMovement* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::SimpleCapsuleWithStickMovement::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<SimpleCapsuleWithStickMovement*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0x615410
     void Awake();
@@ -171,19 +178,6 @@ namespace GlobalNamespace {
     // private System.Void SnapTurn()
     // Offset: 0x615860
     void SnapTurn();
-    // public System.Void .ctor()
-    // Offset: 0x615DC0
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static SimpleCapsuleWithStickMovement* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::SimpleCapsuleWithStickMovement::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<SimpleCapsuleWithStickMovement*, creationType>()));
-    }
   }; // SimpleCapsuleWithStickMovement
   #pragma pack(pop)
   static check_size<sizeof(SimpleCapsuleWithStickMovement), 72 + sizeof(::System::Action*)> __GlobalNamespace_SimpleCapsuleWithStickMovementSizeCheck;
@@ -226,6 +220,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::SimpleCapsuleWithStickMovement*), "remove_PreCharacterMove", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: GlobalNamespace::SimpleCapsuleWithStickMovement::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::SimpleCapsuleWithStickMovement::Awake
 // Il2CppName: Awake
 template<>
@@ -274,7 +272,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::SimpleCapsuleWithStickMovement*), "SnapTurn", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::SimpleCapsuleWithStickMovement::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

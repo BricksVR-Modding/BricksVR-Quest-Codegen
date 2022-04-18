@@ -138,7 +138,7 @@ namespace Steamworks {
     // Set static field: static public Steamworks.DenyReason SteamOwnerLeftGuestUser
     static void _set_SteamOwnerLeftGuestUser(::Steamworks::DenyReason value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // Steamworks.DenyReason
   #pragma pack(pop)
   static check_size<sizeof(DenyReason), 0 + sizeof(int)> __Steamworks_DenyReasonSizeCheck;

@@ -54,7 +54,7 @@ namespace Normal::Utility {
     // Set static field: static public Normal.Utility.NormcoreLogLevel Error
     static void _set_Error(::Normal::Utility::NormcoreLogLevel value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // Normal.Utility.NormcoreLogLevel
   #pragma pack(pop)
   static check_size<sizeof(NormcoreLogLevel), 0 + sizeof(int)> __Normal_Utility_NormcoreLogLevelSizeCheck;

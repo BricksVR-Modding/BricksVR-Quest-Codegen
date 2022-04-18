@@ -60,13 +60,13 @@ namespace Steamworks {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public Steamworks.Data.HSteamUser m_hSteamUser
-    [[deprecated]] ::Steamworks::Data::HSteamUser& dyn_m_hSteamUser();
+    [[deprecated("Use field access instead!")]] ::Steamworks::Data::HSteamUser& dyn_m_hSteamUser();
     // Get instance field reference: public Steamworks.CallbackType Type
-    [[deprecated]] ::Steamworks::CallbackType& dyn_Type();
+    [[deprecated("Use field access instead!")]] ::Steamworks::CallbackType& dyn_Type();
     // Get instance field reference: public System.IntPtr Data
-    [[deprecated]] ::System::IntPtr& dyn_Data();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_Data();
     // Get instance field reference: public System.Int32 DataSize
-    [[deprecated]] int& dyn_DataSize();
+    [[deprecated("Use field access instead!")]] int& dyn_DataSize();
   }; // Steamworks.Dispatch/Steamworks.CallbackMsg_t
   #pragma pack(pop)
   static check_size<sizeof(Dispatch::CallbackMsg_t), 16 + sizeof(int)> __Steamworks_Dispatch_CallbackMsg_tSizeCheck;

@@ -80,7 +80,7 @@ namespace Steamworks::Data {
       // Set static field: static public Steamworks.Data.RequestPlayersForGameResultCallback_t/Steamworks.Data.PlayerAcceptState_t PlayerDeclined
       static void _set_PlayerDeclined(::Steamworks::Data::RequestPlayersForGameResultCallback_t::PlayerAcceptState_t value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // Steamworks.Data.RequestPlayersForGameResultCallback_t/Steamworks.Data.PlayerAcceptState_t
     #pragma pack(pop)
     static check_size<sizeof(RequestPlayersForGameResultCallback_t::PlayerAcceptState_t), 0 + sizeof(int)> __Steamworks_Data_RequestPlayersForGameResultCallback_t_PlayerAcceptState_tSizeCheck;
@@ -162,25 +162,25 @@ namespace Steamworks::Data {
     // Set static field: static public System.Int32 _datasize
     static void _set__datasize(int value);
     // Get instance field reference: Steamworks.Result Result
-    [[deprecated]] ::Steamworks::Result& dyn_Result();
+    [[deprecated("Use field access instead!")]] ::Steamworks::Result& dyn_Result();
     // Get instance field reference: System.UInt64 LSearchID
-    [[deprecated]] uint64_t& dyn_LSearchID();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_LSearchID();
     // Get instance field reference: System.UInt64 SteamIDPlayerFound
-    [[deprecated]] uint64_t& dyn_SteamIDPlayerFound();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_SteamIDPlayerFound();
     // Get instance field reference: System.UInt64 SteamIDLobby
-    [[deprecated]] uint64_t& dyn_SteamIDLobby();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_SteamIDLobby();
     // Get instance field reference: Steamworks.Data.RequestPlayersForGameResultCallback_t/Steamworks.Data.PlayerAcceptState_t PlayerAcceptState
-    [[deprecated]] ::Steamworks::Data::RequestPlayersForGameResultCallback_t::PlayerAcceptState_t& dyn_PlayerAcceptState();
+    [[deprecated("Use field access instead!")]] ::Steamworks::Data::RequestPlayersForGameResultCallback_t::PlayerAcceptState_t& dyn_PlayerAcceptState();
     // Get instance field reference: System.Int32 PlayerIndex
-    [[deprecated]] int& dyn_PlayerIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_PlayerIndex();
     // Get instance field reference: System.Int32 TotalPlayersFound
-    [[deprecated]] int& dyn_TotalPlayersFound();
+    [[deprecated("Use field access instead!")]] int& dyn_TotalPlayersFound();
     // Get instance field reference: System.Int32 TotalPlayersAcceptedGame
-    [[deprecated]] int& dyn_TotalPlayersAcceptedGame();
+    [[deprecated("Use field access instead!")]] int& dyn_TotalPlayersAcceptedGame();
     // Get instance field reference: System.Int32 SuggestedTeamIndex
-    [[deprecated]] int& dyn_SuggestedTeamIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_SuggestedTeamIndex();
     // Get instance field reference: System.UInt64 LUniqueGameID
-    [[deprecated]] uint64_t& dyn_LUniqueGameID();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_LUniqueGameID();
     // public Steamworks.CallbackType get_CallbackType()
     // Offset: 0x465CA0
     ::Steamworks::CallbackType get_CallbackType();

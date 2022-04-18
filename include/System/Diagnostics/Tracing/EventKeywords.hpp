@@ -103,7 +103,7 @@ namespace System::Diagnostics::Tracing {
     // Set static field: static public System.Diagnostics.Tracing.EventKeywords EventLogClassic
     static void _set_EventLogClassic(::System::Diagnostics::Tracing::EventKeywords value);
     // Get instance field reference: public System.Int64 value__
-    [[deprecated]] int64_t& dyn_value__();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_value__();
   }; // System.Diagnostics.Tracing.EventKeywords
   #pragma pack(pop)
   static check_size<sizeof(EventKeywords), 0 + sizeof(int64_t)> __System_Diagnostics_Tracing_EventKeywordsSizeCheck;

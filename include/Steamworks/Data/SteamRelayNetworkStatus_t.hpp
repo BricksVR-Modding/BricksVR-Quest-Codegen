@@ -83,15 +83,15 @@ namespace Steamworks::Data {
     // Set static field: static public System.Int32 _datasize
     static void _set__datasize(int value);
     // Get instance field reference: Steamworks.SteamNetworkingAvailability Avail
-    [[deprecated]] ::Steamworks::SteamNetworkingAvailability& dyn_Avail();
+    [[deprecated("Use field access instead!")]] ::Steamworks::SteamNetworkingAvailability& dyn_Avail();
     // Get instance field reference: System.Int32 PingMeasurementInProgress
-    [[deprecated]] int& dyn_PingMeasurementInProgress();
+    [[deprecated("Use field access instead!")]] int& dyn_PingMeasurementInProgress();
     // Get instance field reference: Steamworks.SteamNetworkingAvailability AvailNetworkConfig
-    [[deprecated]] ::Steamworks::SteamNetworkingAvailability& dyn_AvailNetworkConfig();
+    [[deprecated("Use field access instead!")]] ::Steamworks::SteamNetworkingAvailability& dyn_AvailNetworkConfig();
     // Get instance field reference: Steamworks.SteamNetworkingAvailability AvailAnyRelay
-    [[deprecated]] ::Steamworks::SteamNetworkingAvailability& dyn_AvailAnyRelay();
+    [[deprecated("Use field access instead!")]] ::Steamworks::SteamNetworkingAvailability& dyn_AvailAnyRelay();
     // Get instance field reference: System.Byte[] DebugMsg
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_DebugMsg();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_DebugMsg();
     // public Steamworks.CallbackType get_CallbackType()
     // Offset: 0x466C60
     ::Steamworks::CallbackType get_CallbackType();

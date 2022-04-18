@@ -60,7 +60,6 @@ namespace Steamworks {
     // Implemented from: Steamworks.SteamClientClass`1
     // Base method: System.Void SteamClientClass_1::.ctor()
     // Base method: System.Void SteamClass::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SteamMusic* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Steamworks::SteamMusic::.ctor");

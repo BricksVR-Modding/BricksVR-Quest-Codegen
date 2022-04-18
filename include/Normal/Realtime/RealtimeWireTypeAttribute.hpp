@@ -44,7 +44,7 @@ namespace Normal::Realtime {
       return type;
     }
     // Get instance field reference: public readonly Normal.Realtime.Serialization.Serialization/Normal.Realtime.Serialization.WireType type
-    [[deprecated]] ::Normal::Realtime::Serialization::Serialization::WireType& dyn_type();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::Serialization::Serialization::WireType& dyn_type();
     // public System.Void .ctor(Normal.Realtime.Serialization.Serialization/Normal.Realtime.Serialization.WireType type)
     // Offset: 0x49DDB0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

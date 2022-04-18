@@ -63,13 +63,13 @@ namespace System::Diagnostics::Tracing {
     static_assert(sizeof(::System::Diagnostics::Tracing::EventDispatcher*) == 0x8);
     public:
     // Get instance field reference: readonly System.Diagnostics.Tracing.EventListener m_Listener
-    [[deprecated]] ::System::Diagnostics::Tracing::EventListener*& dyn_m_Listener();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::EventListener*& dyn_m_Listener();
     // Get instance field reference: System.Boolean[] m_EventEnabled
-    [[deprecated]] ::ArrayW<bool>& dyn_m_EventEnabled();
+    [[deprecated("Use field access instead!")]] ::ArrayW<bool>& dyn_m_EventEnabled();
     // Get instance field reference: System.Boolean m_activityFilteringEnabled
-    [[deprecated]] bool& dyn_m_activityFilteringEnabled();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_activityFilteringEnabled();
     // Get instance field reference: System.Diagnostics.Tracing.EventDispatcher m_Next
-    [[deprecated]] ::System::Diagnostics::Tracing::EventDispatcher*& dyn_m_Next();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::EventDispatcher*& dyn_m_Next();
     // System.Void .ctor(System.Diagnostics.Tracing.EventDispatcher next, System.Boolean[] eventEnabled, System.Diagnostics.Tracing.EventListener listener)
     // Offset: 0x217880
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

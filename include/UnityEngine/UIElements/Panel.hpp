@@ -158,31 +158,31 @@ namespace UnityEngine::UIElements {
     // Set static field: static private Unity.Profiling.ProfilerMarker s_MarkerPickAll
     static void _set_s_MarkerPickAll(::Unity::Profiling::ProfilerMarker value);
     // Get instance field reference: private UnityEngine.UIElements.VisualElement m_RootContainer
-    [[deprecated]] ::UnityEngine::UIElements::VisualElement*& dyn_m_RootContainer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::VisualElement*& dyn_m_RootContainer();
     // Get instance field reference: private UnityEngine.UIElements.VisualTreeUpdater m_VisualTreeUpdater
-    [[deprecated]] ::UnityEngine::UIElements::VisualTreeUpdater*& dyn_m_VisualTreeUpdater();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::VisualTreeUpdater*& dyn_m_VisualTreeUpdater();
     // Get instance field reference: private System.UInt32 m_Version
-    [[deprecated]] uint& dyn_m_Version();
+    [[deprecated("Use field access instead!")]] uint& dyn_m_Version();
     // Get instance field reference: private System.UInt32 m_RepaintVersion
-    [[deprecated]] uint& dyn_m_RepaintVersion();
+    [[deprecated("Use field access instead!")]] uint& dyn_m_RepaintVersion();
     // Get instance field reference: private Unity.Profiling.ProfilerMarker m_MarkerUpdate
-    [[deprecated]] ::Unity::Profiling::ProfilerMarker& dyn_m_MarkerUpdate();
+    [[deprecated("Use field access instead!")]] ::Unity::Profiling::ProfilerMarker& dyn_m_MarkerUpdate();
     // Get instance field reference: private UnityEngine.UIElements.EventDispatcher <dispatcher>k__BackingField
-    [[deprecated]] ::UnityEngine::UIElements::EventDispatcher*& dyn_$dispatcher$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::EventDispatcher*& dyn_$dispatcher$k__BackingField();
     // Get instance field reference: private UnityEngine.ScriptableObject <ownerObject>k__BackingField
-    [[deprecated]] ::UnityEngine::ScriptableObject*& dyn_$ownerObject$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::ScriptableObject*& dyn_$ownerObject$k__BackingField();
     // Get instance field reference: private UnityEngine.UIElements.ContextType <contextType>k__BackingField
-    [[deprecated]] ::UnityEngine::UIElements::ContextType& dyn_$contextType$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::ContextType& dyn_$contextType$k__BackingField();
     // Get instance field reference: private UnityEngine.UIElements.FocusController <focusController>k__BackingField
-    [[deprecated]] ::UnityEngine::UIElements::FocusController*& dyn_$focusController$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::FocusController*& dyn_$focusController$k__BackingField();
     // Get instance field reference: private UnityEngine.EventInterests <IMGUIEventInterests>k__BackingField
-    [[deprecated]] ::UnityEngine::EventInterests& dyn_$IMGUIEventInterests$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::EventInterests& dyn_$IMGUIEventInterests$k__BackingField();
     // Get instance field reference: private System.Int32 <IMGUIContainersCount>k__BackingField
-    [[deprecated]] int& dyn_$IMGUIContainersCount$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$IMGUIContainersCount$k__BackingField();
     // Get instance field reference: private UnityEngine.UIElements.IMGUIContainer <rootIMGUIContainer>k__BackingField
-    [[deprecated]] ::UnityEngine::UIElements::IMGUIContainer*& dyn_$rootIMGUIContainer$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::IMGUIContainer*& dyn_$rootIMGUIContainer$k__BackingField();
     // Get instance field reference: private System.Boolean m_ValidatingLayout
-    [[deprecated]] bool& dyn_m_ValidatingLayout();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_ValidatingLayout();
     // static private System.Void .cctor()
     // Offset: 0x2A8640
     static void _cctor();

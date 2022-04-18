@@ -58,9 +58,9 @@ namespace System::IO {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.Text.StringBuilder _sb
-    [[deprecated]] ::System::Text::StringBuilder*& dyn__sb();
+    [[deprecated("Use field access instead!")]] ::System::Text::StringBuilder*& dyn__sb();
     // Get instance field reference: private System.Boolean _isOpen
-    [[deprecated]] bool& dyn__isOpen();
+    [[deprecated("Use field access instead!")]] bool& dyn__isOpen();
     // public System.Void .ctor(System.Text.StringBuilder sb, System.IFormatProvider formatProvider)
     // Offset: 0x33AAB0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

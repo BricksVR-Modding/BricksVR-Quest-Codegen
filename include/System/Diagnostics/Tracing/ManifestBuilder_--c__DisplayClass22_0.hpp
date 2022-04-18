@@ -53,11 +53,11 @@ namespace System::Diagnostics::Tracing {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: public System.Text.StringBuilder stringBuilder
-    [[deprecated]] ::System::Text::StringBuilder*& dyn_stringBuilder();
+    [[deprecated("Use field access instead!")]] ::System::Text::StringBuilder*& dyn_stringBuilder();
     // Get instance field reference: public System.String eventMessage
-    [[deprecated]] ::StringW& dyn_eventMessage();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_eventMessage();
     // Get instance field reference: public System.Int32 writtenSoFar
-    [[deprecated]] int& dyn_writtenSoFar();
+    [[deprecated("Use field access instead!")]] int& dyn_writtenSoFar();
     // public System.Void .ctor()
     // Offset: 0x1DD400
     // Implemented from: System.Object

@@ -60,13 +60,20 @@ namespace ProfanityFilter {
       return allowList;
     }
     // Get instance field reference: private System.Collections.Generic.List`1<System.String> _allowList
-    [[deprecated]] ::System::Collections::Generic::List_1<::StringW>*& dyn__allowList();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::StringW>*& dyn__allowList();
     // public System.Collections.ObjectModel.ReadOnlyCollection`1<System.String> get_ToList()
     // Offset: 0x6721A0
     ::System::Collections::ObjectModel::ReadOnlyCollection_1<::StringW>* get_ToList();
     // public System.Int32 get_Count()
     // Offset: 0x672160
     int get_Count();
+    // public System.Void .ctor()
+    // Offset: 0x6720F0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static AllowList* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::ProfanityFilter::AllowList::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<AllowList*, creationType>()));
+    }
     // public System.Void Add(System.String wordToAllowlist)
     // Offset: 0x671DC0
     void Add(::StringW wordToAllowlist);
@@ -79,15 +86,6 @@ namespace ProfanityFilter {
     // public System.Boolean Remove(System.String wordToRemove)
     // Offset: 0x672020
     bool Remove(::StringW wordToRemove);
-    // public System.Void .ctor()
-    // Offset: 0x6720F0
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static AllowList* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::ProfanityFilter::AllowList::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<AllowList*, creationType>()));
-    }
   }; // ProfanityFilter.AllowList
   #pragma pack(pop)
   static check_size<sizeof(AllowList), 16 + sizeof(::System::Collections::Generic::List_1<::StringW>*)> __ProfanityFilter_AllowListSizeCheck;
@@ -110,6 +108,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (Profan
     return ::il2cpp_utils::FindMethod(classof(ProfanityFilter::AllowList*), "get_Count", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: ProfanityFilter::AllowList::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: ProfanityFilter::AllowList::Add
 // Il2CppName: Add
 template<>
@@ -145,7 +147,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Profa
     return ::il2cpp_utils::FindMethod(classof(ProfanityFilter::AllowList*), "Remove", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{wordToRemove});
   }
 };
-// Writing MetadataGetter for method: ProfanityFilter::AllowList::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

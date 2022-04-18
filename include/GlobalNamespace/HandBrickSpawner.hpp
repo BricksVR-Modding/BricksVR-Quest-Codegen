@@ -113,13 +113,13 @@ namespace GlobalNamespace {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: private System.Int32 _buttonDownAt
-      [[deprecated]] int& dyn__buttonDownAt();
+      [[deprecated("Use field access instead!")]] int& dyn__buttonDownAt();
       // Get instance field reference: public System.String SavedPrefabName
-      [[deprecated]] ::StringW& dyn_SavedPrefabName();
+      [[deprecated("Use field access instead!")]] ::StringW& dyn_SavedPrefabName();
       // Get instance field reference: public System.Int32 SavedColor
-      [[deprecated]] int& dyn_SavedColor();
+      [[deprecated("Use field access instead!")]] int& dyn_SavedColor();
       // Get instance field reference: public System.Boolean ButtonHoldCallbackCalled
-      [[deprecated]] bool& dyn_ButtonHoldCallbackCalled();
+      [[deprecated("Use field access instead!")]] bool& dyn_ButtonHoldCallbackCalled();
       // public System.Boolean get_ButtonDown()
       // Offset: 0x388DE0
       bool get_ButtonDown();
@@ -212,29 +212,36 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public System.Boolean leftHand
-    [[deprecated]] bool& dyn_leftHand();
+    [[deprecated("Use field access instead!")]] bool& dyn_leftHand();
     // Get instance field reference: public UnityEngine.GameObject spawnLocation
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_spawnLocation();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_spawnLocation();
     // Get instance field reference: public UnityEngine.AudioClip sound
-    [[deprecated]] ::UnityEngine::AudioClip*& dyn_sound();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AudioClip*& dyn_sound();
     // Get instance field reference: public NormalSessionManager normalSessionManager
-    [[deprecated]] ::GlobalNamespace::NormalSessionManager*& dyn_normalSessionManager();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::NormalSessionManager*& dyn_normalSessionManager();
     // Get instance field reference: private BrickHover _brickHover
-    [[deprecated]] ::GlobalNamespace::BrickHover*& dyn__brickHover();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::BrickHover*& dyn__brickHover();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<OVRInput/Button,HandBrickSpawner/ButtonDownInfo> _infoForButtons
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::GlobalNamespace::OVRInput::Button, ::GlobalNamespace::HandBrickSpawner::ButtonDownInfo>*& dyn__infoForButtons();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::GlobalNamespace::OVRInput::Button, ::GlobalNamespace::HandBrickSpawner::ButtonDownInfo>*& dyn__infoForButtons();
     // Get instance field reference: private OVRInput/Button[] _buttons
-    [[deprecated]] ::ArrayW<::GlobalNamespace::OVRInput::Button>& dyn__buttons();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::GlobalNamespace::OVRInput::Button>& dyn__buttons();
     // Get instance field reference: private UnityEngine.XR.Interaction.Toolkit.XRDirectInteractor _interactor
-    [[deprecated]] ::UnityEngine::XR::Interaction::Toolkit::XRDirectInteractor*& dyn__interactor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::Interaction::Toolkit::XRDirectInteractor*& dyn__interactor();
     // Get instance field reference: private QuickInteractor _quickInteractor
-    [[deprecated]] ::GlobalNamespace::QuickInteractor*& dyn__quickInteractor();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::QuickInteractor*& dyn__quickInteractor();
     // Get instance field reference: private HapticsManager _hapticsManager
-    [[deprecated]] ::GlobalNamespace::HapticsManager*& dyn__hapticsManager();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::HapticsManager*& dyn__hapticsManager();
     // Get instance field reference: public Normal.Realtime.Realtime _realtime
-    [[deprecated]] ::Normal::Realtime::Realtime*& dyn__realtime();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::Realtime*& dyn__realtime();
     // Get instance field reference: public System.Int32 spawnerSetIndex
-    [[deprecated]] int& dyn_spawnerSetIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_spawnerSetIndex();
+    // public System.Void .ctor()
+    // Offset: 0x1DDE30
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static HandBrickSpawner* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::HandBrickSpawner::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<HandBrickSpawner*, creationType>()));
+    }
     // private System.Void Start()
     // Offset: 0x6B6990
     void Start();
@@ -256,19 +263,6 @@ namespace GlobalNamespace {
     // private UnityEngine.GameObject HoveredBrick()
     // Offset: 0x6B67F0
     ::UnityEngine::GameObject* HoveredBrick();
-    // public System.Void .ctor()
-    // Offset: 0x1DDE30
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static HandBrickSpawner* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::HandBrickSpawner::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<HandBrickSpawner*, creationType>()));
-    }
   }; // HandBrickSpawner
   #pragma pack(pop)
   static check_size<sizeof(HandBrickSpawner), 112 + sizeof(int)> __GlobalNamespace_HandBrickSpawnerSizeCheck;
@@ -277,6 +271,10 @@ namespace GlobalNamespace {
 #include "beatsaber-hook/shared/utils/il2cpp-type-check.hpp"
 DEFINE_IL2CPP_ARG_TYPE(::GlobalNamespace::HandBrickSpawner::ButtonDownInfo, "", "HandBrickSpawner/ButtonDownInfo");
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::HandBrickSpawner::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::HandBrickSpawner::Start
 // Il2CppName: Start
 template<>
@@ -337,7 +335,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::HandBrickSpawner*), "HoveredBrick", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::HandBrickSpawner::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -29,22 +29,24 @@ namespace Normal::Realtime::Native {
   // [TokenAttribute] Offset: FFFFFFFF
   class RealtimeNativeException : public ::System::Exception {
     public:
-    // static public Normal.Realtime.Native.RealtimeNativeException NativePointerIsNull(System.String className)
-    // Offset: 0x8C1350
-    static ::Normal::Realtime::Native::RealtimeNativeException* NativePointerIsNull(::StringW className);
     // public System.Void .ctor(System.String message)
     // Offset: 0x8C1400
-    // Implemented from: System.Exception
-    // Base method: System.Void Exception::.ctor(System.String message)
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static RealtimeNativeException* New_ctor(::StringW message) {
       static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::Native::RealtimeNativeException::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<RealtimeNativeException*, creationType>(message)));
     }
+    // static public Normal.Realtime.Native.RealtimeNativeException NativePointerIsNull(System.String className)
+    // Offset: 0x8C1350
+    static ::Normal::Realtime::Native::RealtimeNativeException* NativePointerIsNull(::StringW className);
   }; // Normal.Realtime.Native.RealtimeNativeException
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Normal::Realtime::Native::RealtimeNativeException::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Normal::Realtime::Native::RealtimeNativeException::NativePointerIsNull
 // Il2CppName: NativePointerIsNull
 template<>
@@ -54,7 +56,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Normal::R
     return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::Native::RealtimeNativeException*), "NativePointerIsNull", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{className});
   }
 };
-// Writing MetadataGetter for method: Normal::Realtime::Native::RealtimeNativeException::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

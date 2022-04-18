@@ -47,6 +47,13 @@ namespace UnityEngine::Tilemaps {
   // [RequiredByNativeCodeAttribute] Offset: BB1F0
   class TileBase : public ::UnityEngine::ScriptableObject {
     public:
+    // protected System.Void .ctor()
+    // Offset: 0x27AD80
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static TileBase* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Tilemaps::TileBase::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<TileBase*, creationType>()));
+    }
     // public System.Void RefreshTile(UnityEngine.Vector3Int position, UnityEngine.Tilemaps.ITilemap tilemap)
     // Offset: 0x66EFD0
     void RefreshTile(::UnityEngine::Vector3Int position, ::UnityEngine::Tilemaps::ITilemap* tilemap);
@@ -65,21 +72,14 @@ namespace UnityEngine::Tilemaps {
     // public System.Boolean StartUp(UnityEngine.Vector3Int position, UnityEngine.Tilemaps.ITilemap tilemap, UnityEngine.GameObject go)
     // Offset: 0x63F410
     bool StartUp(::UnityEngine::Vector3Int position, ::UnityEngine::Tilemaps::ITilemap* tilemap, ::UnityEngine::GameObject* go);
-    // protected System.Void .ctor()
-    // Offset: 0x27AD80
-    // Implemented from: UnityEngine.ScriptableObject
-    // Base method: System.Void ScriptableObject::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static TileBase* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Tilemaps::TileBase::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<TileBase*, creationType>()));
-    }
   }; // UnityEngine.Tilemaps.TileBase
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: UnityEngine::Tilemaps::TileBase::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::Tilemaps::TileBase::RefreshTile
 // Il2CppName: RefreshTile
 template<>
@@ -143,7 +143,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Tilemaps::TileBase*), "StartUp", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{position, tilemap, go});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::Tilemaps::TileBase::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

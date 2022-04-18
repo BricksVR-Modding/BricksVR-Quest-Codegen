@@ -52,11 +52,11 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public OVRPlugin/BoneId Id
-    [[deprecated]] ::GlobalNamespace::OVRPlugin::BoneId& dyn_Id();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRPlugin::BoneId& dyn_Id();
     // Get instance field reference: public System.Int16 ParentBoneIndex
-    [[deprecated]] int16_t& dyn_ParentBoneIndex();
+    [[deprecated("Use field access instead!")]] int16_t& dyn_ParentBoneIndex();
     // Get instance field reference: public OVRPlugin/Posef Pose
-    [[deprecated]] ::GlobalNamespace::OVRPlugin::Posef& dyn_Pose();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRPlugin::Posef& dyn_Pose();
   }; // OVRPlugin/Bone
   #pragma pack(pop)
   static check_size<sizeof(OVRPlugin::Bone), 8 + sizeof(::GlobalNamespace::OVRPlugin::Posef)> __GlobalNamespace_OVRPlugin_BoneSizeCheck;

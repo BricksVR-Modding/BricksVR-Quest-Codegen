@@ -72,40 +72,38 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Int32 QualitySetting
-    [[deprecated]] int& dyn_QualitySetting();
+    [[deprecated("Use field access instead!")]] int& dyn_QualitySetting();
     // Get instance field reference: private System.Int32 shadowDistance
-    [[deprecated]] int& dyn_shadowDistance();
+    [[deprecated("Use field access instead!")]] int& dyn_shadowDistance();
     // Get instance field reference: private System.Int32 antiAliasing
-    [[deprecated]] int& dyn_antiAliasing();
+    [[deprecated("Use field access instead!")]] int& dyn_antiAliasing();
     // Get instance field reference: private UnityEngine.ShadowResolution shadowResolution
-    [[deprecated]] ::UnityEngine::ShadowResolution& dyn_shadowResolution();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::ShadowResolution& dyn_shadowResolution();
     // Get instance field reference: private UnityEngine.ShadowmaskMode shadowMask
-    [[deprecated]] ::UnityEngine::ShadowmaskMode& dyn_shadowMask();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::ShadowmaskMode& dyn_shadowMask();
+    // public System.Void .ctor()
+    // Offset: 0x1DDE30
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static PCQualitySettings* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::PCQualitySettings::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<PCQualitySettings*, creationType>()));
+    }
     // private System.Void Start()
     // Offset: 0x677BF0
     void Start();
     // public System.Void ChangeQuality(System.Int32 level)
     // Offset: 0x677BE0
     void ChangeQuality(int level);
-    // public System.Void .ctor()
-    // Offset: 0x1DDE30
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static PCQualitySettings* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::PCQualitySettings::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<PCQualitySettings*, creationType>()));
-    }
   }; // PCQualitySettings
   #pragma pack(pop)
   static check_size<sizeof(PCQualitySettings), 40 + sizeof(::UnityEngine::ShadowmaskMode)> __GlobalNamespace_PCQualitySettingsSizeCheck;
   static_assert(sizeof(PCQualitySettings) == 0x2C);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::PCQualitySettings::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::PCQualitySettings::Start
 // Il2CppName: Start
 template<>
@@ -123,7 +121,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::PCQualitySettings*), "ChangeQuality", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{level});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::PCQualitySettings::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

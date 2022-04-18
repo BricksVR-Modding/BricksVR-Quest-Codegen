@@ -19,14 +19,6 @@ namespace TMPro {
   // Forward declaring type: TMP_InputField
   class TMP_InputField;
 }
-// Forward declaring namespace: UnityEngine::EventSystems
-namespace UnityEngine::EventSystems {
-  // Skipping declaration: UIBehaviour because it is already included!
-}
-// Forward declaring namespace: AdvancedColorPicker
-namespace AdvancedColorPicker {
-  // Skipping declaration: ColorComponent because it is already included!
-}
 // Completed forward declares
 // Type namespace: AdvancedColorPicker
 namespace AdvancedColorPicker {
@@ -87,17 +79,17 @@ namespace AdvancedColorPicker {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.Single minValue
-    [[deprecated]] float& dyn_minValue();
+    [[deprecated("Use field access instead!")]] float& dyn_minValue();
     // Get instance field reference: private System.Single maxValue
-    [[deprecated]] float& dyn_maxValue();
+    [[deprecated("Use field access instead!")]] float& dyn_maxValue();
     // Get instance field reference: private System.String formatter
-    [[deprecated]] ::StringW& dyn_formatter();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_formatter();
     // Get instance field reference: private TMPro.TMP_InputField input
-    [[deprecated]] ::TMPro::TMP_InputField*& dyn_input();
+    [[deprecated("Use field access instead!")]] ::TMPro::TMP_InputField*& dyn_input();
     // Get instance field reference: private System.Boolean dontListenToInput
-    [[deprecated]] bool& dyn_dontListenToInput();
+    [[deprecated("Use field access instead!")]] bool& dyn_dontListenToInput();
     // Get instance field reference: private System.Boolean dontListenToColor
-    [[deprecated]] bool& dyn_dontListenToColor();
+    [[deprecated("Use field access instead!")]] bool& dyn_dontListenToColor();
     // public System.Single get_MinValue()
     // Offset: 0x4CC750
     float get_MinValue();
@@ -116,6 +108,13 @@ namespace AdvancedColorPicker {
     // public System.Void set_Formatter(System.String value)
     // Offset: 0x631260
     void set_Formatter(::StringW value);
+    // public System.Void .ctor()
+    // Offset: 0x631210
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ColorInput_TMP* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::AdvancedColorPicker::ColorInput_TMP::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ColorInput_TMP*, creationType>()));
+    }
     // private System.Void InputChanged(System.String value)
     // Offset: 0x630DB0
     void InputChanged(::StringW value);
@@ -128,22 +127,6 @@ namespace AdvancedColorPicker {
     // public System.Void SetDefaultMinMax()
     // Offset: 0x6310E0
     void SetDefaultMinMax();
-    // public System.Void .ctor()
-    // Offset: 0x631210
-    // Implemented from: AdvancedColorPicker.ColorTypeComponent
-    // Base method: System.Void ColorTypeComponent::.ctor()
-    // Base method: System.Void ColorComponent::.ctor()
-    // Base method: System.Void UIBehaviour::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ColorInput_TMP* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::AdvancedColorPicker::ColorInput_TMP::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ColorInput_TMP*, creationType>()));
-    }
     // protected override System.Void Awake()
     // Offset: 0x630C30
     // Implemented from: UnityEngine.EventSystems.UIBehaviour
@@ -221,6 +204,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Advan
     return ::il2cpp_utils::FindMethod(classof(AdvancedColorPicker::ColorInput_TMP*), "set_Formatter", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: AdvancedColorPicker::ColorInput_TMP::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: AdvancedColorPicker::ColorInput_TMP::InputChanged
 // Il2CppName: InputChanged
 template<>
@@ -256,10 +243,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Advan
     return ::il2cpp_utils::FindMethod(classof(AdvancedColorPicker::ColorInput_TMP*), "SetDefaultMinMax", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: AdvancedColorPicker::ColorInput_TMP::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: AdvancedColorPicker::ColorInput_TMP::Awake
 // Il2CppName: Awake
 template<>

@@ -57,17 +57,15 @@ namespace Normal::Realtime {
     static_assert(sizeof(::UnityEngine::Transform*) == 0x8);
     public:
     // Get instance field reference: public UnityEngine.Transform root
-    [[deprecated]] ::UnityEngine::Transform*& dyn_root();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_root();
     // Get instance field reference: public UnityEngine.Transform head
-    [[deprecated]] ::UnityEngine::Transform*& dyn_head();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_head();
     // Get instance field reference: public UnityEngine.Transform leftHand
-    [[deprecated]] ::UnityEngine::Transform*& dyn_leftHand();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_leftHand();
     // Get instance field reference: public UnityEngine.Transform rightHand
-    [[deprecated]] ::UnityEngine::Transform*& dyn_rightHand();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_rightHand();
     // public System.Void .ctor()
     // Offset: 0x1DD400
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static RealtimeAvatar::LocalPlayer* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::RealtimeAvatar::LocalPlayer::.ctor");

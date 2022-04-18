@@ -27,10 +27,6 @@ namespace AdvancedColorPicker {
     public:
     // public System.Void .ctor()
     // Offset: 0x30BA30
-    // Implemented from: UnityEngine.Events.UnityEvent
-    // Base method: System.Void UnityEvent::.ctor()
-    // Base method: System.Void UnityEventBase::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static ColorEyedropper::ActiveChanged* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::AdvancedColorPicker::ColorEyedropper::ActiveChanged::.ctor");

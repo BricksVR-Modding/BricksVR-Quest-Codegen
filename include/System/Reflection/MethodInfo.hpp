@@ -24,7 +24,6 @@ namespace System {
 }
 // Forward declaring namespace: System::Reflection
 namespace System::Reflection {
-  // Skipping declaration: MemberInfo because it is already included!
   // Forward declaring type: MemberTypes
   struct MemberTypes;
 }

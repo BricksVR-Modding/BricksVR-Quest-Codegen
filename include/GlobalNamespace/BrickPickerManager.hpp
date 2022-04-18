@@ -118,11 +118,11 @@ namespace GlobalNamespace {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: public readonly UnityEngine.UI.Button TabButton
-      [[deprecated]] ::UnityEngine::UI::Button*& dyn_TabButton();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Button*& dyn_TabButton();
       // Get instance field reference: public readonly UnityEngine.GameObject Gameobject
-      [[deprecated]] ::UnityEngine::GameObject*& dyn_Gameobject();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_Gameobject();
       // Get instance field reference: public System.Boolean Initialized
-      [[deprecated]] bool& dyn_Initialized();
+      [[deprecated("Use field access instead!")]] bool& dyn_Initialized();
       // public System.Void .ctor(UnityEngine.UI.Button tabButton, UnityEngine.GameObject gameObject)
       // Offset: 0x6F5670
       MenuTab(::UnityEngine::UI::Button* tabButton, ::UnityEngine::GameObject* gameObject);
@@ -370,87 +370,94 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public UnityEngine.UI.Button bricksTabButton
-    [[deprecated]] ::UnityEngine::UI::Button*& dyn_bricksTabButton();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Button*& dyn_bricksTabButton();
     // Get instance field reference: public UnityEngine.UI.Button tilesTabButton
-    [[deprecated]] ::UnityEngine::UI::Button*& dyn_tilesTabButton();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Button*& dyn_tilesTabButton();
     // Get instance field reference: public UnityEngine.UI.Button platesTabButton
-    [[deprecated]] ::UnityEngine::UI::Button*& dyn_platesTabButton();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Button*& dyn_platesTabButton();
     // Get instance field reference: public UnityEngine.UI.Button slopesTabButton
-    [[deprecated]] ::UnityEngine::UI::Button*& dyn_slopesTabButton();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Button*& dyn_slopesTabButton();
     // Get instance field reference: public UnityEngine.UI.Button sideStudsTabButton
-    [[deprecated]] ::UnityEngine::UI::Button*& dyn_sideStudsTabButton();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Button*& dyn_sideStudsTabButton();
     // Get instance field reference: public UnityEngine.UI.Button miscTabButton
-    [[deprecated]] ::UnityEngine::UI::Button*& dyn_miscTabButton();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Button*& dyn_miscTabButton();
     // Get instance field reference: public UnityEngine.GameObject bricksTabObject
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_bricksTabObject();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_bricksTabObject();
     // Get instance field reference: public UnityEngine.GameObject tilesTabObject
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_tilesTabObject();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_tilesTabObject();
     // Get instance field reference: public UnityEngine.GameObject platesTabObject
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_platesTabObject();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_platesTabObject();
     // Get instance field reference: public UnityEngine.GameObject slopesTabObject
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_slopesTabObject();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_slopesTabObject();
     // Get instance field reference: public UnityEngine.GameObject sideStudsTabObject
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_sideStudsTabObject();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_sideStudsTabObject();
     // Get instance field reference: public UnityEngine.GameObject miscTabObject
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_miscTabObject();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_miscTabObject();
     // Get instance field reference: public UnityEngine.GameObject menuContentsObject
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_menuContentsObject();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_menuContentsObject();
     // Get instance field reference: public UnityEngine.GameObject tilePrefab
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_tilePrefab();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_tilePrefab();
     // Get instance field reference: public NormalSessionManager normalSessionManager
-    [[deprecated]] ::GlobalNamespace::NormalSessionManager*& dyn_normalSessionManager();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::NormalSessionManager*& dyn_normalSessionManager();
     // Get instance field reference: public UnityEngine.GameObject leftHand
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_leftHand();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_leftHand();
     // Get instance field reference: public UnityEngine.GameObject rightHand
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_rightHand();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_rightHand();
     // Get instance field reference: public UnityEngine.UI.Slider hueSlider
-    [[deprecated]] ::UnityEngine::UI::Slider*& dyn_hueSlider();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Slider*& dyn_hueSlider();
     // Get instance field reference: public UnityEngine.UI.Slider saturationSlider
-    [[deprecated]] ::UnityEngine::UI::Slider*& dyn_saturationSlider();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Slider*& dyn_saturationSlider();
     // Get instance field reference: public UnityEngine.UI.Slider valueSlider
-    [[deprecated]] ::UnityEngine::UI::Slider*& dyn_valueSlider();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Slider*& dyn_valueSlider();
     // Get instance field reference: public ChangeCategoryColors changeCategoryColors
-    [[deprecated]] ::GlobalNamespace::ChangeCategoryColors*& dyn_changeCategoryColors();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::ChangeCategoryColors*& dyn_changeCategoryColors();
     // Get instance field reference: public ColorPickerSaveSpot[] colorPickerSaveSpots
-    [[deprecated]] ::ArrayW<::GlobalNamespace::ColorPickerSaveSpot*>& dyn_colorPickerSaveSpots();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::GlobalNamespace::ColorPickerSaveSpot*>& dyn_colorPickerSaveSpots();
     // Get instance field reference: private ColorPickerSaveSpot _activeColorPickerSaveSpot
-    [[deprecated]] ::GlobalNamespace::ColorPickerSaveSpot*& dyn__activeColorPickerSaveSpot();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::ColorPickerSaveSpot*& dyn__activeColorPickerSaveSpot();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.String,BrickPickerManager/MenuTab> _tabs
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::StringW, ::GlobalNamespace::BrickPickerManager::MenuTab>*& dyn__tabs();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::StringW, ::GlobalNamespace::BrickPickerManager::MenuTab>*& dyn__tabs();
     // Get instance field reference: private System.Collections.Generic.List`1<BrickPickerBrick> _brickPickerBricks
-    [[deprecated]] ::System::Collections::Generic::List_1<::GlobalNamespace::BrickPickerBrick*>*& dyn__brickPickerBricks();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::GlobalNamespace::BrickPickerBrick*>*& dyn__brickPickerBricks();
     // Get instance field reference: private System.String _currentTab
-    [[deprecated]] ::StringW& dyn__currentTab();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__currentTab();
     // Get instance field reference: private System.Boolean _holdingMenu
-    [[deprecated]] bool& dyn__holdingMenu();
+    [[deprecated("Use field access instead!")]] bool& dyn__holdingMenu();
     // Get instance field reference: private System.Boolean _holdingMenuWithLeftHand
-    [[deprecated]] bool& dyn__holdingMenuWithLeftHand();
+    [[deprecated("Use field access instead!")]] bool& dyn__holdingMenuWithLeftHand();
     // Get instance field reference: private System.Single _menuRotVel
-    [[deprecated]] float& dyn__menuRotVel();
+    [[deprecated("Use field access instead!")]] float& dyn__menuRotVel();
     // Get instance field reference: private System.Boolean _waitingToReleaseLeftButton
-    [[deprecated]] bool& dyn__waitingToReleaseLeftButton();
+    [[deprecated("Use field access instead!")]] bool& dyn__waitingToReleaseLeftButton();
     // Get instance field reference: private System.Boolean _waitingToReleaseRightButton
-    [[deprecated]] bool& dyn__waitingToReleaseRightButton();
+    [[deprecated("Use field access instead!")]] bool& dyn__waitingToReleaseRightButton();
     // Get instance field reference: private System.Boolean _menuClosing
-    [[deprecated]] bool& dyn__menuClosing();
+    [[deprecated("Use field access instead!")]] bool& dyn__menuClosing();
     // Get instance field reference: public System.Int32 openMenuIndex
-    [[deprecated]] int& dyn_openMenuIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_openMenuIndex();
     // Get instance field reference: private System.Boolean _firstOpen
-    [[deprecated]] bool& dyn__firstOpen();
+    [[deprecated("Use field access instead!")]] bool& dyn__firstOpen();
     // Get instance field reference: public UnityEngine.XR.Interaction.Toolkit.XRGrabInteractable[] sliderInteractbles
-    [[deprecated]] ::ArrayW<::UnityEngine::XR::Interaction::Toolkit::XRGrabInteractable*>& dyn_sliderInteractbles();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::XR::Interaction::Toolkit::XRGrabInteractable*>& dyn_sliderInteractbles();
     // Get instance field reference: public UnityEngine.XR.Interaction.Toolkit.XRGrabInteractable categoryInteractable
-    [[deprecated]] ::UnityEngine::XR::Interaction::Toolkit::XRGrabInteractable*& dyn_categoryInteractable();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::Interaction::Toolkit::XRGrabInteractable*& dyn_categoryInteractable();
     // Get instance field reference: private FadeBrickMenu fade
-    [[deprecated]] ::GlobalNamespace::FadeBrickMenu*& dyn_fade();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::FadeBrickMenu*& dyn_fade();
     // Get instance field reference: private System.Collections.Generic.List`1<System.ValueTuple`2<BrickPickerBrick,System.Single>> hoveredBricksThisFrame
-    [[deprecated]] ::System::Collections::Generic::List_1<::System::ValueTuple_2<::GlobalNamespace::BrickPickerBrick*, float>>*& dyn_hoveredBricksThisFrame();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::System::ValueTuple_2<::GlobalNamespace::BrickPickerBrick*, float>>*& dyn_hoveredBricksThisFrame();
     // public System.Boolean get_IsMenuOpen()
     // Offset: 0x6F2480
     bool get_IsMenuOpen();
     // public System.Boolean get_IsMenuFullyOpen()
     // Offset: 0x6F2420
     bool get_IsMenuFullyOpen();
+    // public System.Void .ctor()
+    // Offset: 0x6F2390
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static BrickPickerManager* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::BrickPickerManager::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<BrickPickerManager*, creationType>()));
+    }
     // private System.Void Start()
     // Offset: 0x6F1C50
     void Start();
@@ -502,19 +509,6 @@ namespace GlobalNamespace {
     // private System.Void InitializeTab(System.String tabName)
     // Offset: 0x6F09D0
     void InitializeTab(::StringW tabName);
-    // public System.Void .ctor()
-    // Offset: 0x6F2390
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static BrickPickerManager* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::BrickPickerManager::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<BrickPickerManager*, creationType>()));
-    }
   }; // BrickPickerManager
   #pragma pack(pop)
   static check_size<sizeof(BrickPickerManager), 280 + sizeof(::System::Collections::Generic::List_1<::System::ValueTuple_2<::GlobalNamespace::BrickPickerBrick*, float>>*)> __GlobalNamespace_BrickPickerManagerSizeCheck;
@@ -539,6 +533,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::BrickPickerManager*), "get_IsMenuFullyOpen", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: GlobalNamespace::BrickPickerManager::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::BrickPickerManager::Start
 // Il2CppName: Start
 template<>
@@ -689,7 +687,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::BrickPickerManager*), "InitializeTab", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{tabName});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::BrickPickerManager::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

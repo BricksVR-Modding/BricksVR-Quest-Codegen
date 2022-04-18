@@ -48,7 +48,7 @@ namespace Normal::Realtime::Native {
       return nativeAudioPreprocessor;
     }
     // Get instance field reference: private System.IntPtr _nativeAudioPreprocessor
-    [[deprecated]] ::System::IntPtr& dyn__nativeAudioPreprocessor();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn__nativeAudioPreprocessor();
     // public System.Void .ctor(System.Int32 recordSampleRate, System.Int32 recordFrameSize, System.Boolean automaticGainControl, System.Boolean noiseSuppression, System.Boolean reverbSuppression, System.Boolean echoCancellation, System.Int32 playbackSampleRate, System.Int32 playbackChannels, System.Single tail)
     // Offset: 0x8B4060
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

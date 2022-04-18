@@ -48,11 +48,11 @@ namespace Microsoft::Win32 {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Int64 Ptr
-    [[deprecated]] int64_t& dyn_Ptr();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_Ptr();
     // Get instance field reference: public System.Int32 Size
-    [[deprecated]] int& dyn_Size();
+    [[deprecated("Use field access instead!")]] int& dyn_Size();
     // Get instance field reference: public System.Int32 Type
-    [[deprecated]] int& dyn_Type();
+    [[deprecated("Use field access instead!")]] int& dyn_Type();
   }; // Microsoft.Win32.UnsafeNativeMethods/Microsoft.Win32.ManifestEtw/Microsoft.Win32.EVENT_FILTER_DESCRIPTOR
   #pragma pack(pop)
   static check_size<sizeof(UnsafeNativeMethods_ManifestEtw::EVENT_FILTER_DESCRIPTOR), 12 + sizeof(int)> __Microsoft_Win32_UnsafeNativeMethods_ManifestEtw_EVENT_FILTER_DESCRIPTORSizeCheck;

@@ -22,16 +22,15 @@ namespace AdvancedColorPicker {
   // Forward declaring type: ColorType
   struct ColorType;
 }
-// Forward declaring namespace: UnityEngine::UI
-namespace UnityEngine::UI {
-  // Skipping declaration: Graphic because it is already included!
-  // Forward declaring type: VertexHelper
-  class VertexHelper;
-}
 // Forward declaring namespace: UnityEngine
 namespace UnityEngine {
   // Forward declaring type: Texture
   class Texture;
+}
+// Forward declaring namespace: UnityEngine::UI
+namespace UnityEngine::UI {
+  // Forward declaring type: VertexHelper
+  class VertexHelper;
 }
 // Completed forward declares
 // Type namespace: AdvancedColorPicker
@@ -149,7 +148,7 @@ namespace AdvancedColorPicker {
       // Set static field: static public AdvancedColorPicker.GradientBackground/AdvancedColorPicker.GradientCenterType HSL_L
       static void _set_HSL_L(::AdvancedColorPicker::GradientBackground::GradientCenterType value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // AdvancedColorPicker.GradientBackground/AdvancedColorPicker.GradientCenterType
     #pragma pack(pop)
     static check_size<sizeof(GradientBackground::GradientCenterType), 0 + sizeof(int)> __AdvancedColorPicker_GradientBackground_GradientCenterTypeSizeCheck;
@@ -216,23 +215,23 @@ namespace AdvancedColorPicker {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: private System.Boolean acceptEvents
-    [[deprecated]] bool& dyn_acceptEvents();
+    [[deprecated("Use field access instead!")]] bool& dyn_acceptEvents();
     // Get instance field reference: private AdvancedColorPicker.GradientBackground/AdvancedColorPicker.GradientPart[] colors
-    [[deprecated]] ::ArrayW<::AdvancedColorPicker::GradientBackground::GradientPart*>& dyn_colors();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::AdvancedColorPicker::GradientBackground::GradientPart*>& dyn_colors();
     // Get instance field reference: private System.Boolean displayCheckboard
-    [[deprecated]] bool& dyn_displayCheckboard();
+    [[deprecated("Use field access instead!")]] bool& dyn_displayCheckboard();
     // Get instance field reference: private System.Boolean gradient
-    [[deprecated]] bool& dyn_gradient();
+    [[deprecated("Use field access instead!")]] bool& dyn_gradient();
     // Get instance field reference: private UnityEngine.UI.Slider/UnityEngine.UI.Direction direction
-    [[deprecated]] ::UnityEngine::UI::Slider::Direction& dyn_direction();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UI::Slider::Direction& dyn_direction();
     // Get instance field reference: private System.Single centerPos
-    [[deprecated]] float& dyn_centerPos();
+    [[deprecated("Use field access instead!")]] float& dyn_centerPos();
     // Get instance field reference: private AdvancedColorPicker.GradientBackground/AdvancedColorPicker.GradientCenterType centerType
-    [[deprecated]] ::AdvancedColorPicker::GradientBackground::GradientCenterType& dyn_centerType();
+    [[deprecated("Use field access instead!")]] ::AdvancedColorPicker::GradientBackground::GradientCenterType& dyn_centerType();
     // Get instance field reference: private System.Single checkBoardSize
-    [[deprecated]] float& dyn_checkBoardSize();
+    [[deprecated("Use field access instead!")]] float& dyn_checkBoardSize();
     // Get instance field reference: private System.Single borderSize
-    [[deprecated]] float& dyn_borderSize();
+    [[deprecated("Use field access instead!")]] float& dyn_borderSize();
     // public System.Boolean get_DisplayCheckboard()
     // Offset: 0x202F70
     bool get_DisplayCheckboard();
@@ -296,14 +295,6 @@ namespace AdvancedColorPicker {
     // Offset: 0x5B40F0
     // Implemented from: AdvancedColorPicker.GraphicalColorComponent
     // Base method: System.Void GraphicalColorComponent::.ctor()
-    // Base method: System.Void MaskableGraphic::.ctor()
-    // Base method: System.Void Graphic::.ctor()
-    // Base method: System.Void UIBehaviour::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static GradientBackground* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::AdvancedColorPicker::GradientBackground::.ctor");

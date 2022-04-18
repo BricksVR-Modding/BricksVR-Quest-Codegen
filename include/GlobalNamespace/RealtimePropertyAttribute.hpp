@@ -50,11 +50,11 @@ namespace GlobalNamespace {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: public readonly System.UInt32 propertyID
-    [[deprecated]] uint& dyn_propertyID();
+    [[deprecated("Use field access instead!")]] uint& dyn_propertyID();
     // Get instance field reference: public readonly System.Boolean reliable
-    [[deprecated]] bool& dyn_reliable();
+    [[deprecated("Use field access instead!")]] bool& dyn_reliable();
     // Get instance field reference: public readonly System.Boolean createDidChangeEvent
-    [[deprecated]] bool& dyn_createDidChangeEvent();
+    [[deprecated("Use field access instead!")]] bool& dyn_createDidChangeEvent();
     // public System.Void .ctor(System.UInt32 propertyID, System.Boolean reliable, System.Boolean createDidChangeEvent)
     // Offset: 0x891390
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -49,6 +49,13 @@ namespace GlobalNamespace {
     static ::UnityEngine::Texture2D* _get_cachedTexture();
     // Set static field: static private UnityEngine.Texture2D cachedTexture
     static void _set_cachedTexture(::UnityEngine::Texture2D* value);
+    // public System.Void .ctor()
+    // Offset: 0x1DD400
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static OVRPlugin::Media* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRPlugin::Media::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<OVRPlugin::Media*, creationType>()));
+    }
     // static private System.Void .cctor()
     // Offset: 0x1DDF00
     static void _cctor();
@@ -118,19 +125,14 @@ namespace GlobalNamespace {
     // static public System.Boolean SetMrcHeadsetControllerPose(OVRPlugin/Posef headsetPose, OVRPlugin/Posef leftControllerPose, OVRPlugin/Posef rightControllerPose)
     // Offset: 0x393A00
     static bool SetMrcHeadsetControllerPose(::GlobalNamespace::OVRPlugin::Posef headsetPose, ::GlobalNamespace::OVRPlugin::Posef leftControllerPose, ::GlobalNamespace::OVRPlugin::Posef rightControllerPose);
-    // public System.Void .ctor()
-    // Offset: 0x1DD400
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static OVRPlugin::Media* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OVRPlugin::Media::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<OVRPlugin::Media*, creationType>()));
-    }
   }; // OVRPlugin/Media
   #pragma pack(pop)
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::OVRPlugin::Media::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::OVRPlugin::Media::_cctor
 // Il2CppName: .cctor
 template<>
@@ -343,7 +345,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (*)(::
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::OVRPlugin::Media*), "SetMrcHeadsetControllerPose", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{headsetPose, leftControllerPose, rightControllerPose});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::OVRPlugin::Media::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

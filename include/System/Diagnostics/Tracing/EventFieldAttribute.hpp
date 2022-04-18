@@ -53,11 +53,11 @@ namespace System::Diagnostics::Tracing {
     static_assert(sizeof(::System::Diagnostics::Tracing::EventFieldFormat) == 0x4);
     public:
     // Get instance field reference: private System.Diagnostics.Tracing.EventFieldTags <Tags>k__BackingField
-    [[deprecated]] ::System::Diagnostics::Tracing::EventFieldTags& dyn_$Tags$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::EventFieldTags& dyn_$Tags$k__BackingField();
     // Get instance field reference: private System.String <Name>k__BackingField
-    [[deprecated]] ::StringW& dyn_$Name$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_$Name$k__BackingField();
     // Get instance field reference: private System.Diagnostics.Tracing.EventFieldFormat <Format>k__BackingField
-    [[deprecated]] ::System::Diagnostics::Tracing::EventFieldFormat& dyn_$Format$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::EventFieldFormat& dyn_$Format$k__BackingField();
     // public System.Diagnostics.Tracing.EventFieldTags get_Tags()
     // Offset: 0x1DD410
     ::System::Diagnostics::Tracing::EventFieldTags get_Tags();

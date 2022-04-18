@@ -57,7 +57,7 @@ namespace GlobalNamespace {
     // Set static field: static public RoomOwnershipModel/PropertyID BlockedFromMovingThroughBricks
     static void _set_BlockedFromMovingThroughBricks(::GlobalNamespace::RoomOwnershipModel::PropertyID value);
     // Get instance field reference: public System.UInt32 value__
-    [[deprecated]] uint& dyn_value__();
+    [[deprecated("Use field access instead!")]] uint& dyn_value__();
   }; // RoomOwnershipModel/PropertyID
   #pragma pack(pop)
   static check_size<sizeof(RoomOwnershipModel::PropertyID), 0 + sizeof(uint)> __GlobalNamespace_RoomOwnershipModel_PropertyIDSizeCheck;

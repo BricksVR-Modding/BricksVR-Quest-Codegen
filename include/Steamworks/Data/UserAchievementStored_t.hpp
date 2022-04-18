@@ -84,15 +84,15 @@ namespace Steamworks::Data {
     // Set static field: static public System.Int32 _datasize
     static void _set__datasize(int value);
     // Get instance field reference: System.UInt64 GameID
-    [[deprecated]] uint64_t& dyn_GameID();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_GameID();
     // Get instance field reference: System.Boolean GroupAchievement
-    [[deprecated]] bool& dyn_GroupAchievement();
+    [[deprecated("Use field access instead!")]] bool& dyn_GroupAchievement();
     // Get instance field reference: System.Byte[] AchievementName
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_AchievementName();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_AchievementName();
     // Get instance field reference: System.UInt32 CurProgress
-    [[deprecated]] uint& dyn_CurProgress();
+    [[deprecated("Use field access instead!")]] uint& dyn_CurProgress();
     // Get instance field reference: System.UInt32 MaxProgress
-    [[deprecated]] uint& dyn_MaxProgress();
+    [[deprecated("Use field access instead!")]] uint& dyn_MaxProgress();
     // public Steamworks.CallbackType get_CallbackType()
     // Offset: 0x4677B0
     ::Steamworks::CallbackType get_CallbackType();

@@ -84,15 +84,15 @@ namespace Steamworks::Data {
     // Set static field: static public System.Int32 _datasize
     static void _set__datasize(int value);
     // Get instance field reference: System.Boolean Allowed
-    [[deprecated]] bool& dyn_Allowed();
+    [[deprecated("Use field access instead!")]] bool& dyn_Allowed();
     // Get instance field reference: Steamworks.MarketNotAllowedReasonFlags NotAllowedReason
-    [[deprecated]] ::Steamworks::MarketNotAllowedReasonFlags& dyn_NotAllowedReason();
+    [[deprecated("Use field access instead!")]] ::Steamworks::MarketNotAllowedReasonFlags& dyn_NotAllowedReason();
     // Get instance field reference: System.UInt32 TAllowedAtTime
-    [[deprecated]] uint& dyn_TAllowedAtTime();
+    [[deprecated("Use field access instead!")]] uint& dyn_TAllowedAtTime();
     // Get instance field reference: System.Int32 CdaySteamGuardRequiredDays
-    [[deprecated]] int& dyn_CdaySteamGuardRequiredDays();
+    [[deprecated("Use field access instead!")]] int& dyn_CdaySteamGuardRequiredDays();
     // Get instance field reference: System.Int32 CdayNewDeviceCooldown
-    [[deprecated]] int& dyn_CdayNewDeviceCooldown();
+    [[deprecated("Use field access instead!")]] int& dyn_CdayNewDeviceCooldown();
     // public Steamworks.CallbackType get_CallbackType()
     // Offset: 0x463350
     ::Steamworks::CallbackType get_CallbackType();

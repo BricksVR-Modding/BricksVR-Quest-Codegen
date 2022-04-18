@@ -42,9 +42,9 @@ namespace Microsoft::Win32 {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Int32 InstanceCount
-    [[deprecated]] int& dyn_InstanceCount();
+    [[deprecated("Use field access instead!")]] int& dyn_InstanceCount();
     // Get instance field reference: public System.Int32 Reserved
-    [[deprecated]] int& dyn_Reserved();
+    [[deprecated("Use field access instead!")]] int& dyn_Reserved();
   }; // Microsoft.Win32.UnsafeNativeMethods/Microsoft.Win32.ManifestEtw/Microsoft.Win32.TRACE_GUID_INFO
   #pragma pack(pop)
   static check_size<sizeof(UnsafeNativeMethods_ManifestEtw::TRACE_GUID_INFO), 4 + sizeof(int)> __Microsoft_Win32_UnsafeNativeMethods_ManifestEtw_TRACE_GUID_INFOSizeCheck;

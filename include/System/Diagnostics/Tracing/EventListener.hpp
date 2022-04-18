@@ -98,13 +98,13 @@ namespace System::Diagnostics::Tracing {
     // Set static field: static private System.Boolean s_EventSourceShutdownRegistered
     static void _set_s_EventSourceShutdownRegistered(bool value);
     // Get instance field reference: private System.EventHandler`1<System.Diagnostics.Tracing.EventSourceCreatedEventArgs> _EventSourceCreated
-    [[deprecated]] ::System::EventHandler_1<::System::Diagnostics::Tracing::EventSourceCreatedEventArgs*>*& dyn__EventSourceCreated();
+    [[deprecated("Use field access instead!")]] ::System::EventHandler_1<::System::Diagnostics::Tracing::EventSourceCreatedEventArgs*>*& dyn__EventSourceCreated();
     // Get instance field reference: private System.EventHandler`1<System.Diagnostics.Tracing.EventWrittenEventArgs> EventWritten
-    [[deprecated]] ::System::EventHandler_1<::System::Diagnostics::Tracing::EventWrittenEventArgs*>*& dyn_EventWritten();
+    [[deprecated("Use field access instead!")]] ::System::EventHandler_1<::System::Diagnostics::Tracing::EventWrittenEventArgs*>*& dyn_EventWritten();
     // Get instance field reference: System.Diagnostics.Tracing.EventListener m_Next
-    [[deprecated]] ::System::Diagnostics::Tracing::EventListener*& dyn_m_Next();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::EventListener*& dyn_m_Next();
     // Get instance field reference: System.Diagnostics.Tracing.ActivityFilter m_activityFilter
-    [[deprecated]] ::System::Diagnostics::Tracing::ActivityFilter*& dyn_m_activityFilter();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::ActivityFilter*& dyn_m_activityFilter();
     // static System.Object get_EventListenersLock()
     // Offset: 0x2180F0
     static ::Il2CppObject* get_EventListenersLock();

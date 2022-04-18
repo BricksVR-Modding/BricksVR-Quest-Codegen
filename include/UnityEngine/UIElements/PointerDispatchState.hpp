@@ -57,11 +57,18 @@ namespace UnityEngine::UIElements {
     static_assert(sizeof(::ArrayW<bool>) == 0x8);
     public:
     // Get instance field reference: private UnityEngine.UIElements.IEventHandler[] m_PendingPointerCapture
-    [[deprecated]] ::ArrayW<::UnityEngine::UIElements::IEventHandler*>& dyn_m_PendingPointerCapture();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::UIElements::IEventHandler*>& dyn_m_PendingPointerCapture();
     // Get instance field reference: private UnityEngine.UIElements.IEventHandler[] m_PointerCapture
-    [[deprecated]] ::ArrayW<::UnityEngine::UIElements::IEventHandler*>& dyn_m_PointerCapture();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::UIElements::IEventHandler*>& dyn_m_PointerCapture();
     // Get instance field reference: private System.Boolean[] m_ShouldSendCompatibilityMouseEvents
-    [[deprecated]] ::ArrayW<bool>& dyn_m_ShouldSendCompatibilityMouseEvents();
+    [[deprecated("Use field access instead!")]] ::ArrayW<bool>& dyn_m_ShouldSendCompatibilityMouseEvents();
+    // public System.Void .ctor()
+    // Offset: 0x2AA7D0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static PointerDispatchState* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::UIElements::PointerDispatchState::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<PointerDispatchState*, creationType>()));
+    }
     // System.Void Reset()
     // Offset: 0x2AA630
     void Reset();
@@ -92,21 +99,16 @@ namespace UnityEngine::UIElements {
     // public System.Boolean ShouldSendCompatibilityMouseEvents(UnityEngine.UIElements.IPointerEvent evt)
     // Offset: 0x2AA720
     bool ShouldSendCompatibilityMouseEvents(::UnityEngine::UIElements::IPointerEvent* evt);
-    // public System.Void .ctor()
-    // Offset: 0x2AA7D0
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static PointerDispatchState* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::UIElements::PointerDispatchState::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<PointerDispatchState*, creationType>()));
-    }
   }; // UnityEngine.UIElements.PointerDispatchState
   #pragma pack(pop)
   static check_size<sizeof(PointerDispatchState), 32 + sizeof(::ArrayW<bool>)> __UnityEngine_UIElements_PointerDispatchStateSizeCheck;
   static_assert(sizeof(PointerDispatchState) == 0x28);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: UnityEngine::UIElements::PointerDispatchState::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::UIElements::PointerDispatchState::Reset
 // Il2CppName: Reset
 template<>
@@ -199,7 +201,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::UIElements::PointerDispatchState*), "ShouldSendCompatibilityMouseEvents", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{evt});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::UIElements::PointerDispatchState::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -35,6 +35,13 @@ namespace GlobalNamespace {
   // [TokenAttribute] Offset: FFFFFFFF
   class BuildingBrickSync : public ::Normal::Realtime::RealtimeComponent_1<::GlobalNamespace::BuildingBrickModel*> {
     public:
+    // public System.Void .ctor()
+    // Offset: 0x6AD0B0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static BuildingBrickSync* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::BuildingBrickSync::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<BuildingBrickSync*, creationType>()));
+    }
     // private System.Void BrickAttachedSet()
     // Offset: 0x6AC240
     void BrickAttachedSet();
@@ -74,23 +81,13 @@ namespace GlobalNamespace {
     // public System.Void SetUuid(System.String uuid)
     // Offset: 0x6ACDC0
     void SetUuid(::StringW uuid);
-    // public System.Void .ctor()
-    // Offset: 0x6AD0B0
-    // Implemented from: Normal.Realtime.RealtimeComponent`1
-    // Base method: System.Void RealtimeComponent_1::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static BuildingBrickSync* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::BuildingBrickSync::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<BuildingBrickSync*, creationType>()));
-    }
   }; // BuildingBrickSync
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::BuildingBrickSync::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::BuildingBrickSync::BrickAttachedSet
 // Il2CppName: BrickAttachedSet
 template<>
@@ -208,7 +205,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::BuildingBrickSync*), "SetUuid", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{uuid});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::BuildingBrickSync::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

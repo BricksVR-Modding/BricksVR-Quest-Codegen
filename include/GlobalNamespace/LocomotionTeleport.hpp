@@ -164,7 +164,7 @@ namespace GlobalNamespace {
       // Set static field: static public LocomotionTeleport/States PostTeleport
       static void _set_PostTeleport(::GlobalNamespace::LocomotionTeleport::States value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // LocomotionTeleport/States
     #pragma pack(pop)
     static check_size<sizeof(LocomotionTeleport::States), 0 + sizeof(int)> __GlobalNamespace_LocomotionTeleport_StatesSizeCheck;
@@ -218,7 +218,7 @@ namespace GlobalNamespace {
       // Set static field: static public LocomotionTeleport/TeleportIntentions Teleport
       static void _set_Teleport(::GlobalNamespace::LocomotionTeleport::TeleportIntentions value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // LocomotionTeleport/TeleportIntentions
     #pragma pack(pop)
     static check_size<sizeof(LocomotionTeleport::TeleportIntentions), 0 + sizeof(int)> __GlobalNamespace_LocomotionTeleport_TeleportIntentionsSizeCheck;
@@ -266,7 +266,7 @@ namespace GlobalNamespace {
       // Set static field: static public LocomotionTeleport/AimCollisionTypes Capsule
       static void _set_Capsule(::GlobalNamespace::LocomotionTeleport::AimCollisionTypes value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // LocomotionTeleport/AimCollisionTypes
     #pragma pack(pop)
     static check_size<sizeof(LocomotionTeleport::AimCollisionTypes), 0 + sizeof(int)> __GlobalNamespace_LocomotionTeleport_AimCollisionTypesSizeCheck;
@@ -502,73 +502,73 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public System.Boolean EnableMovementDuringReady
-    [[deprecated]] bool& dyn_EnableMovementDuringReady();
+    [[deprecated("Use field access instead!")]] bool& dyn_EnableMovementDuringReady();
     // Get instance field reference: public System.Boolean EnableMovementDuringAim
-    [[deprecated]] bool& dyn_EnableMovementDuringAim();
+    [[deprecated("Use field access instead!")]] bool& dyn_EnableMovementDuringAim();
     // Get instance field reference: public System.Boolean EnableMovementDuringPreTeleport
-    [[deprecated]] bool& dyn_EnableMovementDuringPreTeleport();
+    [[deprecated("Use field access instead!")]] bool& dyn_EnableMovementDuringPreTeleport();
     // Get instance field reference: public System.Boolean EnableMovementDuringPostTeleport
-    [[deprecated]] bool& dyn_EnableMovementDuringPostTeleport();
+    [[deprecated("Use field access instead!")]] bool& dyn_EnableMovementDuringPostTeleport();
     // Get instance field reference: public System.Boolean EnableRotationDuringReady
-    [[deprecated]] bool& dyn_EnableRotationDuringReady();
+    [[deprecated("Use field access instead!")]] bool& dyn_EnableRotationDuringReady();
     // Get instance field reference: public System.Boolean EnableRotationDuringAim
-    [[deprecated]] bool& dyn_EnableRotationDuringAim();
+    [[deprecated("Use field access instead!")]] bool& dyn_EnableRotationDuringAim();
     // Get instance field reference: public System.Boolean EnableRotationDuringPreTeleport
-    [[deprecated]] bool& dyn_EnableRotationDuringPreTeleport();
+    [[deprecated("Use field access instead!")]] bool& dyn_EnableRotationDuringPreTeleport();
     // Get instance field reference: public System.Boolean EnableRotationDuringPostTeleport
-    [[deprecated]] bool& dyn_EnableRotationDuringPostTeleport();
+    [[deprecated("Use field access instead!")]] bool& dyn_EnableRotationDuringPostTeleport();
     // Get instance field reference: private LocomotionTeleport/States <CurrentState>k__BackingField
-    [[deprecated]] ::GlobalNamespace::LocomotionTeleport::States& dyn_$CurrentState$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::LocomotionTeleport::States& dyn_$CurrentState$k__BackingField();
     // Get instance field reference: public TeleportAimHandler AimHandler
-    [[deprecated]] ::GlobalNamespace::TeleportAimHandler*& dyn_AimHandler();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::TeleportAimHandler*& dyn_AimHandler();
     // Get instance field reference: public TeleportDestination TeleportDestinationPrefab
-    [[deprecated]] ::GlobalNamespace::TeleportDestination*& dyn_TeleportDestinationPrefab();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::TeleportDestination*& dyn_TeleportDestinationPrefab();
     // Get instance field reference: public System.Int32 TeleportDestinationLayer
-    [[deprecated]] int& dyn_TeleportDestinationLayer();
+    [[deprecated("Use field access instead!")]] int& dyn_TeleportDestinationLayer();
     // Get instance field reference: private System.Action`4<System.Boolean,System.Nullable`1<UnityEngine.Vector3>,System.Nullable`1<UnityEngine.Quaternion>,System.Nullable`1<UnityEngine.Quaternion>> UpdateTeleportDestination
-    [[deprecated]] ::System::Action_4<bool, ::System::Nullable_1<::UnityEngine::Vector3>, ::System::Nullable_1<::UnityEngine::Quaternion>, ::System::Nullable_1<::UnityEngine::Quaternion>>*& dyn_UpdateTeleportDestination();
+    [[deprecated("Use field access instead!")]] ::System::Action_4<bool, ::System::Nullable_1<::UnityEngine::Vector3>, ::System::Nullable_1<::UnityEngine::Quaternion>, ::System::Nullable_1<::UnityEngine::Quaternion>>*& dyn_UpdateTeleportDestination();
     // Get instance field reference: public TeleportInputHandler InputHandler
-    [[deprecated]] ::GlobalNamespace::TeleportInputHandler*& dyn_InputHandler();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::TeleportInputHandler*& dyn_InputHandler();
     // Get instance field reference: public LocomotionTeleport/TeleportIntentions CurrentIntention
-    [[deprecated]] ::GlobalNamespace::LocomotionTeleport::TeleportIntentions& dyn_CurrentIntention();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::LocomotionTeleport::TeleportIntentions& dyn_CurrentIntention();
     // Get instance field reference: public System.Boolean IsPreTeleportRequested
-    [[deprecated]] bool& dyn_IsPreTeleportRequested();
+    [[deprecated("Use field access instead!")]] bool& dyn_IsPreTeleportRequested();
     // Get instance field reference: public System.Boolean IsTransitioning
-    [[deprecated]] bool& dyn_IsTransitioning();
+    [[deprecated("Use field access instead!")]] bool& dyn_IsTransitioning();
     // Get instance field reference: public System.Boolean IsPostTeleportRequested
-    [[deprecated]] bool& dyn_IsPostTeleportRequested();
+    [[deprecated("Use field access instead!")]] bool& dyn_IsPostTeleportRequested();
     // Get instance field reference: private TeleportDestination _teleportDestination
-    [[deprecated]] ::GlobalNamespace::TeleportDestination*& dyn__teleportDestination();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::TeleportDestination*& dyn__teleportDestination();
     // Get instance field reference: private LocomotionController <LocomotionController>k__BackingField
-    [[deprecated]] ::GlobalNamespace::LocomotionController*& dyn_$LocomotionController$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::LocomotionController*& dyn_$LocomotionController$k__BackingField();
     // Get instance field reference: public LocomotionTeleport/AimCollisionTypes AimCollisionType
-    [[deprecated]] ::GlobalNamespace::LocomotionTeleport::AimCollisionTypes& dyn_AimCollisionType();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::LocomotionTeleport::AimCollisionTypes& dyn_AimCollisionType();
     // Get instance field reference: public System.Boolean UseCharacterCollisionData
-    [[deprecated]] bool& dyn_UseCharacterCollisionData();
+    [[deprecated("Use field access instead!")]] bool& dyn_UseCharacterCollisionData();
     // Get instance field reference: public System.Single AimCollisionRadius
-    [[deprecated]] float& dyn_AimCollisionRadius();
+    [[deprecated("Use field access instead!")]] float& dyn_AimCollisionRadius();
     // Get instance field reference: public System.Single AimCollisionHeight
-    [[deprecated]] float& dyn_AimCollisionHeight();
+    [[deprecated("Use field access instead!")]] float& dyn_AimCollisionHeight();
     // Get instance field reference: private System.Action EnterStateReady
-    [[deprecated]] ::System::Action*& dyn_EnterStateReady();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_EnterStateReady();
     // Get instance field reference: private System.Action EnterStateAim
-    [[deprecated]] ::System::Action*& dyn_EnterStateAim();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_EnterStateAim();
     // Get instance field reference: private System.Action`1<LocomotionTeleport/AimData> UpdateAimData
-    [[deprecated]] ::System::Action_1<::GlobalNamespace::LocomotionTeleport::AimData*>*& dyn_UpdateAimData();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::GlobalNamespace::LocomotionTeleport::AimData*>*& dyn_UpdateAimData();
     // Get instance field reference: private System.Action ExitStateAim
-    [[deprecated]] ::System::Action*& dyn_ExitStateAim();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_ExitStateAim();
     // Get instance field reference: private System.Action EnterStateCancelAim
-    [[deprecated]] ::System::Action*& dyn_EnterStateCancelAim();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_EnterStateCancelAim();
     // Get instance field reference: private System.Action EnterStatePreTeleport
-    [[deprecated]] ::System::Action*& dyn_EnterStatePreTeleport();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_EnterStatePreTeleport();
     // Get instance field reference: private System.Action EnterStateCancelTeleport
-    [[deprecated]] ::System::Action*& dyn_EnterStateCancelTeleport();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_EnterStateCancelTeleport();
     // Get instance field reference: private System.Action EnterStateTeleporting
-    [[deprecated]] ::System::Action*& dyn_EnterStateTeleporting();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_EnterStateTeleporting();
     // Get instance field reference: private System.Action EnterStatePostTeleport
-    [[deprecated]] ::System::Action*& dyn_EnterStatePostTeleport();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn_EnterStatePostTeleport();
     // Get instance field reference: private System.Action`3<UnityEngine.Transform,UnityEngine.Vector3,UnityEngine.Quaternion> Teleported
-    [[deprecated]] ::System::Action_3<::UnityEngine::Transform*, ::UnityEngine::Vector3, ::UnityEngine::Quaternion>*& dyn_Teleported();
+    [[deprecated("Use field access instead!")]] ::System::Action_3<::UnityEngine::Transform*, ::UnityEngine::Vector3, ::UnityEngine::Quaternion>*& dyn_Teleported();
     // public LocomotionTeleport/States get_CurrentState()
     // Offset: 0x217240
     ::GlobalNamespace::LocomotionTeleport::States get_CurrentState();
@@ -650,6 +650,13 @@ namespace GlobalNamespace {
     // public System.Void remove_Teleported(System.Action`3<UnityEngine.Transform,UnityEngine.Vector3,UnityEngine.Quaternion> value)
     // Offset: 0x290B10
     void remove_Teleported(::System::Action_3<::UnityEngine::Transform*, ::UnityEngine::Vector3, ::UnityEngine::Quaternion>* value);
+    // public System.Void .ctor()
+    // Offset: 0x28FEC0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static LocomotionTeleport* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::LocomotionTeleport::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<LocomotionTeleport*, creationType>()));
+    }
     // public System.Void EnableMovement(System.Boolean ready, System.Boolean aim, System.Boolean pre, System.Boolean post)
     // Offset: 0x28F810
     void EnableMovement(bool ready, bool aim, bool pre, bool post);
@@ -722,19 +729,6 @@ namespace GlobalNamespace {
     // public System.Void DoWarp(UnityEngine.Vector3 startPos, System.Single positionPercent)
     // Offset: 0x28F660
     void DoWarp(::UnityEngine::Vector3 startPos, float positionPercent);
-    // public System.Void .ctor()
-    // Offset: 0x28FEC0
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static LocomotionTeleport* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::LocomotionTeleport::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<LocomotionTeleport*, creationType>()));
-    }
   }; // LocomotionTeleport
   #pragma pack(pop)
   static check_size<sizeof(LocomotionTeleport), 192 + sizeof(::System::Action_3<::UnityEngine::Transform*, ::UnityEngine::Vector3, ::UnityEngine::Quaternion>*)> __GlobalNamespace_LocomotionTeleportSizeCheck;
@@ -987,6 +981,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::LocomotionTeleport*), "remove_Teleported", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: GlobalNamespace::LocomotionTeleport::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::LocomotionTeleport::EnableMovement
 // Il2CppName: EnableMovement
 template<>
@@ -1202,7 +1200,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::LocomotionTeleport*), "DoWarp", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{startPos, positionPercent});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::LocomotionTeleport::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

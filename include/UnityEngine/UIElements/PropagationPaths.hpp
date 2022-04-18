@@ -69,11 +69,18 @@ namespace UnityEngine::UIElements {
     // Set static field: static private readonly UnityEngine.UIElements.ObjectPool`1<UnityEngine.UIElements.PropagationPaths> s_Pool
     static void _set_s_Pool(::UnityEngine::UIElements::ObjectPool_1<::UnityEngine::UIElements::PropagationPaths*>* value);
     // Get instance field reference: public readonly System.Collections.Generic.List`1<UnityEngine.UIElements.VisualElement> trickleDownPath
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::UIElements::VisualElement*>*& dyn_trickleDownPath();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::UIElements::VisualElement*>*& dyn_trickleDownPath();
     // Get instance field reference: public readonly System.Collections.Generic.List`1<UnityEngine.UIElements.VisualElement> targetElements
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::UIElements::VisualElement*>*& dyn_targetElements();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::UIElements::VisualElement*>*& dyn_targetElements();
     // Get instance field reference: public readonly System.Collections.Generic.List`1<UnityEngine.UIElements.VisualElement> bubbleUpPath
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::UIElements::VisualElement*>*& dyn_bubbleUpPath();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::UIElements::VisualElement*>*& dyn_bubbleUpPath();
+    // public System.Void .ctor()
+    // Offset: 0x2AC320
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static PropagationPaths* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::UIElements::PropagationPaths::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<PropagationPaths*, creationType>()));
+    }
     // static private System.Void .cctor()
     // Offset: 0x2AC2B0
     static void _cctor();
@@ -86,21 +93,16 @@ namespace UnityEngine::UIElements {
     // public System.Void Release()
     // Offset: 0x2AC1F0
     void Release();
-    // public System.Void .ctor()
-    // Offset: 0x2AC320
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static PropagationPaths* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::UIElements::PropagationPaths::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<PropagationPaths*, creationType>()));
-    }
   }; // UnityEngine.UIElements.PropagationPaths
   #pragma pack(pop)
   static check_size<sizeof(PropagationPaths), 32 + sizeof(::System::Collections::Generic::List_1<::UnityEngine::UIElements::VisualElement*>*)> __UnityEngine_UIElements_PropagationPathsSizeCheck;
   static_assert(sizeof(PropagationPaths) == 0x28);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: UnityEngine::UIElements::PropagationPaths::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::UIElements::PropagationPaths::_cctor
 // Il2CppName: .cctor
 template<>
@@ -136,7 +138,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::UIElements::PropagationPaths*), "Release", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::UIElements::PropagationPaths::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

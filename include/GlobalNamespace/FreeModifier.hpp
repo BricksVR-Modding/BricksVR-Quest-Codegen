@@ -47,7 +47,7 @@ namespace GlobalNamespace {
     static_assert(sizeof(::UnityEngine::Vector4) == 0x10);
     public:
     // Get instance field reference: private UnityEngine.Vector4 radius
-    [[deprecated]] ::UnityEngine::Vector4& dyn_radius();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector4& dyn_radius();
     // public UnityEngine.Vector4 get_Radius()
     // Offset: 0x207F10
     ::UnityEngine::Vector4 get_Radius();
@@ -61,11 +61,6 @@ namespace GlobalNamespace {
     // Offset: 0x4D3750
     // Implemented from: UnityEngine.UI.ProceduralImage.ProceduralImageModifier
     // Base method: System.Void ProceduralImageModifier::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static FreeModifier* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::FreeModifier::.ctor");

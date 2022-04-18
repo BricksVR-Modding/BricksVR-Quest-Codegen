@@ -99,19 +99,19 @@ namespace Normal::Realtime {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Boolean _mute
-    [[deprecated]] bool& dyn__mute();
+    [[deprecated("Use field access instead!")]] bool& dyn__mute();
     // Get instance field reference: private System.Single _dbLevel
-    [[deprecated]] float& dyn__dbLevel();
+    [[deprecated("Use field access instead!")]] float& dyn__dbLevel();
     // Get instance field reference: private System.Int32 _systemSampleRate
-    [[deprecated]] int& dyn__systemSampleRate();
+    [[deprecated("Use field access instead!")]] int& dyn__systemSampleRate();
     // Get instance field reference: private Normal.Realtime.Native.AudioOutputStream _audioOutputStream
-    [[deprecated]] ::Normal::Realtime::Native::AudioOutputStream*& dyn__audioOutputStream();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::Native::AudioOutputStream*& dyn__audioOutputStream();
     // Get instance field reference: private System.Int32 _audioOutputStreamChannels
-    [[deprecated]] int& dyn__audioOutputStreamChannels();
+    [[deprecated("Use field access instead!")]] int& dyn__audioOutputStreamChannels();
     // Get instance field reference: private UnityEngine.AudioClip _audioClip
-    [[deprecated]] ::UnityEngine::AudioClip*& dyn__audioClip();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AudioClip*& dyn__audioClip();
     // Get instance field reference: private System.Single[] _audioData
-    [[deprecated]] ::ArrayW<float>& dyn__audioData();
+    [[deprecated("Use field access instead!")]] ::ArrayW<float>& dyn__audioData();
     // public System.Boolean get_mute()
     // Offset: 0xBDAD50
     bool get_mute();
@@ -121,6 +121,13 @@ namespace Normal::Realtime {
     // public System.Single get_dbLevel()
     // Offset: 0xBDAD30
     float get_dbLevel();
+    // public System.Void .ctor()
+    // Offset: 0xBDAD00
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static AudioOutput* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::AudioOutput::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<AudioOutput*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0xBDA540
     void Awake();
@@ -139,19 +146,6 @@ namespace Normal::Realtime {
     // private System.Void OnAudioFilterRead(System.Single[] data, System.Int32 channels)
     // Offset: 0xBDA560
     void OnAudioFilterRead(::ArrayW<float> data, int channels);
-    // public System.Void .ctor()
-    // Offset: 0xBDAD00
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static AudioOutput* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::AudioOutput::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<AudioOutput*, creationType>()));
-    }
   }; // Normal.Realtime.AudioOutput
   #pragma pack(pop)
   static check_size<sizeof(AudioOutput), 64 + sizeof(::ArrayW<float>)> __Normal_Realtime_AudioOutputSizeCheck;
@@ -183,6 +177,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<float (Norm
     return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::AudioOutput*), "get_dbLevel", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: Normal::Realtime::AudioOutput::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Normal::Realtime::AudioOutput::Awake
 // Il2CppName: Awake
 template<>
@@ -234,7 +232,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Norma
     return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::AudioOutput*), "OnAudioFilterRead", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{data, channels});
   }
 };
-// Writing MetadataGetter for method: Normal::Realtime::AudioOutput::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

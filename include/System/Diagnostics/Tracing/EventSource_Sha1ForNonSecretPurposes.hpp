@@ -49,11 +49,11 @@ namespace System::Diagnostics::Tracing {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: private System.Int64 length
-    [[deprecated]] int64_t& dyn_length();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_length();
     // Get instance field reference: private System.UInt32[] w
-    [[deprecated]] ::ArrayW<uint>& dyn_w();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint>& dyn_w();
     // Get instance field reference: private System.Int32 pos
-    [[deprecated]] int& dyn_pos();
+    [[deprecated("Use field access instead!")]] int& dyn_pos();
     // public System.Void Start()
     // Offset: 0x2EF320
     void Start();

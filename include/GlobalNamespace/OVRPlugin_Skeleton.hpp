@@ -69,15 +69,15 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public OVRPlugin/SkeletonType Type
-    [[deprecated]] ::GlobalNamespace::OVRPlugin::SkeletonType& dyn_Type();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRPlugin::SkeletonType& dyn_Type();
     // Get instance field reference: public System.UInt32 NumBones
-    [[deprecated]] uint& dyn_NumBones();
+    [[deprecated("Use field access instead!")]] uint& dyn_NumBones();
     // Get instance field reference: public System.UInt32 NumBoneCapsules
-    [[deprecated]] uint& dyn_NumBoneCapsules();
+    [[deprecated("Use field access instead!")]] uint& dyn_NumBoneCapsules();
     // Get instance field reference: public OVRPlugin/Bone[] Bones
-    [[deprecated]] ::ArrayW<::GlobalNamespace::OVRPlugin::Bone>& dyn_Bones();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::GlobalNamespace::OVRPlugin::Bone>& dyn_Bones();
     // Get instance field reference: public OVRPlugin/BoneCapsule[] BoneCapsules
-    [[deprecated]] ::ArrayW<::GlobalNamespace::OVRPlugin::BoneCapsule>& dyn_BoneCapsules();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::GlobalNamespace::OVRPlugin::BoneCapsule>& dyn_BoneCapsules();
   }; // OVRPlugin/Skeleton
   #pragma pack(pop)
   static check_size<sizeof(OVRPlugin::Skeleton), 24 + sizeof(::ArrayW<::GlobalNamespace::OVRPlugin::BoneCapsule>)> __GlobalNamespace_OVRPlugin_SkeletonSizeCheck;

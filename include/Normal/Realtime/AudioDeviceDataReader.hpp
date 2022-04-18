@@ -61,13 +61,13 @@ namespace Normal::Realtime {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private Normal.Realtime.MicrophoneDevice <microphone>k__BackingField
-    [[deprecated]] ::Normal::Realtime::MicrophoneDevice*& dyn_$microphone$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::MicrophoneDevice*& dyn_$microphone$k__BackingField();
     // Get instance field reference: private System.Int32 _previousLocalWriteHeadPosition
-    [[deprecated]] int& dyn__previousLocalWriteHeadPosition();
+    [[deprecated("Use field access instead!")]] int& dyn__previousLocalWriteHeadPosition();
     // Get instance field reference: private System.Int32 _writeHeadLoopCount
-    [[deprecated]] int& dyn__writeHeadLoopCount();
+    [[deprecated("Use field access instead!")]] int& dyn__writeHeadLoopCount();
     // Get instance field reference: private System.Int32 _readHeadPosition
-    [[deprecated]] int& dyn__readHeadPosition();
+    [[deprecated("Use field access instead!")]] int& dyn__readHeadPosition();
     // public Normal.Realtime.MicrophoneDevice get_microphone()
     // Offset: 0x1E1920
     ::Normal::Realtime::MicrophoneDevice* get_microphone();

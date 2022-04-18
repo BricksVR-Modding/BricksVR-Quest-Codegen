@@ -41,27 +41,29 @@ namespace GlobalNamespace {
     static_assert(sizeof(::GlobalNamespace::RecentRoomsManager::$$c__DisplayClass17_0*) == 0x8);
     public:
     // Get instance field reference: public System.Int32 i1
-    [[deprecated]] int& dyn_i1();
+    [[deprecated("Use field access instead!")]] int& dyn_i1();
     // Get instance field reference: public RecentRoomsManager/<>c__DisplayClass17_0 CS$<>8__locals1
-    [[deprecated]] ::GlobalNamespace::RecentRoomsManager::$$c__DisplayClass17_0*& dyn_CS$$$8__locals1();
-    // System.Void <InitializeRecentRoomsList>b__0()
-    // Offset: 0x6DC220
-    void $InitializeRecentRoomsList$b__0();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::RecentRoomsManager::$$c__DisplayClass17_0*& dyn_CS$$$8__locals1();
     // public System.Void .ctor()
     // Offset: 0x1DD400
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static RecentRoomsManager::$$c__DisplayClass17_1* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::RecentRoomsManager::$$c__DisplayClass17_1::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<RecentRoomsManager::$$c__DisplayClass17_1*, creationType>()));
     }
+    // System.Void <InitializeRecentRoomsList>b__0()
+    // Offset: 0x6DC220
+    void $InitializeRecentRoomsList$b__0();
   }; // RecentRoomsManager/<>c__DisplayClass17_1
   #pragma pack(pop)
   static check_size<sizeof(RecentRoomsManager::$$c__DisplayClass17_1), 24 + sizeof(::GlobalNamespace::RecentRoomsManager::$$c__DisplayClass17_0*)> __GlobalNamespace_RecentRoomsManager_$$c__DisplayClass17_1SizeCheck;
   static_assert(sizeof(RecentRoomsManager::$$c__DisplayClass17_1) == 0x20);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::RecentRoomsManager::$$c__DisplayClass17_1::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::RecentRoomsManager::$$c__DisplayClass17_1::$InitializeRecentRoomsList$b__0
 // Il2CppName: <InitializeRecentRoomsList>b__0
 template<>
@@ -70,7 +72,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::RecentRoomsManager::$$c__DisplayClass17_1*), "<InitializeRecentRoomsList>b__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::RecentRoomsManager::$$c__DisplayClass17_1::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

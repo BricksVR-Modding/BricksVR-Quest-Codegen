@@ -85,9 +85,9 @@ namespace Steamworks {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: public Steamworks.NetDebugOutput Type
-      [[deprecated]] ::Steamworks::NetDebugOutput& dyn_Type();
+      [[deprecated("Use field access instead!")]] ::Steamworks::NetDebugOutput& dyn_Type();
       // Get instance field reference: public System.String Msg
-      [[deprecated]] ::StringW& dyn_Msg();
+      [[deprecated("Use field access instead!")]] ::StringW& dyn_Msg();
     }; // Steamworks.SteamNetworkingUtils/Steamworks.DebugMessage
     #pragma pack(pop)
     static check_size<sizeof(SteamNetworkingUtils::DebugMessage), 8 + sizeof(::StringW)> __Steamworks_SteamNetworkingUtils_DebugMessageSizeCheck;
@@ -126,7 +126,6 @@ namespace Steamworks {
     // Implemented from: Steamworks.SteamSharedClass`1
     // Base method: System.Void SteamSharedClass_1::.ctor()
     // Base method: System.Void SteamClass::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SteamNetworkingUtils* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Steamworks::SteamNetworkingUtils::.ctor");

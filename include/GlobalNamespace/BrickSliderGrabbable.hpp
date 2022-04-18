@@ -97,19 +97,26 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public SelectedCategoryManager selectedCategoryManager
-    [[deprecated]] ::GlobalNamespace::SelectedCategoryManager*& dyn_selectedCategoryManager();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::SelectedCategoryManager*& dyn_selectedCategoryManager();
     // Get instance field reference: public UnityEngine.Material hoveredMaterial
-    [[deprecated]] ::UnityEngine::Material*& dyn_hoveredMaterial();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn_hoveredMaterial();
     // Get instance field reference: private UnityEngine.Material _unhoveredMaterial
-    [[deprecated]] ::UnityEngine::Material*& dyn__unhoveredMaterial();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn__unhoveredMaterial();
     // Get instance field reference: public UnityEngine.Renderer sliderRenderer
-    [[deprecated]] ::UnityEngine::Renderer*& dyn_sliderRenderer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Renderer*& dyn_sliderRenderer();
     // Get instance field reference: public System.Boolean beingGrabbed
-    [[deprecated]] bool& dyn_beingGrabbed();
+    [[deprecated("Use field access instead!")]] bool& dyn_beingGrabbed();
     // Get instance field reference: private System.Boolean _beingGrabbedWithLeftHand
-    [[deprecated]] bool& dyn__beingGrabbedWithLeftHand();
+    [[deprecated("Use field access instead!")]] bool& dyn__beingGrabbedWithLeftHand();
     // Get instance field reference: private UnityEngine.Material[] _materials
-    [[deprecated]] ::ArrayW<::UnityEngine::Material*>& dyn__materials();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Material*>& dyn__materials();
+    // public System.Void .ctor()
+    // Offset: 0x1DDE30
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static BrickSliderGrabbable* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::BrickSliderGrabbable::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<BrickSliderGrabbable*, creationType>()));
+    }
     // private System.Void Start()
     // Offset: 0x6F3C40
     void Start();
@@ -137,25 +144,16 @@ namespace GlobalNamespace {
     // private System.Void OnSliderReleased(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor interactor)
     // Offset: 0x6F3A60
     void OnSliderReleased(::UnityEngine::XR::Interaction::Toolkit::XRBaseInteractor* interactor);
-    // public System.Void .ctor()
-    // Offset: 0x1DDE30
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static BrickSliderGrabbable* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::BrickSliderGrabbable::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<BrickSliderGrabbable*, creationType>()));
-    }
   }; // BrickSliderGrabbable
   #pragma pack(pop)
   static check_size<sizeof(BrickSliderGrabbable), 64 + sizeof(::ArrayW<::UnityEngine::Material*>)> __GlobalNamespace_BrickSliderGrabbableSizeCheck;
   static_assert(sizeof(BrickSliderGrabbable) == 0x48);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::BrickSliderGrabbable::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::BrickSliderGrabbable::Start
 // Il2CppName: Start
 template<>
@@ -232,7 +230,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::BrickSliderGrabbable*), "OnSliderReleased", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{interactor});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::BrickSliderGrabbable::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

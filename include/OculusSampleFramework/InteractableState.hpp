@@ -66,7 +66,7 @@ namespace OculusSampleFramework {
     // Set static field: static public OculusSampleFramework.InteractableState ActionState
     static void _set_ActionState(::OculusSampleFramework::InteractableState value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // OculusSampleFramework.InteractableState
   #pragma pack(pop)
   static check_size<sizeof(InteractableState), 0 + sizeof(int)> __OculusSampleFramework_InteractableStateSizeCheck;

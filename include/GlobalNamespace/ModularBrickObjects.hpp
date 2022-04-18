@@ -116,13 +116,20 @@ namespace GlobalNamespace {
     // Set static field: static private System.String StudNameInModel
     static void _set_StudNameInModel(::StringW value);
     // Get instance field reference: private readonly System.Collections.Generic.Dictionary`2<System.String,UnityEngine.GameObject> _namesToModularModels
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::StringW, ::UnityEngine::GameObject*>*& dyn__namesToModularModels();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::StringW, ::UnityEngine::GameObject*>*& dyn__namesToModularModels();
     // Get instance field reference: private readonly System.Collections.Generic.Dictionary`2<System.ValueTuple`2<System.String,System.Int32>,UnityEngine.Mesh> _namesAndHollowToMesh
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::System::ValueTuple_2<::StringW, int>, ::UnityEngine::Mesh*>*& dyn__namesAndHollowToMesh();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::System::ValueTuple_2<::StringW, int>, ::UnityEngine::Mesh*>*& dyn__namesAndHollowToMesh();
     // Get instance field reference: private readonly System.Collections.Generic.Dictionary`2<System.String,UnityEngine.Mesh> _namesToStudMeshes
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::StringW, ::UnityEngine::Mesh*>*& dyn__namesToStudMeshes();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::StringW, ::UnityEngine::Mesh*>*& dyn__namesToStudMeshes();
     // Get instance field reference: private readonly System.Collections.Generic.Dictionary`2<System.ValueTuple`2<System.String,System.String>,UnityEngine.Vector3> _namesAndStudNamesToStudOffset
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::System::ValueTuple_2<::StringW, ::StringW>, ::UnityEngine::Vector3>*& dyn__namesAndStudNamesToStudOffset();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::System::ValueTuple_2<::StringW, ::StringW>, ::UnityEngine::Vector3>*& dyn__namesAndStudNamesToStudOffset();
+    // public System.Void .ctor()
+    // Offset: 0x6BEE60
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ModularBrickObjects* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::ModularBrickObjects::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ModularBrickObjects*, creationType>()));
+    }
     // static public ModularBrickObjects GetInstance()
     // Offset: 0x6BE750
     static ::GlobalNamespace::ModularBrickObjects* GetInstance();
@@ -141,25 +148,16 @@ namespace GlobalNamespace {
     // public UnityEngine.Vector3 GetStudOffsetFromCenter(System.String brickName, System.String studName)
     // Offset: 0x6BEB90
     ::UnityEngine::Vector3 GetStudOffsetFromCenter(::StringW brickName, ::StringW studName);
-    // public System.Void .ctor()
-    // Offset: 0x6BEE60
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ModularBrickObjects* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::ModularBrickObjects::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ModularBrickObjects*, creationType>()));
-    }
   }; // ModularBrickObjects
   #pragma pack(pop)
   static check_size<sizeof(ModularBrickObjects), 48 + sizeof(::System::Collections::Generic::Dictionary_2<::System::ValueTuple_2<::StringW, ::StringW>, ::UnityEngine::Vector3>*)> __GlobalNamespace_ModularBrickObjectsSizeCheck;
   static_assert(sizeof(ModularBrickObjects) == 0x38);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::ModularBrickObjects::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::ModularBrickObjects::GetInstance
 // Il2CppName: GetInstance
 template<>
@@ -214,7 +212,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::ModularBrickObjects*), "GetStudOffsetFromCenter", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{brickName, studName});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::ModularBrickObjects::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

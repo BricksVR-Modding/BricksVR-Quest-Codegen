@@ -119,27 +119,27 @@ namespace System::Diagnostics::Tracing {
     // Set static field: static System.Diagnostics.Tracing.DataCollector ThreadInstance
     static void _set_ThreadInstance(::System::Diagnostics::Tracing::DataCollector value);
     // Get instance field reference: private System.Byte* scratchEnd
-    [[deprecated]] uint8_t*& dyn_scratchEnd();
+    [[deprecated("Use field access instead!")]] uint8_t*& dyn_scratchEnd();
     // Get instance field reference: private System.Diagnostics.Tracing.EventSource/System.Diagnostics.Tracing.EventData* datasEnd
-    [[deprecated]] ::System::Diagnostics::Tracing::EventSource::EventData*& dyn_datasEnd();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::EventSource::EventData*& dyn_datasEnd();
     // Get instance field reference: private System.Runtime.InteropServices.GCHandle* pinsEnd
-    [[deprecated]] ::System::Runtime::InteropServices::GCHandle*& dyn_pinsEnd();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::InteropServices::GCHandle*& dyn_pinsEnd();
     // Get instance field reference: private System.Diagnostics.Tracing.EventSource/System.Diagnostics.Tracing.EventData* datasStart
-    [[deprecated]] ::System::Diagnostics::Tracing::EventSource::EventData*& dyn_datasStart();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::EventSource::EventData*& dyn_datasStart();
     // Get instance field reference: private System.Byte* scratch
-    [[deprecated]] uint8_t*& dyn_scratch();
+    [[deprecated("Use field access instead!")]] uint8_t*& dyn_scratch();
     // Get instance field reference: private System.Diagnostics.Tracing.EventSource/System.Diagnostics.Tracing.EventData* datas
-    [[deprecated]] ::System::Diagnostics::Tracing::EventSource::EventData*& dyn_datas();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::EventSource::EventData*& dyn_datas();
     // Get instance field reference: private System.Runtime.InteropServices.GCHandle* pins
-    [[deprecated]] ::System::Runtime::InteropServices::GCHandle*& dyn_pins();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::InteropServices::GCHandle*& dyn_pins();
     // Get instance field reference: private System.Byte[] buffer
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_buffer();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_buffer();
     // Get instance field reference: private System.Int32 bufferPos
-    [[deprecated]] int& dyn_bufferPos();
+    [[deprecated("Use field access instead!")]] int& dyn_bufferPos();
     // Get instance field reference: private System.Int32 bufferNesting
-    [[deprecated]] int& dyn_bufferNesting();
+    [[deprecated("Use field access instead!")]] int& dyn_bufferNesting();
     // Get instance field reference: private System.Boolean writingScalars
-    [[deprecated]] bool& dyn_writingScalars();
+    [[deprecated("Use field access instead!")]] bool& dyn_writingScalars();
     // System.Void Enable(System.Byte* scratch, System.Int32 scratchSize, System.Diagnostics.Tracing.EventSource/System.Diagnostics.Tracing.EventData* datas, System.Int32 dataCount, System.Runtime.InteropServices.GCHandle* pins, System.Int32 pinCount)
     // Offset: 0x209A50
     void Enable(uint8_t* scratch, int scratchSize, ::System::Diagnostics::Tracing::EventSource::EventData* datas, int dataCount, ::System::Runtime::InteropServices::GCHandle* pins, int pinCount);

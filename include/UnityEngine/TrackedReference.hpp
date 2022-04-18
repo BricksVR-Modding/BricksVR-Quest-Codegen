@@ -39,7 +39,7 @@ namespace UnityEngine {
       return m_Ptr;
     }
     // Get instance field reference: System.IntPtr m_Ptr
-    [[deprecated]] ::System::IntPtr& dyn_m_Ptr();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_m_Ptr();
   }; // UnityEngine.TrackedReference
   #pragma pack(pop)
   static check_size<sizeof(TrackedReference), 16 + sizeof(::System::IntPtr)> __UnityEngine_TrackedReferenceSizeCheck;

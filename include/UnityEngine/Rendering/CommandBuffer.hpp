@@ -83,10 +83,17 @@ namespace UnityEngine::Rendering {
       return m_Ptr;
     }
     // Get instance field reference: System.IntPtr m_Ptr
-    [[deprecated]] ::System::IntPtr& dyn_m_Ptr();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_m_Ptr();
     // public System.Void set_name(System.String value)
     // Offset: 0x9685D0
     void set_name(::StringW value);
+    // public System.Void .ctor()
+    // Offset: 0x968590
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static CommandBuffer* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Rendering::CommandBuffer::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<CommandBuffer*, creationType>()));
+    }
     // static private System.IntPtr InitBuffer()
     // Offset: 0x968040
     static ::System::IntPtr InitBuffer();
@@ -147,15 +154,6 @@ namespace UnityEngine::Rendering {
     // private System.Void SetRenderTargetColorDepth_Internal_Injected(ref UnityEngine.Rendering.RenderTargetIdentifier color, ref UnityEngine.Rendering.RenderTargetIdentifier depth, UnityEngine.Rendering.RenderBufferLoadAction colorLoadAction, UnityEngine.Rendering.RenderBufferStoreAction colorStoreAction, UnityEngine.Rendering.RenderBufferLoadAction depthLoadAction, UnityEngine.Rendering.RenderBufferStoreAction depthStoreAction)
     // Offset: 0x968210
     void SetRenderTargetColorDepth_Internal_Injected(ByRef<::UnityEngine::Rendering::RenderTargetIdentifier> color, ByRef<::UnityEngine::Rendering::RenderTargetIdentifier> depth, ::UnityEngine::Rendering::RenderBufferLoadAction colorLoadAction, ::UnityEngine::Rendering::RenderBufferStoreAction colorStoreAction, ::UnityEngine::Rendering::RenderBufferLoadAction depthLoadAction, ::UnityEngine::Rendering::RenderBufferStoreAction depthStoreAction);
-    // public System.Void .ctor()
-    // Offset: 0x968590
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static CommandBuffer* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::Rendering::CommandBuffer::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<CommandBuffer*, creationType>()));
-    }
     // protected override System.Void Finalize()
     // Offset: 0x967F90
     // Implemented from: System.Object
@@ -176,6 +174,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Rendering::CommandBuffer*), "set_name", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::Rendering::CommandBuffer::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::Rendering::CommandBuffer::InitBuffer
 // Il2CppName: InitBuffer
 template<>
@@ -403,10 +405,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::Rendering::CommandBuffer*), "SetRenderTargetColorDepth_Internal_Injected", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{color, depth, colorLoadAction, colorStoreAction, depthLoadAction, depthStoreAction});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::Rendering::CommandBuffer::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::Rendering::CommandBuffer::Finalize
 // Il2CppName: Finalize
 template<>

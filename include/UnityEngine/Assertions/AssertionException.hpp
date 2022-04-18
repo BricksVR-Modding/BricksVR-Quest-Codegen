@@ -42,7 +42,7 @@ namespace UnityEngine::Assertions {
       return m_UserMessage;
     }
     // Get instance field reference: private System.String m_UserMessage
-    [[deprecated]] ::StringW& dyn_m_UserMessage();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_m_UserMessage();
     // public System.Void .ctor(System.String message, System.String userMessage)
     // Offset: 0x9821B0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

@@ -39,13 +39,11 @@ namespace GlobalNamespace {
     static_assert(sizeof(::GlobalNamespace::NormcoreRPC::Brick*) == 0x8);
     public:
     // Get instance field reference: public System.String type
-    [[deprecated]] ::StringW& dyn_type();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_type();
     // Get instance field reference: public NormcoreRPC/Brick brick
-    [[deprecated]] ::GlobalNamespace::NormcoreRPC::Brick*& dyn_brick();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::NormcoreRPC::Brick*& dyn_brick();
     // public System.Void .ctor()
     // Offset: 0x1DD400
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static NormcoreRPC::RPCMessage* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::NormcoreRPC::RPCMessage::.ctor");

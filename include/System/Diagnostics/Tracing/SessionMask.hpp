@@ -44,7 +44,7 @@ namespace System::Diagnostics::Tracing {
       return m_mask;
     }
     // Get instance field reference: private System.UInt32 m_mask
-    [[deprecated]] uint& dyn_m_mask();
+    [[deprecated("Use field access instead!")]] uint& dyn_m_mask();
     // static public System.Diagnostics.Tracing.SessionMask get_All()
     // Offset: 0x20ABD0
     static ::System::Diagnostics::Tracing::SessionMask get_All();

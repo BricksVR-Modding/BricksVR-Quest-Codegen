@@ -42,9 +42,9 @@ namespace System::Diagnostics::Tracing {
     static_assert(sizeof(::System::Diagnostics::Tracing::ManifestBuilder::$$c__DisplayClass22_0*) == 0x8);
     public:
     // Get instance field reference: public System.Int32 i
-    [[deprecated]] int& dyn_i();
+    [[deprecated("Use field access instead!")]] int& dyn_i();
     // Get instance field reference: public System.Diagnostics.Tracing.ManifestBuilder/System.Diagnostics.Tracing.<>c__DisplayClass22_0 CS$<>8__locals1
-    [[deprecated]] ::System::Diagnostics::Tracing::ManifestBuilder::$$c__DisplayClass22_0*& dyn_CS$$$8__locals1();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::ManifestBuilder::$$c__DisplayClass22_0*& dyn_CS$$$8__locals1();
     // System.Void <TranslateToManifestConvention>b__0(System.Char ch, System.String escape)
     // Offset: 0x2F3A10
     void $TranslateToManifestConvention$b__0(::Il2CppChar ch, ::StringW escape);

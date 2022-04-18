@@ -306,7 +306,7 @@ namespace Steamworks {
     // Set static field: static public Steamworks.HTTPStatusCode Code5xxUnknown
     static void _set_Code5xxUnknown(::Steamworks::HTTPStatusCode value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // Steamworks.HTTPStatusCode
   #pragma pack(pop)
   static check_size<sizeof(HTTPStatusCode), 0 + sizeof(int)> __Steamworks_HTTPStatusCodeSizeCheck;

@@ -76,11 +76,11 @@ namespace System::Text::RegularExpressions {
       return *reinterpret_cast<::System::Collections::ICollection*>(this);
     }
     // Get instance field reference: System.Text.RegularExpressions.Match _match
-    [[deprecated]] ::System::Text::RegularExpressions::Match*& dyn__match();
+    [[deprecated("Use field access instead!")]] ::System::Text::RegularExpressions::Match*& dyn__match();
     // Get instance field reference: System.Collections.Hashtable _captureMap
-    [[deprecated]] ::System::Collections::Hashtable*& dyn__captureMap();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Hashtable*& dyn__captureMap();
     // Get instance field reference: System.Text.RegularExpressions.Group[] _groups
-    [[deprecated]] ::ArrayW<::System::Text::RegularExpressions::Group*>& dyn__groups();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::System::Text::RegularExpressions::Group*>& dyn__groups();
     // public System.Int32 get_Count()
     // Offset: 0x3FFF30
     int get_Count();
@@ -94,6 +94,13 @@ namespace System::Text::RegularExpressions {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Text::RegularExpressions::GroupCollection::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<GroupCollection*, creationType>(match, caps)));
     }
+    // System.Void .ctor()
+    // Offset: 0x3FFF00
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static GroupCollection* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::Text::RegularExpressions::GroupCollection::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<GroupCollection*, creationType>()));
+    }
     // System.Text.RegularExpressions.Group GetGroup(System.Int32 groupnum)
     // Offset: 0x3FFDC0
     ::System::Text::RegularExpressions::Group* GetGroup(int groupnum);
@@ -106,15 +113,6 @@ namespace System::Text::RegularExpressions {
     // public System.Collections.IEnumerator GetEnumerator()
     // Offset: 0x3FF900
     ::System::Collections::IEnumerator* GetEnumerator();
-    // System.Void .ctor()
-    // Offset: 0x3FFF00
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static GroupCollection* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::Text::RegularExpressions::GroupCollection::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<GroupCollection*, creationType>()));
-    }
   }; // System.Text.RegularExpressions.GroupCollection
   #pragma pack(pop)
   static check_size<sizeof(GroupCollection), 32 + sizeof(::ArrayW<::System::Text::RegularExpressions::Group*>)> __System_Text_RegularExpressions_GroupCollectionSizeCheck;
@@ -138,6 +136,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::T
     return ::il2cpp_utils::FindMethod(classof(System::Text::RegularExpressions::GroupCollection*), "get_Item", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{groupnum});
   }
 };
+// Writing MetadataGetter for method: System::Text::RegularExpressions::GroupCollection::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::Text::RegularExpressions::GroupCollection::New_ctor
 // Il2CppName: .ctor
 // Cannot get method pointer of value based method overload from template for constructor!
@@ -178,7 +180,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::C
     return ::il2cpp_utils::FindMethod(classof(System::Text::RegularExpressions::GroupCollection*), "GetEnumerator", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: System::Text::RegularExpressions::GroupCollection::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

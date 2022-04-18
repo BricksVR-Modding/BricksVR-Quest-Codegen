@@ -193,47 +193,47 @@ namespace Steamworks::Data {
     // Set static field: static public System.Int32 _datasize
     static void _set__datasize(int value);
     // Get instance field reference: Steamworks.Result Result
-    [[deprecated]] ::Steamworks::Result& dyn_Result();
+    [[deprecated("Use field access instead!")]] ::Steamworks::Result& dyn_Result();
     // Get instance field reference: Steamworks.Data.PublishedFileId PublishedFileId
-    [[deprecated]] ::Steamworks::Data::PublishedFileId& dyn_PublishedFileId();
+    [[deprecated("Use field access instead!")]] ::Steamworks::Data::PublishedFileId& dyn_PublishedFileId();
     // Get instance field reference: Steamworks.AppId CreatorAppID
-    [[deprecated]] ::Steamworks::AppId& dyn_CreatorAppID();
+    [[deprecated("Use field access instead!")]] ::Steamworks::AppId& dyn_CreatorAppID();
     // Get instance field reference: Steamworks.AppId ConsumerAppID
-    [[deprecated]] ::Steamworks::AppId& dyn_ConsumerAppID();
+    [[deprecated("Use field access instead!")]] ::Steamworks::AppId& dyn_ConsumerAppID();
     // Get instance field reference: System.Byte[] Title
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_Title();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_Title();
     // Get instance field reference: System.Byte[] Description
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_Description();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_Description();
     // Get instance field reference: System.UInt64 File
-    [[deprecated]] uint64_t& dyn_File();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_File();
     // Get instance field reference: System.UInt64 PreviewFile
-    [[deprecated]] uint64_t& dyn_PreviewFile();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_PreviewFile();
     // Get instance field reference: System.UInt64 SteamIDOwner
-    [[deprecated]] uint64_t& dyn_SteamIDOwner();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_SteamIDOwner();
     // Get instance field reference: System.UInt32 TimeCreated
-    [[deprecated]] uint& dyn_TimeCreated();
+    [[deprecated("Use field access instead!")]] uint& dyn_TimeCreated();
     // Get instance field reference: System.UInt32 TimeUpdated
-    [[deprecated]] uint& dyn_TimeUpdated();
+    [[deprecated("Use field access instead!")]] uint& dyn_TimeUpdated();
     // Get instance field reference: Steamworks.RemoteStoragePublishedFileVisibility Visibility
-    [[deprecated]] ::Steamworks::RemoteStoragePublishedFileVisibility& dyn_Visibility();
+    [[deprecated("Use field access instead!")]] ::Steamworks::RemoteStoragePublishedFileVisibility& dyn_Visibility();
     // Get instance field reference: System.Boolean Banned
-    [[deprecated]] bool& dyn_Banned();
+    [[deprecated("Use field access instead!")]] bool& dyn_Banned();
     // Get instance field reference: System.Byte[] Tags
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_Tags();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_Tags();
     // Get instance field reference: System.Boolean TagsTruncated
-    [[deprecated]] bool& dyn_TagsTruncated();
+    [[deprecated("Use field access instead!")]] bool& dyn_TagsTruncated();
     // Get instance field reference: System.Byte[] PchFileName
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_PchFileName();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_PchFileName();
     // Get instance field reference: System.Int32 FileSize
-    [[deprecated]] int& dyn_FileSize();
+    [[deprecated("Use field access instead!")]] int& dyn_FileSize();
     // Get instance field reference: System.Int32 PreviewFileSize
-    [[deprecated]] int& dyn_PreviewFileSize();
+    [[deprecated("Use field access instead!")]] int& dyn_PreviewFileSize();
     // Get instance field reference: System.Byte[] URL
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_URL();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_URL();
     // Get instance field reference: Steamworks.WorkshopFileType FileType
-    [[deprecated]] ::Steamworks::WorkshopFileType& dyn_FileType();
+    [[deprecated("Use field access instead!")]] ::Steamworks::WorkshopFileType& dyn_FileType();
     // Get instance field reference: System.Boolean AcceptedForUse
-    [[deprecated]] bool& dyn_AcceptedForUse();
+    [[deprecated("Use field access instead!")]] bool& dyn_AcceptedForUse();
     // public Steamworks.CallbackType get_CallbackType()
     // Offset: 0x465040
     ::Steamworks::CallbackType get_CallbackType();

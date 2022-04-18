@@ -57,28 +57,26 @@ namespace UnityEngine {
       return m_Ptr;
     }
     // Get instance field reference: System.IntPtr m_Ptr
-    [[deprecated]] ::System::IntPtr& dyn_m_Ptr();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_m_Ptr();
     // public System.String get_id()
     // Offset: 0x66C190
     ::StringW get_id();
     // private System.Void UnityEngine.ISubsystemDescriptorImpl.set_ptr(System.IntPtr value)
     // Offset: 0x29F1D0
     void UnityEngine_ISubsystemDescriptorImpl_set_ptr(::System::IntPtr value);
+    // protected System.Void .ctor()
+    // Offset: 0x1DD400
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static IntegratedSubsystemDescriptor* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::IntegratedSubsystemDescriptor::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<IntegratedSubsystemDescriptor*, creationType>()));
+    }
     // private UnityEngine.ISubsystem UnityEngine.ISubsystemDescriptor.Create()
     // Offset: 0x2166C0
     ::UnityEngine::ISubsystem* UnityEngine_ISubsystemDescriptor_Create();
     // UnityEngine.ISubsystem CreateImpl()
     // Offset: 0xFFFFFFFFFFFFFFFF
     ::UnityEngine::ISubsystem* CreateImpl();
-    // protected System.Void .ctor()
-    // Offset: 0x1DD400
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static IntegratedSubsystemDescriptor* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::IntegratedSubsystemDescriptor::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<IntegratedSubsystemDescriptor*, creationType>()));
-    }
   }; // UnityEngine.IntegratedSubsystemDescriptor
   #pragma pack(pop)
   static check_size<sizeof(IntegratedSubsystemDescriptor), 16 + sizeof(::System::IntPtr)> __UnityEngine_IntegratedSubsystemDescriptorSizeCheck;
@@ -102,6 +100,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::IntegratedSubsystemDescriptor*), "UnityEngine.ISubsystemDescriptorImpl.set_ptr", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::IntegratedSubsystemDescriptor::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::IntegratedSubsystemDescriptor::UnityEngine_ISubsystemDescriptor_Create
 // Il2CppName: UnityEngine.ISubsystemDescriptor.Create
 template<>
@@ -118,7 +120,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::UnityEngi
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::IntegratedSubsystemDescriptor*), "CreateImpl", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::IntegratedSubsystemDescriptor::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

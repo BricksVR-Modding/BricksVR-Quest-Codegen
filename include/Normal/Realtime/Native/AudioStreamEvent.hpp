@@ -73,7 +73,7 @@ namespace Normal::Realtime::Native {
       // Set static field: static public Normal.Realtime.Native.AudioStreamEvent/Normal.Realtime.Native.EventType AudioOutputStreamClosed
       static void _set_AudioOutputStreamClosed(::Normal::Realtime::Native::AudioStreamEvent::EventType value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // Normal.Realtime.Native.AudioStreamEvent/Normal.Realtime.Native.EventType
     #pragma pack(pop)
     static check_size<sizeof(AudioStreamEvent::EventType), 0 + sizeof(int)> __Normal_Realtime_Native_AudioStreamEvent_EventTypeSizeCheck;
@@ -107,11 +107,11 @@ namespace Normal::Realtime::Native {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public Normal.Realtime.Native.AudioStreamEvent/Normal.Realtime.Native.EventType eventType
-    [[deprecated]] ::Normal::Realtime::Native::AudioStreamEvent::EventType& dyn_eventType();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::Native::AudioStreamEvent::EventType& dyn_eventType();
     // Get instance field reference: public System.IntPtr nativePointer
-    [[deprecated]] ::System::IntPtr& dyn_nativePointer();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_nativePointer();
     // Get instance field reference: public System.IntPtr nativeIdentifier
-    [[deprecated]] ::System::IntPtr& dyn_nativeIdentifier();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_nativeIdentifier();
   }; // Normal.Realtime.Native.AudioStreamEvent
   #pragma pack(pop)
   static check_size<sizeof(AudioStreamEvent), 16 + sizeof(::System::IntPtr)> __Normal_Realtime_Native_AudioStreamEventSizeCheck;

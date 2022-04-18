@@ -74,15 +74,15 @@ namespace OculusSampleFramework {
     static_assert(sizeof(::OculusSampleFramework::ColliderZoneArgs*) == 0x8);
     public:
     // Get instance field reference: public readonly OculusSampleFramework.Interactable Interactable
-    [[deprecated]] ::OculusSampleFramework::Interactable*& dyn_Interactable();
+    [[deprecated("Use field access instead!")]] ::OculusSampleFramework::Interactable*& dyn_Interactable();
     // Get instance field reference: public readonly OculusSampleFramework.InteractableTool Tool
-    [[deprecated]] ::OculusSampleFramework::InteractableTool*& dyn_Tool();
+    [[deprecated("Use field access instead!")]] ::OculusSampleFramework::InteractableTool*& dyn_Tool();
     // Get instance field reference: public readonly OculusSampleFramework.InteractableState OldInteractableState
-    [[deprecated]] ::OculusSampleFramework::InteractableState& dyn_OldInteractableState();
+    [[deprecated("Use field access instead!")]] ::OculusSampleFramework::InteractableState& dyn_OldInteractableState();
     // Get instance field reference: public readonly OculusSampleFramework.InteractableState NewInteractableState
-    [[deprecated]] ::OculusSampleFramework::InteractableState& dyn_NewInteractableState();
+    [[deprecated("Use field access instead!")]] ::OculusSampleFramework::InteractableState& dyn_NewInteractableState();
     // Get instance field reference: public readonly OculusSampleFramework.ColliderZoneArgs ColliderArgs
-    [[deprecated]] ::OculusSampleFramework::ColliderZoneArgs*& dyn_ColliderArgs();
+    [[deprecated("Use field access instead!")]] ::OculusSampleFramework::ColliderZoneArgs*& dyn_ColliderArgs();
     // public System.Void .ctor(OculusSampleFramework.Interactable interactable, OculusSampleFramework.InteractableTool tool, OculusSampleFramework.InteractableState newInteractableState, OculusSampleFramework.InteractableState oldState, OculusSampleFramework.ColliderZoneArgs colliderArgs)
     // Offset: 0x28CE70
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

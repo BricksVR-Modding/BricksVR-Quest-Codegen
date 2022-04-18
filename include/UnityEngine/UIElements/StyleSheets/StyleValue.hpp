@@ -83,17 +83,17 @@ namespace UnityEngine::UIElements::StyleSheets {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public UnityEngine.UIElements.StyleSheets.StylePropertyID id
-    [[deprecated]] ::UnityEngine::UIElements::StyleSheets::StylePropertyID& dyn_id();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::StyleSheets::StylePropertyID& dyn_id();
     // Get instance field reference: public UnityEngine.UIElements.StyleKeyword keyword
-    [[deprecated]] ::UnityEngine::UIElements::StyleKeyword& dyn_keyword();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::StyleKeyword& dyn_keyword();
     // Get instance field reference: public System.Single number
-    [[deprecated]] float& dyn_number();
+    [[deprecated("Use field access instead!")]] float& dyn_number();
     // Get instance field reference: public UnityEngine.UIElements.Length length
-    [[deprecated]] ::UnityEngine::UIElements::Length& dyn_length();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::Length& dyn_length();
     // Get instance field reference: public UnityEngine.Color color
-    [[deprecated]] ::UnityEngine::Color& dyn_color();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_color();
     // Get instance field reference: public System.Runtime.InteropServices.GCHandle resource
-    [[deprecated]] ::System::Runtime::InteropServices::GCHandle& dyn_resource();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::InteropServices::GCHandle& dyn_resource();
     // static public UnityEngine.UIElements.StyleSheets.StyleValue Create(UnityEngine.UIElements.StyleSheets.StylePropertyID id)
     // Offset: 0x2AF940
     static ::UnityEngine::UIElements::StyleSheets::StyleValue Create(::UnityEngine::UIElements::StyleSheets::StylePropertyID id);

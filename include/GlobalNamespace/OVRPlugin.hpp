@@ -349,11 +349,11 @@ namespace GlobalNamespace {
       // Set static field: static public readonly OVRPlugin/Vector3f zero
       static void _set_zero(::GlobalNamespace::OVRPlugin::Vector3f value);
       // Get instance field reference: public System.Single x
-      [[deprecated]] float& dyn_x();
+      [[deprecated("Use field access instead!")]] float& dyn_x();
       // Get instance field reference: public System.Single y
-      [[deprecated]] float& dyn_y();
+      [[deprecated("Use field access instead!")]] float& dyn_y();
       // Get instance field reference: public System.Single z
-      [[deprecated]] float& dyn_z();
+      [[deprecated("Use field access instead!")]] float& dyn_z();
       // static private System.Void .cctor()
       // Offset: 0x3A42E0
       static void _cctor();
@@ -410,13 +410,13 @@ namespace GlobalNamespace {
       // Set static field: static public readonly OVRPlugin/Quatf identity
       static void _set_identity(::GlobalNamespace::OVRPlugin::Quatf value);
       // Get instance field reference: public System.Single x
-      [[deprecated]] float& dyn_x();
+      [[deprecated("Use field access instead!")]] float& dyn_x();
       // Get instance field reference: public System.Single y
-      [[deprecated]] float& dyn_y();
+      [[deprecated("Use field access instead!")]] float& dyn_y();
       // Get instance field reference: public System.Single z
-      [[deprecated]] float& dyn_z();
+      [[deprecated("Use field access instead!")]] float& dyn_z();
       // Get instance field reference: public System.Single w
-      [[deprecated]] float& dyn_w();
+      [[deprecated("Use field access instead!")]] float& dyn_w();
       // static private System.Void .cctor()
       // Offset: 0x3A2CD0
       static void _cctor();
@@ -461,9 +461,9 @@ namespace GlobalNamespace {
       // Set static field: static public readonly OVRPlugin/Posef identity
       static void _set_identity(::GlobalNamespace::OVRPlugin::Posef value);
       // Get instance field reference: public OVRPlugin/Quatf Orientation
-      [[deprecated]] ::GlobalNamespace::OVRPlugin::Quatf& dyn_Orientation();
+      [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRPlugin::Quatf& dyn_Orientation();
       // Get instance field reference: public OVRPlugin/Vector3f Position
-      [[deprecated]] ::GlobalNamespace::OVRPlugin::Vector3f& dyn_Position();
+      [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRPlugin::Vector3f& dyn_Position();
       // static private System.Void .cctor()
       // Offset: 0x3A29E0
       static void _cctor();
@@ -513,7 +513,7 @@ namespace GlobalNamespace {
       // Set static field: static public OVRPlugin/TrackingConfidence High
       static void _set_High(::GlobalNamespace::OVRPlugin::TrackingConfidence value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // OVRPlugin/TrackingConfidence
     #pragma pack(pop)
     static check_size<sizeof(OVRPlugin::TrackingConfidence), 0 + sizeof(int)> __GlobalNamespace_OVRPlugin_TrackingConfidenceSizeCheck;
@@ -574,7 +574,7 @@ namespace GlobalNamespace {
       // Set static field: static public OVRPlugin/HandStatus MenuPressed
       static void _set_MenuPressed(::GlobalNamespace::OVRPlugin::HandStatus value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // OVRPlugin/HandStatus
     #pragma pack(pop)
     static check_size<sizeof(OVRPlugin::HandStatus), 0 + sizeof(int)> __GlobalNamespace_OVRPlugin_HandStatusSizeCheck;
@@ -635,7 +635,7 @@ namespace GlobalNamespace {
       // Set static field: static public OVRPlugin/HandFingerPinch Pinky
       static void _set_Pinky(::GlobalNamespace::OVRPlugin::HandFingerPinch value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // OVRPlugin/HandFingerPinch
     #pragma pack(pop)
     static check_size<sizeof(OVRPlugin::HandFingerPinch), 0 + sizeof(int)> __GlobalNamespace_OVRPlugin_HandFingerPinchSizeCheck;
@@ -908,89 +908,89 @@ namespace GlobalNamespace {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: public OVRPlugin/HandStatus Status
-      [[deprecated]] ::GlobalNamespace::OVRPlugin::HandStatus& dyn_Status();
+      [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRPlugin::HandStatus& dyn_Status();
       // Get instance field reference: public OVRPlugin/Posef RootPose
-      [[deprecated]] ::GlobalNamespace::OVRPlugin::Posef& dyn_RootPose();
+      [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRPlugin::Posef& dyn_RootPose();
       // Get instance field reference: public OVRPlugin/Quatf BoneRotations_0
-      [[deprecated]] ::GlobalNamespace::OVRPlugin::Quatf& dyn_BoneRotations_0();
+      [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRPlugin::Quatf& dyn_BoneRotations_0();
       // Get instance field reference: public OVRPlugin/Quatf BoneRotations_1
-      [[deprecated]] ::GlobalNamespace::OVRPlugin::Quatf& dyn_BoneRotations_1();
+      [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRPlugin::Quatf& dyn_BoneRotations_1();
       // Get instance field reference: public OVRPlugin/Quatf BoneRotations_2
-      [[deprecated]] ::GlobalNamespace::OVRPlugin::Quatf& dyn_BoneRotations_2();
+      [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRPlugin::Quatf& dyn_BoneRotations_2();
       // Get instance field reference: public OVRPlugin/Quatf BoneRotations_3
-      [[deprecated]] ::GlobalNamespace::OVRPlugin::Quatf& dyn_BoneRotations_3();
+      [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRPlugin::Quatf& dyn_BoneRotations_3();
       // Get instance field reference: public OVRPlugin/Quatf BoneRotations_4
-      [[deprecated]] ::GlobalNamespace::OVRPlugin::Quatf& dyn_BoneRotations_4();
+      [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRPlugin::Quatf& dyn_BoneRotations_4();
       // Get instance field reference: public OVRPlugin/Quatf BoneRotations_5
-      [[deprecated]] ::GlobalNamespace::OVRPlugin::Quatf& dyn_BoneRotations_5();
+      [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRPlugin::Quatf& dyn_BoneRotations_5();
       // Get instance field reference: public OVRPlugin/Quatf BoneRotations_6
-      [[deprecated]] ::GlobalNamespace::OVRPlugin::Quatf& dyn_BoneRotations_6();
+      [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRPlugin::Quatf& dyn_BoneRotations_6();
       // Get instance field reference: public OVRPlugin/Quatf BoneRotations_7
-      [[deprecated]] ::GlobalNamespace::OVRPlugin::Quatf& dyn_BoneRotations_7();
+      [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRPlugin::Quatf& dyn_BoneRotations_7();
       // Get instance field reference: public OVRPlugin/Quatf BoneRotations_8
-      [[deprecated]] ::GlobalNamespace::OVRPlugin::Quatf& dyn_BoneRotations_8();
+      [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRPlugin::Quatf& dyn_BoneRotations_8();
       // Get instance field reference: public OVRPlugin/Quatf BoneRotations_9
-      [[deprecated]] ::GlobalNamespace::OVRPlugin::Quatf& dyn_BoneRotations_9();
+      [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRPlugin::Quatf& dyn_BoneRotations_9();
       // Get instance field reference: public OVRPlugin/Quatf BoneRotations_10
-      [[deprecated]] ::GlobalNamespace::OVRPlugin::Quatf& dyn_BoneRotations_10();
+      [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRPlugin::Quatf& dyn_BoneRotations_10();
       // Get instance field reference: public OVRPlugin/Quatf BoneRotations_11
-      [[deprecated]] ::GlobalNamespace::OVRPlugin::Quatf& dyn_BoneRotations_11();
+      [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRPlugin::Quatf& dyn_BoneRotations_11();
       // Get instance field reference: public OVRPlugin/Quatf BoneRotations_12
-      [[deprecated]] ::GlobalNamespace::OVRPlugin::Quatf& dyn_BoneRotations_12();
+      [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRPlugin::Quatf& dyn_BoneRotations_12();
       // Get instance field reference: public OVRPlugin/Quatf BoneRotations_13
-      [[deprecated]] ::GlobalNamespace::OVRPlugin::Quatf& dyn_BoneRotations_13();
+      [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRPlugin::Quatf& dyn_BoneRotations_13();
       // Get instance field reference: public OVRPlugin/Quatf BoneRotations_14
-      [[deprecated]] ::GlobalNamespace::OVRPlugin::Quatf& dyn_BoneRotations_14();
+      [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRPlugin::Quatf& dyn_BoneRotations_14();
       // Get instance field reference: public OVRPlugin/Quatf BoneRotations_15
-      [[deprecated]] ::GlobalNamespace::OVRPlugin::Quatf& dyn_BoneRotations_15();
+      [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRPlugin::Quatf& dyn_BoneRotations_15();
       // Get instance field reference: public OVRPlugin/Quatf BoneRotations_16
-      [[deprecated]] ::GlobalNamespace::OVRPlugin::Quatf& dyn_BoneRotations_16();
+      [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRPlugin::Quatf& dyn_BoneRotations_16();
       // Get instance field reference: public OVRPlugin/Quatf BoneRotations_17
-      [[deprecated]] ::GlobalNamespace::OVRPlugin::Quatf& dyn_BoneRotations_17();
+      [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRPlugin::Quatf& dyn_BoneRotations_17();
       // Get instance field reference: public OVRPlugin/Quatf BoneRotations_18
-      [[deprecated]] ::GlobalNamespace::OVRPlugin::Quatf& dyn_BoneRotations_18();
+      [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRPlugin::Quatf& dyn_BoneRotations_18();
       // Get instance field reference: public OVRPlugin/Quatf BoneRotations_19
-      [[deprecated]] ::GlobalNamespace::OVRPlugin::Quatf& dyn_BoneRotations_19();
+      [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRPlugin::Quatf& dyn_BoneRotations_19();
       // Get instance field reference: public OVRPlugin/Quatf BoneRotations_20
-      [[deprecated]] ::GlobalNamespace::OVRPlugin::Quatf& dyn_BoneRotations_20();
+      [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRPlugin::Quatf& dyn_BoneRotations_20();
       // Get instance field reference: public OVRPlugin/Quatf BoneRotations_21
-      [[deprecated]] ::GlobalNamespace::OVRPlugin::Quatf& dyn_BoneRotations_21();
+      [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRPlugin::Quatf& dyn_BoneRotations_21();
       // Get instance field reference: public OVRPlugin/Quatf BoneRotations_22
-      [[deprecated]] ::GlobalNamespace::OVRPlugin::Quatf& dyn_BoneRotations_22();
+      [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRPlugin::Quatf& dyn_BoneRotations_22();
       // Get instance field reference: public OVRPlugin/Quatf BoneRotations_23
-      [[deprecated]] ::GlobalNamespace::OVRPlugin::Quatf& dyn_BoneRotations_23();
+      [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRPlugin::Quatf& dyn_BoneRotations_23();
       // Get instance field reference: public OVRPlugin/HandFingerPinch Pinches
-      [[deprecated]] ::GlobalNamespace::OVRPlugin::HandFingerPinch& dyn_Pinches();
+      [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRPlugin::HandFingerPinch& dyn_Pinches();
       // Get instance field reference: public System.Single PinchStrength_0
-      [[deprecated]] float& dyn_PinchStrength_0();
+      [[deprecated("Use field access instead!")]] float& dyn_PinchStrength_0();
       // Get instance field reference: public System.Single PinchStrength_1
-      [[deprecated]] float& dyn_PinchStrength_1();
+      [[deprecated("Use field access instead!")]] float& dyn_PinchStrength_1();
       // Get instance field reference: public System.Single PinchStrength_2
-      [[deprecated]] float& dyn_PinchStrength_2();
+      [[deprecated("Use field access instead!")]] float& dyn_PinchStrength_2();
       // Get instance field reference: public System.Single PinchStrength_3
-      [[deprecated]] float& dyn_PinchStrength_3();
+      [[deprecated("Use field access instead!")]] float& dyn_PinchStrength_3();
       // Get instance field reference: public System.Single PinchStrength_4
-      [[deprecated]] float& dyn_PinchStrength_4();
+      [[deprecated("Use field access instead!")]] float& dyn_PinchStrength_4();
       // Get instance field reference: public OVRPlugin/Posef PointerPose
-      [[deprecated]] ::GlobalNamespace::OVRPlugin::Posef& dyn_PointerPose();
+      [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRPlugin::Posef& dyn_PointerPose();
       // Get instance field reference: public System.Single HandScale
-      [[deprecated]] float& dyn_HandScale();
+      [[deprecated("Use field access instead!")]] float& dyn_HandScale();
       // Get instance field reference: public OVRPlugin/TrackingConfidence HandConfidence
-      [[deprecated]] ::GlobalNamespace::OVRPlugin::TrackingConfidence& dyn_HandConfidence();
+      [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRPlugin::TrackingConfidence& dyn_HandConfidence();
       // Get instance field reference: public OVRPlugin/TrackingConfidence FingerConfidences_0
-      [[deprecated]] ::GlobalNamespace::OVRPlugin::TrackingConfidence& dyn_FingerConfidences_0();
+      [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRPlugin::TrackingConfidence& dyn_FingerConfidences_0();
       // Get instance field reference: public OVRPlugin/TrackingConfidence FingerConfidences_1
-      [[deprecated]] ::GlobalNamespace::OVRPlugin::TrackingConfidence& dyn_FingerConfidences_1();
+      [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRPlugin::TrackingConfidence& dyn_FingerConfidences_1();
       // Get instance field reference: public OVRPlugin/TrackingConfidence FingerConfidences_2
-      [[deprecated]] ::GlobalNamespace::OVRPlugin::TrackingConfidence& dyn_FingerConfidences_2();
+      [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRPlugin::TrackingConfidence& dyn_FingerConfidences_2();
       // Get instance field reference: public OVRPlugin/TrackingConfidence FingerConfidences_3
-      [[deprecated]] ::GlobalNamespace::OVRPlugin::TrackingConfidence& dyn_FingerConfidences_3();
+      [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRPlugin::TrackingConfidence& dyn_FingerConfidences_3();
       // Get instance field reference: public OVRPlugin/TrackingConfidence FingerConfidences_4
-      [[deprecated]] ::GlobalNamespace::OVRPlugin::TrackingConfidence& dyn_FingerConfidences_4();
+      [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRPlugin::TrackingConfidence& dyn_FingerConfidences_4();
       // Get instance field reference: public System.Double RequestedTimeStamp
-      [[deprecated]] double& dyn_RequestedTimeStamp();
+      [[deprecated("Use field access instead!")]] double& dyn_RequestedTimeStamp();
       // Get instance field reference: public System.Double SampleTimeStamp
-      [[deprecated]] double& dyn_SampleTimeStamp();
+      [[deprecated("Use field access instead!")]] double& dyn_SampleTimeStamp();
     }; // OVRPlugin/HandStateInternal
     #pragma pack(pop)
     static check_size<sizeof(OVRPlugin::HandStateInternal), 504 + sizeof(double)> __GlobalNamespace_OVRPlugin_HandStateInternalSizeCheck;

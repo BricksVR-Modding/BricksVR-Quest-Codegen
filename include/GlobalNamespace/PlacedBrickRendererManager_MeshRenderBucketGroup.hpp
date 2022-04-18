@@ -55,13 +55,13 @@ namespace GlobalNamespace {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: public readonly PlacedBrickRendererManager/MeshRenderBucket Bucket
-    [[deprecated]] ::GlobalNamespace::PlacedBrickRendererManager::MeshRenderBucket*& dyn_Bucket();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::PlacedBrickRendererManager::MeshRenderBucket*& dyn_Bucket();
     // Get instance field reference: public readonly UnityEngine.Matrix4x4[] TransformationMatrices
-    [[deprecated]] ::ArrayW<::UnityEngine::Matrix4x4>& dyn_TransformationMatrices();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Matrix4x4>& dyn_TransformationMatrices();
     // Get instance field reference: public readonly UnityEngine.Vector4[] Colors
-    [[deprecated]] ::ArrayW<::UnityEngine::Vector4>& dyn_Colors();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Vector4>& dyn_Colors();
     // Get instance field reference: private System.Int32 _index
-    [[deprecated]] int& dyn__index();
+    [[deprecated("Use field access instead!")]] int& dyn__index();
     // public System.Int32 get_Count()
     // Offset: 0x217390
     int get_Count();

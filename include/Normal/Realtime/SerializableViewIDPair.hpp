@@ -53,9 +53,9 @@ namespace Normal::Realtime {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Int32 viewID
-    [[deprecated]] int& dyn_viewID();
+    [[deprecated("Use field access instead!")]] int& dyn_viewID();
     // Get instance field reference: public Normal.Realtime.RealtimeView view
-    [[deprecated]] ::Normal::Realtime::RealtimeView*& dyn_view();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::RealtimeView*& dyn_view();
     // public System.Void .ctor(System.UInt32 viewID, Normal.Realtime.RealtimeView view)
     // Offset: 0x540440
     SerializableViewIDPair(uint viewID, ::Normal::Realtime::RealtimeView* view);

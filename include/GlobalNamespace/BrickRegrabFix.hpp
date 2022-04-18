@@ -67,11 +67,11 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.XR.Interaction.Toolkit.XRGrabInteractable _grabInteractable
-    [[deprecated]] ::UnityEngine::XR::Interaction::Toolkit::XRGrabInteractable*& dyn__grabInteractable();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::Interaction::Toolkit::XRGrabInteractable*& dyn__grabInteractable();
     // Get instance field reference: private UnityEngine.XR.Interaction.Toolkit.XRInteractionManager _xrInteractionManager
-    [[deprecated]] ::UnityEngine::XR::Interaction::Toolkit::XRInteractionManager*& dyn__xrInteractionManager();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::Interaction::Toolkit::XRInteractionManager*& dyn__xrInteractionManager();
     // Get instance field reference: private BrickAttachDetector _brickAttachDetector
-    [[deprecated]] ::GlobalNamespace::BrickAttachDetector*& dyn__brickAttachDetector();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::BrickAttachDetector*& dyn__brickAttachDetector();
     // private System.Void Awake()
     // Offset: 0x6F2AE0
     void Awake();
@@ -79,11 +79,6 @@ namespace GlobalNamespace {
     // Offset: 0x4D3750
     // Implemented from: QuickInteractable
     // Base method: System.Void QuickInteractable::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static BrickRegrabFix* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::BrickRegrabFix::.ctor");

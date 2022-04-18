@@ -79,13 +79,13 @@ namespace Steamworks::Data {
     // Set static field: static public System.Int32 _datasize
     static void _set__datasize(int value);
     // Get instance field reference: Steamworks.Result Result
-    [[deprecated]] ::Steamworks::Result& dyn_Result();
+    [[deprecated("Use field access instead!")]] ::Steamworks::Result& dyn_Result();
     // Get instance field reference: System.UInt64 BeaconID
-    [[deprecated]] uint64_t& dyn_BeaconID();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_BeaconID();
     // Get instance field reference: System.UInt64 SteamIDBeaconOwner
-    [[deprecated]] uint64_t& dyn_SteamIDBeaconOwner();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_SteamIDBeaconOwner();
     // Get instance field reference: System.Byte[] ConnectString
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_ConnectString();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_ConnectString();
     // public Steamworks.CallbackType get_CallbackType()
     // Offset: 0x462850
     ::Steamworks::CallbackType get_CallbackType();

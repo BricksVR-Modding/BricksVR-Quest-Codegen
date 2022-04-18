@@ -25,7 +25,6 @@ namespace System::Runtime::Serialization {
 }
 // Forward declaring namespace: System::Text
 namespace System::Text {
-  // Skipping declaration: Encoding because it is already included!
   // Forward declaring type: EncoderNLS
   class EncoderNLS;
   // Forward declaring type: DecoderNLS

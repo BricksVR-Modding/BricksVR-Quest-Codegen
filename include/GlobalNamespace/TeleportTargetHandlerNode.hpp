@@ -51,19 +51,14 @@ namespace GlobalNamespace {
     static_assert(sizeof(::UnityEngine::LayerMask) == 0x4);
     public:
     // Get instance field reference: public System.Single LOSOffset
-    [[deprecated]] float& dyn_LOSOffset();
+    [[deprecated("Use field access instead!")]] float& dyn_LOSOffset();
     // Get instance field reference: public UnityEngine.LayerMask TeleportLayerMask
-    [[deprecated]] ::UnityEngine::LayerMask& dyn_TeleportLayerMask();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::LayerMask& dyn_TeleportLayerMask();
     // public System.Void .ctor()
     // Offset: 0x619700
     // Implemented from: TeleportTargetHandler
     // Base method: System.Void TeleportTargetHandler::.ctor()
     // Base method: System.Void TeleportSupport::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TeleportTargetHandlerNode* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::TeleportTargetHandlerNode::.ctor");

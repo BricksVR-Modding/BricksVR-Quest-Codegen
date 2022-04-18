@@ -43,7 +43,7 @@ namespace System {
       return m_compliant;
     }
     // Get instance field reference: private System.Boolean m_compliant
-    [[deprecated]] bool& dyn_m_compliant();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_compliant();
     // public System.Void .ctor(System.Boolean isCompliant)
     // Offset: 0x573C30
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

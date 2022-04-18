@@ -76,17 +76,17 @@ namespace System::Diagnostics::Tracing {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: readonly System.Collections.Generic.List`1<System.Diagnostics.Tracing.FieldMetadata> fields
-    [[deprecated]] ::System::Collections::Generic::List_1<::System::Diagnostics::Tracing::FieldMetadata*>*& dyn_fields();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::System::Diagnostics::Tracing::FieldMetadata*>*& dyn_fields();
     // Get instance field reference: System.Int16 scratchSize
-    [[deprecated]] int16_t& dyn_scratchSize();
+    [[deprecated("Use field access instead!")]] int16_t& dyn_scratchSize();
     // Get instance field reference: System.SByte dataCount
-    [[deprecated]] int8_t& dyn_dataCount();
+    [[deprecated("Use field access instead!")]] int8_t& dyn_dataCount();
     // Get instance field reference: System.SByte pinCount
-    [[deprecated]] int8_t& dyn_pinCount();
+    [[deprecated("Use field access instead!")]] int8_t& dyn_pinCount();
     // Get instance field reference: private System.Int32 bufferNesting
-    [[deprecated]] int& dyn_bufferNesting();
+    [[deprecated("Use field access instead!")]] int& dyn_bufferNesting();
     // Get instance field reference: private System.Boolean scalar
-    [[deprecated]] bool& dyn_scalar();
+    [[deprecated("Use field access instead!")]] bool& dyn_scalar();
     // public System.Void AddScalar(System.Int32 size)
     // Offset: 0x2E80F0
     void AddScalar(int size);

@@ -81,9 +81,16 @@ namespace GlobalNamespace {
     // Set static field: static private System.Single CooldownTime
     static void _set_CooldownTime(float value);
     // Get instance field reference: private System.Int32 _exceptionsLeftBeforeTimeout
-    [[deprecated]] int& dyn__exceptionsLeftBeforeTimeout();
+    [[deprecated("Use field access instead!")]] int& dyn__exceptionsLeftBeforeTimeout();
     // Get instance field reference: private UnityEngine.Coroutine _cooldownCoroutine
-    [[deprecated]] ::UnityEngine::Coroutine*& dyn__cooldownCoroutine();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Coroutine*& dyn__cooldownCoroutine();
+    // public System.Void .ctor()
+    // Offset: 0x6B44C0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static ExceptionManager* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::ExceptionManager::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<ExceptionManager*, creationType>()));
+    }
     // private System.Void OnEnable()
     // Offset: 0x6B4460
     void OnEnable();
@@ -96,25 +103,16 @@ namespace GlobalNamespace {
     // private System.Collections.IEnumerator EnableReportingCooldown()
     // Offset: 0x6B4280
     ::System::Collections::IEnumerator* EnableReportingCooldown();
-    // public System.Void .ctor()
-    // Offset: 0x6B44C0
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static ExceptionManager* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::ExceptionManager::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<ExceptionManager*, creationType>()));
-    }
   }; // ExceptionManager
   #pragma pack(pop)
   static check_size<sizeof(ExceptionManager), 32 + sizeof(::UnityEngine::Coroutine*)> __GlobalNamespace_ExceptionManagerSizeCheck;
   static_assert(sizeof(ExceptionManager) == 0x28);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::ExceptionManager::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::ExceptionManager::OnEnable
 // Il2CppName: OnEnable
 template<>
@@ -150,7 +148,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::System::C
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::ExceptionManager*), "EnableReportingCooldown", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::ExceptionManager::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

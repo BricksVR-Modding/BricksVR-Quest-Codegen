@@ -108,17 +108,24 @@ namespace System::IO::Compression {
     // Set static field: static private System.String LIBNAME
     static void _set_LIBNAME(::StringW value);
     // Get instance field reference: private System.IO.Compression.DeflateStreamNative/System.IO.Compression.UnmanagedReadOrWrite feeder
-    [[deprecated]] ::System::IO::Compression::DeflateStreamNative::UnmanagedReadOrWrite*& dyn_feeder();
+    [[deprecated("Use field access instead!")]] ::System::IO::Compression::DeflateStreamNative::UnmanagedReadOrWrite*& dyn_feeder();
     // Get instance field reference: private System.IO.Stream base_stream
-    [[deprecated]] ::System::IO::Stream*& dyn_base_stream();
+    [[deprecated("Use field access instead!")]] ::System::IO::Stream*& dyn_base_stream();
     // Get instance field reference: private System.IO.Compression.DeflateStreamNative/System.IO.Compression.SafeDeflateStreamHandle z_stream
-    [[deprecated]] ::System::IO::Compression::DeflateStreamNative::SafeDeflateStreamHandle*& dyn_z_stream();
+    [[deprecated("Use field access instead!")]] ::System::IO::Compression::DeflateStreamNative::SafeDeflateStreamHandle*& dyn_z_stream();
     // Get instance field reference: private System.Runtime.InteropServices.GCHandle data
-    [[deprecated]] ::System::Runtime::InteropServices::GCHandle& dyn_data();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::InteropServices::GCHandle& dyn_data();
     // Get instance field reference: private System.Boolean disposed
-    [[deprecated]] bool& dyn_disposed();
+    [[deprecated("Use field access instead!")]] bool& dyn_disposed();
     // Get instance field reference: private System.Byte[] io_buffer
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_io_buffer();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_io_buffer();
+    // private System.Void .ctor()
+    // Offset: 0x1DD400
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static DeflateStreamNative* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::System::IO::Compression::DeflateStreamNative::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<DeflateStreamNative*, creationType>()));
+    }
     // static public System.IO.Compression.DeflateStreamNative Create(System.IO.Stream compressedStream, System.IO.Compression.CompressionMode mode, System.Boolean gzip)
     // Offset: 0x54E220
     static ::System::IO::Compression::DeflateStreamNative* Create(::System::IO::Stream* compressedStream, ::System::IO::Compression::CompressionMode mode, bool gzip);
@@ -164,15 +171,6 @@ namespace System::IO::Compression {
     // static private System.Int32 WriteZStream(System.IO.Compression.DeflateStreamNative/System.IO.Compression.SafeDeflateStreamHandle stream, System.IntPtr buffer, System.Int32 length)
     // Offset: 0x54EE30
     static int WriteZStream(::System::IO::Compression::DeflateStreamNative::SafeDeflateStreamHandle* stream, ::System::IntPtr buffer, int length);
-    // private System.Void .ctor()
-    // Offset: 0x1DD400
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static DeflateStreamNative* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::System::IO::Compression::DeflateStreamNative::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<DeflateStreamNative*, creationType>()));
-    }
     // protected override System.Void Finalize()
     // Offset: 0x54E490
     // Implemented from: System.Object
@@ -184,6 +182,10 @@ namespace System::IO::Compression {
   static_assert(sizeof(DeflateStreamNative) == 0x38);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: System::IO::Compression::DeflateStreamNative::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::IO::Compression::DeflateStreamNative::Create
 // Il2CppName: Create
 template<>
@@ -336,10 +338,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<int (*)(::S
     return ::il2cpp_utils::FindMethod(classof(System::IO::Compression::DeflateStreamNative*), "WriteZStream", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{stream, buffer, length});
   }
 };
-// Writing MetadataGetter for method: System::IO::Compression::DeflateStreamNative::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: System::IO::Compression::DeflateStreamNative::Finalize
 // Il2CppName: Finalize
 template<>

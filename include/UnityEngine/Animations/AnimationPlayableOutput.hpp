@@ -51,7 +51,7 @@ namespace UnityEngine::Animations {
       return m_Handle;
     }
     // Get instance field reference: private UnityEngine.Playables.PlayableOutputHandle m_Handle
-    [[deprecated]] ::UnityEngine::Playables::PlayableOutputHandle& dyn_m_Handle();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Playables::PlayableOutputHandle& dyn_m_Handle();
   }; // UnityEngine.Animations.AnimationPlayableOutput
   #pragma pack(pop)
   static check_size<sizeof(AnimationPlayableOutput), 0 + sizeof(::UnityEngine::Playables::PlayableOutputHandle)> __UnityEngine_Animations_AnimationPlayableOutputSizeCheck;

@@ -79,15 +79,15 @@ namespace UnityEngine::Windows::Speech {
     static_assert(sizeof(::UnityEngine::Windows::Speech::DictationRecognizer::DictationErrorHandler*) == 0x8);
     public:
     // Get instance field reference: private System.IntPtr m_Recognizer
-    [[deprecated]] ::System::IntPtr& dyn_m_Recognizer();
+    [[deprecated("Use field access instead!")]] ::System::IntPtr& dyn_m_Recognizer();
     // Get instance field reference: private UnityEngine.Windows.Speech.DictationRecognizer/UnityEngine.Windows.Speech.DictationHypothesisDelegate DictationHypothesis
-    [[deprecated]] ::UnityEngine::Windows::Speech::DictationRecognizer::DictationHypothesisDelegate*& dyn_DictationHypothesis();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Windows::Speech::DictationRecognizer::DictationHypothesisDelegate*& dyn_DictationHypothesis();
     // Get instance field reference: private UnityEngine.Windows.Speech.DictationRecognizer/UnityEngine.Windows.Speech.DictationResultDelegate DictationResult
-    [[deprecated]] ::UnityEngine::Windows::Speech::DictationRecognizer::DictationResultDelegate*& dyn_DictationResult();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Windows::Speech::DictationRecognizer::DictationResultDelegate*& dyn_DictationResult();
     // Get instance field reference: private UnityEngine.Windows.Speech.DictationRecognizer/UnityEngine.Windows.Speech.DictationCompletedDelegate DictationComplete
-    [[deprecated]] ::UnityEngine::Windows::Speech::DictationRecognizer::DictationCompletedDelegate*& dyn_DictationComplete();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Windows::Speech::DictationRecognizer::DictationCompletedDelegate*& dyn_DictationComplete();
     // Get instance field reference: private UnityEngine.Windows.Speech.DictationRecognizer/UnityEngine.Windows.Speech.DictationErrorHandler DictationError
-    [[deprecated]] ::UnityEngine::Windows::Speech::DictationRecognizer::DictationErrorHandler*& dyn_DictationError();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Windows::Speech::DictationRecognizer::DictationErrorHandler*& dyn_DictationError();
     // private System.Void DictationRecognizer_InvokeHypothesisGeneratedEvent(System.String keyword)
     // Offset: 0xA38DD0
     void DictationRecognizer_InvokeHypothesisGeneratedEvent(::StringW keyword);

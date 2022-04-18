@@ -88,20 +88,27 @@ namespace OculusSampleFramework {
     // Set static field: static private OculusSampleFramework.InteractableToolsInputRouter _instance
     static void _set__instance(::OculusSampleFramework::InteractableToolsInputRouter* value);
     // Get instance field reference: private System.Boolean _leftPinch
-    [[deprecated]] bool& dyn__leftPinch();
+    [[deprecated("Use field access instead!")]] bool& dyn__leftPinch();
     // Get instance field reference: private System.Boolean _rightPinch
-    [[deprecated]] bool& dyn__rightPinch();
+    [[deprecated("Use field access instead!")]] bool& dyn__rightPinch();
     // Get instance field reference: private System.Collections.Generic.HashSet`1<OculusSampleFramework.InteractableTool> _leftHandNearTools
-    [[deprecated]] ::System::Collections::Generic::HashSet_1<::OculusSampleFramework::InteractableTool*>*& dyn__leftHandNearTools();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::HashSet_1<::OculusSampleFramework::InteractableTool*>*& dyn__leftHandNearTools();
     // Get instance field reference: private System.Collections.Generic.HashSet`1<OculusSampleFramework.InteractableTool> _leftHandFarTools
-    [[deprecated]] ::System::Collections::Generic::HashSet_1<::OculusSampleFramework::InteractableTool*>*& dyn__leftHandFarTools();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::HashSet_1<::OculusSampleFramework::InteractableTool*>*& dyn__leftHandFarTools();
     // Get instance field reference: private System.Collections.Generic.HashSet`1<OculusSampleFramework.InteractableTool> _rightHandNearTools
-    [[deprecated]] ::System::Collections::Generic::HashSet_1<::OculusSampleFramework::InteractableTool*>*& dyn__rightHandNearTools();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::HashSet_1<::OculusSampleFramework::InteractableTool*>*& dyn__rightHandNearTools();
     // Get instance field reference: private System.Collections.Generic.HashSet`1<OculusSampleFramework.InteractableTool> _rightHandFarTools
-    [[deprecated]] ::System::Collections::Generic::HashSet_1<::OculusSampleFramework::InteractableTool*>*& dyn__rightHandFarTools();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::HashSet_1<::OculusSampleFramework::InteractableTool*>*& dyn__rightHandFarTools();
     // static public OculusSampleFramework.InteractableToolsInputRouter get_Instance()
     // Offset: 0x612330
     static ::OculusSampleFramework::InteractableToolsInputRouter* get_Instance();
+    // public System.Void .ctor()
+    // Offset: 0x612240
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static InteractableToolsInputRouter* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::OculusSampleFramework::InteractableToolsInputRouter::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<InteractableToolsInputRouter*, creationType>()));
+    }
     // public System.Void RegisterInteractableTool(OculusSampleFramework.InteractableTool interactableTool)
     // Offset: 0x611940
     void RegisterInteractableTool(::OculusSampleFramework::InteractableTool* interactableTool);
@@ -120,19 +127,6 @@ namespace OculusSampleFramework {
     // private System.Void ToggleToolsEnableState(System.Collections.Generic.HashSet`1<OculusSampleFramework.InteractableTool> tools, System.Boolean enableState)
     // Offset: 0x6119E0
     void ToggleToolsEnableState(::System::Collections::Generic::HashSet_1<::OculusSampleFramework::InteractableTool*>* tools, bool enableState);
-    // public System.Void .ctor()
-    // Offset: 0x612240
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static InteractableToolsInputRouter* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::OculusSampleFramework::InteractableToolsInputRouter::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<InteractableToolsInputRouter*, creationType>()));
-    }
   }; // OculusSampleFramework.InteractableToolsInputRouter
   #pragma pack(pop)
   static check_size<sizeof(InteractableToolsInputRouter), 56 + sizeof(::System::Collections::Generic::HashSet_1<::OculusSampleFramework::InteractableTool*>*)> __OculusSampleFramework_InteractableToolsInputRouterSizeCheck;
@@ -147,6 +141,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::OculusSam
     return ::il2cpp_utils::FindMethod(classof(OculusSampleFramework::InteractableToolsInputRouter*), "get_Instance", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: OculusSampleFramework::InteractableToolsInputRouter::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: OculusSampleFramework::InteractableToolsInputRouter::RegisterInteractableTool
 // Il2CppName: RegisterInteractableTool
 template<>
@@ -203,7 +201,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Oculu
     return ::il2cpp_utils::FindMethod(classof(OculusSampleFramework::InteractableToolsInputRouter*), "ToggleToolsEnableState", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{tools, enableState});
   }
 };
-// Writing MetadataGetter for method: OculusSampleFramework::InteractableToolsInputRouter::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

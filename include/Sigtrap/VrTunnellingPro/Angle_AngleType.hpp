@@ -57,7 +57,7 @@ namespace Sigtrap::VrTunnellingPro {
     // Set static field: static public Sigtrap.VrTunnellingPro.Angle/Sigtrap.VrTunnellingPro.AngleType REFLEX
     static void _set_REFLEX(::Sigtrap::VrTunnellingPro::Angle::AngleType value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // Sigtrap.VrTunnellingPro.Angle/Sigtrap.VrTunnellingPro.AngleType
   #pragma pack(pop)
   static check_size<sizeof(Angle::AngleType), 0 + sizeof(int)> __Sigtrap_VrTunnellingPro_Angle_AngleTypeSizeCheck;

@@ -46,7 +46,7 @@ namespace System::Runtime::Remoting::Messaging {
       return logicalCallID;
     }
     // Get instance field reference: private System.String _logicalCallID
-    [[deprecated]] ::StringW& dyn__logicalCallID();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__logicalCallID();
     // System.String get_LogicalCallID()
     // Offset: 0x1E1920
     ::StringW get_LogicalCallID();

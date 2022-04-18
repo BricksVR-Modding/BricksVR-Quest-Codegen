@@ -50,7 +50,7 @@ namespace System::Threading::Tasks {
       return m_antecedent;
     }
     // Get instance field reference: private System.Threading.Tasks.Task m_antecedent
-    [[deprecated]] ::System::Threading::Tasks::Task*& dyn_m_antecedent();
+    [[deprecated("Use field access instead!")]] ::System::Threading::Tasks::Task*& dyn_m_antecedent();
     // public System.Void .ctor(System.Threading.Tasks.Task antecedent, System.Delegate action, System.Object state, System.Threading.Tasks.TaskCreationOptions creationOptions, System.Threading.Tasks.InternalTaskOptions internalOptions, ref System.Threading.StackCrawlMark stackMark)
     // Offset: 0x343AE0
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>

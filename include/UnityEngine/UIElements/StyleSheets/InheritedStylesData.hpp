@@ -91,34 +91,32 @@ namespace UnityEngine::UIElements::StyleSheets {
     // Set static field: static public readonly UnityEngine.UIElements.StyleSheets.InheritedStylesData none
     static void _set_none(::UnityEngine::UIElements::StyleSheets::InheritedStylesData* value);
     // Get instance field reference: public UnityEngine.UIElements.StyleColor color
-    [[deprecated]] ::UnityEngine::UIElements::StyleColor& dyn_color();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::StyleColor& dyn_color();
     // Get instance field reference: public UnityEngine.UIElements.StyleFont font
-    [[deprecated]] ::UnityEngine::UIElements::StyleFont& dyn_font();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::StyleFont& dyn_font();
     // Get instance field reference: public UnityEngine.UIElements.StyleLength fontSize
-    [[deprecated]] ::UnityEngine::UIElements::StyleLength& dyn_fontSize();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::StyleLength& dyn_fontSize();
     // Get instance field reference: public UnityEngine.UIElements.StyleInt unityFontStyle
-    [[deprecated]] ::UnityEngine::UIElements::StyleInt& dyn_unityFontStyle();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::StyleInt& dyn_unityFontStyle();
     // Get instance field reference: public UnityEngine.UIElements.StyleInt unityTextAlign
-    [[deprecated]] ::UnityEngine::UIElements::StyleInt& dyn_unityTextAlign();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::StyleInt& dyn_unityTextAlign();
     // Get instance field reference: public UnityEngine.UIElements.StyleInt visibility
-    [[deprecated]] ::UnityEngine::UIElements::StyleInt& dyn_visibility();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::StyleInt& dyn_visibility();
     // Get instance field reference: public UnityEngine.UIElements.StyleInt whiteSpace
-    [[deprecated]] ::UnityEngine::UIElements::StyleInt& dyn_whiteSpace();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::StyleInt& dyn_whiteSpace();
+    // public System.Void .ctor()
+    // Offset: 0x2A5420
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static InheritedStylesData* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::UIElements::StyleSheets::InheritedStylesData::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<InheritedStylesData*, creationType>()));
+    }
     // static private System.Void .cctor()
     // Offset: 0x2A52B0
     static void _cctor();
     // public System.Boolean Equals(UnityEngine.UIElements.StyleSheets.InheritedStylesData other)
     // Offset: 0x2A4D60
     bool Equals(::UnityEngine::UIElements::StyleSheets::InheritedStylesData* other);
-    // public System.Void .ctor()
-    // Offset: 0x2A5420
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static InheritedStylesData* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::UIElements::StyleSheets::InheritedStylesData::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<InheritedStylesData*, creationType>()));
-    }
     // public override System.Boolean Equals(System.Object obj)
     // Offset: 0x2A4A50
     // Implemented from: System.Object
@@ -135,6 +133,10 @@ namespace UnityEngine::UIElements::StyleSheets {
   static_assert(sizeof(InheritedStylesData) == 0x80);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: UnityEngine::UIElements::StyleSheets::InheritedStylesData::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::UIElements::StyleSheets::InheritedStylesData::_cctor
 // Il2CppName: .cctor
 template<>
@@ -152,10 +154,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::UIElements::StyleSheets::InheritedStylesData*), "Equals", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{other});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::UIElements::StyleSheets::InheritedStylesData::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::UIElements::StyleSheets::InheritedStylesData::Equals
 // Il2CppName: Equals
 template<>

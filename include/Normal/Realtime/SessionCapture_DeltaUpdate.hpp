@@ -67,17 +67,17 @@ namespace Normal::Realtime {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: public System.Double timestamp
-    [[deprecated]] double& dyn_timestamp();
+    [[deprecated("Use field access instead!")]] double& dyn_timestamp();
     // Get instance field reference: public System.Int32 sender
-    [[deprecated]] int& dyn_sender();
+    [[deprecated("Use field access instead!")]] int& dyn_sender();
     // Get instance field reference: public System.Byte[] data
-    [[deprecated]] ::ArrayW<uint8_t>& dyn_data();
+    [[deprecated("Use field access instead!")]] ::ArrayW<uint8_t>& dyn_data();
     // Get instance field reference: public System.Boolean reliable
-    [[deprecated]] bool& dyn_reliable();
+    [[deprecated("Use field access instead!")]] bool& dyn_reliable();
     // Get instance field reference: public System.UInt32 updateID
-    [[deprecated]] uint& dyn_updateID();
+    [[deprecated("Use field access instead!")]] uint& dyn_updateID();
     // Get instance field reference: public System.Boolean incoming
-    [[deprecated]] bool& dyn_incoming();
+    [[deprecated("Use field access instead!")]] bool& dyn_incoming();
     // public System.Boolean get_unreliable()
     // Offset: 0x88C190
     bool get_unreliable();
@@ -86,8 +86,6 @@ namespace Normal::Realtime {
     bool get_outgoing();
     // public System.Void .ctor()
     // Offset: 0x1DD400
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static SessionCapture::DeltaUpdate* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::SessionCapture::DeltaUpdate::.ctor");

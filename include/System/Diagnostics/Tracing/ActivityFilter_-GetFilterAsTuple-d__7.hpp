@@ -99,19 +99,19 @@ namespace System::Diagnostics::Tracing {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<::System::Tuple_2<int, int>*>*>(this);
     }
     // Get instance field reference: private System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: private System.Tuple`2<System.Int32,System.Int32> <>2__current
-    [[deprecated]] ::System::Tuple_2<int, int>*& dyn_$$2__current();
+    [[deprecated("Use field access instead!")]] ::System::Tuple_2<int, int>*& dyn_$$2__current();
     // Get instance field reference: private System.Int32 <>l__initialThreadId
-    [[deprecated]] int& dyn_$$l__initialThreadId();
+    [[deprecated("Use field access instead!")]] int& dyn_$$l__initialThreadId();
     // Get instance field reference: public System.Diagnostics.Tracing.ActivityFilter <>4__this
-    [[deprecated]] ::System::Diagnostics::Tracing::ActivityFilter*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::ActivityFilter*& dyn_$$4__this();
     // Get instance field reference: private System.Guid sourceGuid
-    [[deprecated]] ::System::Guid& dyn_sourceGuid();
+    [[deprecated("Use field access instead!")]] ::System::Guid& dyn_sourceGuid();
     // Get instance field reference: public System.Guid <>3__sourceGuid
-    [[deprecated]] ::System::Guid& dyn_$$3__sourceGuid();
+    [[deprecated("Use field access instead!")]] ::System::Guid& dyn_$$3__sourceGuid();
     // Get instance field reference: private System.Diagnostics.Tracing.ActivityFilter <af>5__1
-    [[deprecated]] ::System::Diagnostics::Tracing::ActivityFilter*& dyn_$af$5__1();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::ActivityFilter*& dyn_$af$5__1();
     // private System.Tuple`2<System.Int32,System.Int32> System.Collections.Generic.IEnumerator<System.Tuple<System.Int32,System.Int32>>.get_Current()
     // Offset: 0x1E1520
     ::System::Tuple_2<int, int>* System_Collections_Generic_IEnumerator$System_Tuple$System_Int32_System_Int32$$_get_Current();

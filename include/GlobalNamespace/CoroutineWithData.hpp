@@ -66,11 +66,11 @@ namespace GlobalNamespace {
     static_assert(sizeof(::System::Collections::IEnumerator*) == 0x8);
     public:
     // Get instance field reference: private UnityEngine.Coroutine <coroutine>k__BackingField
-    [[deprecated]] ::UnityEngine::Coroutine*& dyn_$coroutine$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Coroutine*& dyn_$coroutine$k__BackingField();
     // Get instance field reference: public System.Object result
-    [[deprecated]] ::Il2CppObject*& dyn_result();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_result();
     // Get instance field reference: private System.Collections.IEnumerator target
-    [[deprecated]] ::System::Collections::IEnumerator*& dyn_target();
+    [[deprecated("Use field access instead!")]] ::System::Collections::IEnumerator*& dyn_target();
     // public UnityEngine.Coroutine get_coroutine()
     // Offset: 0x1E1920
     ::UnityEngine::Coroutine* get_coroutine();

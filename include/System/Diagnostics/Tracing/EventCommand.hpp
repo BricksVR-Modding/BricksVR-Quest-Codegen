@@ -66,7 +66,7 @@ namespace System::Diagnostics::Tracing {
     // Set static field: static public System.Diagnostics.Tracing.EventCommand Disable
     static void _set_Disable(::System::Diagnostics::Tracing::EventCommand value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // System.Diagnostics.Tracing.EventCommand
   #pragma pack(pop)
   static check_size<sizeof(EventCommand), 0 + sizeof(int)> __System_Diagnostics_Tracing_EventCommandSizeCheck;

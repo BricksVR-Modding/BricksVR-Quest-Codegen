@@ -104,23 +104,23 @@ namespace OculusSampleFramework {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<::Il2CppObject*>*>(this);
     }
     // Get instance field reference: private System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: private System.Object <>2__current
-    [[deprecated]] ::Il2CppObject*& dyn_$$2__current();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_$$2__current();
     // Get instance field reference: public UnityEngine.Transform[] toolObjects
-    [[deprecated]] ::ArrayW<::UnityEngine::Transform*>& dyn_toolObjects();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Transform*>& dyn_toolObjects();
     // Get instance field reference: public System.Boolean isRightHand
-    [[deprecated]] bool& dyn_isRightHand();
+    [[deprecated("Use field access instead!")]] bool& dyn_isRightHand();
     // Get instance field reference: public OculusSampleFramework.InteractableToolsCreator <>4__this
-    [[deprecated]] ::OculusSampleFramework::InteractableToolsCreator*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::OculusSampleFramework::InteractableToolsCreator*& dyn_$$4__this();
     // Get instance field reference: private OculusSampleFramework.HandsManager <handsManagerObj>5__2
-    [[deprecated]] ::OculusSampleFramework::HandsManager*& dyn_$handsManagerObj$5__2();
+    [[deprecated("Use field access instead!")]] ::OculusSampleFramework::HandsManager*& dyn_$handsManagerObj$5__2();
     // Get instance field reference: private System.Collections.Generic.HashSet`1/System.Collections.Generic.Enumerator<UnityEngine.Transform> <>7__wrap2
-    [[deprecated]] typename ::System::Collections::Generic::HashSet_1<::UnityEngine::Transform*>::Enumerator& dyn_$$7__wrap2();
+    [[deprecated("Use field access instead!")]] typename ::System::Collections::Generic::HashSet_1<::UnityEngine::Transform*>::Enumerator& dyn_$$7__wrap2();
     // Get instance field reference: private UnityEngine.Transform <toolObject>5__4
-    [[deprecated]] ::UnityEngine::Transform*& dyn_$toolObject$5__4();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_$toolObject$5__4();
     // Get instance field reference: private OVRSkeleton <handSkeletonToAttachTo>5__5
-    [[deprecated]] ::GlobalNamespace::OVRSkeleton*& dyn_$handSkeletonToAttachTo$5__5();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRSkeleton*& dyn_$handSkeletonToAttachTo$5__5();
     // private System.Object System.Collections.Generic.IEnumerator<System.Object>.get_Current()
     // Offset: 0x1E1520
     ::Il2CppObject* System_Collections_Generic_IEnumerator$System_Object$_get_Current();

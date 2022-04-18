@@ -54,7 +54,7 @@ namespace UnityEngine::UIElements {
     // Set static field: static public UnityEngine.UIElements.LengthUnit Percent
     static void _set_Percent(::UnityEngine::UIElements::LengthUnit value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // UnityEngine.UIElements.LengthUnit
   #pragma pack(pop)
   static check_size<sizeof(LengthUnit), 0 + sizeof(int)> __UnityEngine_UIElements_LengthUnitSizeCheck;

@@ -52,21 +52,19 @@ namespace GlobalNamespace {
     // static private System.Void .cctor()
     // Offset: 0x6F7EF0
     static void _cctor();
+    // public System.Void .ctor()
+    // Offset: 0x1DD400
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static BrickAttachDetector::$$c* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::BrickAttachDetector::$$c::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<BrickAttachDetector::$$c*, creationType>()));
+    }
     // System.Boolean <GetFemaleConnectorsWithConnections>b__32_0(UnityEngine.GameObject c)
     // Offset: 0x6F7AC0
     bool $GetFemaleConnectorsWithConnections$b__32_0(::UnityEngine::GameObject* c);
     // System.Boolean <GetMaleConnectorsWithConnections>b__33_0(UnityEngine.GameObject c)
     // Offset: 0x6F7B60
     bool $GetMaleConnectorsWithConnections$b__33_0(::UnityEngine::GameObject* c);
-    // public System.Void .ctor()
-    // Offset: 0x1DD400
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static BrickAttachDetector::$$c* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::BrickAttachDetector::$$c::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<BrickAttachDetector::$$c*, creationType>()));
-    }
   }; // BrickAttachDetector/<>c
   #pragma pack(pop)
 }
@@ -79,6 +77,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::BrickAttachDetector::$$c*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: GlobalNamespace::BrickAttachDetector::$$c::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::BrickAttachDetector::$$c::$GetFemaleConnectorsWithConnections$b__32_0
 // Il2CppName: <GetFemaleConnectorsWithConnections>b__32_0
 template<>
@@ -97,7 +99,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::BrickAttachDetector::$$c*), "<GetMaleConnectorsWithConnections>b__33_0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{c});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::BrickAttachDetector::$$c::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

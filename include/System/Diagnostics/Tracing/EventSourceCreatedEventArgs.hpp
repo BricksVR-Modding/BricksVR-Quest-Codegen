@@ -48,7 +48,7 @@ namespace System::Diagnostics::Tracing {
       return EventSource;
     }
     // Get instance field reference: private System.Diagnostics.Tracing.EventSource <EventSource>k__BackingField
-    [[deprecated]] ::System::Diagnostics::Tracing::EventSource*& dyn_$EventSource$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::EventSource*& dyn_$EventSource$k__BackingField();
     // System.Void set_EventSource(System.Diagnostics.Tracing.EventSource value)
     // Offset: 0x269100
     void set_EventSource(::System::Diagnostics::Tracing::EventSource* value);

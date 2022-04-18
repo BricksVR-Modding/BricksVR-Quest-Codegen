@@ -59,31 +59,33 @@ namespace Normal::Realtime {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: public Normal.Realtime.Room <>4__this
-    [[deprecated]] ::Normal::Realtime::Room*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::Room*& dyn_$$4__this();
     // Get instance field reference: public Normal.Realtime.Native.Matcher matcher
-    [[deprecated]] ::Normal::Realtime::Native::Matcher*& dyn_matcher();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::Native::Matcher*& dyn_matcher();
     // Get instance field reference: public System.String connectToRoomRequest
-    [[deprecated]] ::StringW& dyn_connectToRoomRequest();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_connectToRoomRequest();
     // Get instance field reference: public System.Boolean shouldConnectAgain
-    [[deprecated]] bool& dyn_shouldConnectAgain();
-    // System.Void <ConnectToServer_Coroutine>b__0()
-    // Offset: 0x8A1F90
-    void $ConnectToServer_Coroutine$b__0();
+    [[deprecated("Use field access instead!")]] bool& dyn_shouldConnectAgain();
     // public System.Void .ctor()
     // Offset: 0x1DD400
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Room::$$c__DisplayClass87_0* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::Room::$$c__DisplayClass87_0::.ctor");
       return THROW_UNLESS((::il2cpp_utils::New<Room::$$c__DisplayClass87_0*, creationType>()));
     }
+    // System.Void <ConnectToServer_Coroutine>b__0()
+    // Offset: 0x8A1F90
+    void $ConnectToServer_Coroutine$b__0();
   }; // Normal.Realtime.Room/Normal.Realtime.<>c__DisplayClass87_0
   #pragma pack(pop)
   static check_size<sizeof(Room::$$c__DisplayClass87_0), 40 + sizeof(bool)> __Normal_Realtime_Room_$$c__DisplayClass87_0SizeCheck;
   static_assert(sizeof(Room::$$c__DisplayClass87_0) == 0x29);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Normal::Realtime::Room::$$c__DisplayClass87_0::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Normal::Realtime::Room::$$c__DisplayClass87_0::$ConnectToServer_Coroutine$b__0
 // Il2CppName: <ConnectToServer_Coroutine>b__0
 template<>
@@ -92,7 +94,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Norma
     return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::Room::$$c__DisplayClass87_0*), "<ConnectToServer_Coroutine>b__0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: Normal::Realtime::Room::$$c__DisplayClass87_0::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

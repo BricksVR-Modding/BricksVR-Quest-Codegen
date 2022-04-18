@@ -155,35 +155,35 @@ namespace GlobalNamespace {
     static_assert(sizeof(::Normal::Realtime::UnreliableProperty_1<float>*) == 0x8);
     public:
     // Get instance field reference: private System.Int32 _handPoseId
-    [[deprecated]] int& dyn__handPoseId();
+    [[deprecated("Use field access instead!")]] int& dyn__handPoseId();
     // Get instance field reference: private System.Single _flex
-    [[deprecated]] float& dyn__flex();
+    [[deprecated("Use field access instead!")]] float& dyn__flex();
     // Get instance field reference: private System.Single _point
-    [[deprecated]] float& dyn__point();
+    [[deprecated("Use field access instead!")]] float& dyn__point();
     // Get instance field reference: private System.Single _thumbsUp
-    [[deprecated]] float& dyn__thumbsUp();
+    [[deprecated("Use field access instead!")]] float& dyn__thumbsUp();
     // Get instance field reference: private System.Single _pinch
-    [[deprecated]] float& dyn__pinch();
+    [[deprecated("Use field access instead!")]] float& dyn__pinch();
     // Get instance field reference: private HandGestureModel/PropertyChangedHandler`1<System.Int32> handPoseIdDidChange
-    [[deprecated]] ::GlobalNamespace::HandGestureModel::PropertyChangedHandler_1<int>*& dyn_handPoseIdDidChange();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::HandGestureModel::PropertyChangedHandler_1<int>*& dyn_handPoseIdDidChange();
     // Get instance field reference: private HandGestureModel/PropertyChangedHandler`1<System.Single> flexDidChange
-    [[deprecated]] ::GlobalNamespace::HandGestureModel::PropertyChangedHandler_1<float>*& dyn_flexDidChange();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::HandGestureModel::PropertyChangedHandler_1<float>*& dyn_flexDidChange();
     // Get instance field reference: private HandGestureModel/PropertyChangedHandler`1<System.Single> pointDidChange
-    [[deprecated]] ::GlobalNamespace::HandGestureModel::PropertyChangedHandler_1<float>*& dyn_pointDidChange();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::HandGestureModel::PropertyChangedHandler_1<float>*& dyn_pointDidChange();
     // Get instance field reference: private HandGestureModel/PropertyChangedHandler`1<System.Single> thumbsUpDidChange
-    [[deprecated]] ::GlobalNamespace::HandGestureModel::PropertyChangedHandler_1<float>*& dyn_thumbsUpDidChange();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::HandGestureModel::PropertyChangedHandler_1<float>*& dyn_thumbsUpDidChange();
     // Get instance field reference: private HandGestureModel/PropertyChangedHandler`1<System.Single> pinchDidChange
-    [[deprecated]] ::GlobalNamespace::HandGestureModel::PropertyChangedHandler_1<float>*& dyn_pinchDidChange();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::HandGestureModel::PropertyChangedHandler_1<float>*& dyn_pinchDidChange();
     // Get instance field reference: private Normal.Realtime.UnreliableProperty`1<System.Int32> _handPoseIdProperty
-    [[deprecated]] ::Normal::Realtime::UnreliableProperty_1<int>*& dyn__handPoseIdProperty();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::UnreliableProperty_1<int>*& dyn__handPoseIdProperty();
     // Get instance field reference: private Normal.Realtime.UnreliableProperty`1<System.Single> _flexProperty
-    [[deprecated]] ::Normal::Realtime::UnreliableProperty_1<float>*& dyn__flexProperty();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::UnreliableProperty_1<float>*& dyn__flexProperty();
     // Get instance field reference: private Normal.Realtime.UnreliableProperty`1<System.Single> _pointProperty
-    [[deprecated]] ::Normal::Realtime::UnreliableProperty_1<float>*& dyn__pointProperty();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::UnreliableProperty_1<float>*& dyn__pointProperty();
     // Get instance field reference: private Normal.Realtime.UnreliableProperty`1<System.Single> _thumbsUpProperty
-    [[deprecated]] ::Normal::Realtime::UnreliableProperty_1<float>*& dyn__thumbsUpProperty();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::UnreliableProperty_1<float>*& dyn__thumbsUpProperty();
     // Get instance field reference: private Normal.Realtime.UnreliableProperty`1<System.Single> _pinchProperty
-    [[deprecated]] ::Normal::Realtime::UnreliableProperty_1<float>*& dyn__pinchProperty();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::UnreliableProperty_1<float>*& dyn__pinchProperty();
     // public System.Int32 get_handPoseId()
     // Offset: 0x6B8540
     int get_handPoseId();
@@ -244,6 +244,13 @@ namespace GlobalNamespace {
     // public System.Void remove_pinchDidChange(HandGestureModel/PropertyChangedHandler`1<System.Single> value)
     // Offset: 0x6B87B0
     void remove_pinchDidChange(::GlobalNamespace::HandGestureModel::PropertyChangedHandler_1<float>* value);
+    // public System.Void .ctor()
+    // Offset: 0x6B8030
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static HandGestureModel* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::HandGestureModel::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<HandGestureModel*, creationType>()));
+    }
     // private System.Void FireHandPoseIdDidChange(System.Int32 value)
     // Offset: 0x6B74F0
     void FireHandPoseIdDidChange(int value);
@@ -262,15 +269,6 @@ namespace GlobalNamespace {
     // private System.Void UpdateBackingFields()
     // Offset: 0x6B7C00
     void UpdateBackingFields();
-    // public System.Void .ctor()
-    // Offset: 0x6B8030
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static HandGestureModel* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::HandGestureModel::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<HandGestureModel*, creationType>()));
-    }
     // protected override System.Int32 WriteLength(Normal.Realtime.Serialization.StreamContext context)
     // Offset: 0x6B7D10
     // Implemented from: Normal.Realtime.RealtimeModel
@@ -467,6 +465,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::HandGestureModel*), "remove_pinchDidChange", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: GlobalNamespace::HandGestureModel::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::HandGestureModel::FireHandPoseIdDidChange
 // Il2CppName: FireHandPoseIdDidChange
 template<>
@@ -520,10 +522,6 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::HandGestureModel*), "UpdateBackingFields", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::HandGestureModel::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::HandGestureModel::WriteLength
 // Il2CppName: WriteLength
 template<>

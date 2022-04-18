@@ -64,11 +64,11 @@ namespace UnityEngine::XR::Interaction::Toolkit::UI {
     static_assert(sizeof(::UnityEngine::LayerMask) == 0x4);
     public:
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.Vector3> <rayPoints>k__BackingField
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::Vector3>*& dyn_$rayPoints$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::Vector3>*& dyn_$rayPoints$k__BackingField();
     // Get instance field reference: private System.Int32 <rayHitIndex>k__BackingField
-    [[deprecated]] int& dyn_$rayHitIndex$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$rayHitIndex$k__BackingField();
     // Get instance field reference: private UnityEngine.LayerMask <layerMask>k__BackingField
-    [[deprecated]] ::UnityEngine::LayerMask& dyn_$layerMask$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::LayerMask& dyn_$layerMask$k__BackingField();
     // public System.Collections.Generic.List`1<UnityEngine.Vector3> get_rayPoints()
     // Offset: 0x2793E0
     ::System::Collections::Generic::List_1<::UnityEngine::Vector3>* get_rayPoints();
@@ -89,9 +89,6 @@ namespace UnityEngine::XR::Interaction::Toolkit::UI {
     void set_layerMask(::UnityEngine::LayerMask value);
     // public System.Void .ctor(UnityEngine.EventSystems.EventSystem eventSystem)
     // Offset: 0x2F9CA0
-    // Implemented from: UnityEngine.EventSystems.PointerEventData
-    // Base method: System.Void PointerEventData::.ctor(UnityEngine.EventSystems.EventSystem eventSystem)
-    // Base method: System.Void BaseEventData::.ctor(UnityEngine.EventSystems.EventSystem eventSystem)
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TrackedDeviceEventData* New_ctor(::UnityEngine::EventSystems::EventSystem* eventSystem) {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::XR::Interaction::Toolkit::UI::TrackedDeviceEventData::.ctor");

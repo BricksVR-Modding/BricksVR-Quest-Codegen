@@ -75,9 +75,9 @@ namespace UnityEngine::UIElements {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: public UnityEngine.UIElements.VisualElement m_SubTreeRoot
-      [[deprecated]] ::UnityEngine::UIElements::VisualElement*& dyn_m_SubTreeRoot();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::VisualElement*& dyn_m_SubTreeRoot();
       // Get instance field reference: public UnityEngine.UIElements.Focusable m_FocusedElement
-      [[deprecated]] ::UnityEngine::UIElements::Focusable*& dyn_m_FocusedElement();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::Focusable*& dyn_m_FocusedElement();
     }; // UnityEngine.UIElements.FocusController/UnityEngine.UIElements.FocusedElement
     #pragma pack(pop)
     static check_size<sizeof(FocusController::FocusedElement), 8 + sizeof(::UnityEngine::UIElements::Focusable*)> __UnityEngine_UIElements_FocusController_FocusedElementSizeCheck;
@@ -105,11 +105,11 @@ namespace UnityEngine::UIElements {
     static_assert(sizeof(int) == 0x4);
     public:
     // Get instance field reference: private readonly UnityEngine.UIElements.IFocusRing <focusRing>k__BackingField
-    [[deprecated]] ::UnityEngine::UIElements::IFocusRing*& dyn_$focusRing$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::IFocusRing*& dyn_$focusRing$k__BackingField();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.UIElements.FocusController/UnityEngine.UIElements.FocusedElement> m_FocusedElements
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::UIElements::FocusController::FocusedElement>*& dyn_m_FocusedElements();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::UIElements::FocusController::FocusedElement>*& dyn_m_FocusedElements();
     // Get instance field reference: private System.Int32 <imguiKeyboardControl>k__BackingField
-    [[deprecated]] int& dyn_$imguiKeyboardControl$k__BackingField();
+    [[deprecated("Use field access instead!")]] int& dyn_$imguiKeyboardControl$k__BackingField();
     // private UnityEngine.UIElements.IFocusRing get_focusRing()
     // Offset: 0x1E1920
     ::UnityEngine::UIElements::IFocusRing* get_focusRing();

@@ -80,15 +80,15 @@ namespace Steamworks::Data {
     // Set static field: static public System.Int32 _datasize
     static void _set__datasize(int value);
     // Get instance field reference: System.UInt32 AppID
-    [[deprecated]] uint& dyn_AppID();
+    [[deprecated("Use field access instead!")]] uint& dyn_AppID();
     // Get instance field reference: System.UInt32 GameServerIP
-    [[deprecated]] uint& dyn_GameServerIP();
+    [[deprecated("Use field access instead!")]] uint& dyn_GameServerIP();
     // Get instance field reference: System.UInt16 GameServerPort
-    [[deprecated]] uint16_t& dyn_GameServerPort();
+    [[deprecated("Use field access instead!")]] uint16_t& dyn_GameServerPort();
     // Get instance field reference: System.UInt16 Secure
-    [[deprecated]] uint16_t& dyn_Secure();
+    [[deprecated("Use field access instead!")]] uint16_t& dyn_Secure();
     // Get instance field reference: System.UInt32 Reason
-    [[deprecated]] uint& dyn_Reason();
+    [[deprecated("Use field access instead!")]] uint& dyn_Reason();
     // public Steamworks.CallbackType get_CallbackType()
     // Offset: 0x45CCF0
     ::Steamworks::CallbackType get_CallbackType();

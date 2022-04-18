@@ -129,31 +129,38 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public UnityEngine.GameObject head
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_head();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_head();
     // Get instance field reference: public KeepPlayerOutOfWalls keepPlayerOutOfWalls
-    [[deprecated]] ::GlobalNamespace::KeepPlayerOutOfWalls*& dyn_keepPlayerOutOfWalls();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::KeepPlayerOutOfWalls*& dyn_keepPlayerOutOfWalls();
     // Get instance field reference: private UnityEngine.Vector2 _currentLeftJoystickDirection
-    [[deprecated]] ::UnityEngine::Vector2& dyn__currentLeftJoystickDirection();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn__currentLeftJoystickDirection();
     // Get instance field reference: private UnityEngine.Vector2 _currentRightJoystickDirection
-    [[deprecated]] ::UnityEngine::Vector2& dyn__currentRightJoystickDirection();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Vector2& dyn__currentRightJoystickDirection();
     // Get instance field reference: private System.Single minY
-    [[deprecated]] float& dyn_minY();
+    [[deprecated("Use field access instead!")]] float& dyn_minY();
     // Get instance field reference: public System.Single lateralMovementMultiplier
-    [[deprecated]] float& dyn_lateralMovementMultiplier();
+    [[deprecated("Use field access instead!")]] float& dyn_lateralMovementMultiplier();
     // Get instance field reference: public System.Single verticalMovementMultiplier
-    [[deprecated]] float& dyn_verticalMovementMultiplier();
+    [[deprecated("Use field access instead!")]] float& dyn_verticalMovementMultiplier();
     // Get instance field reference: public System.Single joystickDeadzone
-    [[deprecated]] float& dyn_joystickDeadzone();
+    [[deprecated("Use field access instead!")]] float& dyn_joystickDeadzone();
     // Get instance field reference: private System.Single _movementSpeedSetting
-    [[deprecated]] float& dyn__movementSpeedSetting();
+    [[deprecated("Use field access instead!")]] float& dyn__movementSpeedSetting();
     // Get instance field reference: private UnityEngine.Transform _headTransform
-    [[deprecated]] ::UnityEngine::Transform*& dyn__headTransform();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn__headTransform();
     // Get instance field reference: public System.Int32 lateralMovementIndex
-    [[deprecated]] int& dyn_lateralMovementIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_lateralMovementIndex();
     // Get instance field reference: public System.Int32 verticalMovementIndex
-    [[deprecated]] int& dyn_verticalMovementIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_verticalMovementIndex();
     // Get instance field reference: public System.Single playerScaleMultiplier
-    [[deprecated]] float& dyn_playerScaleMultiplier();
+    [[deprecated("Use field access instead!")]] float& dyn_playerScaleMultiplier();
+    // public System.Void .ctor()
+    // Offset: 0x6BB890
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static JoystickLocomotion* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::JoystickLocomotion::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<JoystickLocomotion*, creationType>()));
+    }
     // private System.Void Start()
     // Offset: 0x6BB730
     void Start();
@@ -166,25 +173,16 @@ namespace GlobalNamespace {
     // private System.Void MovePlayer()
     // Offset: 0x6BB1F0
     void MovePlayer();
-    // public System.Void .ctor()
-    // Offset: 0x6BB890
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static JoystickLocomotion* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::JoystickLocomotion::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<JoystickLocomotion*, creationType>()));
-    }
   }; // JoystickLocomotion
   #pragma pack(pop)
   static check_size<sizeof(JoystickLocomotion), 96 + sizeof(float)> __GlobalNamespace_JoystickLocomotionSizeCheck;
   static_assert(sizeof(JoystickLocomotion) == 0x64);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::JoystickLocomotion::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::JoystickLocomotion::Start
 // Il2CppName: Start
 template<>
@@ -218,7 +216,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::JoystickLocomotion*), "MovePlayer", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::JoystickLocomotion::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

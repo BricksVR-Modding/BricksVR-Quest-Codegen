@@ -93,15 +93,15 @@ namespace UnityEngine::XR::Interaction::Toolkit {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private UnityEngine.Color m_TintColor
-    [[deprecated]] ::UnityEngine::Color& dyn_m_TintColor();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_m_TintColor();
     // Get instance field reference: private System.Boolean m_TintOnHover
-    [[deprecated]] bool& dyn_m_TintOnHover();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_TintOnHover();
     // Get instance field reference: private System.Boolean m_TintOnSelection
-    [[deprecated]] bool& dyn_m_TintOnSelection();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_TintOnSelection();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.Renderer> m_TintRenderers
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::Renderer*>*& dyn_m_TintRenderers();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::Renderer*>*& dyn_m_TintRenderers();
     // Get instance field reference: private UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable m_Interactable
-    [[deprecated]] ::UnityEngine::XR::Interaction::Toolkit::XRBaseInteractable*& dyn_m_Interactable();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::Interaction::Toolkit::XRBaseInteractable*& dyn_m_Interactable();
     // public UnityEngine.Color get_tintColor()
     // Offset: 0x22A4C0
     ::UnityEngine::Color get_tintColor();
@@ -126,6 +126,13 @@ namespace UnityEngine::XR::Interaction::Toolkit {
     // public System.Void set_tintRenderers(System.Collections.Generic.List`1<UnityEngine.Renderer> value)
     // Offset: 0x2322D0
     void set_tintRenderers(::System::Collections::Generic::List_1<::UnityEngine::Renderer*>* value);
+    // public System.Void .ctor()
+    // Offset: 0x606800
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static XRTintInteractableVisual* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::XR::Interaction::Toolkit::XRTintInteractableVisual::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<XRTintInteractableVisual*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0x606070
     void Awake();
@@ -147,19 +154,6 @@ namespace UnityEngine::XR::Interaction::Toolkit {
     // private System.Void OnSelectExit(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor interactor)
     // Offset: 0x606560
     void OnSelectExit(::UnityEngine::XR::Interaction::Toolkit::XRBaseInteractor* interactor);
-    // public System.Void .ctor()
-    // Offset: 0x606800
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static XRTintInteractableVisual* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::XR::Interaction::Toolkit::XRTintInteractableVisual::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<XRTintInteractableVisual*, creationType>()));
-    }
   }; // UnityEngine.XR.Interaction.Toolkit.XRTintInteractableVisual
   #pragma pack(pop)
   static check_size<sizeof(XRTintInteractableVisual), 56 + sizeof(::UnityEngine::XR::Interaction::Toolkit::XRBaseInteractable*)> __UnityEngine_XR_Interaction_Toolkit_XRTintInteractableVisualSizeCheck;
@@ -234,6 +228,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::XR::Interaction::Toolkit::XRTintInteractableVisual*), "set_tintRenderers", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::XR::Interaction::Toolkit::XRTintInteractableVisual::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::XR::Interaction::Toolkit::XRTintInteractableVisual::Awake
 // Il2CppName: Awake
 template<>
@@ -295,7 +293,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::XR::Interaction::Toolkit::XRTintInteractableVisual*), "OnSelectExit", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{interactor});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::XR::Interaction::Toolkit::XRTintInteractableVisual::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

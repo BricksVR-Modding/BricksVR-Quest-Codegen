@@ -94,19 +94,19 @@ namespace Steamworks::Data {
     // Set static field: static public System.Int32 _datasize
     static void _set__datasize(int value);
     // Get instance field reference: System.UInt32 UnBrowserHandle
-    [[deprecated]] uint& dyn_UnBrowserHandle();
+    [[deprecated("Use field access instead!")]] uint& dyn_UnBrowserHandle();
     // Get instance field reference: System.String PchURL
-    [[deprecated]] ::StringW& dyn_PchURL();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_PchURL();
     // Get instance field reference: System.UInt32 UnX
-    [[deprecated]] uint& dyn_UnX();
+    [[deprecated("Use field access instead!")]] uint& dyn_UnX();
     // Get instance field reference: System.UInt32 UnY
-    [[deprecated]] uint& dyn_UnY();
+    [[deprecated("Use field access instead!")]] uint& dyn_UnY();
     // Get instance field reference: System.UInt32 UnWide
-    [[deprecated]] uint& dyn_UnWide();
+    [[deprecated("Use field access instead!")]] uint& dyn_UnWide();
     // Get instance field reference: System.UInt32 UnTall
-    [[deprecated]] uint& dyn_UnTall();
+    [[deprecated("Use field access instead!")]] uint& dyn_UnTall();
     // Get instance field reference: System.UInt32 UnNewWindow_BrowserHandle_IGNORE
-    [[deprecated]] uint& dyn_UnNewWindow_BrowserHandle_IGNORE();
+    [[deprecated("Use field access instead!")]] uint& dyn_UnNewWindow_BrowserHandle_IGNORE();
     // public Steamworks.CallbackType get_CallbackType()
     // Offset: 0x4619C0
     ::Steamworks::CallbackType get_CallbackType();

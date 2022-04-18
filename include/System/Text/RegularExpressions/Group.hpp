@@ -58,11 +58,11 @@ namespace System::Text::RegularExpressions {
     // Set static field: static System.Text.RegularExpressions.Group _emptygroup
     static void _set__emptygroup(::System::Text::RegularExpressions::Group* value);
     // Get instance field reference: System.Int32[] _caps
-    [[deprecated]] ::ArrayW<int>& dyn__caps();
+    [[deprecated("Use field access instead!")]] ::ArrayW<int>& dyn__caps();
     // Get instance field reference: System.Int32 _capcount
-    [[deprecated]] int& dyn__capcount();
+    [[deprecated("Use field access instead!")]] int& dyn__capcount();
     // Get instance field reference: System.String _name
-    [[deprecated]] ::StringW& dyn__name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn__name();
     // public System.Boolean get_Success()
     // Offset: 0x400400
     bool get_Success();
@@ -80,7 +80,6 @@ namespace System::Text::RegularExpressions {
     // Offset: 0x4002E0
     // Implemented from: System.Text.RegularExpressions.Capture
     // Base method: System.Void Capture::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static Group* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::System::Text::RegularExpressions::Group::.ctor");

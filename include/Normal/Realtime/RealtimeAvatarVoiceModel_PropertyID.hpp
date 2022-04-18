@@ -51,7 +51,7 @@ namespace Normal::Realtime {
     // Set static field: static public Normal.Realtime.RealtimeAvatarVoiceModel/Normal.Realtime.PropertyID StreamID
     static void _set_StreamID(::Normal::Realtime::RealtimeAvatarVoiceModel::PropertyID value);
     // Get instance field reference: public System.UInt32 value__
-    [[deprecated]] uint& dyn_value__();
+    [[deprecated("Use field access instead!")]] uint& dyn_value__();
   }; // Normal.Realtime.RealtimeAvatarVoiceModel/Normal.Realtime.PropertyID
   #pragma pack(pop)
   static check_size<sizeof(RealtimeAvatarVoiceModel::PropertyID), 0 + sizeof(uint)> __Normal_Realtime_RealtimeAvatarVoiceModel_PropertyIDSizeCheck;

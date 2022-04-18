@@ -43,7 +43,7 @@ namespace Normal::Realtime::Native {
       return name;
     }
     // Get instance field reference: public readonly System.String name
-    [[deprecated]] ::StringW& dyn_name();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_name();
     // public System.Void .ctor(System.String name)
     // Offset: 0x2F6BE0
     // ABORTED: conflicts with another method.  Region(::StringW name);

@@ -76,13 +76,13 @@ namespace Steamworks::Data {
     // Set static field: static public System.Int32 _datasize
     static void _set__datasize(int value);
     // Get instance field reference: System.UInt32 Request
-    [[deprecated]] uint& dyn_Request();
+    [[deprecated("Use field access instead!")]] uint& dyn_Request();
     // Get instance field reference: System.UInt64 ContextValue
-    [[deprecated]] uint64_t& dyn_ContextValue();
+    [[deprecated("Use field access instead!")]] uint64_t& dyn_ContextValue();
     // Get instance field reference: System.UInt32 COffset
-    [[deprecated]] uint& dyn_COffset();
+    [[deprecated("Use field access instead!")]] uint& dyn_COffset();
     // Get instance field reference: System.UInt32 CBytesReceived
-    [[deprecated]] uint& dyn_CBytesReceived();
+    [[deprecated("Use field access instead!")]] uint& dyn_CBytesReceived();
     // public Steamworks.CallbackType get_CallbackType()
     // Offset: 0x462150
     ::Steamworks::CallbackType get_CallbackType();

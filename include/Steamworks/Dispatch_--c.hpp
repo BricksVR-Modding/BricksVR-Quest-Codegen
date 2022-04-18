@@ -69,6 +69,13 @@ namespace Steamworks {
     // static private System.Void .cctor()
     // Offset: 0x5C97E0
     static void _cctor();
+    // public System.Void .ctor()
+    // Offset: 0x1DD400
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static Dispatch::$$c* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Steamworks::Dispatch::$$c::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<Dispatch::$$c*, creationType>()));
+    }
     // System.Int32 <CallbackToString>b__20_0(System.Reflection.FieldInfo x)
     // Offset: 0x5C7B90
     int $CallbackToString$b__20_0(::System::Reflection::FieldInfo* x);
@@ -84,15 +91,6 @@ namespace Steamworks {
     // Steamworks.Dispatch/Steamworks.ResultCallback <ShutdownClient>b__31_2(System.Collections.Generic.KeyValuePair`2<System.UInt64,Steamworks.Dispatch/Steamworks.ResultCallback> x)
     // Offset: 0x5C9720
     ::Steamworks::Dispatch::ResultCallback $ShutdownClient$b__31_2(::System::Collections::Generic::KeyValuePair_2<uint64_t, ::Steamworks::Dispatch::ResultCallback> x);
-    // public System.Void .ctor()
-    // Offset: 0x1DD400
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static Dispatch::$$c* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Steamworks::Dispatch::$$c::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<Dispatch::$$c*, creationType>()));
-    }
   }; // Steamworks.Dispatch/Steamworks.<>c
   #pragma pack(pop)
 }
@@ -105,6 +103,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(Steamworks::Dispatch::$$c*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: Steamworks::Dispatch::$$c::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Steamworks::Dispatch::$$c::$CallbackToString$b__20_0
 // Il2CppName: <CallbackToString>b__20_0
 template<>
@@ -150,7 +152,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<::Steamwork
     return ::il2cpp_utils::FindMethod(classof(Steamworks::Dispatch::$$c*), "<ShutdownClient>b__31_2", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{x});
   }
 };
-// Writing MetadataGetter for method: Steamworks::Dispatch::$$c::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

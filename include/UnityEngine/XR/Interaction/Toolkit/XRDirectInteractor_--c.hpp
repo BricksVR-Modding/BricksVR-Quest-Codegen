@@ -60,21 +60,19 @@ namespace UnityEngine::XR::Interaction::Toolkit {
     // static private System.Void .cctor()
     // Offset: 0x2FC450
     static void _cctor();
+    // public System.Void .ctor()
+    // Offset: 0x1DD400
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static XRDirectInteractor::$$c* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::XR::Interaction::Toolkit::XRDirectInteractor::$$c::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<XRDirectInteractor::$$c*, creationType>()));
+    }
     // System.Boolean <Awake>b__6_0(UnityEngine.Collider x)
     // Offset: 0x2FC3D0
     bool $Awake$b__6_0(::UnityEngine::Collider* x);
     // System.Boolean <GetValidTargets>b__10_0(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable t)
     // Offset: 0x2FC3F0
     bool $GetValidTargets$b__10_0(::UnityEngine::XR::Interaction::Toolkit::XRBaseInteractable* t);
-    // public System.Void .ctor()
-    // Offset: 0x1DD400
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static XRDirectInteractor::$$c* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::XR::Interaction::Toolkit::XRDirectInteractor::$$c::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<XRDirectInteractor::$$c*, creationType>()));
-    }
   }; // UnityEngine.XR.Interaction.Toolkit.XRDirectInteractor/UnityEngine.XR.Interaction.Toolkit.<>c
   #pragma pack(pop)
 }
@@ -87,6 +85,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::XR::Interaction::Toolkit::XRDirectInteractor::$$c*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
+// Writing MetadataGetter for method: UnityEngine::XR::Interaction::Toolkit::XRDirectInteractor::$$c::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: UnityEngine::XR::Interaction::Toolkit::XRDirectInteractor::$$c::$Awake$b__6_0
 // Il2CppName: <Awake>b__6_0
 template<>
@@ -105,7 +107,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Unity
     return ::il2cpp_utils::FindMethod(classof(UnityEngine::XR::Interaction::Toolkit::XRDirectInteractor::$$c*), "<GetValidTargets>b__10_0", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{t});
   }
 };
-// Writing MetadataGetter for method: UnityEngine::XR::Interaction::Toolkit::XRDirectInteractor::$$c::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -18,7 +18,6 @@
 namespace System::Security::Cryptography {
   // Forward declaring type: SHA1Internal
   class SHA1Internal;
-  // Skipping declaration: HashAlgorithm because it is already included!
 }
 // Completed forward declares
 // Type namespace: System.Security.Cryptography
@@ -53,7 +52,7 @@ namespace System::Security::Cryptography {
       return sha;
     }
     // Get instance field reference: private System.Security.Cryptography.SHA1Internal sha
-    [[deprecated]] ::System::Security::Cryptography::SHA1Internal*& dyn_sha();
+    [[deprecated("Use field access instead!")]] ::System::Security::Cryptography::SHA1Internal*& dyn_sha();
     // public System.Void .ctor()
     // Offset: 0x5236C0
     // Implemented from: System.Security.Cryptography.SHA1

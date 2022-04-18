@@ -13,17 +13,12 @@
 #include "beatsaber-hook/shared/utils/typedefs-string.hpp"
 // Completed includes
 // Begin forward declares
-// Forward declaring namespace: System
-namespace System {
-  // Skipping declaration: Type because it is already included!
-}
 // Forward declaring namespace: System::Reflection
 namespace System::Reflection {
   // Forward declaring type: Assembly
   class Assembly;
   // Forward declaring type: Module
   class Module;
-  // Skipping declaration: MemberInfo because it is already included!
   // Forward declaring type: TypeAttributes
   struct TypeAttributes;
   // Forward declaring type: ConstructorInfo

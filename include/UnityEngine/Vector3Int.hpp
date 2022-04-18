@@ -86,11 +86,11 @@ namespace UnityEngine {
     // Set static field: static private readonly UnityEngine.Vector3Int s_Right
     static void _set_s_Right(::UnityEngine::Vector3Int value);
     // Get instance field reference: private System.Int32 m_X
-    [[deprecated]] int& dyn_m_X();
+    [[deprecated("Use field access instead!")]] int& dyn_m_X();
     // Get instance field reference: private System.Int32 m_Y
-    [[deprecated]] int& dyn_m_Y();
+    [[deprecated("Use field access instead!")]] int& dyn_m_Y();
     // Get instance field reference: private System.Int32 m_Z
-    [[deprecated]] int& dyn_m_Z();
+    [[deprecated("Use field access instead!")]] int& dyn_m_Z();
     // public System.Int32 get_x()
     // Offset: 0x2AC700
     int get_x();

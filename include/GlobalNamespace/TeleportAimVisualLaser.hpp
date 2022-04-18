@@ -88,17 +88,17 @@ namespace GlobalNamespace {
     static_assert(sizeof(::ArrayW<::UnityEngine::Vector3>) == 0x8);
     public:
     // Get instance field reference: public UnityEngine.LineRenderer LaserPrefab
-    [[deprecated]] ::UnityEngine::LineRenderer*& dyn_LaserPrefab();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::LineRenderer*& dyn_LaserPrefab();
     // Get instance field reference: private readonly System.Action _enterAimStateAction
-    [[deprecated]] ::System::Action*& dyn__enterAimStateAction();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn__enterAimStateAction();
     // Get instance field reference: private readonly System.Action _exitAimStateAction
-    [[deprecated]] ::System::Action*& dyn__exitAimStateAction();
+    [[deprecated("Use field access instead!")]] ::System::Action*& dyn__exitAimStateAction();
     // Get instance field reference: private readonly System.Action`1<LocomotionTeleport/AimData> _updateAimDataAction
-    [[deprecated]] ::System::Action_1<::GlobalNamespace::LocomotionTeleport::AimData*>*& dyn__updateAimDataAction();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::GlobalNamespace::LocomotionTeleport::AimData*>*& dyn__updateAimDataAction();
     // Get instance field reference: private UnityEngine.LineRenderer _lineRenderer
-    [[deprecated]] ::UnityEngine::LineRenderer*& dyn__lineRenderer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::LineRenderer*& dyn__lineRenderer();
     // Get instance field reference: private UnityEngine.Vector3[] _linePoints
-    [[deprecated]] ::ArrayW<::UnityEngine::Vector3>& dyn__linePoints();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Vector3>& dyn__linePoints();
     // private System.Void EnterAimState()
     // Offset: 0x616810
     void EnterAimState();
@@ -115,11 +115,6 @@ namespace GlobalNamespace {
     // Offset: 0x616A00
     // Implemented from: TeleportSupport
     // Base method: System.Void TeleportSupport::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TeleportAimVisualLaser* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::TeleportAimVisualLaser::.ctor");

@@ -69,7 +69,7 @@ namespace Normal::Realtime {
     // Set static field: static public Normal.Realtime.RealtimeAvatarModel/Normal.Realtime.PropertyID RightHandActive
     static void _set_RightHandActive(::Normal::Realtime::RealtimeAvatarModel::PropertyID value);
     // Get instance field reference: public System.UInt32 value__
-    [[deprecated]] uint& dyn_value__();
+    [[deprecated("Use field access instead!")]] uint& dyn_value__();
   }; // Normal.Realtime.RealtimeAvatarModel/Normal.Realtime.PropertyID
   #pragma pack(pop)
   static check_size<sizeof(RealtimeAvatarModel::PropertyID), 0 + sizeof(uint)> __Normal_Realtime_RealtimeAvatarModel_PropertyIDSizeCheck;

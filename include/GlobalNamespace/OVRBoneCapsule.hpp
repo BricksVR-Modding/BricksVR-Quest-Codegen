@@ -58,11 +58,11 @@ namespace GlobalNamespace {
     static_assert(sizeof(::UnityEngine::CapsuleCollider*) == 0x8);
     public:
     // Get instance field reference: private System.Int16 <BoneIndex>k__BackingField
-    [[deprecated]] int16_t& dyn_$BoneIndex$k__BackingField();
+    [[deprecated("Use field access instead!")]] int16_t& dyn_$BoneIndex$k__BackingField();
     // Get instance field reference: private UnityEngine.Rigidbody <CapsuleRigidbody>k__BackingField
-    [[deprecated]] ::UnityEngine::Rigidbody*& dyn_$CapsuleRigidbody$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Rigidbody*& dyn_$CapsuleRigidbody$k__BackingField();
     // Get instance field reference: private UnityEngine.CapsuleCollider <CapsuleCollider>k__BackingField
-    [[deprecated]] ::UnityEngine::CapsuleCollider*& dyn_$CapsuleCollider$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::CapsuleCollider*& dyn_$CapsuleCollider$k__BackingField();
     // public System.Int16 get_BoneIndex()
     // Offset: 0x22CE70
     int16_t get_BoneIndex();

@@ -17,18 +17,16 @@
 // Forward declaring namespace: AdvancedColorPicker
 namespace AdvancedColorPicker {
   // Skipping declaration: ColorType because it is already included!
-  // Skipping declaration: GraphicalColorComponent because it is already included!
-}
-// Forward declaring namespace: UnityEngine::UI
-namespace UnityEngine::UI {
-  // Skipping declaration: Graphic because it is already included!
-  // Forward declaring type: VertexHelper
-  class VertexHelper;
 }
 // Forward declaring namespace: UnityEngine
 namespace UnityEngine {
   // Forward declaring type: Texture
   class Texture;
+}
+// Forward declaring namespace: UnityEngine::UI
+namespace UnityEngine::UI {
+  // Forward declaring type: VertexHelper
+  class VertexHelper;
 }
 // Completed forward declares
 // Type namespace: AdvancedColorPicker
@@ -72,11 +70,11 @@ namespace AdvancedColorPicker {
     static_assert(sizeof(::ArrayW<::ArrayW<::UnityEngine::Color32>>) == 0x8);
     public:
     // Get instance field reference: private System.Int32 xSize
-    [[deprecated]] int& dyn_xSize();
+    [[deprecated("Use field access instead!")]] int& dyn_xSize();
     // Get instance field reference: private System.Int32 ySize
-    [[deprecated]] int& dyn_ySize();
+    [[deprecated("Use field access instead!")]] int& dyn_ySize();
     // Get instance field reference: private UnityEngine.Color32[][] colors
-    [[deprecated]] ::ArrayW<::ArrayW<::UnityEngine::Color32>>& dyn_colors();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::ArrayW<::UnityEngine::Color32>>& dyn_colors();
     // protected System.Boolean get_InverseX()
     // Offset: 0x28A560
     bool get_InverseX();
@@ -105,14 +103,6 @@ namespace AdvancedColorPicker {
     // Implemented from: AdvancedColorPicker.GraphicalColorTypeComponent
     // Base method: System.Void GraphicalColorTypeComponent::.ctor()
     // Base method: System.Void GraphicalColorComponent::.ctor()
-    // Base method: System.Void MaskableGraphic::.ctor()
-    // Base method: System.Void Graphic::.ctor()
-    // Base method: System.Void UIBehaviour::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static GradientBackground2D* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::AdvancedColorPicker::GradientBackground2D::.ctor");

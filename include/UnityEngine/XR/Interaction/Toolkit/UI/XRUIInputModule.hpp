@@ -35,11 +35,6 @@ namespace System::Collections::Generic {
   template<typename T>
   class List_1;
 }
-// Forward declaring namespace: UnityEngine::EventSystems
-namespace UnityEngine::EventSystems {
-  // Skipping declaration: UIBehaviour because it is already included!
-  // Skipping declaration: BaseInputModule because it is already included!
-}
 // Completed forward declares
 // Type namespace: UnityEngine.XR.Interaction.Toolkit.UI
 namespace UnityEngine::XR::Interaction::Toolkit::UI {
@@ -89,9 +84,9 @@ namespace UnityEngine::XR::Interaction::Toolkit::UI {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: public UnityEngine.XR.Interaction.Toolkit.UI.IUIInteractable interactable
-      [[deprecated]] ::UnityEngine::XR::Interaction::Toolkit::UI::IUIInteractable*& dyn_interactable();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::XR::Interaction::Toolkit::UI::IUIInteractable*& dyn_interactable();
       // Get instance field reference: public UnityEngine.XR.Interaction.Toolkit.UI.TrackedDeviceModel model
-      [[deprecated]] ::UnityEngine::XR::Interaction::Toolkit::UI::TrackedDeviceModel& dyn_model();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::XR::Interaction::Toolkit::UI::TrackedDeviceModel& dyn_model();
       // public System.Void .ctor(UnityEngine.XR.Interaction.Toolkit.UI.IUIInteractable interactable, System.Int32 deviceIndex)
       // Offset: 0x2F86A0
       RegisteredInteractable(::UnityEngine::XR::Interaction::Toolkit::UI::IUIInteractable* interactable, int deviceIndex);
@@ -135,11 +130,11 @@ namespace UnityEngine::XR::Interaction::Toolkit::UI {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: public System.Boolean isValid
-      [[deprecated]] bool& dyn_isValid();
+      [[deprecated("Use field access instead!")]] bool& dyn_isValid();
       // Get instance field reference: public System.Int32 touchId
-      [[deprecated]] int& dyn_touchId();
+      [[deprecated("Use field access instead!")]] int& dyn_touchId();
       // Get instance field reference: public UnityEngine.XR.Interaction.Toolkit.UI.TouchModel model
-      [[deprecated]] ::UnityEngine::XR::Interaction::Toolkit::UI::TouchModel& dyn_model();
+      [[deprecated("Use field access instead!")]] ::UnityEngine::XR::Interaction::Toolkit::UI::TouchModel& dyn_model();
       // public System.Void .ctor(UnityEngine.Touch touch, System.Int32 deviceIndex)
       // Offset: 0x2F8770
       RegisteredTouch(::UnityEngine::Touch touch, int deviceIndex);
@@ -212,21 +207,21 @@ namespace UnityEngine::XR::Interaction::Toolkit::UI {
     // Set static field: static private System.Single k_DefaultMaxTrackedDeviceRaycastDistance
     static void _set_k_DefaultMaxTrackedDeviceRaycastDistance(float value);
     // Get instance field reference: private System.Single m_MaxTrackedDeviceRaycastDistance
-    [[deprecated]] float& dyn_m_MaxTrackedDeviceRaycastDistance();
+    [[deprecated("Use field access instead!")]] float& dyn_m_MaxTrackedDeviceRaycastDistance();
     // Get instance field reference: private System.Boolean m_EnableXRInput
-    [[deprecated]] bool& dyn_m_EnableXRInput();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_EnableXRInput();
     // Get instance field reference: private System.Boolean m_EnableMouseInput
-    [[deprecated]] bool& dyn_m_EnableMouseInput();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_EnableMouseInput();
     // Get instance field reference: private System.Boolean m_EnableTouchInput
-    [[deprecated]] bool& dyn_m_EnableTouchInput();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_EnableTouchInput();
     // Get instance field reference: private UnityEngine.XR.Interaction.Toolkit.UI.MouseModel m_Mouse
-    [[deprecated]] ::UnityEngine::XR::Interaction::Toolkit::UI::MouseModel& dyn_m_Mouse();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::Interaction::Toolkit::UI::MouseModel& dyn_m_Mouse();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.XR.Interaction.Toolkit.UI.XRUIInputModule/UnityEngine.XR.Interaction.Toolkit.UI.RegisteredTouch> m_RegisteredTouches
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::XR::Interaction::Toolkit::UI::XRUIInputModule::RegisteredTouch>*& dyn_m_RegisteredTouches();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::XR::Interaction::Toolkit::UI::XRUIInputModule::RegisteredTouch>*& dyn_m_RegisteredTouches();
     // Get instance field reference: private System.Int32 m_RollingInteractableIndex
-    [[deprecated]] int& dyn_m_RollingInteractableIndex();
+    [[deprecated("Use field access instead!")]] int& dyn_m_RollingInteractableIndex();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.XR.Interaction.Toolkit.UI.XRUIInputModule/UnityEngine.XR.Interaction.Toolkit.UI.RegisteredInteractable> m_RegisteredInteractables
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::XR::Interaction::Toolkit::UI::XRUIInputModule::RegisteredInteractable>*& dyn_m_RegisteredInteractables();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::XR::Interaction::Toolkit::UI::XRUIInputModule::RegisteredInteractable>*& dyn_m_RegisteredInteractables();
     // public System.Single get_maxRaycastDistance()
     // Offset: 0x309680
     float get_maxRaycastDistance();
@@ -255,13 +250,6 @@ namespace UnityEngine::XR::Interaction::Toolkit::UI {
     // Offset: 0x309630
     // Implemented from: UnityEngine.XR.Interaction.Toolkit.UI.UIInputModule
     // Base method: System.Void UIInputModule::.ctor()
-    // Base method: System.Void BaseInputModule::.ctor()
-    // Base method: System.Void UIBehaviour::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XRUIInputModule* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::XR::Interaction::Toolkit::UI::XRUIInputModule::.ctor");

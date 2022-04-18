@@ -111,9 +111,9 @@ namespace System::Diagnostics::Tracing {
         return *reinterpret_cast<::System::ValueType*>(this);
       }
       // Get instance field reference: System.Int32 sessionIdBit
-      [[deprecated]] int& dyn_sessionIdBit();
+      [[deprecated("Use field access instead!")]] int& dyn_sessionIdBit();
       // Get instance field reference: System.Int32 etwSessionId
-      [[deprecated]] int& dyn_etwSessionId();
+      [[deprecated("Use field access instead!")]] int& dyn_etwSessionId();
       // System.Void .ctor(System.Int32 sessionIdBit_, System.Int32 etwSessionId_)
       // Offset: 0x229080
       // ABORTED: conflicts with another method.  SessionInfo(int sessionIdBit_, int etwSessionId_);
@@ -182,7 +182,7 @@ namespace System::Diagnostics::Tracing {
       // Set static field: static public System.Diagnostics.Tracing.EventProvider/System.Diagnostics.Tracing.WriteEventErrorCode Other
       static void _set_Other(::System::Diagnostics::Tracing::EventProvider::WriteEventErrorCode value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // System.Diagnostics.Tracing.EventProvider/System.Diagnostics.Tracing.WriteEventErrorCode
     #pragma pack(pop)
     static check_size<sizeof(EventProvider::WriteEventErrorCode), 0 + sizeof(int)> __System_Diagnostics_Tracing_EventProvider_WriteEventErrorCodeSizeCheck;
@@ -272,25 +272,25 @@ namespace System::Diagnostics::Tracing {
     // Set static field: static private System.Int32[] nibblebits
     static void _set_nibblebits(::ArrayW<int> value);
     // Get instance field reference: private Microsoft.Win32.UnsafeNativeMethods/Microsoft.Win32.ManifestEtw/Microsoft.Win32.EtwEnableCallback m_etwCallback
-    [[deprecated]] ::Microsoft::Win32::UnsafeNativeMethods_ManifestEtw::EtwEnableCallback*& dyn_m_etwCallback();
+    [[deprecated("Use field access instead!")]] ::Microsoft::Win32::UnsafeNativeMethods_ManifestEtw::EtwEnableCallback*& dyn_m_etwCallback();
     // Get instance field reference: private System.Runtime.InteropServices.GCHandle m_thisGCHandle
-    [[deprecated]] ::System::Runtime::InteropServices::GCHandle& dyn_m_thisGCHandle();
+    [[deprecated("Use field access instead!")]] ::System::Runtime::InteropServices::GCHandle& dyn_m_thisGCHandle();
     // Get instance field reference: private System.Int64 m_regHandle
-    [[deprecated]] int64_t& dyn_m_regHandle();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_m_regHandle();
     // Get instance field reference: private System.Byte m_level
-    [[deprecated]] uint8_t& dyn_m_level();
+    [[deprecated("Use field access instead!")]] uint8_t& dyn_m_level();
     // Get instance field reference: private System.Int64 m_anyKeywordMask
-    [[deprecated]] int64_t& dyn_m_anyKeywordMask();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_m_anyKeywordMask();
     // Get instance field reference: private System.Int64 m_allKeywordMask
-    [[deprecated]] int64_t& dyn_m_allKeywordMask();
+    [[deprecated("Use field access instead!")]] int64_t& dyn_m_allKeywordMask();
     // Get instance field reference: private System.Collections.Generic.List`1<System.Diagnostics.Tracing.EventProvider/System.Diagnostics.Tracing.SessionInfo> m_liveSessions
-    [[deprecated]] ::System::Collections::Generic::List_1<::System::Diagnostics::Tracing::EventProvider::SessionInfo>*& dyn_m_liveSessions();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::System::Diagnostics::Tracing::EventProvider::SessionInfo>*& dyn_m_liveSessions();
     // Get instance field reference: private System.Boolean m_enabled
-    [[deprecated]] bool& dyn_m_enabled();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_enabled();
     // Get instance field reference: private System.Guid m_providerId
-    [[deprecated]] ::System::Guid& dyn_m_providerId();
+    [[deprecated("Use field access instead!")]] ::System::Guid& dyn_m_providerId();
     // Get instance field reference: System.Boolean m_disposed
-    [[deprecated]] bool& dyn_m_disposed();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_disposed();
     // protected System.Diagnostics.Tracing.EventLevel get_Level()
     // Offset: 0x21B7D0
     ::System::Diagnostics::Tracing::EventLevel get_Level();

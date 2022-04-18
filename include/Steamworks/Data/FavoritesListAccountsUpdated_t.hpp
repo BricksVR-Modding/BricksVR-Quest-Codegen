@@ -62,7 +62,7 @@ namespace Steamworks::Data {
     // Set static field: static public System.Int32 _datasize
     static void _set__datasize(int value);
     // Get instance field reference: Steamworks.Result Result
-    [[deprecated]] ::Steamworks::Result& dyn_Result();
+    [[deprecated("Use field access instead!")]] ::Steamworks::Result& dyn_Result();
     // public Steamworks.CallbackType get_CallbackType()
     // Offset: 0x45F5C0
     ::Steamworks::CallbackType get_CallbackType();

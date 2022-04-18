@@ -90,17 +90,17 @@ namespace Steamworks::Data {
     // Set static field: static public System.Int32 _datasize
     static void _set__datasize(int value);
     // Get instance field reference: System.UInt32 UnBrowserHandle
-    [[deprecated]] uint& dyn_UnBrowserHandle();
+    [[deprecated("Use field access instead!")]] uint& dyn_UnBrowserHandle();
     // Get instance field reference: System.String PchURL
-    [[deprecated]] ::StringW& dyn_PchURL();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_PchURL();
     // Get instance field reference: System.String PchPostData
-    [[deprecated]] ::StringW& dyn_PchPostData();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_PchPostData();
     // Get instance field reference: System.Boolean BIsRedirect
-    [[deprecated]] bool& dyn_BIsRedirect();
+    [[deprecated("Use field access instead!")]] bool& dyn_BIsRedirect();
     // Get instance field reference: System.String PchPageTitle
-    [[deprecated]] ::StringW& dyn_PchPageTitle();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_PchPageTitle();
     // Get instance field reference: System.Boolean BNewNavigation
-    [[deprecated]] bool& dyn_BNewNavigation();
+    [[deprecated("Use field access instead!")]] bool& dyn_BNewNavigation();
     // public Steamworks.CallbackType get_CallbackType()
     // Offset: 0x461E90
     ::Steamworks::CallbackType get_CallbackType();

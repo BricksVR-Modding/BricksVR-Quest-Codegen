@@ -178,35 +178,35 @@ namespace System::Diagnostics::Tracing {
     static_assert(sizeof(::System::Collections::Generic::List_1<int>*) == 0x8);
     public:
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.Int32,System.String> opcodeTab
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<int, ::StringW>*& dyn_opcodeTab();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<int, ::StringW>*& dyn_opcodeTab();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.Int32,System.String> taskTab
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<int, ::StringW>*& dyn_taskTab();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<int, ::StringW>*& dyn_taskTab();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.UInt64,System.String> keywordTab
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<uint64_t, ::StringW>*& dyn_keywordTab();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<uint64_t, ::StringW>*& dyn_keywordTab();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.String,System.Type> mapsTab
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::StringW, ::System::Type*>*& dyn_mapsTab();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::StringW, ::System::Type*>*& dyn_mapsTab();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.String,System.String> stringTab
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::StringW, ::StringW>*& dyn_stringTab();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::StringW, ::StringW>*& dyn_stringTab();
     // Get instance field reference: private System.Text.StringBuilder sb
-    [[deprecated]] ::System::Text::StringBuilder*& dyn_sb();
+    [[deprecated("Use field access instead!")]] ::System::Text::StringBuilder*& dyn_sb();
     // Get instance field reference: private System.Text.StringBuilder events
-    [[deprecated]] ::System::Text::StringBuilder*& dyn_events();
+    [[deprecated("Use field access instead!")]] ::System::Text::StringBuilder*& dyn_events();
     // Get instance field reference: private System.Text.StringBuilder templates
-    [[deprecated]] ::System::Text::StringBuilder*& dyn_templates();
+    [[deprecated("Use field access instead!")]] ::System::Text::StringBuilder*& dyn_templates();
     // Get instance field reference: private System.Resources.ResourceManager resources
-    [[deprecated]] ::System::Resources::ResourceManager*& dyn_resources();
+    [[deprecated("Use field access instead!")]] ::System::Resources::ResourceManager*& dyn_resources();
     // Get instance field reference: private System.Diagnostics.Tracing.EventManifestOptions flags
-    [[deprecated]] ::System::Diagnostics::Tracing::EventManifestOptions& dyn_flags();
+    [[deprecated("Use field access instead!")]] ::System::Diagnostics::Tracing::EventManifestOptions& dyn_flags();
     // Get instance field reference: private System.Collections.Generic.IList`1<System.String> errors
-    [[deprecated]] ::System::Collections::Generic::IList_1<::StringW>*& dyn_errors();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::IList_1<::StringW>*& dyn_errors();
     // Get instance field reference: private System.Collections.Generic.Dictionary`2<System.String,System.Collections.Generic.List`1<System.Int32>> perEventByteArrayArgIndices
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::StringW, ::System::Collections::Generic::List_1<int>*>*& dyn_perEventByteArrayArgIndices();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::StringW, ::System::Collections::Generic::List_1<int>*>*& dyn_perEventByteArrayArgIndices();
     // Get instance field reference: private System.String eventName
-    [[deprecated]] ::StringW& dyn_eventName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_eventName();
     // Get instance field reference: private System.Int32 numParams
-    [[deprecated]] int& dyn_numParams();
+    [[deprecated("Use field access instead!")]] int& dyn_numParams();
     // Get instance field reference: private System.Collections.Generic.List`1<System.Int32> byteArrArgIndices
-    [[deprecated]] ::System::Collections::Generic::List_1<int>*& dyn_byteArrArgIndices();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<int>*& dyn_byteArrArgIndices();
     // public System.Collections.Generic.IList`1<System.String> get_Errors()
     // Offset: 0x290600
     ::System::Collections::Generic::IList_1<::StringW>* get_Errors();

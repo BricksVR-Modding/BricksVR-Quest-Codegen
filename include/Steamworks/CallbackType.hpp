@@ -1260,7 +1260,7 @@ namespace Steamworks {
     // Set static field: static public Steamworks.CallbackType SteamRemotePlaySessionDisconnected
     static void _set_SteamRemotePlaySessionDisconnected(::Steamworks::CallbackType value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // Steamworks.CallbackType
   #pragma pack(pop)
   static check_size<sizeof(CallbackType), 0 + sizeof(int)> __Steamworks_CallbackTypeSizeCheck;

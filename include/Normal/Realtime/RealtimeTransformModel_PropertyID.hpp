@@ -87,7 +87,7 @@ namespace Normal::Realtime {
     // Set static field: static public Normal.Realtime.RealtimeTransformModel/Normal.Realtime.PropertyID PhysicsStateTimeOffset
     static void _set_PhysicsStateTimeOffset(::Normal::Realtime::RealtimeTransformModel::PropertyID value);
     // Get instance field reference: public System.UInt32 value__
-    [[deprecated]] uint& dyn_value__();
+    [[deprecated("Use field access instead!")]] uint& dyn_value__();
   }; // Normal.Realtime.RealtimeTransformModel/Normal.Realtime.PropertyID
   #pragma pack(pop)
   static check_size<sizeof(RealtimeTransformModel::PropertyID), 0 + sizeof(uint)> __Normal_Realtime_RealtimeTransformModel_PropertyIDSizeCheck;

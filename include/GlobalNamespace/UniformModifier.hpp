@@ -47,7 +47,7 @@ namespace GlobalNamespace {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: private System.Single radius
-    [[deprecated]] float& dyn_radius();
+    [[deprecated("Use field access instead!")]] float& dyn_radius();
     // public System.Single get_Radius()
     // Offset: 0x30C5C0
     float get_Radius();
@@ -58,11 +58,6 @@ namespace GlobalNamespace {
     // Offset: 0x1DDE30
     // Implemented from: UnityEngine.UI.ProceduralImage.ProceduralImageModifier
     // Base method: System.Void ProceduralImageModifier::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static UniformModifier* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::UniformModifier::.ctor");

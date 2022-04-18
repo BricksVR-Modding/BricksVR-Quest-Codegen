@@ -50,7 +50,7 @@ namespace UnityEngine::UIElements {
       return m_CallbackRegistry;
     }
     // Get instance field reference: private UnityEngine.UIElements.EventCallbackRegistry m_CallbackRegistry
-    [[deprecated]] ::UnityEngine::UIElements::EventCallbackRegistry*& dyn_m_CallbackRegistry();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::UIElements::EventCallbackRegistry*& dyn_m_CallbackRegistry();
     // public System.Void SendEvent(UnityEngine.UIElements.EventBase e)
     // Offset: 0xFFFFFFFFFFFFFFFF
     void SendEvent(::UnityEngine::UIElements::EventBase* e);

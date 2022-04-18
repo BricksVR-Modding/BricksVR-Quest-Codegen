@@ -46,9 +46,9 @@ namespace UnityEngine::Windows::Speech {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.String key
-    [[deprecated]] ::StringW& dyn_key();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_key();
     // Get instance field reference: public System.String[] values
-    [[deprecated]] ::ArrayW<::StringW>& dyn_values();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::StringW>& dyn_values();
   }; // UnityEngine.Windows.Speech.SemanticMeaning
   #pragma pack(pop)
   static check_size<sizeof(SemanticMeaning), 8 + sizeof(::ArrayW<::StringW>)> __UnityEngine_Windows_Speech_SemanticMeaningSizeCheck;

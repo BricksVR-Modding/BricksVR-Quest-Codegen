@@ -52,7 +52,7 @@ namespace Normal::Realtime {
       return component;
     }
     // Get instance field reference: private readonly Normal.Realtime.RealtimeTransform _component
-    [[deprecated]] ::Normal::Realtime::RealtimeTransform*& dyn__component();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::RealtimeTransform*& dyn__component();
     // public System.Boolean get_isInterpolationWarmedUp()
     // Offset: 0x2188C0
     bool get_isInterpolationWarmedUp();

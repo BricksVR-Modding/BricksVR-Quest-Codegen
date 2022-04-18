@@ -63,7 +63,7 @@ namespace Normal::Realtime {
     // Set static field: static public Normal.Realtime.RealtimeViewModel/Normal.Realtime.PropertyID ChildViews
     static void _set_ChildViews(::Normal::Realtime::RealtimeViewModel::PropertyID value);
     // Get instance field reference: public System.UInt32 value__
-    [[deprecated]] uint& dyn_value__();
+    [[deprecated("Use field access instead!")]] uint& dyn_value__();
   }; // Normal.Realtime.RealtimeViewModel/Normal.Realtime.PropertyID
   #pragma pack(pop)
   static check_size<sizeof(RealtimeViewModel::PropertyID), 0 + sizeof(uint)> __Normal_Realtime_RealtimeViewModel_PropertyIDSizeCheck;

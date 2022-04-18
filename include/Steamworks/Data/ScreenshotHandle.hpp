@@ -58,7 +58,7 @@ namespace Steamworks::Data {
       return Value;
     }
     // Get instance field reference: public System.UInt32 Value
-    [[deprecated]] uint& dyn_Value();
+    [[deprecated("Use field access instead!")]] uint& dyn_Value();
     // public System.Boolean Equals(Steamworks.Data.ScreenshotHandle p)
     // Offset: 0x460E90
     bool Equals(::Steamworks::Data::ScreenshotHandle p);

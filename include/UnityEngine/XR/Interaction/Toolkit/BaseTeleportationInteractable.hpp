@@ -86,7 +86,7 @@ namespace UnityEngine::XR::Interaction::Toolkit {
       // Set static field: static public UnityEngine.XR.Interaction.Toolkit.BaseTeleportationInteractable/UnityEngine.XR.Interaction.Toolkit.TeleportTrigger OnSelectEnter
       static void _set_OnSelectEnter(::UnityEngine::XR::Interaction::Toolkit::BaseTeleportationInteractable::TeleportTrigger value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // UnityEngine.XR.Interaction.Toolkit.BaseTeleportationInteractable/UnityEngine.XR.Interaction.Toolkit.TeleportTrigger
     #pragma pack(pop)
     static check_size<sizeof(BaseTeleportationInteractable::TeleportTrigger), 0 + sizeof(int)> __UnityEngine_XR_Interaction_Toolkit_BaseTeleportationInteractable_TeleportTriggerSizeCheck;
@@ -116,11 +116,11 @@ namespace UnityEngine::XR::Interaction::Toolkit {
     static_assert(sizeof(::UnityEngine::XR::Interaction::Toolkit::BaseTeleportationInteractable::TeleportTrigger) == 0x4);
     public:
     // Get instance field reference: protected UnityEngine.XR.Interaction.Toolkit.TeleportationProvider m_TeleportationProvider
-    [[deprecated]] ::UnityEngine::XR::Interaction::Toolkit::TeleportationProvider*& dyn_m_TeleportationProvider();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::Interaction::Toolkit::TeleportationProvider*& dyn_m_TeleportationProvider();
     // Get instance field reference: protected UnityEngine.XR.Interaction.Toolkit.MatchOrientation m_MatchOrientation
-    [[deprecated]] ::UnityEngine::XR::Interaction::Toolkit::MatchOrientation& dyn_m_MatchOrientation();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::Interaction::Toolkit::MatchOrientation& dyn_m_MatchOrientation();
     // Get instance field reference: protected UnityEngine.XR.Interaction.Toolkit.BaseTeleportationInteractable/UnityEngine.XR.Interaction.Toolkit.TeleportTrigger m_TeleportTrigger
-    [[deprecated]] ::UnityEngine::XR::Interaction::Toolkit::BaseTeleportationInteractable::TeleportTrigger& dyn_m_TeleportTrigger();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::Interaction::Toolkit::BaseTeleportationInteractable::TeleportTrigger& dyn_m_TeleportTrigger();
     // public UnityEngine.XR.Interaction.Toolkit.TeleportationProvider get_teleportationProvider()
     // Offset: 0x2F4B70
     ::UnityEngine::XR::Interaction::Toolkit::TeleportationProvider* get_teleportationProvider();
@@ -149,11 +149,6 @@ namespace UnityEngine::XR::Interaction::Toolkit {
     // Offset: 0x2F4B40
     // Implemented from: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
     // Base method: System.Void XRBaseInteractable::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static BaseTeleportationInteractable* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::XR::Interaction::Toolkit::BaseTeleportationInteractable::.ctor");

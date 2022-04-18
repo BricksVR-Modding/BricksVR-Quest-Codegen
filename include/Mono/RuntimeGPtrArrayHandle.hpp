@@ -53,7 +53,7 @@ namespace Mono {
       return value;
     }
     // Get instance field reference: private Mono.RuntimeStructs/Mono.GPtrArray* value
-    [[deprecated]] ::Mono::RuntimeStructs::GPtrArray*& dyn_value();
+    [[deprecated("Use field access instead!")]] ::Mono::RuntimeStructs::GPtrArray*& dyn_value();
     // System.Int32 get_Length()
     // Offset: 0x475290
     int get_Length();

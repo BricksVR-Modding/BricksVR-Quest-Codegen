@@ -53,11 +53,11 @@ namespace GlobalNamespace {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public System.Int16 BoneIndex
-    [[deprecated]] int16_t& dyn_BoneIndex();
+    [[deprecated("Use field access instead!")]] int16_t& dyn_BoneIndex();
     // Get instance field reference: public OVRPlugin/Vector3f[] Points
-    [[deprecated]] ::ArrayW<::GlobalNamespace::OVRPlugin::Vector3f>& dyn_Points();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::GlobalNamespace::OVRPlugin::Vector3f>& dyn_Points();
     // Get instance field reference: public System.Single Radius
-    [[deprecated]] float& dyn_Radius();
+    [[deprecated("Use field access instead!")]] float& dyn_Radius();
   }; // OVRPlugin/BoneCapsule
   #pragma pack(pop)
   static check_size<sizeof(OVRPlugin::BoneCapsule), 16 + sizeof(float)> __GlobalNamespace_OVRPlugin_BoneCapsuleSizeCheck;

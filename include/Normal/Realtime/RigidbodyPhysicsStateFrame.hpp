@@ -51,11 +51,11 @@ namespace Normal::Realtime {
       return *reinterpret_cast<::System::ValueType*>(this);
     }
     // Get instance field reference: public readonly System.Boolean useGravity
-    [[deprecated]] bool& dyn_useGravity();
+    [[deprecated("Use field access instead!")]] bool& dyn_useGravity();
     // Get instance field reference: public readonly System.Boolean isKinematic
-    [[deprecated]] bool& dyn_isKinematic();
+    [[deprecated("Use field access instead!")]] bool& dyn_isKinematic();
     // Get instance field reference: public readonly System.Boolean isSleeping
-    [[deprecated]] bool& dyn_isSleeping();
+    [[deprecated("Use field access instead!")]] bool& dyn_isSleeping();
     // public System.Void .ctor(System.Boolean useGravity, System.Boolean isKinematic, System.Boolean isSleeping)
     // Offset: 0x896F40
     // ABORTED: conflicts with another method.  RigidbodyPhysicsStateFrame(bool useGravity, bool isKinematic, bool isSleeping);

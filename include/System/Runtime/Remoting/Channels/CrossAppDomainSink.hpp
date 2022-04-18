@@ -81,7 +81,7 @@ namespace System::Runtime::Remoting::Channels {
     // Set static field: static private System.Reflection.MethodInfo processMessageMethod
     static void _set_processMessageMethod(::System::Reflection::MethodInfo* value);
     // Get instance field reference: private System.Int32 _domainID
-    [[deprecated]] int& dyn__domainID();
+    [[deprecated("Use field access instead!")]] int& dyn__domainID();
     // System.Int32 get_TargetDomainId()
     // Offset: 0x1DD410
     int get_TargetDomainId();

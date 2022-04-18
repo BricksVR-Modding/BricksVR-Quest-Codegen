@@ -55,7 +55,7 @@ namespace UnityEngine::XR {
     // Set static field: static public UnityEngine.XR.TrackingSpaceType RoomScale
     static void _set_RoomScale(::UnityEngine::XR::TrackingSpaceType value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // UnityEngine.XR.TrackingSpaceType
   #pragma pack(pop)
   static check_size<sizeof(TrackingSpaceType), 0 + sizeof(int)> __UnityEngine_XR_TrackingSpaceTypeSizeCheck;

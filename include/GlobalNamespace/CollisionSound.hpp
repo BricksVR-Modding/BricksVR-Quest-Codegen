@@ -81,7 +81,7 @@ namespace GlobalNamespace {
       // Set static field: static public CollisionSound/MaterialType Floor
       static void _set_Floor(::GlobalNamespace::CollisionSound::MaterialType value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // CollisionSound/MaterialType
     #pragma pack(pop)
     static check_size<sizeof(CollisionSound::MaterialType), 0 + sizeof(int)> __GlobalNamespace_CollisionSound_MaterialTypeSizeCheck;
@@ -123,15 +123,22 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: public CollisionSound/MaterialType material
-    [[deprecated]] ::GlobalNamespace::CollisionSound::MaterialType& dyn_material();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::CollisionSound::MaterialType& dyn_material();
     // Get instance field reference: public UnityEngine.AudioClip[] metalOnMetalClips
-    [[deprecated]] ::ArrayW<::UnityEngine::AudioClip*>& dyn_metalOnMetalClips();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::AudioClip*>& dyn_metalOnMetalClips();
     // Get instance field reference: private System.Single _nextSoundTime
-    [[deprecated]] float& dyn__nextSoundTime();
+    [[deprecated("Use field access instead!")]] float& dyn__nextSoundTime();
     // Get instance field reference: private System.Single _timeBetweenSounds
-    [[deprecated]] float& dyn__timeBetweenSounds();
+    [[deprecated("Use field access instead!")]] float& dyn__timeBetweenSounds();
     // Get instance field reference: private UnityEngine.AudioSource _source
-    [[deprecated]] ::UnityEngine::AudioSource*& dyn__source();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::AudioSource*& dyn__source();
+    // public System.Void .ctor()
+    // Offset: 0x6B1590
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static CollisionSound* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::CollisionSound::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<CollisionSound*, creationType>()));
+    }
     // private System.Void Start()
     // Offset: 0x6B1540
     void Start();
@@ -147,19 +154,6 @@ namespace GlobalNamespace {
     // static private System.Single CollisionVelocityToVolume(System.Single velocity)
     // Offset: 0x6B1260
     static float CollisionVelocityToVolume(float velocity);
-    // public System.Void .ctor()
-    // Offset: 0x6B1590
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static CollisionSound* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::CollisionSound::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<CollisionSound*, creationType>()));
-    }
   }; // CollisionSound
   #pragma pack(pop)
   static check_size<sizeof(CollisionSound), 48 + sizeof(::UnityEngine::AudioSource*)> __GlobalNamespace_CollisionSoundSizeCheck;
@@ -168,6 +162,10 @@ namespace GlobalNamespace {
 #include "beatsaber-hook/shared/utils/il2cpp-type-check.hpp"
 DEFINE_IL2CPP_ARG_TYPE(::GlobalNamespace::CollisionSound::MaterialType, "", "CollisionSound/MaterialType");
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::CollisionSound::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::CollisionSound::Start
 // Il2CppName: Start
 template<>
@@ -211,7 +209,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<float (*)(f
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::CollisionSound*), "CollisionVelocityToVolume", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{velocity});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::CollisionSound::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

@@ -120,23 +120,23 @@ namespace GlobalNamespace {
     // Deleting conversion operator: operator ::System::IntPtr
     constexpr operator ::System::IntPtr() const noexcept = delete;
     // Get instance field reference: private System.Boolean <IsValidDestination>k__BackingField
-    [[deprecated]] bool& dyn_$IsValidDestination$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$IsValidDestination$k__BackingField();
     // Get instance field reference: public UnityEngine.Transform PositionIndicator
-    [[deprecated]] ::UnityEngine::Transform*& dyn_PositionIndicator();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_PositionIndicator();
     // Get instance field reference: public UnityEngine.Transform OrientationIndicator
-    [[deprecated]] ::UnityEngine::Transform*& dyn_OrientationIndicator();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_OrientationIndicator();
     // Get instance field reference: public UnityEngine.Quaternion LandingRotation
-    [[deprecated]] ::UnityEngine::Quaternion& dyn_LandingRotation();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Quaternion& dyn_LandingRotation();
     // Get instance field reference: public LocomotionTeleport LocomotionTeleport
-    [[deprecated]] ::GlobalNamespace::LocomotionTeleport*& dyn_LocomotionTeleport();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::LocomotionTeleport*& dyn_LocomotionTeleport();
     // Get instance field reference: public LocomotionTeleport/States TeleportState
-    [[deprecated]] ::GlobalNamespace::LocomotionTeleport::States& dyn_TeleportState();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::LocomotionTeleport::States& dyn_TeleportState();
     // Get instance field reference: private readonly System.Action`4<System.Boolean,System.Nullable`1<UnityEngine.Vector3>,System.Nullable`1<UnityEngine.Quaternion>,System.Nullable`1<UnityEngine.Quaternion>> _updateTeleportDestinationAction
-    [[deprecated]] ::System::Action_4<bool, ::System::Nullable_1<::UnityEngine::Vector3>, ::System::Nullable_1<::UnityEngine::Quaternion>, ::System::Nullable_1<::UnityEngine::Quaternion>>*& dyn__updateTeleportDestinationAction();
+    [[deprecated("Use field access instead!")]] ::System::Action_4<bool, ::System::Nullable_1<::UnityEngine::Vector3>, ::System::Nullable_1<::UnityEngine::Quaternion>, ::System::Nullable_1<::UnityEngine::Quaternion>>*& dyn__updateTeleportDestinationAction();
     // Get instance field reference: private System.Boolean _eventsActive
-    [[deprecated]] bool& dyn__eventsActive();
+    [[deprecated("Use field access instead!")]] bool& dyn__eventsActive();
     // Get instance field reference: private System.Action`1<TeleportDestination> Deactivated
-    [[deprecated]] ::System::Action_1<::GlobalNamespace::TeleportDestination*>*& dyn_Deactivated();
+    [[deprecated("Use field access instead!")]] ::System::Action_1<::GlobalNamespace::TeleportDestination*>*& dyn_Deactivated();
     // public System.Boolean get_IsValidDestination()
     // Offset: 0x2512D0
     bool get_IsValidDestination();
@@ -149,6 +149,13 @@ namespace GlobalNamespace {
     // public System.Void remove_Deactivated(System.Action`1<TeleportDestination> value)
     // Offset: 0x616F80
     void remove_Deactivated(::System::Action_1<::GlobalNamespace::TeleportDestination*>* value);
+    // private System.Void .ctor()
+    // Offset: 0x616E50
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static TeleportDestination* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::TeleportDestination::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<TeleportDestination*, creationType>()));
+    }
     // public System.Void OnEnable()
     // Offset: 0x616B80
     void OnEnable();
@@ -167,19 +174,6 @@ namespace GlobalNamespace {
     // public System.Void UpdateTeleportDestination(System.Boolean isValidDestination, System.Nullable`1<UnityEngine.Vector3> position, System.Nullable`1<UnityEngine.Quaternion> rotation, System.Nullable`1<UnityEngine.Quaternion> landingRotation)
     // Offset: 0x616C90
     void UpdateTeleportDestination(bool isValidDestination, ::System::Nullable_1<::UnityEngine::Vector3> position, ::System::Nullable_1<::UnityEngine::Quaternion> rotation, ::System::Nullable_1<::UnityEngine::Quaternion> landingRotation);
-    // private System.Void .ctor()
-    // Offset: 0x616E50
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static TeleportDestination* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::TeleportDestination::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<TeleportDestination*, creationType>()));
-    }
   }; // TeleportDestination
   #pragma pack(pop)
   static check_size<sizeof(TeleportDestination), 96 + sizeof(::System::Action_1<::GlobalNamespace::TeleportDestination*>*)> __GlobalNamespace_TeleportDestinationSizeCheck;
@@ -221,6 +215,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::TeleportDestination*), "remove_Deactivated", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: GlobalNamespace::TeleportDestination::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: GlobalNamespace::TeleportDestination::OnEnable
 // Il2CppName: OnEnable
 template<>
@@ -273,7 +271,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::TeleportDestination*), "UpdateTeleportDestination", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{isValidDestination, position, rotation, landingRotation});
   }
 };
-// Writing MetadataGetter for method: GlobalNamespace::TeleportDestination::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

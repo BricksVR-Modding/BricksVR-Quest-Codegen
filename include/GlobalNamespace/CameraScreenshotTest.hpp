@@ -104,7 +104,7 @@ namespace GlobalNamespace {
       // Set static field: static public CameraScreenshotTest/Format PPM
       static void _set_PPM(::GlobalNamespace::CameraScreenshotTest::Format value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // CameraScreenshotTest/Format
     #pragma pack(pop)
     static check_size<sizeof(CameraScreenshotTest::Format), 0 + sizeof(int)> __GlobalNamespace_CameraScreenshotTest_FormatSizeCheck;
@@ -192,29 +192,39 @@ namespace GlobalNamespace {
     // Set static field: static private readonly System.Int32 Color
     static void _set_Color(int value);
     // Get instance field reference: public System.Int32 captureWidth
-    [[deprecated]] int& dyn_captureWidth();
+    [[deprecated("Use field access instead!")]] int& dyn_captureWidth();
     // Get instance field reference: public System.Int32 captureHeight
-    [[deprecated]] int& dyn_captureHeight();
+    [[deprecated("Use field access instead!")]] int& dyn_captureHeight();
     // Get instance field reference: public UnityEngine.GameObject mainEnv
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_mainEnv();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_mainEnv();
     // Get instance field reference: private UnityEngine.Camera _camera
-    [[deprecated]] ::UnityEngine::Camera*& dyn__camera();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Camera*& dyn__camera();
     // Get instance field reference: public CameraScreenshotTest/Format format
-    [[deprecated]] ::GlobalNamespace::CameraScreenshotTest::Format& dyn_format();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::CameraScreenshotTest::Format& dyn_format();
     // Get instance field reference: public System.String folder
-    [[deprecated]] ::StringW& dyn_folder();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_folder();
     // Get instance field reference: public UnityEngine.Color color
-    [[deprecated]] ::UnityEngine::Color& dyn_color();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color& dyn_color();
     // Get instance field reference: private UnityEngine.Rect _rect
-    [[deprecated]] ::UnityEngine::Rect& dyn__rect();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Rect& dyn__rect();
     // Get instance field reference: private UnityEngine.RenderTexture _renderTexture
-    [[deprecated]] ::UnityEngine::RenderTexture*& dyn__renderTexture();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::RenderTexture*& dyn__renderTexture();
     // Get instance field reference: private UnityEngine.Texture2D _screenShot
-    [[deprecated]] ::UnityEngine::Texture2D*& dyn__screenShot();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Texture2D*& dyn__screenShot();
     // Get instance field reference: public System.Boolean takeScreenshot
-    [[deprecated]] bool& dyn_takeScreenshot();
+    [[deprecated("Use field access instead!")]] bool& dyn_takeScreenshot();
     // Get instance field reference: public System.Boolean skipSaving
-    [[deprecated]] bool& dyn_skipSaving();
+    [[deprecated("Use field access instead!")]] bool& dyn_skipSaving();
+    // public System.Void .ctor()
+    // Offset: 0x6ADBA0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static CameraScreenshotTest* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::CameraScreenshotTest::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<CameraScreenshotTest*, creationType>()));
+    }
+    // static private System.Void .cctor()
+    // Offset: 0x6ADB50
+    static void _cctor();
     // private System.String UniqueFilename(System.Int32 width, System.Int32 height)
     // Offset: 0x6ADAB0
     ::StringW UniqueFilename(int width, int height);
@@ -227,24 +237,6 @@ namespace GlobalNamespace {
     // private System.Void OnValidate()
     // Offset: 0x6AD520
     void OnValidate();
-    // public System.Void .ctor()
-    // Offset: 0x6ADBA0
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static CameraScreenshotTest* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::CameraScreenshotTest::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<CameraScreenshotTest*, creationType>()));
-    }
-    // static private System.Void .cctor()
-    // Offset: 0x6ADB50
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.cctor()
-    static void _cctor();
   }; // CameraScreenshotTest
   #pragma pack(pop)
   static check_size<sizeof(CameraScreenshotTest), 113 + sizeof(bool)> __GlobalNamespace_CameraScreenshotTestSizeCheck;
@@ -253,6 +245,18 @@ namespace GlobalNamespace {
 #include "beatsaber-hook/shared/utils/il2cpp-type-check.hpp"
 DEFINE_IL2CPP_ARG_TYPE(::GlobalNamespace::CameraScreenshotTest::Format, "", "CameraScreenshotTest/Format");
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: GlobalNamespace::CameraScreenshotTest::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
+// Writing MetadataGetter for method: GlobalNamespace::CameraScreenshotTest::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&GlobalNamespace::CameraScreenshotTest::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::CameraScreenshotTest*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
+  }
+};
 // Writing MetadataGetter for method: GlobalNamespace::CameraScreenshotTest::UniqueFilename
 // Il2CppName: UniqueFilename
 template<>
@@ -285,17 +289,5 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (GlobalNamespace::CameraScreenshotTest::*)()>(&GlobalNamespace::CameraScreenshotTest::OnValidate)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::CameraScreenshotTest*), "OnValidate", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
-  }
-};
-// Writing MetadataGetter for method: GlobalNamespace::CameraScreenshotTest::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
-// Writing MetadataGetter for method: GlobalNamespace::CameraScreenshotTest::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&GlobalNamespace::CameraScreenshotTest::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::CameraScreenshotTest*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };

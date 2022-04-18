@@ -25,7 +25,6 @@ namespace UnityEngine::XR::Interaction::Toolkit {
   // Skipping declaration: XRBaseInteractable because it is already included!
   // Skipping declaration: LineType because it is already included!
   // Skipping declaration: HitDetectionType because it is already included!
-  // Skipping declaration: XRBaseInteractor because it is already included!
 }
 // Forward declaring namespace: UnityEngine
 namespace UnityEngine {
@@ -120,7 +119,7 @@ namespace UnityEngine::XR::Interaction::Toolkit {
       // Set static field: static public UnityEngine.XR.Interaction.Toolkit.XRRayInteractor/UnityEngine.XR.Interaction.Toolkit.LineType BezierCurve
       static void _set_BezierCurve(::UnityEngine::XR::Interaction::Toolkit::XRRayInteractor::LineType value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // UnityEngine.XR.Interaction.Toolkit.XRRayInteractor/UnityEngine.XR.Interaction.Toolkit.LineType
     #pragma pack(pop)
     static check_size<sizeof(XRRayInteractor::LineType), 0 + sizeof(int)> __UnityEngine_XR_Interaction_Toolkit_XRRayInteractor_LineTypeSizeCheck;
@@ -162,7 +161,7 @@ namespace UnityEngine::XR::Interaction::Toolkit {
       // Set static field: static public UnityEngine.XR.Interaction.Toolkit.XRRayInteractor/UnityEngine.XR.Interaction.Toolkit.HitDetectionType SphereCast
       static void _set_SphereCast(::UnityEngine::XR::Interaction::Toolkit::XRRayInteractor::HitDetectionType value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // UnityEngine.XR.Interaction.Toolkit.XRRayInteractor/UnityEngine.XR.Interaction.Toolkit.HitDetectionType
     #pragma pack(pop)
     static check_size<sizeof(XRRayInteractor::HitDetectionType), 0 + sizeof(int)> __UnityEngine_XR_Interaction_Toolkit_XRRayInteractor_HitDetectionTypeSizeCheck;
@@ -403,67 +402,67 @@ namespace UnityEngine::XR::Interaction::Toolkit {
     // Set static field: static private UnityEngine.Vector3[] s_CachedLinePoints
     static void _set_s_CachedLinePoints(::ArrayW<::UnityEngine::Vector3> value);
     // Get instance field reference: public UnityEngine.GameObject eventSystem
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_eventSystem();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_eventSystem();
     // Get instance field reference: private UnityEngine.XR.Interaction.Toolkit.XRRayInteractor/UnityEngine.XR.Interaction.Toolkit.LineType m_LineType
-    [[deprecated]] ::UnityEngine::XR::Interaction::Toolkit::XRRayInteractor::LineType& dyn_m_LineType();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::Interaction::Toolkit::XRRayInteractor::LineType& dyn_m_LineType();
     // Get instance field reference: private System.Single m_MaxRaycastDistance
-    [[deprecated]] float& dyn_m_MaxRaycastDistance();
+    [[deprecated("Use field access instead!")]] float& dyn_m_MaxRaycastDistance();
     // Get instance field reference: private UnityEngine.Transform m_ReferenceFrame
-    [[deprecated]] ::UnityEngine::Transform*& dyn_m_ReferenceFrame();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_m_ReferenceFrame();
     // Get instance field reference: private System.Single m_Velocity
-    [[deprecated]] float& dyn_m_Velocity();
+    [[deprecated("Use field access instead!")]] float& dyn_m_Velocity();
     // Get instance field reference: private System.Single m_Acceleration
-    [[deprecated]] float& dyn_m_Acceleration();
+    [[deprecated("Use field access instead!")]] float& dyn_m_Acceleration();
     // Get instance field reference: private System.Single m_AdditionalFlightTime
-    [[deprecated]] float& dyn_m_AdditionalFlightTime();
+    [[deprecated("Use field access instead!")]] float& dyn_m_AdditionalFlightTime();
     // Get instance field reference: private System.Single m_EndPointDistance
-    [[deprecated]] float& dyn_m_EndPointDistance();
+    [[deprecated("Use field access instead!")]] float& dyn_m_EndPointDistance();
     // Get instance field reference: private System.Single m_EndPointHeight
-    [[deprecated]] float& dyn_m_EndPointHeight();
+    [[deprecated("Use field access instead!")]] float& dyn_m_EndPointHeight();
     // Get instance field reference: private System.Single m_ControlPointDistance
-    [[deprecated]] float& dyn_m_ControlPointDistance();
+    [[deprecated("Use field access instead!")]] float& dyn_m_ControlPointDistance();
     // Get instance field reference: private System.Single m_ControlPointHeight
-    [[deprecated]] float& dyn_m_ControlPointHeight();
+    [[deprecated("Use field access instead!")]] float& dyn_m_ControlPointHeight();
     // Get instance field reference: private System.Int32 m_SampleFrequency
-    [[deprecated]] int& dyn_m_SampleFrequency();
+    [[deprecated("Use field access instead!")]] int& dyn_m_SampleFrequency();
     // Get instance field reference: private UnityEngine.XR.Interaction.Toolkit.XRRayInteractor/UnityEngine.XR.Interaction.Toolkit.HitDetectionType m_HitDetectionType
-    [[deprecated]] ::UnityEngine::XR::Interaction::Toolkit::XRRayInteractor::HitDetectionType& dyn_m_HitDetectionType();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::Interaction::Toolkit::XRRayInteractor::HitDetectionType& dyn_m_HitDetectionType();
     // Get instance field reference: private System.Single m_SphereCastRadius
-    [[deprecated]] float& dyn_m_SphereCastRadius();
+    [[deprecated("Use field access instead!")]] float& dyn_m_SphereCastRadius();
     // Get instance field reference: private UnityEngine.LayerMask m_RaycastMask
-    [[deprecated]] ::UnityEngine::LayerMask& dyn_m_RaycastMask();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::LayerMask& dyn_m_RaycastMask();
     // Get instance field reference: private UnityEngine.QueryTriggerInteraction m_RaycastTriggerInteraction
-    [[deprecated]] ::UnityEngine::QueryTriggerInteraction& dyn_m_RaycastTriggerInteraction();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::QueryTriggerInteraction& dyn_m_RaycastTriggerInteraction();
     // Get instance field reference: private System.Boolean m_HoverToSelect
-    [[deprecated]] bool& dyn_m_HoverToSelect();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_HoverToSelect();
     // Get instance field reference: private System.Single m_HoverTimeToSelect
-    [[deprecated]] float& dyn_m_HoverTimeToSelect();
+    [[deprecated("Use field access instead!")]] float& dyn_m_HoverTimeToSelect();
     // Get instance field reference: private System.Boolean m_EnableUIInteraction
-    [[deprecated]] bool& dyn_m_EnableUIInteraction();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_EnableUIInteraction();
     // Get instance field reference: private UnityEngine.RaycastHit[] m_RaycastHits
-    [[deprecated]] ::ArrayW<::UnityEngine::RaycastHit>& dyn_m_RaycastHits();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::RaycastHit>& dyn_m_RaycastHits();
     // Get instance field reference: private UnityEngine.XR.Interaction.Toolkit.XRRayInteractor/UnityEngine.XR.Interaction.Toolkit.RaycastHitComparer m_RaycastHitComparer
-    [[deprecated]] ::UnityEngine::XR::Interaction::Toolkit::XRRayInteractor::RaycastHitComparer*& dyn_m_RaycastHitComparer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::Interaction::Toolkit::XRRayInteractor::RaycastHitComparer*& dyn_m_RaycastHitComparer();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable> m_ValidTargets
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::XR::Interaction::Toolkit::XRBaseInteractable*>*& dyn_m_ValidTargets();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::XR::Interaction::Toolkit::XRBaseInteractable*>*& dyn_m_ValidTargets();
     // Get instance field reference: private UnityEngine.Vector3[] m_SamplePoints
-    [[deprecated]] ::ArrayW<::UnityEngine::Vector3>& dyn_m_SamplePoints();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Vector3>& dyn_m_SamplePoints();
     // Get instance field reference: private System.Int32 m_NoSamplePoints
-    [[deprecated]] int& dyn_m_NoSamplePoints();
+    [[deprecated("Use field access instead!")]] int& dyn_m_NoSamplePoints();
     // Get instance field reference: private UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable m_CurrentNearestObject
-    [[deprecated]] ::UnityEngine::XR::Interaction::Toolkit::XRBaseInteractable*& dyn_m_CurrentNearestObject();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::Interaction::Toolkit::XRBaseInteractable*& dyn_m_CurrentNearestObject();
     // Get instance field reference: private System.Single m_LastTimeHoveredObjectChanged
-    [[deprecated]] float& dyn_m_LastTimeHoveredObjectChanged();
+    [[deprecated("Use field access instead!")]] float& dyn_m_LastTimeHoveredObjectChanged();
     // Get instance field reference: private System.Boolean m_PassedHoverTimeToSelect
-    [[deprecated]] bool& dyn_m_PassedHoverTimeToSelect();
+    [[deprecated("Use field access instead!")]] bool& dyn_m_PassedHoverTimeToSelect();
     // Get instance field reference: private System.Int32 m_HitCount
-    [[deprecated]] int& dyn_m_HitCount();
+    [[deprecated("Use field access instead!")]] int& dyn_m_HitCount();
     // Get instance field reference: private System.Int32 m_HitPositionInLine
-    [[deprecated]] int& dyn_m_HitPositionInLine();
+    [[deprecated("Use field access instead!")]] int& dyn_m_HitPositionInLine();
     // Get instance field reference: private UnityEngine.Vector3[] m_ControlPoints
-    [[deprecated]] ::ArrayW<::UnityEngine::Vector3>& dyn_m_ControlPoints();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Vector3>& dyn_m_ControlPoints();
     // Get instance field reference: private UnityEngine.XR.Interaction.Toolkit.UI.XRUIInputModule m_InputModule
-    [[deprecated]] ::UnityEngine::XR::Interaction::Toolkit::UI::XRUIInputModule*& dyn_m_InputModule();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::XR::Interaction::Toolkit::UI::XRUIInputModule*& dyn_m_InputModule();
     // public UnityEngine.XR.Interaction.Toolkit.XRRayInteractor/UnityEngine.XR.Interaction.Toolkit.LineType get_lineType()
     // Offset: 0x4E2E50
     ::UnityEngine::XR::Interaction::Toolkit::XRRayInteractor::LineType get_lineType();
@@ -627,11 +626,6 @@ namespace UnityEngine::XR::Interaction::Toolkit {
     // Implemented from: UnityEngine.XR.Interaction.Toolkit.XRBaseControllerInteractor
     // Base method: System.Void XRBaseControllerInteractor::.ctor()
     // Base method: System.Void XRBaseInteractor::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static XRRayInteractor* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::UnityEngine::XR::Interaction::Toolkit::XRRayInteractor::.ctor");

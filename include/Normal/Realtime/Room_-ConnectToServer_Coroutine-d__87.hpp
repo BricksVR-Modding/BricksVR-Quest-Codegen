@@ -170,39 +170,39 @@ namespace Normal::Realtime {
       return *reinterpret_cast<::System::Collections::Generic::IEnumerator_1<::Il2CppObject*>*>(this);
     }
     // Get instance field reference: private System.Int32 <>1__state
-    [[deprecated]] int& dyn_$$1__state();
+    [[deprecated("Use field access instead!")]] int& dyn_$$1__state();
     // Get instance field reference: private System.Object <>2__current
-    [[deprecated]] ::Il2CppObject*& dyn_$$2__current();
+    [[deprecated("Use field access instead!")]] ::Il2CppObject*& dyn_$$2__current();
     // Get instance field reference: public Normal.Realtime.Room <>4__this
-    [[deprecated]] ::Normal::Realtime::Room*& dyn_$$4__this();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::Room*& dyn_$$4__this();
     // Get instance field reference: public Normal.Realtime.Native.Matcher matcher
-    [[deprecated]] ::Normal::Realtime::Native::Matcher*& dyn_matcher();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::Native::Matcher*& dyn_matcher();
     // Get instance field reference: public System.String roomName
-    [[deprecated]] ::StringW& dyn_roomName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_roomName();
     // Get instance field reference: public Normal.Realtime.RealtimeModel roomModel
-    [[deprecated]] ::Normal::Realtime::RealtimeModel*& dyn_roomModel();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::RealtimeModel*& dyn_roomModel();
     // Get instance field reference: public System.String matcherURL
-    [[deprecated]] ::StringW& dyn_matcherURL();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_matcherURL();
     // Get instance field reference: public System.String appKey
-    [[deprecated]] ::StringW& dyn_appKey();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_appKey();
     // Get instance field reference: public Normal.Realtime.Native.Cluster[] clusterPingResults
-    [[deprecated]] ::ArrayW<::Normal::Realtime::Native::Cluster>& dyn_clusterPingResults();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Normal::Realtime::Native::Cluster>& dyn_clusterPingResults();
     // Get instance field reference: public Normal.Realtime.Native.Region[] preferredRegions
-    [[deprecated]] ::ArrayW<::Normal::Realtime::Native::Region>& dyn_preferredRegions();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Normal::Realtime::Native::Region>& dyn_preferredRegions();
     // Get instance field reference: public Normal.Realtime.CoroutineRunner/Normal.Realtime.CoroutineContext coroutineContext
-    [[deprecated]] ::Normal::Realtime::CoroutineRunner::CoroutineContext*& dyn_coroutineContext();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::CoroutineRunner::CoroutineContext*& dyn_coroutineContext();
     // Get instance field reference: private Normal.Realtime.Room/Normal.Realtime.<>c__DisplayClass87_0 <>8__1
-    [[deprecated]] ::Normal::Realtime::Room::$$c__DisplayClass87_0*& dyn_$$8__1();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::Room::$$c__DisplayClass87_0*& dyn_$$8__1();
     // Get instance field reference: private Normal.Realtime.Native.Cluster[] <newClusterPingResults>5__2
-    [[deprecated]] ::ArrayW<::Normal::Realtime::Native::Cluster>& dyn_$newClusterPingResults$5__2();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Normal::Realtime::Native::Cluster>& dyn_$newClusterPingResults$5__2();
     // Get instance field reference: private System.Boolean <requestComplete>5__3
-    [[deprecated]] bool& dyn_$requestComplete$5__3();
+    [[deprecated("Use field access instead!")]] bool& dyn_$requestComplete$5__3();
     // Get instance field reference: private Normal.Realtime.Native.Cluster[] <clustersToPing>5__4
-    [[deprecated]] ::ArrayW<::Normal::Realtime::Native::Cluster>& dyn_$clustersToPing$5__4();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::Normal::Realtime::Native::Cluster>& dyn_$clustersToPing$5__4();
     // Get instance field reference: private System.Collections.Generic.List`1<UnityEngine.Ping> <pings>5__5
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::Ping*>*& dyn_$pings$5__5();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::Ping*>*& dyn_$pings$5__5();
     // Get instance field reference: private System.Single <startTime>5__6
-    [[deprecated]] float& dyn_$startTime$5__6();
+    [[deprecated("Use field access instead!")]] float& dyn_$startTime$5__6();
     // private System.Object System.Collections.Generic.IEnumerator<System.Object>.get_Current()
     // Offset: 0x1E1520
     ::Il2CppObject* System_Collections_Generic_IEnumerator$System_Object$_get_Current();

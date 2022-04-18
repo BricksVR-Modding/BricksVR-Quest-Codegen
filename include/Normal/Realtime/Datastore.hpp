@@ -160,27 +160,27 @@ namespace Normal::Realtime {
       return *reinterpret_cast<::Normal::Realtime::Serialization::IStreamReader*>(this);
     }
     // Get instance field reference: private Normal.Realtime.RealtimeModel _roomModel
-    [[deprecated]] ::Normal::Realtime::RealtimeModel*& dyn__roomModel();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::RealtimeModel*& dyn__roomModel();
     // Get instance field reference: private readonly Normal.Realtime.Serialization.StreamEventDispatcher _dispatcher
-    [[deprecated]] ::Normal::Realtime::Serialization::StreamEventDispatcher*& dyn__dispatcher();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::Serialization::StreamEventDispatcher*& dyn__dispatcher();
     // Get instance field reference: private readonly Normal.Realtime.Serialization.InflightUpdateNotifier _inflightUpdateNotifier
-    [[deprecated]] ::Normal::Realtime::Serialization::InflightUpdateNotifier*& dyn__inflightUpdateNotifier();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::Serialization::InflightUpdateNotifier*& dyn__inflightUpdateNotifier();
     // Get instance field reference: private Normal.Realtime.Collections.StringKeyDictionary`1<Normal.Realtime.RealtimeViewModel> _sceneViewModels
-    [[deprecated]] ::Normal::Realtime::Collections::StringKeyDictionary_1<::Normal::Realtime::RealtimeViewModel*>*& dyn__sceneViewModels();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::Collections::StringKeyDictionary_1<::Normal::Realtime::RealtimeViewModel*>*& dyn__sceneViewModels();
     // Get instance field reference: private Normal.Realtime.Serialization.RealtimeSet`1<Normal.Realtime.RealtimeViewModel> _prefabViewModels
-    [[deprecated]] ::Normal::Realtime::Serialization::RealtimeSet_1<::Normal::Realtime::RealtimeViewModel*>*& dyn__prefabViewModels();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::Serialization::RealtimeSet_1<::Normal::Realtime::RealtimeViewModel*>*& dyn__prefabViewModels();
     // Get instance field reference: private Normal.Realtime.Datastore/Normal.Realtime.PrefabViewModelAdded prefabRealtimeViewModelAdded
-    [[deprecated]] ::Normal::Realtime::Datastore::PrefabViewModelAdded*& dyn_prefabRealtimeViewModelAdded();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::Datastore::PrefabViewModelAdded*& dyn_prefabRealtimeViewModelAdded();
     // Get instance field reference: private Normal.Realtime.Datastore/Normal.Realtime.PrefabViewModelRemoved prefabRealtimeViewModelRemoved
-    [[deprecated]] ::Normal::Realtime::Datastore::PrefabViewModelRemoved*& dyn_prefabRealtimeViewModelRemoved();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::Datastore::PrefabViewModelRemoved*& dyn_prefabRealtimeViewModelRemoved();
     // Get instance field reference: private Normal.Realtime.Serialization.WriteBuffer _writeBuffer
-    [[deprecated]] ::Normal::Realtime::Serialization::WriteBuffer*& dyn__writeBuffer();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::Serialization::WriteBuffer*& dyn__writeBuffer();
     // Get instance field reference: private Normal.Realtime.Serialization.WriteStream _writeStream
-    [[deprecated]] ::Normal::Realtime::Serialization::WriteStream*& dyn__writeStream();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::Serialization::WriteStream*& dyn__writeStream();
     // Get instance field reference: private Normal.Realtime.Serialization.ReadBuffer _readBuffer
-    [[deprecated]] ::Normal::Realtime::Serialization::ReadBuffer*& dyn__readBuffer();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::Serialization::ReadBuffer*& dyn__readBuffer();
     // Get instance field reference: private Normal.Realtime.Serialization.ReadStream _readStream
-    [[deprecated]] ::Normal::Realtime::Serialization::ReadStream*& dyn__readStream();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::Serialization::ReadStream*& dyn__readStream();
     // public Normal.Realtime.RealtimeModel get_roomModel()
     // Offset: 0x1E1920
     ::Normal::Realtime::RealtimeModel* get_roomModel();
@@ -205,6 +205,13 @@ namespace Normal::Realtime {
     // public System.Void remove_prefabRealtimeViewModelRemoved(Normal.Realtime.Datastore/Normal.Realtime.PrefabViewModelRemoved value)
     // Offset: 0x8B8710
     void remove_prefabRealtimeViewModelRemoved(::Normal::Realtime::Datastore::PrefabViewModelRemoved* value);
+    // public System.Void .ctor()
+    // Offset: 0x8B84A0
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static Datastore* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::Datastore::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<Datastore*, creationType>()));
+    }
     // public System.Void Reset(Normal.Realtime.Room room, Normal.Realtime.RealtimeModel roomModel)
     // Offset: 0x8B7D10
     void Reset(::Normal::Realtime::Room* room, ::Normal::Realtime::RealtimeModel* roomModel);
@@ -250,15 +257,6 @@ namespace Normal::Realtime {
     // public System.Void Read(Normal.Realtime.Serialization.ReadStream stream, Normal.Realtime.Serialization.StreamContext context)
     // Offset: 0x8B7BA0
     void Read(::Normal::Realtime::Serialization::ReadStream* stream, ::Normal::Realtime::Serialization::StreamContext context);
-    // public System.Void .ctor()
-    // Offset: 0x8B84A0
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static Datastore* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::Datastore::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<Datastore*, creationType>()));
-    }
   }; // Normal.Realtime.Datastore
   #pragma pack(pop)
   static check_size<sizeof(Datastore), 96 + sizeof(::Normal::Realtime::Serialization::ReadStream*)> __Normal_Realtime_DatastoreSizeCheck;
@@ -333,6 +331,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Norma
     return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::Datastore*), "remove_prefabRealtimeViewModelRemoved", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: Normal::Realtime::Datastore::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Normal::Realtime::Datastore::Reset
 // Il2CppName: Reset
 template<>
@@ -484,7 +486,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Norma
     return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::Datastore*), "Read", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{stream, context});
   }
 };
-// Writing MetadataGetter for method: Normal::Realtime::Datastore::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

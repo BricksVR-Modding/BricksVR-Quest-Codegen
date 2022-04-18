@@ -59,15 +59,15 @@ namespace Sigtrap::VrTunnellingPro {
     static_assert(sizeof(float) == 0x4);
     public:
     // Get instance field reference: private System.Boolean _use
-    [[deprecated]] bool& dyn__use();
+    [[deprecated("Use field access instead!")]] bool& dyn__use();
     // Get instance field reference: private System.Single _strength
-    [[deprecated]] float& dyn__strength();
+    [[deprecated("Use field access instead!")]] float& dyn__strength();
     // Get instance field reference: private System.Single _min
-    [[deprecated]] float& dyn__min();
+    [[deprecated("Use field access instead!")]] float& dyn__min();
     // Get instance field reference: private System.Single _max
-    [[deprecated]] float& dyn__max();
+    [[deprecated("Use field access instead!")]] float& dyn__max();
     // Get instance field reference: private System.Single _smoothing
-    [[deprecated]] float& dyn__smoothing();
+    [[deprecated("Use field access instead!")]] float& dyn__smoothing();
     // public System.Boolean get_use()
     // Offset: 0x245FD0
     bool get_use();
@@ -85,8 +85,6 @@ namespace Sigtrap::VrTunnellingPro {
     float get_smoothing();
     // public System.Void .ctor()
     // Offset: 0x6C57F0
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TunnellingPresetBase::MotionSettings* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::Sigtrap::VrTunnellingPro::TunnellingPresetBase::MotionSettings::.ctor");

@@ -71,11 +71,18 @@ namespace Normal::Realtime::Serialization {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private readonly System.Collections.Generic.Dictionary`2<System.UInt32,System.Collections.Generic.HashSet`1<Normal.Realtime.IConfirmedProperty>> _properties
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<uint, ::System::Collections::Generic::HashSet_1<::Normal::Realtime::IConfirmedProperty*>*>*& dyn__properties();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<uint, ::System::Collections::Generic::HashSet_1<::Normal::Realtime::IConfirmedProperty*>*>*& dyn__properties();
     // Get instance field reference: private readonly System.Collections.Generic.Stack`1<System.Collections.Generic.HashSet`1<Normal.Realtime.IConfirmedProperty>> _pool
-    [[deprecated]] ::System::Collections::Generic::Stack_1<::System::Collections::Generic::HashSet_1<::Normal::Realtime::IConfirmedProperty*>*>*& dyn__pool();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Stack_1<::System::Collections::Generic::HashSet_1<::Normal::Realtime::IConfirmedProperty*>*>*& dyn__pool();
     // Get instance field reference: private System.Boolean _lock
-    [[deprecated]] bool& dyn__lock();
+    [[deprecated("Use field access instead!")]] bool& dyn__lock();
+    // public System.Void .ctor()
+    // Offset: 0x88CA50
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static InflightUpdateNotifier* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::Serialization::InflightUpdateNotifier::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<InflightUpdateNotifier*, creationType>()));
+    }
     // private System.Void ThrowIfLocked()
     // Offset: 0x88C8E0
     void ThrowIfLocked();
@@ -97,21 +104,16 @@ namespace Normal::Realtime::Serialization {
     // private System.Void ReleasePropertyList(System.UInt32 updateID)
     // Offset: 0x88C470
     void ReleasePropertyList(uint updateID);
-    // public System.Void .ctor()
-    // Offset: 0x88CA50
-    // Implemented from: System.Object
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static InflightUpdateNotifier* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::Normal::Realtime::Serialization::InflightUpdateNotifier::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<InflightUpdateNotifier*, creationType>()));
-    }
   }; // Normal.Realtime.Serialization.InflightUpdateNotifier
   #pragma pack(pop)
   static check_size<sizeof(InflightUpdateNotifier), 32 + sizeof(bool)> __Normal_Realtime_Serialization_InflightUpdateNotifierSizeCheck;
   static_assert(sizeof(InflightUpdateNotifier) == 0x21);
 }
 #include "beatsaber-hook/shared/utils/il2cpp-utils-methods.hpp"
+// Writing MetadataGetter for method: Normal::Realtime::Serialization::InflightUpdateNotifier::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: Normal::Realtime::Serialization::InflightUpdateNotifier::ThrowIfLocked
 // Il2CppName: ThrowIfLocked
 template<>
@@ -176,7 +178,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Norma
     return ::il2cpp_utils::FindMethod(classof(Normal::Realtime::Serialization::InflightUpdateNotifier*), "ReleasePropertyList", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{updateID});
   }
 };
-// Writing MetadataGetter for method: Normal::Realtime::Serialization::InflightUpdateNotifier::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

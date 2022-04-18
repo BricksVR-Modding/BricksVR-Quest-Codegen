@@ -327,79 +327,79 @@ namespace GlobalNamespace {
     // Set static field: static private readonly System.Int32 ShaderTexOffsetProperty
     static void _set_ShaderTexOffsetProperty(int value);
     // Get instance field reference: private UnityEngine.Color32 _color
-    [[deprecated]] ::UnityEngine::Color32& dyn__color();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Color32& dyn__color();
     // Get instance field reference: private System.Boolean _hoveredLeft
-    [[deprecated]] bool& dyn__hoveredLeft();
+    [[deprecated("Use field access instead!")]] bool& dyn__hoveredLeft();
     // Get instance field reference: private System.Boolean _hoveredRight
-    [[deprecated]] bool& dyn__hoveredRight();
+    [[deprecated("Use field access instead!")]] bool& dyn__hoveredRight();
     // Get instance field reference: private System.Boolean <Held>k__BackingField
-    [[deprecated]] bool& dyn_$Held$k__BackingField();
+    [[deprecated("Use field access instead!")]] bool& dyn_$Held$k__BackingField();
     // Get instance field reference: public System.Int32 renderQueue
-    [[deprecated]] int& dyn_renderQueue();
+    [[deprecated("Use field access instead!")]] int& dyn_renderQueue();
     // Get instance field reference: public UnityEngine.GameObject maleConnectorParent
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_maleConnectorParent();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_maleConnectorParent();
     // Get instance field reference: public UnityEngine.GameObject femaleConnectorParent
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_femaleConnectorParent();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_femaleConnectorParent();
     // Get instance field reference: public UnityEngine.GameObject model
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_model();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_model();
     // Get instance field reference: public UnityEngine.GameObject combinedModel
-    [[deprecated]] ::UnityEngine::GameObject*& dyn_combinedModel();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn_combinedModel();
     // Get instance field reference: private BrickUuid _brickUuid
-    [[deprecated]] ::GlobalNamespace::BrickUuid*& dyn__brickUuid();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::BrickUuid*& dyn__brickUuid();
     // Get instance field reference: private UnityEngine.GameObject _modularModel
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__modularModel();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__modularModel();
     // Get instance field reference: private BulkGrabFollow[] _attachedBulkGrabFollows
-    [[deprecated]] ::ArrayW<::GlobalNamespace::BulkGrabFollow*>& dyn__attachedBulkGrabFollows();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::GlobalNamespace::BulkGrabFollow*>& dyn__attachedBulkGrabFollows();
     // Get instance field reference: public System.String swapPrefab
-    [[deprecated]] ::StringW& dyn_swapPrefab();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_swapPrefab();
     // Get instance field reference: public System.String normalPrefabName
-    [[deprecated]] ::StringW& dyn_normalPrefabName();
+    [[deprecated("Use field access instead!")]] ::StringW& dyn_normalPrefabName();
     // Get instance field reference: public System.Collections.Generic.List`1<UnityEngine.GameObject> maleConnectors
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::GameObject*>*& dyn_maleConnectors();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::GameObject*>*& dyn_maleConnectors();
     // Get instance field reference: public System.Collections.Generic.List`1<UnityEngine.GameObject> femaleConnectors
-    [[deprecated]] ::System::Collections::Generic::List_1<::UnityEngine::GameObject*>*& dyn_femaleConnectors();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::UnityEngine::GameObject*>*& dyn_femaleConnectors();
     // Get instance field reference: public System.Collections.Generic.List`1<LegoConnectorScript> maleConnectorScripts
-    [[deprecated]] ::System::Collections::Generic::List_1<::GlobalNamespace::LegoConnectorScript*>*& dyn_maleConnectorScripts();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::GlobalNamespace::LegoConnectorScript*>*& dyn_maleConnectorScripts();
     // Get instance field reference: public System.Collections.Generic.List`1<LegoConnectorScript> femaleConnectorScripts
-    [[deprecated]] ::System::Collections::Generic::List_1<::GlobalNamespace::LegoConnectorScript*>*& dyn_femaleConnectorScripts();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::List_1<::GlobalNamespace::LegoConnectorScript*>*& dyn_femaleConnectorScripts();
     // Get instance field reference: private readonly System.Collections.Generic.Dictionary`2<System.String,LegoConnectorScript> maleConnectorScriptsByName
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::StringW, ::GlobalNamespace::LegoConnectorScript*>*& dyn_maleConnectorScriptsByName();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::StringW, ::GlobalNamespace::LegoConnectorScript*>*& dyn_maleConnectorScriptsByName();
     // Get instance field reference: public UnityEngine.Mesh originalMesh
-    [[deprecated]] ::UnityEngine::Mesh*& dyn_originalMesh();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Mesh*& dyn_originalMesh();
     // Get instance field reference: public UnityEngine.Material originalMaterial
-    [[deprecated]] ::UnityEngine::Material*& dyn_originalMaterial();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Material*& dyn_originalMaterial();
     // Get instance field reference: private BuildingBrickSync _brickSync
-    [[deprecated]] ::GlobalNamespace::BuildingBrickSync*& dyn__brickSync();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::BuildingBrickSync*& dyn__brickSync();
     // Get instance field reference: private UserSettings _userSettings
-    [[deprecated]] ::GlobalNamespace::UserSettings*& dyn__userSettings();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::UserSettings*& dyn__userSettings();
     // Get instance field reference: private UnityEngine.MaterialPropertyBlock _props
-    [[deprecated]] ::UnityEngine::MaterialPropertyBlock*& dyn__props();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::MaterialPropertyBlock*& dyn__props();
     // Get instance field reference: public UnityEngine.Mesh solidMesh
-    [[deprecated]] ::UnityEngine::Mesh*& dyn_solidMesh();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Mesh*& dyn_solidMesh();
     // Get instance field reference: public UnityEngine.Mesh hollowMesh
-    [[deprecated]] ::UnityEngine::Mesh*& dyn_hollowMesh();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Mesh*& dyn_hollowMesh();
     // Get instance field reference: public UnityEngine.Mesh studMesh
-    [[deprecated]] ::UnityEngine::Mesh*& dyn_studMesh();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Mesh*& dyn_studMesh();
     // Get instance field reference: public PlacedBrickRenderer placedBrickRenderer
-    [[deprecated]] ::GlobalNamespace::PlacedBrickRenderer*& dyn_placedBrickRenderer();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::PlacedBrickRenderer*& dyn_placedBrickRenderer();
     // Get instance field reference: public UnityEngine.MeshFilter meshFilter
-    [[deprecated]] ::UnityEngine::MeshFilter*& dyn_meshFilter();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::MeshFilter*& dyn_meshFilter();
     // Get instance field reference: public UnityEngine.MeshRenderer meshRenderer
-    [[deprecated]] ::UnityEngine::MeshRenderer*& dyn_meshRenderer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::MeshRenderer*& dyn_meshRenderer();
     // Get instance field reference: public System.Boolean renderHollowMesh
-    [[deprecated]] bool& dyn_renderHollowMesh();
+    [[deprecated("Use field access instead!")]] bool& dyn_renderHollowMesh();
     // Get instance field reference: public System.Boolean isPlayerHead
-    [[deprecated]] bool& dyn_isPlayerHead();
+    [[deprecated("Use field access instead!")]] bool& dyn_isPlayerHead();
     // Get instance field reference: public System.Int32 headClientId
-    [[deprecated]] int& dyn_headClientId();
+    [[deprecated("Use field access instead!")]] int& dyn_headClientId();
     // Get instance field reference: private Normal.Realtime.RealtimeAvatarManager _realtimeAvatarManager
-    [[deprecated]] ::Normal::Realtime::RealtimeAvatarManager*& dyn__realtimeAvatarManager();
+    [[deprecated("Use field access instead!")]] ::Normal::Realtime::RealtimeAvatarManager*& dyn__realtimeAvatarManager();
     // Get instance field reference: public System.Single texOffset
-    [[deprecated]] float& dyn_texOffset();
+    [[deprecated("Use field access instead!")]] float& dyn_texOffset();
     // Get instance field reference: private readonly UnityEngine.Collider[] _colliderBuffer
-    [[deprecated]] ::ArrayW<::UnityEngine::Collider*>& dyn__colliderBuffer();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::UnityEngine::Collider*>& dyn__colliderBuffer();
     // Get instance field reference: private readonly System.Collections.Generic.Dictionary`2<BrickAttach,System.Boolean> _attachBuffer
-    [[deprecated]] ::System::Collections::Generic::Dictionary_2<::GlobalNamespace::BrickAttach*, bool>*& dyn__attachBuffer();
+    [[deprecated("Use field access instead!")]] ::System::Collections::Generic::Dictionary_2<::GlobalNamespace::BrickAttach*, bool>*& dyn__attachBuffer();
     // public UnityEngine.Color32 get_Color()
     // Offset: 0x1E1910
     ::UnityEngine::Color32 get_Color();
@@ -415,6 +415,16 @@ namespace GlobalNamespace {
     // private System.Void set_Held(System.Boolean value)
     // Offset: 0x6E92C0
     void set_Held(bool value);
+    // public System.Void .ctor()
+    // Offset: 0x6E9080
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static BrickAttach* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::BrickAttach::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<BrickAttach*, creationType>()));
+    }
+    // static private System.Void .cctor()
+    // Offset: 0x6E9010
+    static void _cctor();
     // private System.Void Awake()
     // Offset: 0x6E6430
     void Awake();
@@ -469,24 +479,6 @@ namespace GlobalNamespace {
     // public System.Void NotifyNearbyBricksToRecalculateMesh()
     // Offset: 0x6E71B0
     void NotifyNearbyBricksToRecalculateMesh();
-    // public System.Void .ctor()
-    // Offset: 0x6E9080
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static BrickAttach* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::BrickAttach::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<BrickAttach*, creationType>()));
-    }
-    // static private System.Void .cctor()
-    // Offset: 0x6E9010
-    // Implemented from: UnityEngine.Object
-    // Base method: System.Void Object::.cctor()
-    static void _cctor();
   }; // BrickAttach
   #pragma pack(pop)
   static check_size<sizeof(BrickAttach), 272 + sizeof(::System::Collections::Generic::Dictionary_2<::GlobalNamespace::BrickAttach*, bool>*)> __GlobalNamespace_BrickAttachSizeCheck;
@@ -533,6 +525,18 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (Globa
   static const MethodInfo* get() {
     static auto* value = &::il2cpp_utils::GetClassFromName("System", "Boolean")->byval_arg;
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::BrickAttach*), "set_Held", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
+  }
+};
+// Writing MetadataGetter for method: GlobalNamespace::BrickAttach::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
+// Writing MetadataGetter for method: GlobalNamespace::BrickAttach::_cctor
+// Il2CppName: .cctor
+template<>
+struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&GlobalNamespace::BrickAttach::_cctor)> {
+  static const MethodInfo* get() {
+    return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::BrickAttach*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
 // Writing MetadataGetter for method: GlobalNamespace::BrickAttach::Awake
@@ -690,17 +694,5 @@ template<>
 struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (GlobalNamespace::BrickAttach::*)()>(&GlobalNamespace::BrickAttach::NotifyNearbyBricksToRecalculateMesh)> {
   static const MethodInfo* get() {
     return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::BrickAttach*), "NotifyNearbyBricksToRecalculateMesh", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
-  }
-};
-// Writing MetadataGetter for method: GlobalNamespace::BrickAttach::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!
-// Writing MetadataGetter for method: GlobalNamespace::BrickAttach::_cctor
-// Il2CppName: .cctor
-template<>
-struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)()>(&GlobalNamespace::BrickAttach::_cctor)> {
-  static const MethodInfo* get() {
-    return ::il2cpp_utils::FindMethod(classof(GlobalNamespace::BrickAttach*), ".cctor", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };

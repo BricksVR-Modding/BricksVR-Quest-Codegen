@@ -54,7 +54,7 @@ namespace UnityEngine::UIElements {
     // Set static field: static private readonly UnityEngine.UIElements.FocusChangeDirection <lastValue>k__BackingField
     static void _set_$lastValue$k__BackingField(::UnityEngine::UIElements::FocusChangeDirection* value);
     // Get instance field reference: private readonly System.Int32 m_Value
-    [[deprecated]] int& dyn_m_Value();
+    [[deprecated("Use field access instead!")]] int& dyn_m_Value();
     // static public UnityEngine.UIElements.FocusChangeDirection get_unspecified()
     // Offset: 0x2A19C0
     static ::UnityEngine::UIElements::FocusChangeDirection* get_unspecified();

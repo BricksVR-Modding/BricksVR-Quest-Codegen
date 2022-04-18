@@ -120,7 +120,7 @@ namespace OculusSampleFramework {
       // Set static field: static public OculusSampleFramework.HandsManager/OculusSampleFramework.HandsVisualMode Both
       static void _set_Both(::OculusSampleFramework::HandsManager::HandsVisualMode value);
       // Get instance field reference: public System.Int32 value__
-      [[deprecated]] int& dyn_value__();
+      [[deprecated("Use field access instead!")]] int& dyn_value__();
     }; // OculusSampleFramework.HandsManager/OculusSampleFramework.HandsVisualMode
     #pragma pack(pop)
     static check_size<sizeof(HandsManager::HandsVisualMode), 0 + sizeof(int)> __OculusSampleFramework_HandsManager_HandsVisualModeSizeCheck;
@@ -226,33 +226,33 @@ namespace OculusSampleFramework {
     // Set static field: static private OculusSampleFramework.HandsManager <Instance>k__BackingField
     static void _set_$Instance$k__BackingField(::OculusSampleFramework::HandsManager* value);
     // Get instance field reference: private UnityEngine.GameObject _leftHand
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__leftHand();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__leftHand();
     // Get instance field reference: private UnityEngine.GameObject _rightHand
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__rightHand();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__rightHand();
     // Get instance field reference: public OculusSampleFramework.HandsManager/OculusSampleFramework.HandsVisualMode VisualMode
-    [[deprecated]] ::OculusSampleFramework::HandsManager::HandsVisualMode& dyn_VisualMode();
+    [[deprecated("Use field access instead!")]] ::OculusSampleFramework::HandsManager::HandsVisualMode& dyn_VisualMode();
     // Get instance field reference: private OVRHand[] _hand
-    [[deprecated]] ::ArrayW<::GlobalNamespace::OVRHand*>& dyn__hand();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::GlobalNamespace::OVRHand*>& dyn__hand();
     // Get instance field reference: private OVRSkeleton[] _handSkeleton
-    [[deprecated]] ::ArrayW<::GlobalNamespace::OVRSkeleton*>& dyn__handSkeleton();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::GlobalNamespace::OVRSkeleton*>& dyn__handSkeleton();
     // Get instance field reference: private OVRSkeletonRenderer[] _handSkeletonRenderer
-    [[deprecated]] ::ArrayW<::GlobalNamespace::OVRSkeletonRenderer*>& dyn__handSkeletonRenderer();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::GlobalNamespace::OVRSkeletonRenderer*>& dyn__handSkeletonRenderer();
     // Get instance field reference: private OVRMesh[] _handMesh
-    [[deprecated]] ::ArrayW<::GlobalNamespace::OVRMesh*>& dyn__handMesh();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::GlobalNamespace::OVRMesh*>& dyn__handMesh();
     // Get instance field reference: private OVRMeshRenderer[] _handMeshRenderer
-    [[deprecated]] ::ArrayW<::GlobalNamespace::OVRMeshRenderer*>& dyn__handMeshRenderer();
+    [[deprecated("Use field access instead!")]] ::ArrayW<::GlobalNamespace::OVRMeshRenderer*>& dyn__handMeshRenderer();
     // Get instance field reference: private UnityEngine.SkinnedMeshRenderer _leftMeshRenderer
-    [[deprecated]] ::UnityEngine::SkinnedMeshRenderer*& dyn__leftMeshRenderer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::SkinnedMeshRenderer*& dyn__leftMeshRenderer();
     // Get instance field reference: private UnityEngine.SkinnedMeshRenderer _rightMeshRenderer
-    [[deprecated]] ::UnityEngine::SkinnedMeshRenderer*& dyn__rightMeshRenderer();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::SkinnedMeshRenderer*& dyn__rightMeshRenderer();
     // Get instance field reference: private UnityEngine.GameObject _leftSkeletonVisual
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__leftSkeletonVisual();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__leftSkeletonVisual();
     // Get instance field reference: private UnityEngine.GameObject _rightSkeletonVisual
-    [[deprecated]] ::UnityEngine::GameObject*& dyn__rightSkeletonVisual();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::GameObject*& dyn__rightSkeletonVisual();
     // Get instance field reference: private System.Single _currentHandAlpha
-    [[deprecated]] float& dyn__currentHandAlpha();
+    [[deprecated("Use field access instead!")]] float& dyn__currentHandAlpha();
     // Get instance field reference: private System.Int32 HandAlphaId
-    [[deprecated]] int& dyn_HandAlphaId();
+    [[deprecated("Use field access instead!")]] int& dyn_HandAlphaId();
     // public OVRHand get_RightHand()
     // Offset: 0x28C600
     ::GlobalNamespace::OVRHand* get_RightHand();
@@ -319,6 +319,13 @@ namespace OculusSampleFramework {
     // static private System.Void set_Instance(OculusSampleFramework.HandsManager value)
     // Offset: 0x28C640
     static void set_Instance(::OculusSampleFramework::HandsManager* value);
+    // public System.Void .ctor()
+    // Offset: 0x28C250
+    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
+    static HandsManager* New_ctor() {
+      static auto ___internal__logger = ::Logger::get().WithContext("::OculusSampleFramework::HandsManager::.ctor");
+      return THROW_UNLESS((::il2cpp_utils::New<HandsManager*, creationType>()));
+    }
     // private System.Void Awake()
     // Offset: 0x28B200
     void Awake();
@@ -340,19 +347,6 @@ namespace OculusSampleFramework {
     // public System.Boolean IsInitialized()
     // Offset: 0x28BB90
     bool IsInitialized();
-    // public System.Void .ctor()
-    // Offset: 0x28C250
-    // Implemented from: UnityEngine.MonoBehaviour
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
-    template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
-    static HandsManager* New_ctor() {
-      static auto ___internal__logger = ::Logger::get().WithContext("::OculusSampleFramework::HandsManager::.ctor");
-      return THROW_UNLESS((::il2cpp_utils::New<HandsManager*, creationType>()));
-    }
   }; // OculusSampleFramework.HandsManager
   #pragma pack(pop)
   static check_size<sizeof(HandsManager), 124 + sizeof(int)> __OculusSampleFramework_HandsManagerSizeCheck;
@@ -548,6 +542,10 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (*)(::
     return ::il2cpp_utils::FindMethod(classof(OculusSampleFramework::HandsManager*), "set_Instance", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{value});
   }
 };
+// Writing MetadataGetter for method: OculusSampleFramework::HandsManager::New_ctor
+// Il2CppName: .ctor
+// Cannot get method pointer of value based method overload from template for constructor!
+// Try using FindMethod instead!
 // Writing MetadataGetter for method: OculusSampleFramework::HandsManager::Awake
 // Il2CppName: Awake
 template<>
@@ -606,7 +604,3 @@ struct ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<bool (Oculu
     return ::il2cpp_utils::FindMethod(classof(OculusSampleFramework::HandsManager*), "IsInitialized", std::vector<Il2CppClass*>(), ::std::vector<const Il2CppType*>{});
   }
 };
-// Writing MetadataGetter for method: OculusSampleFramework::HandsManager::New_ctor
-// Il2CppName: .ctor
-// Cannot get method pointer of value based method overload from template for constructor!
-// Try using FindMethod instead!

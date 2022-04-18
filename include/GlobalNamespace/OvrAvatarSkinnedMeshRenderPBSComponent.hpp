@@ -59,7 +59,7 @@ namespace GlobalNamespace {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private System.Boolean isMaterialInitilized
-    [[deprecated]] bool& dyn_isMaterialInitilized();
+    [[deprecated("Use field access instead!")]] bool& dyn_isMaterialInitilized();
     // System.Void Initialize(ovrAvatarRenderPart_SkinnedMeshRenderPBS skinnedMeshRenderPBS, UnityEngine.Shader shader, System.Int32 thirdPersonLayer, System.Int32 firstPersonLayer)
     // Offset: 0x676050
     void Initialize(::GlobalNamespace::ovrAvatarRenderPart_SkinnedMeshRenderPBS skinnedMeshRenderPBS, ::UnityEngine::Shader* shader, int thirdPersonLayer, int firstPersonLayer);
@@ -70,11 +70,6 @@ namespace GlobalNamespace {
     // Offset: 0x287580
     // Implemented from: OvrAvatarRenderComponent
     // Base method: System.Void OvrAvatarRenderComponent::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static OvrAvatarSkinnedMeshRenderPBSComponent* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::OvrAvatarSkinnedMeshRenderPBSComponent::.ctor");

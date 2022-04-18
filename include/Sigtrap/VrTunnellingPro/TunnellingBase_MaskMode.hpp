@@ -63,7 +63,7 @@ namespace Sigtrap::VrTunnellingPro {
     // Set static field: static public Sigtrap.VrTunnellingPro.TunnellingBase/Sigtrap.VrTunnellingPro.MaskMode PORTAL
     static void _set_PORTAL(::Sigtrap::VrTunnellingPro::TunnellingBase::MaskMode value);
     // Get instance field reference: public System.Int32 value__
-    [[deprecated]] int& dyn_value__();
+    [[deprecated("Use field access instead!")]] int& dyn_value__();
   }; // Sigtrap.VrTunnellingPro.TunnellingBase/Sigtrap.VrTunnellingPro.MaskMode
   #pragma pack(pop)
   static check_size<sizeof(TunnellingBase::MaskMode), 0 + sizeof(int)> __Sigtrap_VrTunnellingPro_TunnellingBase_MaskModeSizeCheck;

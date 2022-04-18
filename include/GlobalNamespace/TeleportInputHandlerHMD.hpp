@@ -69,13 +69,13 @@ namespace GlobalNamespace {
     static_assert(sizeof(bool) == 0x1);
     public:
     // Get instance field reference: private UnityEngine.Transform <Pointer>k__BackingField
-    [[deprecated]] ::UnityEngine::Transform*& dyn_$Pointer$k__BackingField();
+    [[deprecated("Use field access instead!")]] ::UnityEngine::Transform*& dyn_$Pointer$k__BackingField();
     // Get instance field reference: public OVRInput/RawButton AimButton
-    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_AimButton();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRInput::RawButton& dyn_AimButton();
     // Get instance field reference: public OVRInput/RawButton TeleportButton
-    [[deprecated]] ::GlobalNamespace::OVRInput::RawButton& dyn_TeleportButton();
+    [[deprecated("Use field access instead!")]] ::GlobalNamespace::OVRInput::RawButton& dyn_TeleportButton();
     // Get instance field reference: public System.Boolean FastTeleport
-    [[deprecated]] bool& dyn_FastTeleport();
+    [[deprecated("Use field access instead!")]] bool& dyn_FastTeleport();
     // public UnityEngine.Transform get_Pointer()
     // Offset: 0x1E1940
     ::UnityEngine::Transform* get_Pointer();
@@ -87,11 +87,6 @@ namespace GlobalNamespace {
     // Implemented from: TeleportInputHandler
     // Base method: System.Void TeleportInputHandler::.ctor()
     // Base method: System.Void TeleportSupport::.ctor()
-    // Base method: System.Void MonoBehaviour::.ctor()
-    // Base method: System.Void Behaviour::.ctor()
-    // Base method: System.Void Component::.ctor()
-    // Base method: System.Void Object::.ctor()
-    // Base method: System.Void Object::.ctor()
     template<::il2cpp_utils::CreationType creationType = ::il2cpp_utils::CreationType::Temporary>
     static TeleportInputHandlerHMD* New_ctor() {
       static auto ___internal__logger = ::Logger::get().WithContext("::GlobalNamespace::TeleportInputHandlerHMD::.ctor");
